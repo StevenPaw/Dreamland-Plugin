@@ -1,0 +1,20 @@
+main: de.zwibbltv.dreamland.main.Main
+version: 1.0
+name: Dreamland
+author:  ZwibblTV
+
+depend: [Vault]
+
+commands:
+   heal:
+      description: give or get heal
+   kit:
+      description: take a look!
+   setspawn:
+      description: set the spawn
+   spawn:
+      description: teleport you to the spawn 
+   mute:
+      description: mute other player
+   gm:
+      description: change the gamemode
