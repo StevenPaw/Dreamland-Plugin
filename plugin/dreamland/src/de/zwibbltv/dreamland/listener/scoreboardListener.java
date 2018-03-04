@@ -18,7 +18,7 @@ public class scoreboardListener implements Listener {
     Scoreboard board;
     int player;
     double money;
-    Economy eco = null;
+    Economy eco;
           
 
     @EventHandler
