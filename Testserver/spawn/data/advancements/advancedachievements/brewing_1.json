@@ -1,0 +1,1 @@
+{"criteria": {"aach_handled": {"trigger": "minecraft:impossible"}}, "requirements": [["aach_handled"]], "display": {"icon": {"item": "minecraft:brewing_stand","data": 0}, "title": "Alchemist", "description": "You brewed your first potion!", "frame": "task", "announce_to_chat": false}, "parent": "advancedachievements:advanced_achievements_parent"}

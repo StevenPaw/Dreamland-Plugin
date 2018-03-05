@@ -1,0 +1,13 @@
+Version: 1.4
+Date: 30-06-2017
+Sunny:
+  'Yes': 63
+  'No': 0
+  Won: 50
+  Lost: 0
+Rainy:
+  'Yes': 1
+  'No': 1
+  Won: 0
+  Lost: 1
+MoneySpent: 17.0

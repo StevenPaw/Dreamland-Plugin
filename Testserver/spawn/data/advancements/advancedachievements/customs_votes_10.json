@@ -1,0 +1,1 @@
+{"criteria": {"aach_handled": {"trigger": "minecraft:impossible"}}, "requirements": [["aach_handled"]], "display": {"icon": {"item": "minecraft:feather","data": 0}, "title": "Server fan", "description": "Vote 10 times for the server!", "frame": "task", "announce_to_chat": false}, "parent": "advancedachievements:advanced_achievements_parent"}

@@ -1,0 +1,272 @@
+[17:24:16] [Server thread/INFO]: Starting minecraft server version 1.12.2
+[17:24:16] [Server thread/INFO]: Loading properties
+[17:24:16] [Server thread/INFO]: Default game type: SURVIVAL
+[17:24:17] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-4bd94dc-3a482bd (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[17:24:17] [Server thread/INFO]: Debug logging is disabled
+[17:24:17] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:24:17] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:24:17] [Server thread/INFO]: Generating keypair
+[17:24:17] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:24:17] [Server thread/INFO]: Using default channel type
+[17:24:17] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[17:24:17] [Server thread/INFO]: [ServerResourcePacks] Loading ServerResourcePacks v1.5
+[17:24:17] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.8-SNAPSHOT;cd4729f
+[17:24:17] [Server thread/INFO]: [WeatherVote] Loading WeatherVote v1.4
+[17:24:17] [Server thread/INFO]: [AntiCheatPlus] Loading AntiCheatPlus v2.1.4
+[17:24:17] [Server thread/INFO]: [OpenInv] Loading OpenInv v3.3.2
+[17:24:17] [Server thread/INFO]: [VeinMiner] Loading VeinMiner v1.11.3
+[17:24:17] [Server thread/INFO]: [MineWallet] Loading MineWallet v1.2.4
+[17:24:17] [Server thread/INFO]: [BuycraftX] Loading BuycraftX v10.5.0
+[17:24:17] [Server thread/INFO]: [SleepPercentage] Loading SleepPercentage v1.0.3
+[17:24:17] [Server thread/INFO]: [Vault] Loading Vault v1.6.1
+[17:24:17] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v6.2.1;84bc322
+[17:24:17] [Server thread/INFO]: [OpenAudioMc] Loading OpenAudioMc v4.0
+[17:24:17] [Server thread/INFO]: [AdvancedAchievements] Loading AdvancedAchievements v5.6.5
+[17:24:17] [Server thread/INFO]: [Dreamland] Loading Dreamland v1.0
+[17:24:17] [Server thread/INFO]: [ScoreboardStats] Loading ScoreboardStats v0.10.6
+[17:24:17] [Server thread/INFO]: [Vault] Enabling Vault v1.6.1
+[17:24:17] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[17:24:17] [Server thread/INFO]: [Vault] Plugin enabled (39ms)
+[17:24:17] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[17:24:17] [Server thread/INFO]: Preparing level "world"
+[17:24:17] [Server thread/INFO]: -------- World Settings For [world] --------
+[17:24:17] [Server thread/INFO]: Item Merge Radius: 2.5
+[17:24:17] [Server thread/INFO]: Item Despawn Rate: 6000
+[17:24:17] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[17:24:17] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[17:24:17] [Server thread/INFO]: Experience Merge Radius: 3.0
+[17:24:17] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[17:24:17] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[17:24:17] [Server thread/INFO]: View Distance: 10
+[17:24:17] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[17:24:17] [Server thread/INFO]: Cane Growth Modifier: 100%
+[17:24:17] [Server thread/INFO]: Melon Growth Modifier: 100%
+[17:24:17] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[17:24:17] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[17:24:17] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[17:24:17] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[17:24:17] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[17:24:17] [Server thread/INFO]: Vine Growth Modifier: 100%
+[17:24:17] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[17:24:17] [Server thread/INFO]: Mob Spawn Range: 4
+[17:24:17] [Server thread/INFO]: Random Lighting Updates: false
+[17:24:17] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[17:24:17] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[17:24:17] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[17:24:17] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[17:24:17] [Server thread/INFO]: Structure Info Saving: true
+[17:24:17] [Server thread/INFO]: Max TNT Explosions: 100
+[17:24:17] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[17:24:18] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[17:24:18] [Server thread/INFO]: Item Merge Radius: 2.5
+[17:24:18] [Server thread/INFO]: Item Despawn Rate: 6000
+[17:24:18] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[17:24:18] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[17:24:18] [Server thread/INFO]: Experience Merge Radius: 3.0
+[17:24:18] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[17:24:18] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[17:24:18] [Server thread/INFO]: View Distance: 10
+[17:24:18] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: Cane Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: Melon Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: Vine Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: Mob Spawn Range: 4
+[17:24:18] [Server thread/INFO]: Random Lighting Updates: false
+[17:24:18] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[17:24:18] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[17:24:18] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[17:24:18] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[17:24:18] [Server thread/INFO]: Structure Info Saving: true
+[17:24:18] [Server thread/INFO]: Max TNT Explosions: 100
+[17:24:18] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[17:24:18] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[17:24:18] [Server thread/INFO]: Item Merge Radius: 2.5
+[17:24:18] [Server thread/INFO]: Item Despawn Rate: 6000
+[17:24:18] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[17:24:18] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[17:24:18] [Server thread/INFO]: Experience Merge Radius: 3.0
+[17:24:18] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[17:24:18] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[17:24:18] [Server thread/INFO]: View Distance: 10
+[17:24:18] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: Cane Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: Melon Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: Vine Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[17:24:18] [Server thread/INFO]: Mob Spawn Range: 4
+[17:24:18] [Server thread/INFO]: Random Lighting Updates: false
+[17:24:18] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[17:24:18] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[17:24:18] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[17:24:18] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[17:24:18] [Server thread/INFO]: Structure Info Saving: true
+[17:24:18] [Server thread/INFO]: Max TNT Explosions: 100
+[17:24:18] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[17:24:18] [Server thread/INFO]: Preparing start region for level 0 (Seed: -8274642208530455593)
+[17:24:19] [Server thread/INFO]: Preparing start region for level 1 (Seed: -8274642208530455593)
+[17:24:19] [Server thread/INFO]: Preparing start region for level 2 (Seed: -8274642208530455593)
+[17:24:19] [Server thread/INFO]: [ServerResourcePacks] Enabling ServerResourcePacks v1.5
+[17:24:19] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.8-SNAPSHOT;cd4729f
+[17:24:19] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[17:24:19] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_12_R2 as the Bukkit adapter
+[17:24:19] [Server thread/INFO]: [WeatherVote] Enabling WeatherVote v1.4
+[17:24:19] [Server thread/INFO]: [WeatherVote] a Plugin by F_o_F_1092
+[17:24:19] [Server thread/INFO]: [0m[1m[37m[[0m[1m[34mWeather[0m[1m[36mVote[0m[1m[37m][0m[1m[34m ServerType:[0m[1m[36m Bukkit/Spigot[0m[1m[34m, Version:[0m[1m[36m v1_12_R1[0m
+[17:24:19] [Server thread/INFO]: [AntiCheatPlus] Enabling AntiCheatPlus v2.1.4
+[17:24:19] [Server thread/ERROR]: Error occurred while enabling AntiCheatPlus v2.1.4 (Is it up to date?)
+java.lang.NoSuchMethodError: org.bukkit.configuration.file.YamlConfiguration.loadConfiguration(Ljava/io/InputStream;)Lorg/bukkit/configuration/file/YamlConfiguration;
+	at net.dynamicdev.anticheat.config.ConfigurationFile.<init>(ConfigurationFile.java:62) ~[?:?]
+	at net.dynamicdev.anticheat.config.ConfigurationFile.<init>(ConfigurationFile.java:50) ~[?:?]
+	at net.dynamicdev.anticheat.config.ConfigurationFile.<init>(ConfigurationFile.java:46) ~[?:?]
+	at net.dynamicdev.anticheat.config.files.Config.<init>(Config.java:60) ~[?:?]
+	at net.dynamicdev.anticheat.config.Configuration.<init>(Configuration.java:54) ~[?:?]
+	at net.dynamicdev.anticheat.manage.AntiCheatManager.<init>(AntiCheatManager.java:51) ~[?:?]
+	at net.dynamicdev.anticheat.AntiCheat.onEnable(AntiCheat.java:65) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) ~[spigot-1.12.jar:git-Spigot-4bd94dc-3a482bd]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.jar:git-Spigot-4bd94dc-3a482bd]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.jar:git-Spigot-4bd94dc-3a482bd]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.jar:git-Spigot-4bd94dc-3a482bd]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.jar:git-Spigot-4bd94dc-3a482bd]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:422) [spigot-1.12.jar:git-Spigot-4bd94dc-3a482bd]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:383) [spigot-1.12.jar:git-Spigot-4bd94dc-3a482bd]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:338) [spigot-1.12.jar:git-Spigot-4bd94dc-3a482bd]
+	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:272) [spigot-1.12.jar:git-Spigot-4bd94dc-3a482bd]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:545) [spigot-1.12.jar:git-Spigot-4bd94dc-3a482bd]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_151]
+[17:24:19] [Server thread/INFO]: [OpenInv] Enabling OpenInv v3.3.2
+[17:24:19] [Server thread/INFO]: [VeinMiner] Enabling VeinMiner v1.11.3
+[17:24:19] [Server thread/INFO]: [VeinMiner] Registering events
+[17:24:19] [Server thread/INFO]: [VeinMiner] Registering commands
+[17:24:19] [Server thread/INFO]: [VeinMiner] Enabling Plugin Metrics
+[17:24:19] [Server thread/INFO]: [VeinMiner] Thank you for enabling Metrics! I greatly appreciate the use of plugin statistics
+[17:24:19] [Server thread/INFO]: [VeinMiner] Loading configuration options to local memory
+[17:24:19] [Server thread/INFO]: [VeinMiner] Unknown world found... "WorldName". Ignoring...
+[17:24:19] [Server thread/INFO]: [MineWallet] Enabling MineWallet v1.2.4
+[17:24:19] [Server thread/INFO]: [0;32;1m[MineWallet] MySQL not enabled! Saving playerdatas to a file![m
+[17:24:20] [Server thread/INFO]: [0;33;1m[Vault][Economy] MineWallet hooked.[m
+[17:24:20] [Server thread/INFO]: [0;36;1m[MineWallet] Plugin successfully started![m
+[17:24:20] [Server thread/INFO]: [MineWallet] No new update(s) for the plugin.
+[17:24:20] [Server thread/INFO]: [BuycraftX] Enabling BuycraftX v10.5.0
+[17:24:21] [Server thread/INFO]: [BuycraftX] Validating your server key...
+[17:24:22] [Server thread/INFO]: [BuycraftX] Fetching all server packages...
+[17:24:22] [Server thread/INFO]: [BuycraftX] Updating coupon list...
+[17:24:23] [Server thread/INFO]: [SleepPercentage] Enabling SleepPercentage v1.0.3
+[17:24:23] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v6.2.1;84bc322
+[17:24:23] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[17:24:23] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[17:24:23] [Server thread/INFO]: [WorldGuard] (world) Lava fire is blocked.
+[17:24:23] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[17:24:23] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[17:24:23] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[17:24:23] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[17:24:23] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is blocked.
+[17:24:23] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[17:24:23] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[17:24:23] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[17:24:23] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[17:24:23] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is blocked.
+[17:24:23] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[17:24:23] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[17:24:23] [Server thread/INFO]: [WorldGuard] Loading region data...
+[17:24:23] [Server thread/INFO]: [OpenAudioMc] Enabling OpenAudioMc v4.0
+[17:24:23] [Server thread/INFO]: [OpenAudioMc] starting socketio
+[17:24:23] [Server thread/INFO]: [OpenAudioMc] socketio started!
+[17:24:23] [Server thread/INFO]: [OpenAudioMc] Reflection has found MC v1_12_R1 which is supported
+[17:24:23] [Server thread/INFO]: [OpenAudioMc] Found worldguard! lets enable regions!
+[17:24:23] [Server thread/INFO]: [OpenAudioMc] Initializing speaker: https://www--_--youtube--_--com/watch?v=EptSSXNHIfg
+[17:24:23] [Server thread/INFO]: [AdvancedAchievements] Enabling AdvancedAchievements v5.6.5
+[17:24:23] [Server thread/INFO]: [AdvancedAchievements] Loading and backing up config.yml file...
+[17:24:23] [Server thread/INFO]: [AdvancedAchievements] Loading and backing up lang.yml file...
+[17:24:23] [Server thread/INFO]: [AdvancedAchievements] Loading and backing up gui.yml file...
+[17:24:23] [Server thread/INFO]: [AdvancedAchievements] Initialising command modules...
+[17:24:23] [Server thread/INFO]: [AdvancedAchievements] Registering event listeners...
+[17:24:23] [Server thread/INFO]: [AdvancedAchievements] Setting up custom tab completers...
+[17:24:23] [Server thread/INFO]: [AdvancedAchievements] Setting up GUIs for the list command...
+[17:24:23] [Server thread/INFO]: [AdvancedAchievements] Initialising database...
+[17:24:23] [Server thread/INFO]: [AdvancedAchievements] Launching scheduled tasks...
+[17:24:23] [Server thread/INFO]: [AdvancedAchievements] Loaded 3 achievements in 2 categories.
+[17:24:23] [Server thread/INFO]: [AdvancedAchievements] 45 disabled categories: [ItemBreaks, PetMasterReceive, DistancePig, DistanceLlama, Shear, Taming, Smelting, Enchantments, PlayerCommands, Arrows, Eggs, Fertilising, Places, LavaBuckets, EatenItems, PlayedTime, PetMasterGive, Deaths, Fish, Fireworks, Milk, Breaks, HoePlowings, DistanceHorse, Trades, ItemDrops, Treasures, Breeding, ItemPickups, Kills, WaterBuckets, AnvilsUsed, Brewing, Custom, MusicDiscs, Beds, DistanceBoat, DistanceGliding, Snowballs, EnderPearls, ConsumedPotions, MaxLevel, Crafts, DistanceMinecart, DistanceFoot]
+[17:24:23] [Server thread/INFO]: [AdvancedAchievements] Registering permissions...
+[17:24:24] [Thread-15/INFO]: [AdvancedAchievements] Checking for plugin update...
+[17:24:24] [Server thread/INFO]: [AdvancedAchievements] Plugin has finished loading and is ready to run! Took 197ms.
+[17:24:24] [Server thread/INFO]: [Dreamland] Enabling Dreamland v1.0
+[17:24:24] [Server thread/INFO]: [0;33;1m[Dreamland] [0;32;1m[21merfolgreich gestartet![m
+[17:24:24] [Server thread/INFO]: [0;33;1m[Dreamland] [0;32;1merfolgreich mit Vault verbunden![m
+[17:24:24] [Server thread/INFO]: [ScoreboardStats] Enabling ScoreboardStats v0.10.6
+[17:24:24] [Server thread/INFO]: [ScoreboardStats] Registered replacers: [PlayerPingVariable, BungeeCordVariables, BukkitGlobalVariables, GeneralVariables, BukkitVariables, VaultVariables]
+[17:24:24] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:24:24] [EventThread/INFO]: [OpenAudioMc] Authenticating to socket! They are shaking hands! I hope they will be friends some day!
+[17:24:24] [Server thread/INFO]: Done (6,630s)! For help, type "help" or "?"
+[17:24:24] [Craft Scheduler Thread - 0/INFO]: [Vault] You are running the latest version
+[17:24:25] [Craft Scheduler Thread - 1/INFO]: [BuycraftX] Fetching all due players...
+[17:24:25] [Craft Scheduler Thread - 1/INFO]: [BuycraftX] Fetched due players (0 found).
+[17:24:37] [User Authenticator #1/INFO]: UUID of player StevenDragon is d7a09802-50de-46da-a79d-ee07a5fa6960
+[17:24:37] [Server thread/INFO]: StevenDragon[/192.168.178.58:61092] logged in with entity id 256 at ([world]-218.99714079490042, 68.0, 252.78046195383902)
+[17:24:46] [Server thread/INFO]: StevenDragon issued server command: /money admin
+[17:24:50] [Server thread/INFO]: StevenDragon issued server command: /money admin
+[17:24:53] [Server thread/INFO]: StevenDragon issued server command: /minewallet
+[17:24:57] [Server thread/INFO]: StevenDragon issued server command: /minewallet admin
+[17:25:07] [Server thread/INFO]: StevenDragon issued server command: /minewallet admin setmoney
+[17:25:24] [Craft Scheduler Thread - 0/INFO]: [BuycraftX] Updating coupon list...
+[17:25:28] [Server thread/INFO]: StevenDragon issued server command: /minewallet admin setmoney StevenPaw 10
+[17:25:36] [Server thread/INFO]: StevenDragon issued server command: /minewallet admin setmoney StevenPaw pocket 10
+[17:25:42] [Server thread/INFO]: StevenDragon issued server command: /minewallet admin setmoney StevenDragon pocket 10
+[17:25:58] [Server thread/INFO]: StevenDragon issued server command: /minewallet admin setmoney pocket StevenDragon 10
+[17:26:04] [Server thread/INFO]: StevenDragon issued server command: /minewallet admin setmoney pocket StevenDragon 10
+[17:26:07] [Server thread/INFO]: StevenDragon lost connection: Disconnected
+[17:26:07] [Server thread/INFO]: << StevenDragon <<
+[17:26:11] [User Authenticator #2/INFO]: UUID of player StevenDragon is d7a09802-50de-46da-a79d-ee07a5fa6960
+[17:26:11] [Server thread/INFO]: StevenDragon[/192.168.178.58:61118] logged in with entity id 354 at ([world]-219.97442850717854, 68.0, 253.00166392204335)
+[17:27:42] [Server thread/INFO]: StevenDragon lost connection: Disconnected
+[17:27:42] [Server thread/INFO]: << StevenDragon <<
+[17:27:49] [Server thread/INFO]: Stopping the server
+[17:27:49] [Server thread/INFO]: Stopping server
+[17:27:49] [Server thread/INFO]: [ScoreboardStats] Disabling ScoreboardStats v0.10.6
+[17:27:49] [Server thread/INFO]: [Dreamland] Disabling Dreamland v1.0
+[17:27:49] [Server thread/INFO]: [0;33;1m[Dreamland] [0;31;1m[21merfolgreich gestoppt![m
+[17:27:49] [Server thread/INFO]: [AdvancedAchievements] Disabling AdvancedAchievements v5.6.5
+[17:27:49] [Server thread/INFO]: [AdvancedAchievements] Remaining requests sent to the database, plugin successfully disabled.
+[17:27:49] [Server thread/INFO]: [OpenAudioMc] Disabling OpenAudioMc v4.0
+[17:27:49] [Server thread/INFO]: [OpenAudioMc] stopping socketio
+[17:27:49] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v6.2.1;84bc322
+[17:27:49] [Server thread/INFO]: [WorldGuard] Shutting down executor and waiting for any pending tasks...
+[17:27:49] [Server thread/INFO]: [Vault] Disabling Vault v1.6.1
+[17:27:49] [Server thread/INFO]: [SleepPercentage] Disabling SleepPercentage v1.0.3
+[17:27:49] [Server thread/INFO]: [BuycraftX] Disabling BuycraftX v10.5.0
+[17:27:49] [Server thread/INFO]: [MineWallet] Disabling MineWallet v1.2.4
+[17:27:49] [Server thread/INFO]: [MineWallet] Plugin stopped!
+[17:27:49] [Server thread/INFO]: [VeinMiner] Disabling VeinMiner v1.11.3
+[17:27:49] [Server thread/INFO]: [VeinMiner] Clearing localized data
+[17:27:49] [Server thread/INFO]: [OpenInv] Disabling OpenInv v3.3.2
+[17:27:49] [Server thread/INFO]: [AntiCheatPlus] Disabling AntiCheatPlus v2.1.4
+[17:27:49] [Server thread/ERROR]: Error occurred while disabling AntiCheatPlus v2.1.4 (Is it up to date?)
+java.lang.NullPointerException: null
+	at net.dynamicdev.anticheat.AntiCheat.onDisable(AntiCheat.java:99) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:266) ~[spigot-1.12.jar:git-Spigot-4bd94dc-3a482bd]
+	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoader.java:361) [spigot-1.12.jar:git-Spigot-4bd94dc-3a482bd]
+	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:422) [spigot-1.12.jar:git-Spigot-4bd94dc-3a482bd]
+	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:415) [spigot-1.12.jar:git-Spigot-4bd94dc-3a482bd]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.disablePlugins(CraftServer.java:349) [spigot-1.12.jar:git-Spigot-4bd94dc-3a482bd]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.stop(MinecraftServer.java:465) [spigot-1.12.jar:git-Spigot-4bd94dc-3a482bd]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:613) [spigot-1.12.jar:git-Spigot-4bd94dc-3a482bd]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_151]
+[17:27:49] [Server thread/INFO]: [WeatherVote] Disabling WeatherVote v1.4
+[17:27:49] [Server thread/INFO]: [WeatherVote] a Plugin by F_o_F_1092
+[17:27:49] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1.8-SNAPSHOT;cd4729f
+[17:27:49] [Server thread/INFO]: [ServerResourcePacks] Disabling ServerResourcePacks v1.5
+[17:27:49] [Server thread/INFO]: Saving players
+[17:27:49] [Server thread/INFO]: Saving worlds
+[17:27:49] [Server thread/INFO]: Saving chunks for level 'world'/overworld
+[17:27:49] [Server thread/INFO]: Saving chunks for level 'world_nether'/the_nether
+[17:27:49] [Server thread/INFO]: Saving chunks for level 'world_the_end'/the_end

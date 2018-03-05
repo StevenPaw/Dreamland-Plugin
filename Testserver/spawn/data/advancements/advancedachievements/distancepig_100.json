@@ -1,0 +1,1 @@
+{"criteria": {"aach_handled": {"trigger": "minecraft:impossible"}}, "requirements": [["aach_handled"]], "display": {"icon": {"item": "minecraft:carrot_on_a_stick","data": 0}, "title": "Carrot on a Stick Master", "description": "You traveled 100 blocks on a pig!", "frame": "task", "announce_to_chat": false}, "parent": "advancedachievements:advanced_achievements_parent"}

@@ -1,0 +1,1 @@
+{"criteria": {"aach_handled": {"trigger": "minecraft:impossible"}}, "requirements": [["aach_handled"]], "display": {"icon": {"item": "minecraft:crafting_table","data": 0}, "title": "Blacksmith Apprentice", "description": "The first time you crafted a blade!", "frame": "task", "announce_to_chat": false}, "parent": "advancedachievements:advanced_achievements_parent"}

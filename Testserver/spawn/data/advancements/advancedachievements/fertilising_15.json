@@ -1,0 +1,1 @@
+{"criteria": {"aach_handled": {"trigger": "minecraft:impossible"}}, "requirements": [["aach_handled"]], "display": {"icon": {"item": "minecraft:dye","data": 15}, "title": "Gardener", "description": "You used bone meal on plants 15 times!", "frame": "task", "announce_to_chat": false}, "parent": "advancedachievements:advanced_achievements_parent"}

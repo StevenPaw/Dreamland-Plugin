@@ -1,0 +1,1 @@
+{"criteria": {"aach_handled": {"trigger": "minecraft:impossible"}}, "requirements": [["aach_handled"]], "display": {"icon": {"item": "minecraft:stone","data": 6}, "title": "Stone God", "description": "One thousand placed stones!", "frame": "task", "announce_to_chat": false}, "parent": "advancedachievements:place_100_stone"}

@@ -1,0 +1,1 @@
+{"criteria": {"aach_handled": {"trigger": "minecraft:impossible"}}, "requirements": [["aach_handled"]], "display": {"icon": {"item": "minecraft:book","data": 0}, "title": "Advanced Achievements", "description": "", "frame": "goal", "background": "minecraft:textures/items/book_enchanted.png", "announce_to_chat": false}}

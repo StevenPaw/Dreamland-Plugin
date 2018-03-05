@@ -1,0 +1,72 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                      Messages                        | #
+# |      Messages that the player will see in chat       | #
+# |       (can be disabled by using '-' as value)        | #
+# +------------------------------------------------------+ #
+############################################################
+messages:
+  provide_url: '&2Click here to connect to our audio server!'
+  connected: '&7You are now &2connected&7! yeey!'
+  disconnected: '&7You are now &4disconnected&7! cya next time!'
+  setvolumefail: '&4Invalid volume! please use a number between 0 and 100'
+  setvolume: '&2Your volume has been set to %volume%'
+
+
+############################################################
+# +------------------------------------------------------+ #
+# |                      Commands                        | #
+# |       Custom commands to give the user a link        | #
+# +------------------------------------------------------+ #
+############################################################
+commands:
+  - "/getlink"
+  - "/icanhazaudio"
+  - "/gimmesoundplz"
+
+
+############################################################
+# +------------------------------------------------------+ #
+# |                    Web Client                        | #
+# |         Configuration for your web client!           | #
+# |       (can be disabled by using '-' as value)        | #
+# +------------------------------------------------------+ #
+############################################################
+web:
+  url: 'https://app.openaudiomc.net/'
+  title: 'OpenAudioMc'
+  background: '-'
+  startsound: '-'
+  ambiancesound: '-'
+  speaker_radius: 10
+
+
+############################################################
+# +------------------------------------------------------+ #
+# |                       Data                           | #
+# | Data that makes this server this server! (dont edit) | #
+# |            (really tho, dont touch it)               | #
+# +------------------------------------------------------+ #
+############################################################
+# Key storage! NEVER SHERE THIS WITH ANYONE! NEVER CHANGE THIS DATA! (it won't work, trust me)
+key:
+  public: 'a6POd8woK8129YS'
+  private: '6EmdDBQQ8HOUPKF'
+
+
+# Storage for regions, speakers and all that stuff!
+storage:
+  speakermedia:
+    https://www--_--youtube--_--com/watch?v=EptSSXNHIfg:
+      src: 'https://www.youtube.com/watch?v=EptSSXNHIfg'
+  speakerlocations:
+    433f73f6-a134-4205-965c-fe74a945e898:
+      world: 'dreamland'
+      x: '-858.0'
+      y: '20.0'
+      z: '638.0'
+      sound: 'https://www--_--youtube--_--com/watch?v=EptSSXNHIfg'
+  regions:
+  media:
+    https://www--_--youtube--_--com/watch?v=EptSSXNHIfg:
+      length: null

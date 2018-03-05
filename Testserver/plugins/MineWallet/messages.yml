@@ -1,0 +1,212 @@
+pocket_Geld: '§2[§fMineWallet§2]§f: Du hast %Geld% §2%currencytype% in einer Tasche!'
+bank_Geld: '§2[§fMineWallet§2]§f: Du hast %Geld% §2%currencytype% auf deinem Bankkonto!'
+no_bank_account: '§2[§fMineWallet§2]§f: You dont have a bank account.'
+bank_possibilities: '§2[§fMineWallet§2]§f: Possibilities: account, money, bankcard'
+bankcard_possibilities: '§2[§fMineWallet§2]§f: Possibilities: buy, use'
+bank_acc_possibilities: '§2[§fMineWallet§2]§f: Possibilities: create, delete, statistics(stats)'
+bank_Geld_possibilities: '§2[§fMineWallet§2]§f: Möglichkeiten: transfer, deposit,
+  withdraw'
+pay_usage: '§2[§fMineWallet§2]§f: Use: /money pay [player name] [amount]'
+got_bank_account: '§2[§fMineWallet§2]§f: You already have a bank account.'
+dont_have_Geld: '§2[§fMineWallet§2]§f: Du hast nicht genügend Geld!'
+bank_account_created: '§2[§fMineWallet§2]§f: Your bank account have been created!'
+bank_account_deleted: '§2[§fMineWallet§2]§f: Your bank account have been deleted!'
+bank_stats_line0: §2==========[§fBank account statistics§2]==========
+bank_stats_line1: '§2[§fMineWallet§2]§f: Bank account created: %bank_created_time%'
+bank_stats_line2: '§2[§fMineWallet§2]§f: Bank account money: %bank_money%'
+bank_stats_line3: '§2[§fMineWallet§2]§f: Bank account transfers: %bank_transfers%'
+bank_stats_line4: '§2[§fMineWallet§2]§f: Bank account deposits: %bank_deposits%'
+bank_stats_line5: '§2[§fMineWallet§2]§f: Bank account withdraws: %bank_withdraws%'
+type_amount: '§2[§fMineWallet§2]§f: Type in an amount.'
+number_needed: '§2[§fMineWallet§2]§f: You need to type in a number!'
+insufficient_funds: '§2[§fMineWallet§2]§f: Insufficient funds!'
+deposit_success: '§2[§fMineWallet§2]§f: You have deposited %amount% §2%currencytype%'
+withdraw_success: '§2[§fMineWallet§2]§f: You have withdrawn %amount% §2%currencytype%'
+transfer_usage: '§2[§fMineWallet§2]§f: Use: /bank money transfer [player] [amount]'
+no_player: '§2[§fMineWallet§2]§f: Cant find a player with this name.'
+player_no_bank_account: '§2[§fMineWallet§2]§f: Player dont have a bank account.'
+transfer_success_sender: '§2[§fMineWallet§2]§f: You have transfered %amount% §2%currencytype%
+  §fto %targetname%'
+transfer_success_target: '§2[§fMineWallet§2]§f: %sendername% transfered %amount% §2%currencytype%
+  §fto your bank account.'
+pay_success_sender: '§2[§fMineWallet§2]§f: You have transfered %amount% §2%currencytype%
+  §f to %targetname%'
+pay_success_target: '§2[§fMineWallet§2]§f: %sendername% transfered %amount% §2%currencytype%
+  §f to your bank account.'
+bankcard_have: '§2[§fMineWallet§2]§f: You already have a bankcard.'
+no_Geld_bankcard: '§2[§fMineWallet§2]§f: Du hast nicht Geld!'
+bankcard_purchased: '§2[§fMineWallet§2]§f: You have successfully purchased a bankcard.'
+no_bankcard: '§2[§fMineWallet§2]§f: You dont have a bankcard!'
+bankcard_Nutze: '§2[§fMineWallet§2]§f: Du nutzt ab jetzt deine Bankkarte!'
+bankcard_notNutze: '§2[§fMineWallet§2]§f: Du nutzt ab jetzt deine Bankkarte nicht
+  mehr!'
+plugin_not_ready: '§2[§fMineWallet§2]§f: Plugin setup needed! Type /minewallet setup
+  to start the configuration.'
+plugin_setup_start: '§2[§fMineWallet§2]§f: Welcome at the setup wizzard, in this setup
+  you can customize the plugin. §cIf you dont want to customize the plugin step by
+  step you can find a MineWallet folder in your server plugin folder. Open the settings.yml
+  file and you can rewrite it easily. §fIf you want to continue this setup just type
+  §2/minewallet currency §fto setup the currency type.'
+setup_currency_syntax: '§2[§fMineWallet§2]§f: Use: §2/minewallet currency [currency
+  name] §fto customize your singular currency, for example: §2Dollar, Coin'
+setup_currency_singular: '§2[§fMineWallet§2]§f: You have successfully customized your
+  singular currency, now type §2/minewallet currency §fagain to customize your plural
+  currency.'
+setup_currency_plural_syntax: '§2[§fMineWallet§2]§f: Use: §2/minewallet currency [currency
+  name] §fto customize your plural currency, for example: §2Dollars, Coins'
+setup_currency_plural: '§2[§fMineWallet§2]§f: You have successfully customized your
+  plural currency, now type §2/minewallet startmoney §fto set the players starting
+  money.'
+setup_Geld_syntax: '§2[§fMineWallet§2]§f: Nutze: §2/minewallet startmoney [Anzahl]
+  §fum das Startgeld ein zu stellen.'
+setup_starting_Geld: '§2[§fMineWallet§2]§f: Du hast erfolgreich das Startgeld eingestellt!
+  Gibr nun §2/minewallet bankaccount §fein, um den Preis für ein Bankkonto einzustellen.'
+setup_bank_Geld_syntax: '§2[§fMineWallet§2]§f: Nutze: §2/minewallet bankaccount [Preis]
+  §fum den Preis für ein Bankkonto einzustellen.'
+setup_bankacc: '§2[§fMineWallet§2]§f: You have successfully set the bank account creating
+  price, now type §2/minewallet bankcard §fto set the bankcard price.'
+setup_bankcard_syntax: '§2[§fMineWallet§2]§f: Use: §2/minewallet bankcard [price]
+  §fto set the bankcard price.'
+setup_bankcard: '§2[§fMineWallet§2]§f: You have successfully set the bankcard price.
+  §cWhere do you want to save the playerdatas? (MySQL or plugin folder) §fIf you want
+  to save the datas to a §cMySQL §fdatabase, just type §2/minewallet MySQL. §fIf you
+  want to save the datas to the §cplugin folder§f, just type §2  /minewallet folder.'
+setup_folder_finish: '§2[§fMineWallet§2]§f: So you choosed the plugin folder save
+  type. Now the setup is completed, just reload the plugin and it will work. Thanks
+  for using this plugin. :)'
+setup_mysql: '§2[§fMineWallet§2]§f: So you want the §cMySQL §fdatabase, OK. We need
+  to configurate it first, so type §2/minewallet mysql [hostname]§f.'
+mysql_hostname_syntax: '§2[§fMineWallet§2]§f: Use /minewallet mysql [hostname] to
+  tell the plugin where it need to connect.'
+mysql_hostname_next: '§2[§fMineWallet§2]§f: You have set the mysql hostname, now type
+  §2/minewallet mysql [port]§f.'
+mysql_port_syntax: '§2[§fMineWallet§2]§f: Use /minewallet mysql [port] to tell the
+  plugin what port it need to connect.'
+mysql_port_next: '§2[§fMineWallet§2]§f: You have set the mysql port, now type §2/minewallet
+  mysql [database]§f.'
+mysql_database_syntax: '§2[§fMineWallet§2]§f: Use /minewallet mysql [database] to
+  create a database with this name.'
+mysql_database_next: '§2[§fMineWallet§2]§f: You have set the mysql database, now type
+  §2/minewallet mysql [table]§f.'
+mysql_table_syntax: '§2[§fMineWallet§2]§f: Use /minewallet mysql [table] to create
+  a table with this name.'
+mysql_table_next: '§2[§fMineWallet§2]§f: You have set the mysql table, now type §2/minewallet
+  mysql [username]§f.'
+mysql_Nutze rname_syntax: '§2[§fMineWallet§2]§f: Nutze /minewallet mysql [Passwort]
+  um dem Plugin zu sagen, welches Passwort es nutzen soll.'
+mysql_Nutze rname_next: '§2[§fMineWallet§2]§f: Du hast den mysql Nutzernamen eingestellt!
+  Nutze nun §2/minewallet mysql [Passwort]§f.'
+mysql_finish: '§2[§fMineWallet§2]§f: You have successfully configured the plugin for
+  the mysql database, reload it and if the datas are correct it will connect to the
+  database. Thanks for using this plugin. :)'
+Geld_death: '§2[§fMineWallet§2]§f: Du hast all dein Geld aus deiner Tasche verloren!'
+admin_Geld_syntax: '§2[§fMineWallet§2]§f: Nutze /minewallet admin setmoney [pocket/bank]
+  [Spielername] [Anzahl]'
+admin_Geld_given: '§2[§fMineWallet§2]§f: §2Du hast §f%target% §2(%type%)money auf
+  §f%amount%§2 gesetzt.'
+admin_Geld_taken: '§2[§fMineWallet§2]§f: §f%from% §2 hat (%type%)money auf §f%amount%§2
+  gesetzt.'
+admin_reset_syntax: '§2[§fMineWallet§2]§f: Use /admin reset [player name]'
+admin_reset_given: '§2[§fMineWallet§2]§f: §2You have reseted §f%target% §2datas.'
+admin_reset_taken: '§2[§fMineWallet§2]§f: §2Admin §f%from% §2reset your datas to default.'
+cant_send_yourself: '§2[§fMineWallet§2]§f: You cant send money for yourself.'
+no_version_available: '§2[§fMineWallet§2]§f: No new version available.'
+no_updater_permission: '§2[§fMineWallet§2]§f: You dont have updater permission!'
+already_updated: '§2[§fMineWallet§2]§f: Plugin update already downloaded, restart
+  the server or reload all the plugins to install the update.'
+update_started: '§2[§fMineWallet§2]§f: Download started!'
+update_finished: '§2[§fMineWallet§2]§f: Download finished!'
+version_available: '§2[§fMineWallet§2]§f: New version available! Use: §c/minewallet
+  update §fto update the plugin.'
+paytime: '§2[§fMineWallet§2]§f: Es ist schon wieder eine Stunde rum! Hier: %money%
+  §2%currencytype% §ffür dich!'
+paytime_timeleft: '§2[§fMineWallet§2]§f: §2%timeleft% §fMinuten noch, bis du wieder
+  Geld bekommst!'
+paytime_disabled: '§2[§fMineWallet§2]§f: Die Geld-pro-Zeit-Funktion ist deaktiviert!'
+update_hided: '§2[§fMineWallet§2]§f: Der Update-Anzeiger ist nun §2%onoff%§f!'
+minewallet_usage: '§2[§fMineWallet§2]§f: Befehle: update, hide, admin, setup, version'
+minewallet_admin_usage: '§2[§fMineWallet§2]§f: Admin commands: reset, setmoney, addmoney,
+  delete, check, afkmoney'
+minewallet_delete_syntax: '§2[§fMineWallet§2]§f: Nutze /minewallet admin delete [Spielername]'
+minewallet_check_syntax: '§2[§fMineWallet§2]§f: Nutze /minewallet admin check [Spielername]'
+minewallet_player_deleted: '§2[§fMineWallet§2]§f: §2%name% §f wurde aus der Datenbank
+  gelöscht.'
+your_datas_deleted: '§2[§fMineWallet§2]§f: Deine playerdata wurde gelöscht.'
+minewallet_target_stats: §2==========[§f%target%s statistics§2]==========
+minewallet_target_Geld: '§2[§fMineWallet§2]§f: Geld in deiner tasche: %Geld% §2%currency%'
+minewallet_target_bankaccount_created: '§2[§fMineWallet§2]§f: Bankkonto erstellt:
+  %created%'
+minewallet_target_bankaccount_Geld: '§2[§fMineWallet§2]§f: Geld in der Bank: %Geld%
+  §2%currency%'
+minewallet_target_bankaccount_transfers: '§2[§fMineWallet§2]§f: Geld zum Bankkonto
+  transferiert: %transfers%'
+minewallet_target_bankaccount_deposits: '§2[§fMineWallet§2]§f: Geld zum Bankkonto
+  eingezahlt: %deposits%'
+minewallet_target_bankaccount_withdraws: '§2[§fMineWallet§2]§f: Geld vom Bankkonto
+  abgehoben: %withdraws%'
+minewallet_target_bankaccount_bankcard: '§2[§fMineWallet§2]§f: Anzahl der Bankkarten:
+  %bankcard%'
+minewallet_target_bankaccount_bankcardNutze: '§2[§fMineWallet§2]§f: Bankkarten in
+  Nutzung: %bankcarduse %'
+minewallet_target_paytime: '§2[§fMineWallet§2]§f: Zeit bist du wieder geld bekommst:
+  %paytime% Minuten.'
+minewallet_target_no_bankaccount: '§2[§fMineWallet§2]§f: Der Spieler hat kein Bankkonto.'
+minewallet_version: '§2[§fMineWallet§2]§f: Aktuelle version: §2%version%'
+minewallet_richest: §2==========[§fDie reichesten Personen§2]==========
+minewallet_richest_people: '§2TOP §f%number% §2| Name: §f%name% §2| Geld: §f%money%
+  §2%currency% '
+no_permission: '§2[§fMineWallet§2]§f: Du hast keine Erlaubnis für diesen Befehl!'
+minewallet_Geld_help1: '§2[§fMineWallet§2]§f: /Geld -- listet deinen Geldstand auf.'
+minewallet_Geld_help2: '§2[§fMineWallet§2]§f: /Geld pay -- zahlt Geld an einen anderen
+  Spieler.'
+minewallet_Geld_help3: '§2[§fMineWallet§2]§f: /Geld stats -- listet die Top 9 reichesten
+  Personen auf people.'
+admin_addGeld_syntax: '§2[§fMineWallet§2]§f: Nutze /minewallet admin addGeld [pocket/bank]
+  [Spielername] [Anzahl]'
+admin_addGeld_given: '§2[§fMineWallet§2]§f: §2Du hast §f+%amount% §2(%type%)money
+  an §f%target% gegeben.'
+admin_addGeld_taken: '§2[§fMineWallet§2]§f: §f%from% §2 hat §f+%amount%§2 (%type%)money
+  genommen.'
+minewallet_setbank_usage: '§2[§fMineWallet§2]§f: Nutze /minewallet admin setbank [Welt]
+  [true/false]'
+minewallet_no_world: '§2[§fMineWallet§2]§f: Welt konnte nicht gefunden werden!'
+minewallet_bank_enabled: '§2[§fMineWallet§2]§f: Bankbefehle wurden auf der Welt §6
+  %worldname%§f aktiviert.'
+minewallet_bank_disabled: '§2[§fMineWallet§2]§f: Bankbefehle wurden auf der Welt §6
+  %worldname%§f deaktiviert.'
+minewallet_bank_notenabled: '§2[§fMineWallet§2]§f: Die Bank-Funktion wurde auf dieser
+  Welt deaktiviert!'
+admin_afkGeld_syntax: '§2[§fMineWallet§2]§f: Nutze /minewallet admin afkmoney [Prozent]'
+type_percent: '§2[§fMineWallet§2]§f: You need to write a valid percent number.'
+admin_afkGeld_successful: '§2[§fMineWallet§2]§f: %percent% §2Prozent des Geldes wurden
+  von offline Spielern genommen.'
+percent_error: '§2[§fMineWallet§2]§f: You cant set the percent value above 100!'
+pocket_money: '§2[§fMineWallet§2]§f: Balance: %money% §2%currencytype%'
+bank_money: '§2[§fMineWallet§2]§f: Bank account balance: %money% §2%currencytype%'
+bank_money_possibilities: '§2[§fMineWallet§2]§f: Possibilities: transfer, deposit,
+  withdraw'
+dont_have_money: '§2[§fMineWallet§2]§f: You dont have enough money!'
+no_money_bankcard: '§2[§fMineWallet§2]§f: You dont have enough money.'
+bankcard_use: '§2[§fMineWallet§2]§f: From now you using the bankcard!'
+bankcard_notuse: '§2[§fMineWallet§2]§f: From now you not using the bankcard!'
+setup_money_syntax: '§2[§fMineWallet§2]§f: Use: §2/minewallet startmoney [amount]
+  §fto set the starting money for a player.'
+setup_starting_money: '§2[§fMineWallet§2]§f: You have successfully set the starting
+  money, now type    §2/minewallet bankaccount §fto set the bank account creating
+  price.'
+setup_bank_money_syntax: '§2[§fMineWallet§2]§f: Use: §2/minewallet bankaccount [price]
+  §fto set the bank account creating price.'
+mysql_username_syntax: '§2[§fMineWallet§2]§f: Use /minewallet mysql [password] to
+  tell the plugin which password it can use.'
+mysql_username_next: '§2[§fMineWallet§2]§f: You have set the mysql username, now type
+  §2/minewallet mysql [password]§f.'
+money_death: '§2[§fMineWallet§2]§f: You lost all the money from your pocket.'
+admin_money_syntax: '§2[§fMineWallet§2]§f: Use /admin (set/add)money (pocket/bank)
+  [player name] [amount]'
+admin_money_given: '§2[§fMineWallet§2]§f: §2You have set §f%target% §2(%type%)money
+  to §f%amount%§2.'
+admin_money_taken: '§2[§fMineWallet§2]§f: §2Admin §f%from% §2set your (%type%)money
+  to §f%amount%§2.'
+admin_afkmoney_syntax: '§2[§fMineWallet§2]§f: Use /minewallet admin afkmoney [percent]'
+admin_afkmoney_successful: '§2[§fMineWallet§2]§f: %percent% §2percent money removed
+  from the offline players.'

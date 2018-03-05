@@ -1,0 +1,10 @@
+# 
+#  					BukkitDev Help page : http://dev.bukkit.org/server-mods/mycommand/    					#
+cf199c68-448b-461b-8a1f-0978c4403e45:
+  DailyBonus: 26 2 2018
+  lotteryprize: DIAMOND
+  amount_lotteryprize: 2
+ff1022ac-91de-4516-bddd-1656aae12fc1:
+  DailyBonus: 26 2 2018
+  lotteryprize: GOLD_INGOT
+  amount_lotteryprize: 2

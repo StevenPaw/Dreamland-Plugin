@@ -1,0 +1,19 @@
+setup_ready: true
+currency_name_singular: Eco
+currency_name_plural: Ecos
+starting_money: 100.0
+bank_account_create_price: 10.0
+bankcard_buy_price: 5.0
+MySQL_use: false
+MySQL:
+  hostname: none
+  port: 0
+  database: none
+  table: none
+  username: none
+  password: none
+paytime: true
+moneytime: 3600
+money_for_time: 5
+hide_update: true
+world: true

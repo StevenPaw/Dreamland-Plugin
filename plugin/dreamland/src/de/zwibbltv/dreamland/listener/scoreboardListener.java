@@ -18,7 +18,7 @@ public class scoreboardListener implements Listener {
     Scoreboard board;
     int player;
     double money;
-    Economy eco;
+    Economy eco = de.zwibbltv.dreamland.main.Main.economy;
           
 
     @EventHandler
@@ -41,7 +41,7 @@ public class scoreboardListener implements Listener {
         Objective obj = board.registerNewObjective("aaa", "bbb");
         obj.setDisplaySlot(DisplaySlot.SIDEBAR);
         obj.setDisplayName("§6Dreamland");
-
+        
         if(eco != null ) {
             money = eco.getBalance(p);
         	

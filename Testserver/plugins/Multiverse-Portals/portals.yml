@@ -1,0 +1,67 @@
+portals:
+  spawn-survival:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: ZwibblTV
+    location: -1556.0,108.0,680.0:-1556.0,114.0,686.0
+    world: spawn
+    destination: e:survival:254.0,67.0,192.0:0.0:0.0
+  survival-spawn:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: ZwibblTV
+    location: 252.0,66.0,178.0:256.0,68.0,178.0
+    world: survival
+    destination: spawn
+  spawn-creative:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: ZwibblTV
+    location: -1490.0,108.0,680.0:-1490.0,114.0,686.0
+    world: spawn
+    destination: e:creative:254.0,67.0,192.0:0.0:0.0
+  creative-spawn:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: ZwibblTV
+    location: 252.0,66.0,206.0:256.0,70.0,206.0
+    world: creative
+    destination: spawn
+  dreamland-spawn:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: ZwibblTV
+    location: -983.0,23.0,632.0:-983.0,26.0,636.0
+    world: dreamland
+    destination: spawn
+  spawn-dreamland:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: ZwibblTV
+    location: -1526.0,108.0,650.0:-1520.0,114.0,650.0
+    world: spawn
+    destination: e:dreamland:-964.0,8.0,634.0:0.0:0.0
