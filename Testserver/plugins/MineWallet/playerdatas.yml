@@ -11,7 +11,7 @@ players:
       bankcard_use: 0
     money: 60.0
   ZwibblTV:
-    paytime: 1780
+    paytime: 2363
     money: 55.0
   Socke19:
     money: 115.0
@@ -53,4 +53,4 @@ players:
     paytime: 915
   StevenDragon:
     money: 10.0
-    paytime: 3404
+    paytime: 2444

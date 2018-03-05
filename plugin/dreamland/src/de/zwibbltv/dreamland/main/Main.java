@@ -4,7 +4,6 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
-
 import de.zwibbltv.dreamland.commands.CMDgamemode;
 import de.zwibbltv.dreamland.commands.CMDheal;
 import de.zwibbltv.dreamland.commands.CMDkit;
@@ -16,7 +15,7 @@ import de.zwibbltv.dreamland.listener.scoreboardListener;
 import net.milkbowl.vault.economy.Economy;
 
 public class Main extends JavaPlugin {
-
+	
 	private static Main plugin;
 	public static Economy economy = null;
 	
@@ -67,4 +66,5 @@ public class Main extends JavaPlugin {
 
 	        return (economy != null);
 	    }
+	 
 }

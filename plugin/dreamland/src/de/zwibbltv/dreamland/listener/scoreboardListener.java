@@ -34,9 +34,8 @@ public class scoreboardListener implements Listener {
         for(Player p : Bukkit.getOnlinePlayers()) {
             defineScoreboard(p, -1);
         }
-     }
-    
-
+     }  
+        
     public void defineScoreboard(Player p, int playerCalc) {
         Scoreboard board = Bukkit.getScoreboardManager().getNewScoreboard();
         Objective obj = board.registerNewObjective("aaa", "bbb");

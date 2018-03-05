@@ -2,6 +2,8 @@ groups:
   Default:
     permissions:
     - modifyworld.chat
+    - multiverse.portal.access.spawn-dreamland
+    - multiverse.portal.access.dreamland-spawn
     rank: '600'
     options:
       prefix: '&6[&7Default&6]&f'
@@ -9,6 +11,8 @@ groups:
   Player:
     inheritance:
     - Default
+    permissions:
+    - multiverse.portal.access.*
     rank: '500'
     options:
       prefix: '&6[&3Player&6]&7'
@@ -37,8 +41,14 @@ groups:
     ZwibblTV:
       group:
       - Admin
+    Segel_Basti:
+      group:
+      - Player
 schema-version: 1
 users:
-  stevenpaw:
-    group:
-    - Owner
+  cf199c68-448b-461b-8a1f-0978c4403e45:
+    options:
+      name: ZwibblTV
+  d1958a44-a2f7-476f-b9f5-0aca1e27354e:
+    options:
+      name: Segel_Basti
