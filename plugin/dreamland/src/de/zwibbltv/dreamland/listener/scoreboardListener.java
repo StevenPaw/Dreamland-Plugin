@@ -12,6 +12,7 @@ import org.bukkit.scoreboard.Score;
 import org.bukkit.scoreboard.Scoreboard;
 
 import net.milkbowl.vault.economy.Economy;
+import ru.tehkode.permissions.bukkit.PermissionsEx;
 
 public class scoreboardListener implements Listener {
 
@@ -47,7 +48,27 @@ public class scoreboardListener implements Listener {
         	
         }
         player = Bukkit.getServer().getOnlinePlayers().size() + playerCalc;
-        int rank = 0;
+        
+        if(PermissionsEx.getUser(p).inGroup("Default")) {
+        	Score rank = obj.getScore("§7Guest");
+        	rank.setScore(0);
+        }
+        if(PermissionsEx.getUser(p).inGroup("Player")) {
+        	Score rank = obj.getScore("§fMember");
+        	rank.setScore(0);
+        }
+        if(PermissionsEx.getUser(p).inGroup("VIP")) {
+        	Score rank = obj.getScore("§dVIP");
+        	rank.setScore(0);
+        }
+        if(PermissionsEx.getUser(p).inGroup("Admin")) {
+        	Score rank = obj.getScore("§bAdmin");
+        	rank.setScore(0);
+        }
+        if(PermissionsEx.getUser(p).inGroup("Owner")) {
+        	Score rank = obj.getScore("§4Owner");
+        	rank.setScore(0);
+        }
 
         Score eight = obj.getScore(" ");
         Score seven = obj.getScore("§aMoney:");
@@ -57,7 +78,6 @@ public class scoreboardListener implements Listener {
         Score three = obj.getScore("§b" + player);
         Score two = obj.getScore(" ");
         Score one = obj.getScore("§aRank:");
-        Score zero = obj.getScore("§b" + rank);
 
         eight.setScore(8);
         seven.setScore(7);
@@ -67,7 +87,6 @@ public class scoreboardListener implements Listener {
         three.setScore(3);
         two.setScore(2);
         one.setScore(1);
-        zero.setScore(0);
 
        p.setScoreboard(board);
     }
