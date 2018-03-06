@@ -1,6 +1,9 @@
 package de.zwibbltv.dreamland.main;
 
 import org.bukkit.Bukkit;
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -44,6 +47,11 @@ public class Main extends JavaPlugin {
 			Bukkit.getConsoleSender().sendMessage(prefix + "§aerfolgreich mit Vault verbunden!");
 		} else {
 			Bukkit.getConsoleSender().sendMessage(prefix + "§ckonnte nicht mit Vault verbunden werden!");
+		}
+		for(Player players : Bukkit.getOnlinePlayers()) {
+			ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
+			
+			players.getInventory().addItem(carrot);
 		}
 	}
 	
