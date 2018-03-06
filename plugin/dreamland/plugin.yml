@@ -18,3 +18,5 @@ commands:
       description: mute other player
    gm:
       description: change the gamemode
+   build:
+      description: go into building mode
