@@ -1,9 +1,6 @@
 package de.zwibbltv.dreamland.main;
 
-import java.util.ArrayList;
-
 import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -24,7 +21,6 @@ public class Main extends JavaPlugin {
 	
 	private static Main plugin;
 	public static Economy economy = null;
-	public static ArrayList<Player> build = new ArrayList<Player>();
 	
 	public String prefix = "§e[Dreamland] ";
 	
