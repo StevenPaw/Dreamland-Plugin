@@ -20,5 +20,3 @@ commands:
       description: change the gamemode
    build:
       description: go into building mode
-   yt:
-      description: shows our youtube-channel
