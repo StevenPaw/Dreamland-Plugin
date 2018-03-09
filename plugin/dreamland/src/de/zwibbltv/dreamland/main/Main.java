@@ -21,12 +21,23 @@ import net.milkbowl.vault.economy.Economy;
 public class Main extends JavaPlugin {
 	
 	private static Main plugin;
+
+	public static String getNoPerms() {
+		return noPerms;
+	}
+	public static void setInstance(Main instance) {
+		Main.instance = instance;
+	}
+	private static String noPerms = "§cYou may not use this command";
+	private static Main instance;
+	
 	public static Economy economy = null;
 	
 	public String prefix = "§e[Dreamland] ";
 	
 	@Override
-	public void onEnable() {		
+	public void onEnable() {
+		setInstance(this);
 		plugin = this;
 		this.setupEconomy();
 		
