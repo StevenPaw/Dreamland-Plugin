@@ -1,6 +1,6 @@
 players:
   StevenPaw:
-    paytime: 1964
+    paytime: 2759
     bank:
       created_time: '2017-11-24 21:58:44'
       money: 0
@@ -9,7 +9,7 @@ players:
       withdraws_made: 0
       bankcard: 0
       bankcard_use: 0
-    money: 60.0
+    money: 102.0
   ZwibblTV:
     paytime: 2363
     money: 55.0
@@ -52,5 +52,5 @@ players:
     money: 105.0
     paytime: 915
   StevenDragon:
-    money: 10.0
-    paytime: 2444
+    money: 15.0
+    paytime: 328

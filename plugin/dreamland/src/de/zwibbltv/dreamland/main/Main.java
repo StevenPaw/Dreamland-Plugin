@@ -1,6 +1,7 @@
 package de.zwibbltv.dreamland.main;
 
 import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -28,6 +29,17 @@ public class Main extends JavaPlugin {
 	public void onEnable() {		
 		plugin = this;
 		this.setupEconomy();
+		
+		Bukkit.getScheduler().runTaskTimer(this, new Runnable() {
+		    @Override
+		    public void run() {
+		    	
+		    	for(Player p : Bukkit.getOnlinePlayers()) {
+		    		de.zwibbltv.dreamland.main.updateScoreboard.update(p);
+		        }
+		        
+		    }
+		}, 20l, 20l);
 		
 	Bukkit.getConsoleSender().sendMessage(prefix + "§a§lerfolgreich gestartet!");
 	
