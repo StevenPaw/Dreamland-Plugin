@@ -32,28 +32,31 @@ public class updateScoreboard {
         player = Bukkit.getServer().getOnlinePlayers().size();
         
         if(CMDbuild.buildallowed.contains(p) == false) {
-        	if(PermissionsEx.getUser(p).inGroup("Default")) {
-        		Score rank = obj.getScore("§7Guest");
-        		rank.setScore(0);
-        	}
-        	else if(PermissionsEx.getUser(p).inGroup("Player")) {
-        		Score rank = obj.getScore("§fMember");
-        		rank.setScore(0);
-        	}
-        	else if(PermissionsEx.getUser(p).inGroup("VIP")) {
-        		Score rank = obj.getScore("§dVIP");
+        	if(PermissionsEx.getUser(p).inGroup("Owner")) {
+        		Score rank = obj.getScore("§4Owner");
         		rank.setScore(0);
         	}
         	else if(PermissionsEx.getUser(p).inGroup("Admin")) {
         		Score rank = obj.getScore("§bAdmin");
         		rank.setScore(0);
         	}
-        	else if(PermissionsEx.getUser(p).inGroup("Owner")) {
-        		Score rank = obj.getScore("§4Owner");
+        	else if(PermissionsEx.getUser(p).inGroup("VIP")) {
+            	Score rank = obj.getScore("§dVIP");
+            	rank.setScore(0);
+            }
+        	else if(PermissionsEx.getUser(p).inGroup("Player")) {
+        		Score rank = obj.getScore("§fMember");
         		rank.setScore(0);
         	}
+        	else if(PermissionsEx.getUser(p).inGroup("Default")) {
+        		Score rank = obj.getScore("§7Guest");
+        		rank.setScore(0);
+        	}
+        	        	
+        	
+        	
         } else if (CMDbuild.buildallowed.contains(p) == true) {
-        	Score rank = obj.getScore("§7BUILDMODE");
+        	Score rank = obj.getScore("§4BUILDMODE");
     		rank.setScore(0);
         }
 
