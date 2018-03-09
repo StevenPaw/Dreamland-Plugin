@@ -25,6 +25,11 @@ public class Main extends JavaPlugin {
 	public static String getNoPerms() {
 		return noPerms;
 	}
+	
+	public static Main getInstance() {
+		return instance;
+	}
+
 	public static void setInstance(Main instance) {
 		Main.instance = instance;
 	}
