@@ -13,6 +13,7 @@ import de.zwibbltv.dreamland.commands.CMDkit;
 import de.zwibbltv.dreamland.commands.CMDmute;
 import de.zwibbltv.dreamland.commands.CMDsetspawn;
 import de.zwibbltv.dreamland.commands.CMDspawn;
+import de.zwibbltv.dreamland.commands.CMDyt;
 import de.zwibbltv.dreamland.listener.JoinListener;
 import de.zwibbltv.dreamland.listener.MenuListener;
 import de.zwibbltv.dreamland.listener.scoreboardListener;
@@ -50,6 +51,7 @@ public class Main extends JavaPlugin {
 		getCommand("mute").setExecutor(new CMDmute());
 		getCommand("gm").setExecutor(new CMDgamemode());
 		getCommand("build").setExecutor(new CMDbuild());
+		getCommand("yt").setExecutor(new CMDyt());		
 		
 		PluginManager pm = Bukkit.getPluginManager();	
 		pm.registerEvents(new JoinListener(), this);
