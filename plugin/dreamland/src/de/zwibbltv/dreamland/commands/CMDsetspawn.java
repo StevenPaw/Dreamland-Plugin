@@ -35,7 +35,7 @@ public class CMDsetspawn implements CommandExecutor{
 				} else
 					p.sendMessage("§cPlease use /setspawn");
 			} else
-				p.sendMessage("§cYou may not use this command");
+				p.sendMessage(Main.getNoPerms());
 			
 		}
 		

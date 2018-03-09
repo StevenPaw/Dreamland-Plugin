@@ -36,7 +36,7 @@ public class CMDspawn implements CommandExecutor {
 				} else
 					p.sendMessage("§cPlease use /spawn");
 			} else
-				p.sendMessage("§cYou may not use this command");
+				p.sendMessage(Main.getNoPerms());
 		}
 		
 		return false;

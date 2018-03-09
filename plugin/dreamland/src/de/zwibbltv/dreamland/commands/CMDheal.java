@@ -6,6 +6,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import de.zwibbltv.dreamland.main.Main;
+
 public class CMDheal implements CommandExecutor {
 
 	@Override
@@ -19,7 +21,7 @@ public class CMDheal implements CommandExecutor {
 						p.setFoodLevel(20);
 						p.sendMessage("§aYou has been healed!");
 					} else 
-						p.sendMessage("§cYou may not use this command");
+						p.sendMessage(Main.getNoPerms());
 						
 					} else if (args.length == 1) {						
 						Player target = Bukkit.getPlayer(args[0]);
@@ -30,7 +32,7 @@ public class CMDheal implements CommandExecutor {
 								target.sendMessage("§aYou has been healed by §6" + p.getName() + "§a!");
 								p.sendMessage("§aYou healed §6" + target.getName() + "§a!");	
 							} else 
-								p.sendMessage("§cYou may not use this command");		
+								p.sendMessage(Main.getNoPerms());		
 								
 						} else 
 							p.sendMessage("§6" + args[0] + "§c is not online!");

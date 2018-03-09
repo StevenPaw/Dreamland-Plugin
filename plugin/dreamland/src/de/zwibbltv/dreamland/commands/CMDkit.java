@@ -10,6 +10,8 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import de.zwibbltv.dreamland.main.Main;
+
 public class CMDkit implements CommandExecutor {
 
 	@Override
@@ -35,7 +37,7 @@ public class CMDkit implements CommandExecutor {
 					} else 
 						p.sendMessage("§cPlease use /kit");						
 				} else 
-					p.sendMessage("§cYou may not use this command");						
+					p.sendMessage(Main.getNoPerms());						
 			}
 		}
 		return false;

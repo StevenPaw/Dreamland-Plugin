@@ -20,3 +20,9 @@ commands:
       description: change the gamemode
    build:
       description: go into building mode
+   warp:
+      description: use it to warp
+   setwarp:
+      description: create a warp
+   removewarp:
+      description: delete a warp

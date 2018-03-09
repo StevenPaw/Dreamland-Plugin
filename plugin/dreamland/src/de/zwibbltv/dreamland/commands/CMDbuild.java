@@ -10,6 +10,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
+import de.zwibbltv.dreamland.main.Main;
+
 
 public class CMDbuild implements CommandExecutor {
 	public static ArrayList<Player> buildallowed = new ArrayList<Player>();
@@ -40,9 +42,8 @@ public class CMDbuild implements CommandExecutor {
 							p.sendMessage("§aYou are now a builder!");
 						}
 
-					} else {
-						p.sendMessage("§cYou may not use this command");
-					}
+					} else
+						p.sendMessage(Main.getNoPerms());
 				}
 			}
 		}
