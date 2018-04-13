@@ -17,6 +17,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import de.zwibbltv.dreamland.commands.CMDbuild;
 import de.zwibbltv.dreamland.main.ItemBuilder;
+import de.zwibbltv.dreamland.main.Main;
 
 public class MenuListener implements Listener {
 
@@ -40,9 +41,11 @@ public class MenuListener implements Listener {
 	public void onJoin(PlayerJoinEvent e) {
 
 		ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
+		ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
 
 		e.getPlayer().getInventory().clear();
 		e.getPlayer().getInventory().setItem(0, carrot);
+		e.getPlayer().getInventory().setItem(8, golden_carrot);
 
 	}
 
@@ -78,7 +81,7 @@ public class MenuListener implements Listener {
 		}
 	}
 
-	// Warpteiler-Menu
+	// Warps-Menu
 	@EventHandler
 	public void on(InventoryClickEvent e) {
 		Player p = (Player) e.getWhoClicked();
@@ -122,7 +125,7 @@ public class MenuListener implements Listener {
 
 					ItemStack spawn = new ItemStack(Material.DIAMOND_HOE);
 					ItemMeta spawnmeta = spawn.getItemMeta();
-					spawnmeta.setDisplayName("§c§lcoming soon");
+					spawnmeta.setDisplayName(Main.getcommingsoon());
 					spawn.setItemMeta(spawnmeta);
 					spawn.setDurability((short) 47);
 
@@ -149,10 +152,34 @@ public class MenuListener implements Listener {
 
 					ItemStack spawn = new ItemStack(Material.COMPASS);
 					ItemMeta spawnmeta = spawn.getItemMeta();
-					spawnmeta.setDisplayName("§aGreifenheim");
+					spawnmeta.setDisplayName("§aSpawn");
 					spawn.setItemMeta(spawnmeta);
+					
+					ItemStack Greifenheim = new ItemStack(Material.SMOOTH_BRICK);
+					ItemMeta Greifenheimmeta = Greifenheim.getItemMeta();
+					Greifenheimmeta.setDisplayName("§aGreifenheim");
+					Greifenheim.setItemMeta(Greifenheimmeta);
+					
+					ItemStack Calico = new ItemStack(Material.WOOD, 1, (short)1);
+					ItemMeta Calicometa = Calico.getItemMeta();
+					Calicometa.setDisplayName("§aCalico");
+					Calico.setItemMeta(Calicometa);
+					
+					ItemStack Lagoon = new ItemStack(Material.QUARTZ_BLOCK, 1, (short)2);
+					ItemMeta Lagoonmeta = Lagoon.getItemMeta();
+					Lagoonmeta.setDisplayName("§aLagoon");
+					Lagoon.setItemMeta(Lagoonmeta);
+					
+					ItemStack back = new ItemStack(Material.WOOL, 1, (short)14);
+					ItemMeta backmeta = Lagoon.getItemMeta();
+					backmeta.setDisplayName("§cBack");
+					back.setItemMeta(backmeta);
 
-					inv.setItem(4, spawn);
+					inv.setItem(0, spawn);
+					inv.setItem(3, Greifenheim);
+					inv.setItem(4, Calico);
+					inv.setItem(5, Lagoon);
+					inv.setItem(8, back);
 
 					p.openInventory(inv);
 				}
@@ -170,11 +197,29 @@ public class MenuListener implements Listener {
 
 		if (e.getInventory().getName().equalsIgnoreCase("§0Area-Warps")) {
 			try {
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aSpawn")) {
+					p.performCommand("warp Spawn");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}					
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aGreifenheim")) {
 					p.performCommand("warp Greifenheim");
 					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aCalico")) {
+					p.performCommand("warp Calico");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLagoon")) {
+					p.performCommand("warp Lagoon");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§cBack")) {
+					p.sendMessage(Main.getcommingsoon());
+				}				
 
 			} catch (Exception ex) {
 
@@ -190,4 +235,18 @@ public class MenuListener implements Listener {
 			}
 		}
 	}
+	
+	// VIP-Menu
+		@EventHandler
+		public void onPlayerInteract2(PlayerInteractEvent e) {
+			Player p = e.getPlayer();
+
+			if (e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK
+					|| e.getAction() == Action.LEFT_CLICK_AIR || e.getAction() == Action.LEFT_CLICK_BLOCK) {
+				
+					if (e.getMaterial().equals(Material.GOLDEN_CARROT)) {
+						p.sendMessage(Main.getcommingsoon());
+					} 				
+			}
+		}
 }

@@ -36,7 +36,7 @@ public class CMDmute implements CommandExecutor, Listener{
 					if(target != null) {
 						if(!mutedPlayers.contains(target)) {
 							mutedPlayers.add(target);
-							p.sendMessage("§aYou muted §c" + target.getName() + "§a!");
+							p.sendMessage("§aYou muted §c" + target.getName() + " §a!");
 							target.sendMessage("§cYou are now muted!");
 							
 						} else {

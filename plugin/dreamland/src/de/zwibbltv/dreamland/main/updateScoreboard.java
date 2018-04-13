@@ -52,8 +52,7 @@ public class updateScoreboard {
         		Score rank = obj.getScore("§7Guest");
         		rank.setScore(0);
         	}
-        	        	
-        	
+        	               	
         	
         } else if (CMDbuild.buildallowed.contains(p) == true) {
         	Score rank = obj.getScore("§4BUILDMODE");
@@ -62,7 +61,7 @@ public class updateScoreboard {
 
         Score eight = obj.getScore(" ");
         Score seven = obj.getScore("§aMoney:");
-        Score six = obj.getScore("§b" + money + " §6dlm");
+        Score six = obj.getScore("§b" + money);
         Score five = obj.getScore("  ");
         Score four = obj.getScore("§aOnline:");
         Score three = obj.getScore("§b" + player);

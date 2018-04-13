@@ -30,6 +30,10 @@ public class Main extends JavaPlugin {
 		return noPerms;
 	}
 	
+	public static String getcommingsoon() {
+		return commingsoon;
+	}
+	
 	public static Main getInstance() {
 		return instance;
 	}
@@ -38,6 +42,7 @@ public class Main extends JavaPlugin {
 		Main.instance = instance;
 	}
 	private static String noPerms = "§cYou may not use this command";
+	private static String commingsoon = "§7>> §cComming soon!";
 	private static Main instance;
 	
 	public static Economy economy = null;
