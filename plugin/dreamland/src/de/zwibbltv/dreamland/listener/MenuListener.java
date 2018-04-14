@@ -61,6 +61,9 @@ public class MenuListener implements Listener {
 				if (e.getMaterial().equals(Material.CARROT_ITEM)) {
 					openMenuMain(p);
 				}
+				else {
+					de.zwibbltv.dreamland.attractions.ToI.test(p);
+				}
 			} catch (Exception ex) {
 
 			}
