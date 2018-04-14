@@ -125,6 +125,12 @@ public class MenuListener implements Listener {
 					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}	
+				
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aExplorers Cave")) {
+					p.performCommand("warp Explorers_Cave");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}	
 
 			} catch (Exception ex) {
 
@@ -201,6 +207,12 @@ public class MenuListener implements Listener {
 		public void openMenuAttractions(Player p) {
 			Inventory inv = Bukkit.createInventory(null, 9 * 1, "§0Attraktion-Warps");
 
+			ItemStack ExplorersCave = new ItemStack(Material.COBBLESTONE);
+			ItemMeta ExplorersCavemeta = ExplorersCave.getItemMeta();
+			ExplorersCavemeta.setDisplayName("§aExplorers Cave");
+			ExplorersCave.setItemMeta(ExplorersCavemeta);
+			ExplorersCave.setDurability((short) 22);
+			
 			ItemStack flyingpegasus = new ItemStack(Material.ELYTRA);
 			ItemMeta flyingpegasusmeta = flyingpegasus.getItemMeta();
 			flyingpegasusmeta.setDisplayName("§aFlying Pegasus");
@@ -222,9 +234,10 @@ public class MenuListener implements Listener {
 			backmeta.setDisplayName("§cBack");
 			back.setItemMeta(backmeta);
 
-			inv.setItem(3, flyingpegasus);
+			inv.setItem(0, ExplorersCave);
+			inv.setItem(2, flyingpegasus);
 			inv.setItem(4, Westernrace);
-			inv.setItem(5, ToI);
+			inv.setItem(6, ToI);
 			inv.setItem(8, back);
 
 			p.openInventory(inv);
