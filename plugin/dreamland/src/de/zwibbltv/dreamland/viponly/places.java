@@ -30,7 +30,7 @@ public class places {
 				Location ploc = p.getLocation();
 				Double d = ploc.distance(new Location(w, -880, 16.0, 656.0));
 				if(d <= 2) {
-					Location location = new Location(w, -880, 16.0, 653.50, 0, 0);
+					Location location = new Location(w, -880.5, 16.0, 653.50, 0, 0);
 					p.teleport(location);
 					p.sendMessage(Main.getVIP());
 				}			
