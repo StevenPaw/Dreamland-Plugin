@@ -1,24 +1,23 @@
 package de.zwibbltv.dreamland.commands;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
+import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
+import de.zwibbltv.dreamland.main.ItemBuilder;
 import de.zwibbltv.dreamland.main.Main;
 
 
 public class CMDbuild implements CommandExecutor {
 	public static ArrayList<Player> buildallowed = new ArrayList<Player>();
 	
-	private HashMap<Player, ItemStack[]> inventorySave = new HashMap<>();
-
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 
@@ -33,14 +32,21 @@ public class CMDbuild implements CommandExecutor {
 							buildallowed.remove(p);
 							p.setGameMode(GameMode.ADVENTURE);
 							p.sendMessage("§cYou are no builder any longer!");
-							p.getInventory().setContents(inventorySave.get(p));
-							inventorySave.remove(p);
+							
+							ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
+							ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
+							
+							p.getPlayer().getInventory().clear();
+							p.getPlayer().getEquipment().clear();							
+							p.getPlayer().getInventory().setItem(0, carrot);
+							p.getPlayer().getInventory().setItem(8, golden_carrot);
 
 						} else {
 							buildallowed.add(p);
-							inventorySave.put(p, p.getInventory().getContents());
 							p.setGameMode(GameMode.CREATIVE);
 							p.sendMessage("§aYou are now a builder!");
+							p.getPlayer().getInventory().clear();
+							p.getPlayer().getEquipment().clear();
 						}
 
 					}
@@ -53,15 +59,23 @@ public class CMDbuild implements CommandExecutor {
 									target.setGameMode(GameMode.ADVENTURE);
 									target.sendMessage("§cYou are no builder any longer! §7(By: §6" + p.getName() + "§7)");
 									p.sendMessage("§6" + target.getName() + "§a is no builder any longer!");
-									target.getInventory().setContents(inventorySave.get(target));
-									inventorySave.remove(target);
+									
+									ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
+									ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
+
+									target.getPlayer().getInventory().clear();
+									target.getPlayer().getEquipment().clear();
+									target.getPlayer().getInventory().setItem(0, carrot);
+									target.getPlayer().getInventory().setItem(8, golden_carrot);
 
 								} else {
 									buildallowed.add(target);
-									inventorySave.put(target, target.getInventory().getContents());
 									target.setGameMode(GameMode.CREATIVE);
 									target.sendMessage("§aYou are now a builder! §7(By: §6" + p.getName() + "§7)");
 									p.sendMessage("§6" + target.getName() + "§a is now a builder!");
+
+									target.getPlayer().getInventory().clear();
+									target.getPlayer().getEquipment().clear();
 								}
 							} else 
 								p.sendMessage("§6" + args[0] + "§c isn't online!");
