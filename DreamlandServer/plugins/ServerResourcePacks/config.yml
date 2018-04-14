@@ -1,7 +1,0 @@
-#The messages sent when a player logs in or when the /rp command is invoked
-messages: 
-    - "&4Dieser Server unterstützt ein besonderes Resource-Pack"
-    - "&4Klicke diesen Link an, um das Resource-Pack manuell herunter zu laden"
-    - "&4Um das Dreamland komplett zu genießen ist dies unumgänglich"
-#The file link to be sent when a player logs in or when the /rp command is invoked
-link: "http://www.nordland-park.de/dreamland/dreamland.zip"
