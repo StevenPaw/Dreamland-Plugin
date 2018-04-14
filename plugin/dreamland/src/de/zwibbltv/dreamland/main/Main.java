@@ -39,12 +39,17 @@ public class Main extends JavaPlugin {
 	public static Main getInstance() {
 		return instance;
 	}
+	
+	public static String getVIP() {
+		return VIP;
+	}
 
 	public static void setInstance(Main instance) {
 		Main.instance = instance;
 	}
 	private static String noPerms = "§cYou may not use this command";
 	private static String commingsoon = "§7>> §cComming soon!";
+	private static String VIP = "§cBuy §6VIP §cto get access to exclusive features!";
 	private static Main instance;
 	
 	public static Economy economy = null;
@@ -64,10 +69,11 @@ public class Main extends JavaPlugin {
 		    	
 		    	for(Player p : Bukkit.getOnlinePlayers()) {
 		    		de.zwibbltv.dreamland.main.updateScoreboard.update(p);
+		    		de.zwibbltv.dreamland.viponly.places.locations(p);
 		        }
 		        
 		    }
-		}, 20l, 20l);
+		}, 10l, 10l);
 		
 	Bukkit.getConsoleSender().sendMessage(prefix + "§a§lerfolgreich gestartet!");
 	
