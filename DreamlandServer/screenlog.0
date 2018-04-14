@@ -1,0 +1,735 @@
+*** Error, this build is outdated ***
+*** Please download a new build as per instructions from https://www.spigotmc.org/ ***
+*** Server will start in 15 seconds ***
+Loading libraries, please wait...
+[2K[05:00:38 INFO]: Starting minecraft server version 1.12.2
+>[2K[05:00:38 INFO]: Loading properties
+>>[2K[05:00:38 INFO]: Default game type: SURVIVAL
+>[2K[05:00:39 INFO]: This server is running CraftBukkit version git-Spigot-4bd94dc-3a482bd (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+>[2K[05:00:40 INFO]: Server Ping Player Sample Count: 12
+>[2K[05:00:40 INFO]: Using 4 threads for Netty based IO
+>[2K[05:00:40 INFO]: Debug logging is disabled
+>[2K[05:00:40 INFO]: Generating keypair
+>[2K[05:00:41 INFO]: Starting Minecraft server on 134.255.244.152:25565
+>[2K[05:00:41 INFO]: Using epoll channel type
+>[2K[05:00:42 INFO]: Set PluginClassLoader as parallel capable
+>[2K[05:00:43 INFO]: [ServerResourcePacks] Loading ServerResourcePacks v1.5
+>[2K[05:00:43 INFO]: [dynmap] Loading dynmap v2.5-Dev201706100405
+>[2K[05:00:43 INFO]: [dynmap] version=git-Spigot-4bd94dc-3a482bd (MC: 1.12.2)
+>[2K[05:00:44 INFO]: [dynmap] Mod Support API available
+>[2K[05:00:44 INFO]: [UltimateRides] Loading UltimateRides v2.0
+>[2K[05:00:44 INFO]: [WorldEdit] Loading WorldEdit v6.1.8-SNAPSHOT;cd4729f
+>[2K[05:00:44 INFO]: [OpenInv] Loading OpenInv v3.3.2
+>[2K[05:00:44 INFO]: [AntiCheatPlus] Loading AntiCheatPlus v2.1.4
+>[2K[05:00:44 INFO]: [VeinMiner] Loading VeinMiner v1.11.3
+>[2K[05:00:44 INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.8.5
+>[2K[05:00:44 INFO]: [Dreamland] Loading Dreamland v1.0
+>[2K[05:00:44 INFO]: [BuycraftX] Loading BuycraftX v10.5.0
+>[2K[05:00:44 INFO]: [SleepPercentage] Loading SleepPercentage v1.0.3
+>[2K[05:00:44 INFO]: [WorldGuard] Loading WorldGuard v6.2.1;84bc322
+>[2K[05:00:44 INFO]: [Multiverse-Core] Loading Multiverse-Core v2.5.0-b727
+>[2K[05:00:44 INFO]: [AdvancedPortals] Loading AdvancedPortals v0.0.36
+>[2K[05:00:44 INFO]: [ImageMaps] Loading ImageMaps v0.4.3
+>[2K[05:00:44 INFO]: [WeatherVote] Loading WeatherVote v1.4
+>[2K[05:00:44 INFO]: [Multiverse-Inventories] Loading Multiverse-Inventories v2.5.0-SNAPSHOT-b418
+>[2K[05:00:44 INFO]: [PermissionsEx] Loading PermissionsEx v1.23.4
+>[2K[05:00:44 INFO]: [MineWallet] Loading MineWallet v1.2.4
+>[2K[05:00:44 INFO]: [Multiverse-Portals] Loading Multiverse-Portals v2.5.0-b751
+>[2K[05:00:44 INFO]: [Hat] Loading Hat v1.0
+>[2K[05:00:44 INFO]: [Vault] Loading Vault v1.6.1
+>[2K[05:00:44 INFO]: [ChairStairs] Loading ChairStairs v1.1
+>[2K[05:00:44 INFO]: [MyCommand] Loading MyCommand v5.3.4
+>[2K[05:00:44 INFO]: [OpenAudioMc] Loading OpenAudioMc v4.0
+>[2K[05:00:44 INFO]: [ScoreboardStats] Loading ScoreboardStats v0.10.6
+>[2K[05:00:44 INFO]: [AdvancedAchievements] Loading AdvancedAchievements v5.7.1
+>[2K[05:00:44 INFO]: [Vault] Enabling Vault v1.6.1
+>[2K[05:00:44 INFO]: [Vault] [Permission] PermissionsEx found: Waiting
+>[2K[05:00:44 INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+>[2K[05:00:44 INFO]: [Vault] [Chat] PermissionsEx found: Waiting
+>[2K[05:00:44 INFO]: [Vault] Plugin enabled (110ms)
+>[2K[05:00:44 INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+>[2K[05:00:44 INFO]: Preparing level "spawn"
+>[2K[05:00:45 INFO]: -------- World Settings For [spawn] --------
+>[2K[05:00:45 INFO]: Mob Spawn Range: 4
+>[2K[05:00:45 INFO]: Cactus Growth Modifier: 100%
+>[2K[05:00:45 INFO]: Cane Growth Modifier: 100%
+>[2K[05:00:45 INFO]: Melon Growth Modifier: 100%
+>[2K[05:00:45 INFO]: Mushroom Growth Modifier: 100%
+>[2K[05:00:45 INFO]: Pumpkin Growth Modifier: 100%
+>[2K[05:00:45 INFO]: Sapling Growth Modifier: 100%
+>[2K[05:00:45 INFO]: Wheat Growth Modifier: 100%
+>[2K[05:00:45 INFO]: NetherWart Growth Modifier: 100%
+>[2K[05:00:45 INFO]: Vine Growth Modifier: 100%
+>[2K[05:00:45 INFO]: Cocoa Growth Modifier: 100%
+>[2K[05:00:45 INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+>[2K[05:00:45 INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+>[2K[05:00:45 INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+>[2K[05:00:45 INFO]: Random Lighting Updates: false
+>[2K[05:00:45 INFO]: Structure Info Saving: true
+>[2K[05:00:45 INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+>[2K[05:00:45 INFO]: Max TNT Explosions: 100
+>[2K[05:00:45 INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+>[2K[05:00:45 INFO]: Item Despawn Rate: 6000
+>[2K[05:00:45 INFO]: Item Merge Radius: 2.5
+>[2K[05:00:45 INFO]: Arrow Despawn Rate: 1200
+>[2K[05:00:45 INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+>[2K[05:00:45 INFO]: View Distance: 10
+>[2K[05:00:45 INFO]: Experience Merge Radius: 3.0
+>[2K[05:00:45 INFO]: Zombie Aggressive Towards Villager: true
+>[2K[05:00:45 INFO]: Nerfing mobs spawned from spawners: false
+>[2K[05:00:47 INFO]: -------- World Settings For [spawn_nether] --------
+>[2K[05:00:47 INFO]: Mob Spawn Range: 4
+>[2K[05:00:47 INFO]: Cactus Growth Modifier: 100%
+>[2K[05:00:47 INFO]: Cane Growth Modifier: 100%
+>[2K[05:00:47 INFO]: Melon Growth Modifier: 100%
+>[2K[05:00:47 INFO]: Mushroom Growth Modifier: 100%
+>[2K[05:00:47 INFO]: Pumpkin Growth Modifier: 100%
+>[2K[05:00:47 INFO]: Sapling Growth Modifier: 100%
+>[2K[05:00:47 INFO]: Wheat Growth Modifier: 100%
+>[2K[05:00:47 INFO]: NetherWart Growth Modifier: 100%
+>[2K[05:00:47 INFO]: Vine Growth Modifier: 100%
+>[2K[05:00:47 INFO]: Cocoa Growth Modifier: 100%
+>[2K[05:00:47 INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+>[2K[05:00:47 INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+>[2K[05:00:47 INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+>[2K[05:00:47 INFO]: Random Lighting Updates: false
+>[2K[05:00:47 INFO]: Structure Info Saving: true
+>[2K[05:00:47 INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+>[2K[05:00:47 INFO]: Max TNT Explosions: 100
+>[2K[05:00:47 INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+>[2K[05:00:47 INFO]: Item Despawn Rate: 6000
+>[2K[05:00:47 INFO]: Item Merge Radius: 2.5
+>[2K[05:00:47 INFO]: Arrow Despawn Rate: 1200
+>[2K[05:00:47 INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+>[2K[05:00:47 INFO]: View Distance: 10
+>[2K[05:00:47 INFO]: Experience Merge Radius: 3.0
+>[2K[05:00:47 INFO]: Zombie Aggressive Towards Villager: true
+>[2K[05:00:47 INFO]: Nerfing mobs spawned from spawners: false
+>[2K[05:00:47 INFO]: -------- World Settings For [spawn_the_end] --------
+>[2K[05:00:47 INFO]: Mob Spawn Range: 4
+>[2K[05:00:47 INFO]: Cactus Growth Modifier: 100%
+>[2K[05:00:47 INFO]: Cane Growth Modifier: 100%
+>[2K[05:00:47 INFO]: Melon Growth Modifier: 100%
+>[2K[05:00:47 INFO]: Mushroom Growth Modifier: 100%
+>[2K[05:00:47 INFO]: Pumpkin Growth Modifier: 100%
+>[2K[05:00:47 INFO]: Sapling Growth Modifier: 100%
+>[2K[05:00:47 INFO]: Wheat Growth Modifier: 100%
+>[2K[05:00:47 INFO]: NetherWart Growth Modifier: 100%
+>[2K[05:00:47 INFO]: Vine Growth Modifier: 100%
+>[2K[05:00:47 INFO]: Cocoa Growth Modifier: 100%
+>[2K[05:00:47 INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+>[2K[05:00:47 INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+>[2K[05:00:47 INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+>[2K[05:00:47 INFO]: Random Lighting Updates: false
+>[2K[05:00:47 INFO]: Structure Info Saving: true
+>[2K[05:00:47 INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+>[2K[05:00:47 INFO]: Max TNT Explosions: 100
+>[2K[05:00:47 INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+>[2K[05:00:47 INFO]: Item Despawn Rate: 6000
+>[2K[05:00:47 INFO]: Item Merge Radius: 2.5
+>[2K[05:00:47 INFO]: Arrow Despawn Rate: 1200
+>[2K[05:00:47 INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+>[2K[05:00:47 INFO]: View Distance: 10
+>[2K[05:00:47 INFO]: Experience Merge Radius: 3.0
+>[2K[05:00:47 INFO]: Zombie Aggressive Towards Villager: true
+>[2K[05:00:47 INFO]: Nerfing mobs spawned from spawners: false
+>[2K[05:00:47 INFO]: Preparing start region for level 0 (Seed: 7319600899537862616)
+>[2K[05:00:48 INFO]: Preparing spawn area: 29%
+>[2K[05:00:49 INFO]: Preparing spawn area: 58%
+>[2K[05:00:50 INFO]: Preparing start region for level 1 (Seed: 7319600899537862616)
+>[2K[05:00:51 INFO]: Preparing spawn area: 26%
+>[2K[05:00:52 INFO]: Preparing spawn area: 65%
+>[2K[05:00:53 INFO]: Preparing start region for level 2 (Seed: 7319600899537862616)
+>[2K[05:00:53 INFO]: [ServerResourcePacks] Enabling ServerResourcePacks v1.5
+>[2K[05:00:53 INFO]: [dynmap] Enabling dynmap v2.5-Dev201706100405
+>[2K[05:00:54 INFO]: [PermissionsEx] Enabling PermissionsEx v1.23.4
+>[2K[05:00:54 INFO]: [PermissionsEx] Initializing file backend
+>[2K[05:00:54 INFO]: [PermissionsEx] Permissions file successfully reloaded
+>[2K[05:00:54 INFO]: [Vault][Permission] PermissionsEx hooked.
+>[2K[05:00:54 INFO]: [Vault][Chat] PermissionsEx_Chat hooked.
+>[2K[05:00:54 INFO]: [dynmap] Using PermissionsEx 1.23.4 for access control
+>[2K[05:00:55 INFO]: [dynmap] Mod Support processing completed
+>[2K[05:00:56 INFO]: [dynmap] Loaded 23 shaders.
+>[2K[05:00:56 INFO]: [dynmap] Loaded 82 perspectives.
+>[2K[05:00:56 INFO]: [dynmap] Loaded 14 lightings.
+>[2K[05:01:07 INFO]: [dynmap] Web server started on address 134.255.244.152:8123
+>[2K[05:01:07 INFO]: [dynmap] version 2.5-Dev201706100405 is enabled - core version 2.5-Dev201706100401
+>[2K[05:01:07 INFO]: [dynmap] Loaded 3 maps of world 'spawn'.
+>[2K[05:01:07 INFO]: [dynmap] World 'spawn_nether' disabled
+>[2K[05:01:07 INFO]: [dynmap] World 'spawn_the_end' disabled
+>[2K[05:01:07 INFO]: [dynmap] Enabled
+>[2K[05:01:07 INFO]: [UltimateRides] Enabling UltimateRides v2.0
+>[2K[05:01:07 INFO]: [WorldEdit] Enabling WorldEdit v6.1.8-SNAPSHOT;cd4729f
+>[2K[05:01:07 INFO]: WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
+>[2K[05:01:07 INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_12_R2 as the Bukkit adapter
+>[2K[05:01:07 INFO]: [OpenInv] Enabling OpenInv v3.3.2
+>[2K[05:01:07 INFO]: [AntiCheatPlus] Enabling AntiCheatPlus v2.1.4
+>[2K[05:01:07 ERROR]: Error occurred while enabling AntiCheatPlus v2.1.4 (Is it up to date?)
+java.lang.NoSuchMethodError: org.bukkit.configuration.file.YamlConfiguration.loadConfiguration(Ljava/io/InputStream;)Lorg/bukkit/configuration/file/YamlConfiguration;
+        at net.dynamicdev.anticheat.config.ConfigurationFile.<init>(ConfigurationFile.java:62) ~[?:?]
+        at net.dynamicdev.anticheat.config.ConfigurationFile.<init>(ConfigurationFile.java:50) ~[?:?]
+        at net.dynamicdev.anticheat.config.ConfigurationFile.<init>(ConfigurationFile.java:46) ~[?:?]
+        at net.dynamicdev.anticheat.config.files.Config.<init>(Config.java:60) ~[?:?]
+        at net.dynamicdev.anticheat.config.Configuration.<init>(Configuration.java:54) ~[?:?]
+        at net.dynamicdev.anticheat.manage.AntiCheatManager.<init>(AntiCheatManager.java:51) ~[?:?]
+        at net.dynamicdev.anticheat.AntiCheat.onEnable(AntiCheat.java:65) ~[?:?]
+        at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) ~[minecraft_server.1.12.1.jar:git-Spigot-4bd94dc-3a482bd]
+        at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [minecraft_server.1.12.1.jar:git-Spigot-4bd94dc-3a482bd]
+        at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [minecraft_server.1.12.1.jar:git-Spigot-4bd94dc-3a482bd]
+        at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [minecraft_server.1.12.1.jar:git-Spigot-4bd94dc-3a482bd]
+        at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [minecraft_server.1.12.1.jar:git-Spigot-4bd94dc-3a482bd]
+        at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:422) [minecraft_server.1.12.1.jar:git-Spigot-4bd94dc-3a482bd]
+        at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:383) [minecraft_server.1.12.1.jar:git-Spigot-4bd94dc-3a482bd]
+        at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:338) [minecraft_server.1.12.1.jar:git-Spigot-4bd94dc-3a482bd]
+        at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:272) [minecraft_server.1.12.1.jar:git-Spigot-4bd94dc-3a482bd]
+        at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:545) [minecraft_server.1.12.1.jar:git-Spigot-4bd94dc-3a482bd]
+        at java.lang.Thread.run(Thread.java:748) [?:1.8.0_151]
+>[2K[05:01:07 INFO]: [VeinMiner] Enabling VeinMiner v1.11.3
+>[2K[05:01:07 INFO]: [VeinMiner] Registering events
+>[2K[05:01:07 INFO]: [VeinMiner] Registering commands
+>[2K[05:01:07 INFO]: [VeinMiner] Enabling Plugin Metrics
+>[2K[05:01:07 INFO]: [VeinMiner] Thank you for enabling Metrics! I greatly appreciate the use of plugin statistics
+>[2K[05:01:07 INFO]: [VeinMiner] Loading configuration options to local memory
+>[2K[05:01:07 INFO]: [VeinMiner] Unknown world found... "WorldName". Ignoring...
+>[2K[05:01:07 INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.8.5
+>[2K[05:01:07 INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+>[2K[05:01:07 INFO]: [PlaceholderAPI] Fetching available expansion information...
+>[2K[05:01:07 INFO]: [Dreamland] Enabling Dreamland v1.0
+>[2K[05:01:07 INFO]: --------------------------------
+>[2K[05:01:07 INFO]: Das Dreamland-Plugin startet!
+>[2K[05:01:07 INFO]: --------------------------------
+>[2K[05:01:07 INFO]: [BuycraftX] Enabling BuycraftX v10.5.0
+>[2K[05:01:08 INFO]: [BuycraftX] Validating your server key...
+>[2K[05:01:09 INFO]: [BuycraftX] A new version of BuycraftX (10.6.0) is available. Go to your server panel at https://server.buycraft.net/plugins to download the update.
+>[2K[05:01:09 INFO]: [BuycraftX] Fetching all server packages...
+>[2K[05:01:09 INFO]: [BuycraftX] Updating coupon list...
+>[2K[05:01:10 INFO]: [SleepPercentage] Enabling SleepPercentage v1.0.3
+>[2K[05:01:10 INFO]: [WorldGuard] Enabling WorldGuard v6.2.1;84bc322
+>[2K[05:01:10 INFO]: [WorldGuard] (spawn) TNT ignition is PERMITTED.
+>[2K[05:01:10 INFO]: [WorldGuard] (spawn) Lighters are PERMITTED.
+>[2K[05:01:10 INFO]: [WorldGuard] (spawn) Lava fire is blocked.
+>[2K[05:01:10 INFO]: [WorldGuard] (spawn) Fire spread is UNRESTRICTED.
+>[2K[05:01:10 INFO]: [WorldGuard] Loaded configuration for world 'spawn'
+>[2K[05:01:10 INFO]: [WorldGuard] (spawn_nether) TNT ignition is PERMITTED.
+>[2K[05:01:10 INFO]: [WorldGuard] (spawn_nether) Lighters are PERMITTED.
+>[2K[05:01:10 INFO]: [WorldGuard] (spawn_nether) Lava fire is blocked.
+>[2K[05:01:10 INFO]: [WorldGuard] (spawn_nether) Fire spread is UNRESTRICTED.
+>[2K[05:01:10 INFO]: [WorldGuard] Loaded configuration for world 'spawn_nether'
+>[2K[05:01:10 INFO]: [WorldGuard] (spawn_the_end) TNT ignition is PERMITTED.
+>[2K[05:01:10 INFO]: [WorldGuard] (spawn_the_end) Lighters are PERMITTED.
+>[2K[05:01:10 INFO]: [WorldGuard] (spawn_the_end) Lava fire is blocked.
+>[2K[05:01:10 INFO]: [WorldGuard] (spawn_the_end) Fire spread is UNRESTRICTED.
+>[2K[05:01:10 INFO]: [WorldGuard] Loaded configuration for world 'spawn_the_end'
+>[2K[05:01:10 INFO]: [WorldGuard] Loading region data...
+>[2K[05:01:10 INFO]: [Multiverse-Core] Enabling Multiverse-Core v2.5.0-b727
+>[2K[05:01:10 INFO]: -------- World Settings For [dreamland] --------
+>[2K[05:01:10 INFO]: Mob Spawn Range: 4
+>[2K[05:01:10 INFO]: Cactus Growth Modifier: 100%
+>[2K[05:01:10 INFO]: Cane Growth Modifier: 100%
+>[2K[05:01:10 INFO]: Melon Growth Modifier: 100%
+>[2K[05:01:10 INFO]: Mushroom Growth Modifier: 100%
+>[2K[05:01:10 INFO]: Pumpkin Growth Modifier: 100%
+>[2K[05:01:10 INFO]: Sapling Growth Modifier: 100%
+>[2K[05:01:10 INFO]: Wheat Growth Modifier: 100%
+>[2K[05:01:10 INFO]: NetherWart Growth Modifier: 100%
+>[2K[05:01:10 INFO]: Vine Growth Modifier: 100%
+>[2K[05:01:10 INFO]: Cocoa Growth Modifier: 100%
+>[2K[05:01:10 INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+>[2K[05:01:10 INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+>[2K[05:01:10 INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+>[2K[05:01:10 INFO]: Random Lighting Updates: false
+>[2K[05:01:10 INFO]: Structure Info Saving: true
+>[2K[05:01:10 INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+>[2K[05:01:10 INFO]: Max TNT Explosions: 100
+>[2K[05:01:10 INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+>[2K[05:01:10 INFO]: Item Despawn Rate: 6000
+>[2K[05:01:10 INFO]: Item Merge Radius: 2.5
+>[2K[05:01:10 INFO]: Arrow Despawn Rate: 1200
+>[2K[05:01:10 INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+>[2K[05:01:10 INFO]: View Distance: 10
+>[2K[05:01:10 INFO]: Experience Merge Radius: 3.0
+>[2K[05:01:10 INFO]: Zombie Aggressive Towards Villager: true
+>[2K[05:01:10 INFO]: Nerfing mobs spawned from spawners: false
+>[2K[05:01:11 INFO]: Loaded 1 custom command functions
+>[2K[05:01:11 INFO]: Preparing start region for level 3 (Seed: -1074879360853737246)
+>[2K[05:01:11 ERROR]: Chunk file at -60,35 is in the wrong location; relocating. (Expected -60, 35, got -41, 51)
+>[2K[05:01:11 INFO]: [WorldGuard] (dreamland) TNT ignition is PERMITTED.
+>[2K[05:01:11 INFO]: [WorldGuard] (dreamland) Lighters are PERMITTED.
+>[2K[05:01:11 INFO]: [WorldGuard] (dreamland) Lava fire is blocked.
+>[2K[05:01:11 INFO]: [WorldGuard] (dreamland) Fire spread is UNRESTRICTED.
+>[2K[05:01:11 INFO]: [WorldGuard] Loaded configuration for world 'dreamland'
+>[2K[05:01:11 INFO]: [dynmap] Loaded 3 maps of world 'dreamland'.
+>[2K[05:01:11 INFO]: -------- World Settings For [creative_nether] --------
+>[2K[05:01:11 INFO]: Mob Spawn Range: 4
+>[2K[05:01:11 INFO]: Cactus Growth Modifier: 100%
+>[2K[05:01:11 INFO]: Cane Growth Modifier: 100%
+>[2K[05:01:11 INFO]: Melon Growth Modifier: 100%
+>[2K[05:01:11 INFO]: Mushroom Growth Modifier: 100%
+>[2K[05:01:11 INFO]: Pumpkin Growth Modifier: 100%
+>[2K[05:01:11 INFO]: Sapling Growth Modifier: 100%
+>[2K[05:01:11 INFO]: Wheat Growth Modifier: 100%
+>[2K[05:01:11 INFO]: NetherWart Growth Modifier: 100%
+>[2K[05:01:11 INFO]: Vine Growth Modifier: 100%
+>[2K[05:01:11 INFO]: Cocoa Growth Modifier: 100%
+>[2K[05:01:11 INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+>[2K[05:01:11 INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+>[2K[05:01:11 INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+>[2K[05:01:11 INFO]: Random Lighting Updates: false
+>[2K[05:01:11 INFO]: Structure Info Saving: true
+>[2K[05:01:11 INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+>[2K[05:01:11 INFO]: Max TNT Explosions: 100
+>[2K[05:01:11 INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+>[2K[05:01:11 INFO]: Item Despawn Rate: 6000
+>[2K[05:01:11 INFO]: Item Merge Radius: 2.5
+>[2K[05:01:11 INFO]: Arrow Despawn Rate: 1200
+>[2K[05:01:11 INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+>[2K[05:01:11 INFO]: View Distance: 10
+>[2K[05:01:11 INFO]: Experience Merge Radius: 3.0
+>[2K[05:01:11 INFO]: Zombie Aggressive Towards Villager: true
+>[2K[05:01:11 INFO]: Nerfing mobs spawned from spawners: false
+>[2K[05:01:11 INFO]: Loaded 1 custom command functions
+>[2K[05:01:11 INFO]: Preparing start region for level 4 (Seed: -5816359241185739647)
+>[2K[05:01:12 ERROR]: Chunk file at 16,16 is in the wrong location; relocating. (Expected 16, 16, got 19, 16)
+>[2K[05:01:12 ERROR]: Chunk file at 20,11 is in the wrong location; relocating. (Expected 20, 11, got 15, 15)
+>[2K[05:01:12 INFO]: Preparing spawn area for creative_nether, 77%
+>[2K[05:01:12 INFO]: [WorldGuard] (creative_nether) TNT ignition is PERMITTED.
+>[2K[05:01:12 INFO]: [WorldGuard] (creative_nether) Lighters are PERMITTED.
+>[2K[05:01:12 INFO]: [WorldGuard] (creative_nether) Lava fire is blocked.
+>[2K[05:01:12 INFO]: [WorldGuard] (creative_nether) Fire spread is UNRESTRICTED.
+>[2K[05:01:12 INFO]: [WorldGuard] Loaded configuration for world 'creative_nether'
+>[2K[05:01:12 INFO]: [dynmap] Loaded 3 maps of world 'creative_nether'.
+>[2K[05:01:12 INFO]: -------- World Settings For [test] --------
+>[2K[05:01:12 INFO]: Mob Spawn Range: 4
+>[2K[05:01:12 INFO]: Cactus Growth Modifier: 100%
+>[2K[05:01:12 INFO]: Cane Growth Modifier: 100%
+>[2K[05:01:12 INFO]: Melon Growth Modifier: 100%
+>[2K[05:01:12 INFO]: Mushroom Growth Modifier: 100%
+>[2K[05:01:12 INFO]: Pumpkin Growth Modifier: 100%
+>[2K[05:01:12 INFO]: Sapling Growth Modifier: 100%
+>[2K[05:01:12 INFO]: Wheat Growth Modifier: 100%
+>[2K[05:01:12 INFO]: NetherWart Growth Modifier: 100%
+>[2K[05:01:12 INFO]: Vine Growth Modifier: 100%
+>[2K[05:01:12 INFO]: Cocoa Growth Modifier: 100%
+>[2K[05:01:12 INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+>[2K[05:01:12 INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+>[2K[05:01:12 INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+>[2K[05:01:12 INFO]: Random Lighting Updates: false
+>[2K[05:01:12 INFO]: Structure Info Saving: true
+>[2K[05:01:12 INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+>[2K[05:01:12 INFO]: Max TNT Explosions: 100
+>[2K[05:01:12 INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+>[2K[05:01:12 INFO]: Item Despawn Rate: 6000
+>[2K[05:01:12 INFO]: Item Merge Radius: 2.5
+>[2K[05:01:12 INFO]: Arrow Despawn Rate: 1200
+>[2K[05:01:12 INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+>[2K[05:01:12 INFO]: View Distance: 10
+>[2K[05:01:12 INFO]: Experience Merge Radius: 3.0
+>[2K[05:01:12 INFO]: Zombie Aggressive Towards Villager: true
+>[2K[05:01:12 INFO]: Nerfing mobs spawned from spawners: false
+>[2K[05:01:12 INFO]: Preparing start region for level 5 (Seed: -4524152099610241532)
+>[2K[05:01:13 INFO]: Preparing spawn area for test, 93%
+>[2K[05:01:14 INFO]: [WorldGuard] (test) TNT ignition is PERMITTED.
+>[2K[05:01:14 INFO]: [WorldGuard] (test) Lighters are PERMITTED.
+>[2K[05:01:14 INFO]: [WorldGuard] (test) Lava fire is blocked.
+>[2K[05:01:14 INFO]: [WorldGuard] (test) Fire spread is UNRESTRICTED.
+>[2K[05:01:14 INFO]: [WorldGuard] Loaded configuration for world 'test'
+>[2K[05:01:14 INFO]: [dynmap] Loaded 3 maps of world 'test'.
+>[2K[05:01:14 INFO]: -------- World Settings For [survival] --------
+>[2K[05:01:14 INFO]: Mob Spawn Range: 4
+>[2K[05:01:14 INFO]: Cactus Growth Modifier: 100%
+>[2K[05:01:14 INFO]: Cane Growth Modifier: 100%
+>[2K[05:01:14 INFO]: Melon Growth Modifier: 100%
+>[2K[05:01:14 INFO]: Mushroom Growth Modifier: 100%
+>[2K[05:01:14 INFO]: Pumpkin Growth Modifier: 100%
+>[2K[05:01:14 INFO]: Sapling Growth Modifier: 100%
+>[2K[05:01:14 INFO]: Wheat Growth Modifier: 100%
+>[2K[05:01:14 INFO]: NetherWart Growth Modifier: 100%
+>[2K[05:01:14 INFO]: Vine Growth Modifier: 100%
+>[2K[05:01:14 INFO]: Cocoa Growth Modifier: 100%
+>[2K[05:01:14 INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+>[2K[05:01:14 INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+>[2K[05:01:14 INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+>[2K[05:01:14 INFO]: Random Lighting Updates: false
+>[2K[05:01:14 INFO]: Structure Info Saving: true
+>[2K[05:01:14 INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+>[2K[05:01:14 INFO]: Max TNT Explosions: 100
+>[2K[05:01:14 INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+>[2K[05:01:14 INFO]: Item Despawn Rate: 6000
+>[2K[05:01:14 INFO]: Item Merge Radius: 2.5
+>[2K[05:01:14 INFO]: Arrow Despawn Rate: 1200
+>[2K[05:01:14 INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+>[2K[05:01:14 INFO]: View Distance: 10
+>[2K[05:01:14 INFO]: Experience Merge Radius: 3.0
+>[2K[05:01:14 INFO]: Zombie Aggressive Towards Villager: true
+>[2K[05:01:14 INFO]: Nerfing mobs spawned from spawners: false
+>[2K[05:01:14 INFO]: Preparing start region for level 6 (Seed: -5816359241185739647)
+>[2K[05:01:15 INFO]: [WorldGuard] (survival) TNT ignition is PERMITTED.
+>[2K[05:01:15 INFO]: [WorldGuard] (survival) Lighters are PERMITTED.
+>[2K[05:01:15 INFO]: [WorldGuard] (survival) Lava fire is blocked.
+>[2K[05:01:15 INFO]: [WorldGuard] (survival) Fire spread is UNRESTRICTED.
+>[2K[05:01:15 INFO]: [WorldGuard] Loaded configuration for world 'survival'
+>[2K[05:01:15 INFO]: [dynmap] Loaded 3 maps of world 'survival'.
+>[2K[05:01:15 INFO]: -------- World Settings For [dracon] --------
+>[2K[05:01:15 INFO]: Mob Spawn Range: 4
+>[2K[05:01:15 INFO]: Cactus Growth Modifier: 100%
+>[2K[05:01:15 INFO]: Cane Growth Modifier: 100%
+>[2K[05:01:15 INFO]: Melon Growth Modifier: 100%
+>[2K[05:01:15 INFO]: Mushroom Growth Modifier: 100%
+>[2K[05:01:15 INFO]: Pumpkin Growth Modifier: 100%
+>[2K[05:01:15 INFO]: Sapling Growth Modifier: 100%
+>[2K[05:01:15 INFO]: Wheat Growth Modifier: 100%
+>[2K[05:01:15 INFO]: NetherWart Growth Modifier: 100%
+>[2K[05:01:15 INFO]: Vine Growth Modifier: 100%
+>[2K[05:01:15 INFO]: Cocoa Growth Modifier: 100%
+>[2K[05:01:15 INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+>[2K[05:01:15 INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+>[2K[05:01:15 INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+>[2K[05:01:15 INFO]: Random Lighting Updates: false
+>[2K[05:01:15 INFO]: Structure Info Saving: true
+>[2K[05:01:15 INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+>[2K[05:01:15 INFO]: Max TNT Explosions: 100
+>[2K[05:01:15 INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+>[2K[05:01:15 INFO]: Item Despawn Rate: 6000
+>[2K[05:01:15 INFO]: Item Merge Radius: 2.5
+>[2K[05:01:15 INFO]: Arrow Despawn Rate: 1200
+>[2K[05:01:15 INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+>[2K[05:01:15 INFO]: View Distance: 10
+>[2K[05:01:15 INFO]: Experience Merge Radius: 3.0
+>[2K[05:01:15 INFO]: Zombie Aggressive Towards Villager: true
+>[2K[05:01:15 INFO]: Nerfing mobs spawned from spawners: false
+>[2K[05:01:15 INFO]: Preparing start region for level 7 (Seed: -4594885107986947735)
+>[2K[05:01:16 INFO]: Preparing spawn area for dracon, 81%
+>[2K[05:01:16 INFO]: [WorldGuard] (dracon) TNT ignition is PERMITTED.
+>[2K[05:01:16 INFO]: [WorldGuard] (dracon) Lighters are PERMITTED.
+>[2K[05:01:16 INFO]: [WorldGuard] (dracon) Lava fire is blocked.
+>[2K[05:01:16 INFO]: [WorldGuard] (dracon) Fire spread is UNRESTRICTED.
+>[2K[05:01:16 INFO]: [WorldGuard] Loaded configuration for world 'dracon'
+>[2K[05:01:16 INFO]: [dynmap] World 'dracon' disabled
+>[2K[05:01:16 INFO]: -------- World Settings For [creative_the_end] --------
+>[2K[05:01:16 INFO]: Mob Spawn Range: 4
+>[2K[05:01:16 INFO]: Cactus Growth Modifier: 100%
+>[2K[05:01:16 INFO]: Cane Growth Modifier: 100%
+>[2K[05:01:16 INFO]: Melon Growth Modifier: 100%
+>[2K[05:01:16 INFO]: Mushroom Growth Modifier: 100%
+>[2K[05:01:16 INFO]: Pumpkin Growth Modifier: 100%
+>[2K[05:01:16 INFO]: Sapling Growth Modifier: 100%
+>[2K[05:01:16 INFO]: Wheat Growth Modifier: 100%
+>[2K[05:01:16 INFO]: NetherWart Growth Modifier: 100%
+>[2K[05:01:16 INFO]: Vine Growth Modifier: 100%
+>[2K[05:01:16 INFO]: Cocoa Growth Modifier: 100%
+>[2K[05:01:16 INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+>[2K[05:01:16 INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+>[2K[05:01:16 INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+>[2K[05:01:16 INFO]: Random Lighting Updates: false
+>[2K[05:01:16 INFO]: Structure Info Saving: true
+>[2K[05:01:16 INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+>[2K[05:01:16 INFO]: Max TNT Explosions: 100
+>[2K[05:01:16 INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+>[2K[05:01:16 INFO]: Item Despawn Rate: 6000
+>[2K[05:01:16 INFO]: Item Merge Radius: 2.5
+>[2K[05:01:16 INFO]: Arrow Despawn Rate: 1200
+>[2K[05:01:16 INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+>[2K[05:01:16 INFO]: View Distance: 10
+>[2K[05:01:16 INFO]: Experience Merge Radius: 3.0
+>[2K[05:01:16 INFO]: Zombie Aggressive Towards Villager: true
+>[2K[05:01:16 INFO]: Nerfing mobs spawned from spawners: false
+>[2K[05:01:16 INFO]: Loaded 1 custom command functions
+>[2K[05:01:16 INFO]: Preparing start region for level 8 (Seed: -5816359241185739647)
+>[2K[05:01:17 INFO]: Preparing spawn area for creative_the_end, 89%
+>[2K[05:01:17 INFO]: [WorldGuard] (creative_the_end) TNT ignition is PERMITTED.
+>[2K[05:01:17 INFO]: [WorldGuard] (creative_the_end) Lighters are PERMITTED.
+>[2K[05:01:17 INFO]: [WorldGuard] (creative_the_end) Lava fire is blocked.
+>[2K[05:01:17 INFO]: [WorldGuard] (creative_the_end) Fire spread is UNRESTRICTED.
+>[2K[05:01:17 INFO]: [WorldGuard] Loaded configuration for world 'creative_the_end'
+>[2K[05:01:17 INFO]: [dynmap] Loaded 3 maps of world 'creative_the_end'.
+>[2K[05:01:17 INFO]: -------- World Settings For [creative] --------
+>[2K[05:01:17 INFO]: Mob Spawn Range: 4
+>[2K[05:01:17 INFO]: Cactus Growth Modifier: 100%
+>[2K[05:01:17 INFO]: Cane Growth Modifier: 100%
+>[2K[05:01:17 INFO]: Melon Growth Modifier: 100%
+>[2K[05:01:17 INFO]: Mushroom Growth Modifier: 100%
+>[2K[05:01:17 INFO]: Pumpkin Growth Modifier: 100%
+>[2K[05:01:17 INFO]: Sapling Growth Modifier: 100%
+>[2K[05:01:17 INFO]: Wheat Growth Modifier: 100%
+>[2K[05:01:17 INFO]: NetherWart Growth Modifier: 100%
+>[2K[05:01:17 INFO]: Vine Growth Modifier: 100%
+>[2K[05:01:17 INFO]: Cocoa Growth Modifier: 100%
+>[2K[05:01:17 INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+>[2K[05:01:17 INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+>[2K[05:01:17 INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+>[2K[05:01:17 INFO]: Random Lighting Updates: false
+>[2K[05:01:17 INFO]: Structure Info Saving: true
+>[2K[05:01:17 INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+>[2K[05:01:17 INFO]: Max TNT Explosions: 100
+>[2K[05:01:17 INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+>[2K[05:01:17 INFO]: Item Despawn Rate: 6000
+>[2K[05:01:17 INFO]: Item Merge Radius: 2.5
+>[2K[05:01:17 INFO]: Arrow Despawn Rate: 1200
+>[2K[05:01:17 INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+>[2K[05:01:17 INFO]: View Distance: 10
+>[2K[05:01:17 INFO]: Experience Merge Radius: 3.0
+>[2K[05:01:17 INFO]: Zombie Aggressive Towards Villager: true
+>[2K[05:01:17 INFO]: Nerfing mobs spawned from spawners: false
+>[2K[05:01:18 INFO]: Loaded 3 custom command functions
+>[2K[05:01:18 INFO]: Preparing start region for level 9 (Seed: -5816359241185739647)
+>[2K[05:01:19 INFO]: Preparing spawn area for creative, 40%
+>[2K[05:01:19 INFO]: [WorldGuard] (creative) TNT ignition is PERMITTED.
+>[2K[05:01:19 INFO]: [WorldGuard] (creative) Lighters are PERMITTED.
+>[2K[05:01:19 INFO]: [WorldGuard] (creative) Lava fire is blocked.
+>[2K[05:01:19 INFO]: [WorldGuard] (creative) Fire spread is UNRESTRICTED.
+>[2K[05:01:19 INFO]: [WorldGuard] Loaded configuration for world 'creative'
+>[2K[05:01:19 INFO]: [dynmap] Loaded 3 maps of world 'creative'.
+>[2K[05:01:19 INFO]: [Multiverse-Core] 10 - World(s) loaded.
+>[2K[05:01:19 INFO]: [Multiverse-Core] Version 2.5.0-b727 (API v20) Enabled - By Rigby, fernferret, lithium3141, main-- and dumptruckman
+>[2K[05:01:19 INFO]: [AdvancedPortals] Enabling AdvancedPortals v0.0.36
+>[2K[05:01:19 INFO]: [AdvancedPortals] BLOCK_PORTAL_TRAVEL found
+>[2K[05:01:19 INFO]: [AdvancedPortals] ENTITY_ENDERMEN_TELEPORT found
+>[2K[05:01:19 INFO]: [AdvancedPortals] ENTITY_GENERIC_EXPLODE found
+>[2K[05:01:19 INFO]: [0;32;1mAdvanced portals have been successfully enabled![m
+>[2K[05:01:19 INFO]: [ImageMaps] Enabling ImageMaps v0.4.3
+>[2K[05:01:22 INFO]: [WeatherVote] Enabling WeatherVote v1.4
+>[2K[05:01:22 INFO]: [WeatherVote] a Plugin by F_o_F_1092
+>[2K[05:01:22 INFO]: [0m[1m[37m[[0m[1m[34mWeather[0m[1m[36mVote[0m[1m[37m][0m[1m[34m ServerType:[0m[1m[36m Bukkit/Spigot[0m[1m[34m, Version:[0m[1m[36m v1_12_R1[0m
+>[2K[05:01:22 INFO]: [Multiverse-Inventories] Enabling Multiverse-Inventories v2.5.0-SNAPSHOT-b418
+>[2K[05:01:22 INFO]: [Multiverse-Inventories 2.5.0-SNAPSHOT-b418] enabled.
+>[2K[05:01:22 INFO]: [MineWallet] Enabling MineWallet v1.2.4
+>[2K[05:01:22 INFO]: [0;32;1m[MineWallet] MySQL not enabled! Saving playerdatas to a file![m
+>[2K[05:01:22 INFO]: [0;33;1m[Vault][Economy] MineWallet hooked.[m
+>[2K[05:01:22 INFO]: [0;36;1m[MineWallet] Plugin successfully started![m
+>[2K[05:01:22 INFO]: [MineWallet] No new update(s) for the plugin.
+>[2K[05:01:22 INFO]: [Multiverse-Portals] Enabling Multiverse-Portals v2.5.0-b751
+>[2K[05:01:22 INFO]: [Multiverse-Portals] - Version 2.5.0-b751 Enabled - By Rigby and fernferret
+>[2K[05:01:22 INFO]: [MVPLogging] 6 - Portals(s) loaded
+>[2K[05:01:22 INFO]: [Multiverse-Portals] Found WorldEdit. Using it for selections.
+>[2K[05:01:22 INFO]: [Hat] Enabling Hat v1.0
+>[2K[05:01:22 INFO]: [ChairStairs] Enabling ChairStairs v1.1
+>[2K[05:01:22 INFO]: [MyCommand] Enabling MyCommand v5.3.4
+>[2K[05:01:22 INFO]: *-=-=-=-=-=-=-=-=-=-* MyCommand *-=-=-=-=-=-=-=-=-=-=-*
+>[2K[05:01:22 INFO]: | Vault  : Ok. Hooked on Vault 1.6.1
+>[2K[05:01:22 INFO]: | Command file(s) found : 1
+>[2K[05:01:22 INFO]: | Config : Ready.
+>[2K[05:01:22 INFO]: | PlaceholderAPI: Hooked, Ok.
+>[2K[05:01:23 INFO]: | Custom commands loaded : 41
+>[2K[05:01:23 INFO]: | Version: 5.3.4
+>[2K[05:01:23 INFO]: | Author : emmerrei a.k.a Ivanpro
+>[2K[05:01:23 INFO]: | You are running the latest version of MyCommand.
+>[2K[05:01:23 INFO]: *-=-=-=-=-=-=-=-=-=-*   Done!   *-=-=-=-=-=-=-=-=-=-=-*
+>[2K[05:01:23 INFO]: [OpenAudioMc] Enabling OpenAudioMc v4.0
+>[2K[05:01:23 INFO]: [OpenAudioMc] starting socketio
+>[2K[05:01:23 INFO]: [OpenAudioMc] socketio started!
+>[2K[05:01:23 INFO]: [OpenAudioMc] Reflection has found MC v1_12_R1 which is supported
+>[2K[05:01:23 INFO]: [OpenAudioMc] Found worldguard! lets enable regions!
+>[2K[05:01:23 INFO]: [OpenAudioMc] Initializing region: Lagoon
+>[2K[05:01:23 INFO]: [OpenAudioMc] Initializing speaker: https://www--_--youtube--_--com/watch?v=UWnZUOJeoTs
+>[2K[05:01:23 INFO]: [OpenAudioMc] Initializing speaker: https://www--_--dropbox--_--com/s/5u8btweks0lyw4e/Two%20Steps%20from%20Hell%20-%20Divided%20We%20Fall--_--mp3?dl=1
+>[2K[05:01:23 INFO]: [OpenAudioMc] Initializing speaker: https://www--_--dropbox--_--com/s/vnhhide16o5e10b/Great%20Fairys%20Fountain%20-%20The%20Legend%20of%20Zelda_%20Twilight%20Princess%20Music%20Exte--_--mp3?dl=1
+>[2K[05:01:23 INFO]: [OpenAudioMc] Initializing speaker: https://www--_--dropbox--_--com/s/gkrk2r4qf6ahhqx/Epic%20western%20music%20-%20The%20Lone%20Wanderer--_--mp3?dl=1
+>[2K[05:01:23 INFO]: [ScoreboardStats] Enabling ScoreboardStats v0.10.6
+>[2K[05:01:23 INFO]: [ScoreboardStats] Registered replacers: [PlayerPingVariable, BungeeCordVariables, BukkitGlobalVariables, GeneralVariables, VaultVariables, BukkitVariables, PlaceHolderVariables]
+>[2K[05:01:23 INFO]: [AdvancedAchievements] Enabling AdvancedAchievements v5.7.1
+>[2K[05:01:23 INFO]: [OpenAudioMc] Authenticating to socket! They are shaking hands! I hope they will be friends some day!
+>[2K[05:01:24 INFO]: [AdvancedAchievements] Loading and backing up configuration files...
+>[2K[05:01:24 INFO]: [AdvancedAchievements] Loaded 25 achievements in 2 categories.
+>[2K[05:01:24 INFO]: [AdvancedAchievements] 45 disabled categories: [ItemBreaks, PetMasterReceive, DistancePig, DistanceLlama, Shear, Taming, Smelting, Enchantments, PlayerCommands, Arrows, Eggs, Fertilising, Places, LavaBuckets, EatenItems, PlayedTime, PetMasterGive, Deaths, Fish, Fireworks, Milk, Breaks, HoePlowings, DistanceHorse, Trades, ItemDrops, Treasures, Breeding, ItemPickups, Kills, WaterBuckets, AnvilsUsed, Brewing, Custom, MusicDiscs, Beds, DistanceBoat, DistanceGliding, Snowballs, EnderPearls, ConsumedPotions, MaxLevel, Crafts, DistanceMinecart, DistanceFoot]
+>[2K[05:01:24 INFO]: [AdvancedAchievements] Registering event listeners...
+>[2K[05:01:24 INFO]: [AdvancedAchievements] Initialising database...
+>[2K[05:01:24 INFO]: [AdvancedAchievements] Setting up command executor and custom tab completers...
+>[2K[05:01:24 INFO]: [AdvancedAchievements] Launching scheduled tasks...
+>[2K[05:01:24 INFO]: [AdvancedAchievements] Registering permissions...
+>[2K[05:01:24 INFO]: [AdvancedAchievements] Checking for plugin update...
+>[2K[05:01:24 INFO]: [AdvancedAchievements] Plugin has finished loading and is ready to run! Took 1130ms.
+>[2K[05:01:24 INFO]: Server permissions file permissions.yml is empty, ignoring it
+>[2K[05:01:24 INFO]: Done (39.828s)! For help, type "help" or "?"
+>[2K[05:01:24 INFO]: [Vault] You are running the latest version
+>[2K[05:01:25 INFO]: [PlaceholderAPI] 109 placeholder expansions are available on the cloud.
+>[2K[05:01:25 INFO]: [BuycraftX] Fetching all due players...
+>[2K[05:01:26 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[05:02:24 INFO]: [BuycraftX] Updating coupon list...
+>[2K[05:16:26 INFO]: [BuycraftX] Fetching all due players...
+>[2K[05:16:27 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[05:22:25 INFO]: [BuycraftX] Updating coupon list...
+>[2K[05:31:27 INFO]: [BuycraftX] Fetching all due players...
+>[2K[05:31:27 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[05:42:25 INFO]: [BuycraftX] Updating coupon list...
+>[2K[05:46:27 INFO]: [BuycraftX] Fetching all due players...
+>[2K[05:46:28 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[06:01:28 INFO]: [BuycraftX] Fetching all due players...
+>[2K[06:01:28 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[06:02:25 INFO]: [BuycraftX] Updating coupon list...
+>[2K[06:16:29 INFO]: [BuycraftX] Fetching all due players...
+>[2K[06:16:29 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[06:22:25 INFO]: [BuycraftX] Updating coupon list...
+>[2K[06:31:29 INFO]: [BuycraftX] Fetching all due players...
+>[2K[06:31:30 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[06:42:26 INFO]: [BuycraftX] Updating coupon list...
+>[2K[06:46:30 INFO]: [BuycraftX] Fetching all due players...
+>[2K[06:46:30 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[07:01:31 INFO]: [BuycraftX] Fetching all due players...
+>[2K[07:01:31 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[07:02:26 INFO]: [BuycraftX] Updating coupon list...
+>[2K[07:16:31 INFO]: [BuycraftX] Fetching all due players...
+>[2K[07:16:32 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[07:22:26 INFO]: [BuycraftX] Updating coupon list...
+>[2K[07:31:32 INFO]: [BuycraftX] Fetching all due players...
+>[2K[07:31:32 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[07:42:27 INFO]: [BuycraftX] Updating coupon list...
+>[2K[07:46:32 INFO]: [BuycraftX] Fetching all due players...
+>[2K[07:46:33 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[08:01:33 INFO]: [BuycraftX] Fetching all due players...
+>[2K[08:01:34 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[08:02:27 INFO]: [BuycraftX] Updating coupon list...
+>[2K[08:16:34 INFO]: [BuycraftX] Fetching all due players...
+>[2K[08:16:34 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[08:22:27 INFO]: [BuycraftX] Updating coupon list...
+>[2K[08:31:35 INFO]: [BuycraftX] Fetching all due players...
+>[2K[08:31:35 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[08:42:28 INFO]: [BuycraftX] Updating coupon list...
+>[2K[08:46:35 INFO]: [BuycraftX] Fetching all due players...
+>[2K[08:46:36 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[09:01:36 INFO]: [BuycraftX] Fetching all due players...
+>[2K[09:01:36 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[09:02:28 INFO]: [BuycraftX] Updating coupon list...
+>[2K[09:16:36 INFO]: [BuycraftX] Fetching all due players...
+>[2K[09:16:37 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[09:22:28 INFO]: [BuycraftX] Updating coupon list...
+>[2K[09:31:37 INFO]: [BuycraftX] Fetching all due players...
+>[2K[09:31:38 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[09:42:28 INFO]: [BuycraftX] Updating coupon list...
+>[2K[09:46:38 INFO]: [BuycraftX] Fetching all due players...
+>[2K[09:46:38 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[10:01:38 INFO]: [BuycraftX] Fetching all due players...
+>[2K[10:01:39 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[10:02:29 INFO]: [BuycraftX] Updating coupon list...
+>[2K[10:16:39 INFO]: [BuycraftX] Fetching all due players...
+>[2K[10:16:40 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[10:22:29 INFO]: [BuycraftX] Updating coupon list...
+>[2K[10:31:40 INFO]: [BuycraftX] Fetching all due players...
+>[2K[10:31:40 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[10:42:29 INFO]: [BuycraftX] Updating coupon list...
+>[2K[10:46:40 INFO]: [BuycraftX] Fetching all due players...
+>[2K[10:46:41 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[11:01:41 INFO]: [BuycraftX] Fetching all due players...
+>[2K[11:01:42 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[11:02:29 INFO]: [BuycraftX] Updating coupon list...
+>[2K[11:16:42 INFO]: [BuycraftX] Fetching all due players...
+>[2K[11:16:42 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[11:22:30 INFO]: [BuycraftX] Updating coupon list...
+>[2K[11:31:42 INFO]: [BuycraftX] Fetching all due players...
+>[2K[11:31:43 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[11:42:30 INFO]: [BuycraftX] Updating coupon list...
+>[2K[11:46:43 INFO]: [BuycraftX] Fetching all due players...
+>[2K[11:46:44 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[12:01:44 INFO]: [BuycraftX] Fetching all due players...
+>[2K[12:01:45 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[12:02:30 INFO]: [BuycraftX] Updating coupon list...
+>[2K[12:03:04 INFO]: UUID of player ZwibblTV is cf199c68-448b-461b-8a1f-0978c4403e45
+>[2K[12:03:04 INFO]: ZwibblTV[/95.90.248.185:38785] logged in with entity id 2713 at ([dreamland]-895.6084712296208, 21.0, 729.8287333042788)
+>[2K[12:03:07 INFO]: ZwibblTV issued server command: /gm 1
+>[2K[12:03:07 INFO]: ZwibblTV issued mycmd command ID(1) /gm 1
+>[2K[12:03:07 INFO]: ZwibblTV issued server command: /gamemode 1
+>[2K[12:03:07 INFO]: [ZwibblTV: Set own game mode to Creative Mode]
+>[2K[12:03:54 INFO]: [dynmap] Loading default resource pack
+>[2K[12:12:02 INFO]: ZwibblTV lost connection: Disconnected
+>[2K[12:12:02 INFO]: ZwibblTV left the game
+>[2K[12:16:45 INFO]: [BuycraftX] Fetching all due players...
+>[2K[12:16:46 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[12:22:31 INFO]: [BuycraftX] Updating coupon list...
+>[2K[12:31:46 INFO]: [BuycraftX] Fetching all due players...
+>[2K[12:31:46 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[12:42:31 INFO]: [BuycraftX] Updating coupon list...
+>[2K[12:46:47 INFO]: [BuycraftX] Fetching all due players...
+>[2K[12:46:47 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[13:01:47 INFO]: [BuycraftX] Fetching all due players...
+>[2K[13:01:48 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[13:02:31 INFO]: [BuycraftX] Updating coupon list...
+>[2K[13:16:48 INFO]: [BuycraftX] Fetching all due players...
+>[2K[13:16:49 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[13:22:32 INFO]: [BuycraftX] Updating coupon list...
+>[2K[13:31:49 INFO]: [BuycraftX] Fetching all due players...
+>[2K[13:31:49 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[13:42:32 INFO]: [BuycraftX] Updating coupon list...
+>[2K[13:46:50 INFO]: [BuycraftX] Fetching all due players...
+>[2K[13:46:50 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[14:01:50 INFO]: [BuycraftX] Fetching all due players...
+>[2K[14:01:51 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[14:02:32 INFO]: [BuycraftX] Updating coupon list...
+>[2K[14:16:51 INFO]: [BuycraftX] Fetching all due players...
+>[2K[14:16:51 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[14:22:33 INFO]: [BuycraftX] Updating coupon list...
+>[2K[14:31:52 INFO]: [BuycraftX] Fetching all due players...
+>[2K[14:31:52 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[14:42:33 INFO]: [BuycraftX] Updating coupon list...
+>[2K[14:46:52 INFO]: [BuycraftX] Fetching all due players...
+>[2K[14:46:53 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[15:01:53 INFO]: [BuycraftX] Fetching all due players...
+>[2K[15:01:53 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[15:02:33 INFO]: [BuycraftX] Updating coupon list...
+>[2K[15:16:54 INFO]: [BuycraftX] Fetching all due players...
+>[2K[15:16:54 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[15:22:34 INFO]: [BuycraftX] Updating coupon list...
+>[2K[15:31:54 INFO]: [BuycraftX] Fetching all due players...
+>[2K[15:31:55 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[15:42:34 INFO]: [BuycraftX] Updating coupon list...
+>[2K[15:46:55 INFO]: [BuycraftX] Fetching all due players...
+>[2K[15:46:55 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[16:01:56 INFO]: [BuycraftX] Fetching all due players...
+>[2K[16:01:56 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[16:02:34 INFO]: [BuycraftX] Updating coupon list...
+>[2K[16:16:56 INFO]: [BuycraftX] Fetching all due players...
+>[2K[16:16:57 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[16:22:34 INFO]: [BuycraftX] Updating coupon list...
+>[2K[16:31:57 INFO]: [BuycraftX] Fetching all due players...
+>[2K[16:31:57 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[16:42:35 INFO]: [BuycraftX] Updating coupon list...
+>[2K[16:46:58 INFO]: [BuycraftX] Fetching all due players...
+>[2K[16:46:58 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[17:01:58 INFO]: [BuycraftX] Fetching all due players...
+>[2K[17:01:59 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[17:02:35 INFO]: [BuycraftX] Updating coupon list...
+>[2K[17:16:59 INFO]: [BuycraftX] Fetching all due players...
+>[2K[17:17:00 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[17:22:35 INFO]: [BuycraftX] Updating coupon list...
+>[2K[17:32:00 INFO]: [BuycraftX] Fetching all due players...
+>[2K[17:32:00 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[17:42:36 INFO]: [BuycraftX] Updating coupon list...
+>[2K[17:47:00 INFO]: [BuycraftX] Fetching all due players...
+>[2K[17:47:01 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[18:02:01 INFO]: [BuycraftX] Fetching all due players...
+>[2K[18:02:01 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[18:02:36 INFO]: [BuycraftX] Updating coupon list...
+>[2K[18:17:02 INFO]: [BuycraftX] Fetching all due players...
+>[2K[18:17:02 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[18:22:36 INFO]: [BuycraftX] Updating coupon list...
+>[2K[18:32:02 INFO]: [BuycraftX] Fetching all due players...
+>[2K[18:32:03 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[18:42:37 INFO]: [BuycraftX] Updating coupon list...
+>[2K[18:47:03 INFO]: [BuycraftX] Fetching all due players...
+>[2K[18:47:03 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[19:02:04 INFO]: [BuycraftX] Fetching all due players...
+>[2K[19:02:04 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[19:02:37 INFO]: [BuycraftX] Updating coupon list...
+>[2K[19:17:04 INFO]: [BuycraftX] Fetching all due players...
+>[2K[19:17:05 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[19:22:37 INFO]: [BuycraftX] Updating coupon list...
+>[2K[19:32:05 INFO]: [BuycraftX] Fetching all due players...
+>[2K[19:32:05 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[19:42:37 INFO]: [BuycraftX] Updating coupon list...
+>[2K[19:47:06 INFO]: [BuycraftX] Fetching all due players...
+>[2K[19:47:06 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[20:02:06 INFO]: [BuycraftX] Fetching all due players...
+>[2K[20:02:07 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[20:02:38 INFO]: [BuycraftX] Updating coupon list...
+>[2K[20:17:07 INFO]: [BuycraftX] Fetching all due players...
+>[2K[20:17:07 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[20:22:38 INFO]: [BuycraftX] Updating coupon list...
+>[2K[20:32:07 INFO]: [BuycraftX] Fetching all due players...
+>[2K[20:32:08 INFO]: [BuycraftX] Fetched due players (0 found).
+>[2K[20:42:28 INFO]: com.mojang.authlib.GameProfile@220f4f8d[id=<null>,name=ZwibblTV,properties={},legacy=false] (/95.90.248.185:61165) lost connection: Disconnected
+>[2K[20:42:38 INFO]: [BuycraftX] Updating coupon list...
+>[2K[20:43:21 INFO]: UUID of player ZwibblTV is cf199c68-448b-461b-8a1f-0978c4403e45
+>[2K[20:43:22 INFO]: ZwibblTV[/95.90.248.185:61189] logged in with entity id 3116 at ([dreamland]-883.3452734477198, 26.5, 709.9375376489796)
+>[2K[20:43:26 INFO]: ZwibblTV lost connection: Disconnected
+>[2K[20:43:26 INFO]: ZwibblTV left the game
+>[2K[20:47:08 INFO]: [BuycraftX] Fetching all due players...
+>[2K[20:47:09 INFO]: [BuycraftX] Fetched due players (0 found).
+>

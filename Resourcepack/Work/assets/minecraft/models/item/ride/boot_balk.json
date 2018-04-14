@@ -1,0 +1,66 @@
+{
+"__comment": "Designed by Kukamonda with BDcraft Cubik PRO 0.96 Beta - http://bdcraft.net",
+"textures": {
+    "texture": "blocks/hardened_clay_stained_cyan",
+    "hardened_clay_stained_black": "blocks/hardened_clay_stained_black"
+},
+"elements": [ 
+{
+    "from": [ -1.5, -16, 7 ],
+    "to": [ 0, 32, 9 ],
+    "faces": {
+        "down":  { "uv": [ 16, 9, 16, 7 ], "texture": "#texture" },
+        "up":    { "uv": [ 0, 7, 0, 9 ], "texture": "#texture" },
+        "north": { "uv": [ 16, 0, 16, 16 ], "texture": "#texture" },
+        "south": { "uv": [ 0, 0, 0, 16 ], "texture": "#texture" },
+        "west":  { "uv": [ 7, 0, 9, 16 ], "texture": "#texture" },
+        "east":  { "uv": [ 7, 0, 9, 16 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 16, -16, 7 ],
+    "to": [ 17.5, 32, 9 ],
+    "faces": {
+        "down":  { "uv": [ 0, 9, 0, 7 ], "texture": "#texture" },
+        "up":    { "uv": [ 16, 7, 16, 9 ], "texture": "#texture" },
+        "north": { "uv": [ 0, 0, 0, 16 ], "texture": "#texture" },
+        "south": { "uv": [ 16, 0, 16, 16 ], "texture": "#texture" },
+        "west":  { "uv": [ 7, 0, 9, 16 ], "texture": "#texture" },
+        "east":  { "uv": [ 7, 0, 9, 16 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 15.9375, -15.5, 7.5 ],
+    "to": [ 16.9375, 28.5, 8.5 ],
+    "rotation": { "origin": [ 15.9375, 28.5, 7.5 ], "axis": "z", "angle": -22.5 },
+    "faces": {
+        "down":  { "uv": [ 8.5, 8.5, 7.5, 7.5 ], "texture": "#texture" },
+        "up":    { "uv": [ 7.5, 7.5, 8.5, 8.5 ], "texture": "#texture" },
+        "north": { "uv": [ 7.5, 0, 8.5, 16 ], "texture": "#texture" },
+        "south": { "uv": [ 7.5, 0, 8.5, 16 ], "texture": "#texture" },
+        "west":  { "uv": [ 7.5, 0, 8.5, 16 ], "texture": "#texture" },
+        "east":  { "uv": [ 7.5, 0, 8.5, 16 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ -0.875, -15.875, 7.5 ],
+    "to": [ 0.125, 28.125, 8.5 ],
+    "rotation": { "origin": [ -0.875, 28.125, 7.5 ], "axis": "z", "angle": 22.5 },
+    "faces": {
+        "down":  { "uv": [ 8.5, 8.5, 7.5, 7.5 ], "texture": "#texture" },
+        "up":    { "uv": [ 7.5, 7.5, 8.5, 8.5 ], "texture": "#texture" },
+        "north": { "uv": [ 7.5, 0, 8.5, 16 ], "texture": "#texture" },
+        "south": { "uv": [ 7.5, 0, 8.5, 16 ], "texture": "#texture" },
+        "west":  { "uv": [ 7.5, 0, 8.5, 16 ], "texture": "#texture" },
+        "east":  { "uv": [ 7.5, 0, 8.5, 16 ], "texture": "#texture" }
+    }
+}
+],
+"display": {
+    "head": {
+        "rotation": [ 0, 0, 0 ],
+        "translation": [ 0, 0, 0 ],
+        "scale": [ 4, 4, 4 ]
+    }
+}
+}

@@ -1,0 +1,162 @@
+{
+"__comment": "Designed by Kukamonda with BDcraft Cubik PRO 0.96 Beta - http://bdcraft.net",
+"textures": {
+    "0": "blocks/coal_block",
+    "christmaslights": "blocks/christmaslights",
+    "concrete_powder_red": "blocks/concrete_powder_red",
+    "fern": "blocks/fern2",
+    "redstone_block": "blocks/redstone_block"
+},
+"elements": [ 
+{
+    "from": [ 2, 1.5, 2 ],
+    "to": [ 14, 12.5, 14 ],
+    "faces": {
+        "down":  { "uv": [ 2, 2, 14, 14 ], "texture": "#0" },
+        "up":    { "uv": [ 2, 2, 14, 14 ], "texture": "#0" },
+        "north": { "uv": [ 2, 3.5, 14, 14.5 ], "texture": "#0" },
+        "south": { "uv": [ 2, 3.5, 14, 14.5 ], "texture": "#0" },
+        "west":  { "uv": [ 2, 3.5, 14, 14.5 ], "texture": "#0" },
+        "east":  { "uv": [ 2, 3.5, 14, 14.5 ], "texture": "#0" }
+    }
+},
+{
+    "from": [ 3, 12, 3 ],
+    "to": [ 13, 13, 13 ],
+    "faces": {
+        "down":  { "uv": [ 3, 3, 13, 13 ], "texture": "#0" },
+        "up":    { "uv": [ 3, 3, 13, 13 ], "texture": "#0" },
+        "north": { "uv": [ 3, 4, 13, 5 ], "texture": "#0" },
+        "south": { "uv": [ 3, 4, 13, 5 ], "texture": "#0" },
+        "west":  { "uv": [ 3, 4, 13, 5 ], "texture": "#0" },
+        "east":  { "uv": [ 3, 4, 13, 5 ], "texture": "#0" }
+    }
+},
+{
+    "from": [ 1.5, 3, 1.5 ],
+    "to": [ 14.5, 12.5, 1.5625 ],
+    "faces": {
+        "north": { "uv": [ 16, 0, 0, 16 ], "texture": "#christmaslights" },
+        "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#christmaslights" }
+    }
+},
+{
+    "from": [ 1.5, 3, 14.5 ],
+    "to": [ 14.5, 12.5, 14.5625 ],
+    "faces": {
+        "north": { "uv": [ 16, 0, 0, 16 ], "texture": "#christmaslights" },
+        "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#christmaslights" }
+    }
+},
+{
+    "from": [ 1.5, 3, 1.5 ],
+    "to": [ 1.5625, 12.5, 14.5 ],
+    "faces": {
+        "west":  { "uv": [ 16, 0, 0, 16 ], "texture": "#christmaslights" },
+        "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#christmaslights" }
+    }
+},
+{
+    "from": [ 14.5, 3, 1.5 ],
+    "to": [ 14.5625, 12.5, 14.5 ],
+    "faces": {
+        "west":  { "uv": [ 16, 0, 0, 16 ], "texture": "#christmaslights" },
+        "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#christmaslights" }
+    }
+},
+{
+    "from": [ 1.5, 1, 1.5 ],
+    "to": [ 14.5, 3, 14.5 ],
+    "faces": {
+        "down":  { "uv": [ 1.5, 1.5, 14.5, 14.5 ], "texture": "#concrete_powder_red" },
+        "up":    { "uv": [ 1.5, 1.5, 14.5, 14.5 ], "texture": "#concrete_powder_red" },
+        "north": { "uv": [ 1.5, 13, 14.5, 15 ], "texture": "#concrete_powder_red" },
+        "south": { "uv": [ 1.5, 13, 14.5, 15 ], "texture": "#concrete_powder_red" },
+        "west":  { "uv": [ 1.5, 13, 14.5, 15 ], "texture": "#concrete_powder_red" },
+        "east":  { "uv": [ 1.5, 13, 14.5, 15 ], "texture": "#concrete_powder_red" }
+    }
+},
+{
+    "from": [ 11.5, 2, 14.5 ],
+    "to": [ 12.5, 3, 15.5 ],
+    "faces": {
+        "down":  { "uv": [ 12, 14.5, 13, 15.5 ], "texture": "#redstone_block" },
+        "up":    { "uv": [ 12, 14.5, 13, 15.5 ], "texture": "#redstone_block" },
+        "north": { "uv": [ 12, 13.5, 13, 14.5 ], "texture": "#redstone_block" },
+        "south": { "uv": [ 12, 13.5, 13, 14.5 ], "texture": "#redstone_block" },
+        "west":  { "uv": [ 14.5, 13.5, 15.5, 14.5 ], "texture": "#redstone_block" },
+        "east":  { "uv": [ 14.5, 13.5, 15.5, 14.5 ], "texture": "#redstone_block" }
+    }
+},
+{
+    "from": [ 11.0702, 1.25, 14.625 ],
+    "to": [ 12.0702, 2.25, 15.625 ],
+    "rotation": { "origin": [ 11.0702, 1.25, 14.625 ], "axis": "y", "angle": -22.5 },
+    "faces": {
+        "down":  { "uv": [ 11.6875, 14.625, 12.6875, 15.625 ], "texture": "#redstone_block" },
+        "up":    { "uv": [ 11.6875, 14.625, 12.6875, 15.625 ], "texture": "#redstone_block" },
+        "north": { "uv": [ 11.6875, 14, 12.6875, 15 ], "texture": "#redstone_block" },
+        "south": { "uv": [ 11.6875, 14, 12.6875, 15 ], "texture": "#redstone_block" },
+        "west":  { "uv": [ 14.625, 14, 15.625, 15 ], "texture": "#redstone_block" },
+        "east":  { "uv": [ 14.625, 14, 15.625, 15 ], "texture": "#redstone_block" }
+    }
+},
+{
+    "from": [ 11.8125, 1.3125, 15.125 ],
+    "to": [ 12.8125, 2.3125, 16.125 ],
+    "rotation": { "origin": [ 11.8125, 1.3125, 15.125 ], "axis": "y", "angle": 45 },
+    "faces": {
+        "down":  { "uv": [ 14.5, 9, 15.5, 10 ], "texture": "#redstone_block" },
+        "up":    { "uv": [ 14.5, 9, 15.5, 10 ], "texture": "#redstone_block" },
+        "north": { "uv": [ 11, 15, 12, 16 ], "texture": "#redstone_block" },
+        "south": { "uv": [ 11, 15, 12, 16 ], "texture": "#redstone_block" },
+        "west":  { "uv": [ 0, 15, 1, 16 ], "texture": "#redstone_block" },
+        "east":  { "uv": [ 0, 15, 1, 16 ], "texture": "#redstone_block" }
+    }
+},
+{
+    "from": [ 0, -1, 0 ],
+    "to": [ 16, 1, 16 ],
+    "faces": {
+        "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#0" },
+        "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#0" },
+        "north": { "uv": [ 0, 14, 16, 16 ], "texture": "#0" },
+        "south": { "uv": [ 0, 14, 16, 16 ], "texture": "#0" },
+        "west":  { "uv": [ 0, 14, 16, 16 ], "texture": "#0" },
+        "east":  { "uv": [ 0, 14, 16, 16 ], "texture": "#0" }
+    }
+},
+{
+    "__comment": "plantje",
+    "from": [ 14.0625, 1.8125, 14.625 ],
+    "to": [ 16.0625, 4.8125, 14.6875 ],
+    "rotation": { "origin": [ 14.0625, 4.8125, 14.625 ], "axis": "z", "angle": -45 },
+    "faces": {
+        "north": { "uv": [ 3, 0, 13, 16 ], "texture": "#fern" },
+        "south": { "uv": [ 3, 0, 13, 16 ], "texture": "#fern" }
+    }
+},
+{
+    "__comment": "plantje*",
+    "from": [ 8.8125, 0.4375, 14.6875 ],
+    "to": [ 10.8125, 3.4375, 14.75 ],
+    "rotation": { "origin": [ 8.8125, 3.4375, 14.6875 ], "axis": "z", "angle": 45 },
+    "faces": {
+        "north": { "uv": [ 3, 0, 13, 16 ], "texture": "#fern" },
+        "south": { "uv": [ 3, 0, 13, 16 ], "texture": "#fern" }
+    }
+}
+],
+"display": {
+    "head": {
+        "rotation": [ 0, 180, 0 ],
+        "translation": [ 0, 14, 0 ],
+        "scale": [ 1.15, 1.15, 1.15 ]
+    },
+    "gui": {
+        "rotation": [ 0, 13, 0 ],
+        "translation": [ 0, 3, 0 ],
+        "scale": [ 0.5, 0.5, 0.5 ]
+    }
+}
+}

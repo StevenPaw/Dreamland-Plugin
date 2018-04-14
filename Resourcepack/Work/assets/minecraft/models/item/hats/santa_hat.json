@@ -1,0 +1,129 @@
+{
+"__comment": "Designed by LordPringlesss",
+"textures": {
+    "concrete_powder_white": "blocks/concrete_powder_white",
+    "hardened_clay_stained_red": "blocks/wool_colored_red"
+},
+"elements": [ 
+{
+    "__comment": "onderkant",
+    "from": [ 0, 0, 0 ],
+    "to": [ 16, 3, 16 ],
+    "faces": {
+        "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#concrete_powder_white" },
+        "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#concrete_powder_white" },
+        "north": { "uv": [ 0, 13, 16, 16 ], "texture": "#concrete_powder_white" },
+        "south": { "uv": [ 0, 13, 16, 16 ], "texture": "#concrete_powder_white" },
+        "west":  { "uv": [ 0, 13, 16, 16 ], "texture": "#concrete_powder_white" },
+        "east":  { "uv": [ 0, 13, 16, 16 ], "texture": "#concrete_powder_white" }
+    }
+},
+{
+    "__comment": "eerstekubus",
+    "from": [ 1, 3, 1 ],
+    "to": [ 15, 6, 15 ],
+    "faces": {
+        "down":  { "uv": [ 1, 1, 15, 15 ], "texture": "#hardened_clay_stained_red" },
+        "up":    { "uv": [ 1, 1, 15, 15 ], "texture": "#hardened_clay_stained_red" },
+        "north": { "uv": [ 1, 10, 15, 13 ], "texture": "#hardened_clay_stained_red" },
+        "south": { "uv": [ 1, 10, 15, 13 ], "texture": "#hardened_clay_stained_red" },
+        "west":  { "uv": [ 1, 10, 15, 13 ], "texture": "#hardened_clay_stained_red" },
+        "east":  { "uv": [ 1, 10, 15, 13 ], "texture": "#hardened_clay_stained_red" }
+    }
+},
+{
+    "__comment": "wittebol",
+    "from": [ 7, 4.5, 16 ],
+    "to": [ 9.5, 7, 18.5 ],
+    "faces": {
+        "down":  { "uv": [ 4.5, 8, 8.5, 12 ], "texture": "#concrete_powder_white" },
+        "up":    { "uv": [ 0, 0, 4, 4 ], "rotation": 90, "texture": "#concrete_powder_white" },
+        "north": { "uv": [ 7.5, 1, 11.5, 5 ], "texture": "#concrete_powder_white" },
+        "south": { "uv": [ 5, 5.5, 9, 9.5 ], "texture": "#concrete_powder_white" },
+        "west":  { "uv": [ 6.5, 6.5, 10.5, 10.5 ], "texture": "#concrete_powder_white" },
+        "east":  { "uv": [ 0, 12, 4, 16 ], "texture": "#concrete_powder_white" }
+    }
+},
+{
+    "__comment": "eerstekubus*",
+    "from": [ 2, 5.5, 3 ],
+    "to": [ 14, 8.5, 14 ],
+    "faces": {
+        "down":  { "uv": [ 2, 2, 14, 14 ], "texture": "#hardened_clay_stained_red" },
+        "up":    { "uv": [ 2, 2, 14, 14 ], "texture": "#hardened_clay_stained_red" },
+        "north": { "uv": [ 2, 7, 14, 10 ], "texture": "#hardened_clay_stained_red" },
+        "south": { "uv": [ 2, 7, 14, 10 ], "texture": "#hardened_clay_stained_red" },
+        "west":  { "uv": [ 2, 7, 14, 10 ], "texture": "#hardened_clay_stained_red" },
+        "east":  { "uv": [ 2, 7, 14, 10 ], "texture": "#hardened_clay_stained_red" }
+    }
+},
+{
+    "__comment": "eerstekubus*",
+    "from": [ 3, 6.0625, 6.625 ],
+    "to": [ 13, 11.5625, 15.125 ],
+    "rotation": { "origin": [ 3, 11.5625, 6.625 ], "axis": "x", "angle": 22.5 },
+    "faces": {
+        "down":  { "uv": [ 3, 6.625, 13, 15.125 ], "texture": "#hardened_clay_stained_red" },
+        "up":    { "uv": [ 3, 6.625, 13, 15.125 ], "texture": "#hardened_clay_stained_red" },
+        "north": { "uv": [ 3, 3.9375, 13, 9.4375 ], "texture": "#hardened_clay_stained_red" },
+        "south": { "uv": [ 3, 3.9375, 13, 9.4375 ], "texture": "#hardened_clay_stained_red" },
+        "west":  { "uv": [ 6.625, 3.9375, 15.125, 9.4375 ], "texture": "#hardened_clay_stained_red" },
+        "east":  { "uv": [ 6.625, 3.9375, 15.125, 9.4375 ], "texture": "#hardened_clay_stained_red" }
+    }
+},
+{
+    "__comment": "eerstekubus*",
+    "from": [ 5, 8.5, 11 ],
+    "to": [ 11.5, 13.5, 17 ],
+    "rotation": { "origin": [ 5, 13.5, 11 ], "axis": "x", "angle": 45 },
+    "faces": {
+        "down":  { "uv": [ 5, 9.5, 11.5, 15.5 ], "texture": "#hardened_clay_stained_red" },
+        "up":    { "uv": [ 5, 9.5, 11.5, 15.5 ], "texture": "#hardened_clay_stained_red" },
+        "north": { "uv": [ 5, 2, 11.5, 6 ], "texture": "#hardened_clay_stained_red" },
+        "south": { "uv": [ 5, 2, 11.5, 6 ], "texture": "#hardened_clay_stained_red" },
+        "west":  { "uv": [ 10, 2, 16, 6 ], "texture": "#hardened_clay_stained_red" },
+        "east":  { "uv": [ 10, 2, 16, 6 ], "texture": "#hardened_clay_stained_red" }
+    }
+},
+{
+    "__comment": "eerstekubus*",
+    "from": [ 7, 10.5, 13.5 ],
+    "to": [ 9.5, 13.5, 19.5 ],
+    "rotation": { "origin": [ 7, 13.5, 13.5 ], "axis": "x", "angle": 45 },
+    "faces": {
+        "down":  { "uv": [ 7, 10.5, 9.5, 16 ], "texture": "#hardened_clay_stained_red" },
+        "up":    { "uv": [ 7, 10.5, 9.5, 16 ], "texture": "#hardened_clay_stained_red" },
+        "north": { "uv": [ 7, 2.5, 9.5, 5.5 ], "texture": "#hardened_clay_stained_red" },
+        "south": { "uv": [ 7, 2.5, 9.5, 5.5 ], "texture": "#hardened_clay_stained_red" },
+        "west":  { "uv": [ 10.5, 2.5, 16, 5.5 ], "texture": "#hardened_clay_stained_red" },
+        "east":  { "uv": [ 10.5, 2.5, 16, 5.5 ], "texture": "#hardened_clay_stained_red" }
+    }
+},
+{
+    "__comment": "eerstekubus*",
+    "from": [ 7.5, 6, 15 ],
+    "to": [ 9, 10, 16.5 ],
+    "rotation": { "origin": [ 7.5, 10, 15 ], "axis": "x", "angle": -22.5 },
+    "faces": {
+        "down":  { "uv": [ 7.5, 14.5, 9, 16 ], "texture": "#hardened_clay_stained_red" },
+        "up":    { "uv": [ 7.5, 14.5, 9, 16 ], "texture": "#hardened_clay_stained_red" },
+        "north": { "uv": [ 7.5, 6.5, 9, 10.5 ], "texture": "#hardened_clay_stained_red" },
+        "south": { "uv": [ 7.5, 6.5, 9, 10.5 ], "texture": "#hardened_clay_stained_red" },
+        "west":  { "uv": [ 14, 6.5, 15.5, 10.5 ], "texture": "#hardened_clay_stained_red" },
+        "east":  { "uv": [ 14, 6.5, 15.5, 10.5 ], "texture": "#hardened_clay_stained_red" }
+    }
+}
+],
+"display": {
+    "head": {
+        "rotation": [ 0, -90, 0 ],
+        "translation": [ 0, 12.5, 0 ],
+        "scale": [ 1, 1, 1 ]
+    },
+    "gui": {
+        "rotation": [ 20, 110, 0 ],
+        "translation": [ 0, 0.94, 0 ],
+        "scale": [ 0.7, 0.7, 0.7 ]
+    }
+}
+}

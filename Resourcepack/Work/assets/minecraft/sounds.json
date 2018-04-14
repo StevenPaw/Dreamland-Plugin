@@ -1,0 +1,1018 @@
+{
+  "craftventure.ambient.a": {
+    "sounds": [
+      {
+        "name": "craftventure/ambient/a",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ambient.crowd": {
+    "sounds": [
+      {
+        "name": "craftventure/ambient/crowd",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ambient.fizz_1": {
+    "sounds": [
+      {
+        "name": "craftventure/ambient/fizz_1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ambient.fizz_2": {
+    "sounds": [
+      {
+        "name": "craftventure/ambient/fizz_2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ambient.splash": {
+    "sounds": [
+      {
+        "name": "craftventure/ambient/splash",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ambient.thunder1": {
+    "sounds": [
+      {
+        "name": "craftventure/ambient/thunder1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ambient.thunder2": {
+    "sounds": [
+      {
+        "name": "craftventure/ambient/thunder2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ambient.toilet": {
+    "sounds": [
+      {
+        "name": "craftventure/ambient/toilet",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ambient.train_start": {
+    "sounds": [
+      {
+        "name": "craftventure/ambient/train_start",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ambient.train_track": {
+    "sounds": [
+      {
+        "name": "craftventure/ambient/train_track",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.effect.achievementcompleted": {
+    "sounds": [
+      {
+        "name": "craftventure/effect/achievementcompleted",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.effect.questcompleted": {
+    "sounds": [
+      {
+        "name": "craftventure/effect/questcompleted",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.event.gblm.dispenser_intro": {
+    "sounds": [
+      {
+        "name": "craftventure/event/gblm/dispenser_intro",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.event.gblm.dispenser_wave1_end": {
+    "sounds": [
+      {
+        "name": "craftventure/event/gblm/dispenser_wave1_end",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.event.gblm.dispenser_wave2_end": {
+    "sounds": [
+      {
+        "name": "craftventure/event/gblm/dispenser_wave2_end",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.event.gblm.finale": {
+    "sounds": [
+      {
+        "name": "craftventure/event/gblm/finale",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.event.gblm.pre_1": {
+    "sounds": [
+      {
+        "name": "craftventure/event/gblm/pre_1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.event.gblm.prologue_1": {
+    "sounds": [
+      {
+        "name": "craftventure/event/gblm/prologue_1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.event.gblm.prologue_2": {
+    "sounds": [
+      {
+        "name": "craftventure/event/gblm/prologue_2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.event.gblm.prologue_3": {
+    "sounds": [
+      {
+        "name": "craftventure/event/gblm/prologue_3",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.event.gblm.prologue_4": {
+    "sounds": [
+      {
+        "name": "craftventure/event/gblm/prologue_4",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.event.gblm.prologue_5": {
+    "sounds": [
+      {
+        "name": "craftventure/event/gblm/prologue_5",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.event.gblm.wave1_end": {
+    "sounds": [
+      {
+        "name": "craftventure/event/gblm/wave1_end",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.event.gblm.wave2_end": {
+    "sounds": [
+      {
+        "name": "craftventure/event/gblm/wave2_end",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.gui.click": {
+    "sounds": [
+      {
+        "name": "craftventure/gui/click",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.gui.error": {
+    "sounds": [
+      {
+        "name": "craftventure/gui/error",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.gui.messageroller": {
+    "sounds": [
+      {
+        "name": "craftventure/gui/messageroller",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.gui.move1": {
+    "sounds": [
+      {
+        "name": "craftventure/gui/move1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.gui.move2": {
+    "sounds": [
+      {
+        "name": "craftventure/gui/move2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.gui.move3": {
+    "sounds": [
+      {
+        "name": "craftventure/gui/move3",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.gui.ping": {
+    "sounds": [
+      {
+        "name": "craftventure/gui/ping",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.gui.thump1": {
+    "sounds": [
+      {
+        "name": "craftventure/gui/thump1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.gui.thump2": {
+    "sounds": [
+      {
+        "name": "craftventure/gui/thump2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.gui.r3.click.BClick1": {
+    "sounds": [
+      {
+        "name": "craftventure/gui/r3/click/BClick1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.gui.r3.click.BClick2": {
+    "sounds": [
+      {
+        "name": "craftventure/gui/r3/click/BClick2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.gui.r3.click.BClick3": {
+    "sounds": [
+      {
+        "name": "craftventure/gui/r3/click/BClick3",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.gui.r3.click.BRelese1": {
+    "sounds": [
+      {
+        "name": "craftventure/gui/r3/click/BRelese1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.gui.r3.click.BRelese2": {
+    "sounds": [
+      {
+        "name": "craftventure/gui/r3/click/BRelese2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.gui.r3.click.BRelese3": {
+    "sounds": [
+      {
+        "name": "craftventure/gui/r3/click/BRelese3",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.gui.r3.click.Click1": {
+    "sounds": [
+      {
+        "name": "craftventure/gui/r3/click/Click1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.gui.r3.click.Click2": {
+    "sounds": [
+      {
+        "name": "craftventure/gui/r3/click/Click2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.gui.r3.click.Click3": {
+    "sounds": [
+      {
+        "name": "craftventure/gui/r3/click/Click3",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.halloween.skyfoogle.kaka": {
+    "sounds": [
+      {
+        "name": "craftventure/halloween/skyfoogle/kaka",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.halloween.skyfoogle.kaka1": {
+    "sounds": [
+      {
+        "name": "craftventure/halloween/skyfoogle/kaka1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.halloween.skyfoogle.kaka2": {
+    "sounds": [
+      {
+        "name": "craftventure/halloween/skyfoogle/kaka2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.halloween.skyfoogle.lamp": {
+    "sounds": [
+      {
+        "name": "craftventure/halloween/skyfoogle/lamp",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.halloween.skyfoogle.schreeuw": {
+    "sounds": [
+      {
+        "name": "craftventure/halloween/skyfoogle/schreeuw",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.halloween.skyfoogle.vleugel": {
+    "sounds": [
+      {
+        "name": "craftventure/halloween/skyfoogle/vleugel",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.item.balloon.pop": {
+    "sounds": [
+      {
+        "name": "craftventure/item/balloon/pop",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.kart.horn_bicycle": {
+    "sounds": [
+      {
+        "name": "craftventure/kart/horn_bicycle",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.kart.horn_bone": {
+    "sounds": [
+      {
+        "name": "craftventure/kart/horn_bone",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.kart.horn_ccr": {
+    "sounds": [
+      {
+        "name": "craftventure/kart/horn_ccr",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.kart.horn_default": {
+    "sounds": [
+      {
+        "name": "craftventure/kart/horn_default",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.kart.horn_duke": {
+    "sounds": [
+      {
+        "name": "craftventure/kart/horn_duke",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.kart.horn_hotel": {
+    "sounds": [
+      {
+        "name": "craftventure/kart/horn_hotel",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.kart.horn_xmas": {
+    "sounds": [
+      {
+        "name": "craftventure/kart/horn_xmas",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.autopia.countdown": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/autopia/countdown",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.countdown": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/countdown",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.dead": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/dead",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.hit1": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/hit1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.jump": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/jump",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.laser1": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/laser1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.laser2": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/laser2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.laser3": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/laser3",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.laser4": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/laser4",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.laser5": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/laser5",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.lasertravel": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/lasertravel",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.meteor1": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/meteor1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.meteor2": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/meteor2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.meteor3": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/meteor3",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.respawn": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/respawn",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.start": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/start",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.turret1": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/turret1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.turret2": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/turret2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.turret3": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/turret3",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.turret4": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/turret4",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.turret5": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/turret5",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.turret6": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/turret6",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.turretdestroy1": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/turretdestroy1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.turretdestroy2": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/turretdestroy2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.turretdestroy3": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/turretdestroy3",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.turretspawn1": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/turretspawn1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.turretspawn2": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/turretspawn2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.turretspawn3": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/turretspawn3",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.vulcano1": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/vulcano1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.vulcano2": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/vulcano2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.minigame.lasergame.vulcano3": {
+    "sounds": [
+      {
+        "name": "craftventure/minigame/lasergame/vulcano3",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.player.cough_1": {
+    "sounds": [
+      {
+        "name": "craftventure/player/cough_1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.player.cough_2": {
+    "sounds": [
+      {
+        "name": "craftventure/player/cough_2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.player.cough_3": {
+    "sounds": [
+      {
+        "name": "craftventure/player/cough_3",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.player.cough_4": {
+    "sounds": [
+      {
+        "name": "craftventure/player/cough_4",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.player.happy1": {
+    "sounds": [
+      {
+        "name": "craftventure/player/happy1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.player.happy2": {
+    "sounds": [
+      {
+        "name": "craftventure/player/happy2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.player.happy3": {
+    "sounds": [
+      {
+        "name": "craftventure/player/happy3",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.random.acismenno": {
+    "sounds": [
+      {
+        "name": "craftventure/random/acismenno",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.random.portal_space": {
+    "sounds": [
+      {
+        "name": "craftventure/random/portal_space",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.bar_close": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/bar_close",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.bar_open": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/bar_open",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.coasterexplode": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/coasterexplode",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.movement.brake1": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/movement/brake1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.movement.brake2": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/movement/brake2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.movement.brake3": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/movement/brake3",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.movement.brake_close": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/movement/brake_close",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.movement.brake_open": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/movement/brake_open",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.movement.corkcrewcoasterlift": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/movement/corkcrewcoasterlift",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.movement.defaultlift": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/movement/defaultlift",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.movement.mega": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/movement/mega",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.movement.megalift": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/movement/megalift",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.movement.smalllift": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/movement/smalllift",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.movement.steel": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/movement/steel",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.movement.train": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/movement/train",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.movement.wooden1": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/movement/wooden1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.movement.wooden2": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/movement/wooden2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.movement.woodenlift": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/movement/woodenlift",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.scream.coasterscream1": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/scream/coasterscream1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.scream.coasterscream2": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/scream/coasterscream2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.scream.coasterscream3": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/scream/coasterscream3",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.scream.coasterscream4": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/scream/coasterscream4",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.scream.coasterscream5": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/scream/coasterscream5",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.scream.coasterscream6": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/scream/coasterscream6",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.coaster.scream.coasterscream7": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/coaster/scream/coasterscream7",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.spacemountain.brakes": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/spacemountain/brakes",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.ride.spacemountain.canon": {
+    "sounds": [
+      {
+        "name": "craftventure/ride/spacemountain/canon",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.tech.hiss1": {
+    "sounds": [
+      {
+        "name": "craftventure/tech/hiss1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.venturebank.cash1": {
+    "sounds": [
+      {
+        "name": "craftventure/venturebank/cash1",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.venturebank.cash2": {
+    "sounds": [
+      {
+        "name": "craftventure/venturebank/cash2",
+        "stream": false
+      }
+    ]
+  },
+  "craftventure.venturebank.cash3": {
+    "sounds": [
+      {
+        "name": "craftventure/venturebank/cash3",
+        "stream": false
+      }
+    ]
+  }
+}

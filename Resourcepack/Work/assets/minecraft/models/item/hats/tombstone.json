@@ -1,0 +1,83 @@
+{
+"__comment": "Designed by Kukamonda with BDcraft Cubik PRO 0.96 Beta - http://bdcraft.net",
+"textures": {
+    "texture": "blocks/stone",
+    "coal_block": "blocks/rip"
+},
+"elements": [ 
+{
+    "from": [ 0, 0, 5.5 ],
+    "to": [ 16, 16, 8 ],
+    "faces": {
+        "down":  { "uv": [ 0, 5.5, 16, 8 ], "texture": "#texture" },
+        "up":    { "uv": [ 0, 5.5, 16, 8 ], "texture": "#texture" },
+        "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+        "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#coal_block" },
+        "west":  { "uv": [ 5.5, 0, 8, 16 ], "texture": "#texture" },
+        "east":  { "uv": [ 5.5, 0, 8, 16 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 0, -4.5, 5.5 ],
+    "to": [ 16, 0, 8 ],
+    "faces": {
+        "down":  { "uv": [ 0, 5.5, 16, 8 ], "texture": "#texture" },
+        "up":    { "uv": [ 0, 5.5, 16, 8 ], "texture": "#texture" },
+        "north": { "uv": [ 0, 0, 16, 4.5 ], "texture": "#texture" },
+        "south": { "uv": [ 0, 0, 16, 4.5 ], "texture": "#texture" },
+        "west":  { "uv": [ 5.5, 0, 8, 4.5 ], "texture": "#texture" },
+        "east":  { "uv": [ 5.5, 0, 8, 4.5 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 3, 16, 5.5 ],
+    "to": [ 13, 19, 8 ],
+    "faces": {
+        "down":  { "uv": [ 3, 6, 13, 8.5 ], "texture": "#texture" },
+        "up":    { "uv": [ 3, 6, 13, 8.5 ], "texture": "#texture" },
+        "north": { "uv": [ 3, 13, 13, 16 ], "texture": "#texture" },
+        "south": { "uv": [ 3, 13, 13, 16 ], "texture": "#texture" },
+        "west":  { "uv": [ 6, 0, 8.5, 3 ], "texture": "#texture" },
+        "east":  { "uv": [ 6, 0, 8.5, 3 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 13, 16, 5.5 ],
+    "to": [ 17.5, 19, 8 ],
+    "rotation": { "origin": [ 13, 19, 5.5 ], "axis": "z", "angle": -45 },
+    "faces": {
+        "down":  { "uv": [ 11.5, 6, 16, 8.5 ], "texture": "#texture" },
+        "up":    { "uv": [ 11.5, 6, 16, 8.5 ], "texture": "#texture" },
+        "north": { "uv": [ 11.5, 0, 16, 3 ], "texture": "#texture" },
+        "south": { "uv": [ 11.5, 0, 16, 3 ], "texture": "#texture" },
+        "west":  { "uv": [ 6, 0, 8.5, 3 ], "texture": "#texture" },
+        "east":  { "uv": [ 6, 0, 8.5, 3 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ -0.1875, 12.8125, 5.5 ],
+    "to": [ 4.3125, 15.8125, 8 ],
+    "rotation": { "origin": [ -0.1875, 15.8125, 5.5 ], "axis": "z", "angle": 45 },
+    "faces": {
+        "down":  { "uv": [ -0.1875, 6, 4.3125, 8.5 ], "texture": "#texture" },
+        "up":    { "uv": [ 0, 6, 4.5, 8.5 ], "texture": "#texture" },
+        "north": { "uv": [ 0, 0.1875, 4.5, 3.1875 ], "texture": "#texture" },
+        "south": { "uv": [ 0, 0.1875, 4.5, 3.1875 ], "texture": "#texture" },
+        "west":  { "uv": [ 6, 0.1875, 8.5, 3.1875 ], "texture": "#texture" },
+        "east":  { "uv": [ 6, 0.1875, 8.5, 3.1875 ], "texture": "#texture" }
+    }
+}
+],
+"display": {
+    "head": {
+        "rotation": [ 10, 180, 11 ],
+        "translation": [ 0.57, 9.44, -0.76 ],
+        "scale": [ 0.6, 0.6, 0.6 ]
+    },
+    "gui": {
+        "rotation": [ 0, 17, 10 ],
+        "translation": [ 0, 0, 0 ],
+        "scale": [ 0.5, 0.5, 0.5 ]
+    }
+}
+}

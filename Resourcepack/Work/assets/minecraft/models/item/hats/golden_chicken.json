@@ -1,0 +1,93 @@
+{
+"__comment": "Designed by Kukamonda with BDcraft Cubik PRO 0.96 Beta - http://bdcraft.net",
+"textures": {
+    "texture": "entity/golden_chicken",
+    "chicken": "entity/chicken"
+},
+"elements": [ 
+{
+    "from": [ 5, 0, 4 ],
+    "to": [ 11, 6, 12 ],
+    "faces": {
+        "down":  { "uv": [ 0, 7.5, 3, 11.5 ], "texture": "#texture" },
+        "up":    { "uv": [ 0, 7.5, 3, 11.5 ], "texture": "#texture" },
+        "north": { "uv": [ 0, 7.5, 3, 10.5 ], "texture": "#texture" },
+        "south": { "uv": [ 0, 7.5, 3, 10.5 ], "texture": "#texture" },
+        "west":  { "uv": [ 0, 7.5, 4, 10.5 ], "texture": "#texture" },
+        "east":  { "uv": [ 0, 7.5, 4, 10.5 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 6, 4, 2 ],
+    "to": [ 10, 10, 5 ],
+    "faces": {
+        "down":  { "uv": [ 1.5, 0, 3.5, 1.5 ], "texture": "#texture" },
+        "up":    { "uv": [ 1.5, 0, 3.5, 1.5 ], "texture": "#texture" },
+        "north": { "uv": [ 1.5, 1.5, 3.5, 4.5 ], "texture": "#texture" },
+        "south": { "uv": [ 3.5, 1.5, 5.5, 4.5 ], "texture": "#texture" },
+        "west":  { "uv": [ 0, 1.5, 1.5, 4.5 ], "texture": "#texture" },
+        "east":  { "uv": [ 5.5, 1.5, 7, 4.5 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 6, 6, 0 ],
+    "to": [ 10, 8, 2 ],
+    "faces": {
+        "down":  { "uv": [ 10, 0, 12, 1 ], "texture": "#texture" },
+        "up":    { "uv": [ 8, 0, 10, 1 ], "rotation": 180, "texture": "#texture" },
+        "north": { "uv": [ 8, 1, 10, 2 ], "texture": "#texture" },
+        "south": { "uv": [ 11, 1, 13, 2 ], "texture": "#texture" },
+        "west":  { "uv": [ 7, 1, 8, 2 ], "texture": "#texture" },
+        "east":  { "uv": [ 10, 1, 11, 2 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 4.0625, 2, 5 ],
+    "to": [ 5.0625, 6, 11 ],
+    "faces": {
+        "down":  { "uv": [ 15.5, 6.5, 16, 11.5 ], "texture": "#texture" },
+        "up":    { "uv": [ 15, 6.5, 15.5, 11.5 ], "texture": "#texture" },
+        "north": { "uv": [ 12.5, 9.5, 13, 11.5 ], "texture": "#texture" },
+        "south": { "uv": [ 12, 9.5, 12.5, 11.5 ], "texture": "#texture" },
+        "west":  { "uv": [ 12, 9.5, 15, 11.5 ], "texture": "#texture" },
+        "east":  { "uv": [ 9, 9.5, 12, 11.5 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 11, 2, 5 ],
+    "to": [ 12, 6, 11 ],
+    "faces": {
+        "down":  { "uv": [ 15.5, 6.5, 16, 11.5 ], "texture": "#texture" },
+        "up":    { "uv": [ 15, 6.5, 15.5, 11.5 ], "texture": "#texture" },
+        "north": { "uv": [ 12.5, 9.5, 13, 11.5 ], "texture": "#texture" },
+        "south": { "uv": [ 12, 9.5, 12.5, 11.5 ], "texture": "#texture" },
+        "west":  { "uv": [ 12, 9.5, 15, 11.5 ], "texture": "#texture" },
+        "east":  { "uv": [ 9, 9.5, 12, 11.5 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 7, 4, 1 ],
+    "to": [ 9, 6, 2 ],
+    "faces": {
+        "down":  { "uv": [ 8, 2, 10, 3 ], "texture": "#texture" },
+        "up":    { "uv": [ 8, 2, 10, 3 ], "texture": "#texture" },
+        "north": { "uv": [ 7, 3, 8, 4 ], "texture": "#texture" },
+        "south": { "uv": [ 10, 3, 11, 4 ], "texture": "#texture" },
+        "west":  { "uv": [ 8, 2, 9, 4 ], "texture": "#texture" },
+        "east":  { "uv": [ 9, 2, 10, 4 ], "texture": "#texture" }
+    }
+}
+],
+"display": {
+    "head": {
+        "rotation": [ 0, 0, 0 ],
+        "translation": [ 0, 17, 0 ],
+        "scale": [ 1.55, 1.55, 1.55 ]
+    },
+    "gui": {
+        "rotation": [ 14, 139, 0 ],
+        "translation": [ 0, 2.27, 0 ],
+        "scale": [ 1, 1, 1 ]
+    }
+}
+}

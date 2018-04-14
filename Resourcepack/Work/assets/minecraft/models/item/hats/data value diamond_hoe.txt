@@ -1,0 +1,40 @@
+Dmg 	Hat
+
+0	diamond_hoe	
+
+1	fenrir_hat
+2	axe_in_head
+3	viking_helmet
+4	halloween_horns
+5	golden_chicken
+6	sombrero
+7	pilgrim_hat
+8	racoon_hat
+9	hat_addict_1
+10	hat_addict_2
+11	hat_addict_3
+
+13	hat_addict_4
+14	gopro
+15	propellor
+16	plunger
+17	magicarp
+	
+18	allium_hat
+19	bluet_hat
+20	daisy_hat
+21	dandelion_hat	
+22	dark_oak_hat
+23	deadbush_hat
+24	orchid_hat	
+25	rose_hat
+26	tulip_orange
+
+28	tulip_pink
+29	tulip_red
+30	tulip_white
+31	cookie_hat
+32	5year_hat
+33	astro_hat
+34	box_hat
+35	pirate_hat
