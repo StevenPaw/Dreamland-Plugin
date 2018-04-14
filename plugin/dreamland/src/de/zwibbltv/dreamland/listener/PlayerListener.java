@@ -25,9 +25,27 @@ public class PlayerListener implements Listener {
 				|| block.getType() == Material.SPRUCE_DOOR
 				|| block.getType() == Material.TRAP_DOOR
 				|| block.getType() == Material.WOOD_DOOR
+				|| block.getType() == Material.ACACIA_FENCE_GATE
+				|| block.getType() == Material.BIRCH_FENCE_GATE
+				|| block.getType() == Material.FENCE_GATE
+				|| block.getType() == Material.ENCHANTMENT_TABLE
+				|| block.getType() == Material.JUNGLE_FENCE_GATE
+				|| block.getType() == Material.SPRUCE_FENCE_GATE
+				|| block.getType() == Material.NOTE_BLOCK
+				|| block.getType() == Material.ANVIL
+				|| block.getType() == Material.BEACON
+				|| block.getType() == Material.ANVIL
+				|| block.getType() == Material.WORKBENCH
+				|| block.getType() == Material.ENDER_CHEST
+				|| block.getType() == Material.TRAPPED_CHEST
+				|| block.getType() == Material.DROPPER
+				|| block.getType() == Material.DISPENSER
+				|| block.getType() == Material.CHEST
+				|| block.getType() == Material.BREWING_STAND
+				|| block.getType() == Material.FURNACE
 				|| block.getType() == Material.IRON_DOOR) 
 		{
-			if(!p.hasPermission("dreamland.openDoors")) {
+			if(!p.hasPermission("dreamland.useBlocks")) {
 				p.sendMessage(ChatColor.RED + "No! Don't try that!");
 				event.setCancelled(true);
 			}

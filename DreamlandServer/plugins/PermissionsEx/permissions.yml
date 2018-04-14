@@ -49,6 +49,11 @@ users:
   cf199c68-448b-461b-8a1f-0978c4403e45:
     options:
       name: ZwibblTV
+    group:
+    - Owner
   d1958a44-a2f7-476f-b9f5-0aca1e27354e:
     options:
       name: Segel_Basti
+  ff1022ac-91de-4516-bddd-1656aae12fc1:
+    group:
+    - Owner
