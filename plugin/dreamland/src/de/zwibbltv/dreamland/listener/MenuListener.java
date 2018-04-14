@@ -112,7 +112,19 @@ public class MenuListener implements Listener {
 					p.performCommand("warp Flying_Pegasus");
 					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
 					p.closeInventory();
-				}				
+				}	
+				
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aTower of Izran")) {
+					p.performCommand("warp Tower_of_Izran");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}	
+				
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aWestern race")) {
+					p.performCommand("warp Western_race");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}	
 
 			} catch (Exception ex) {
 
@@ -194,12 +206,25 @@ public class MenuListener implements Listener {
 			flyingpegasusmeta.setDisplayName("§aFlying Pegasus");
 			flyingpegasus.setItemMeta(flyingpegasusmeta);
 			
+			ItemStack Westernrace = new ItemStack(Material.DIAMOND_BARDING);
+			ItemMeta Westernracemeta = Westernrace.getItemMeta();
+			Westernracemeta.setDisplayName("§aWestern race");
+			Westernrace.setItemMeta(Westernracemeta);
+			
+			ItemStack ToI = new ItemStack(Material.DIAMOND_SWORD);
+			ItemMeta ToImeta = ToI.getItemMeta();
+			ToImeta.setDisplayName("§aTower of Izran");
+			ToI.setItemMeta(ToImeta);
+			ToI.setDurability((short) 22);
+			
 			ItemStack back = new ItemStack(Material.WOOL, 1, (short)14);
 			ItemMeta backmeta = back.getItemMeta();
 			backmeta.setDisplayName("§cBack");
 			back.setItemMeta(backmeta);
 
-			inv.setItem(4, flyingpegasus);
+			inv.setItem(3, flyingpegasus);
+			inv.setItem(4, Westernrace);
+			inv.setItem(5, ToI);
 			inv.setItem(8, back);
 
 			p.openInventory(inv);
