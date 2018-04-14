@@ -44,6 +44,7 @@ public class MenuListener implements Listener {
 		ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
 
 		e.getPlayer().getInventory().clear();
+		e.getPlayer().getEquipment().clear();
 		e.getPlayer().getInventory().setItem(0, carrot);
 		e.getPlayer().getInventory().setItem(8, golden_carrot);
 
@@ -102,7 +103,12 @@ public class MenuListener implements Listener {
 					p.closeInventory();
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§cBack")) {
-					p.sendMessage(Main.getcommingsoon());
+					openMenuMain(p);
+				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aFlying Pegasus")) {
+					p.performCommand("warp Flying_Pegasus");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
 				}				
 
 			} catch (Exception ex) {
@@ -160,12 +166,12 @@ public class MenuListener implements Listener {
 		public void openMenuWarps(Player p) {
 			Inventory inv = Bukkit.createInventory(null, 9 * 1, "§0Warps");
 
-			ItemStack attraktions = new ItemStack(Material.COMPASS);
+			ItemStack attraktions = new ItemStack(Material.MINECART);
 			ItemMeta attraktionsmeta = attraktions.getItemMeta();
 			attraktionsmeta.setDisplayName("§aAttraktions");
 			attraktions.setItemMeta(attraktionsmeta);
 
-			ItemStack areas = new ItemStack(Material.MINECART);
+			ItemStack areas = new ItemStack(Material.COMPASS);
 			ItemMeta areasmeta = areas.getItemMeta();
 			areasmeta.setDisplayName("§aAreas");
 			areas.setItemMeta(areasmeta);
@@ -180,13 +186,18 @@ public class MenuListener implements Listener {
 		public void openMenuAttractions(Player p) {
 			Inventory inv = Bukkit.createInventory(null, 9 * 1, "§0Attraktion-Warps");
 
-			ItemStack spawn = new ItemStack(Material.DIAMOND_HOE);
-			ItemMeta spawnmeta = spawn.getItemMeta();
-			spawnmeta.setDisplayName(Main.getcommingsoon());
-			spawn.setItemMeta(spawnmeta);
-			spawn.setDurability((short) 47);
+			ItemStack flyingpegasus = new ItemStack(Material.ELYTRA);
+			ItemMeta flyingpegasusmeta = flyingpegasus.getItemMeta();
+			flyingpegasusmeta.setDisplayName("§aFlying Pegasus");
+			flyingpegasus.setItemMeta(flyingpegasusmeta);
+			
+			ItemStack back = new ItemStack(Material.WOOL, 1, (short)14);
+			ItemMeta backmeta = back.getItemMeta();
+			backmeta.setDisplayName("§cBack");
+			back.setItemMeta(backmeta);
 
-			inv.setItem(4, spawn);
+			inv.setItem(4, flyingpegasus);
+			inv.setItem(8, back);
 
 			p.openInventory(inv);
 		}
@@ -216,7 +227,7 @@ public class MenuListener implements Listener {
 			Lagoon.setItemMeta(Lagoonmeta);
 			
 			ItemStack back = new ItemStack(Material.WOOL, 1, (short)14);
-			ItemMeta backmeta = Lagoon.getItemMeta();
+			ItemMeta backmeta = back.getItemMeta();
 			backmeta.setDisplayName("§cBack");
 			back.setItemMeta(backmeta);
 

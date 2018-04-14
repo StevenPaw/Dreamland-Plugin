@@ -55,7 +55,7 @@ public class updateScoreboard {
         	               	
         	
         } else if (CMDbuild.buildallowed.contains(p) == true) {
-        	Score rank = obj.getScore("§4BUILDMODE");
+        	Score rank = obj.getScore("§4BUILDER");
     		rank.setScore(0);
         }
 
