@@ -46,7 +46,7 @@ public class PlayerListener implements Listener {
 				|| block.getType() == Material.IRON_DOOR) 
 		{
 			if(!p.hasPermission("dreamland.useBlocks")) {
-				p.sendMessage(ChatColor.RED + "No! Don't try that!");
+				p.sendMessage(ChatColor.GRAY + "No!");
 				event.setCancelled(true);
 			}
 		}
