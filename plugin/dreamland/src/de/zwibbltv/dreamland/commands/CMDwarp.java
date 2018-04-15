@@ -1,8 +1,12 @@
 package de.zwibbltv.dreamland.commands;
 
+import java.io.File;
+
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 
 import de.zwibbltv.dreamland.main.Main;
@@ -25,9 +29,10 @@ public class CMDwarp implements CommandExecutor {
 						
 			} 
 				if(args.length == 0) {
-					config = Main.getInstance().getDataFolder(), "warps.yml";
+					File f = new File(Main.getInstance().getDataFolder(), "warps.yml");
+					FileConfiguration config = YamlConfiguration.loadConfiguration(f);
 					String warps = "";
-					for(String s : config.getConfigurationSection(Main.getInstance().getDataFolder(), "warps.yml").getKeys(false)) {
+					for(String s : config.getConfigurationSection("warps.yml").getKeys(false)) {
 						warps = warps +" , " +s;
 					}
 					p.sendMessage("Warps: " + warps);
