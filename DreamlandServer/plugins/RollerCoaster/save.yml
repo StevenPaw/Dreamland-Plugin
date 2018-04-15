@@ -1,0 +1,21 @@
+Saved:
+  FlyingPegasus:
+    loopSeconds: 30
+    cartOffset: 60
+    minSpeed: 2
+    maxSpeed: 30
+    trainLength: 3
+    hasLoco: true
+    trainName: FlyingPegasus
+    cartDownPos: -1
+    isSmall: false
+  FlyingPegasus2:
+    loopSeconds: 30
+    cartOffset: 60
+    minSpeed: 2
+    maxSpeed: 30
+    trainLength: 3
+    hasLoco: true
+    trainName: FlyingPegasus
+    cartDownPos: -1
+    isSmall: false

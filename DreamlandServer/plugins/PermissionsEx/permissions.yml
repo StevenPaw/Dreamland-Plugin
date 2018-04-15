@@ -57,3 +57,5 @@ users:
   ff1022ac-91de-4516-bddd-1656aae12fc1:
     group:
     - Owner
+    options:
+      name: StevenPaw
