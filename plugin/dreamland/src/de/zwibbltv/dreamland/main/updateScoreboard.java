@@ -26,7 +26,7 @@ public class updateScoreboard {
         obj.setDisplayName("§6Dreamland");
         
         if(eco != null ) {
-            money = eco.getBalance(p);
+            money = (int)eco.getBalance(p);
         	
         }
         player = Bukkit.getServer().getOnlinePlayers().size();
