@@ -12,8 +12,8 @@ import de.zwibbltv.dreamland.main.Main;
 
 public class WarpManager {
 
-	private File f = new File(Main.getInstance().getDataFolder(), "warps.yml");
-	private FileConfiguration cfg = YamlConfiguration.loadConfiguration(f);
+	public File f = new File(Main.getInstance().getDataFolder(), "warps.yml");
+	public FileConfiguration cfg = YamlConfiguration.loadConfiguration(f);
 	
 	private void save() {
 		try {

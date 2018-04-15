@@ -11,7 +11,9 @@ import de.zwibbltv.dreamland.commands.CMDgamemode;
 import de.zwibbltv.dreamland.commands.CMDheal;
 import de.zwibbltv.dreamland.commands.CMDkit;
 import de.zwibbltv.dreamland.commands.CMDmute;
+import de.zwibbltv.dreamland.commands.CMDremoveploc;
 import de.zwibbltv.dreamland.commands.CMDremovewarp;
+import de.zwibbltv.dreamland.commands.CMDsetploc;
 import de.zwibbltv.dreamland.commands.CMDsetspawn;
 import de.zwibbltv.dreamland.commands.CMDsetwarp;
 import de.zwibbltv.dreamland.commands.CMDspawn;
@@ -21,6 +23,7 @@ import de.zwibbltv.dreamland.listener.JoinListener;
 import de.zwibbltv.dreamland.listener.MenuListener;
 import de.zwibbltv.dreamland.listener.PlayerListener;
 import de.zwibbltv.dreamland.listener.scoreboardListener;
+import de.zwibbltv.dreamland.utils.PlayerLocationLockedManager;
 import de.zwibbltv.dreamland.utils.WarpManager;
 import net.milkbowl.vault.economy.Economy;
 
@@ -89,8 +92,10 @@ public class Main extends JavaPlugin {
 		this.getCommand("setwarp").setExecutor(new CMDsetwarp());
 		this.getCommand("warp").setExecutor(new CMDwarp());
 		this.getCommand("removewarp").setExecutor(new CMDremovewarp());
+		this.getCommand("setploc").setExecutor(new CMDsetploc());
+		this.getCommand("removeploc").setExecutor(new CMDremoveploc());
 		
-		PluginManager pm = Bukkit.getPluginManager();	
+		PluginManager pm = Bukkit.getPluginManager();
 		pm.registerEvents(new JoinListener(), this);
 		pm.registerEvents(new CMDmute(), this);
 		pm.registerEvents(new scoreboardListener(), this);
@@ -108,6 +113,10 @@ public class Main extends JavaPlugin {
 	
 	public WarpManager getWarpManager() {
 		return new WarpManager();
+	}
+	
+	public PlayerLocationLockedManager getplocManager() {
+		return new PlayerLocationLockedManager();
 	}
 	
 	@Override
