@@ -17,7 +17,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import de.zwibbltv.dreamland.commands.CMDbuild;
 import de.zwibbltv.dreamland.main.ItemBuilder;
-import de.zwibbltv.dreamland.main.Main;
 
 public class MenuListener implements Listener {
 	
@@ -156,7 +155,7 @@ public class MenuListener implements Listener {
 					|| e.getAction() == Action.LEFT_CLICK_AIR || e.getAction() == Action.LEFT_CLICK_BLOCK) {
 				
 					if (e.getMaterial().equals(Material.GOLDEN_CARROT)) {
-						p.sendMessage(Main.getcommingsoon());
+						p.performCommand("buy");
 					} 				
 			}
 		}
