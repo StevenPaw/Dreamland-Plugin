@@ -1,5 +1,5 @@
 Saved:
-  FlyingPegasus:
+  FlyingPegasus2:
     loopSeconds: 30
     cartOffset: 60
     minSpeed: 2
@@ -9,7 +9,7 @@ Saved:
     trainName: FlyingPegasus
     cartDownPos: -1
     isSmall: false
-  FlyingPegasus2:
+  FlyingPegasus:
     loopSeconds: 30
     cartOffset: 60
     minSpeed: 2

@@ -1446,3 +1446,5 @@ Trains:
 Ridecount:
   FlyingPegasus:
     count: 0
+  FlyingPegasus2:
+    count: 0
