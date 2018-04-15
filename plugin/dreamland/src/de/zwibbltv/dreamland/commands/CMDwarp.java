@@ -23,8 +23,17 @@ public class CMDwarp implements CommandExecutor {
 				} else
 					p.sendMessage("§cThe warp§6 " + warpName + "§c does not exist!");
 						
-			} else
-				p.sendMessage("§cPlease use /warp <Name>");
+			} 
+				if(args.length == 0) {
+					config = Main.getInstance().getDataFolder(), "warps.yml";
+					String warps = "";
+					for(String s : config.getConfigurationSection(Main.getInstance().getDataFolder(), "warps.yml").getKeys(false)) {
+						warps = warps +" , " +s;
+					}
+					p.sendMessage("Warps: " + warps);
+					
+				
+			} 
 			
 		} else
 			p.sendMessage(Main.getNoPerms());
