@@ -30,6 +30,6 @@ public class scoreboardListener implements Listener {
         for(Player p : Bukkit.getOnlinePlayers()) {
         	de.zwibbltv.dreamland.main.updateScoreboard.update(p);
         }
-     }  
+     }      
 }
           

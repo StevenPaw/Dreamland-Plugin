@@ -67,12 +67,14 @@ public class Main extends JavaPlugin {
 		this.setupEconomy();
 		
 		Bukkit.getScheduler().runTaskTimer(this, new Runnable() {
-		    @Override
+		    @SuppressWarnings("deprecation")
+			@Override
 		    public void run() {
 		    	
 		    	for(Player p : Bukkit.getOnlinePlayers()) {
 		    		de.zwibbltv.dreamland.main.updateScoreboard.update(p);
 		    		de.zwibbltv.dreamland.viponly.places.locations(p);
+		    		economy.depositPlayer(p.getName(), 0.01);
 		        }
 		        
 		    }
