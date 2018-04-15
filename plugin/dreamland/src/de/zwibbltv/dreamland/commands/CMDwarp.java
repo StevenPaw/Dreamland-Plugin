@@ -32,10 +32,10 @@ public class CMDwarp implements CommandExecutor {
 					File f = new File(Main.getInstance().getDataFolder(), "warps.yml");
 					FileConfiguration config = YamlConfiguration.loadConfiguration(f);
 					String warps = "";
-					for(String s : config.getConfigurationSection("warps.yml").getKeys(false)) {
-						warps = warps +" , " +s;
+					for(String s : config.getKeys(false)) {
+						warps = warps + s + ", ";
 					}
-					p.sendMessage("Warps: " + warps);
+					p.sendMessage("§6Warps:§a " + warps);
 					
 				
 			} 
