@@ -9,7 +9,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import de.zwibbltv.dreamland.commands.CMDbuild;
 import de.zwibbltv.dreamland.commands.CMDgamemode;
 import de.zwibbltv.dreamland.commands.CMDheal;
-import de.zwibbltv.dreamland.commands.CMDkit;
 import de.zwibbltv.dreamland.commands.CMDmenu;
 import de.zwibbltv.dreamland.commands.CMDmute;
 import de.zwibbltv.dreamland.commands.CMDremoveploc;
@@ -84,7 +83,6 @@ public class Main extends JavaPlugin {
 	Bukkit.getConsoleSender().sendMessage(prefix + "§a§lerfolgreich gestartet!");
 	
 		getCommand("heal").setExecutor(new CMDheal());
-		getCommand("kit").setExecutor(new CMDkit());
 		getCommand("setspawn").setExecutor(new CMDsetspawn());
 		getCommand("spawn").setExecutor(new CMDspawn());
 		getCommand("mute").setExecutor(new CMDmute());

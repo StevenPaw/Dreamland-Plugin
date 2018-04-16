@@ -8,8 +8,6 @@ depend: [Vault]
 commands:
    heal:
       description: give or get heal
-   kit:
-      description: take a look!
    setspawn:
       description: set the spawn
    spawn:
