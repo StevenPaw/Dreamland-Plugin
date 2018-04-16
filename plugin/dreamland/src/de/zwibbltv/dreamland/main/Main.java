@@ -10,6 +10,7 @@ import de.zwibbltv.dreamland.commands.CMDbuild;
 import de.zwibbltv.dreamland.commands.CMDgamemode;
 import de.zwibbltv.dreamland.commands.CMDheal;
 import de.zwibbltv.dreamland.commands.CMDkit;
+import de.zwibbltv.dreamland.commands.CMDmenu;
 import de.zwibbltv.dreamland.commands.CMDmute;
 import de.zwibbltv.dreamland.commands.CMDremoveploc;
 import de.zwibbltv.dreamland.commands.CMDremovewarp;
@@ -89,6 +90,7 @@ public class Main extends JavaPlugin {
 		getCommand("mute").setExecutor(new CMDmute());
 		getCommand("gm").setExecutor(new CMDgamemode());
 		getCommand("build").setExecutor(new CMDbuild());
+		getCommand("menu").setExecutor(new CMDmenu());
 		
 		setInstance(this);
 		this.getCommand("setwarp").setExecutor(new CMDsetwarp());

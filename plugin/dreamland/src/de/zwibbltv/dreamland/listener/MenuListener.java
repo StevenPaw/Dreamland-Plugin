@@ -162,7 +162,7 @@ public class MenuListener implements Listener {
 		
 		//Open Menu
 		//Open Main Menu
-		public void openMenuMain(Player p)
+		public static void openMenuMain(Player p)
 		{
 			Inventory inv = Bukkit.createInventory(null, 9 * 1, "§cMenu");
 

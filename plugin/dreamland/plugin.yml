@@ -30,3 +30,5 @@ commands:
       description: create a ploc
    removeploc:
       description: delete a ploc
+   menu:
+      description: open the menu
