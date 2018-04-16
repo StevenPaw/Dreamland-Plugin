@@ -24,7 +24,6 @@ public class PlayerListener implements Listener {
 				|| block.getType() == Material.JUNGLE_DOOR
 				|| block.getType() == Material.SPRUCE_DOOR
 				|| block.getType() == Material.TRAP_DOOR
-				|| block.getType() == Material.WOOD_DOOR
 				|| block.getType() == Material.ACACIA_FENCE_GATE
 				|| block.getType() == Material.BIRCH_FENCE_GATE
 				|| block.getType() == Material.FENCE_GATE
