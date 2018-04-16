@@ -44,11 +44,11 @@ public class updateScoreboard {
             	Score rank = obj.getScore("§dVIP");
             	rank.setScore(0);
             }
-        	else if(PermissionsEx.getUser(p).inGroup("Player")) {
+        	else if(PermissionsEx.getUser(p).inGroup("Member")) {
         		Score rank = obj.getScore("§fMember");
         		rank.setScore(0);
         	}
-        	else if(PermissionsEx.getUser(p).inGroup("Default")) {
+        	else if(PermissionsEx.getUser(p).inGroup("Guest")) {
         		Score rank = obj.getScore("§7Guest");
         		rank.setScore(0);
         	}

@@ -11,6 +11,7 @@ public class places {
 	
 	public static void locations(Player p) {		
 		
+		//ainstreet Bühne links
 		if (PermissionsEx.getUser(p).inGroup("Default") || PermissionsEx.getUser(p).inGroup("Player")) {
 			if (!de.zwibbltv.dreamland.commands.CMDbuild.buildallowed.contains(p)) {
 				World w = p.getWorld();
@@ -23,7 +24,8 @@ public class places {
 				}			
 			}
 		}	
-	
+		
+		//Mainstreet Bühne Rechts
 		if (PermissionsEx.getUser(p).inGroup("Default") || PermissionsEx.getUser(p).inGroup("Player")) {
 			if (!de.zwibbltv.dreamland.commands.CMDbuild.buildallowed.contains(p)) {
 				World w = p.getWorld();
@@ -37,6 +39,7 @@ public class places {
 			}
 		}	
 		
+		//Mainstreet Bühne Trum
 		if (PermissionsEx.getUser(p).inGroup("Default") || PermissionsEx.getUser(p).inGroup("Player")) {
 			if (!de.zwibbltv.dreamland.commands.CMDbuild.buildallowed.contains(p)) {
 				World w = p.getWorld();
@@ -44,6 +47,34 @@ public class places {
 				Double d = ploc.distance(new Location(w, -875.5, 18.0, 639.5));
 				if(d <= 1.5) {
 					Location location = new Location(w, -878, 18.0, 639.50, -90, 0);
+					p.teleport(location);
+					p.sendMessage(Main.getVIP());
+				}			
+			}
+		}	
+		
+		//wastern race control
+		if (PermissionsEx.getUser(p).inGroup("Default") || PermissionsEx.getUser(p).inGroup("Player")) {
+			if (!de.zwibbltv.dreamland.commands.CMDbuild.buildallowed.contains(p)) {
+				World w = p.getWorld();
+				Location ploc = p.getLocation();
+				Double d = ploc.distance(new Location(w, -826.5, 21.0, 715.5));
+				if(d <= 2) {
+					Location location = new Location(w, -826.5, 21.0, 712.50, 0, 0);
+					p.teleport(location);
+					p.sendMessage(Main.getVIP());
+				}			
+			}
+		}
+		
+		//Club33
+		if (PermissionsEx.getUser(p).inGroup("Default") || PermissionsEx.getUser(p).inGroup("Player")) {
+			if (!de.zwibbltv.dreamland.commands.CMDbuild.buildallowed.contains(p)) {
+				World w = p.getWorld();
+				Location ploc = p.getLocation();
+				Double d = ploc.distance(new Location(w, -786.5, 22.0, 619.5));
+				if(d <= 2) {
+					Location location = new Location(w, -783, 22.0, 620, 90, 0);
 					p.teleport(location);
 					p.sendMessage(Main.getVIP());
 				}			
