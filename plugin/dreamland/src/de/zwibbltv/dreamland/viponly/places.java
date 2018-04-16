@@ -12,7 +12,7 @@ public class places {
 	public static void locations(Player p) {		
 		
 		//ainstreet Bühne links
-		if (PermissionsEx.getUser(p).inGroup("Default") || PermissionsEx.getUser(p).inGroup("Player")) {
+		if (PermissionsEx.getUser(p).inGroup("Guest") || PermissionsEx.getUser(p).inGroup("Player")) {
 			if (!de.zwibbltv.dreamland.commands.CMDbuild.buildallowed.contains(p)) {
 				World w = p.getWorld();
 				Location ploc = p.getLocation();
@@ -26,7 +26,7 @@ public class places {
 		}	
 		
 		//Mainstreet Bühne Rechts
-		if (PermissionsEx.getUser(p).inGroup("Default") || PermissionsEx.getUser(p).inGroup("Player")) {
+		if (PermissionsEx.getUser(p).inGroup("Guest") || PermissionsEx.getUser(p).inGroup("Player")) {
 			if (!de.zwibbltv.dreamland.commands.CMDbuild.buildallowed.contains(p)) {
 				World w = p.getWorld();
 				Location ploc = p.getLocation();
@@ -40,7 +40,7 @@ public class places {
 		}	
 		
 		//Mainstreet Bühne Trum
-		if (PermissionsEx.getUser(p).inGroup("Default") || PermissionsEx.getUser(p).inGroup("Player")) {
+		if (PermissionsEx.getUser(p).inGroup("Guest") || PermissionsEx.getUser(p).inGroup("Player")) {
 			if (!de.zwibbltv.dreamland.commands.CMDbuild.buildallowed.contains(p)) {
 				World w = p.getWorld();
 				Location ploc = p.getLocation();
@@ -54,7 +54,7 @@ public class places {
 		}	
 		
 		//wastern race control
-		if (PermissionsEx.getUser(p).inGroup("Default") || PermissionsEx.getUser(p).inGroup("Player")) {
+		if (PermissionsEx.getUser(p).inGroup("Guest") || PermissionsEx.getUser(p).inGroup("Player")) {
 			if (!de.zwibbltv.dreamland.commands.CMDbuild.buildallowed.contains(p)) {
 				World w = p.getWorld();
 				Location ploc = p.getLocation();
@@ -68,7 +68,7 @@ public class places {
 		}
 		
 		//Club33
-		if (PermissionsEx.getUser(p).inGroup("Default") || PermissionsEx.getUser(p).inGroup("Player")) {
+		if (PermissionsEx.getUser(p).inGroup("Guest") || PermissionsEx.getUser(p).inGroup("Player")) {
 			if (!de.zwibbltv.dreamland.commands.CMDbuild.buildallowed.contains(p)) {
 				World w = p.getWorld();
 				Location ploc = p.getLocation();
