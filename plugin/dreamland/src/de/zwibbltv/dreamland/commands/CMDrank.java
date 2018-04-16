@@ -22,6 +22,7 @@ public class CMDrank implements CommandExecutor{
 					Player target = Bukkit.getPlayer(args[0]);					
 						if (target != null) {
 								
+							p.performCommand("pex user " + target.getName() + " group set " + args[1]);
 							
 						}												
 									
