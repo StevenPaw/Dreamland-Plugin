@@ -11,12 +11,9 @@ import de.zwibbltv.dreamland.commands.CMDgamemode;
 import de.zwibbltv.dreamland.commands.CMDheal;
 import de.zwibbltv.dreamland.commands.CMDmenu;
 import de.zwibbltv.dreamland.commands.CMDmute;
-import de.zwibbltv.dreamland.commands.CMDremoveploc;
+import de.zwibbltv.dreamland.commands.CMDrank;
 import de.zwibbltv.dreamland.commands.CMDremovewarp;
-import de.zwibbltv.dreamland.commands.CMDsetploc;
-import de.zwibbltv.dreamland.commands.CMDsetspawn;
 import de.zwibbltv.dreamland.commands.CMDsetwarp;
-import de.zwibbltv.dreamland.commands.CMDspawn;
 import de.zwibbltv.dreamland.commands.CMDwarp;
 import de.zwibbltv.dreamland.listener.EventListener;
 import de.zwibbltv.dreamland.listener.JoinListener;
@@ -83,19 +80,16 @@ public class Main extends JavaPlugin {
 	Bukkit.getConsoleSender().sendMessage(prefix + "§a§lerfolgreich gestartet!");
 	
 		getCommand("heal").setExecutor(new CMDheal());
-		getCommand("setspawn").setExecutor(new CMDsetspawn());
-		getCommand("spawn").setExecutor(new CMDspawn());
 		getCommand("mute").setExecutor(new CMDmute());
 		getCommand("gm").setExecutor(new CMDgamemode());
 		getCommand("build").setExecutor(new CMDbuild());
 		getCommand("menu").setExecutor(new CMDmenu());
+		getCommand("rank").setExecutor(new CMDrank());
 		
 		setInstance(this);
 		this.getCommand("setwarp").setExecutor(new CMDsetwarp());
 		this.getCommand("warp").setExecutor(new CMDwarp());
 		this.getCommand("removewarp").setExecutor(new CMDremovewarp());
-		this.getCommand("setploc").setExecutor(new CMDsetploc());
-		this.getCommand("removeploc").setExecutor(new CMDremoveploc());
 		
 		PluginManager pm = Bukkit.getPluginManager();
 		pm.registerEvents(new JoinListener(), this);

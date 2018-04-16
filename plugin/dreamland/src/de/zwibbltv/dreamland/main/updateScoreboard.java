@@ -39,7 +39,7 @@ public class updateScoreboard {
         	else if(PermissionsEx.getUser(p).inGroup("Admin")) {
         		Score rank = obj.getScore("§bAdmin");
         		rank.setScore(0);
-        	}
+        	}        	 	
         	else if(PermissionsEx.getUser(p).inGroup("VIP")) {
             	Score rank = obj.getScore("§dVIP");
             	rank.setScore(0);

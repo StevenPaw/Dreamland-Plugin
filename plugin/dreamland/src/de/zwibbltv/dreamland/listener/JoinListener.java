@@ -9,11 +9,16 @@ import org.bukkit.event.player.PlayerQuitEvent;
 
 public class JoinListener implements Listener {
 	
+	@SuppressWarnings("deprecation")
 	@EventHandler
 	public void onPlayerJoin(PlayerJoinEvent e) {
 		Player p = e.getPlayer();
 		e.setJoinMessage("§6>> §a" + p.getName() + " §6>>");
 		p.sendMessage("§aWelcome to the Dreamland Themepark Server!");
+		p.sendTitle("§6Welcome to Dreamland!", "§eHave a lot of fun!");
+		if(!p.hasPermission("dreamland.*") || !p.hasPermission("dreamland.join")) {
+			p.performCommand("warp Spawn");
+		}
 	}
 
 	@EventHandler
@@ -27,6 +32,7 @@ public class JoinListener implements Listener {
 	public void onPlayerFirstJoin(PlayerJoinEvent e) {
 		Player p = e.getPlayer();
 		if(!p.hasPlayedBefore()) {
+			p.performCommand("warp Spawn");
 			Bukkit.broadcastMessage("");
 			Bukkit.broadcastMessage("§aPlease Welcome all §6" + p.getName() + "§a! Enjoy your visit at §6Dreamland Themepark§a!");
 			Bukkit.broadcastMessage("");

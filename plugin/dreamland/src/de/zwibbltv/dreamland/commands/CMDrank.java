@@ -26,8 +26,8 @@ public class CMDrank implements CommandExecutor{
 							
 						}												
 									
-				} else {
-					p.sendMessage("§cUse: /rank <Name> <rank>");
+				} if (args.length == 0) {
+					p.performCommand("pex groups list");
 				}
 				
 			} else {

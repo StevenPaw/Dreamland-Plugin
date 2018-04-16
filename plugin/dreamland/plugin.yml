@@ -8,10 +8,6 @@ depend: [Vault]
 commands:
    heal:
       description: give or get heal
-   setspawn:
-      description: set the spawn
-   spawn:
-      description: teleport you to the spawn 
    mute:
       description: mute other player
    gm:
@@ -24,9 +20,7 @@ commands:
       description: create a warp
    removewarp:
       description: delete a warp
-   setploc:
-      description: create a ploc
-   removeploc:
-      description: delete a ploc
    menu:
       description: open the menu
+   rank:
+      description: sets a players rank
