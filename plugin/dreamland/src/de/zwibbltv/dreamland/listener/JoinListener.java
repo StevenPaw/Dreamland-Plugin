@@ -18,6 +18,9 @@ public class JoinListener implements Listener {
 		p.sendMessage("§aWelcome to the Dreamland Themepark Server!");
 		p.sendTitle("§6Welcome to Dreamland!", "§eHave a lot of fun!");
 		p.setGameMode(GameMode.ADVENTURE);
+		p.sendMessage("Sending Resourcepack");
+		p.setResourcePack("https://www.dropbox.com/s/n069utc6ixux4iw/Dreamland17-04.zip?dl=1");
+		p.sendMessage("Resourcepack loaded woohoo!");
 		if(!p.hasPermission("dreamland.*") || !p.hasPermission("dreamland.join")) {
 			p.performCommand("warp Spawn");
 		}
