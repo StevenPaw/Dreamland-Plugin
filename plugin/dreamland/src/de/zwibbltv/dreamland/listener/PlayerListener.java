@@ -23,7 +23,7 @@ public class PlayerListener implements Listener {
 		Player p = event.getPlayer();
 		Block block = event.getClickedBlock();
 		List<Material> forbidden = new ArrayList<Material>();
-		if(!p.hasPermission("dreamland.useBlocks")) {
+		if(!p.hasPermission("dreamland.useBlocks") || !p.hasPermission("dreamland.*")) {
 			forbidden.add(Material.WOODEN_DOOR);
 			forbidden.add(Material.ACACIA_DOOR);
 			forbidden.add(Material.BIRCH_DOOR);

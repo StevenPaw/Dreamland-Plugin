@@ -1,6 +1,7 @@
 package de.zwibbltv.dreamland.listener;
 
 import org.bukkit.Bukkit;
+import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -16,6 +17,7 @@ public class JoinListener implements Listener {
 		e.setJoinMessage("§6>> §a" + p.getName() + " §6>>");
 		p.sendMessage("§aWelcome to the Dreamland Themepark Server!");
 		p.sendTitle("§6Welcome to Dreamland!", "§eHave a lot of fun!");
+		p.setGameMode(GameMode.ADVENTURE);
 		if(!p.hasPermission("dreamland.*") || !p.hasPermission("dreamland.join")) {
 			p.performCommand("warp Spawn");
 		}
