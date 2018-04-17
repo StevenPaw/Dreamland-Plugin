@@ -15,7 +15,7 @@ import de.zwibbltv.dreamland.commands.CMDrank;
 import de.zwibbltv.dreamland.commands.CMDremovewarp;
 import de.zwibbltv.dreamland.commands.CMDsetwarp;
 import de.zwibbltv.dreamland.commands.CMDwarp;
-import de.zwibbltv.dreamland.listener.EventListener;
+//import de.zwibbltv.dreamland.listener.EventListener;
 import de.zwibbltv.dreamland.listener.JoinListener;
 import de.zwibbltv.dreamland.listener.MenuListener;
 import de.zwibbltv.dreamland.listener.PlayerListener;
@@ -96,7 +96,7 @@ public class Main extends JavaPlugin {
 		pm.registerEvents(new CMDmute(), this);
 		pm.registerEvents(new scoreboardListener(), this);
 		pm.registerEvents(new MenuListener(), this);
-		pm.registerEvents(new EventListener(), this);
+//		pm.registerEvents(new EventListener(), this);
 		pm.registerEvents(new PlayerListener(), this);
 		
 				
