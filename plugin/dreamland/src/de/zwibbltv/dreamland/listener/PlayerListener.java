@@ -14,11 +14,13 @@ import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.event.hanging.HangingBreakByEntityEvent;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
 
 import net.md_5.bungee.api.ChatColor;
+import ru.tehkode.permissions.bukkit.PermissionsEx;
 
 public class PlayerListener implements Listener {
 	
@@ -144,9 +146,9 @@ public class PlayerListener implements Listener {
 		de.zwibbltv.dreamland.viponly.places.locations(p);
 	}
 		
-//	@EventHandler
-//    public void onPlayerChat(AsyncPlayerChatEvent e){
-//		String prefix = PermissionsEx.getUser(e.getPlayer()).getPrefix();
-//        e.setFormat(prefix + " LOL %s : %s");
-//    }
+	@EventHandler
+    public void onPlayerChat(AsyncPlayerChatEvent e){
+		String prefix = PermissionsEx.getUser(e.getPlayer()).getPrefix();
+        e.setFormat(prefix + " %s : %s");
+    }
 }
