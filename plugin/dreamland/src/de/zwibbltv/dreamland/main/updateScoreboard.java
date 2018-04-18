@@ -33,19 +33,23 @@ public class updateScoreboard {
         
         if(CMDbuild.buildallowed.contains(p) == false) {
         	if(PermissionsEx.getUser(p).inGroup("Owner")) {
-        		Score rank = obj.getScore("§4Owner");
+        		Score rank = obj.getScore("§2Owner");
         		rank.setScore(0);
         	}
         	else if(PermissionsEx.getUser(p).inGroup("Admin")) {
-        		Score rank = obj.getScore("§bAdmin");
+        		Score rank = obj.getScore("§9Admin");
         		rank.setScore(0);
-        	}        	 	
+        	} 
+        	else if(PermissionsEx.getUser(p).inGroup("Builder")) {
+            	Score rank = obj.getScore("§5Builder");
+            	rank.setScore(0);
+            }
         	else if(PermissionsEx.getUser(p).inGroup("VIP")) {
-            	Score rank = obj.getScore("§dVIP");
+            	Score rank = obj.getScore("§eVIP");
             	rank.setScore(0);
             }
         	else if(PermissionsEx.getUser(p).inGroup("Member")) {
-        		Score rank = obj.getScore("§fMember");
+        		Score rank = obj.getScore("§3Member");
         		rank.setScore(0);
         	}
         	else if(PermissionsEx.getUser(p).inGroup("Guest")) {

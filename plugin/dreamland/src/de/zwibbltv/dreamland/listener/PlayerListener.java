@@ -29,6 +29,7 @@ public class PlayerListener implements Listener {
 		Player p = event.getPlayer();
 		Block block = event.getClickedBlock();
 		List<Material> forbidden = new ArrayList<Material>();
+		if(!de.zwibbltv.dreamland.commands.CMDbuild.buildallowed.contains(p)) {
 		if(!p.hasPermission("dreamland.useBlocks") || !p.hasPermission("dreamland.*")) {
 			forbidden.add(Material.WOODEN_DOOR);
 			forbidden.add(Material.ACACIA_DOOR);
@@ -63,6 +64,7 @@ public class PlayerListener implements Listener {
 				}
 				else {
 					
+					}
 				}
 			}
 		}
