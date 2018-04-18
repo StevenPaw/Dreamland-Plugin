@@ -38,12 +38,19 @@ public class MenuListener implements Listener {
 
 	@EventHandler
 	public void onJoin(PlayerJoinEvent e) {
-
-		ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
-		ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
-
+		
+		Player p = e.getPlayer();
 		e.getPlayer().getInventory().clear();
 		e.getPlayer().getEquipment().clear();
+		
+		ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
+		ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
+		
+		if(p.hasPermission("dreamland.build.*") || p.hasPermission("dreamland.build.self") || p.hasPermission("dreamland.build.other")) {
+		ItemStack cobblestone = new ItemBuilder(Material.GOLD_SPADE).setDisplayName("§6Builder").build();
+		e.getPlayer().getInventory().setItem(7, cobblestone);
+		}
+
 		e.getPlayer().getInventory().setItem(0, carrot);
 		e.getPlayer().getInventory().setItem(8, golden_carrot);
 
@@ -159,6 +166,23 @@ public class MenuListener implements Listener {
 					} 				
 			}
 		}
+		
+		// VIP-Menu
+				@EventHandler
+				public void onPlayerInteract3(PlayerInteractEvent e) {
+					Player p = e.getPlayer();
+
+					if(p.hasPermission("dreamland.build.*") || p.hasPermission("dreamland.build.self") || p.hasPermission("dreamland.build.other")) {
+					if (e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK
+							|| e.getAction() == Action.LEFT_CLICK_AIR || e.getAction() == Action.LEFT_CLICK_BLOCK) {
+						
+							if (e.getMaterial().equals(Material.GOLD_SPADE)) {
+								p.performCommand("build");
+								e.setCancelled(true);
+							} 	
+						}
+					}
+				}
 		
 		//Open Menu
 		//Open Main Menu

@@ -58,7 +58,7 @@ public class places {
 				}	
 				//Mainstreet Bühne Rechts
 				d = ploc.distance(new Location(w, -880, 16.0, 656.0));
-				if(d <= 2) {
+				if(d <= 1) {
 					Location location = new Location(w, -880.5, 16.0, 653.50, 0, 0);
 					p.teleport(location);
 					p.sendMessage(Main.getVIP());
