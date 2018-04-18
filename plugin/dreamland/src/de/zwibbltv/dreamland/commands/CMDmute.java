@@ -44,6 +44,7 @@ public class CMDmute implements CommandExecutor, Listener{
 						} else {
 							mutedPlayers.remove(target);
 							target.sendMessage("§aYou are no longer muted! §7(By: §6" + p.getName() + "§7)");
+							p.sendMessage("§aYou unmuted §c" + target.getName() + " §a!");
 							
 						}
 					}
