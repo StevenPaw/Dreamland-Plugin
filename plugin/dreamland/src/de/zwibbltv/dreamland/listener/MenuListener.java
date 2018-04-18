@@ -228,7 +228,7 @@ public class MenuListener implements Listener {
 			ToI.setItemMeta(ToImeta);
 			ToI.setDurability((short) 22);
 			
-			ItemStack back = new ItemStack(Material.WOOL, 1, (short)14);
+			ItemStack back = new ItemStack(Material.CLAY_BRICK);
 			ItemMeta backmeta = back.getItemMeta();
 			backmeta.setDisplayName("§cBack");
 			back.setItemMeta(backmeta);
@@ -266,7 +266,7 @@ public class MenuListener implements Listener {
 			Lagoonmeta.setDisplayName("§aLagoon");
 			Lagoon.setItemMeta(Lagoonmeta);
 			
-			ItemStack back = new ItemStack(Material.WOOL, 1, (short)14);
+			ItemStack back = new ItemStack(Material.CLAY_BRICK);
 			ItemMeta backmeta = back.getItemMeta();
 			backmeta.setDisplayName("§cBack");
 			back.setItemMeta(backmeta);

@@ -73,7 +73,7 @@ public class Main extends JavaPlugin {
 		    	for(Player p : Bukkit.getOnlinePlayers()) {
 		    		economy.depositPlayer(p, 0.01);
 		    		
-		    		if(ScoreboardCoolDown>= 100) {
+		    		if(ScoreboardCoolDown>= 20) {
 			    		de.zwibbltv.dreamland.main.updateScoreboard.update(p);
 			    	}
 		        }
