@@ -11,6 +11,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
+import de.zwibbltv.dreamland.main.Main;
+
 public class CMDmute implements CommandExecutor, Listener{
 	
 	private static ArrayList<Player> mutedPlayers = new ArrayList<>();
@@ -19,7 +21,7 @@ public class CMDmute implements CommandExecutor, Listener{
 	public void handlePlayerChat(AsyncPlayerChatEvent e) {
 		Player p = e.getPlayer();
 		if(mutedPlayers.contains(p)) {
-			p.sendMessage("§cYou can't write: You are muted");
+			p.sendMessage("§cYou can't write: §4§nYou are muted");
 					e.setCancelled(true);
 		}
 	}
@@ -37,11 +39,11 @@ public class CMDmute implements CommandExecutor, Listener{
 						if(!mutedPlayers.contains(target)) {
 							mutedPlayers.add(target);
 							p.sendMessage("§aYou muted §c" + target.getName() + " §a!");
-							target.sendMessage("§cYou are now muted!");
+							target.sendMessage("§cYou are now muted! §7(By: §6" + p.getName() + "§7)");
 							
 						} else {
 							mutedPlayers.remove(target);
-							target.sendMessage("§aYou are no longer muted!");
+							target.sendMessage("§aYou are no longer muted! §7(By: §6" + p.getName() + "§7)");
 							
 						}
 					}
@@ -50,7 +52,7 @@ public class CMDmute implements CommandExecutor, Listener{
 					p.sendMessage("§cPlease use /mute <Player>");
 				
 			} else
-				p.sendMessage("§cYou may not use this command");
+				p.sendMessage(Main.getNoPerms());
 		} 
 		
 		return false;

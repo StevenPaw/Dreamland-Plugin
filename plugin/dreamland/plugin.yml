@@ -24,3 +24,5 @@ commands:
       description: open the menu
    rank:
       description: sets a players rank
+   audio:
+      description: here the audio

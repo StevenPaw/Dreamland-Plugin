@@ -67,12 +67,14 @@ public class CMDbuild implements CommandExecutor {
 							
 								ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
 								ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
-								ItemStack gold_spade = new ItemBuilder(Material.GOLD_SPADE).setDisplayName("§6Builder").build();
+								if(target.hasPermission("dreamland.build.*") || target.hasPermission("dreamland.build.self") || target.hasPermission("dreamland.build.other")) {
+									ItemStack gold_spade = new ItemBuilder(Material.GOLD_SPADE).setDisplayName("§6Builder").build();
+									target.getPlayer().getInventory().setItem(7, gold_spade);
+									}
 
 								target.getPlayer().getInventory().clear();
 								target.getPlayer().getEquipment().clear();
 								target.getPlayer().getInventory().setItem(0, carrot);
-								target.getPlayer().getInventory().setItem(7, gold_spade);
 								target.getPlayer().getInventory().setItem(8, golden_carrot);
 								
 							} else {
@@ -99,12 +101,14 @@ public class CMDbuild implements CommandExecutor {
 							
 							ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
 							ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
-							ItemStack gold_spade = new ItemBuilder(Material.GOLD_SPADE).setDisplayName("§6Builder").build();
+							if(target.hasPermission("dreamland.build.*") || target.hasPermission("dreamland.build.self") || target.hasPermission("dreamland.build.other")) {
+								ItemStack gold_spade = new ItemBuilder(Material.GOLD_SPADE).setDisplayName("§6Builder").build();
+								target.getPlayer().getInventory().setItem(7, gold_spade);
+								}
 
 							target.getPlayer().getInventory().clear();
 							target.getPlayer().getEquipment().clear();
 							target.getPlayer().getInventory().setItem(0, carrot);
-							target.getPlayer().getInventory().setItem(7, gold_spade);
 							target.getPlayer().getInventory().setItem(8, golden_carrot);
 
 						} else {
