@@ -5,14 +5,18 @@ import java.util.List;
 
 import org.bukkit.Material;
 import org.bukkit.block.Block;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.ItemFrame;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.event.hanging.HangingBreakByEntityEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.event.player.PlayerMoveEvent;
 
 import net.md_5.bungee.api.ChatColor;
 
@@ -51,33 +55,43 @@ public class PlayerListener implements Listener {
 			forbidden.add(Material.IRON_DOOR);
 			for (Material f: forbidden)
 			{
-			
 				if(block.getType() == f) {
 					p.sendMessage(ChatColor.GRAY + "No!");
 					event.setCancelled(true);
 				}
+				else {
+					
+				}
 			}
 		}
 	}
+	
+	//Prevent Itemframe Rotation
 	@EventHandler
 	public void onPlayerEntityInteract(PlayerInteractEntityEvent event)
     {
 		if(
 			!event.isCancelled()
 			&& event.getRightClicked() instanceof ItemFrame
-			&& !((ItemFrame)event.getRightClicked()).getItem().getType().equals(Material.AIR) //we dont need to prevent put items into the empty item frame (thats out of scope of this plugin)
-			&& !event.getPlayer().hasPermission("dreamland.rotateItemFrames") //player with this permission can rotate the item frames
-			&& !event.getPlayer().hasPermission("dreamland.*") //or players with this permission can rotate the item frames
+			&& !((ItemFrame)event.getRightClicked()).getItem().getType().equals(Material.AIR)
+			&& !event.getPlayer().hasPermission("dreamland.Itemframes.rotate")
+			&& !event.getPlayer().hasPermission("dreamland.*")
+			&& !event.getPlayer().hasPermission("dreamland.Itemframes.*")
 		)
 		{
 			event.setCancelled(true);
 		}
 	}
+	
+	//Prevent Itemframe destroy
 	@EventHandler
-	public void onHangingBreakByEntity(HangingBreakByEntityEvent event) {
-		if (event.getRemover() instanceof Player) {
+	public void onHangingBreakByEntity(HangingBreakByEntityEvent event) 
+	{
+		if (event.getRemover() instanceof Player) 
+		{
 			Player p = (Player)event.getRemover();
-			if (!p.hasPermission("dreamland.rotateItemFrames") && !p.hasPermission("dreamland.*")){
+			if (!p.hasPermission("dreamland.Itemframes.destroy") && !p.hasPermission("dreamland.*") && !p.hasPermission("dreamland.Itemframes.*"))
+			{
 				if (!event.isCancelled()) {
 					event.setCancelled(true);
 				}
@@ -85,6 +99,34 @@ public class PlayerListener implements Listener {
         }
     }
 	
+	//Prevent Itemframe Item removal
+	@EventHandler
+    public void itemFrameItemRemoval(EntityDamageEvent event) {
+		if (event.getEntity() instanceof ItemFrame) {
+				if (event instanceof EntityDamageByEntityEvent) {
+				EntityDamageByEntityEvent edbeEvent = (EntityDamageByEntityEvent)event;
+		    	Entity damager = edbeEvent.getDamager();
+		    	if (damager instanceof Player)
+		    	{
+		    		Player p = (Player)damager;
+		    		if (!p.hasPermission("dreamland.Itemframes.empty") && !p.hasPermission("dreamland.*") && !p.hasPermission("dreamland.Itemframes.*"))
+					{
+						if (!event.isCancelled()) {
+							event.setCancelled(true);
+						}
+					}
+		    	}
+		    	else
+		    	{
+		    		if (!event.isCancelled()) {
+						event.setCancelled(true);
+					}
+		    	}
+			}
+        }
+    }
+	
+	//Prevent Hunger
 	@EventHandler
 	public void onHungerDepletion(FoodLevelChangeEvent event) {
 		if (!event.isCancelled()) {
@@ -95,4 +137,16 @@ public class PlayerListener implements Listener {
 			}
 		}
 	}
+	
+	@EventHandler
+	public void onPlayerMove(PlayerMoveEvent event) {
+		Player p = event.getPlayer();
+		de.zwibbltv.dreamland.viponly.places.locations(p);
+	}
+		
+//	@EventHandler
+//    public void onPlayerChat(AsyncPlayerChatEvent e){
+//		String prefix = PermissionsEx.getUser(e.getPlayer()).getPrefix();
+//        e.setFormat(prefix + " LOL %s : %s");
+//    }
 }

@@ -56,26 +56,30 @@ public class Main extends JavaPlugin {
 	
 	public String prefix = "§e[Dreamland] ";
 	
+	int ScoreboardCoolDown = 0;
+	
 	@Override
 	public void onEnable() {
 		setInstance(this);
-		
+//		de.zwibbltv.dreamland.viponly.places.loadplaces();
 		plugin = this;
 		this.setupEconomy();
 		
 		Bukkit.getScheduler().runTaskTimer(this, new Runnable() {
-		    @SuppressWarnings("deprecation")
+//		    @SuppressWarnings("deprecation")
 			@Override
 		    public void run() {
 		    	
 		    	for(Player p : Bukkit.getOnlinePlayers()) {
-		    		de.zwibbltv.dreamland.main.updateScoreboard.update(p);
-		    		de.zwibbltv.dreamland.viponly.places.locations(p);
-		    		economy.depositPlayer(p.getName(), 0.01);
+		    		economy.depositPlayer(p, 0.01);
+		    		
+		    		if(ScoreboardCoolDown>= 100) {
+			    		de.zwibbltv.dreamland.main.updateScoreboard.update(p);
+			    	}
 		        }
-		        
+		    	ScoreboardCoolDown++;
 		    }
-		}, 10l, 10l);
+		}, 20, 20);
 		
 	Bukkit.getConsoleSender().sendMessage(prefix + "§a§lerfolgreich gestartet!");
 	
