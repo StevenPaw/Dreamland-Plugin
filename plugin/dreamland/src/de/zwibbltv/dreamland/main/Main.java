@@ -6,9 +6,9 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import de.zwibbltv.dreamland.commands.CMDaudio;
 import de.zwibbltv.dreamland.commands.CMDbuild;
 import de.zwibbltv.dreamland.commands.CMDgamemode;
-import de.zwibbltv.dreamland.commands.CMDheal;
 import de.zwibbltv.dreamland.commands.CMDmenu;
 import de.zwibbltv.dreamland.commands.CMDmute;
 import de.zwibbltv.dreamland.commands.CMDrank;
@@ -83,12 +83,12 @@ public class Main extends JavaPlugin {
 		
 	Bukkit.getConsoleSender().sendMessage(prefix + "§a§lerfolgreich gestartet!");
 	
-		getCommand("heal").setExecutor(new CMDheal());
 		getCommand("mute").setExecutor(new CMDmute());
 		getCommand("gm").setExecutor(new CMDgamemode());
 		getCommand("build").setExecutor(new CMDbuild());
 		getCommand("menu").setExecutor(new CMDmenu());
 		getCommand("rank").setExecutor(new CMDrank());
+		getCommand("audio").setExecutor(new CMDaudio());
 		
 		setInstance(this);
 		this.getCommand("setwarp").setExecutor(new CMDsetwarp());
