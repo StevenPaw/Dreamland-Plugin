@@ -47,8 +47,8 @@ public class MenuListener implements Listener {
 		ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
 		
 		if(p.hasPermission("dreamland.build.*") || p.hasPermission("dreamland.build.self") || p.hasPermission("dreamland.build.other")) {
-		ItemStack cobblestone = new ItemBuilder(Material.GOLD_SPADE).setDisplayName("§6Builder").build();
-		e.getPlayer().getInventory().setItem(7, cobblestone);
+		ItemStack gold_spade = new ItemBuilder(Material.GOLD_SPADE).setDisplayName("§6Builder").build();
+		e.getPlayer().getInventory().setItem(7, gold_spade);
 		}
 
 		e.getPlayer().getInventory().setItem(0, carrot);
@@ -137,6 +137,11 @@ public class MenuListener implements Listener {
 					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}	
+				
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Audio")) {
+					p.performCommand("audio");
+					p.closeInventory();
+				}	
 
 			} catch (Exception ex) {
 
@@ -167,7 +172,7 @@ public class MenuListener implements Listener {
 			}
 		}
 		
-		// VIP-Menu
+		// Build-Menu
 				@EventHandler
 				public void onPlayerInteract3(PlayerInteractEvent e) {
 					Player p = e.getPlayer();
@@ -199,8 +204,14 @@ public class MenuListener implements Listener {
 			ItemMeta aachmeta = aach.getItemMeta();
 			aachmeta.setDisplayName("§6Achievements");
 			aach.setItemMeta(aachmeta);
+			
+			ItemStack audio = new ItemStack(Material.PRISMARINE_SHARD);
+			ItemMeta audiometa = audio.getItemMeta();
+			audiometa.setDisplayName("§6Audio");
+			audio.setItemMeta(audiometa);
 
 			inv.setItem(0, warps);
+			inv.setItem(7, audio);
 			inv.setItem(8, aach);
 
 			p.openInventory(inv);
