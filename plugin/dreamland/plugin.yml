@@ -6,8 +6,6 @@ author:  ZwibblTV
 depend: [Vault]
 
 commands:
-   heal:
-      description: give or get heal
    mute:
       description: mute other player
    gm:
