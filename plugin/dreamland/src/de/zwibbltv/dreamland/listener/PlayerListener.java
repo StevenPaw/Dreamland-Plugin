@@ -149,6 +149,6 @@ public class PlayerListener implements Listener {
 	@EventHandler
     public void onPlayerChat(AsyncPlayerChatEvent e){
 		String prefix = PermissionsEx.getUser(e.getPlayer()).getPrefix();
-        e.setFormat(prefix + " %s : %s");
+        e.setFormat(prefix + " %s: %s");
     }
 }
