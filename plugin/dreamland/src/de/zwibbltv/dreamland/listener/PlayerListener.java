@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.bukkit.Material;
 import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.ItemFrame;
 import org.bukkit.entity.Player;
@@ -18,6 +19,8 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 
 import net.md_5.bungee.api.ChatColor;
 import ru.tehkode.permissions.bukkit.PermissionsEx;
@@ -147,6 +150,9 @@ public class PlayerListener implements Listener {
 	public void onPlayerMove(PlayerMoveEvent event) {
 		Player p = event.getPlayer();
 		de.zwibbltv.dreamland.viponly.places.locations(p);
+		if(p.getLocation().getBlock().getRelative(BlockFace.DOWN).getType() == Material.BRICK) {
+			p.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 20, 1));		
+		}			
 	}
 		
 	@EventHandler
