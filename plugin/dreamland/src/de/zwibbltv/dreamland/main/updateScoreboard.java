@@ -17,9 +17,11 @@ public class updateScoreboard {
     static int player;
     static double money;
     static Economy eco = de.zwibbltv.dreamland.main.Main.economy;
-	
-	public static void update(Player p) {
-		
+    
+    static Scoreboard sb;
+    
+    public static void update(Player p) {
+				
 		Scoreboard board = Bukkit.getScoreboardManager().getNewScoreboard();
         Objective obj = board.registerNewObjective("aaa", "bbb");
         obj.setDisplaySlot(DisplaySlot.SIDEBAR);

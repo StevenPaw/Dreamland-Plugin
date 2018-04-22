@@ -21,6 +21,7 @@ import de.zwibbltv.dreamland.listener.MenuListener;
 import de.zwibbltv.dreamland.listener.PlayerListener;
 import de.zwibbltv.dreamland.listener.scoreboardListener;
 import de.zwibbltv.dreamland.utils.PlayerLocationLockedManager;
+import de.zwibbltv.dreamland.utils.Tablist;
 import de.zwibbltv.dreamland.utils.WarpManager;
 import net.milkbowl.vault.economy.Economy;
 
@@ -74,6 +75,7 @@ public class Main extends JavaPlugin {
 		    		economy.depositPlayer(p, 0.01);
 		    		
 		    		if(ScoreboardCoolDown>= 20) {
+			    		Tablist.setScoreboard();
 			    		de.zwibbltv.dreamland.main.updateScoreboard.update(p);
 			    	}
 		        }
