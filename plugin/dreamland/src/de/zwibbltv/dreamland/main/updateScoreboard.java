@@ -33,8 +33,7 @@ public class updateScoreboard {
         }
         player = Bukkit.getServer().getOnlinePlayers().size();
         
-        if(CMDbuild.buildallowed.contains(p) == false) {
-        	if(PermissionsEx.getUser(p).inGroup("Owner")) {
+           	if(PermissionsEx.getUser(p).inGroup("Owner")) {
         		Score rank = obj.getScore("§2Owner");
         		rank.setScore(0);
         	}
@@ -60,9 +59,9 @@ public class updateScoreboard {
         	}
         	               	
         	
-        } else if (CMDbuild.buildallowed.contains(p) == true) {
-        	Score rank = obj.getScore("§4BUILDER");
-    		rank.setScore(0);
+        if (CMDbuild.buildallowed.contains(p) == true) {
+        	Score rank = obj.getScore("§6>>§4BUILDMODE§6<<");
+    		rank.setScore(-1);
         }
 
         Score eight = obj.getScore(" ");
