@@ -29,7 +29,7 @@ public class JoinListener implements Listener {
 		p.sendMessage("Sending Resourcepack");
 		p.setResourcePack("https://www.dropbox.com/s/n069utc6ixux4iw/Dreamland17-04.zip?dl=1");
 		if(!p.hasPermission("dreamland.*") || !p.hasPermission("dreamland.join")) {
-			p.performCommand("warp Spawn");
+			p.performCommand("warp spawn");
 		}
 	}
 	
@@ -59,7 +59,7 @@ public class JoinListener implements Listener {
 		Player p = e.getPlayer();
 		if(!p.hasPlayedBefore()) 
 		{
-			p.performCommand("warp Spawn");
+			p.performCommand("warp spawn");
 			Bukkit.broadcastMessage("");
 			Bukkit.broadcastMessage("§aPlease all welcome §6" + p.getName() + "§a! Enjoy your visit at §6Dreamland Themepark§a!");
 			Bukkit.broadcastMessage("");

@@ -142,6 +142,18 @@ public class MenuListener implements Listener {
 					p.performCommand("audio");
 					p.closeInventory();
 				}	
+				
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aHaunted Mansion")) {
+					p.performCommand("warp haunted_mansion");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}
+				
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aChinatown")) {
+					p.performCommand("warp chinatown");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}
 
 			} catch (Exception ex) {
 
@@ -239,7 +251,7 @@ public class MenuListener implements Listener {
 		
 		//Open Attractions Menu
 		public void openMenuAttractions(Player p) {
-			Inventory inv = Bukkit.createInventory(null, 9 * 1, "§0Attraktion-Warps");
+			Inventory inv = Bukkit.createInventory(null, 9 * 2, "§0Attraktion-Warps");
 
 			ItemStack ExplorersCave = new ItemStack(Material.COBBLESTONE);
 			ItemMeta ExplorersCavemeta = ExplorersCave.getItemMeta();
@@ -267,12 +279,18 @@ public class MenuListener implements Listener {
 			ItemMeta backmeta = back.getItemMeta();
 			backmeta.setDisplayName("§cBack");
 			back.setItemMeta(backmeta);
+			
+			ItemStack haunted_mansion = new ItemStack(Material.SKULL_ITEM);
+			ItemMeta haunted_mansionmeta = haunted_mansion.getItemMeta();
+			haunted_mansionmeta.setDisplayName("§aHaunted Mansion");
+			haunted_mansion.setItemMeta(haunted_mansionmeta);
 
 			inv.setItem(0, ExplorersCave);
 			inv.setItem(2, flyingpegasus);
 			inv.setItem(4, Westernrace);
 			inv.setItem(6, ToI);
-			inv.setItem(8, back);
+			inv.setItem(8, haunted_mansion);
+			inv.setItem(17, back);
 
 			p.openInventory(inv);
 		}
@@ -305,11 +323,17 @@ public class MenuListener implements Listener {
 			ItemMeta backmeta = back.getItemMeta();
 			backmeta.setDisplayName("§cBack");
 			back.setItemMeta(backmeta);
+			
+			ItemStack chinatown = new ItemStack(Material.BOWL);
+			ItemMeta chinatownmeta = chinatown.getItemMeta();
+			chinatownmeta.setDisplayName("§aChinatown");
+			chinatown.setItemMeta(chinatownmeta);
 
 			inv.setItem(0, spawn);
 			inv.setItem(3, Greifenheim);
 			inv.setItem(4, Calico);
 			inv.setItem(5, Lagoon);
+			inv.setItem(6, chinatown);
 			inv.setItem(8, back);
 
 			p.openInventory(inv);
