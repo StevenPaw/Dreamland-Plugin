@@ -92,22 +92,22 @@ public class MenuListener implements Listener {
 					openMenuWarps(p);
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aSpawn")) {
-					p.performCommand("warp Spawn");
+					p.performCommand("warp spawn");
 					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}					
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aGreifenheim")) {
-					p.performCommand("warp Greifenheim");
+					p.performCommand("warp greifenheim");
 					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aCalico")) {
-					p.performCommand("warp Calico");
+					p.performCommand("warp calico");
 					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLagoon")) {
-					p.performCommand("warp Lagoon");
+					p.performCommand("warp lagoon");
 					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
@@ -115,25 +115,25 @@ public class MenuListener implements Listener {
 					openMenuMain(p);
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aFlying Pegasus")) {
-					p.performCommand("warp Flying_Pegasus");
+					p.performCommand("warp flying_pegasus");
 					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}	
 				
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aTower of Izran")) {
-					p.performCommand("warp Tower_of_Izran");
+					p.performCommand("warp tower_of_izran");
 					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}	
 				
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aWestern race")) {
-					p.performCommand("warp Western_race");
+					p.performCommand("warp western_race");
 					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}	
 				
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aExplorers Cave")) {
-					p.performCommand("warp Explorers_Cave");
+					p.performCommand("warp explorers_cave");
 					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}	
