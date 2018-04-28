@@ -45,30 +45,44 @@ public class updateScoreboard {
         VIP.setPrefix("§eVIP §6|§r ");
         Member.setPrefix("§3Member §6|§r ");
         Guest.setPrefix("§7Guest §6|§7 ");                     
-        
-        
+                
+        for (Player i : Bukkit.getOnlinePlayers()) {
+        	if(PermissionsEx.getUser(i).inGroup("Owner")) {
+            	board.getTeam("Owner").addEntry(i.getName());
+            	}
+            	else if(PermissionsEx.getUser(i).inGroup("Admin")) {
+            		board.getTeam("Admin").addEntry(i.getName());
+            	} 
+            	else if(PermissionsEx.getUser(i).inGroup("Builder")) {
+            		board.getTeam("Builder").addEntry(i.getName());
+                }
+            	else if(PermissionsEx.getUser(i).inGroup("VIP")) {
+            		board.getTeam("VIP").addEntry(i.getName());
+                }
+            	else if(PermissionsEx.getUser(i).inGroup("Member")) {
+            		board.getTeam("Member").addEntry(i.getName());
+            	}
+            	else if(PermissionsEx.getUser(i).inGroup("Guest")) {
+            		board.getTeam("Guest").addEntry(i.getName());
+            	}
+        }
+        	
         if(PermissionsEx.getUser(p).inGroup("Owner")) {
-        	board.getTeam("Owner").addEntry(p.getName());
         		obj.getScore("§2Owner").setScore(0);
         	}
         	else if(PermissionsEx.getUser(p).inGroup("Admin")) {
-        		board.getTeam("Admin").addEntry(p.getName());
         		obj.getScore("§9Admin").setScore(0);
         	} 
         	else if(PermissionsEx.getUser(p).inGroup("Builder")) {
-        		board.getTeam("Builder").addEntry(p.getName());
             	obj.getScore("§5Builder").setScore(0);
             }
         	else if(PermissionsEx.getUser(p).inGroup("VIP")) {
-        		board.getTeam("VIP").addEntry(p.getName());
             	obj.getScore("§eVIP").setScore(0);
             }
         	else if(PermissionsEx.getUser(p).inGroup("Member")) {
-        		board.getTeam("Member").addEntry(p.getName());
         		obj.getScore("§3Member").setScore(0);
         	}
         	else if(PermissionsEx.getUser(p).inGroup("Guest")) {
-        		board.getTeam("Guest").addEntry(p.getName());
         		obj.getScore("§7Guest").setScore(0);
         	}
         	               	        	
