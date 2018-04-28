@@ -4,8 +4,8 @@ import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.scoreboard.DisplaySlot;
 import org.bukkit.scoreboard.Objective;
-import org.bukkit.scoreboard.Score;
 import org.bukkit.scoreboard.Scoreboard;
+import org.bukkit.scoreboard.Team;
 
 import de.zwibbltv.dreamland.commands.CMDbuild;
 import net.milkbowl.vault.economy.Economy;
@@ -28,61 +28,63 @@ public class updateScoreboard {
         obj.setDisplayName("§6Dreamland");
         
         if(eco != null ) {
-            money = (int)eco.getBalance(p);
-        	
+            money = (int)eco.getBalance(p);        	
         }
         player = Bukkit.getServer().getOnlinePlayers().size();
         
-        if(CMDbuild.buildallowed.contains(p) == false) {
-        	if(PermissionsEx.getUser(p).inGroup("Owner")) {
-        		Score rank = obj.getScore("§2Owner");
-        		rank.setScore(0);
+        Team Owner = board.registerNewTeam("Owner");
+        Team Admin = board.registerNewTeam("Admin");
+        Team Builder = board.registerNewTeam("Builder");
+        Team VIP = board.registerNewTeam("VIP");
+        Team Member = board.registerNewTeam("Member");
+        Team Guest = board.registerNewTeam("Guest");
+        
+        Owner.setPrefix("§2Owner §6|§r ");
+        Admin.setPrefix("§9Admin §6|§r ");
+        Builder.setPrefix("§5Builder §6|§r ");
+        VIP.setPrefix("§eVIP §6|§r ");
+        Member.setPrefix("§3Member §6|§r ");
+        Guest.setPrefix("§7Guest §6|§7 ");                     
+        
+        
+        if(PermissionsEx.getUser(p).inGroup("Owner")) {
+        	board.getTeam("Owner").addEntry(p.getName());
+        		obj.getScore("§2Owner").setScore(0);
         	}
         	else if(PermissionsEx.getUser(p).inGroup("Admin")) {
-        		Score rank = obj.getScore("§9Admin");
-        		rank.setScore(0);
+        		board.getTeam("Admin").addEntry(p.getName());
+        		obj.getScore("§9Admin").setScore(0);
         	} 
         	else if(PermissionsEx.getUser(p).inGroup("Builder")) {
-            	Score rank = obj.getScore("§5Builder");
-            	rank.setScore(0);
+        		board.getTeam("Builder").addEntry(p.getName());
+            	obj.getScore("§5Builder").setScore(0);
             }
         	else if(PermissionsEx.getUser(p).inGroup("VIP")) {
-            	Score rank = obj.getScore("§eVIP");
-            	rank.setScore(0);
+        		board.getTeam("VIP").addEntry(p.getName());
+            	obj.getScore("§eVIP").setScore(0);
             }
         	else if(PermissionsEx.getUser(p).inGroup("Member")) {
-        		Score rank = obj.getScore("§3Member");
-        		rank.setScore(0);
+        		board.getTeam("Member").addEntry(p.getName());
+        		obj.getScore("§3Member").setScore(0);
         	}
         	else if(PermissionsEx.getUser(p).inGroup("Guest")) {
-        		Score rank = obj.getScore("§7Guest");
-        		rank.setScore(0);
+        		board.getTeam("Guest").addEntry(p.getName());
+        		obj.getScore("§7Guest").setScore(0);
         	}
-        	               	
-        	
-        } else if (CMDbuild.buildallowed.contains(p) == true) {
-        	Score rank = obj.getScore("§4BUILDER");
-    		rank.setScore(0);
+        	               	        	
+        if (CMDbuild.buildallowed.contains(p) == true) {
+        	obj.getScore("§6>>§4BUILDMODE§6<<").setScore(-1);;
         }
 
-        Score eight = obj.getScore(" ");
-        Score seven = obj.getScore("§aMoney:");
-        Score six = obj.getScore("§b" + money);
-        Score five = obj.getScore("  ");
-        Score four = obj.getScore("§aOnline:");
-        Score three = obj.getScore("§b" + player);
-        Score two = obj.getScore(" ");
-        Score one = obj.getScore("§aRank:");
-
-        eight.setScore(8);
-        seven.setScore(7);
-        six.setScore(6);
-        five.setScore(5);
-        four.setScore(4);
-        three.setScore(3);
-        two.setScore(2);
-        one.setScore(1);
-
+        obj.getScore(" ").setScore(8);
+        obj.getScore("§aMoney:").setScore(7);
+        obj.getScore("§b" + money).setScore(6);
+        obj.getScore("  ").setScore(5);
+        obj.getScore("§aOnline:").setScore(4);
+        obj.getScore("§b" + player).setScore(3);
+        obj.getScore(" ").setScore(2);
+        obj.getScore("§aRank:").setScore(1);
+        
        p.setScoreboard(board);
 		
 	}

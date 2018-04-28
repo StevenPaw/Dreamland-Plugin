@@ -22,7 +22,6 @@ public class scoreboardListener implements Listener {
     public void onPlayerJoin(PlayerJoinEvent e) {
         for(Player p : Bukkit.getOnlinePlayers()) {
         	de.zwibbltv.dreamland.main.updateScoreboard.update(p);
-        	de.zwibbltv.dreamland.utils.Tablist.setScoreboard();
         }
     }
 

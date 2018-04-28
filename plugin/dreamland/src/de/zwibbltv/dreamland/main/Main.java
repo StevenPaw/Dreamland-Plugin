@@ -15,13 +15,12 @@ import de.zwibbltv.dreamland.commands.CMDrank;
 import de.zwibbltv.dreamland.commands.CMDremovewarp;
 import de.zwibbltv.dreamland.commands.CMDsetwarp;
 import de.zwibbltv.dreamland.commands.CMDwarp;
-//import de.zwibbltv.dreamland.listener.EventListener;
 import de.zwibbltv.dreamland.listener.JoinListener;
 import de.zwibbltv.dreamland.listener.MenuListener;
 import de.zwibbltv.dreamland.listener.PlayerListener;
 import de.zwibbltv.dreamland.listener.scoreboardListener;
 import de.zwibbltv.dreamland.utils.PlayerLocationLockedManager;
-import de.zwibbltv.dreamland.utils.Tablist;
+//import de.zwibbltv.dreamland.utils.Tablist;
 import de.zwibbltv.dreamland.utils.WarpManager;
 import net.milkbowl.vault.economy.Economy;
 
@@ -62,12 +61,11 @@ public class Main extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		setInstance(this);
-//		de.zwibbltv.dreamland.viponly.places.loadplaces();
 		plugin = this;
 		this.setupEconomy();
 		
 		Bukkit.getScheduler().runTaskTimer(this, new Runnable() {
-//		    @SuppressWarnings("deprecation")
+
 			@Override
 		    public void run() {
 		    	
@@ -75,7 +73,6 @@ public class Main extends JavaPlugin {
 		    		economy.depositPlayer(p, 0.01);
 		    		
 		    		if(ScoreboardCoolDown>= 20) {
-			    		Tablist.setScoreboard();
 			    		de.zwibbltv.dreamland.main.updateScoreboard.update(p);
 			    	}
 		        }
@@ -102,7 +99,6 @@ public class Main extends JavaPlugin {
 		pm.registerEvents(new CMDmute(), this);
 		pm.registerEvents(new scoreboardListener(), this);
 		pm.registerEvents(new MenuListener(), this);
-//		pm.registerEvents(new EventListener(), this);
 		pm.registerEvents(new PlayerListener(), this);
 		
 				

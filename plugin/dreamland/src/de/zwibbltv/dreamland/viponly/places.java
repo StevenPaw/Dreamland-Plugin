@@ -84,6 +84,20 @@ public class places {
 					p.teleport(location);
 					p.sendMessage(Main.getVIP());
 				}		
+				//Haunted_Mansion
+				d = ploc.distance(new Location(w, -710.5, 23.0, 584.5));
+				if(d <= 1.5) {
+					Location location = new Location(w, -710.5, 23.0, 586.5, 180, 0);
+					p.teleport(location);
+					p.sendMessage(Main.getVIP());
+				}		
+				//VIP-Launch am Spawn
+				d = ploc.distance(new Location(w, -969.5, 23.0, 660.5));
+				if(d <= 1.5) {
+					Location location = new Location(w, -969.5, 23.0, 658.5, 0, 0);
+					p.teleport(location);
+					p.sendMessage(Main.getVIP());
+				}		
 			}
 		}	
 	}
