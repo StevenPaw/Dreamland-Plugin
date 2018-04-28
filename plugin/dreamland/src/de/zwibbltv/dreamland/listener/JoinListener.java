@@ -28,6 +28,7 @@ public class JoinListener implements Listener {
 		p.setGameMode(GameMode.ADVENTURE);
 		p.sendMessage("Sending Resourcepack");
 		p.setResourcePack("https://www.dropbox.com/s/n069utc6ixux4iw/Dreamland17-04.zip?dl=1");
+		p.performCommand("audio");
 		if(!p.hasPermission("dreamland.*") || !p.hasPermission("dreamland.join")) {
 			p.performCommand("warp spawn");
 		}
