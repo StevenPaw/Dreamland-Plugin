@@ -11,6 +11,7 @@ import org.bukkit.inventory.ItemStack;
 
 import de.zwibbltv.dreamland.main.ItemBuilder;
 import de.zwibbltv.dreamland.main.Main;
+import net.md_5.bungee.api.ChatColor;
 
 public class CMDrank implements CommandExecutor{
 
@@ -63,7 +64,7 @@ public class CMDrank implements CommandExecutor{
 				}
 				
 			} else {
-				p.sendMessage(Main.getNoPerms());
+				p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("noPerms")));
 			}		
 		} 
 		if(sender instanceof ConsoleCommandSender){

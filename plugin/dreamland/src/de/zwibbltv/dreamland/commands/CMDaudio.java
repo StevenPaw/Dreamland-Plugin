@@ -6,6 +6,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import de.zwibbltv.dreamland.main.Main;
+import net.md_5.bungee.api.ChatColor;
 
 public class CMDaudio implements CommandExecutor{
 
@@ -23,7 +24,7 @@ public class CMDaudio implements CommandExecutor{
 					p.sendMessage("§cPlease use /audio");
 				
 			} else
-				p.sendMessage(Main.getNoPerms());
+				p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("noPerms")));
 		} 
 		
 		return false;

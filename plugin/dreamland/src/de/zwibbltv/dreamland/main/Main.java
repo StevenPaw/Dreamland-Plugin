@@ -1,6 +1,10 @@
 package de.zwibbltv.dreamland.main;
 
+import java.io.File;
+
 import org.bukkit.Bukkit;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
@@ -27,29 +31,14 @@ import net.milkbowl.vault.economy.Economy;
 public class Main extends JavaPlugin {
 	
 	private static Main plugin;
-
-	public static String getNoPerms() {
-		return noPerms;
-	}
-	
-	public static String getcommingsoon() {
-		return commingsoon;
-	}
-	
+		
 	public static Main getInstance() {
 		return instance;
-	}
-	
-	public static String getVIP() {
-		return VIP;
-	}
+	}	
 
 	public static void setInstance(Main instance) {
 		Main.instance = instance;
 	}
-	private static String noPerms = "§cYou may not use this command";
-	private static String commingsoon = "§7>> §cComming soon!";
-	private static String VIP = "§cBuy §6VIP §cto get access to exclusive features!";
 	private static Main instance;
 	
 	public static Economy economy = null;
@@ -60,6 +49,10 @@ public class Main extends JavaPlugin {
 	
 	@Override
 	public void onEnable() {
+		saveDefaultConfig();
+		Main.file = new File("plugins/Dreamland", "config.yml");
+		Main.cfg = YamlConfiguration.loadConfiguration(Main.file);
+		
 		setInstance(this);
 		plugin = this;
 		this.setupEconomy();
@@ -80,7 +73,7 @@ public class Main extends JavaPlugin {
 		    }
 		}, 20, 20);
 		
-	Bukkit.getConsoleSender().sendMessage(prefix + "§a§lerfolgreich gestartet!");
+	Bukkit.getConsoleSender().sendMessage(prefix + "§a§lenabled!");
 	
 		getCommand("mute").setExecutor(new CMDmute());
 		getCommand("gm").setExecutor(new CMDgamemode());
@@ -103,9 +96,9 @@ public class Main extends JavaPlugin {
 		
 				
 		if(setupEconomy()) {
-			Bukkit.getConsoleSender().sendMessage(prefix + "§aerfolgreich mit Vault verbunden!");
+			Bukkit.getConsoleSender().sendMessage(prefix + "§aConnected with Vault!");
 		} else {
-			Bukkit.getConsoleSender().sendMessage(prefix + "§ckonnte nicht mit Vault verbunden werden!");
+			Bukkit.getConsoleSender().sendMessage(prefix + "§cCan't connect with Vault!");
 		}
 	}
 	
@@ -119,7 +112,7 @@ public class Main extends JavaPlugin {
 	
 	@Override
 	public void onDisable() {
-		Bukkit.getConsoleSender().sendMessage(prefix + "§c§lerfolgreich gestoppt!");
+		Bukkit.getConsoleSender().sendMessage(prefix + "§c§ldisabled!");
 		
 	}
 	
@@ -137,4 +130,7 @@ public class Main extends JavaPlugin {
 	        return (economy != null);
 	    }
 	 
+	public static File file;
+	public static FileConfiguration cfg;
+	
 }

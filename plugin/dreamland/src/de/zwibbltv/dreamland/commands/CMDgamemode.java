@@ -8,6 +8,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import de.zwibbltv.dreamland.main.Main;
+import net.md_5.bungee.api.ChatColor;
 
 public class CMDgamemode implements CommandExecutor {
 
@@ -39,7 +40,7 @@ public class CMDgamemode implements CommandExecutor {
 					}
 				}
 			} else
-				p.sendMessage(Main.getNoPerms());
+				p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("noPerms")));
 			
 			if (p.hasPermission("dreamland.gamemode.*") || p.hasPermission("dreamland.*")
 					|| p.hasPermission("dreamland.gamemode.others")) {
@@ -76,7 +77,7 @@ public class CMDgamemode implements CommandExecutor {
 					}
 				}
 			} else
-			p.sendMessage(Main.getNoPerms());
+			p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("noPerms")));
 		}
 
 		return false;

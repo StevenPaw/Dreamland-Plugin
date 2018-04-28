@@ -6,6 +6,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import de.zwibbltv.dreamland.main.Main;
+import net.md_5.bungee.api.ChatColor;
 
 public class CMDsetwarp implements CommandExecutor {
 
@@ -20,7 +21,7 @@ public class CMDsetwarp implements CommandExecutor {
 			} else
 				p.sendMessage("§cPlease use /setwarp <Name>");
 		} else
-			p.sendMessage(Main.getNoPerms());
+			p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("noPerms")));
 
 	return false;
 }

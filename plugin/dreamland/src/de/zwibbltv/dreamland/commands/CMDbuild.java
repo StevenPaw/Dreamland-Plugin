@@ -13,6 +13,7 @@ import org.bukkit.inventory.ItemStack;
 
 import de.zwibbltv.dreamland.main.ItemBuilder;
 import de.zwibbltv.dreamland.main.Main;
+import net.md_5.bungee.api.ChatColor;
 
 
 public class CMDbuild implements CommandExecutor {
@@ -49,7 +50,7 @@ public class CMDbuild implements CommandExecutor {
 							p.getPlayer().getEquipment().clear();
 						}					
 					} else
-						p.sendMessage(Main.getNoPerms());
+						p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("noPerms")));
 				} else
 					sender.sendMessage("§cYou can't build! §6Use /build <name>");
 			}			
@@ -89,7 +90,7 @@ public class CMDbuild implements CommandExecutor {
 						} else 
 							p.sendMessage("§6" + args[0] + "§c isn't online!");
 					} else
-						p.sendMessage(Main.getNoPerms());
+						p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("noPerms")));
 				}else {
 					Player target = Bukkit.getPlayer(args[0]);
 					if (target != null) {

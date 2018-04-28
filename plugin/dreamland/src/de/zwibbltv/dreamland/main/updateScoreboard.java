@@ -87,7 +87,7 @@ public class updateScoreboard {
         	}
         	               	        	
         if (CMDbuild.buildallowed.contains(p) == true) {
-        	obj.getScore("§6>>§4BUILDMODE§6<<").setScore(-1);;
+        	obj.getScore("§6>>§4BUILDMODE§6<<").setScore(-1);
         }
 
         obj.getScore(" ").setScore(8);

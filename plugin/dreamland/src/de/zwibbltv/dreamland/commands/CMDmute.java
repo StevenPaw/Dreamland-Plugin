@@ -12,6 +12,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
 import de.zwibbltv.dreamland.main.Main;
+import net.md_5.bungee.api.ChatColor;
 
 public class CMDmute implements CommandExecutor, Listener{
 	
@@ -53,7 +54,7 @@ public class CMDmute implements CommandExecutor, Listener{
 					p.sendMessage("§cPlease use /mute <Player>");
 				
 			} else
-				p.sendMessage(Main.getNoPerms());
+				p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("noPerms")));
 		} 
 		
 		return false;

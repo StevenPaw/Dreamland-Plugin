@@ -10,6 +10,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 
 import de.zwibbltv.dreamland.main.Main;
+import net.md_5.bungee.api.ChatColor;
 
 public class CMDwarp implements CommandExecutor {
 
@@ -41,7 +42,7 @@ public class CMDwarp implements CommandExecutor {
 			} 
 			
 		} else
-			p.sendMessage(Main.getNoPerms());
+			p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("noPerms")));
 		
 		return false;
 	}
