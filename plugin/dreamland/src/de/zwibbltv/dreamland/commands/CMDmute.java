@@ -1,6 +1,6 @@
 package de.zwibbltv.dreamland.commands;
 
-import java.util.ArrayList;
+import java.io.IOException;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -12,16 +12,16 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
 import de.zwibbltv.dreamland.main.Main;
+import de.zwibbltv.dreamland.utils.PlayerConfig;
 import net.md_5.bungee.api.ChatColor;
 
 public class CMDmute implements CommandExecutor, Listener{
 	
-	private static ArrayList<Player> mutedPlayers = new ArrayList<>();
-	
+		
 	@EventHandler
 	public void handlePlayerChat(AsyncPlayerChatEvent e) {
 		Player p = e.getPlayer();
-		if(mutedPlayers.contains(p)) {
+		if(PlayerConfig.getMute(p) == true) {
 			p.sendMessage("§cYou can't write: §4§nYou are muted");
 					e.setCancelled(true);
 		}
@@ -36,17 +36,35 @@ public class CMDmute implements CommandExecutor, Listener{
 				if(args.length == 1) {
 					
 					Player target = Bukkit.getPlayer(args[0]);
+					
+					
 					if(target != null) {
-						if(!mutedPlayers.contains(target)) {
-							mutedPlayers.add(target);
+						if(target != p) {							
+					
+						if(PlayerConfig.getMute(target) == false) {
+							
+							try {
+								PlayerConfig.setMute(target, true);
+							} catch (IOException e) {
+								e.printStackTrace();
+							}
+							
 							p.sendMessage("§aYou muted §c" + target.getName() + " §a!");
 							target.sendMessage("§cYou are now muted! §7(By: §6" + p.getName() + "§7)");
 							
 						} else {
-							mutedPlayers.remove(target);
+							
+							try {
+								PlayerConfig.setMute(target, false);
+							} catch (IOException e) {
+								e.printStackTrace();
+							}
 							target.sendMessage("§aYou are no longer muted! §7(By: §6" + p.getName() + "§7)");
 							p.sendMessage("§aYou unmuted §c" + target.getName() + " §a!");
 							
+							}
+						} else {
+							p.sendMessage("§cYou can't mute yourself!");
 						}
 					}
 					

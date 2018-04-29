@@ -7,7 +7,7 @@ import org.bukkit.scoreboard.Objective;
 import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.scoreboard.Team;
 
-import de.zwibbltv.dreamland.commands.CMDbuild;
+import de.zwibbltv.dreamland.utils.PlayerConfig;
 import net.milkbowl.vault.economy.Economy;
 import ru.tehkode.permissions.bukkit.PermissionsEx;
 
@@ -86,7 +86,7 @@ public class updateScoreboard {
         		obj.getScore("§7Guest").setScore(0);
         	}
         	               	        	
-        if (CMDbuild.buildallowed.contains(p) == true) {
+        if (PlayerConfig.getBuilder(p) == true) {
         	obj.getScore("§6>>§4BUILDMODE§6<<").setScore(-1);
         }
 

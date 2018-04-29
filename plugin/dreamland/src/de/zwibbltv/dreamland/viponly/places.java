@@ -9,6 +9,7 @@ import org.bukkit.World;
 import org.bukkit.entity.Player;
 
 import de.zwibbltv.dreamland.main.Main;
+import de.zwibbltv.dreamland.utils.PlayerConfig;
 import net.md_5.bungee.api.ChatColor;
 
 public class places {
@@ -47,7 +48,7 @@ public class places {
 	
 	public static void locations(Player p) {		
 		if (!p.hasPermission("dreamland.*") && !p.hasPermission("dreamland.VIP")) {
-			if (!de.zwibbltv.dreamland.commands.CMDbuild.buildallowed.contains(p)) {
+			if (PlayerConfig.getBuilder(p) == false) {
 				Location ploc = p.getLocation();
 				Double d;
 				

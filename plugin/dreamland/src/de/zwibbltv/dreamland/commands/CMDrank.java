@@ -11,6 +11,7 @@ import org.bukkit.inventory.ItemStack;
 
 import de.zwibbltv.dreamland.main.ItemBuilder;
 import de.zwibbltv.dreamland.main.Main;
+import de.zwibbltv.dreamland.utils.PlayerConfig;
 import net.md_5.bungee.api.ChatColor;
 
 public class CMDrank implements CommandExecutor{
@@ -27,7 +28,7 @@ public class CMDrank implements CommandExecutor{
 						if (target != null) {								
 							p.performCommand("pex user " + target.getName() + " group set " + args[1]);
 							if (target.hasPermission("dreamland.*") || target.hasPermission("dreamland.build.self") || target.hasPermission("dreamland.build.*")) {
-								if (!de.zwibbltv.dreamland.commands.CMDbuild.buildallowed.contains(target)) {
+								if (PlayerConfig.getBuilder(target) == false) {
 									
 									ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
 									ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
@@ -41,7 +42,7 @@ public class CMDrank implements CommandExecutor{
 								}
 							}
 							else if (!target.hasPermission("dreamland.*") && !target.hasPermission("dreamland.build.self") && !target.hasPermission("dreamland.build.*")) {
-								if (!de.zwibbltv.dreamland.commands.CMDbuild.buildallowed.contains(target)) {
+								if (PlayerConfig.getBuilder(target) == false) {
 									
 									ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
 									ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
@@ -75,7 +76,7 @@ public class CMDrank implements CommandExecutor{
 					if (target != null) {							
 						con.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "pex user " + target.getName() + " group set " + args[1]);	
 						if (target.hasPermission("dreamland.*") || target.hasPermission("dreamland.build.self") || target.hasPermission("dreamland.build.*")) {
-							if (!de.zwibbltv.dreamland.commands.CMDbuild.buildallowed.contains(target)) {
+							if (PlayerConfig.getBuilder(target) == false) {
 								
 								ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
 								ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
@@ -89,7 +90,7 @@ public class CMDrank implements CommandExecutor{
 							}
 						}
 						else if (!target.hasPermission("dreamland.*") && !target.hasPermission("dreamland.build.self") && !target.hasPermission("dreamland.build.*")) {
-							if (!de.zwibbltv.dreamland.commands.CMDbuild.buildallowed.contains(target)) {
+							if (PlayerConfig.getBuilder(target) == false) {
 								
 								ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
 								ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();

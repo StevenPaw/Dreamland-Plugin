@@ -1,6 +1,7 @@
 package de.zwibbltv.dreamland.main;
 
 import java.io.File;
+import java.io.IOException;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -23,8 +24,8 @@ import de.zwibbltv.dreamland.listener.JoinListener;
 import de.zwibbltv.dreamland.listener.MenuListener;
 import de.zwibbltv.dreamland.listener.PlayerListener;
 import de.zwibbltv.dreamland.listener.scoreboardListener;
+import de.zwibbltv.dreamland.utils.PlayerConfig;
 import de.zwibbltv.dreamland.utils.PlayerLocationLockedManager;
-//import de.zwibbltv.dreamland.utils.Tablist;
 import de.zwibbltv.dreamland.utils.WarpManager;
 import net.milkbowl.vault.economy.Economy;
 
@@ -52,6 +53,11 @@ public class Main extends JavaPlugin {
 		saveDefaultConfig();
 		Main.file = new File("plugins/Dreamland", "config.yml");
 		Main.cfg = YamlConfiguration.loadConfiguration(Main.file);
+		try {
+			PlayerConfig.save();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		
 		setInstance(this);
 		plugin = this;

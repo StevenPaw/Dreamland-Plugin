@@ -1,6 +1,6 @@
 package de.zwibbltv.dreamland.commands;
 
-import java.util.ArrayList;
+import java.io.IOException;
 
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
@@ -13,11 +13,11 @@ import org.bukkit.inventory.ItemStack;
 
 import de.zwibbltv.dreamland.main.ItemBuilder;
 import de.zwibbltv.dreamland.main.Main;
+import de.zwibbltv.dreamland.utils.PlayerConfig;
 import net.md_5.bungee.api.ChatColor;
 
 
 public class CMDbuild implements CommandExecutor {
-	public static ArrayList<Player> buildallowed = new ArrayList<Player>();
 	
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
@@ -27,8 +27,12 @@ public class CMDbuild implements CommandExecutor {
 			if (sender instanceof Player) {				
 				Player p = (Player) sender;
 				if (p.hasPermission("dreamland.*") || p.hasPermission("dreamland.build.self") || p.hasPermission("dreamland.build.*")) {
-						if (buildallowed.contains(p)) {
-							buildallowed.remove(p);
+						if (PlayerConfig.getBuilder(p) == true) {
+							try {
+								PlayerConfig.setBuilder(p, false);
+							} catch (IOException e) {
+								e.printStackTrace();
+							}
 							p.setGameMode(GameMode.ADVENTURE);
 							p.sendMessage("§cYou are no builder any longer!");
 							
@@ -42,8 +46,13 @@ public class CMDbuild implements CommandExecutor {
 							p.getPlayer().getInventory().setItem(7, gold_spade);
 							p.getPlayer().getInventory().setItem(8, golden_carrot);
 
-						} else {
-							buildallowed.add(p);
+						} 
+						else if(PlayerConfig.getBuilder(p) == false){
+							try {
+								PlayerConfig.setBuilder(p, true);
+							} catch (IOException e) {
+								e.printStackTrace();
+							}
 							p.setGameMode(GameMode.CREATIVE);
 							p.sendMessage("§aYou are now a builder!");
 							p.getPlayer().getInventory().clear();
@@ -60,8 +69,12 @@ public class CMDbuild implements CommandExecutor {
 					if (p.hasPermission("dreamland.*") || p.hasPermission("dreamland.build.other") || p.hasPermission("dreamland.build.*")) {
 						Player target = Bukkit.getPlayer(args[0]);
 						if (target != null) {
-							if (buildallowed.contains(target)) {
-								buildallowed.remove(target);
+							if (PlayerConfig.getBuilder(p) == true) {
+								try {
+									PlayerConfig.setBuilder(p, false);
+								} catch (IOException e) {
+									e.printStackTrace();
+								}
 								target.setGameMode(GameMode.ADVENTURE);
 								target.sendMessage("§cYou are no builder any longer! §7(By: §6" + p.getName() + "§7)");
 								p.sendMessage("§6" + target.getName() + "§a is no builder any longer!");
@@ -78,8 +91,13 @@ public class CMDbuild implements CommandExecutor {
 								target.getPlayer().getInventory().setItem(0, carrot);
 								target.getPlayer().getInventory().setItem(8, golden_carrot);
 								
-							} else {
-								buildallowed.add(target);
+							} 
+							else if(PlayerConfig.getBuilder(p) == false){
+								try {
+									PlayerConfig.setBuilder(p, true);
+								} catch (IOException e) {
+									e.printStackTrace();
+								}
 								target.setGameMode(GameMode.CREATIVE);
 								target.sendMessage("§aYou are now a builder! §7(By: §6" + p.getName() + "§7)");
 								p.sendMessage("§6" + target.getName() + "§a is now a builder!");
@@ -94,8 +112,12 @@ public class CMDbuild implements CommandExecutor {
 				}else {
 					Player target = Bukkit.getPlayer(args[0]);
 					if (target != null) {
-						if (buildallowed.contains(target)) {
-							buildallowed.remove(target);
+						if (PlayerConfig.getBuilder(target) == true) {
+							try {
+								PlayerConfig.setBuilder(target, false);
+							} catch (IOException e) {
+								e.printStackTrace();
+							}
 							target.setGameMode(GameMode.ADVENTURE);
 							target.sendMessage("§cYou are no builder any longer! §7(By: §6" + "Admins" + "§7)");
 							sender.sendMessage("§6" + target.getName() + "§a is no builder any longer!");
@@ -112,8 +134,13 @@ public class CMDbuild implements CommandExecutor {
 							target.getPlayer().getInventory().setItem(0, carrot);
 							target.getPlayer().getInventory().setItem(8, golden_carrot);
 
-						} else {
-							buildallowed.add(target);
+						} 
+						else if(PlayerConfig.getBuilder(target) == false){
+							try {
+								PlayerConfig.setBuilder(target, true);
+							} catch (IOException e) {
+								e.printStackTrace();
+							}
 							target.setGameMode(GameMode.CREATIVE);
 							target.sendMessage("§aYou are now a builder! §7(By: §6" + "Admins" + "§7)");
 							sender.sendMessage("§6" + target.getName() + "§a is now a builder!");

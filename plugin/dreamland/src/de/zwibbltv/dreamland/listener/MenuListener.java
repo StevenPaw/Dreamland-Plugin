@@ -1,6 +1,7 @@
 package de.zwibbltv.dreamland.listener;
 
 import org.bukkit.Bukkit;
+import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
@@ -15,15 +16,15 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import de.zwibbltv.dreamland.commands.CMDbuild;
 import de.zwibbltv.dreamland.main.ItemBuilder;
+import de.zwibbltv.dreamland.utils.PlayerConfig;
 
 public class MenuListener implements Listener {
 	
 	@EventHandler
 	public void onDrop(PlayerDropItemEvent e) {
 		Player p = e.getPlayer();
-		if (!CMDbuild.buildallowed.contains(p)) {
+		if (PlayerConfig.getBuilder(p) == false) {
 			e.setCancelled(true);
 		}
 	}
@@ -31,7 +32,7 @@ public class MenuListener implements Listener {
 	@EventHandler
 	public void onIMove(InventoryClickEvent e) {
 		Player p = (Player) e.getWhoClicked();
-		if (!CMDbuild.buildallowed.contains(p)) {
+		if (PlayerConfig.getBuilder(p) == false) {
 			e.setCancelled(true);
 		}
 	}
@@ -40,6 +41,8 @@ public class MenuListener implements Listener {
 	public void onJoin(PlayerJoinEvent e) {
 		
 		Player p = e.getPlayer();
+		if(PlayerConfig.getBuilder(p) == false){
+			
 		e.getPlayer().getInventory().clear();
 		e.getPlayer().getEquipment().clear();
 		
@@ -54,6 +57,10 @@ public class MenuListener implements Listener {
 		e.getPlayer().getInventory().setItem(0, carrot);
 		e.getPlayer().getInventory().setItem(8, golden_carrot);
 
+		}
+		if(PlayerConfig.getBuilder(p) == true) {
+			p.setGameMode(GameMode.CREATIVE);
+		}
 	}
 
 	// Menu-Menu
