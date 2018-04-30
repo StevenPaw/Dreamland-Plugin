@@ -47,7 +47,7 @@ public class PlayerConfig {
 	@SuppressWarnings("deprecation")
 	public static void giveAchievement(Player p, Achievements achievement) {
 		if(!hasAchivement(p, achievement)) {
-			PlayerConfig.set(p.getName() + ".Achivements." + achievement.getName(), true);
+			PlayerConfig.set(p.getName() + ".achivements." + achievement.getName(), true);
 			p.sendMessage("§aYou've got the achievement §6" + achievement.getName() + "§a!");
 			p.sendMessage("§a-> §6" + achievement.getText());
 			Main.economy.depositPlayer(p.getName(), achievement.getMoney());

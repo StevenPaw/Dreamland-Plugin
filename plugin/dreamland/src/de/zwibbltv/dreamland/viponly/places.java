@@ -100,6 +100,13 @@ public class places {
 					p.teleport(location);
 					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("VIP")));
 				}		
+				//Calico-Palesade
+				d = ploc.distance(new Location(w, -886.5, 21.0, 706.5));
+				if(d <= 1.5) {
+					Location location = new Location(w, -886.5, 20.0, 703.5, 0, 0);
+					p.teleport(location);
+					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("VIP")));
+				}		
 			}
 		}	
 	}
