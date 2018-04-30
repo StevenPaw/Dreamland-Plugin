@@ -18,7 +18,7 @@ public class CMDachievements implements CommandExecutor{
 		
 		if (cmd.getName().equalsIgnoreCase("ach")) {			
 			Player p = (Player) sender;
-			if (args.length == 2) {
+			if (args.length == 3) {
 			if (sender instanceof Player) {	
 				if (p.hasPermission("dreamland.*") || p.hasPermission("dreamland.ach")) {
 					
@@ -27,7 +27,11 @@ public class CMDachievements implements CommandExecutor{
 					if(args[0].equalsIgnoreCase("give")) {
 						if (target != null) {
 //							PlayerConfig.set(target.getName() + ".achivements." + Achievements.getName(args[2]), true);
-							PlayerConfig.giveAchievement(target.getPlayer(), Achievements.valueOf(args[2]));
+							try{
+								PlayerConfig.giveAchievement(target.getPlayer(), Achievements.valueOf(args[2]));
+							}catch (IllegalArgumentException error) {
+								p.sendMessage("§c That Achievement couldn't be added. Is it spelled correct?");
+							}
 						}						
 					}
 					
