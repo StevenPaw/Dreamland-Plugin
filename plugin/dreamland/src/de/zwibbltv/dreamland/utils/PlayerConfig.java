@@ -38,7 +38,7 @@ public class PlayerConfig {
 	}
 		
 	public static boolean hasAchivement(Player p, Achievements achievement) {
-		if (PlayerConfig.get(p.getName() + ".achivements." + achievement.getName()) != null || PlayerConfig.get(p.getName() + ".achivements." + achievement.getName()) == "false")
+		if (PlayerConfig.get(p.getName() + ".achivements." + achievement.getName()) != null )
 			return true;
 		else
 			return false;
@@ -62,7 +62,7 @@ public class PlayerConfig {
 	
 	public static void takeAchievement(Player p, Achievements achievement) {
 		if(hasAchivement(p, achievement)) {
-			PlayerConfig.set(p.getName() + ".achivements." + achievement.getName(), false);
+			PlayerConfig.set(p.getName() + ".achivements." + achievement.getName(), null);
 			p.sendMessage("§aYou've token the achievement §6" + achievement.getName() + "§a!");
 			try {
 				save();
