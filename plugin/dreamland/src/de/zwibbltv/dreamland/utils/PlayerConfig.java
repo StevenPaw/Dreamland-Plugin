@@ -38,7 +38,10 @@ public class PlayerConfig {
 	}
 		
 	public static boolean hasAchivement(Player p, Achievements achievement) {
-		return PlayerConfig.get(p.getName() + ".achivements." + achievement.getName()) != null ? true : false;
+		if (PlayerConfig.get(p.getName() + ".achivements." + achievement.getName()) != null)
+			return true;
+		else
+			return false;
 	}
 	
 	@SuppressWarnings("deprecation")
