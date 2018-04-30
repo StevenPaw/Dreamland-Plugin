@@ -16,7 +16,7 @@ public class CMDachievements implements CommandExecutor{
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		
-		if (cmd.getName().equalsIgnoreCase("build")) {			
+		if (cmd.getName().equalsIgnoreCase("ach")) {			
 			Player p = (Player) sender;
 			if (args.length == 2) {
 			if (sender instanceof Player) {	
