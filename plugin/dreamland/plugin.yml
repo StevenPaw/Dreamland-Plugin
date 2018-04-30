@@ -24,3 +24,5 @@ commands:
       description: sets a players rank
    audio:
       description: here the audio
+   achievements:
+      description: set the achievements
