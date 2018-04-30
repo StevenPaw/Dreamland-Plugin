@@ -38,7 +38,7 @@ public class PlayerConfig {
 	}
 		
 	public static boolean hasAchivement(Player p, Achievements achievement) {
-		if (PlayerConfig.get(p.getName() + ".achivements." + achievement.getName()) != null)
+		if (PlayerConfig.get(p.getName() + ".achivements." + achievement.getName()) != null || PlayerConfig.get(p.getName() + ".achivements." + achievement.getName()) == "false")
 			return true;
 		else
 			return false;
@@ -52,6 +52,18 @@ public class PlayerConfig {
 			p.sendMessage("§a-> §6" + achievement.getText());
 			Main.economy.depositPlayer(p.getName(), achievement.getMoney());
 			p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
+			try {
+				save();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	public static void takeAchievement(Player p, Achievements achievement) {
+		if(hasAchivement(p, achievement)) {
+			PlayerConfig.set(p.getName() + ".achivements." + achievement.getName(), false);
+			p.sendMessage("§aYou've token the achievement §6" + achievement.getName() + "§a!");
 			try {
 				save();
 			} catch (IOException e) {

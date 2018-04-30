@@ -26,11 +26,10 @@ public class CMDachievements implements CommandExecutor{
 					
 					if(args[0].equalsIgnoreCase("give")) {
 						if (target != null) {
-//							PlayerConfig.set(target.getName() + ".achivements." + Achievements.getName(args[2]), true);
 							try{
 								PlayerConfig.giveAchievement(target.getPlayer(), Achievements.valueOf(args[2]));
 							}catch (IllegalArgumentException error) {
-								p.sendMessage("§c That Achievement couldn't be added. Is it spelled correct?");
+								p.sendMessage("§cThat Achievement couldn't be added. Is it spelled correct?");
 							}
 						}						
 					}
@@ -38,7 +37,7 @@ public class CMDachievements implements CommandExecutor{
 					if(args[0].equalsIgnoreCase("take")) {
 						if (target != null) {	
 							
-							
+							PlayerConfig.takeAchievement(target.getPlayer(), Achievements.valueOf(args[2]));
 							
 						}
 					}					
@@ -47,7 +46,7 @@ public class CMDachievements implements CommandExecutor{
 						p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("noPerms")));
 				}
 			} else {
-				p.sendMessage("§c Please use: §5/ach <give/take> <name> <ach>");
+				p.sendMessage("§cPlease use: §5/ach <give/take> <name> <ach>");
 			}
 		}
 		
