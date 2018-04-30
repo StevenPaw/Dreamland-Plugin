@@ -22,6 +22,7 @@ import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
+import de.zwibbltv.dreamland.utils.Achievements;
 import de.zwibbltv.dreamland.utils.PlayerConfig;
 import net.md_5.bungee.api.ChatColor;
 import ru.tehkode.permissions.bukkit.PermissionsEx;
@@ -150,6 +151,7 @@ public class PlayerListener implements Listener {
 	@EventHandler
 	public void onPlayerMove(PlayerMoveEvent event) {
 		Player p = event.getPlayer();
+		PlayerConfig.giveAchievement(p, Achievements.FIRSTMOVE);
 		de.zwibbltv.dreamland.viponly.places.locations(p);
 		if(p.getLocation().getBlock().getRelative(BlockFace.DOWN).getType() == Material.BRICK) {
 			p.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 20, 1));		
@@ -158,6 +160,7 @@ public class PlayerListener implements Listener {
 		
 	@EventHandler
     public void onPlayerChat(AsyncPlayerChatEvent e){
+		PlayerConfig.giveAchievement(e.getPlayer(), Achievements.FIRSTCHAT);
 		String prefix = PermissionsEx.getUser(e.getPlayer()).getPrefix();
         e.setFormat(prefix + " %s: %s");
     }

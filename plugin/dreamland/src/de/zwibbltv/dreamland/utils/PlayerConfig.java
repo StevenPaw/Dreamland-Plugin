@@ -3,9 +3,12 @@ package de.zwibbltv.dreamland.utils;
 import java.io.File;
 import java.io.IOException;
 
+import org.bukkit.Sound;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
+
+import de.zwibbltv.dreamland.main.Main;
 
 public class PlayerConfig {
 	
@@ -32,6 +35,26 @@ public class PlayerConfig {
 	}	
 	public static Boolean getBuilder(Player p) {
 		return PlayerConfig.getBoolean(p.getName()+ ".builder");
+	}
+		
+	public static boolean hasAchivement(Player p, Achievements achievement) {
+		return PlayerConfig.get(p.getName() + ".achivements." + achievement.getName()) != null ? true : false;
+	}
+	
+	@SuppressWarnings("deprecation")
+	public static void giveAchievement(Player p, Achievements achievement) {
+		if(!hasAchivement(p, achievement)) {
+			PlayerConfig.set(p.getName() + ".Achivements." + achievement.getName(), true);
+			p.sendMessage("§aYou've got the achievement §6" + achievement.getName() + "§a!");
+			p.sendMessage("§a-> §6" + achievement.getText());
+			Main.economy.depositPlayer(p.getName(), achievement.getMoney());
+			p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
+			try {
+				save();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 	
 }

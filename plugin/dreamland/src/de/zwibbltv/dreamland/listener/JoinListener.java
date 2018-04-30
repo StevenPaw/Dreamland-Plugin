@@ -10,6 +10,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
+import de.zwibbltv.dreamland.utils.Achievements;
+import de.zwibbltv.dreamland.utils.PlayerConfig;
 import net.minecraft.server.v1_12_R1.ChatComponentText;
 import net.minecraft.server.v1_12_R1.IChatBaseComponent;
 import net.minecraft.server.v1_12_R1.PacketPlayOutTitle;
@@ -18,7 +20,7 @@ import net.minecraft.server.v1_12_R1.PlayerConnection;
 
 public class JoinListener implements Listener {
 	
-//	@SuppressWarnings("deprecation")
+	
 	@EventHandler
 	public void onPlayerJoin(PlayerJoinEvent e) {
 		Player p = e.getPlayer();
@@ -65,6 +67,7 @@ public class JoinListener implements Listener {
 			Bukkit.broadcastMessage("§aPlease all welcome §6" + p.getName() + "§a! Enjoy your visit at §6Dreamland Themepark§a!");
 			Bukkit.broadcastMessage("");
 			p.sendMessage("Use /audio to get the full Audio experience in the park");
+			PlayerConfig.giveAchievement(p.getPlayer(), Achievements.FIRSTJOIN);
 		}
 	}
 	

@@ -48,8 +48,10 @@ public class Main extends JavaPlugin {
 	
 	int ScoreboardCoolDown = 0;
 	
+		
 	@Override
 	public void onEnable() {
+		
 		saveDefaultConfig();
 		Main.file = new File("plugins/Dreamland", "config.yml");
 		Main.cfg = YamlConfiguration.loadConfiguration(Main.file);
