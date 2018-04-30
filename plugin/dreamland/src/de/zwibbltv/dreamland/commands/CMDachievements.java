@@ -26,7 +26,8 @@ public class CMDachievements implements CommandExecutor{
 					
 					if(args[0].equalsIgnoreCase("give")) {
 						if (target != null) {
-							PlayerConfig.set(target.getName() + ".achivements." + Achievements.getName(args[2]), true);
+//							PlayerConfig.set(target.getName() + ".achivements." + Achievements.getName(args[2]), true);
+							PlayerConfig.giveAchievement(target.getPlayer(), Achievements.valueOf(args[2]));
 						}						
 					}
 					
