@@ -1,4 +1,24 @@
 Saved:
+  Westernrace:
+    loopSeconds: 20
+    cartOffset: 0
+    minSpeed: 2
+    maxSpeed: 5
+    trainLength: 1
+    hasLoco: true
+    trainName: Westernrace
+    cartDownPos: 0
+    isSmall: true
+  Chiapas:
+    loopSeconds: 10
+    cartOffset: 0
+    minSpeed: 2
+    maxSpeed: 15
+    trainLength: 1
+    hasLoco: true
+    trainName: Chiapas
+    cartDownPos: 0
+    isSmall: false
   FlyingPegasus2:
     loopSeconds: 30
     cartOffset: 60
@@ -10,12 +30,22 @@ Saved:
     cartDownPos: -1
     isSmall: false
   FlyingPegasus:
-    loopSeconds: 30
-    cartOffset: 60
-    minSpeed: 2
+    loopSeconds: 10
+    cartOffset: 70
+    minSpeed: 5
     maxSpeed: 30
     trainLength: 3
     hasLoco: true
     trainName: FlyingPegasus
-    cartDownPos: -1
+    cartDownPos: 0
+    isSmall: false
+  HauntedMansion:
+    loopSeconds: 20
+    cartOffset: 10
+    minSpeed: 5
+    maxSpeed: 15
+    trainLength: 1
+    hasLoco: true
+    trainName: HauntedMansion
+    cartDownPos: 0
     isSmall: false

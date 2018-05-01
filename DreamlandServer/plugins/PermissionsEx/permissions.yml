@@ -1,39 +1,66 @@
 groups:
-  Default:
+  Guest:
     permissions:
     - modifyworld.chat
-    - multiverse.portal.access.spawn-dreamland
-    - multiverse.portal.access.dreamland-spawn
+    - -bukkit.command.help
+    - -bukkit.command.plugins
+    - dreamland.warp
+    - dreamland.menu
+    - dreamland.audio
     rank: '600'
     options:
-      prefix: '&6[&7Default&6]&f'
+      prefix: §6[§7Guest§6]§7
       default: true
-  Player:
+  Member:
     inheritance:
-    - Default
-    permissions:
-    - multiverse.portal.access.*
+    - Guest
     rank: '500'
     options:
-      prefix: '&6[&3Player&6]&7'
+      prefix: §6[§3Member§6]§r
   VIP:
     inheritance:
     - Guest
     rank: '400'
     options:
-      prefix: '&6[&eVIP&6]&4'
-  Admin:
+      prefix: §6[§eVIP§6]§r
+  Builder:
     inheritance:
     - VIP
+    permissions:
+    - dreamland.build.*
+    - dreamland.join
+    - minecraft.command.xp
+    - bukkit.command.help
+    - bukkit.command.plugins
+    - minecraft.command.tp
+    - minecraft.command.time
+    - minecraft.command.summon
+    - minecraft.command.fill
+    - minecraft.command.setblock
+    - minecraft.command.playsound
+    - minecraft.command.give
+    - dreamland.gamemode.*
+    - minecraft.command.effect
+    - minecraft.command.enchant
+    - minecraft.command.clear
+    - worldedit.*
     rank: '300'
     options:
-      prefix: '&6[&9Admin&6]&a'
+      prefix: §6[§5Builder§6]§r
+  Admin:
+    inheritance:
+    - Builder
+    permissions:
+    - '*'
+    rank: '200'
+    options:
+      prefix: §6[§9§lAdmin§6]§r
   Owner:
     permissions:
     - '*'
     rank: '1'
     options:
-      prefix: '&6[&2&lOwner&6]&5&l'
+      prefix: §6[§2§lOwner§6]§r
   users:
     StevenPaw:
       group:
@@ -50,12 +77,24 @@ users:
     options:
       name: ZwibblTV
     group:
-    - Owner
+    - Admin
   d1958a44-a2f7-476f-b9f5-0aca1e27354e:
     options:
       name: Segel_Basti
+    group:
+    - Builder
   ff1022ac-91de-4516-bddd-1656aae12fc1:
     group:
     - Owner
     options:
       name: StevenPaw
+  f371d89d-bed3-4692-b37c-f635d2c0d5bf:
+    group:
+    - Guest
+    options:
+      name: supyTV
+  85cc7c6c-7d7c-4cbf-a675-a403da1566f8:
+    group:
+    - Admin
+    options:
+      name: ZwibblHelper
