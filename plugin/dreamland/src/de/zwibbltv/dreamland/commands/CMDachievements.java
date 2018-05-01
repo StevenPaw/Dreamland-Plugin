@@ -35,18 +35,17 @@ public class CMDachievements implements CommandExecutor{
 					}
 					
 					if(args[0].equalsIgnoreCase("take")) {
-						if (target != null) {	
-							
-							PlayerConfig.takeAchievement(target.getPlayer(), Achievements.valueOf(args[2]));
-							
+						if (target != null) {								
+							PlayerConfig.takeAchievement(target.getPlayer(), Achievements.valueOf(args[2]));							
 						}
-					}					
+					}		
+					
 					
 					} else
 						p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("noPerms")));
 				}
 			} else {
-				p.sendMessage("§cPlease use: §5/ach <give/take> <name> <ach>");
+				p.sendMessage("§cPlease use: §6§o/ach <give/take> <name> <ach>");
 			}
 		}
 		
