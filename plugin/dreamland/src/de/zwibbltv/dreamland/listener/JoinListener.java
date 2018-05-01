@@ -37,7 +37,7 @@ public class JoinListener implements Listener {
 		
 		//reset runtime
 		try {
-		PlayerConfig.Runtime(p, 0);
+		 PlayerConfig.Runtime(p, 0);
 		} catch (IOException error) {
 			error.printStackTrace();
 		}
