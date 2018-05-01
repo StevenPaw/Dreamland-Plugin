@@ -10,6 +10,7 @@ public enum Achievements {
 	FIRSTJOIN("FirstJoin","You joined our Server!",20),
 	FIRSTCHAT("FirstChat","You chatted the first time!",10),
 	FIRSTMOVE("FirstMove","You moved for the first time!",10),
+<<<<<<< HEAD
 	MAINSTREETPARCOUR("MainStreetParcour","You run through the MainStreet Parcour",10),
 	CALICO("Calico", "You went to Calico", 10);
 	
@@ -48,6 +49,9 @@ public enum Achievements {
 				}
 			
 	}
+=======
+	RUNAKM("Run a KM","You ran a Kilometer in one session!",10);
+>>>>>>> 12c064b89929736aa0e2f1748e7f32713c896b36
 	
 	String name;
 	String text;

@@ -36,7 +36,26 @@ public class PlayerConfig {
 	public static Boolean getBuilder(Player p) {
 		return PlayerConfig.getBoolean(p.getName()+ ".builder");
 	}
-		
+	
+	//Resourcepack---
+	public static void Resourcepackactive(Player p, Boolean active) throws IOException{
+		PlayerConfig.set(p.getName()+ ".resourcepack", active);
+		save();
+	}	
+	public static Boolean getResourcepack(Player p) {
+		return PlayerConfig.getBoolean(p.getName()+ ".resourcepack");
+	}
+	
+	//Runtime
+	public static void Runtime(Player p, int time) throws IOException{
+		PlayerConfig.set(p.getName()+ ".runtime", time);
+		save();
+	}	
+	public static int getRuntime(Player p) {
+		return PlayerConfig.getInt(p.getName()+ ".runtime");
+	}
+	
+	//Achievements---
 	public static boolean hasAchivement(Player p, Achievements achievement) {
 		if (PlayerConfig.get(p.getName() + ".achivements." + achievement.getName()) != null )
 			return true;
