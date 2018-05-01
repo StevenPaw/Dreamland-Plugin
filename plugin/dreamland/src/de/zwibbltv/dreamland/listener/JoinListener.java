@@ -1,5 +1,7 @@
 package de.zwibbltv.dreamland.listener;
 
+import java.io.IOException;
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
@@ -27,12 +29,17 @@ public class JoinListener implements Listener {
 		e.setJoinMessage("§6>> §a" + p.getName() + " §6>>");
 		p.sendMessage("§aWelcome to the Dreamland Themepark Server!");
 		sendTitle(p, "Welcome to Dreamland!", "Have a lot of fun!", 1, 80, 10);		//sendTitle(Spieler, Titel, Untertitel, FadeIn, Stay, FadeOut);
-		p.setGameMode(GameMode.ADVENTURE);
-		p.sendMessage("Sending Resourcepack");
-		p.setResourcePack("https://www.dropbox.com/s/n069utc6ixux4iw/Dreamland17-04.zip?dl=1");
-		p.performCommand("audio");
+		p.setGameMode(GameMode.ADVENTURE); //Gamemode setzen
+		p.performCommand("audio"); //Audiolink generieren
 		if(!p.hasPermission("dreamland.*") || !p.hasPermission("dreamland.join")) {
 			p.performCommand("warp spawn");
+		}
+		
+		//reset runtime
+		try {
+		PlayerConfig.Runtime(p, 0);
+		} catch (IOException error) {
+			error.printStackTrace();
 		}
 	}
 	
@@ -53,6 +60,11 @@ public class JoinListener implements Listener {
 	public void onPlayerQuit(PlayerQuitEvent e)
 	{
 		Player p = e.getPlayer();
+		try {
+			PlayerConfig.Resourcepackactive(p, false);
+		} catch (IOException error) {
+			error.printStackTrace();
+		}
 		e.setQuitMessage("§7<< §4" + p.getName() + " §7<<");	
 	}
 	
@@ -68,6 +80,14 @@ public class JoinListener implements Listener {
 			Bukkit.broadcastMessage("");
 			p.sendMessage("Use /audio to get the full Audio experience in the park");
 			PlayerConfig.giveAchievement(p.getPlayer(), Achievements.FIRSTJOIN);
+			
+			//reset runtime
+			try {
+			PlayerConfig.Runtime(p, 0);
+			} catch (IOException error) {
+				error.printStackTrace();
+			}
+			
 		}
 	}
 	

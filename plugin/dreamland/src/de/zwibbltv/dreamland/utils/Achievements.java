@@ -4,7 +4,8 @@ public enum Achievements {
 	
 	FIRSTJOIN("FirstJoin","You joined our Server!",20),
 	FIRSTCHAT("FirstChat","You chatted the first time!",10),
-	FIRSTMOVE("FirstMove","You moved for the first time!",10);
+	FIRSTMOVE("FirstMove","You moved for the first time!",10),
+	RUNAKM("Run a KM","You ran a Kilometer in one session!",10);
 	
 	String name;
 	String text;

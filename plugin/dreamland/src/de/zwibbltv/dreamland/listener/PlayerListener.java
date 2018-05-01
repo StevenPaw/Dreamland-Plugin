@@ -1,5 +1,6 @@
 package de.zwibbltv.dreamland.listener;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -156,6 +157,30 @@ public class PlayerListener implements Listener {
 		if(p.getLocation().getBlock().getRelative(BlockFace.DOWN).getType() == Material.BRICK) {
 			p.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 20, 1));		
 		}			
+		
+		if(PlayerConfig.getResourcepack(p) != true && PlayerConfig.getRuntime(p) >= 2)
+		{
+			p.sendMessage("Sending Resourcepack");
+			p.setResourcePack("https://www.dropbox.com/s/n069utc6ixux4iw/Dreamland17-04.zip?dl=1");
+			try {
+				PlayerConfig.Resourcepackactive(p, true);
+			} catch (IOException error) {
+				error.printStackTrace();
+			}
+		}
+		
+		int a = PlayerConfig.getRuntime(p);
+		
+		if (PlayerConfig.getRuntime(p) >= 4250)
+			PlayerConfig.giveAchievement(p.getPlayer(), Achievements.RUNAKM);
+		
+		try {
+			PlayerConfig.Runtime(p, a + 1);
+		} catch (IOException error) {
+			error.printStackTrace();
+		}
+		
+//		p.sendMessage("Moves done by " + p.getName() + ": " + (a + 1));
 	}
 		
 	@EventHandler
