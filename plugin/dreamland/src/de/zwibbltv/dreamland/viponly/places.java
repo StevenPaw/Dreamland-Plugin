@@ -46,7 +46,11 @@ public class places {
 		
 	}
 	
-	public static void locations(Player p) {		
+	public static void locations(Player p) {	
+	
+		de.zwibbltv.dreamland.utils.Achievements.locations(p);
+		
+	//VIP-Bereiche
 		if (!p.hasPermission("dreamland.*") && !p.hasPermission("dreamland.VIP")) {
 			if (PlayerConfig.getBuilder(p) == false) {
 				Location ploc = p.getLocation();

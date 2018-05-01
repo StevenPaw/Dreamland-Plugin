@@ -155,7 +155,7 @@ public class PlayerListener implements Listener {
 		de.zwibbltv.dreamland.viponly.places.locations(p);
 		if(p.getLocation().getBlock().getRelative(BlockFace.DOWN).getType() == Material.BRICK) {
 			p.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 20, 1));		
-		}			
+		}	
 	}
 		
 	@EventHandler

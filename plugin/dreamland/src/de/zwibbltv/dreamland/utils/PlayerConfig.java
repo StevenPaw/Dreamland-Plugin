@@ -48,8 +48,14 @@ public class PlayerConfig {
 	public static void giveAchievement(Player p, Achievements achievement) {
 		if(!hasAchivement(p, achievement)) {
 			PlayerConfig.set(p.getName() + ".achivements." + achievement.getName(), true);
+			p.sendMessage("");
+			p.sendMessage("§a--------{§6"+achievement.getName()+"§a}--------");
+			p.sendMessage("");
 			p.sendMessage("§aYou've got the achievement §6" + achievement.getName() + "§a!");
 			p.sendMessage("§a-> §6" + achievement.getText());
+			p.sendMessage("");
+			p.sendMessage("§a--------{§6"+achievement.getName()+"§a}--------");
+			p.sendMessage("");
 			Main.economy.depositPlayer(p.getName(), achievement.getMoney());
 			p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
 			try {
