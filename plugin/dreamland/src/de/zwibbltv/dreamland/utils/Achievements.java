@@ -11,8 +11,12 @@ public enum Achievements {
 	FIRSTCHAT("FirstChat","You chatted the first time!",10),
 	FIRSTMOVE("FirstMove","You moved for the first time!",10),
 	RUNAKM("Run a KM","You ran a Kilometer in one session!",10),
-	MAINSTREETPARCOUR("MainStreetParcour","You run through the MainStreet Parcour",10),
-	CALICO("Calico", "You went to Calico", 10);
+	MAINSTREETPARCOUR("MainStreetParcour","You run through the MainStreet Parcour!",10),
+	CALICO("Calico", "You went to Calico!", 10),
+	CALICOTOILET("Calicotoilet", "You went to the toilet in Calico!", 10),
+	CALICORESTAURANT("Calicorestaurant", "You went to the restaurant in Calico!",10),
+	CALICOBANK("Calicobank", "You went to the Bank in Calico!",10),
+	CALICOSAFE("Calicosafe", "You found a way into the safe in Calico!", 20);
 	
 	public static void locations(Player p) {	
 		
@@ -27,6 +31,7 @@ public enum Achievements {
 				p.teleport(location);
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.MAINSTREETPARCOUR);
 				}
+		//CALICO
 			//Calico Eingang 1.1
 			d = ploc.distance(new Location(w, -881.5, 20.0, 692.5));
 			if(d <= 3) {
@@ -46,6 +51,26 @@ public enum Achievements {
 			d = ploc.distance(new Location(w, -895.5, 20.0, 760.5));
 			if(d <= 3) {
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.CALICO);
+				}
+			//Calico Toilet
+			d = ploc.distance(new Location(w, -858.5, 21.0, 699.5));
+			if(d <= 2) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.CALICOTOILET);
+				}
+			//Calico Restaurant
+			d = ploc.distance(new Location(w, -855.5, 21.0, 704.5));
+			if(d <= 1) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.CALICORESTAURANT);
+				}
+			//Calico Bank
+			d = ploc.distance(new Location(w, -888.5, 21.0, 731.5));
+			if(d <= 1) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.CALICOBANK);
+				}
+			//Calico Safe
+			d = ploc.distance(new Location(w, -889.5, 23.0, 726.5));
+			if(d <= 1) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.CALICOSAFE);
 				}
 			
 	}

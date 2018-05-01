@@ -88,7 +88,7 @@ public class PlayerConfig {
 	public static void takeAchievement(Player p, Achievements achievement) {
 		if(hasAchivement(p, achievement)) {
 			PlayerConfig.set(p.getName() + ".achivements." + achievement.getName(), null);
-			p.sendMessage("§aYou've token the achievement §6" + achievement.getName() + "§a!");
+			p.sendMessage("§aYou lost the achievement §6" + achievement.getName() + "§a!");
 			try {
 				save();
 			} catch (IOException e) {
