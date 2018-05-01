@@ -156,9 +156,7 @@ public class PlayerListener implements Listener {
 		de.zwibbltv.dreamland.viponly.places.locations(p);
 		if(p.getLocation().getBlock().getRelative(BlockFace.DOWN).getType() == Material.BRICK) {
 			p.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 20, 1));		
-<<<<<<< HEAD
-		}	
-=======
+
 		}			
 		
 		if(PlayerConfig.getResourcepack(p) != true && PlayerConfig.getRuntime(p) >= 2)
@@ -181,10 +179,7 @@ public class PlayerListener implements Listener {
 			PlayerConfig.Runtime(p, a + 1);
 		} catch (IOException error) {
 			error.printStackTrace();
-		}
-		
-//		p.sendMessage("Moves done by " + p.getName() + ": " + (a + 1));
->>>>>>> 12c064b89929736aa0e2f1748e7f32713c896b36
+		}		
 	}
 		
 	@EventHandler
