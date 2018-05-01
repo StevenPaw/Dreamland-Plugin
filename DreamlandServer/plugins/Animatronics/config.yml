@@ -1,0 +1,1136 @@
+Animatronic:
+  phantom1:
+    '1':
+      world: dreamland
+      yaw: 0.0
+      x: -716.5
+      y: 15.6875
+      z: 544.875
+      headx: 0.43820358313852653
+      heady: -0.12111861061787822
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: -0.045303399487987804
+      bodyz: 0.0
+      leftArmx: -1.2217304763960306
+      leftArmy: 0.0
+      leftArmz: -0.2792526803190927
+      rightArmx: -1.0995574287564276
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    delay: '20'
+    clothes:
+      head:
+        ==: org.bukkit.inventory.ItemStack
+        type: SKULL_ITEM
+        damage: 3
+        meta:
+          ==: ItemMeta
+          meta-type: SKULL
+          internal: H4sIAAAAAAAAAE2RyY6jSBRFqVK3lJXdn9G7VMrBGGaRCyabAAPGDIZQb5hsMMFg8AB8U31kO3e9elfv3Kd3pftOUe/U3159J2Q/dKeKFG/UT5RT/7AiXwhwDT95CLNPrjglnyknJJ8iTxcszbEgS9fv1PvrqC+GW1WMv6i3WzHd7kMxvlMU9eON+uVV5zb53vz8ncTORk9qJAmTyID2XCsIt4jVYCOIsPDUK0aKlOUfPEy8oESeVvGzKWmnRHVkL9RLj4dqfZbtCKYh33Jd6liu8RwbRXOjKiUrfEPqVQf1YSRBnMS+cuwmxezoIB/HYOqFM6cloF/yPmnO8jrZR/KqHI7QKbRWK2/geNacRbnXQhw8Bj8Wg15HQKvAvufAnn1UYCvglMwdhMhgZDGZ9rEcK9ISDCo0FCGbtivpHt1a8+pHNuCRyXFAzc3ssFortC+JgSywp+XR706YjzfcQynduQ91Gp83e0PT1lq9b86W6+o9DC+Kd+c3wnzXnoJUtuUot6YYD7EVKQNn0XQufdxY0Vpdcg0q2rmvdZYcjN2N9q/hdj50TC6QrGxlc2/6H2Yi6EavGuOwmrawjHwpFtKBEbiq9NAcWgWXISn66AEj73X72AktNu/GysurmTHtLCAwujLTmd9YYjwzt1h71iXjzycZuxDISltfgik3WoO1ZOjYflej07ABxJFpVXnKJ3ECU1LYZ5Nt8fWa7bDmXmNjgrwyz6XSL710oxuH16a8YseDYiwiqea1ih9Y3YwM+1QlInoPL0oijcyHWVG2LAyfw+iNMjithqBIN9xiIeaEDH1fm93qZDWXNpGezwzy9Oa+5s1q/PASsbdWddbx+AB3aNUnVg7Jvd4286y7u4iFqlTxtydZtduP7uuN+jNMyL348W8xGyA50iRjD2UaSZVz0Wjr4gLrEsy2j2hbdUfUynPK4D7dhgZWkIAuFm8fA8ZezqztZ2y8HAhuNpWt4tLxgwn71mSr1jNmEIeqZ5XpxgM3ZMQBX6bHoHIqQ0sack/r6ZE1LuN46PXD7jHDl7kezjg0SBaFfdaENbr0IGtDslMMgKMS5NGLzUh45fa9VwsvDlEbzul3rubFdUnYzeL/vPwtOfIkZo0St+49bUKwYw+k0A901gQP53ggdmPX8RLM8aItzvF7lg0+bojlawBfMsZRtSVmwgb79WT5ZWkxFu/4cm1tEXhpLm4Qg5sAWCrisR/MqKXFk/v1RVFv1B920hTUX+qlattdN+SCSFH/AWpjYDaSBAAA
+          skull-owner: DjinnLord69
+      body:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          color:
+            ==: Color
+            RED: 29
+            BLUE: 33
+            GREEN: 29
+      pants:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          color:
+            ==: Color
+            RED: 29
+            BLUE: 33
+            GREEN: 29
+      boots:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          color:
+            ==: Color
+            RED: 29
+            BLUE: 33
+            GREEN: 29
+    poslist:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    '2':
+      world: dreamland
+      yaw: 0.0
+      x: -716.5
+      y: 15.6875
+      z: 544.875
+      headx: 0.49056346069835643
+      heady: 0.03596102206161143
+      headz: 0.10471975511965977
+      bodyx: 0.0
+      bodyy: -0.045303399487987804
+      bodyz: 0.0
+      leftArmx: -1.2217304763960306
+      leftArmy: 0.0
+      leftArmz: -0.2792526803190927
+      rightArmx: -1.0995574287564276
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    '3':
+      world: dreamland
+      yaw: 0.0
+      x: -716.5
+      y: 15.6875
+      z: 544.875
+      headx: 0.49056346069835643
+      heady: 0.2977604181831393
+      headz: 0.10471975511965977
+      bodyx: 0.0
+      bodyy: -0.045303399487987804
+      bodyz: 0.0
+      leftArmx: -1.2217304763960306
+      leftArmy: 0.0
+      leftArmz: -0.2792526803190927
+      rightArmx: -1.0995574287564276
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    '4':
+      world: dreamland
+      yaw: 0.0
+      x: -716.5
+      y: 15.6875
+      z: 544.875
+      headx: 0.49056346069835643
+      heady: -0.3829179900946493
+      headz: -0.15707963267948966
+      bodyx: 0.0
+      bodyy: -0.045303399487987804
+      bodyz: 0.0
+      leftArmx: -1.2217304763960306
+      leftArmy: 0.0
+      leftArmz: -0.2792526803190927
+      rightArmx: -1.0995574287564276
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    '5':
+      world: dreamland
+      yaw: 0.0
+      x: -716.5
+      y: 15.6875
+      z: 544.875
+      headx: 0.2811239504590369
+      heady: -0.2258383574151596
+      headz: -0.15707963267948966
+      bodyx: 0.0
+      bodyy: -0.045303399487987804
+      bodyz: 0.0
+      leftArmx: -1.2217304763960306
+      leftArmy: 0.0
+      leftArmz: -0.2792526803190927
+      rightArmx: -1.0995574287564276
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    '6':
+      world: dreamland
+      yaw: 0.0
+      x: -716.5
+      y: 15.6875
+      z: 544.875
+      headx: 0.43820358313852653
+      heady: -0.06875872473566993
+      headz: -0.05235987755982988
+      bodyx: 0.0
+      bodyy: -0.045303399487987804
+      bodyz: 0.0
+      leftArmx: -1.2217304763960306
+      leftArmy: 0.0
+      leftArmz: -0.2792526803190927
+      rightArmx: -1.0995574287564276
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+  phantom0:
+    '1':
+      world: dreamland
+      yaw: -135.0
+      x: -730.5
+      y: 16.0
+      z: 558.5
+      headx: 0.20943951023931953
+      heady: -0.3316321321129347
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 0.06845058035279096
+      bodyz: 0.0
+      leftArmx: -0.06981317007977318
+      leftArmy: 0.0
+      leftArmz: -0.17453292519943295
+      rightArmx: -0.15707963267948966
+      rightArmy: 0.20943951023931953
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    delay: '40'
+    clothes:
+      head:
+        ==: org.bukkit.inventory.ItemStack
+        type: SKULL_ITEM
+        damage: 3
+        meta:
+          ==: ItemMeta
+          meta-type: SKULL
+          internal: H4sIAAAAAAAAAE2RyY6jSBRFqVK3lJXdn9G7VMrBGGaRCyabAAPGDIZQb5hsMMFg8AB8U31kO3e9elfv3Kd3pftOUe/U3159J2Q/dKeKFG/UT5RT/7AiXwhwDT95CLNPrjglnyknJJ8iTxcszbEgS9fv1PvrqC+GW1WMv6i3WzHd7kMxvlMU9eON+uVV5zb53vz8ncTORk9qJAmTyID2XCsIt4jVYCOIsPDUK0aKlOUfPEy8oESeVvGzKWmnRHVkL9RLj4dqfZbtCKYh33Jd6liu8RwbRXOjKiUrfEPqVQf1YSRBnMS+cuwmxezoIB/HYOqFM6cloF/yPmnO8jrZR/KqHI7QKbRWK2/geNacRbnXQhw8Bj8Wg15HQKvAvufAnn1UYCvglMwdhMhgZDGZ9rEcK9ISDCo0FCGbtivpHt1a8+pHNuCRyXFAzc3ssFortC+JgSywp+XR706YjzfcQynduQ91Gp83e0PT1lq9b86W6+o9DC+Kd+c3wnzXnoJUtuUot6YYD7EVKQNn0XQufdxY0Vpdcg0q2rmvdZYcjN2N9q/hdj50TC6QrGxlc2/6H2Yi6EavGuOwmrawjHwpFtKBEbiq9NAcWgWXISn66AEj73X72AktNu/GysurmTHtLCAwujLTmd9YYjwzt1h71iXjzycZuxDISltfgik3WoO1ZOjYflej07ABxJFpVXnKJ3ECU1LYZ5Nt8fWa7bDmXmNjgrwyz6XSL710oxuH16a8YseDYiwiqea1ih9Y3YwM+1QlInoPL0oijcyHWVG2LAyfw+iNMjithqBIN9xiIeaEDH1fm93qZDWXNpGezwzy9Oa+5s1q/PASsbdWddbx+AB3aNUnVg7Jvd4286y7u4iFqlTxtydZtduP7uuN+jNMyL348W8xGyA50iRjD2UaSZVz0Wjr4gLrEsy2j2hbdUfUynPK4D7dhgZWkIAuFm8fA8ZezqztZ2y8HAhuNpWt4tLxgwn71mSr1jNmEIeqZ5XpxgM3ZMQBX6bHoHIqQ0sack/r6ZE1LuN46PXD7jHDl7kezjg0SBaFfdaENbr0IGtDslMMgKMS5NGLzUh45fa9VwsvDlEbzul3rubFdUnYzeL/vPwtOfIkZo0St+49bUKwYw+k0A901gQP53ggdmPX8RLM8aItzvF7lg0+bojlawBfMsZRtSVmwgb79WT5ZWkxFu/4cm1tEXhpLm4Qg5sAWCrisR/MqKXFk/v1RVFv1B920hTUX+qlattdN+SCSFH/AWpjYDaSBAAA
+          skull-owner: DjinnLord69
+      body:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          color:
+            ==: Color
+            RED: 29
+            BLUE: 33
+            GREEN: 29
+      pants:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          color:
+            ==: Color
+            RED: 29
+            BLUE: 33
+            GREEN: 29
+    poslist:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    '2':
+      world: dreamland
+      yaw: -135.0
+      x: -730.5
+      y: 16.0
+      z: 558.5
+      headx: 0.0
+      heady: -0.3316321321129347
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 0.06845058035279096
+      bodyz: 0.0
+      leftArmx: -0.2792526803190927
+      leftArmy: 0.0
+      leftArmz: -0.17453292519943295
+      rightArmx: -0.3665191429188092
+      rightArmy: 0.20943951023931953
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    '3':
+      world: dreamland
+      yaw: -135.0
+      x: -730.5
+      y: 16.0
+      z: 558.5
+      headx: 0.0
+      heady: -0.12219262187361515
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 0.06845058035279096
+      bodyz: 0.0
+      leftArmx: -0.2792526803190927
+      leftArmy: -0.3665191429188092
+      leftArmz: -0.17453292519943295
+      rightArmx: -0.3665191429188092
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    '4':
+      world: dreamland
+      yaw: -135.0
+      x: -730.5
+      y: 16.0
+      z: 558.5
+      headx: 0.10471975511965977
+      heady: 0.19196664348536416
+      headz: 0.10471975511965977
+      bodyx: 0.0
+      bodyy: 0.06845058035279096
+      bodyz: 0.0
+      leftArmx: -0.2792526803190927
+      leftArmy: 0.10471975511965977
+      leftArmz: -0.17453292519943295
+      rightArmx: -0.3665191429188092
+      rightArmy: -0.10471975511965977
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    '5':
+      world: dreamland
+      yaw: -135.0
+      x: -730.5
+      y: 16.0
+      z: 558.5
+      headx: 0.10471975511965977
+      heady: -0.12219262187361515
+      headz: 0.15707963267948966
+      bodyx: 0.0
+      bodyy: 0.06845058035279096
+      bodyz: 0.0
+      leftArmx: -0.2792526803190927
+      leftArmy: -0.05235987755982988
+      leftArmz: -0.06981317007977318
+      rightArmx: -0.3665191429188092
+      rightArmy: 0.15707963267948966
+      rightArmz: 0.22689280275926282
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+  lantern:
+    '1':
+      world: dreamland
+      yaw: -90.0
+      x: -951.5
+      y: 30.0
+      z: 715.5
+      headx: 0.0
+      heady: 0.0
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 0.005021290366803525
+      bodyz: 0.0
+      leftArmx: -0.17453292519943295
+      leftArmy: 0.0
+      leftArmz: -0.17453292519943295
+      rightArmx: -0.2617993877991494
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    delay: 20
+    clothes:
+      head:
+        ==: org.bukkit.inventory.ItemStack
+        type: SKULL_ITEM
+        damage: 3
+        meta:
+          ==: ItemMeta
+          meta-type: SKULL
+          internal: H4sIAAAAAAAAAE2Oy2qDQBiF/xYKVvoY3QrjeMOlVEpGojbG27gz8bcaxzQYbaJPlUesy+7O4TsfHBlAhrd9NwnxNfzUrUAJnlkF7wRrJIaOSk0IUfTSokppElOhdmWZqFHVRpRBXqULDmOL11eQRryP04BXGQCeJHhJSzEhPHD2SJE3pMo9cZyZufZ4T0TITheLndP58MFM1q9845jb2f63NcYyMwTXvKY476ZDn5KtFgncROqxT36DxdF993sO3ajlcXIrMv8Wuk3HKaeFK0QQJyTMEsPPuO6fEj3I+J0vbM2dwZfdLYi7hVNf59ln7/dRG8ROW+eqvb6HP6SjDtAYAQAA
+    poslist:
+    - '1'
+    - '2'
+    - '3'
+    '2':
+      world: dreamland
+      yaw: -90.0
+      x: -951.5
+      y: 30.0
+      z: 715.5
+      headx: 0.0
+      heady: 1.5707963267948966
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 0.005021290366803525
+      bodyz: 0.0
+      leftArmx: -0.17453292519943295
+      leftArmy: 0.0
+      leftArmz: -0.17453292519943295
+      rightArmx: -0.2617993877991494
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    '3':
+      world: dreamland
+      yaw: -90.0
+      x: -951.5
+      y: 30.0
+      z: 715.5
+      headx: 0.0
+      heady: 3.141592653589793
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 0.005021290366803525
+      bodyz: 0.0
+      leftArmx: -0.17453292519943295
+      leftArmy: 0.0
+      leftArmz: -0.17453292519943295
+      rightArmx: -0.2617993877991494
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+  phantom2:
+    '1':
+      world: dreamland
+      yaw: 180.0
+      x: -704.5
+      y: 14.0
+      z: 572.5
+      headx: 0.2205567596965576
+      heady: -0.2755977746838248
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: -0.02588305457501995
+      bodyz: 0.0
+      leftArmx: -1.3264502315156905
+      leftArmy: -0.3141592653589793
+      leftArmz: -0.17453292519943295
+      rightArmx: -2.0943951023931953
+      rightArmy: 0.7853981633974483
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    delay: 20
+    clothes:
+      head:
+        ==: org.bukkit.inventory.ItemStack
+        type: SKULL_ITEM
+        damage: 3
+        meta:
+          ==: ItemMeta
+          meta-type: SKULL
+          internal: H4sIAAAAAAAAAE2RyY6jSBRFqVK3lJXdn9G7VMrBGGaRCyabAAPGDIZQb5hsMMFg8AB8U31kO3e9elfv3Kd3pftOUe/U3159J2Q/dKeKFG/UT5RT/7AiXwhwDT95CLNPrjglnyknJJ8iTxcszbEgS9fv1PvrqC+GW1WMv6i3WzHd7kMxvlMU9eON+uVV5zb53vz8ncTORk9qJAmTyID2XCsIt4jVYCOIsPDUK0aKlOUfPEy8oESeVvGzKWmnRHVkL9RLj4dqfZbtCKYh33Jd6liu8RwbRXOjKiUrfEPqVQf1YSRBnMS+cuwmxezoIB/HYOqFM6cloF/yPmnO8jrZR/KqHI7QKbRWK2/geNacRbnXQhw8Bj8Wg15HQKvAvufAnn1UYCvglMwdhMhgZDGZ9rEcK9ISDCo0FCGbtivpHt1a8+pHNuCRyXFAzc3ssFortC+JgSywp+XR706YjzfcQynduQ91Gp83e0PT1lq9b86W6+o9DC+Kd+c3wnzXnoJUtuUot6YYD7EVKQNn0XQufdxY0Vpdcg0q2rmvdZYcjN2N9q/hdj50TC6QrGxlc2/6H2Yi6EavGuOwmrawjHwpFtKBEbiq9NAcWgWXISn66AEj73X72AktNu/GysurmTHtLCAwujLTmd9YYjwzt1h71iXjzycZuxDISltfgik3WoO1ZOjYflej07ABxJFpVXnKJ3ECU1LYZ5Nt8fWa7bDmXmNjgrwyz6XSL710oxuH16a8YseDYiwiqea1ih9Y3YwM+1QlInoPL0oijcyHWVG2LAyfw+iNMjithqBIN9xiIeaEDH1fm93qZDWXNpGezwzy9Oa+5s1q/PASsbdWddbx+AB3aNUnVg7Jvd4286y7u4iFqlTxtydZtduP7uuN+jNMyL348W8xGyA50iRjD2UaSZVz0Wjr4gLrEsy2j2hbdUfUynPK4D7dhgZWkIAuFm8fA8ZezqztZ2y8HAhuNpWt4tLxgwn71mSr1jNmEIeqZ5XpxgM3ZMQBX6bHoHIqQ0sack/r6ZE1LuN46PXD7jHDl7kezjg0SBaFfdaENbr0IGtDslMMgKMS5NGLzUh45fa9VwsvDlEbzul3rubFdUnYzeL/vPwtOfIkZo0St+49bUKwYw+k0A901gQP53ggdmPX8RLM8aItzvF7lg0+bojlawBfMsZRtSVmwgb79WT5ZWkxFu/4cm1tEXhpLm4Qg5sAWCrisR/MqKXFk/v1RVFv1B920hTUX+qlattdN+SCSFH/AWpjYDaSBAAA
+          skull-owner: DjinnLord69
+      body:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          color:
+            ==: Color
+            RED: 29
+            BLUE: 33
+            GREEN: 29
+      pants:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          color:
+            ==: Color
+            RED: 29
+            BLUE: 33
+            GREEN: 29
+      boots:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          color:
+            ==: Color
+            RED: 29
+            BLUE: 33
+            GREEN: 29
+    poslist:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    '2':
+      world: dreamland
+      yaw: 180.0
+      x: -704.75
+      y: 14.03125
+      z: 572.53125
+      headx: 0.2205567596965576
+      heady: -0.2755977746838248
+      headz: 0.15707963267948966
+      bodyx: 0.0
+      bodyy: -0.02588305457501995
+      bodyz: 0.0
+      leftArmx: -1.3264502315156905
+      leftArmy: -0.8377580409572781
+      leftArmz: -0.17453292519943295
+      rightArmx: -2.199114857512855
+      rightArmy: 0.47123889803846897
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.2792526803190927
+      leftLegy: -0.15707963267948966
+      leftLegz: -0.2792526803190927
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    '3':
+      world: dreamland
+      yaw: 180.0
+      x: -704.34375
+      y: 14.03125
+      z: 572.53125
+      headx: 0.58707588597061
+      heady: -0.2755977746838248
+      headz: 0.15707963267948966
+      bodyx: 0.0
+      bodyy: -0.02588305457501995
+      bodyz: 0.0
+      leftArmx: -1.53588974175501
+      leftArmy: -0.8377580409572781
+      leftArmz: -0.17453292519943295
+      rightArmx: -1.2042771838760875
+      rightArmy: 0.47123889803846897
+      rightArmz: 0.17453292519943295
+      leftLegx: 0.08726646259971647
+      leftLegy: -0.15707963267948966
+      leftLegz: -0.2792526803190927
+      rightLegx: -0.296705972839036
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    '4':
+      world: dreamland
+      yaw: -198.0
+      x: -704.03125
+      y: 14.03125
+      z: 572.53125
+      headx: 0.10471975511965977
+      heady: -0.2755977746838248
+      headz: 0.15707963267948966
+      bodyx: 0.0
+      bodyy: -0.02588305457501995
+      bodyz: 0.0
+      leftArmx: -1.53588974175501
+      leftArmy: -0.8377580409572781
+      leftArmz: -0.17453292519943295
+      rightArmx: -1.2042771838760875
+      rightArmy: 0.47123889803846897
+      rightArmz: 0.17453292519943295
+      leftLegx: 0.08726646259971647
+      leftLegy: -0.15707963267948966
+      leftLegz: -0.2792526803190927
+      rightLegx: -0.296705972839036
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    '5':
+      world: dreamland
+      yaw: -198.0
+      x: -704.5
+      y: 14.03125
+      z: 572.53125
+      headx: 0.10471975511965977
+      heady: -0.2755977746838248
+      headz: 0.15707963267948966
+      bodyx: 0.0
+      bodyy: -0.02588305457501995
+      bodyz: 0.0
+      leftArmx: -0.4363323129985824
+      leftArmy: -0.8377580409572781
+      leftArmz: -0.17453292519943295
+      rightArmx: -2.199114857512855
+      rightArmy: 0.7853981633974483
+      rightArmz: 0.17453292519943295
+      leftLegx: 0.08726646259971647
+      leftLegy: -0.15707963267948966
+      leftLegz: -0.2792526803190927
+      rightLegx: -0.296705972839036
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+  Cowboy_1:
+    delay: 20
+    clothes:
+      head:
+        ==: org.bukkit.inventory.ItemStack
+        type: SKULL_ITEM
+        damage: 3
+        meta:
+          ==: ItemMeta
+          meta-type: SKULL
+          display-name: Man
+          internal: H4sIAAAAAAAAAE2OzU6DQBzE/5qYIPExvJIsH0vDwYOpxi7pglA+9wZlK2x3a9NCIzyVj+gePUwmv8xMMiaACU+74yTl5+X7MEhuwD3p4Bk3btAh17dsvsKW17Wu1XpeY9me5gYh5ODABFOPzvwyDvz6CMbIf8bpwq8mANwZ8FA0cuLwy+cQsapHXRXK/Ux8zdkOyZiI84qcirldE58onW9e/e0c/OvisSmxrN2wZ6dkalWBtm4q+Sa19yq/xVknqVNjLa8W7wstUxV/pD0TRyfOKK5F7kSLHKjSrpKZii+7dhLEBPUiVfRRSTF7owtdUhktOWLrMDhU6EW/hz/8CpUuGAEAAA==
+      body:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          color:
+            ==: Color
+            RED: 29
+            BLUE: 33
+            GREEN: 29
+      pants:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          color:
+            ==: Color
+            RED: 176
+            BLUE: 38
+            GREEN: 46
+      boots:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          color:
+            ==: Color
+            RED: 29
+            BLUE: 33
+            GREEN: 29
+    poslist:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    '1':
+      world: dreamland
+      yaw: -171.0
+      x: -873.5
+      y: 27.0
+      z: 767.875
+      headx: -6.938893984903582E-18
+      heady: 2.912832442274167E-8
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 6.865962086150055E-9
+      bodyz: 0.0
+      leftArmx: 0.0
+      leftArmy: 0.0
+      leftArmz: 0.0
+      rightArmx: 0.0
+      rightArmy: 0.0
+      rightArmz: 0.0
+      leftLegx: 2.717776648766638E-9
+      leftLegy: 0.0
+      leftLegz: 2.717776648766638E-9
+      rightLegx: -2.717776648766638E-9
+      rightLegy: 0.0
+      rightLegz: -2.717776648766638E-9
+    '2':
+      world: dreamland
+      yaw: -189.0
+      x: -873.5
+      y: 27.0
+      z: 767.875
+      headx: -0.5235987755982988
+      heady: 2.912832442274167E-8
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 6.865962086150055E-9
+      bodyz: 0.0
+      leftArmx: 0.0
+      leftArmy: 0.0
+      leftArmz: 0.0
+      rightArmx: -2.6179938779914944
+      rightArmy: 0.0
+      rightArmz: 0.0
+      leftLegx: 2.717776648766638E-9
+      leftLegy: 0.0
+      leftLegz: 2.717776648766638E-9
+      rightLegx: -2.717776648766638E-9
+      rightLegy: 0.0
+      rightLegz: -2.717776648766638E-9
+    '3':
+      world: dreamland
+      yaw: -171.0
+      x: -873.5
+      y: 27.0
+      z: 767.875
+      headx: 0.0
+      heady: 2.912832442274167E-8
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 6.865962086150055E-9
+      bodyz: 0.0
+      leftArmx: -1.0471975511965976
+      leftArmy: 0.0
+      leftArmz: 0.0
+      rightArmx: -1.5707963267948966
+      rightArmy: 0.0
+      rightArmz: 0.0
+      leftLegx: 2.717776648766638E-9
+      leftLegy: 0.0
+      leftLegz: 2.717776648766638E-9
+      rightLegx: -2.717776648766638E-9
+      rightLegy: 0.0
+      rightLegz: -2.717776648766638E-9
+    '4':
+      world: dreamland
+      yaw: -171.0
+      x: -873.5
+      y: 27.0
+      z: 767.875
+      headx: -6.938893984903582E-18
+      heady: 2.912832442274167E-8
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 6.865962086150055E-9
+      bodyz: 0.0
+      leftArmx: 0.0
+      leftArmy: 0.0
+      leftArmz: 0.0
+      rightArmx: 0.0
+      rightArmy: 0.0
+      rightArmz: 0.0
+      leftLegx: 2.717776648766638E-9
+      leftLegy: 0.0
+      leftLegz: 2.717776648766638E-9
+      rightLegx: -2.717776648766638E-9
+      rightLegy: 0.0
+      rightLegz: -2.717776648766638E-9
+  Cowboy_2:
+    '1':
+      world: dreamland
+      yaw: -180.0
+      x: -892.5
+      y: 26.0
+      z: 765.46875
+      headx: 0.05378815581957459
+      heady: -0.08844456184218347
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 0.031093853820517835
+      bodyz: 0.0
+      leftArmx: -0.17453292519943295
+      leftArmy: 0.0
+      leftArmz: -0.17453292519943295
+      rightArmx: -0.2617993877991494
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    delay: 20
+    clothes:
+      head:
+        ==: org.bukkit.inventory.ItemStack
+        type: SKULL_ITEM
+        damage: 3
+        meta:
+          ==: ItemMeta
+          meta-type: SKULL
+          display-name: Man
+          internal: H4sIAAAAAAAAAE2OzU6DQBzE/5qYIPExvJIsH0vDwYOpxi7pglA+9wZlK2x3a9NCIzyVj+gePUwmv8xMMiaACU+74yTl5+X7MEhuwD3p4Bk3btAh17dsvsKW17Wu1XpeY9me5gYh5ODABFOPzvwyDvz6CMbIf8bpwq8mANwZ8FA0cuLwy+cQsapHXRXK/Ux8zdkOyZiI84qcirldE58onW9e/e0c/OvisSmxrN2wZ6dkalWBtm4q+Sa19yq/xVknqVNjLa8W7wstUxV/pD0TRyfOKK5F7kSLHKjSrpKZii+7dhLEBPUiVfRRSTF7owtdUhktOWLrMDhU6EW/hz/8CpUuGAEAAA==
+      body:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          color:
+            ==: Color
+            RED: 29
+            BLUE: 33
+            GREEN: 29
+      pants:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          color:
+            ==: Color
+            RED: 176
+            BLUE: 38
+            GREEN: 46
+      boots:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          color:
+            ==: Color
+            RED: 29
+            BLUE: 33
+            GREEN: 29
+    poslist:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    '2':
+      world: dreamland
+      yaw: -180.0
+      x: -892.5
+      y: 26.0
+      z: 763.9375
+      headx: 0.05378815581957459
+      heady: -0.08844456184218347
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 0.031093853820517835
+      bodyz: 0.0
+      leftArmx: -0.17453292519943295
+      leftArmy: 0.0
+      leftArmz: -0.17453292519943295
+      rightArmx: -0.2617993877991494
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    '3':
+      world: dreamland
+      yaw: -180.0
+      x: -892.5
+      y: 26.0
+      z: 763.9375
+      headx: 0.05378815581957459
+      heady: -0.08844456184218347
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 0.031093853820517835
+      bodyz: 0.0
+      leftArmx: -1.2217304763960306
+      leftArmy: 0.0
+      leftArmz: -0.17453292519943295
+      rightArmx: -0.2617993877991494
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    '4':
+      world: dreamland
+      yaw: -180.0
+      x: -892.5
+      y: 26.0
+      z: 763.9375
+      headx: -0.5235987755982988
+      heady: -0.08844456184218347
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 0.031093853820517835
+      bodyz: 0.0
+      leftArmx: -1.2217304763960306
+      leftArmy: 0.0
+      leftArmz: -0.17453292519943295
+      rightArmx: 0.2617993877991494
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    '5':
+      world: dreamland
+      yaw: -180.0
+      x: -892.5
+      y: 26.0
+      z: 763.9375
+      headx: 0.0
+      heady: -0.08844456184218347
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 0.031093853820517835
+      bodyz: 0.0
+      leftArmx: -0.17453292519943295
+      leftArmy: 0.0
+      leftArmz: -0.17453292519943295
+      rightArmx: -0.2617993877991494
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    '6':
+      world: dreamland
+      yaw: -180.0
+      x: -892.5
+      y: 26.0
+      z: 765.9375
+      headx: 0.0
+      heady: -0.08844456184218347
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 0.031093853820517835
+      bodyz: 0.0
+      leftArmx: -0.17453292519943295
+      leftArmy: 0.0
+      leftArmz: -0.17453292519943295
+      rightArmx: -0.2617993877991494
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+  Cowboy_3:
+    '1':
+      world: dreamland
+      yaw: 180.0
+      x: -868.5
+      y: 23.0
+      z: 769.5
+      headx: 0.07540334494493126
+      heady: -0.09376392651399411
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 0.07053683417173177
+      bodyz: 0.0
+      leftArmx: -0.17453292519943295
+      leftArmy: 0.0
+      leftArmz: -0.17453292519943295
+      rightArmx: -0.2617993877991494
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    delay: 20
+    clothes:
+      head:
+        ==: org.bukkit.inventory.ItemStack
+        type: SKULL_ITEM
+        damage: 3
+        meta:
+          ==: ItemMeta
+          meta-type: SKULL
+          display-name: Man
+          internal: H4sIAAAAAAAAAE2OzU6DQBzE/5qYIPExvJIsH0vDwYOpxi7pglA+9wZlK2x3a9NCIzyVj+gePUwmv8xMMiaACU+74yTl5+X7MEhuwD3p4Bk3btAh17dsvsKW17Wu1XpeY9me5gYh5ODABFOPzvwyDvz6CMbIf8bpwq8mANwZ8FA0cuLwy+cQsapHXRXK/Ux8zdkOyZiI84qcirldE58onW9e/e0c/OvisSmxrN2wZ6dkalWBtm4q+Sa19yq/xVknqVNjLa8W7wstUxV/pD0TRyfOKK5F7kSLHKjSrpKZii+7dhLEBPUiVfRRSTF7owtdUhktOWLrMDhU6EW/hz/8CpUuGAEAAA==
+      body:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          color:
+            ==: Color
+            RED: 29
+            BLUE: 33
+            GREEN: 29
+      pants:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          color:
+            ==: Color
+            RED: 176
+            BLUE: 38
+            GREEN: 46
+      boots:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          color:
+            ==: Color
+            RED: 29
+            BLUE: 33
+            GREEN: 29
+    poslist:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    '2':
+      world: dreamland
+      yaw: 171.0
+      x: -868.5
+      y: 23.0
+      z: 769.5
+      headx: 0.07540334494493126
+      heady: -0.09376392651399411
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 0.07053683417173177
+      bodyz: 0.0
+      leftArmx: -0.4363323129985824
+      leftArmy: 0.0
+      leftArmz: -0.12217304763960307
+      rightArmx: -0.2617993877991494
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    '3':
+      world: dreamland
+      yaw: -162.0
+      x: -868.5
+      y: 23.0
+      z: 769.5
+      headx: -0.05235987755982988
+      heady: -0.09376392651399411
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 0.07053683417173177
+      bodyz: 0.0
+      leftArmx: -1.0122909661567112
+      leftArmy: 0.0
+      leftArmz: -0.12217304763960307
+      rightArmx: -0.2617993877991494
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    '4':
+      world: dreamland
+      yaw: -174.0
+      x: -868.5
+      y: 23.0
+      z: 769.5
+      headx: 0.0
+      heady: -0.09376392651399411
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 0.07053683417173177
+      bodyz: 0.0
+      leftArmx: -0.7504915783575618
+      leftArmy: 0.0
+      leftArmz: -0.12217304763960307
+      rightArmx: -0.2617993877991494
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+    '5':
+      world: dreamland
+      yaw: -179.99994
+      x: -868.5
+      y: 23.0
+      z: 769.5
+      headx: -6.345813435743953E-9
+      heady: -0.09376392651399411
+      headz: 0.0
+      bodyx: 0.0
+      bodyy: 0.07053683417173177
+      bodyz: 0.0
+      leftArmx: -0.48869259003257576
+      leftArmy: 0.0
+      leftArmz: -0.12217312254100873
+      rightArmx: -0.2617993877991494
+      rightArmy: 0.0
+      rightArmz: 0.17453292519943295
+      leftLegx: -0.017453292519943295
+      leftLegy: 0.0
+      leftLegz: -0.017453292519943295
+      rightLegx: 0.017453292519943295
+      rightLegy: 0.0
+      rightLegz: 0.017453292519943295
+Looplist:
+- lantern
+- phantom1
+- phantom0
+- phantom2
+- Cowboy_1
+- Cowboy_2
+- Cowboy_3
