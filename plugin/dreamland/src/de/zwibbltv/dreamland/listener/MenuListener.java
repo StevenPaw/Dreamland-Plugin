@@ -168,6 +168,11 @@ public class MenuListener implements Listener {
 					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aInformation-Center")) {
+					p.performCommand("warp information-center");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}
 
 			} catch (Exception ex) {			
 		}
@@ -331,12 +336,18 @@ public class MenuListener implements Listener {
 			ItemMeta chinatownmeta = chinatown.getItemMeta();
 			chinatownmeta.setDisplayName("§aChinatown");
 			chinatown.setItemMeta(chinatownmeta);
+			
+			ItemStack info = new ItemStack(Material.STICK);
+			ItemMeta infometa = info.getItemMeta();
+			infometa.setDisplayName("§aInformation-Center");
+			info.setItemMeta(infometa);
 
 			inv.setItem(0, spawn);
-			inv.setItem(3, Greifenheim);
-			inv.setItem(4, Calico);
-			inv.setItem(5, Lagoon);
-			inv.setItem(6, chinatown);
+			inv.setItem(2, Greifenheim);
+			inv.setItem(3, Calico);
+			inv.setItem(4, Lagoon);
+			inv.setItem(5, chinatown);
+			inv.setItem(6, info);
 			inv.setItem(8, back);
 
 			p.openInventory(inv);
