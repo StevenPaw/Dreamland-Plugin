@@ -17,6 +17,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import de.zwibbltv.dreamland.main.ItemBuilder;
+import de.zwibbltv.dreamland.utils.Achievements;
 import de.zwibbltv.dreamland.utils.PlayerConfig;
 
 public class MenuListener implements Listener {
@@ -92,11 +93,17 @@ public class MenuListener implements Listener {
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aAreas")) {
 					openMenuAreas(p);
 				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aAreas")) {
+					openMenuAchievements(p);
+				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aAttraktions")) {
 					openMenuAttractions(p);
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Warps")) {
-					openMenuWarps(p);
+					openMenuWarps(p); 				
+				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Achievements")) {
+					openMenuAchievements(p);
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aSpawn")) {
 					p.performCommand("warp spawn");
@@ -162,18 +169,7 @@ public class MenuListener implements Listener {
 					p.closeInventory();
 				}
 
-			} catch (Exception ex) {
-
-			
-		}
-		if (e.getInventory().getName().equalsIgnoreCase("§cMenu")) {
-			try {
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Achievements")) {
-					p.performCommand("aach list");
-				}
-			} catch (Exception ex) {
-
-			}
+			} catch (Exception ex) {			
 		}
 	}
 	
@@ -343,6 +339,27 @@ public class MenuListener implements Listener {
 			inv.setItem(6, chinatown);
 			inv.setItem(8, back);
 
+			p.openInventory(inv);
+		}
+		
+		public void openMenuAchievements(Player p) {
+			Inventory inv = Bukkit.createInventory(null, 9 * 1, "§0Achievements");
+			
+			if(PlayerConfig.hasAchivement(p, Achievements.CALICOSAFE)) {
+			ItemStack Calicosafe = new ItemStack(Material.WOOL, 1, (short) 5);
+			ItemMeta Calicosafemeta = Calicosafe.getItemMeta();
+			Calicosafemeta.setDisplayName("§a"+ Achievements.CALICOSAFE);
+			Calicosafe.setItemMeta(Calicosafemeta);
+			inv.setItem(3, Calicosafe);
+			}
+
+			if(!PlayerConfig.hasAchivement(p, Achievements.CALICOSAFE)) {
+			ItemStack Calicosafe = new ItemStack(Material.WOOL, 1, (short) 14);
+			ItemMeta Calicosafemeta = Calicosafe.getItemMeta();
+			Calicosafemeta.setDisplayName("§c"+Achievements.CALICOSAFE);
+			Calicosafe.setItemMeta(Calicosafemeta);
+			inv.setItem(1, Calicosafe);
+			}
 			p.openInventory(inv);
 		}
 }
