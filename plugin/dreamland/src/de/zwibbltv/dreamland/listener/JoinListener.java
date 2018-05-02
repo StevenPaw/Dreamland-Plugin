@@ -66,6 +66,13 @@ public class JoinListener implements Listener {
 			error.printStackTrace();
 		}
 		e.setQuitMessage("§7<< §4" + p.getName() + " §7<<");	
+		if(!p.hasPermission("dreamland.build.*") ) {
+			try {
+				PlayerConfig.setBuilder(p, false);
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+		}
 	}
 	
 	@EventHandler

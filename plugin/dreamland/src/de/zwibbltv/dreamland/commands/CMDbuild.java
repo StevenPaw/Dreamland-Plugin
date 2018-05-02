@@ -47,7 +47,7 @@ public class CMDbuild implements CommandExecutor {
 							p.getPlayer().getInventory().setItem(8, golden_carrot);
 
 						} 
-						else if(PlayerConfig.getBuilder(p) == false){
+						else if(PlayerConfig.getBuilder(p) == false || PlayerConfig.getBuilder(p) == null){
 							try {
 								PlayerConfig.setBuilder(p, true);
 							} catch (IOException e) {
@@ -92,9 +92,9 @@ public class CMDbuild implements CommandExecutor {
 								target.getPlayer().getInventory().setItem(8, golden_carrot);
 								
 							} 
-							else if(PlayerConfig.getBuilder(p) == false){
+							else if(PlayerConfig.getBuilder(target) == false  || PlayerConfig.getBuilder(target) == null){
 								try {
-									PlayerConfig.setBuilder(p, true);
+									PlayerConfig.setBuilder(target, true);
 								} catch (IOException e) {
 									e.printStackTrace();
 								}
@@ -112,9 +112,9 @@ public class CMDbuild implements CommandExecutor {
 				}else {
 					Player target = Bukkit.getPlayer(args[0]);
 					if (target != null) {
-						if (PlayerConfig.getBuilder(target) == false) {
+						if (PlayerConfig.getBuilder(target) == true) {
 							try {
-								PlayerConfig.setBuilder(target, true);
+								PlayerConfig.setBuilder(target, false);
 							} catch (IOException e) {
 								e.printStackTrace();
 							}
@@ -135,7 +135,7 @@ public class CMDbuild implements CommandExecutor {
 							target.getPlayer().getInventory().setItem(8, golden_carrot);
 
 						} 
-						else if(PlayerConfig.getBuilder(target) == false){
+						else if(PlayerConfig.getBuilder(target) == false || PlayerConfig.getBuilder(target) == null){
 							try {
 								PlayerConfig.setBuilder(target, true);
 							} catch (IOException e) {

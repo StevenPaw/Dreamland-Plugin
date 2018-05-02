@@ -50,6 +50,21 @@ public class places {
 	
 		de.zwibbltv.dreamland.utils.Achievements.locations(p);
 		
+		//Staff-Bereiche
+				if (!p.hasPermission("dreamland.*") && !p.hasPermission("dreamland.Staff")) {
+					if (PlayerConfig.getBuilder(p) == false) {
+						Location ploc = p.getLocation();
+						Double d;
+						
+						d = ploc.distance(new Location(w, -682, 22.0, 660.0));
+						if(d <= 1.5) {
+							Location location = new Location(w, -682, 21.0, 661.50, -178, -3);
+							p.teleport(location);
+							p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("Staff")));
+						}
+					}
+				}
+		
 	//VIP-Bereiche
 		if (!p.hasPermission("dreamland.*") && !p.hasPermission("dreamland.VIP")) {
 			if (PlayerConfig.getBuilder(p) == false) {
