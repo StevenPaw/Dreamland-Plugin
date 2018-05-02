@@ -69,9 +69,9 @@ public class CMDbuild implements CommandExecutor {
 					if (p.hasPermission("dreamland.*") || p.hasPermission("dreamland.build.other") || p.hasPermission("dreamland.build.*")) {
 						Player target = Bukkit.getPlayer(args[0]);
 						if (target != null) {
-							if (PlayerConfig.getBuilder(p) == true) {
+							if (PlayerConfig.getBuilder(target) == true) {
 								try {
-									PlayerConfig.setBuilder(p, false);
+									PlayerConfig.setBuilder(target, false);
 								} catch (IOException e) {
 									e.printStackTrace();
 								}
