@@ -112,9 +112,9 @@ public class CMDbuild implements CommandExecutor {
 				}else {
 					Player target = Bukkit.getPlayer(args[0]);
 					if (target != null) {
-						if (PlayerConfig.getBuilder(target) == true) {
+						if (PlayerConfig.getBuilder(target) == false) {
 							try {
-								PlayerConfig.setBuilder(target, false);
+								PlayerConfig.setBuilder(target, true);
 							} catch (IOException e) {
 								e.printStackTrace();
 							}
