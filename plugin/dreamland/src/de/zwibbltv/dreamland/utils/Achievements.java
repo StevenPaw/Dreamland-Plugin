@@ -7,16 +7,16 @@ import org.bukkit.entity.Player;
 
 public enum Achievements {
 	
-	FIRSTJOIN("FirstJoin","You joined our Server!",20),
-	FIRSTCHAT("FirstChat","You chatted the first time!",10),
-	FIRSTMOVE("FirstMove","You moved for the first time!",10),
-	RUNAKM("Run a KM","You ran a Kilometer in one session!",10),
-	MAINSTREETPARCOUR("MainStreetParcour","You run through the MainStreet Parcour!",10),
-	CALICO("Calico", "You went to Calico!", 10),
-	CALICOTOILET("Calicotoilet", "You went to the toilet in Calico!", 10),
-	CALICORESTAURANT("Calicorestaurant", "You went to the restaurant in Calico!",10),
-	CALICOBANK("Calicobank", "You went to the Bank in Calico!",10),
-	CALICOSAFE("Calicosafe", "You found a way into the safe in Calico!", 20);
+	FIRSTJOIN("FirstJoin","You joined our Server!",20, true),
+	FIRSTCHAT("FirstChat","You chatted the first time!",10, true),
+	FIRSTMOVE("FirstMove","You moved for the first time!",10, true),
+	RUNAKM("Run a KM","You ran a Kilometer in one session!",10, false),
+	MAINSTREETPARCOUR("MainStreetParcour","You run through the MainStreet Parcour!",10, true),
+	CALICO("Calico", "You went to Calico!", 10, true),
+	CALICOTOILET("Calicotoilet", "You went to the toilet in Calico!", 10, true),
+	CALICORESTAURANT("Calicorestaurant", "You went to the restaurant in Calico!",10, true),
+	CALICOBANK("Calicobank", "You went to the Bank in Calico!",10, true),
+	CALICOSAFE("Calicosafe", "You found a way into the safe in Calico!", 20, false);
 	
 	public static void locations(Player p) {	
 		
@@ -78,11 +78,13 @@ public enum Achievements {
 	String name;
 	String text;
 	int money;
+	boolean visibility;
 	
-	private Achievements(String name,String text,int money) {
+	private Achievements(String name,String text,int money, boolean visibility) {
 		this.name = name;
 		this.text = text;
 		this.money = money;
+		this.visibility = visibility;
 	}
 	
 	public String getName() {
