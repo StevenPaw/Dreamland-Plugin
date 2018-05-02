@@ -49,8 +49,8 @@ Found good Minecraft hash (71728ed3fbd0acd1394bf3ade2649a5c)
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 0.495 s
-[INFO] Finished at: 2018-05-01T00:14:41+02:00
+[INFO] Total time: 0.487 s
+[INFO] Finished at: 2018-05-02T17:30:20+02:00
 [INFO] Final Memory: 8M/245M
 [INFO] ------------------------------------------------------------------------
 Applying CraftBukkit Patches
@@ -400,46 +400,46 @@ Compiling Bukkit
  T E S T S
 -------------------------------------------------------
 Running org.bukkit.ArtTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 sec
 Running org.bukkit.BukkitMirrorTest
-Tests run: 495, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.167 sec
+Tests run: 495, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec
 Running org.bukkit.ChatColorTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.bukkit.ChatPaginatorTest
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.bukkit.CoalTypeTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.ColorTest
-Tests run: 52, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec
+Tests run: 52, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.configuration.file.YamlConfigurationTest
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.218 sec
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 sec
 Running org.bukkit.configuration.MemoryConfigurationTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.bukkit.configuration.MemorySectionTest
-Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec
 Running org.bukkit.conversations.ConversationContextTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.conversations.ConversationTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.conversations.ValidatingPromptTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.CropStateTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.DifficultyTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.DyeColorTest
-Tests run: 80, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Tests run: 80, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.EffectTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.EntityEffectTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.event.PlayerChatTabCompleteEventTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.event.SyntheticEventTest
-Mai 01, 2018 12:15:02 AM org.bukkit.Bukkit setServer
-INFORMATION: This server is running TestServer version Version_null (Implementing API version BukkitVersion_null)
-Invk org.bukkit.event.TestEvent@30ee2816
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+Mai 02, 2018 5:31:38 PM org.bukkit.Bukkit setServerInvk org.bukkit.event.TestEvent@30ee2816
+
+INFORMATION: This server is running TestServer version Version_null (Implementing API version BukkitVersion_null)Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+
 Running org.bukkit.GameModeTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.GrassSpeciesTest
@@ -447,39 +447,39 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.InstrumentTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.LocationTest
-Tests run: 60, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Tests run: 60, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.bukkit.materials.MaterialDataTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.MaterialTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.bukkit.metadata.FixedMetadataValueTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.metadata.LazyMetadataValueTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
-Running org.bukkit.metadata.MetadataConversionTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
-Running org.bukkit.metadata.MetadataStoreTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
-Running org.bukkit.metadata.MetadataValueAdapterTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
-Running org.bukkit.NoteTest
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
-Running org.bukkit.plugin.messaging.StandardMessengerTest
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
-Running org.bukkit.plugin.PluginManagerTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
-Running org.bukkit.plugin.TimedRegisteredListenerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
-Running org.bukkit.TreeSpeciesTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
-Running org.bukkit.util.io.BukkitObjectStreamTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.08 sec
-Running org.bukkit.util.StringUtilStartsWithTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
-Running org.bukkit.util.StringUtilTest
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
-Running org.bukkit.WorldTypeTest
+Running org.bukkit.metadata.MetadataConversionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.metadata.MetadataStoreTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.metadata.MetadataValueAdapterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.NoteTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.plugin.messaging.StandardMessengerTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.plugin.PluginManagerTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.plugin.TimedRegisteredListenerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.TreeSpeciesTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.bukkit.util.io.BukkitObjectStreamTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0 sec
+Running org.bukkit.util.StringUtilStartsWithTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.util.StringUtilTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.WorldTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 
 Results :
 
@@ -504,9 +504,9 @@ Tests run: 924, Failures: 0, Errors: 0, Skipped: 3
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 9.353 s
-[INFO] Finished at: 2018-05-01T00:15:04+02:00
-[INFO] Final Memory: 26M/276M
+[INFO] Total time: 25.871 s
+[INFO] Finished at: 2018-05-02T17:31:43+02:00
+[INFO] Final Memory: 16M/239M
 [INFO] ------------------------------------------------------------------------
 Compiling CraftBukkit
 [INFO] Scanning for projects...
@@ -514,1074 +514,6 @@ Compiling CraftBukkit
 [INFO] ------------------------------------------------------------------------
 [INFO] Building CraftBukkit 1.12.2-R0.1-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
-Downloading: https://hub.spigotmc.org/nexus/content/groups/public/io/netty/netty-all/4.1.24.Final/netty-all-4.1.24.Final.pom
-Progress (1): 850 B
-Progress (1): 1.4 kB
-Progress (1): 2.6 kB
-Progress (1): 6.7 kB
-Progress (1): 7.0 kB
-Progress (1): 9.5 kB
-Progress (1): 12 kB 
-Progress (1): 14 kB
-Progress (1): 17 kB
-Progress (1): 20 kB
-Progress (1): 23 kB
-Progress (1): 26 kB
-                   
-Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/io/netty/netty-all/4.1.24.Final/netty-all-4.1.24.Final.pom (26 kB at 34 kB/s)
-Downloading: https://hub.spigotmc.org/nexus/content/groups/public/io/netty/netty-parent/4.1.24.Final/netty-parent-4.1.24.Final.pom
-Progress (1): 850 B
-Progress (1): 1.8 kB
-Progress (1): 2.6 kB
-Progress (1): 4.3 kB
-Progress (1): 6.0 kB
-Progress (1): 7.1 kB
-Progress (1): 9.3 kB
-Progress (1): 12 kB 
-Progress (1): 14 kB
-Progress (1): 18 kB
-Progress (1): 18 kB
-Progress (1): 21 kB
-Progress (1): 23 kB
-Progress (1): 25 kB
-Progress (1): 28 kB
-Progress (1): 31 kB
-Progress (1): 32 kB
-Progress (1): 34 kB
-Progress (1): 36 kB
-Progress (1): 38 kB
-Progress (1): 41 kB
-Progress (1): 43 kB
-Progress (1): 47 kB
-Progress (1): 49 kB
-Progress (1): 52 kB
-                   
-Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/io/netty/netty-parent/4.1.24.Final/netty-parent-4.1.24.Final.pom (52 kB at 128 kB/s)
-Downloading: https://hub.spigotmc.org/nexus/content/groups/public/io/netty/netty-all/4.1.24.Final/netty-all-4.1.24.Final.jar
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.1/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.2/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.3/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.4/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.5/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.6/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.7/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.8/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 0.9/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.0/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.1/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.2/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.3/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.4/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.5/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.6/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.7/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.8/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 1.9/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.0/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.1/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.2/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.3/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.4/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.5/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.6/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.7/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.8/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 2.9/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.0/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.1/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.2/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.3/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.4/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.5/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.6/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.7/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8/3.8 MB
-Progress (1): 3.8 MB    
-                    
-Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/io/netty/netty-all/4.1.24.Final/netty-all-4.1.24.Final.jar (3.8 MB at 2.8 MB/s)
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ craftbukkit ---
 [INFO] 
@@ -1608,41 +540,41 @@ Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/io/netty/netty-
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.bukkit.ArtTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 s - in org.bukkit.ArtTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 s - in org.bukkit.ArtTest
 [INFO] Running org.bukkit.BiomeTest
-2018-05-01 00:15:22,136 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
-2018-05-01 00:15:22,140 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
-Mai 01, 2018 12:15:23 AM org.bukkit.Bukkit setServer
+2018-05-02 17:32:22,549 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
+2018-05-02 17:32:22,552 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
+Mai 02, 2018 5:32:23 PM org.bukkit.Bukkit setServer
 INFORMATION: This server is running org.bukkit.support.DummyServer version null (Implementing API version 1.12.2-R0.1-SNAPSHOT)
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.149 s - in org.bukkit.BiomeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.452 s - in org.bukkit.BiomeTest
 [INFO] Running org.bukkit.ChatTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.bukkit.ChatTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.ChatTest
 [INFO] Running org.bukkit.craftbukkit.generator.ChunkDataTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 s - in org.bukkit.craftbukkit.generator.ChunkDataTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.craftbukkit.generator.ChunkDataTest
 [INFO] Running org.bukkit.craftbukkit.inventory.FactoryItemMaterialTest
-[INFO] Tests run: 1644, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.423 s - in org.bukkit.craftbukkit.inventory.FactoryItemMaterialTest
+[INFO] Tests run: 1644, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.304 s - in org.bukkit.craftbukkit.inventory.FactoryItemMaterialTest
 [INFO] Running org.bukkit.craftbukkit.inventory.ItemFactoryTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.455 s - in org.bukkit.craftbukkit.inventory.ItemFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.276 s - in org.bukkit.craftbukkit.inventory.ItemFactoryTest
 [INFO] Running org.bukkit.craftbukkit.inventory.ItemMetaCloneTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.bukkit.craftbukkit.inventory.ItemMetaCloneTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.craftbukkit.inventory.ItemMetaCloneTest
 [INFO] Running org.bukkit.craftbukkit.inventory.ItemMetaImplementationOverrideTest
-[INFO] Tests run: 117, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 s - in org.bukkit.craftbukkit.inventory.ItemMetaImplementationOverrideTest
+[INFO] Tests run: 117, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 s - in org.bukkit.craftbukkit.inventory.ItemMetaImplementationOverrideTest
 [INFO] Running org.bukkit.craftbukkit.inventory.ItemMetaTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in org.bukkit.craftbukkit.inventory.ItemMetaTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in org.bukkit.craftbukkit.inventory.ItemMetaTest
 [INFO] Running org.bukkit.craftbukkit.inventory.NMSCraftItemStackTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.craftbukkit.inventory.NMSCraftItemStackTest
 [INFO] Running org.bukkit.DyeColorsTest
-[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.bukkit.DyeColorsTest
+[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.bukkit.DyeColorsTest
 [INFO] Running org.bukkit.entity.EnderDragonPhaseTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.bukkit.entity.EnderDragonPhaseTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.entity.EnderDragonPhaseTest
 [INFO] Running org.bukkit.map.MapTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.map.MapTest
 [INFO] Running org.bukkit.MaterialTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.MaterialTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.bukkit.MaterialTest
 [INFO] Running org.bukkit.ParticleTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.bukkit.ParticleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.ParticleTest
 [INFO] Running org.bukkit.PerMaterialTest
-[INFO] Tests run: 6482, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.305 s - in org.bukkit.PerMaterialTest
+[INFO] Tests run: 6482, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.219 s - in org.bukkit.PerMaterialTest
 [INFO] Running org.bukkit.potion.PotionTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.potion.PotionTest
 [INFO] Running org.bukkit.SoundTest
@@ -1738,16 +670,228 @@ INFORMATION: This server is running org.bukkit.support.DummyServer version null 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 34.301 s
-[INFO] Finished at: 2018-05-01T00:15:40+02:00
-[INFO] Final Memory: 31M/616M
+[INFO] Total time: 56.860 s
+[INFO] Finished at: 2018-05-02T17:32:42+02:00
+[INFO] Final Memory: 27M/670M
 [INFO] ------------------------------------------------------------------------
 Rebuilding Forked projects.... 
 From file:///E:\Bibliotheken\Dokumente\Spigotprogramming\Dreamland\Dreamland-Plugin\Spigot\Bukkit
  * [new branch]        spigot     -> origin/spigot
+Checking out files:   6% (52/803)   
+Checking out files:   7% (57/803)   
+Checking out files:   8% (65/803)   
+Checking out files:   9% (73/803)   
+Checking out files:  10% (81/803)   
+Checking out files:  11% (89/803)   
+Checking out files:  12% (97/803)   
+Checking out files:  13% (105/803)   
+Checking out files:  14% (113/803)   
+Checking out files:  14% (118/803)   
+Checking out files:  15% (121/803)   
+Checking out files:  16% (129/803)   
+Checking out files:  17% (137/803)   
+Checking out files:  18% (145/803)   
+Checking out files:  19% (153/803)   
+Checking out files:  20% (161/803)   
+Checking out files:  20% (164/803)   
+Checking out files:  21% (169/803)   
+Checking out files:  22% (177/803)   
+Checking out files:  23% (185/803)   
+Checking out files:  24% (193/803)   
+Checking out files:  25% (201/803)   
+Checking out files:  26% (209/803)   
+Checking out files:  27% (217/803)   
+Checking out files:  28% (225/803)   
+Checking out files:  29% (233/803)   
+Checking out files:  30% (241/803)   
+Checking out files:  31% (249/803)   
+Checking out files:  32% (257/803)   
+Checking out files:  33% (265/803)   
+Checking out files:  33% (268/803)   
+Checking out files:  34% (274/803)   
+Checking out files:  35% (282/803)   
+Checking out files:  36% (290/803)   
+Checking out files:  37% (298/803)   
+Checking out files:  38% (306/803)   
+Checking out files:  39% (314/803)   
+Checking out files:  40% (322/803)   
+Checking out files:  41% (330/803)   
+Checking out files:  42% (338/803)   
+Checking out files:  43% (346/803)   
+Checking out files:  44% (354/803)   
+Checking out files:  45% (362/803)   
+Checking out files:  46% (370/803)   
+Checking out files:  46% (374/803)   
+Checking out files:  47% (378/803)   
+Checking out files:  48% (386/803)   
+Checking out files:  49% (394/803)   
+Checking out files:  50% (402/803)   
+Checking out files:  51% (410/803)   
+Checking out files:  52% (418/803)   
+Checking out files:  52% (419/803)   
+Checking out files:  53% (426/803)   
+Checking out files:  54% (434/803)   
+Checking out files:  55% (442/803)   
+Checking out files:  56% (450/803)   
+Checking out files:  57% (458/803)   
+Checking out files:  58% (466/803)   
+Checking out files:  58% (471/803)   
+Checking out files:  59% (474/803)   
+Checking out files:  60% (482/803)   
+Checking out files:  61% (490/803)   
+Checking out files:  62% (498/803)   
+Checking out files:  63% (506/803)   
+Checking out files:  64% (514/803)   
+Checking out files:  65% (522/803)   
+Checking out files:  66% (530/803)   
+Checking out files:  66% (534/803)   
+Checking out files:  67% (539/803)   
+Checking out files:  68% (547/803)   
+Checking out files:  69% (555/803)   
+Checking out files:  70% (563/803)   
+Checking out files:  71% (571/803)   
+Checking out files:  72% (579/803)   
+Checking out files:  72% (583/803)   
+Checking out files:  73% (587/803)   
+Checking out files:  74% (595/803)   
+Checking out files:  75% (603/803)   
+Checking out files:  76% (611/803)   
+Checking out files:  77% (619/803)   
+Checking out files:  78% (627/803)   
+Checking out files:  78% (629/803)   
+Checking out files:  79% (635/803)   
+Checking out files:  80% (643/803)   
+Checking out files:  81% (651/803)   
+Checking out files:  82% (659/803)   
+Checking out files:  83% (667/803)   
+Checking out files:  84% (675/803)   
+Checking out files:  85% (683/803)   
+Checking out files:  86% (691/803)   
+Checking out files:  87% (699/803)   
+Checking out files:  88% (707/803)   
+Checking out files:  89% (715/803)   
+Checking out files:  90% (723/803)   
+Checking out files:  91% (731/803)   
+Checking out files:  92% (739/803)   
+Checking out files:  93% (747/803)   
+Checking out files:  94% (755/803)   
+Checking out files:  95% (763/803)   
+Checking out files:  96% (771/803)   
+Checking out files:  97% (779/803)   
+Checking out files:  97% (782/803)   
+Checking out files:  98% (787/803)   
+Checking out files:  99% (795/803)   
+Checking out files: 100% (803/803)   
+Checking out files: 100% (803/803), done.
 HEAD is now at 33a62b95 Revert "Update to SnakeYAML 1.21"
 Cloning into 'Spigot-API'...
 done.
+Checking out files:   6% (52/803)   
+Checking out files:   7% (57/803)   
+Checking out files:   8% (65/803)   
+Checking out files:   9% (73/803)   
+Checking out files:  10% (81/803)   
+Checking out files:  11% (89/803)   
+Checking out files:  12% (97/803)   
+Checking out files:  13% (105/803)   
+Checking out files:  14% (113/803)   
+Checking out files:  14% (114/803)   
+Checking out files:  15% (121/803)   
+Checking out files:  16% (129/803)   
+Checking out files:  17% (137/803)   
+Checking out files:  18% (145/803)   
+Checking out files:  19% (153/803)   
+Checking out files:  20% (161/803)   
+Checking out files:  20% (164/803)   
+Checking out files:  21% (169/803)   
+Checking out files:  22% (177/803)   
+Checking out files:  23% (185/803)   
+Checking out files:  24% (193/803)   
+Checking out files:  25% (201/803)   
+Checking out files:  26% (209/803)   
+Checking out files:  27% (217/803)   
+Checking out files:  28% (225/803)   
+Checking out files:  29% (233/803)   
+Checking out files:  30% (241/803)   
+Checking out files:  31% (249/803)   
+Checking out files:  32% (257/803)   
+Checking out files:  33% (265/803)   
+Checking out files:  34% (274/803)   
+Checking out files:  34% (276/803)   
+Checking out files:  35% (282/803)   
+Checking out files:  36% (290/803)   
+Checking out files:  37% (298/803)   
+Checking out files:  38% (306/803)   
+Checking out files:  39% (314/803)   
+Checking out files:  40% (322/803)   
+Checking out files:  40% (327/803)   
+Checking out files:  41% (330/803)   
+Checking out files:  42% (338/803)   
+Checking out files:  43% (346/803)   
+Checking out files:  44% (354/803)   
+Checking out files:  45% (362/803)   
+Checking out files:  46% (370/803)   
+Checking out files:  47% (378/803)   
+Checking out files:  48% (386/803)   
+Checking out files:  49% (394/803)   
+Checking out files:  50% (402/803)   
+Checking out files:  51% (410/803)   
+Checking out files:  51% (414/803)   
+Checking out files:  52% (418/803)   
+Checking out files:  53% (426/803)   
+Checking out files:  54% (434/803)   
+Checking out files:  55% (442/803)   
+Checking out files:  56% (450/803)   
+Checking out files:  56% (455/803)   
+Checking out files:  57% (458/803)   
+Checking out files:  58% (466/803)   
+Checking out files:  59% (474/803)   
+Checking out files:  60% (482/803)   
+Checking out files:  61% (490/803)   
+Checking out files:  62% (498/803)   
+Checking out files:  63% (506/803)   
+Checking out files:  64% (514/803)   
+Checking out files:  64% (519/803)   
+Checking out files:  65% (522/803)   
+Checking out files:  66% (530/803)   
+Checking out files:  67% (539/803)   
+Checking out files:  68% (547/803)   
+Checking out files:  69% (555/803)   
+Checking out files:  70% (563/803)   
+Checking out files:  71% (571/803)   
+Checking out files:  72% (579/803)   
+Checking out files:  73% (587/803)   
+Checking out files:  74% (595/803)   
+Checking out files:  75% (603/803)   
+Checking out files:  76% (611/803)   
+Checking out files:  76% (614/803)   
+Checking out files:  77% (619/803)   
+Checking out files:  78% (627/803)   
+Checking out files:  79% (635/803)   
+Checking out files:  80% (643/803)   
+Checking out files:  81% (651/803)   
+Checking out files:  82% (659/803)   
+Checking out files:  83% (667/803)   
+Checking out files:  83% (670/803)   
+Checking out files:  84% (675/803)   
+Checking out files:  85% (683/803)   
+Checking out files:  86% (691/803)   
+Checking out files:  87% (699/803)   
+Checking out files:  88% (707/803)   
+Checking out files:  89% (715/803)   
+Checking out files:  90% (723/803)   
+Checking out files:  91% (731/803)   
+Checking out files:  92% (739/803)   
+Checking out files:  93% (747/803)   
+Checking out files:  94% (755/803)   
+Checking out files:  94% (758/803)   
+Checking out files:  95% (763/803)   
+Checking out files:  96% (771/803)   
+Checking out files:  97% (779/803)   
+Checking out files:  98% (787/803)   
+Checking out files:  99% (795/803)   
+Checking out files: 100% (803/803)   
+Checking out files: 100% (803/803), done.
 Resetting Spigot-API to Bukkit...
 fatal: No such remote: upstream
 HEAD is now at 33a62b95 Revert "Update to SnakeYAML 1.21"
@@ -1779,12 +923,243 @@ Applying: Added isUnbreakable and setUnbreakable to ItemMeta
 Applying: BungeeCord Chat API
 Applying: Add restart API.
   Patches applied cleanly to Spigot-API
-HEAD is now at f1bfe3ca CraftBukkit $ Tue May 01 00:14:44 CEST 2018
+Checking out files:   5% (55/964)   
+Checking out files:   6% (58/964)   
+Checking out files:   7% (68/964)   
+Checking out files:   8% (78/964)   
+Checking out files:   9% (87/964)   
+Checking out files:  10% (97/964)   
+Checking out files:  10% (99/964)   
+Checking out files:  11% (107/964)   
+Checking out files:  12% (116/964)   
+Checking out files:  13% (126/964)   
+Checking out files:  14% (135/964)   
+Checking out files:  15% (145/964)   
+Checking out files:  15% (147/964)   
+Checking out files:  16% (155/964)   
+Checking out files:  17% (164/964)   
+Checking out files:  18% (174/964)   
+Checking out files:  19% (184/964)   
+Checking out files:  19% (191/964)   
+Checking out files:  20% (193/964)   
+Checking out files:  21% (203/964)   
+Checking out files:  22% (213/964)   
+Checking out files:  23% (222/964)   
+Checking out files:  24% (232/964)   
+Checking out files:  24% (239/964)   
+Checking out files:  25% (241/964)   
+Checking out files:  26% (251/964)   
+Checking out files:  27% (261/964)   
+Checking out files:  28% (270/964)   
+Checking out files:  29% (280/964)   
+Checking out files:  30% (290/964)   
+Checking out files:  30% (293/964)   
+Checking out files:  31% (299/964)   
+Checking out files:  32% (309/964)   
+Checking out files:  33% (319/964)   
+Checking out files:  34% (328/964)   
+Checking out files:  35% (338/964)   
+Checking out files:  35% (345/964)   
+Checking out files:  36% (348/964)   
+Checking out files:  37% (357/964)   
+Checking out files:  38% (367/964)   
+Checking out files:  39% (376/964)   
+Checking out files:  39% (383/964)   
+Checking out files:  40% (386/964)   
+Checking out files:  41% (396/964)   
+Checking out files:  42% (405/964)   
+Checking out files:  43% (415/964)   
+Checking out files:  43% (424/964)   
+Checking out files:  44% (425/964)   
+Checking out files:  45% (434/964)   
+Checking out files:  46% (444/964)   
+Checking out files:  47% (454/964)   
+Checking out files:  47% (462/964)   
+Checking out files:  48% (463/964)   
+Checking out files:  49% (473/964)   
+Checking out files:  50% (482/964)   
+Checking out files:  51% (492/964)   
+Checking out files:  52% (502/964)   
+Checking out files:  53% (511/964)   
+Checking out files:  54% (521/964)   
+Checking out files:  55% (531/964)   
+Checking out files:  56% (540/964)   
+Checking out files:  56% (546/964)   
+Checking out files:  57% (550/964)   
+Checking out files:  58% (560/964)   
+Checking out files:  59% (569/964)   
+Checking out files:  60% (579/964)   
+Checking out files:  60% (587/964)   
+Checking out files:  61% (589/964)   
+Checking out files:  62% (598/964)   
+Checking out files:  63% (608/964)   
+Checking out files:  64% (617/964)   
+Checking out files:  65% (627/964)   
+Checking out files:  65% (628/964)   
+Checking out files:  66% (637/964)   
+Checking out files:  67% (646/964)   
+Checking out files:  68% (656/964)   
+Checking out files:  69% (666/964)   
+Checking out files:  69% (674/964)   
+Checking out files:  70% (675/964)   
+Checking out files:  71% (685/964)   
+Checking out files:  72% (695/964)   
+Checking out files:  73% (704/964)   
+Checking out files:  74% (714/964)   
+Checking out files:  75% (723/964)   
+Checking out files:  75% (725/964)   
+Checking out files:  76% (733/964)   
+Checking out files:  77% (743/964)   
+Checking out files:  78% (752/964)   
+Checking out files:  79% (762/964)   
+Checking out files:  80% (772/964)   
+Checking out files:  81% (781/964)   
+Checking out files:  81% (786/964)   
+Checking out files:  82% (791/964)   
+Checking out files:  83% (801/964)   
+Checking out files:  84% (810/964)   
+Checking out files:  85% (820/964)   
+Checking out files:  86% (830/964)   
+Checking out files:  87% (839/964)   
+Checking out files:  87% (844/964)   
+Checking out files:  88% (849/964)   
+Checking out files:  89% (858/964)   
+Checking out files:  90% (868/964)   
+Checking out files:  91% (878/964)   
+Checking out files:  92% (887/964)   
+Checking out files:  92% (892/964)   
+Checking out files:  93% (897/964)   
+Checking out files:  94% (907/964)   
+Checking out files:  95% (916/964)   
+Checking out files:  96% (926/964)   
+Checking out files:  97% (936/964)   
+Checking out files:  97% (942/964)   
+Checking out files:  98% (945/964)   
+Checking out files:  99% (955/964)   
+Checking out files: 100% (964/964)   
+Checking out files: 100% (964/964), done.
+HEAD is now at f91e3b77 CraftBukkit $ Wed May 02 17:30:48 CEST 2018
 Cloning into 'Spigot-Server'...
 done.
+Checking out files:   5% (53/964)   
+Checking out files:   6% (58/964)   
+Checking out files:   7% (68/964)   
+Checking out files:   8% (78/964)   
+Checking out files:   9% (87/964)   
+Checking out files:   9% (96/964)   
+Checking out files:  10% (97/964)   
+Checking out files:  11% (107/964)   
+Checking out files:  12% (116/964)   
+Checking out files:  13% (126/964)   
+Checking out files:  14% (135/964)   
+Checking out files:  14% (142/964)   
+Checking out files:  15% (145/964)   
+Checking out files:  16% (155/964)   
+Checking out files:  17% (164/964)   
+Checking out files:  18% (174/964)   
+Checking out files:  19% (184/964)   
+Checking out files:  19% (188/964)   
+Checking out files:  20% (193/964)   
+Checking out files:  21% (203/964)   
+Checking out files:  22% (213/964)   
+Checking out files:  23% (222/964)   
+Checking out files:  24% (232/964)   
+Checking out files:  24% (235/964)   
+Checking out files:  25% (241/964)   
+Checking out files:  26% (251/964)   
+Checking out files:  27% (261/964)   
+Checking out files:  28% (270/964)   
+Checking out files:  29% (280/964)   
+Checking out files:  29% (285/964)   
+Checking out files:  30% (290/964)   
+Checking out files:  31% (299/964)   
+Checking out files:  32% (309/964)   
+Checking out files:  33% (319/964)   
+Checking out files:  34% (328/964)   
+Checking out files:  34% (335/964)   
+Checking out files:  35% (338/964)   
+Checking out files:  36% (348/964)   
+Checking out files:  37% (357/964)   
+Checking out files:  38% (367/964)   
+Checking out files:  38% (375/964)   
+Checking out files:  39% (376/964)   
+Checking out files:  40% (386/964)   
+Checking out files:  41% (396/964)   
+Checking out files:  42% (405/964)   
+Checking out files:  43% (415/964)   
+Checking out files:  43% (416/964)   
+Checking out files:  44% (425/964)   
+Checking out files:  45% (434/964)   
+Checking out files:  46% (444/964)   
+Checking out files:  47% (454/964)   
+Checking out files:  47% (457/964)   
+Checking out files:  48% (463/964)   
+Checking out files:  49% (473/964)   
+Checking out files:  50% (482/964)   
+Checking out files:  51% (492/964)   
+Checking out files:  51% (499/964)   
+Checking out files:  52% (502/964)   
+Checking out files:  53% (511/964)   
+Checking out files:  54% (521/964)   
+Checking out files:  55% (531/964)   
+Checking out files:  56% (540/964)   
+Checking out files:  56% (542/964)   
+Checking out files:  57% (550/964)   
+Checking out files:  58% (560/964)   
+Checking out files:  59% (569/964)   
+Checking out files:  60% (579/964)   
+Checking out files:  60% (583/964)   
+Checking out files:  61% (589/964)   
+Checking out files:  62% (598/964)   
+Checking out files:  63% (608/964)   
+Checking out files:  64% (617/964)   
+Checking out files:  64% (620/964)   
+Checking out files:  65% (627/964)   
+Checking out files:  66% (637/964)   
+Checking out files:  67% (646/964)   
+Checking out files:  68% (656/964)   
+Checking out files:  68% (661/964)   
+Checking out files:  69% (666/964)   
+Checking out files:  70% (675/964)   
+Checking out files:  71% (685/964)   
+Checking out files:  72% (695/964)   
+Checking out files:  72% (703/964)   
+Checking out files:  73% (704/964)   
+Checking out files:  74% (714/964)   
+Checking out files:  75% (723/964)   
+Checking out files:  76% (733/964)   
+Checking out files:  77% (743/964)   
+Checking out files:  78% (752/964)   
+Checking out files:  79% (762/964)   
+Checking out files:  80% (772/964)   
+Checking out files:  80% (773/964)   
+Checking out files:  81% (781/964)   
+Checking out files:  82% (791/964)   
+Checking out files:  83% (801/964)   
+Checking out files:  84% (810/964)   
+Checking out files:  85% (820/964)   
+Checking out files:  85% (829/964)   
+Checking out files:  86% (830/964)   
+Checking out files:  87% (839/964)   
+Checking out files:  88% (849/964)   
+Checking out files:  89% (858/964)   
+Checking out files:  90% (868/964)   
+Checking out files:  91% (878/964)   
+Checking out files:  91% (879/964)   
+Checking out files:  92% (887/964)   
+Checking out files:  93% (897/964)   
+Checking out files:  94% (907/964)   
+Checking out files:  95% (916/964)   
+Checking out files:  95% (925/964)   
+Checking out files:  96% (926/964)   
+Checking out files:  97% (936/964)   
+Checking out files:  98% (945/964)   
+Checking out files:  99% (955/964)   
+Checking out files: 100% (964/964)   
+Checking out files: 100% (964/964), done.
 Resetting Spigot-Server to CraftBukkit...
 fatal: No such remote: upstream
-HEAD is now at f1bfe3ca CraftBukkit $ Tue May 01 00:14:44 CEST 2018
+HEAD is now at f91e3b77 CraftBukkit $ Wed May 02 17:30:48 CEST 2018
   Applying patches to Spigot-Server...
 fatal: Resolve operation not in progress, we are not resuming.
 Applying: POM Changes
@@ -1943,69 +1318,11 @@ Compiling Spigot & Spigot-API
 Downloading: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/bungeecord-chat/1.12-SNAPSHOT/maven-metadata.xml
 Progress (1): 1.2 kB
                     
-Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/bungeecord-chat/1.12-SNAPSHOT/maven-metadata.xml (1.2 kB at 1.7 kB/s)
-Downloading: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/bungeecord-chat/1.12-SNAPSHOT/bungeecord-chat-1.12-20180420.081408-78.pom
-Progress (1): 1.1 kB
-                    
-Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/bungeecord-chat/1.12-SNAPSHOT/bungeecord-chat-1.12-20180420.081408-78.pom (1.1 kB at 5.2 kB/s)
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/bungeecord-chat/1.12-SNAPSHOT/maven-metadata.xml (1.2 kB at 1.4 kB/s)
 Downloading: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/bungeecord-parent/1.12-SNAPSHOT/maven-metadata.xml
 Progress (1): 602 B
                    
-Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/bungeecord-parent/1.12-SNAPSHOT/maven-metadata.xml (602 B at 2.5 kB/s)
-Downloading: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/bungeecord-parent/1.12-SNAPSHOT/bungeecord-parent-1.12-20180420.081355-78.pom
-Progress (1): 1.2 kB
-Progress (1): 2.7 kB
-Progress (1): 5.6 kB
-Progress (1): 6.5 kB
-                    
-Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/bungeecord-parent/1.12-SNAPSHOT/bungeecord-parent-1.12-20180420.081355-78.pom (6.5 kB at 28 kB/s)
-Downloading: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/bungeecord-chat/1.12-SNAPSHOT/bungeecord-chat-1.12-20180420.081408-78.jar
-Progress (1): 0.9/73 kB
-Progress (1): 2.3/73 kB
-Progress (1): 3.6/73 kB
-Progress (1): 5.0/73 kB
-Progress (1): 6.4/73 kB
-Progress (1): 7.7/73 kB
-Progress (1): 9.1/73 kB
-Progress (1): 10/73 kB 
-Progress (1): 12/73 kB
-Progress (1): 13/73 kB
-Progress (1): 14/73 kB
-Progress (1): 15/73 kB
-Progress (1): 16/73 kB
-Progress (1): 18/73 kB
-Progress (1): 19/73 kB
-Progress (1): 21/73 kB
-Progress (1): 22/73 kB
-Progress (1): 23/73 kB
-Progress (1): 24/73 kB
-Progress (1): 25/73 kB
-Progress (1): 27/73 kB
-Progress (1): 28/73 kB
-Progress (1): 29/73 kB
-Progress (1): 31/73 kB
-Progress (1): 32/73 kB
-Progress (1): 34/73 kB
-Progress (1): 35/73 kB
-Progress (1): 36/73 kB
-Progress (1): 40/73 kB
-Progress (1): 43/73 kB
-Progress (1): 47/73 kB
-Progress (1): 47/73 kB
-Progress (1): 51/73 kB
-Progress (1): 51/73 kB
-Progress (1): 55/73 kB
-Progress (1): 56/73 kB
-Progress (1): 59/73 kB
-Progress (1): 63/73 kB
-Progress (1): 64/73 kB
-Progress (1): 68/73 kB
-Progress (1): 68/73 kB
-Progress (1): 72/73 kB
-Progress (1): 72/73 kB
-Progress (1): 73 kB   
-                   
-Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/bungeecord-chat/1.12-SNAPSHOT/bungeecord-chat-1.12-20180420.081408-78.jar (73 kB at 127 kB/s)
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/bungeecord-parent/1.12-SNAPSHOT/maven-metadata.xml (602 B at 1.3 kB/s)
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ spigot-api ---
 [INFO] 
@@ -2030,46 +1347,46 @@ Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/bungee
  T E S T S
 -------------------------------------------------------
 Running org.bukkit.ArtTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec
 Running org.bukkit.BukkitMirrorTest
-Tests run: 500, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 sec
+Tests run: 500, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec
 Running org.bukkit.ChatColorTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.ChatPaginatorTest
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.CoalTypeTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.ColorTest
-Tests run: 52, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec
+Tests run: 52, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.bukkit.configuration.file.YamlConfigurationTest
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.175 sec
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec
 Running org.bukkit.configuration.MemoryConfigurationTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.configuration.MemorySectionTest
-Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
 Running org.bukkit.conversations.ConversationContextTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.conversations.ConversationTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.conversations.ValidatingPromptTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.CropStateTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.DifficultyTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.DyeColorTest
-Tests run: 80, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Tests run: 80, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.bukkit.EffectTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.bukkit.EntityEffectTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.event.PlayerChatTabCompleteEventTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.event.SyntheticEventTest
-Mai 01, 2018 12:16:41 AM org.bukkit.Bukkit setServer
+Mai 02, 2018 5:36:20 PM org.bukkit.Bukkit setServerInvk org.bukkit.event.TestEvent@7a69b07
 INFORMATION: This server is running TestServer version Version_null (Implementing API version BukkitVersion_null)
-Invk org.bukkit.event.TestEvent@7a69b07
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.bukkit.GameModeTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.GrassSpeciesTest
@@ -2077,35 +1394,35 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.InstrumentTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.bukkit.LocationTest
-Tests run: 60, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Tests run: 60, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.bukkit.materials.MaterialDataTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.MaterialTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.bukkit.metadata.FixedMetadataValueTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.bukkit.metadata.LazyMetadataValueTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.metadata.MetadataConversionTest
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.metadata.MetadataStoreTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.metadata.MetadataValueAdapterTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.NoteTest
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.plugin.messaging.StandardMessengerTest
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.bukkit.plugin.PluginManagerTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.plugin.TimedRegisteredListenerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.TreeSpeciesTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.util.io.BukkitObjectStreamTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.083 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0 sec
 Running org.bukkit.util.StringUtilStartsWithTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.util.StringUtilTest
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.bukkit.WorldTypeTest
@@ -2174,45 +1491,45 @@ Tests run: 929, Failures: 0, Errors: 0, Skipped: 3
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.bukkit.ArtTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 s - in org.bukkit.ArtTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in org.bukkit.ArtTest
 [INFO] Running org.bukkit.BiomeTest
-2018-05-01 00:16:53,812 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
-2018-05-01 00:16:53,815 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
-Mai 01, 2018 12:16:55 AM org.bukkit.Bukkit setServer
+2018-05-02 17:37:02,873 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
+2018-05-02 17:37:02,876 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
+Mai 02, 2018 5:37:04 PM org.bukkit.Bukkit setServer
 INFORMATION: This server is running org.bukkit.support.DummyServer version null (Implementing API version 1.12.2-R0.1-SNAPSHOT)
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.079 s - in org.bukkit.BiomeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.948 s - in org.bukkit.BiomeTest
 [INFO] Running org.bukkit.ChatTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.bukkit.ChatTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.ChatTest
 [INFO] Running org.bukkit.craftbukkit.generator.ChunkDataTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 s - in org.bukkit.craftbukkit.generator.ChunkDataTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 s - in org.bukkit.craftbukkit.generator.ChunkDataTest
 [INFO] Running org.bukkit.craftbukkit.inventory.FactoryItemMaterialTest
-[INFO] Tests run: 1644, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.331 s - in org.bukkit.craftbukkit.inventory.FactoryItemMaterialTest
+[INFO] Tests run: 1644, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.006 s - in org.bukkit.craftbukkit.inventory.FactoryItemMaterialTest
 [INFO] Running org.bukkit.craftbukkit.inventory.ItemFactoryTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.401 s - in org.bukkit.craftbukkit.inventory.ItemFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.344 s - in org.bukkit.craftbukkit.inventory.ItemFactoryTest
 [INFO] Running org.bukkit.craftbukkit.inventory.ItemMetaCloneTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.bukkit.craftbukkit.inventory.ItemMetaCloneTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.craftbukkit.inventory.ItemMetaCloneTest
 [INFO] Running org.bukkit.craftbukkit.inventory.ItemMetaImplementationOverrideTest
-[INFO] Tests run: 117, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in org.bukkit.craftbukkit.inventory.ItemMetaImplementationOverrideTest
+[INFO] Tests run: 117, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.bukkit.craftbukkit.inventory.ItemMetaImplementationOverrideTest
 [INFO] Running org.bukkit.craftbukkit.inventory.ItemMetaTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 s - in org.bukkit.craftbukkit.inventory.ItemMetaTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in org.bukkit.craftbukkit.inventory.ItemMetaTest
 [INFO] Running org.bukkit.craftbukkit.inventory.NMSCraftItemStackTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.bukkit.craftbukkit.inventory.NMSCraftItemStackTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.craftbukkit.inventory.NMSCraftItemStackTest
 [INFO] Running org.bukkit.DyeColorsTest
-[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.bukkit.DyeColorsTest
+[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.DyeColorsTest
 [INFO] Running org.bukkit.entity.EnderDragonPhaseTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in org.bukkit.entity.EnderDragonPhaseTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.entity.EnderDragonPhaseTest
 [INFO] Running org.bukkit.map.MapTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.map.MapTest
 [INFO] Running org.bukkit.MaterialTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.bukkit.MaterialTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.MaterialTest
 [INFO] Running org.bukkit.NibbleArrayTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.NibbleArrayTest
 [INFO] Running org.bukkit.ParticleTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.ParticleTest
 [INFO] Running org.bukkit.PerMaterialTest
-[INFO] Tests run: 6482, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.372 s - in org.bukkit.PerMaterialTest
+[INFO] Tests run: 6482, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 s - in org.bukkit.PerMaterialTest
 [INFO] Running org.bukkit.potion.PotionTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.potion.PotionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.bukkit.potion.PotionTest
 [INFO] Running org.bukkit.SoundTest
 [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.bukkit.SoundTest
 [INFO] Running org.bukkit.StatisticsAndAchievementsTest
@@ -2308,15 +1625,15 @@ INFORMATION: This server is running org.bukkit.support.DummyServer version null 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Spigot-API ......................................... SUCCESS [ 11.354 s]
-[INFO] Spigot-Parent ...................................... SUCCESS [  0.068 s]
-[INFO] Spigot ............................................. SUCCESS [ 28.723 s]
+[INFO] Spigot-API ......................................... SUCCESS [ 27.534 s]
+[INFO] Spigot-Parent ...................................... SUCCESS [  0.082 s]
+[INFO] Spigot ............................................. SUCCESS [ 56.561 s]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 40.242 s
-[INFO] Finished at: 2018-05-01T00:17:12+02:00
-[INFO] Final Memory: 33M/572M
+[INFO] Total time: 01:24 min
+[INFO] Finished at: 2018-05-02T17:37:22+02:00
+[INFO] Final Memory: 33M/567M
 [INFO] ------------------------------------------------------------------------
  
  
