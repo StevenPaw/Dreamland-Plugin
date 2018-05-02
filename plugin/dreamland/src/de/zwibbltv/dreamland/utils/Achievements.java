@@ -7,16 +7,16 @@ import org.bukkit.entity.Player;
 
 public enum Achievements {
 	
-	FIRSTJOIN("FirstJoin","You joined our Server!",20, true),
-	FIRSTCHAT("FirstChat","You chatted the first time!",10, true),
-	FIRSTMOVE("FirstMove","You moved for the first time!",10, true),
-	RUNAKM("Run a KM","You ran a Kilometer in one session!",10, false),
-	MAINSTREETPARCOUR("MainStreetParcour","You run through the MainStreet Parcour!",10, true),
-	CALICO("Calico", "You went to Calico!", 10, true),
-	CALICOTOILET("Calicotoilet", "You went to the toilet in Calico!", 10, true),
-	CALICORESTAURANT("Calicorestaurant", "You went to the restaurant in Calico!",10, true),
-	CALICOBANK("Calicobank", "You went to the Bank in Calico!",10, true),
-	CALICOSAFE("Calicosafe", "You found a way into the safe in Calico!", 20, false);
+	FIRSTJOIN("FirstJoin","You joined our Server!",20, true,"join the server","Dreamland"),
+	FIRSTCHAT("FirstChat","You chatted the first time!",10, true,"chat the first time","Dreamland"),
+	FIRSTMOVE("FirstMove","You moved for the first time!",10, true,"move!","Dreamland"),
+	RUNAKM("Run a KM","You ran a Kilometer in one session!",10, false,"???","Dreamland"),
+	MAINSTREETPARCOUR("MainStreetParcour","You run through the MainStreet Parcour!",10, true,"Find the parcour on MainStreet","MainStreet"),
+	CALICO("Calico", "You went to Calico!", 10, true,"Enter Calico","Calico"),
+	CALICOTOILET("Calicotoilet", "You went to the toilet in Calico!", 10, true,"Go to the toilet in Calico","Calico"),
+	CALICORESTAURANT("Calicorestaurant", "You went to the restaurant in Calico!",10, true,"Go to the restaurant in Calico","Calico"),
+	CALICOBANK("Calicobank", "You went to the Bank in Calico!",10, true,"Go to the bank in Calico","Calico"),
+	CALICOSAFE("Calicosafe", "You found a way into the safe in Calico!", 20, false,"???","Calico");
 	
 	public static void locations(Player p) {	
 		
@@ -79,12 +79,16 @@ public enum Achievements {
 	String text;
 	int money;
 	boolean visibility;
+	String task;
+	String category;
 	
-	private Achievements(String name,String text,int money, boolean visibility) {
+	private Achievements(String name,String text,int money, boolean visibility, String task, String category) {
 		this.name = name;
 		this.text = text;
 		this.money = money;
 		this.visibility = visibility;
+		this.task = task;
+		this.category = category;
 	}
 	
 	public String getName() {
@@ -97,6 +101,18 @@ public enum Achievements {
 	
 	public int getMoney() {
 		return money;
+	}
+	
+	public boolean getVisibility() {
+		return visibility;
+	}
+	
+	public String getTask() {
+		return task;
+	}
+	
+	public String getCategory() {
+		return category;
 	}
 
 }
