@@ -25,7 +25,8 @@ import de.zwibbltv.dreamland.utils.PlayerConfig;
 
 public class MenuListener implements Listener {
 	
-	Inventory inv_ach = Bukkit.createInventory(null, 9 * 1, "§0Achievements");
+	Inventory inv_ach = Bukkit.createInventory(null, 9 * 2, "§0Achievements");
+	List<String> catList = new ArrayList<String>();
 	String curInv = "off";
 	
 	@EventHandler
@@ -108,78 +109,89 @@ public class MenuListener implements Listener {
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Achievements")) {
 					openMenuAchievements(p);
 				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aSpawn")) {
-					p.performCommand("warp spawn");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}					
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aGreifenheim")) {
-					p.performCommand("warp greifenheim");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aCalico")) {
-					p.performCommand("warp calico");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLagoon")) {
-					p.performCommand("warp lagoon");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§cBack")) {
-					openMenuMain(p);
+					if(curInv == "AchievementsCat")
+					{
+						openMenuAchievements(p);
+					} else 
+						openMenuMain(p);
 				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aFlying Pegasus")) {
-					p.performCommand("warp flying_pegasus");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}	
 				
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aTower of Izran")) {
-					p.performCommand("warp tower_of_izran");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}	
-				
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aWestern race")) {
-					p.performCommand("warp western_race");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}	
-				
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aExplorers Cave")) {
-					p.performCommand("warp explorers_cave");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}	
+				if(curInv == "Warps") {
+						
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aFlying Pegasus")) {
+						p.performCommand("warp flying_pegasus");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}	
+					
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aTower of Izran")) {
+						p.performCommand("warp tower_of_izran");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}	
+					
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aWestern race")) {
+						p.performCommand("warp western_race");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}	
+					
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aExplorers Cave")) {
+						p.performCommand("warp explorers_cave");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}	
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aSpawn")) {
+						p.performCommand("warp spawn");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}					
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aGreifenheim")) {
+						p.performCommand("warp greifenheim");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aCalico")) {
+						p.performCommand("warp calico");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLagoon")) {
+						p.performCommand("warp lagoon");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aHaunted Mansion")) {
+						p.performCommand("warp haunted_mansion");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+					
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aChinatown")) {
+						p.performCommand("warp chinatown");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aInformation-Center")) {
+						p.performCommand("warp information-center");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+				}
 				
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Audio")) {
 					p.performCommand("audio");
 					p.closeInventory();
 				}	
 				
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aHaunted Mansion")) {
-					p.performCommand("warp haunted_mansion");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
 				
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aChinatown")) {
-					p.performCommand("warp chinatown");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aInformation-Center")) {
-					p.performCommand("warp information-center");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
 				if (curInv == "Achievements") {
-					p.sendMessage("Ach Inventory entdeckt");
-						p.sendMessage("Open Cat with " + p + " and " + e.getCurrentItem().getItemMeta().getDisplayName() + "§r as parameters");
-						openAchCategory(p, e.getCurrentItem().getItemMeta().getDisplayName());
+					for(int s = 0; s < catList.size(); s++) {
+						if(catList.get(s) == e.getCurrentItem().getItemMeta().getDisplayName()) {
+							openAchCategory(p, e.getCurrentItem().getItemMeta().getDisplayName());
+						}
+					}
 				}
 
 			} catch (Exception ex) {			
@@ -241,7 +253,7 @@ public class MenuListener implements Listener {
 			inv.setItem(0, warps);
 			inv.setItem(7, audio);
 			inv.setItem(8, aach);
-
+			
 			p.openInventory(inv);
 		}
 		
@@ -263,6 +275,7 @@ public class MenuListener implements Listener {
 			inv.setItem(5, areas);
 
 			p.openInventory(inv);
+			curInv = "Warps";
 		}
 		
 		//Open Attractions Menu
@@ -363,77 +376,66 @@ public class MenuListener implements Listener {
 		
 		public void openMenuAchievements(Player p) {
 			
-			List<String> achcats = new ArrayList<String>();
 			
+			//CREATING COLORVARIABLE AND CLEARING CATLIST
 			Integer Color = 0;
+			catList.clear();
 			
-			
+			//CHECKING EACH ACHIEVEMENT FOR NEW CATEGORIES
 			for(Achievements ach : Achievements.values()) {
 				
 				boolean isnew = true;
 								
-				for(Integer i = 0; i < achcats.size(); i++) {
-					if(ach.getCategory() == achcats.get(i)) {
+				for(Integer i = 0; i < catList.size(); i++) {
+					if(ach.getCategory() == catList.get(i)) {
 						isnew = false;
 					}
 				}
 				if(isnew == true) {
 					ItemStack achItem = new ItemStack(Material.WOOL, 1, (short) (double)Color);
 					ItemMeta achMeta = achItem.getItemMeta();
-					achMeta.setDisplayName("§a"+ ach.getCategory() + " Achievements");
+					achMeta.setDisplayName(ach.getCategory());
 					achItem.setItemMeta(achMeta);
 					inv_ach.setItem(Color, achItem);
-					achcats.add(ach.getCategory());
-					p.sendMessage(ach.getName() + " is new");
+					catList.add(ach.getCategory());
 					Color = Color + 1;
 				} else {
-					p.sendMessage(ach.getName() + " is not new");
 				}
-				
 			}
-						
+			
+			ItemStack back = new ItemStack(Material.CLAY_BRICK);
+			ItemMeta backmeta = back.getItemMeta();
+			backmeta.setDisplayName("§cBack");
+			back.setItemMeta(backmeta);
+			inv_ach.setItem(9 * 2 - 1, back);
+			
 			p.openInventory(inv_ach);
 			curInv = "Achievements";
-			
-			
-//			int i = 0;
-//			for (Achievements achpcat : Achievements.values()) {
-//				if(PlayerConfig.hasAchivement(p, ach))
-//				{
-//					ItemStack achItem = new ItemStack(Material.WOOL, 1, (short) 5);
-//					ItemMeta achMeta = achItem.getItemMeta();
-//					achMeta.setDisplayName("§a"+ ach.getName());
-//					List<String> lore = new ArrayList<String>();
-//					lore.add(ach.getText());
-//					achMeta.setLore(lore);
-//					achItem.setItemMeta(achMeta);
-//					inv.setItem(i, achItem);
-//				} else {
-//					ItemStack achItem = new ItemStack(Material.WOOL, 1, (short) 14);
-//					ItemMeta achMeta = achItem.getItemMeta();
-//					if(ach.getVisibility()) {
-//						achMeta.setDisplayName("§c"+ ach.getName());
-//						List<String> lore = new ArrayList<String>();
-//						lore.add(ach.getTask());
-//						achMeta.setLore(lore);
-//					} else {
-//						achMeta.setDisplayName("§c§k" + ach.getName());
-//						List<String> lore = new ArrayList<String>();
-//						lore.add(ach.getTask());
-//						achMeta.setLore(lore);
-//					}
-//					achItem.setItemMeta(achMeta);
-//					inv.setItem(i, achItem);
-//				}
-//				i = i + 1;
-//			}
-			
 		}
 		
 		public void openAchCategory(Player p, String cat) {
-			Inventory inv = Bukkit.createInventory(null, 9 * 1, "§0Achievements:" + cat);
 			
-			int i = 0;
+			//DECIDING THE INVENTORY SIZE
+			//----from here---
+			int invSize = 1;
+			int AchNumber = 2;
+			for(Achievements achn : Achievements.values()) {
+				if(achn.getCategory() == cat) //Counting the Achievements in that Category
+					AchNumber += 1;
+			}
+			boolean passt = false;
+			while(passt == false) {
+				if(9*invSize > AchNumber + 1) {
+					passt = true;
+				} else {
+					invSize += 1;
+				}
+			}
+			//---to here---
+			
+			Inventory inv = Bukkit.createInventory(null, 9 * invSize, "§0Achievements: " + cat);
+			
+			int i = 0; //to decide place in Inventory
 			for(Achievements ach : Achievements.values()) {
 				if(ach.getCategory() == cat) {
 					if(PlayerConfig.hasAchivement(p, ach))
@@ -464,9 +466,17 @@ public class MenuListener implements Listener {
 							inv.setItem(i, achItem);
 						}
 						i = i + 1;
+						
+						//Adding the Back-Button in last place
+						ItemStack back = new ItemStack(Material.CLAY_BRICK);
+						ItemMeta backmeta = back.getItemMeta();
+						backmeta.setDisplayName("§cBack");
+						back.setItemMeta(backmeta);
+						inv.setItem(9 * invSize - 1, back);
 				}
 			}
 			p.openInventory(inv);
-			curInv = "Category: " + cat;
+			curInv = "AchievementsCat";
 		}
+		
 }
