@@ -26,6 +26,13 @@ public enum Achievements {
 	MAINSTREETSHOW("Mainstreet Show","You visited the show on Mainstreet",10,true,"Visit the show on MainStreet!","MainStreet"),
 	HAUNTEDMANSION("Haunted Mansion","You went to the Haunted Mansion",10,true,"Go in the Haunted Mansion","MainStreet"),
 	HAUNTEDMANSIONFOUNTAIN("Haunted Fountain","You found the haunted fountain in front of the Haunted Mansion!",10,false,"???","MainStreet"),
+	//Castle
+	CASTLEFOUNTAIN("Castlefountain","You activated the fountain of the castle",10,true,"Activate the fountain of the castle","Castle"),
+	CASTLE("The Castle","You went to Castle",10,true,"Go to the castle","Castle"),
+	BLUEROOM("Blue room","You found the blue room in the castle",10,false,"???","Castle"),
+	LOVEROOM("Loveroom","You found the Loveroom in the castle",10,false,"???","Castle"),
+	CASTLEFALL("Castlefall","You jumped down in the Castle Parcour",10,false,"???","Castle"),
+	CASTLEPARCOUR("Castleparcour","Complete the parcour ",10,false,"???","Castle"),
 	//Calico
 	CALICO("Calico", "You went to Calico!", 10, true,"Enter Calico","Calico"),
 	CALICOFOUNTAIN("Calicos Fountain","You activated the fountain in Calico!",10,true,"Activate the fountain in Calico","Calico"),
