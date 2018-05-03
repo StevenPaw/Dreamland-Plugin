@@ -7,14 +7,14 @@ ZwibblTV:
 ZwibblHelper:
   builder: true
 StevenPaw:
-  builder: true
+  builder: false
   muted: false
   achivements:
     FirstMove: true
     FirstJoin: true
     FirstChat: true
-  runtime: 72
-  resourcepack: false
+  runtime: 128
+  resourcepack: true
 Segel_Basti:
   builder: true
   muted: false
