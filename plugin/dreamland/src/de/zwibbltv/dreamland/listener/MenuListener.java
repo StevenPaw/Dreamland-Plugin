@@ -392,7 +392,7 @@ public class MenuListener implements Listener {
 					}
 				}
 				if(isnew == true) {
-					ItemStack achItem = new ItemStack(Material.WOOL, 1, (short) (double)Color);
+					ItemStack achItem = new ItemStack(Material.STAINED_CLAY, 1, (short) (double)Color);
 					ItemMeta achMeta = achItem.getItemMeta();
 					achMeta.setDisplayName(ach.getCategory());
 					achItem.setItemMeta(achMeta);
@@ -440,7 +440,7 @@ public class MenuListener implements Listener {
 				if(ach.getCategory() == cat) {
 					if(PlayerConfig.hasAchivement(p, ach))
 						{
-							ItemStack achItem = new ItemStack(Material.WOOL, 1, (short) 5);
+							ItemStack achItem = new ItemStack(Material.STAINED_CLAY, 1, (short) 5);
 							ItemMeta achMeta = achItem.getItemMeta();
 							achMeta.setDisplayName("§a"+ ach.getName());
 							List<String> lore = new ArrayList<String>();
@@ -449,7 +449,7 @@ public class MenuListener implements Listener {
 							achItem.setItemMeta(achMeta);
 							inv.setItem(i, achItem);
 						} else {
-							ItemStack achItem = new ItemStack(Material.WOOL, 1, (short) 14);
+							ItemStack achItem = new ItemStack(Material.STAINED_CLAY, 1, (short) 14);
 							ItemMeta achMeta = achItem.getItemMeta();
 							if(ach.getVisibility()) {
 								achMeta.setDisplayName("§c"+ ach.getName());

@@ -12,11 +12,14 @@ import org.bukkit.entity.ItemFrame;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
+//import org.bukkit.event.block.Action;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.event.hanging.HangingBreakByEntityEvent;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
+import org.bukkit.event.player.PlayerArmorStandManipulateEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
@@ -34,6 +37,7 @@ public class PlayerListener implements Listener {
 	public void onPlayerInteract(PlayerInteractEvent event) {
 		Player p = event.getPlayer();
 		Block block = event.getClickedBlock();
+		if (event.getAction() == Action.RIGHT_CLICK_BLOCK || event.getAction() == Action.LEFT_CLICK_BLOCK) {
 		List<Material> forbidden = new ArrayList<Material>();
 		if(PlayerConfig.getBuilder(p) == false) {
 		if(!p.hasPermission("dreamland.useBlocks") || !p.hasPermission("dreamland.*")) {
@@ -67,12 +71,22 @@ public class PlayerListener implements Listener {
 			{
 				if(block.getType() == f) {
 					p.sendMessage(ChatColor.GRAY + "No!");
-					event.setCancelled(true);
-				}
-				else {
-					
+					event.setCancelled(true);			
+
+				}				
+						
 					}
 				}
+			}
+		}
+	}
+	
+	@EventHandler
+	public void onPlayerArmorStandManipulateEvent(PlayerArmorStandManipulateEvent e) {
+		Player p = e.getPlayer();
+		if(PlayerConfig.getBuilder(p) == false) {
+		if(!p.hasPermission("dreamland.useBlocks") || !p.hasPermission("dreamland.*")) {
+		e.setCancelled(true);
 			}
 		}
 	}
