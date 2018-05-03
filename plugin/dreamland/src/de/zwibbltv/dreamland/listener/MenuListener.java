@@ -25,6 +25,9 @@ import de.zwibbltv.dreamland.utils.PlayerConfig;
 
 public class MenuListener implements Listener {
 	
+	Inventory inv_ach = Bukkit.createInventory(null, 9 * 1, "§0Achievements");
+	String curInv = "off";
+	
 	@EventHandler
 	public void onDrop(PlayerDropItemEvent e) {
 		Player p = e.getPlayer();
@@ -172,6 +175,11 @@ public class MenuListener implements Listener {
 					p.performCommand("warp information-center");
 					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
 					p.closeInventory();
+				}
+				if (curInv == "Achievements") {
+					p.sendMessage("Ach Inventory entdeckt");
+						p.sendMessage("Open Cat with " + p + " and " + e.getCurrentItem().getItemMeta().getDisplayName() + "§r as parameters");
+						openAchCategory(p, e.getCurrentItem().getItemMeta().getDisplayName());
 				}
 
 			} catch (Exception ex) {			
@@ -354,55 +362,111 @@ public class MenuListener implements Listener {
 		}
 		
 		public void openMenuAchievements(Player p) {
-			Inventory inv = Bukkit.createInventory(null, 9 * 3, "§0Achievements");
+			
+			List<String> achcats = new ArrayList<String>();
+			
+			Integer Color = 0;
+			
+			
+			for(Achievements ach : Achievements.values()) {
+				
+				boolean isnew = true;
+								
+				for(Integer i = 0; i < achcats.size(); i++) {
+					if(ach.getCategory() == achcats.get(i)) {
+						isnew = false;
+					}
+				}
+				if(isnew == true) {
+					ItemStack achItem = new ItemStack(Material.WOOL, 1, (short) (double)Color);
+					ItemMeta achMeta = achItem.getItemMeta();
+					achMeta.setDisplayName("§a"+ ach.getCategory() + " Achievements");
+					achItem.setItemMeta(achMeta);
+					inv_ach.setItem(Color, achItem);
+					achcats.add(ach.getCategory());
+					p.sendMessage(ach.getName() + " is new");
+					Color = Color + 1;
+				} else {
+					p.sendMessage(ach.getName() + " is not new");
+				}
+				
+			}
+						
+			p.openInventory(inv_ach);
+			curInv = "Achievements";
+			
+			
+//			int i = 0;
+//			for (Achievements achpcat : Achievements.values()) {
+//				if(PlayerConfig.hasAchivement(p, ach))
+//				{
+//					ItemStack achItem = new ItemStack(Material.WOOL, 1, (short) 5);
+//					ItemMeta achMeta = achItem.getItemMeta();
+//					achMeta.setDisplayName("§a"+ ach.getName());
+//					List<String> lore = new ArrayList<String>();
+//					lore.add(ach.getText());
+//					achMeta.setLore(lore);
+//					achItem.setItemMeta(achMeta);
+//					inv.setItem(i, achItem);
+//				} else {
+//					ItemStack achItem = new ItemStack(Material.WOOL, 1, (short) 14);
+//					ItemMeta achMeta = achItem.getItemMeta();
+//					if(ach.getVisibility()) {
+//						achMeta.setDisplayName("§c"+ ach.getName());
+//						List<String> lore = new ArrayList<String>();
+//						lore.add(ach.getTask());
+//						achMeta.setLore(lore);
+//					} else {
+//						achMeta.setDisplayName("§c§k" + ach.getName());
+//						List<String> lore = new ArrayList<String>();
+//						lore.add(ach.getTask());
+//						achMeta.setLore(lore);
+//					}
+//					achItem.setItemMeta(achMeta);
+//					inv.setItem(i, achItem);
+//				}
+//				i = i + 1;
+//			}
+			
+		}
+		
+		public void openAchCategory(Player p, String cat) {
+			Inventory inv = Bukkit.createInventory(null, 9 * 1, "§0Achievements:" + cat);
 			
 			int i = 0;
-			for (Achievements ach : Achievements.values()) {
-				if(PlayerConfig.hasAchivement(p, ach))
-				{
-					ItemStack achItem = new ItemStack(Material.WOOL, 1, (short) 5);
-					ItemMeta achMeta = achItem.getItemMeta();
-					achMeta.setDisplayName("§a"+ ach.getName());
-					List<String> lore = new ArrayList<String>();
-					lore.add(ach.getText());
-					achMeta.setLore(lore);
-					achItem.setItemMeta(achMeta);
-					inv.setItem(i, achItem);
-				} else {
-					ItemStack achItem = new ItemStack(Material.WOOL, 1, (short) 14);
-					ItemMeta achMeta = achItem.getItemMeta();
-					if(ach.getVisibility()) {
-						achMeta.setDisplayName("§c"+ ach.getName());
-						List<String> lore = new ArrayList<String>();
-						lore.add(ach.getTask());
-						achMeta.setLore(lore);
-					} else {
-						achMeta.setDisplayName("§c§k" + ach.getName());
-						List<String> lore = new ArrayList<String>();
-						lore.add(ach.getTask());
-						achMeta.setLore(lore);
-					}
-					achItem.setItemMeta(achMeta);
-					inv.setItem(i, achItem);
+			for(Achievements ach : Achievements.values()) {
+				if(ach.getCategory() == cat) {
+					if(PlayerConfig.hasAchivement(p, ach))
+						{
+							ItemStack achItem = new ItemStack(Material.WOOL, 1, (short) 5);
+							ItemMeta achMeta = achItem.getItemMeta();
+							achMeta.setDisplayName("§a"+ ach.getName());
+							List<String> lore = new ArrayList<String>();
+							lore.add(ach.getText());
+							achMeta.setLore(lore);
+							achItem.setItemMeta(achMeta);
+							inv.setItem(i, achItem);
+						} else {
+							ItemStack achItem = new ItemStack(Material.WOOL, 1, (short) 14);
+							ItemMeta achMeta = achItem.getItemMeta();
+							if(ach.getVisibility()) {
+								achMeta.setDisplayName("§c"+ ach.getName());
+								List<String> lore = new ArrayList<String>();
+								lore.add(ach.getTask());
+								achMeta.setLore(lore);
+							} else {
+								achMeta.setDisplayName("§c§k" + ach.getName());
+								List<String> lore = new ArrayList<String>();
+								lore.add(ach.getTask());
+								achMeta.setLore(lore);
+							}
+							achItem.setItemMeta(achMeta);
+							inv.setItem(i, achItem);
+						}
+						i = i + 1;
 				}
-				i = i + 1;
 			}
-//			
-//			if(PlayerConfig.hasAchivement(p, Achievements.CALICOSAFE)) {
-//			ItemStack Calicosafe = new ItemStack(Material.WOOL, 1, (short) 5);
-//			ItemMeta Calicosafemeta = Calicosafe.getItemMeta();
-//			Calicosafemeta.setDisplayName("§a"+ Achievements.CALICOSAFE);
-//			Calicosafe.setItemMeta(Calicosafemeta);
-//			inv.setItem(3, Calicosafe);
-//			}
-//
-//			if(!PlayerConfig.hasAchivement(p, Achievements.CALICOSAFE)) {
-//			ItemStack Calicosafe = new ItemStack(Material.WOOL, 1, (short) 14);
-//			ItemMeta Calicosafemeta = Calicosafe.getItemMeta();
-//			Calicosafemeta.setDisplayName("§c"+Achievements.CALICOSAFE);
-//			Calicosafe.setItemMeta(Calicosafemeta);
-//			inv.setItem(1, Calicosafe);
-//			}
 			p.openInventory(inv);
+			curInv = "Category: " + cat;
 		}
 }
