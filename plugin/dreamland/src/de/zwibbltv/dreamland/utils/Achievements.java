@@ -12,6 +12,7 @@ public enum Achievements {
 	FIRSTCHAT("FirstChat","You chatted the first time!",10, true,"chat the first time","Dreamland"),
 	FIRSTMOVE("FirstMove","You moved for the first time!",10, true,"move!","Dreamland"),
 	RUNAKM("Run a KM","You ran a Kilometer in one session!",10, false,"???","Dreamland"),
+	GREATVIEWCASTLE("Great view from the castle","You found the great view in the castle (and the button as well..)!",10, false,"???","Dreamland"),
 	//MainStreet
 	MAINSTREETPARCOUR("Parcour","You run through the MainStreet Parcour!",10, false,"???","MainStreet"),
 	MAINSTREETWATERPLAY("Main Street Water Show","You discovered the secret Water Show!",15,false,"???","MainStreet"),
@@ -30,10 +31,27 @@ public enum Achievements {
 	CALICOFOUNTAIN("Calicos Fountain","You activated the fountain in Calico!",10,true,"Activate the fountain in Calico","Calico"),
 	CALICOTOILET("Calicotoilet", "You went to the toilet in Calico!", 10, true,"Go to the toilet in Calico","Calico"),
 	CALICORESTAURANT("Calicorestaurant", "You went to the restaurant in Calico!",10, true,"Go to the restaurant in Calico","Calico"),
+	CALICOTRAINSTATION("Calico Trainstation","You found the Trainstation in Calico!",10,true,"Find the Trainstation in Calico","Calico"),
 	CALICOBANK("Calicobank", "You went to the Bank in Calico!",10, true,"Go to the bank in Calico","Calico"),
 	CALICOSAFE("Calicosafe", "You found a way into the safe in Calico!", 20, false,"???","Calico"),
 	//Chinatown
-	CHINESELABYRINTH("ChineseLabyrinth", "You went through the labyrinth in chinatown",10,true,"Go through the labyrinth in chinatown", "Chinatown");
+	CHINATOWN("Chinatown", "You went to Chinatown",10,true,"Enter Chinatown", "Chinatown"),
+	CHINATOWNTRAINSTATION("Chinatown Trainstation","You found the Trainstation in Chinatown!",10,true,"Find the Trainstation in Chinatown","Chinatown"),
+	CHINESELABYRINTH("ChineseLabyrinth", "You went through the labyrinth in Chinatown",10,true,"Go through the labyrinth in Chinatown", "Chinatown"),
+	//Lagoon
+	LAGOON("Lagoon", "You went to Lagoon",10,true,"Enter Lagoon", "Lagoon"),
+	LAGOONSECRETSIGHT("Secret Lagoon sight", "You went to the secret Lagoon sight",10,false,"???", "Lagoon"),
+	GRANDPLAZA("Grand Plaza", "You went to the Grand Plaza",10,true,"Enter the Grand Plaza", "Lagoon"),
+	LAGOONFOUNTAIN("Lagoons Fountain","You activated the fountain in Lagoon!",10,true,"Activate the fountain in Lagoon","Lagoon"),
+	LAGOONTHEATER("Lagoon theater","You visited the theater in Lagoon",10,true,"Visit the theater in Lagoon!","Lagoon"),
+	LAGOONTOI("Tower of Izran", "You rided Tower of Izran",10,true,"Ride Tower of Izran", "Lagoon"),
+	LAGOONCHIAPAS("Chiapas", "You rided Chiapas",10,true,"Ride Chiapas", "Lagoon"),
+	//GREIFENHEIM
+	GREIFENHEIM("Greifenheim", "You went to Greifenheim",10,true,"Enter Greifenheim", "Greifenheim"),
+	GREIFENHEIMTRAINSTATION("Greifenheim Trainstation","You found the Trainstation in Greifenheim!",10,true,"Find the Trainstation in Greifenheim","Greifenheim"),
+	FLYINGPEGASUS("Flying Pegasus", "You rided Flying Pegasus",10,true,"Ride Flying Pegasus", "Greifenheim"),
+	EXPLORERSCAVE("Explorers Cave", "You went through the Explorers Cave",10,true,"Went through the Explorers Cave", "Greifenheim"),
+	HIDDENHIDEOUT("Hidden Hideout", "You found the Hidden Hideout",10,false,"???", "Greifenheim");
 	
 	
 	public static void locations(Player p) {	
@@ -129,7 +147,102 @@ public enum Achievements {
 			if(d <= 1) {
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.CALICOSAFE);
 				}
+			//Calico Trainstation 1
+			d = ploc.distance(new Location(w, -886, 20.5, 747));
+			if(d <= 1.5) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.CALICOTRAINSTATION);
+				}
+			//Calico Trainstation 2
+			d = ploc.distance(new Location(w, -902, 20.5, 746.0));
+			if(d <= 1.5) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.CALICOTRAINSTATION);
+				}
 			
+		//CHINATOWN
+			//chinatown Eingang 1
+			d = ploc.distance(new Location(w, -924.2, 20.0, 682.3));
+			if(d <= 2.5) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.CHINATOWN);
+				}
+			//chinatown Eingang 2
+			d = ploc.distance(new Location(w, -899.7, 20.0, 758.5));
+			if(d <= 2.5) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.CHINATOWN);
+				}
+			//chinatown Trainstation
+			d = ploc.distance(new Location(w, -931.3, 20.0, 681.3));
+			if(d <= 1) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.CHINATOWNTRAINSTATION);
+				}
+		//LAGOON
+			//Lagoon Eingang 1
+			d = ploc.distance(new Location(w, -873.5, 20.0, 566.5));
+			if(d <= 2.5) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.LAGOON);
+				}
+			//Lagoon Eingang 2
+			d = ploc.distance(new Location(w, -887.5, 20.0, 531.5));
+			if(d <= 2.5) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.LAGOON);
+				}
+			//Lagoon Eingang 3.1
+			d = ploc.distance(new Location(w, -798.5, 20.0, 488.5));
+			if(d <= 2.5) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.LAGOON);
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.GRANDPLAZA);
+				}
+			//Lagoon Eingang 3.2
+			d = ploc.distance(new Location(w, -798.5, 20.0, 492.3));
+			if(d <= 2.5) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.LAGOON);
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.GRANDPLAZA);
+				}
+			//Lagoon Grand Plaza 1
+			d = ploc.distance(new Location(w, -851.5, 21.5, 519.5));
+			if(d <= 2.5) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.GRANDPLAZA);
+				}
+			//Lagoon Grand Plaza 2.1
+			d = ploc.distance(new Location(w, -872.5, 20, 523.5));
+			if(d <= 2.5) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.GRANDPLAZA);
+				}
+			//Lagoon Grand Plaza 2.2
+			d = ploc.distance(new Location(w, -876.5, 20, 523.5));
+			if(d <= 2.5) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.GRANDPLAZA);
+				}
+			//Lagoon theater
+			d = ploc.distance(new Location(w, -887.3, 20, 493.5));
+			if(d <= 2) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.LAGOONTHEATER);
+				}
+			//Lagoon secret sight
+			d = ploc.distance(new Location(w, -895.5, 26, 544.3));
+			if(d <= 1) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.LAGOONSECRETSIGHT);
+				}
+		//GREIFENHEIM
+			//Greifenheim Eingang 1
+			d = ploc.distance(new Location(w, -894.5, 20.0, 571.5));
+			if(d <= 2.5) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.GREIFENHEIM);
+				}
+			//Greifenheim Eingang 2.1
+			d = ploc.distance(new Location(w, -928.5, 20.0, 583.5));
+			if(d <= 2.5) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.GREIFENHEIM);
+				}
+			//Greifenheim Eingang 2.2
+			d = ploc.distance(new Location(w, -926.5, 20.0, 580.5));
+			if(d <= 2.5) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.GREIFENHEIM);
+				}
+			//Greifenheim Trainstation
+			d = ploc.distance(new Location(w, -915.5, 23.0, 562.3));
+			if(d <= 2) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.GREIFENHEIMTRAINSTATION);
+				}
 	}
 	
 	String name;
