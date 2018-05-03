@@ -85,11 +85,7 @@ public enum Achievements {
 			if(d <= 1.5) {				
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.MAINSTREETTOILET);
 				}
-			//Haunted Mansion
-			d = ploc.distance(new Location(w, -726, 25.0, 592.5));
-			if(d <= 1.5) {				
-				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.HAUNTEDMANSION);
-				}
+			
 			
 			
 		//CALICO
