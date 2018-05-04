@@ -14,6 +14,8 @@ public enum Achievements {
 	RUNAKM("Run a KM","You ran a Kilometer in one session!",10, false,"???","Dreamland"),
 	GREATVIEWCASTLE("Great view from the castle","You found the button with great view in the castle!",10, false,"???","Dreamland"),
 	//MainStreet
+	MAINSTREETCASTLERESTAURANT("Castle Restaurant","You went to the Castle Restaurant!",10, false,"Go to the Castle Restaurant","MainStreet"),
+	MAINSTREETCASTLETOILET("Castle Toilet","You went to the toilets in the Castle on MainStreet",10,true,"Find the toilets in the Castle","MainStreet"),
 	MAINSTREETPARCOUR("Parcour","You run through the MainStreet Parcour!",10, false,"???","MainStreet"),
 	MAINSTREETWATERPLAY("Main Street Water Show","You discovered the secret Water Show!",15,false,"???","MainStreet"),
 	MAINSTREETCLUB33("Club 33","You discovered Club 33!",10,true,"Find the Club 33","MainStreet"),
@@ -116,6 +118,16 @@ public enum Achievements {
 			d = ploc.distance(new Location(w, -772, 20.5, 620.9));
 			if(d <= 1.5) {				
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.CLUB33TRAINSTATION);
+				}
+			//Information-Center
+			d = ploc.distance(new Location(w, -964.5, 23.0, 622.5));
+			if(d <= 1.5) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.MAINSTREETCASTLERESTAURANT);
+				}
+			//Information-Center
+			d = ploc.distance(new Location(w, -964.5, 22.0, 607.5));
+			if(d <= 1.5) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.MAINSTREETCASTLETOILET);
 				}
 			
 			

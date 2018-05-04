@@ -10,6 +10,7 @@ import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.ItemFrame;
 import org.bukkit.entity.Player;
+import org.bukkit.entity.Villager;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
@@ -81,6 +82,22 @@ public class PlayerListener implements Listener {
 		}
 	}
 	
+	@EventHandler
+	public void onVClick(PlayerInteractEntityEvent e){
+	if(e.getRightClicked() instanceof Villager) {
+		e.setCancelled(true);
+		}
+	}
+		
+	
+	//Entity Schutz
+	@EventHandler
+	public void onEntityDamage(EntityDamageByEntityEvent event) {
+		
+		
+	}
+	
+	//Armorstand Schutz
 	@EventHandler
 	public void onPlayerArmorStandManipulateEvent(PlayerArmorStandManipulateEvent e) {
 		Player p = e.getPlayer();

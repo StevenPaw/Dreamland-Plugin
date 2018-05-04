@@ -28,3 +28,5 @@ commands:
       description: set the achievements
    firework:
       description: shoots a random firework
+   villager:
+      description: create a villager

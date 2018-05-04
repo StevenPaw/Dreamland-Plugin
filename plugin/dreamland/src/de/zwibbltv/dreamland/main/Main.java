@@ -21,6 +21,7 @@ import de.zwibbltv.dreamland.commands.CMDmute;
 import de.zwibbltv.dreamland.commands.CMDrank;
 import de.zwibbltv.dreamland.commands.CMDremovewarp;
 import de.zwibbltv.dreamland.commands.CMDsetwarp;
+import de.zwibbltv.dreamland.commands.CMDvillager;
 import de.zwibbltv.dreamland.commands.CMDwarp;
 import de.zwibbltv.dreamland.listener.JoinListener;
 import de.zwibbltv.dreamland.listener.MenuListener;
@@ -53,7 +54,7 @@ public class Main extends JavaPlugin {
 		
 	@Override
 	public void onEnable() {
-		
+				
 		saveDefaultConfig();
 		Main.file = new File("plugins/Dreamland", "config.yml");
 		Main.cfg = YamlConfiguration.loadConfiguration(Main.file);
@@ -93,6 +94,7 @@ public class Main extends JavaPlugin {
 		getCommand("audio").setExecutor(new CMDaudio());
 		getCommand("ach").setExecutor(new CMDachievements());
 		getCommand("firework").setExecutor(new CMDfirework());
+		getCommand("villager").setExecutor(new CMDvillager());
 		
 		setInstance(this);
 		this.getCommand("setwarp").setExecutor(new CMDsetwarp());
