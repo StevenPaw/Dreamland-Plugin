@@ -106,7 +106,7 @@ public class MenuListener implements Listener {
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Warps")) {
 					openMenuWarps(p); 				
 				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Achievements")) {
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Achievements (" + getAchievementsPercentage(p) + "%)")) {
 					openMenuAchievements(p);
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§cBack")) {
@@ -232,7 +232,7 @@ public class MenuListener implements Listener {
 				}
 		
 		//Open Menu
-		//Open Main Menu
+		//Open Main Menu				
 		public static void openMenuMain(Player p)
 		{
 			Inventory inv = Bukkit.createInventory(null, 9 * 1, "§cMenu");
@@ -244,7 +244,7 @@ public class MenuListener implements Listener {
 
 			ItemStack aach = new ItemStack(Material.BOOKSHELF);
 			ItemMeta aachmeta = aach.getItemMeta();
-			aachmeta.setDisplayName("§6Achievements");
+			aachmeta.setDisplayName("§6Achievements (" + getAchievementsPercentage(p) + "%)");
 			aach.setItemMeta(aachmeta);
 			
 			ItemStack audio = new ItemStack(Material.PRISMARINE_SHARD);
@@ -525,7 +525,7 @@ public class MenuListener implements Listener {
 		}
 		
 		//Prozentsatz der Achievements errechnen:
-		public Integer getAchievementsPercentage(Player p) {
+		public static Integer getAchievementsPercentage(Player p) {
 			
 			int NumberOfAch = 0;
 			int NumberCompleted = 0;
@@ -543,7 +543,7 @@ public class MenuListener implements Listener {
 		}
 		
 		//Prozentsatz einer Kategorie errechnen:
-		public Integer getCategoryPercentage(Player p, String cat) {
+		public static Integer getCategoryPercentage(Player p, String cat) {
 			
 			int NumberOfAch = 0;
 			int NumberCompleted = 0;

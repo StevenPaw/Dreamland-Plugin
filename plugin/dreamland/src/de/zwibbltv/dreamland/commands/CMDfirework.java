@@ -53,7 +53,7 @@ public class CMDfirework implements CommandExecutor{
 						}
 						else
 							p.sendMessage("Please use numbers between 1 and 100");
-					}
+					} else
 					p.sendMessage(args[0] + " is not online or no User");
 				}else if(args.length == 1) {
 					Player target = Bukkit.getPlayer(args[0]);					
