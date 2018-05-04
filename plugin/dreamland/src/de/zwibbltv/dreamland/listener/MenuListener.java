@@ -24,8 +24,8 @@ import de.zwibbltv.dreamland.utils.Achievements;
 import de.zwibbltv.dreamland.utils.PlayerConfig;
 
 public class MenuListener implements Listener {
+
 	
-	Inventory inv_ach = Bukkit.createInventory(null, 9 * 2, "§0Achievements");
 	List<String> catList = new ArrayList<String>();
 	String curInv = "off";
 	
@@ -113,7 +113,9 @@ public class MenuListener implements Listener {
 					if(curInv == "AchievementsCat")
 					{
 						openMenuAchievements(p);
-					} else 
+					} else if(curInv == "Warps") {
+						openMenuWarps(p);
+					} else
 						openMenuMain(p);
 				}
 				
@@ -374,13 +376,14 @@ public class MenuListener implements Listener {
 			p.openInventory(inv);
 		}
 		
+		//Opening Achievementcateg:
 		public void openMenuAchievements(Player p) {
-			
 			
 			//CREATING COLORVARIABLE AND CLEARING CATLIST
 			Integer Pos = 0;
 			catList.clear();
-			
+			String inv_ach_percent = getAchievementsPercentage(p).toString();
+			Inventory inv_ach = Bukkit.createInventory(null, 9 * 2, "§0Achievements (" + inv_ach_percent + "%)");
 			
 			//CHECKING EACH ACHIEVEMENT FOR NEW CATEGORIES
 			for(Achievements ach : Achievements.values()) {
@@ -440,6 +443,7 @@ public class MenuListener implements Listener {
 			back.setItemMeta(backmeta);
 			inv_ach.setItem(9 * 2 - 1, back);
 			
+			inv_ach_percent = getAchievementsPercentage(p).toString();
 			p.openInventory(inv_ach);
 			curInv = "Achievements";
 		}
@@ -509,6 +513,24 @@ public class MenuListener implements Listener {
 			}
 			p.openInventory(inv);
 			curInv = "AchievementsCat";
+		}
+		
+		//Prozentsatz der Achievements errechnen:
+		public Integer getAchievementsPercentage(Player p) {
+			
+			int NumberOfAch = 0;
+			int NumberCompleted = 0;
+			
+			for(Achievements ach : Achievements.values()) {
+				NumberOfAch += 1;
+				if(PlayerConfig.hasAchivement(p, ach))
+				{
+					NumberCompleted += 1;
+				}
+			}
+			int percent = (int)((NumberCompleted * 100.0f) / NumberOfAch);
+			
+			return percent;
 		}
 		
 		//Prozentsatz einer Kategorie errechnen:

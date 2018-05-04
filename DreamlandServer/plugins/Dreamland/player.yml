@@ -23,7 +23,9 @@ StevenPaw:
     Chinatown Trainstation: true
     ChineseLabyrinth: true
     Calicosafe: true
-  runtime: 49
+    Run a KM: true
+    Great view from the castle: true
+  runtime: 40
   resourcepack: false
 Segel_Basti:
   builder: true

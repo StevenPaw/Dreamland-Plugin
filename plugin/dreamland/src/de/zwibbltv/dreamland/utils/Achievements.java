@@ -12,7 +12,7 @@ public enum Achievements {
 	FIRSTCHAT("FirstChat","You chatted the first time!",10, true,"chat the first time","Dreamland"),
 	FIRSTMOVE("FirstMove","You moved for the first time!",10, true,"move!","Dreamland"),
 	RUNAKM("Run a KM","You ran a Kilometer in one session!",10, false,"???","Dreamland"),
-	GREATVIEWCASTLE("Great view from the castle","You found the great view in the castle (and the button as well..)!",10, false,"???","Dreamland"),
+	GREATVIEWCASTLE("Great view from the castle","You found the button with great view in the castle!",10, false,"???","Dreamland"),
 	//MainStreet
 	MAINSTREETPARCOUR("Parcour","You run through the MainStreet Parcour!",10, false,"???","MainStreet"),
 	MAINSTREETWATERPLAY("Main Street Water Show","You discovered the secret Water Show!",15,false,"???","MainStreet"),
