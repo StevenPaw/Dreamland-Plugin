@@ -272,9 +272,15 @@ public class MenuListener implements Listener {
 			ItemMeta areasmeta = areas.getItemMeta();
 			areasmeta.setDisplayName("§aAreas");
 			areas.setItemMeta(areasmeta);
+			
+			ItemStack back = new ItemStack(Material.CLAY_BRICK);
+			ItemMeta backmeta = back.getItemMeta();
+			backmeta.setDisplayName("§cBack");
+			back.setItemMeta(backmeta);
 
 			inv.setItem(3, attraktions);
 			inv.setItem(5, areas);
+			inv.setItem(9, back);
 
 			p.openInventory(inv);
 			curInv = "Warps";
