@@ -113,13 +113,13 @@ public class MenuListener implements Listener {
 					if(curInv == "AchievementsCat")
 					{
 						openMenuAchievements(p);
-					} else if(curInv == "Warps") {
+					} else if(curInv == "WarpsAreas" || curInv == "WarpsAttractions") {
 						openMenuWarps(p);
 					} else
 						openMenuMain(p);
 				}
 				
-				if(curInv == "Warps") {
+				if(curInv == "WarpsAreas" || curInv == "WarpsAttractions") {
 						
 					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aFlying Pegasus")) {
 						p.performCommand("warp flying_pegasus");
@@ -261,13 +261,14 @@ public class MenuListener implements Listener {
 		
 		//Open Warps Menu
 		public void openMenuWarps(Player p) {
+			
 			Inventory inv = Bukkit.createInventory(null, 9 * 1, "§0Warps");
-
+			
 			ItemStack attraktions = new ItemStack(Material.MINECART);
 			ItemMeta attraktionsmeta = attraktions.getItemMeta();
 			attraktionsmeta.setDisplayName("§aAttraktions");
 			attraktions.setItemMeta(attraktionsmeta);
-
+			
 			ItemStack areas = new ItemStack(Material.COMPASS);
 			ItemMeta areasmeta = areas.getItemMeta();
 			areasmeta.setDisplayName("§aAreas");
@@ -277,13 +278,13 @@ public class MenuListener implements Listener {
 			ItemMeta backmeta = back.getItemMeta();
 			backmeta.setDisplayName("§cBack");
 			back.setItemMeta(backmeta);
-
+			
 			inv.setItem(3, attraktions);
 			inv.setItem(5, areas);
-			inv.setItem(9, back);
-
-			p.openInventory(inv);
+			inv.setItem(8, back);
+			
 			curInv = "Warps";
+			p.openInventory(inv);
 		}
 		
 		//Open Attractions Menu
@@ -329,6 +330,7 @@ public class MenuListener implements Listener {
 			inv.setItem(8, haunted_mansion);
 			inv.setItem(17, back);
 
+			curInv = "WarpsAttractions";
 			p.openInventory(inv);
 		}
 
@@ -379,6 +381,7 @@ public class MenuListener implements Listener {
 			inv.setItem(6, info);
 			inv.setItem(8, back);
 
+			curInv = "WarpsAreas";
 			p.openInventory(inv);
 		}
 		
