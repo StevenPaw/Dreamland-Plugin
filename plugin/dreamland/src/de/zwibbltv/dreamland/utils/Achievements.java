@@ -21,11 +21,13 @@ public enum Achievements {
 	MAINSTREETCHURCH("Going to church","You found the church!",10,true,"Find the church on MainStreet","MainStreet"),
 	MAINSTREETFOUNTAIN("MainStreets Fountain","You activated the fountain on MainStreet!",10,true,"Activate the fountain on MainStreet","MainStreet"),
 	MAINSTREETTRAINSTATION("MainStreet Trainstation","You found the Trainstation on Main Street!",10,true,"Find the Trainstation on MainStreet","MainStreet"),
+	CLUB33TRAINSTATION("Club33 Trainstation","You found the Trainstation near the Club33!",10,true,"Find the Trainstation near the Club33","MainStreet"),
 	MAINSTREETINFORMATION("Information-Center","You found the Information-Center",10,true,"Find the Information-Center","MainStreet"),
 	MAINSTREETTOILET("Mainstreet Toilet","You went to the toilets in the information-center on MainStreet",10,true,"Find the toilets in the information-center","MainStreet"),
 	MAINSTREETSHOW("Mainstreet Show","You visited the show on Mainstreet",10,true,"Visit the show on MainStreet!","MainStreet"),
 	HAUNTEDMANSION("Haunted Mansion","You went to the Haunted Mansion",10,true,"Go in the Haunted Mansion","MainStreet"),
 	HAUNTEDMANSIONFOUNTAIN("Haunted Fountain","You found the haunted fountain in front of the Haunted Mansion!",10,false,"???","MainStreet"),
+	HAUNTEDMANSIONSECRETPAINTING("Haunted Mansion secret painting","You went to the Haunted Mansion secret Painting",10,false,"???","MainStreet"),
 	//Castle
 	CASTLEFOUNTAIN("Castlefountain","You activated the fountain of the castle",10,true,"Activate the fountain of the castle","Castle"),
 	CASTLE("The Castle","You went to Castle",10,true,"Go to the castle","Castle"),
@@ -109,6 +111,11 @@ public enum Achievements {
 			d = ploc.distance(new Location(w, -685.5, 21.0, 666.7));
 			if(d <= 1.5) {				
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.MAINSTREETTOILET);
+				}
+			//Club33 Trainstation
+			d = ploc.distance(new Location(w, -772, 20.5, 620.9));
+			if(d <= 1.5) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.CLUB33TRAINSTATION);
 				}
 			
 			
