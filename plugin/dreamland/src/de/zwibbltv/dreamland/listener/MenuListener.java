@@ -378,8 +378,9 @@ public class MenuListener implements Listener {
 			
 			
 			//CREATING COLORVARIABLE AND CLEARING CATLIST
-			Integer Color = 0;
+			Integer Pos = 0;
 			catList.clear();
+			
 			
 			//CHECKING EACH ACHIEVEMENT FOR NEW CATEGORIES
 			for(Achievements ach : Achievements.values()) {
@@ -391,14 +392,44 @@ public class MenuListener implements Listener {
 						isnew = false;
 					}
 				}
+				
 				if(isnew == true) {
+					int Color = 0;
+					
+					if(getCategoryPercentage(p, ach.getCategory()) == 0)
+						Color = 6;
+					else if (getCategoryPercentage(p, ach.getCategory()) == 100)
+						Color = 5;
+					else
+						Color = 4;
+					
+					
 					ItemStack achItem = new ItemStack(Material.STAINED_CLAY, 1, (short) (double)Color);
 					ItemMeta achMeta = achItem.getItemMeta();
+					
+					if(getCategoryPercentage(p, ach.getCategory()) == 0) {
+						Color = 6;
+						List<String> lore = new ArrayList<String>();
+						lore.add("§4" + getCategoryPercentage(p,ach.getCategory()) + "% completed");
+						achMeta.setLore(lore);
+					}
+					else if (getCategoryPercentage(p, ach.getCategory()) == 100) {
+						Color = 5;
+						List<String> lore = new ArrayList<String>();
+						lore.add("§a" + getCategoryPercentage(p,ach.getCategory()) + "% completed");
+						achMeta.setLore(lore);
+					} else {
+						Color = 4;
+						List<String> lore = new ArrayList<String>();
+						lore.add("§e" + getCategoryPercentage(p,ach.getCategory()) + "% completed");
+						achMeta.setLore(lore);
+					}
+					
 					achMeta.setDisplayName(ach.getCategory());
 					achItem.setItemMeta(achMeta);
-					inv_ach.setItem(Color, achItem);
+					inv_ach.setItem(Pos, achItem);
 					catList.add(ach.getCategory());
-					Color = Color + 1;
+					Pos = Pos + 1;
 				} else {
 				}
 			}
@@ -413,6 +444,7 @@ public class MenuListener implements Listener {
 			curInv = "Achievements";
 		}
 		
+		//Achievementcategory öffnen:
 		public void openAchCategory(Player p, String cat) {
 			
 			//DECIDING THE INVENTORY SIZE
@@ -477,6 +509,26 @@ public class MenuListener implements Listener {
 			}
 			p.openInventory(inv);
 			curInv = "AchievementsCat";
+		}
+		
+		//Prozentsatz einer Kategorie errechnen:
+		public Integer getCategoryPercentage(Player p, String cat) {
+			
+			int NumberOfAch = 0;
+			int NumberCompleted = 0;
+			
+			for(Achievements ach : Achievements.values()) {
+				if(ach.getCategory() == cat) {
+					NumberOfAch += 1;
+					if(PlayerConfig.hasAchivement(p, ach))
+					{
+						NumberCompleted += 1;
+					}
+				}
+			}
+			int percent = (int)((NumberCompleted * 100.0f) / NumberOfAch);
+			
+			return percent;
 		}
 		
 }

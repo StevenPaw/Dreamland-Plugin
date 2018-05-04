@@ -13,8 +13,18 @@ StevenPaw:
     FirstMove: true
     FirstJoin: true
     FirstChat: true
-  runtime: 128
-  resourcepack: true
+    Castlefountain: true
+    The Castle: true
+    Blue room: true
+    Loveroom: true
+    Castlefall: true
+    Castleparcour: true
+    Chinatown: true
+    Chinatown Trainstation: true
+    ChineseLabyrinth: true
+    Calicosafe: true
+  runtime: 49
+  resourcepack: false
 Segel_Basti:
   builder: true
   muted: false

@@ -1,160 +1,41 @@
-[2018-05-03 00:21:22 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:21:28 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:21:30 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:21:30 INFO] Initializing for the first time.
-[2018-05-03 00:21:30 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 00:22:42 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:22:43 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:22:45 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:22:45 INFO] Initializing for the first time.
-[2018-05-03 00:22:45 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 00:26:45 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:26:47 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:26:49 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:26:49 INFO] Initializing for the first time.
-[2018-05-03 00:26:49 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 00:32:23 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:32:29 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:32:31 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:32:31 INFO] Initializing for the first time.
-[2018-05-03 00:32:31 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 00:37:17 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:37:24 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:37:27 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:37:27 INFO] Initializing for the first time.
-[2018-05-03 00:37:27 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 00:40:05 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:40:05 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:40:07 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:40:07 INFO] Initializing for the first time.
-[2018-05-03 00:40:07 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 00:40:47 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:40:51 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:40:53 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:40:53 INFO] Initializing for the first time.
-[2018-05-03 00:40:53 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 00:46:38 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:46:38 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:46:41 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:46:41 INFO] Initializing for the first time.
-[2018-05-03 00:46:41 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 00:47:23 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:47:25 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:47:27 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:47:27 INFO] Initializing for the first time.
-[2018-05-03 00:47:27 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 00:49:22 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:49:23 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:49:26 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:49:26 INFO] Initializing for the first time.
-[2018-05-03 00:49:26 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 00:51:39 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:51:40 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:51:43 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:51:43 INFO] Initializing for the first time.
-[2018-05-03 00:51:43 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 00:53:14 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:53:14 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:53:17 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:53:17 INFO] Initializing for the first time.
-[2018-05-03 00:53:17 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 00:54:29 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:54:32 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:54:35 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 00:54:35 INFO] Initializing for the first time.
-[2018-05-03 00:54:35 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 01:04:47 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:04:47 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:04:50 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:04:50 INFO] Initializing for the first time.
-[2018-05-03 01:04:50 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 01:05:36 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:05:40 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:05:42 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:05:42 INFO] Initializing for the first time.
-[2018-05-03 01:05:42 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 01:32:55 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:32:56 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:32:59 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:32:59 INFO] Initializing for the first time.
-[2018-05-03 01:32:59 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 01:34:48 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:34:49 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:34:51 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:34:51 INFO] Initializing for the first time.
-[2018-05-03 01:34:51 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 01:37:06 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:37:07 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:37:10 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:37:10 INFO] Initializing for the first time.
-[2018-05-03 01:37:10 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 01:38:18 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:38:19 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:38:21 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:38:21 INFO] Initializing for the first time.
-[2018-05-03 01:38:21 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 01:42:34 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:42:35 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:42:38 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:42:38 INFO] Initializing for the first time.
-[2018-05-03 01:42:38 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 01:47:16 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:47:16 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:47:18 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:47:18 INFO] Initializing for the first time.
-[2018-05-03 01:47:18 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 01:48:40 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:48:41 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:48:44 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:48:44 INFO] Initializing for the first time.
-[2018-05-03 01:48:44 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 01:57:19 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:57:20 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:57:23 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:57:23 INFO] Initializing for the first time.
-[2018-05-03 01:57:23 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 01:59:21 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:59:22 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:59:25 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 01:59:25 INFO] Initializing for the first time.
-[2018-05-03 01:59:25 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 02:01:12 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:01:16 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:01:18 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:01:18 INFO] Initializing for the first time.
-[2018-05-03 02:01:18 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 02:02:47 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:02:51 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:02:53 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:02:53 INFO] Initializing for the first time.
-[2018-05-03 02:02:53 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 02:06:30 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:06:34 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:06:37 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:06:37 INFO] Initializing for the first time.
-[2018-05-03 02:06:37 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 02:07:39 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:07:43 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:07:46 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:07:46 INFO] Initializing for the first time.
-[2018-05-03 02:07:46 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 02:08:59 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:09:02 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:09:05 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:09:05 INFO] Initializing for the first time.
-[2018-05-03 02:09:05 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 02:10:05 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:10:09 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:10:12 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:10:12 INFO] Initializing for the first time.
-[2018-05-03 02:10:12 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 02:12:58 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:13:02 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:13:05 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:13:05 INFO] Initializing for the first time.
-[2018-05-03 02:13:05 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[2018-05-03 02:15:34 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:15:38 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:15:42 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[2018-05-03 02:15:42 INFO] Initializing for the first time.
-[2018-05-03 02:15:42 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
+[2018-05-04 10:00:21 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:00:22 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:00:23 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:00:23 INFO] Initializing for the first time.
+[2018-05-04 10:00:23 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
+[2018-05-04 10:03:43 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:03:44 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:03:46 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:03:46 INFO] Initializing for the first time.
+[2018-05-04 10:03:46 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
+[2018-05-04 10:07:04 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:07:06 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:07:07 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:07:07 INFO] Initializing for the first time.
+[2018-05-04 10:07:07 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
+[2018-05-04 10:10:09 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:10:11 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:10:13 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:10:13 INFO] Initializing for the first time.
+[2018-05-04 10:10:13 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
+[2018-05-04 10:14:18 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:14:19 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:14:22 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:14:22 INFO] Initializing for the first time.
+[2018-05-04 10:14:22 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
+[2018-05-04 10:18:14 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:18:15 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:18:16 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:18:16 INFO] Initializing for the first time.
+[2018-05-04 10:18:16 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
+[2018-05-04 10:20:37 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:20:38 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:20:41 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:20:41 INFO] Initializing for the first time.
+[2018-05-04 10:20:41 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
+[2018-05-04 10:20:57 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:21:01 INFO] [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:21:03 INFO] [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
+[2018-05-04 10:21:03 INFO] Initializing for the first time.
+[2018-05-04 10:21:03 INFO] Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
+[2018-05-04 10:21:34 INFO] [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
