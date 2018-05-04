@@ -54,18 +54,13 @@ public class CMDfirework implements CommandExecutor{
 						else
 							p.sendMessage("Please use numbers between 1 and 100");
 					}
-				}
-				if(args.length == 1) {
+					p.sendMessage(args[0] + " is not online or no User");
+				}else if(args.length == 1) {
 					Player target = Bukkit.getPlayer(args[0]);					
 					if (target != null) {
-						//Spawn the Firework, get the FireworkMeta.
 			            Firework fw = (Firework) target.getWorld().spawnEntity(target.getLocation(), EntityType.FIREWORK);
 			            FireworkMeta fwm = fw.getFireworkMeta();
-			           
-			            //Our random generator
-			            Random r = new Random();   
-			 
-			            //Get the type
+			            Random r = new Random();
 			            int rt = r.nextInt(4) + 1;
 			            Type type = Type.BALL;       
 			            if (rt == 1) type = Type.BALL;
@@ -73,25 +68,16 @@ public class CMDfirework implements CommandExecutor{
 			            if (rt == 3) type = Type.BURST;
 			            if (rt == 4) type = Type.CREEPER;
 			            if (rt == 5) type = Type.STAR;
-			           
-			            //Get our random colours   
 			            int r1i = r.nextInt(17) + 1;
 			            int r2i = r.nextInt(17) + 1;
 			            Color c1 = getColor(r1i);
 			            Color c2 = getColor(r2i);
-			           
-			            //Create our effect with this
 			            FireworkEffect effect = FireworkEffect.builder().flicker(r.nextBoolean()).withColor(c1).withFade(c2).with(type).trail(r.nextBoolean()).build();
-			           
-			            //Then apply the effect to the meta
 			            fwm.addEffect(effect);
 			            fwm.setPower(0);
-			           
-			            //Then apply this to our rocket
 			            fw.setFireworkMeta(fwm);
 					}
 				} else if(args.length == 0) {
-						//Spawn the Firework, get the FireworkMeta.
 			            Firework fw = (Firework) p.getWorld().spawnEntity(p.getLocation(), EntityType.FIREWORK);
 			            FireworkMeta fwm = fw.getFireworkMeta();
 			            Random r = new Random();  //Random Generator

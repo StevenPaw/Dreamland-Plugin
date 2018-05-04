@@ -1,0 +1,88 @@
+western_race:
+  ==: org.bukkit.Location
+  world: dreamland
+  x: -841.453684014504
+  y: 20.0
+  z: 716.6531760370743
+  pitch: -3.2989912
+  yaw: 268.85205
+flying_pegasus:
+  ==: org.bukkit.Location
+  world: dreamland
+  x: -941.3139222544127
+  y: 20.0
+  z: 563.7416208354821
+  pitch: 7.3312106
+  yaw: 136.31079
+greifenheim:
+  ==: org.bukkit.Location
+  world: dreamland
+  x: -925.0486382471069
+  y: 20.0
+  z: 585.0477832679409
+  pitch: -1.6688489
+  yaw: 140.35327
+lagoon:
+  ==: org.bukkit.Location
+  world: dreamland
+  x: -875.6277491419957
+  y: 20.0
+  z: 572.2737628581356
+  pitch: -2.8688297
+  yaw: 197.06104
+calico:
+  ==: org.bukkit.Location
+  world: dreamland
+  x: -882.9437435133983
+  y: 20.0
+  z: 684.6463787325813
+  pitch: -11.118793
+  yaw: 0.5793457
+tower_of_izran:
+  ==: org.bukkit.Location
+  world: dreamland
+  x: -830.5521168397023
+  y: 20.5
+  z: 468.8874523381167
+  pitch: 4.048803
+  yaw: 194.23975
+explorers_cave:
+  ==: org.bukkit.Location
+  world: dreamland
+  x: -961.1977956084202
+  y: 24.0
+  z: 534.6094268765509
+  pitch: -7.7072926
+  yaw: 114.56641
+spawn:
+  ==: org.bukkit.Location
+  world: dreamland
+  x: -964.634897254681
+  y: 23.0
+  z: 634.4232945917039
+  pitch: -1.8729029
+  yaw: 270.22583
+chinatown:
+  ==: org.bukkit.Location
+  world: dreamland
+  x: -919.3937051656522
+  y: 20.0
+  z: 677.4955456867382
+  pitch: 0.108156234
+  yaw: 46.26123
+haunted_mansion:
+  ==: org.bukkit.Location
+  world: dreamland
+  x: -735.5430548819412
+  y: 21.0
+  z: 625.3435858243647
+  pitch: -0.7919162
+  yaw: -180.83774
+information-center:
+  ==: org.bukkit.Location
+  world: dreamland
+  x: -696.9739044330006
+  y: 21.0
+  z: 645.96907366671
+  pitch: 6.172891
+  yaw: 0.93237305

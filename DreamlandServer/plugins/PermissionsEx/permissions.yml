@@ -29,6 +29,9 @@ groups:
     permissions:
     - dreamland.build.*
     - dreamland.join
+    - dreamland.gamemode.*
+    - dreamland.Itemframes.*
+    - dreamland.Staff
     - minecraft.command.xp
     - bukkit.command.help
     - bukkit.command.plugins
@@ -39,7 +42,6 @@ groups:
     - minecraft.command.setblock
     - minecraft.command.playsound
     - minecraft.command.give
-    - dreamland.gamemode.*
     - minecraft.command.effect
     - minecraft.command.enchant
     - minecraft.command.clear

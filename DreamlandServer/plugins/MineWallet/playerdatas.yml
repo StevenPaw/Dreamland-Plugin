@@ -1,18 +1,18 @@
 players:
   StevenPaw:
-    money: 820.9499999995621
+    money: 1395.0799999992037
     paytime: 1975
   ZwibblTV:
-    money: 3230.6700000242818
+    money: 4503.520000037332
     paytime: 292
   Segel_Basti:
-    money: 286.63999999989323
+    money: 540.3199999997535
     paytime: 18
   ZwibblHelper:
     money: 475.1799999997975
     paytime: 581
   StevenDragon:
-    money: 163.4599999999923
+    money: 253.3799999999469
     paytime: 1342
   ColeCrowe:
     money: 100.0
@@ -21,5 +21,5 @@ players:
     money: 200.0
     paytime: 232
   supyTV:
-    money: 105.0
+    money: 387.76999999996576
     paytime: 2733
