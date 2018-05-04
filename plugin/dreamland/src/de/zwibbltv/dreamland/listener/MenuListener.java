@@ -463,14 +463,14 @@ public class MenuListener implements Listener {
 			//DECIDING THE INVENTORY SIZE
 			//----from here---
 			int invSize = 1;
-			int AchNumber = 2;
+			int AchNumber = 0;
 			for(Achievements achn : Achievements.values()) {
 				if(achn.getCategory() == cat) //Counting the Achievements in that Category
 					AchNumber += 1;
 			}
 			boolean passt = false;
 			while(passt == false) {
-				if(9*invSize > AchNumber + 1) {
+				if(9*invSize > AchNumber) {
 					passt = true;
 				} else {
 					invSize += 1;
@@ -478,7 +478,7 @@ public class MenuListener implements Listener {
 			}
 			//---to here---
 			
-			Inventory inv = Bukkit.createInventory(null, 9 * invSize, "§0Achievements: " + cat);
+			Inventory inv = Bukkit.createInventory(null, 9 * invSize, "§0Achievements: " + cat + " (" + getCategoryPercentage(p, cat) + "%)");
 			
 			int i = 0; //to decide place in Inventory
 			for(Achievements ach : Achievements.values()) {

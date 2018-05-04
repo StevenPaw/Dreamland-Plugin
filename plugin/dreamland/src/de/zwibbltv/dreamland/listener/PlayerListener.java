@@ -68,6 +68,7 @@ public class PlayerListener implements Listener {
 			forbidden.add(Material.FURNACE);
 			forbidden.add(Material.IRON_DOOR);
 			forbidden.add(Material.HOPPER);
+			
 			for (Material f: forbidden)
 			{
 				if(block.getType() == f) {

@@ -13,6 +13,7 @@ public enum Achievements {
 	FIRSTMOVE("FirstMove","You moved for the first time!",10, true,"move!","Dreamland"),
 	RUNAKM("Run a KM","You ran a Kilometer in one session!",10, false,"???","Dreamland"),
 	GREATVIEWCASTLE("Great view from the castle","You found the button with great view in the castle!",10, false,"???","Dreamland"),
+	SECRETTUNNEL("Secret tunnel","You found the secret tunnel!",10, false,"???","Dreamland"),
 	//MainStreet
 	MAINSTREETCASTLERESTAURANT("Castle Restaurant","You went to the Castle Restaurant!",10, false,"Go to the Castle Restaurant","MainStreet"),
 	MAINSTREETCASTLETOILET("Castle Toilet","You went to the toilets in the Castle on MainStreet",10,true,"Find the toilets in the Castle","MainStreet"),
@@ -28,8 +29,9 @@ public enum Achievements {
 	MAINSTREETTOILET("Mainstreet Toilet","You went to the toilets in the information-center on MainStreet",10,true,"Find the toilets in the information-center","MainStreet"),
 	MAINSTREETSHOW("Mainstreet Show","You visited the show on Mainstreet",10,true,"Visit the show on MainStreet!","MainStreet"),
 	HAUNTEDMANSION("Haunted Mansion","You went to the Haunted Mansion",10,true,"Go in the Haunted Mansion","MainStreet"),
-	HAUNTEDMANSIONFOUNTAIN("Haunted Fountain","You found the haunted fountain in front of the Haunted Mansion!",10,false,"???","MainStreet"),
+	HAUNTEDMANSIONFOUNTAIN("Haunted Fountain","You found the haunted fountain!",10,false,"???","MainStreet"),
 	HAUNTEDMANSIONSECRETPAINTING("Haunted Mansion secret painting","You went to the Haunted Mansion secret Painting",10,false,"???","MainStreet"),
+	LIBRARY("Dreamland Library","You went to the Library!",10,true,"find the library on Main Street","MainStreet"),
 	//Castle
 	CASTLEFOUNTAIN("Castlefountain","You activated the fountain of the castle",10,true,"Activate the fountain of the castle","Castle"),
 	CASTLE("The Castle","You went to Castle",10,true,"Go to the castle","Castle"),
@@ -62,7 +64,9 @@ public enum Achievements {
 	GREIFENHEIMTRAINSTATION("Greifenheim Trainstation","You found the Trainstation in Greifenheim!",10,true,"Find the Trainstation in Greifenheim","Greifenheim"),
 	FLYINGPEGASUS("Flying Pegasus", "You rided Flying Pegasus",10,true,"Ride Flying Pegasus", "Greifenheim"),
 	EXPLORERSCAVE("Explorers Cave", "You went through the Explorers Cave",10,true,"Went through the Explorers Cave", "Greifenheim"),
-	HIDDENHIDEOUT("Hidden Hideout", "You found the Hidden Hideout",10,false,"???", "Greifenheim");
+	HIDDENHIDEOUT("Hidden Hideout", "You found the Hidden Hideout",10,false,"???","Greifenheim"),
+	HEIDISDOOR("Heidis Door", "You looked at Heidis Door",10,false,"???","Greifenheim"),
+	GREIFENHEIMDINER("Greifenheim Diner","You visited the Greifenheim Diner",10,true,"Visit the Greifenheim Diner","Greifenheim");
 	
 	
 	public static void locations(Player p) {	
@@ -83,6 +87,15 @@ public enum Achievements {
 			d = ploc.distance(new Location(w, -785.5, 22.0, 620));
 			if(d <= 1.5) {				
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.MAINSTREETCLUB33);
+				}
+			//Secret Tunnel
+			d = ploc.distance(new Location(w, -947, 10, 605));
+			if(d <= 1.5) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.SECRETTUNNEL);
+				}
+			d = ploc.distance(new Location(w, -653, 10, 605));
+			if(d <= 1.5) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.SECRETTUNNEL);
 				}
 			//Doctor
 			d = ploc.distance(new Location(w, -714.5, 21.0, 647));
@@ -268,6 +281,16 @@ public enum Achievements {
 			d = ploc.distance(new Location(w, -915.5, 23.0, 562.3));
 			if(d <= 2) {
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.GREIFENHEIMTRAINSTATION);
+				}
+			//Greifenheim Diner
+			d = ploc.distance(new Location(w, -927, 21, 572));
+			if(d <= 3) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.GREIFENHEIMDINER);
+				}
+			//Knocking on Heidis Door
+			d = ploc.distance(new Location(p.getWorld(), -951, 24, 530));
+			if(d <= 2) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.HEIDISDOOR);
 				}
 	}
 	
