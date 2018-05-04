@@ -3,6 +3,8 @@ package de.zwibbltv.dreamland.utils;
 import java.io.File;
 import java.io.IOException;
 
+import org.bukkit.Effect;
+import org.bukkit.Location;
 import org.bukkit.Sound;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -77,12 +79,27 @@ public class PlayerConfig {
 			p.sendMessage("");
 			Main.economy.depositPlayer(p.getName(), achievement.getMoney());
 			p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
+			
+			 Location location = p.getLocation();
+			 for (double i = 0; i <= Math.PI; i += Math.PI / 10) {
+				   double radius = Math.sin(i);
+				   double y = Math.cos(i);
+				   for (double a = 0; a < Math.PI * 2; a+= Math.PI / 10) {
+				      double x = Math.cos(a) * radius;
+				      double z = Math.sin(a) * radius;
+				      location.add(x, y +1, z);
+		            location.getWorld().playEffect(location, Effect.HAPPY_VILLAGER, 1);
+		            location.subtract(x,y +1,z);
+		        }	
+			 }
+					
 			try {
 				save();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		}
+		
 	}
 	
 	public static void takeAchievement(Player p, Achievements achievement) {
