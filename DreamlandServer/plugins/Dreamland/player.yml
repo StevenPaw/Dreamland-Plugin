@@ -2,38 +2,125 @@ ZwibblTV:
   builder: true
   achivements:
     FirstMove: true
-    FirstJoin: true
     FirstChat: true
-  runtime: 2046
+    Calico: true
+    Run a KM: true
+    MainStreetParcour: true
+    Calicorestaurant: true
+    Calicotoilet: true
+    Calicobank: true
+    Calicosafe: true
+    Parcour: true
+    Going to church: true
+    MainStreet Trainstation: true
+    Main Street Doctor: true
+    Information-Center: true
+    Mainstreet Toilet: true
+    Club 33: true
+    FirstJoin: true
+    Calicos Fountain: true
+    MainStreets Fountain: true
+    Main Street Water Show: true
+    Haunted Fountain: true
+    ChineseLabyrinth: true
+    Mainstreet Show: true
+    Haunted Mansion: true
+    Calico Trainstation: true
+    Chinatown Trainstation: true
+    Chinatown: true
+    Flying Pegasus: true
+    Hidden Hideout: true
+    Explorers Cave: true
+    Secret Lagoon sight: true
+    Lagoon: true
+    Greifenheim Trainstation: true
+    Greifenheim: true
+    Lagoons Fountain: true
+    Chiapas: true
+    Grand Plaza: true
+    Lagoon theater: true
+    Tower of Izran: true
+    Great view from the castle: true
+    The Castle: true
+    Castlefountain: true
+    Blue room: true
+    Castlefall: true
+    Castleparcour: true
+    Loveroom: true
+    Club33 Trainstation: true
+    Haunted Mansion secret painting: true
+  runtime: 26852
   resourcepack: false
 ZwibblHelper:
   builder: true
 StevenPaw:
-  builder: false
+  builder: true
   muted: false
   achivements:
     FirstMove: true
-    FirstJoin: true
     FirstChat: true
+    Run a KM: true
+    Calico: true
+    MainStreetParcour: true
+    FirstJoin: true
+    Calicobank: true
+    Calicosafe: true
+    Calicorestaurant: true
+    Calicotoilet: true
+    Haunted Fountain: true
+    Haunted Mansion: true
+    Main Street Doctor: true
+    Castleparcour: true
+    Castlefall: true
     Castlefountain: true
+    Loveroom: true
     The Castle: true
     Blue room: true
-    Loveroom: true
-    Castlefall: true
-    Castleparcour: true
-    Chinatown: true
-    Chinatown Trainstation: true
-    ChineseLabyrinth: true
-    Calicosafe: true
-    Run a KM: true
     Great view from the castle: true
-  runtime: 2271
+    Lagoon theater: true
+    Lagoon: true
+    Grand Plaza: true
+    Lagoons Fountain: true
+    MainStreet Trainstation: true
+    Parcour: true
+    Going to church: true
+    Club 33: true
+    Club33 Trainstation: true
+  runtime: 2712
   resourcepack: false
 Segel_Basti:
   builder: true
   muted: false
-StevenDragon:
-  runtime: 170
   achivements:
     FirstMove: true
-  resourcepack: true
+    FirstChat: true
+    Run a KM: true
+    Calico: true
+    MainStreetParcour: true
+  runtime: 25258
+  resourcepack: false
+supyTV:
+  runtime: 40792
+  achivements:
+    FirstJoin: true
+    FirstChat: true
+    FirstMove: true
+    Run a KM: true
+    MainStreetParcour: true
+    Calico: true
+    Calicobank: true
+    Calicosafe: true
+    Calicorestaurant: true
+    Calicotoilet: true
+  resourcepack: false
+  builder: false
+StevenDragon:
+  runtime: 1628
+  achivements:
+    FirstMove: true
+    FirstChat: true
+    Greifenheim: true
+    Lagoon: true
+    Grand Plaza: true
+  resourcepack: false
+  builder: false
