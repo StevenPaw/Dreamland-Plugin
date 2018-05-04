@@ -26,3 +26,5 @@ commands:
       description: here the audio
    ach:
       description: set the achievements
+   firework:
+      description: shoots a random firework

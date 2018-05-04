@@ -109,7 +109,9 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "plains": "2018-04-14 20:21:24 +0200"
+      "plains": "2018-04-14 20:21:24 +0200",
+      "taiga": "2018-05-04 13:29:01 +0200",
+      "taiga_hills": "2018-05-04 13:28:43 +0200"
     },
     "done": false
   }

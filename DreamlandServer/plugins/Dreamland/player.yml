@@ -4,6 +4,8 @@ ZwibblTV:
     FirstMove: true
     FirstJoin: true
     FirstChat: true
+  runtime: 2046
+  resourcepack: false
 ZwibblHelper:
   builder: true
 StevenPaw:
@@ -25,8 +27,13 @@ StevenPaw:
     Calicosafe: true
     Run a KM: true
     Great view from the castle: true
-  runtime: 40
+  runtime: 2271
   resourcepack: false
 Segel_Basti:
   builder: true
   muted: false
+StevenDragon:
+  runtime: 170
+  achivements:
+    FirstMove: true
+  resourcepack: true

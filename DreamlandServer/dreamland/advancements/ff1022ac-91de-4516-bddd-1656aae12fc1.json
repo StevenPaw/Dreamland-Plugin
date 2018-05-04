@@ -1,7 +1,25 @@
 {
+  "minecraft:recipes/brewing/fermented_spider_eye": {
+    "criteria": {
+      "has_spider_eye": "2018-05-04 13:17:32 +0200"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/carrot_on_a_stick": {
     "criteria": {
       "has_carrot": "2018-05-03 00:18:51 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2018-05-04 13:17:31 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "spider": "2018-05-04 13:17:31 +0200"
     },
     "done": true
   },
@@ -10,6 +28,12 @@
       "has_egg": "2018-05-04 10:00:27 +0200"
     },
     "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "spider": "2018-05-04 13:17:31 +0200"
+    },
+    "done": false
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {

@@ -14,6 +14,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import de.zwibbltv.dreamland.commands.CMDachievements;
 import de.zwibbltv.dreamland.commands.CMDaudio;
 import de.zwibbltv.dreamland.commands.CMDbuild;
+import de.zwibbltv.dreamland.commands.CMDfirework;
 import de.zwibbltv.dreamland.commands.CMDgamemode;
 import de.zwibbltv.dreamland.commands.CMDmenu;
 import de.zwibbltv.dreamland.commands.CMDmute;
@@ -91,6 +92,7 @@ public class Main extends JavaPlugin {
 		getCommand("rank").setExecutor(new CMDrank());
 		getCommand("audio").setExecutor(new CMDaudio());
 		getCommand("ach").setExecutor(new CMDachievements());
+		getCommand("firework").setExecutor(new CMDfirework());
 		
 		setInstance(this);
 		this.getCommand("setwarp").setExecutor(new CMDsetwarp());
