@@ -66,8 +66,11 @@ public enum Achievements {
 	EXPLORERSCAVE("Explorers Cave", "You went through the Explorers Cave",10,true,"Went through the Explorers Cave", "Greifenheim"),
 	HIDDENHIDEOUT("Hidden Hideout", "You found the Hidden Hideout",10,false,"???","Greifenheim"),
 	HEIDISDOOR("Heidis Door", "You looked at Heidis Door",10,false,"???","Greifenheim"),
-	GREIFENHEIMDINER("Greifenheim Diner","You visited the Greifenheim Diner",10,true,"Visit the Greifenheim Diner","Greifenheim");
-	
+	GREIFENHEIMDINER("Greifenheim Diner","You visited the Greifenheim Diner",10,true,"Visit the Greifenheim Diner","Greifenheim"),
+	//FANTASA
+	FANTASA("Fantasa", "You entered Fantasa",10,true,"Enter Fantasa","Fantasa"),
+	FANTASAVIEW("Fantasa View", "You've gone to a higher place",10,false,"???","Fantasa"),
+	FANTASATOILETS("Toilets in Fantasa","You entered the toilets in Fantasa",10,true,"Find the toilets in Fantasa","Fantasa");
 	
 	public static void locations(Player p) {	
 		
@@ -287,11 +290,39 @@ public enum Achievements {
 			if(d <= 3) {				
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.GREIFENHEIMDINER);
 				}
-			//Knocking on Heidis Door
+			//Heidis Door
 			d = ploc.distance(new Location(p.getWorld(), -951, 24, 530));
 			if(d <= 2) {				
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.HEIDISDOOR);
 				}
+		//FANTASA	
+			//Fantasa View
+			d = ploc.distance(new Location(p.getWorld(), -665,32,596));
+			if(d <= 1.5) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.FANTASAVIEW);
+				}
+			//Fantasa Toilets
+			d = ploc.distance(new Location(p.getWorld(), -657, 20, 569));
+			if(d <= 1.5) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.FANTASATOILETS);
+			}
+			d = ploc.distance(new Location(p.getWorld(), -657, 20, 565));
+			if(d <= 1.5) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.FANTASATOILETS);
+			}
+			//Fantasa Entrance
+			d = ploc.distance(new Location(p.getWorld(), -697, 21, 588));
+			if(d <= 1.5) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.FANTASA);
+			}
+			d = ploc.distance(new Location(p.getWorld(), -753, 21, 537));
+			if(d <= 1.5) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.FANTASA);
+			}
+			d = ploc.distance(new Location(p.getWorld(), -658, 21, 597));
+			if(d <= 1.5) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.FANTASA);
+			}
 	}
 	
 	String name;
