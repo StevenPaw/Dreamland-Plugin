@@ -190,10 +190,10 @@ public class PlayerListener implements Listener {
 			p.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 20, 1));		
 		}			
 		
-		if(PlayerConfig.getResourcepack(p) != true && PlayerConfig.getRuntime(p) >= 2)
+		if(PlayerConfig.getResourcepack(p) != true && PlayerConfig.getRuntime(p) >= 1)
 		{
 			p.sendMessage("Sending Resourcepack");
-			p.setResourcePack("https://www.dropbox.com/s/n069utc6ixux4iw/Dreamland17-04.zip?dl=1");
+			p.setResourcePack("https://www.dropbox.com/s/ckul9g6yg7bi7il/Dreamland06-05-18.zip?dl=1");
 			try {
 				PlayerConfig.Resourcepackactive(p, true);
 			} catch (IOException error) {
