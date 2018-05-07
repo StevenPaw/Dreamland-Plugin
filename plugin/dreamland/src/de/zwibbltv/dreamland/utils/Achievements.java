@@ -226,6 +226,7 @@ public enum Achievements {
 			d = ploc.distance(new Location(w, -887.5, 20.0, 531.5));
 			if(d <= 2.5) {
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.LAGOON);
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.GREIFENHEIM);
 				}
 			//Lagoon Eingang 3.1
 			d = ploc.distance(new Location(w, -798.5, 20.0, 488.5));
