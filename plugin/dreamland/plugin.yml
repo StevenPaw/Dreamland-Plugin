@@ -34,3 +34,5 @@ commands:
       description: create a villager
    eco:
       description: give money
+   balloons:
+      desscription: spawn a balloon
