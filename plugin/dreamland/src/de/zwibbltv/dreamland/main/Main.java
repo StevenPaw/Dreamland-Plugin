@@ -25,12 +25,14 @@ import de.zwibbltv.dreamland.commands.CMDremovewarp;
 import de.zwibbltv.dreamland.commands.CMDsetwarp;
 import de.zwibbltv.dreamland.commands.CMDvillager;
 import de.zwibbltv.dreamland.commands.CMDwarp;
+import de.zwibbltv.dreamland.listener.BalloonEvents;
 import de.zwibbltv.dreamland.listener.BalloonListener;
 import de.zwibbltv.dreamland.listener.JoinListener;
 import de.zwibbltv.dreamland.listener.MenuListener;
 import de.zwibbltv.dreamland.listener.PlayerListener;
 import de.zwibbltv.dreamland.listener.ShopListener;
 import de.zwibbltv.dreamland.listener.scoreboardListener;
+import de.zwibbltv.dreamland.nms.Reflection;
 import de.zwibbltv.dreamland.utils.PlayerConfig;
 import de.zwibbltv.dreamland.utils.PlayerLocationLockedManager;
 import de.zwibbltv.dreamland.utils.WarpManager;
@@ -50,14 +52,10 @@ public class Main extends JavaPlugin {
 	}
 	private static Main instance;
 	public String version;
-	
 	public static Economy economy = null;
-	
 	public String prefix = "§e[Dreamland] ";
-	
 	int ScoreboardCoolDown = 0;
 	
-		
 	@Override
 	public void onEnable() {
 				
@@ -121,6 +119,7 @@ public class Main extends JavaPlugin {
 		pm.registerEvents(new ShopListener(), this);
 		pm.registerEvents(new PlayerListener(), this);
 		pm.registerEvents(new BalloonListener(), this);
+		pm.registerEvents(new BalloonEvents(), this);
 		
 				
 		if(setupEconomy()) {
@@ -161,4 +160,11 @@ public class Main extends JavaPlugin {
 	public static File file;
 	public static FileConfiguration cfg;
 	
+	private void registerEntities(){
+        try{
+            Reflection.getClass(Reflection.PackageType.BFB, "Registry").newInstance();
+        }catch (IllegalAccessException |InstantiationException e){
+            e.printStackTrace();
+        }
+    }
 }
