@@ -16,6 +16,7 @@ import de.zwibbltv.dreamland.commands.CMDaudio;
 import de.zwibbltv.dreamland.commands.CMDbuild;
 import de.zwibbltv.dreamland.commands.CMDfirework;
 import de.zwibbltv.dreamland.commands.CMDgamemode;
+import de.zwibbltv.dreamland.commands.CMDlift;
 import de.zwibbltv.dreamland.commands.CMDmenu;
 import de.zwibbltv.dreamland.commands.CMDmoney;
 import de.zwibbltv.dreamland.commands.CMDmute;
@@ -98,7 +99,11 @@ public class Main extends JavaPlugin {
 		getCommand("ach").setExecutor(new CMDachievements());
 		getCommand("firework").setExecutor(new CMDfirework());
 		getCommand("villager").setExecutor(new CMDvillager());
+<<<<<<< HEAD
 		getCommand("eco").setExecutor(new CMDmoney());
+=======
+		getCommand("lift").setExecutor(new CMDlift());
+>>>>>>> 810987b2e1f44d721229a2213c5b1c1d72ed28ad
 		
 		setInstance(this);
 		this.getCommand("setwarp").setExecutor(new CMDsetwarp());

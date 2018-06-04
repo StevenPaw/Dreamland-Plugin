@@ -28,6 +28,8 @@ commands:
       description: set the achievements
    firework:
       description: shoots a random firework
+   lift:
+      description: plays a lift simulation
    villager:
       description: create a villager
    eco:
