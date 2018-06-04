@@ -28,8 +28,8 @@ public class BalloonInventory {
 
 	private void create(){
 		for(Heads heads : Heads.values()){
-			if(this.player.hasPermission(heads.getPermission())){
-				this.setItem(heads.getItem(), heads.getSlot(), heads.getName(), Collections.singletonList(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("noPerms"))));
+			if(this.player.hasPermission(heads.getPermission()) || this.player.hasPermission("dreamland.balloons.*")){
+				this.setItem(heads.getItem(), heads.getSlot(), heads.getName(), Collections.singletonList("You have this balloon"));
 			}else {
 				this.setItem(heads.getItem(), heads.getSlot(), heads.getName(), Collections.singletonList(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("noPerms"))));
 			}

@@ -48,7 +48,7 @@ public enum Heads {
     }
 
     public String getPermission() {
-        return "epicballoons." + this.permission;
+        return "dreamland.balloons." + this.permission;
     }
 
     public int getSlot() {
