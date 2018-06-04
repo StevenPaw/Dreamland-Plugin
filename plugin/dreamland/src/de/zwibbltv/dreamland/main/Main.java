@@ -160,6 +160,7 @@ public class Main extends JavaPlugin {
 	public static File file;
 	public static FileConfiguration cfg;
 	
+	@SuppressWarnings("unused")
 	private void registerEntities(){
         try{
             Reflection.getClass(Reflection.PackageType.BFB, "Registry").newInstance();
