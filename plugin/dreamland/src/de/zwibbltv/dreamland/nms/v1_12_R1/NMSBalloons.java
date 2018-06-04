@@ -7,6 +7,7 @@ import org.bukkit.Location;
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
+import org.bukkit.entity.Sheep;
 import org.bukkit.entity.Slime;
 import org.bukkit.inventory.ItemStack;
 
@@ -23,11 +24,11 @@ public class NMSBalloons extends EntitySlime {
         super(world);
         this.player = player;
         this.updatePosition();
-        this.contents = (ArmorStand) player.getWorld().spawnEntity(this.currentLoc.clone().subtract(0, 1, 0), EntityType.ARMOR_STAND);
+        this.contents = (ArmorStand) player.getWorld().spawnEntity(this.currentLoc.clone().subtract(0, 2, 0), EntityType.ARMOR_STAND);
 
-        ((Slime)this.getBukkitEntity()).setCollidable(false);
-        ((Slime)this.getBukkitEntity()).setSize(-1);
-        ((Slime)this.getBukkitEntity()).setLeashHolder(this.player);
+        ((Sheep)this.getBukkitEntity()).setCollidable(true);
+//        ((Sheep)this.getBukkitEntity()).setSize(-1);
+        ((Sheep)this.getBukkitEntity()).setLeashHolder(this.player);
         this.setInvisible(true);
         this.setLocation(this.currentLoc.getX(), this.currentLoc.getY(), this.currentLoc.getZ(), this.currentLoc.getYaw(), this.currentLoc.getPitch());
         this.contents.setVisible(false);
@@ -47,9 +48,9 @@ public class NMSBalloons extends EntitySlime {
         this.updatePosition();
 
         super.setLocation(this.currentLoc.getX(), this.currentLoc.getY(), this.currentLoc.getZ(), this.currentLoc.getYaw(), this.currentLoc.getPitch());
-        this.contents.teleport(this.getBukkitEntity().getLocation().clone().subtract(0, 1, 0));
+        this.contents.teleport(this.getBukkitEntity().getLocation().clone().subtract(0, 2, 0));
 
-        ((Slime)this.getBukkitEntity()).setLeashHolder(this.player);
+        ((Sheep)this.getBukkitEntity()).setLeashHolder(this.player);
     }
 
     private boolean status = true;
@@ -57,8 +58,10 @@ public class NMSBalloons extends EntitySlime {
     private int i = 0;
     private void updatePosition(){
         this.currentLoc = this.player.getLocation();
-        this.currentLoc.setPitch(-50f - MathUtils.random(0f, 5f));
-
+        this.currentLoc.setPitch(-50f);
+//        this.currentLoc.setPitch(-50f - MathUtils.random(0f, 5f));
+        
+        
         if(i == 90)
             yaw = false;
         else if (i == 0)
@@ -82,7 +85,7 @@ public class NMSBalloons extends EntitySlime {
         return this.contents;
     }
 
-    public Slime getSlime(){
-        return (Slime) this.getBukkitEntity();
+    public Sheep getSlime(){
+        return (Sheep) this.getBukkitEntity();
     }
 }
