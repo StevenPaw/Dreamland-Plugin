@@ -1,5 +1,4 @@
 package de.zwibbltv.dreamland.nms.v1_12_R1;
-import de.zwibbltv.dreamland.utils.MathUtils;
 import net.minecraft.server.v1_12_R1.DamageSource;
 import net.minecraft.server.v1_12_R1.EntitySlime;
 import net.minecraft.server.v1_12_R1.World;
@@ -8,7 +7,6 @@ import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Sheep;
-import org.bukkit.entity.Slime;
 import org.bukkit.inventory.ItemStack;
 
 /**
@@ -24,9 +22,9 @@ public class NMSBalloons extends EntitySlime {
         super(world);
         this.player = player;
         this.updatePosition();
-        this.contents = (ArmorStand) player.getWorld().spawnEntity(this.currentLoc.clone().subtract(0, 2, 0), EntityType.ARMOR_STAND);
+        this.contents = (ArmorStand) player.getWorld().spawnEntity(this.currentLoc.clone().subtract(0, 1, 0), EntityType.ARMOR_STAND);
 
-        ((Sheep)this.getBukkitEntity()).setCollidable(true);
+        ((Sheep)this.getBukkitEntity()).setCollidable(false);
 //        ((Sheep)this.getBukkitEntity()).setSize(-1);
         ((Sheep)this.getBukkitEntity()).setLeashHolder(this.player);
         this.setInvisible(true);
@@ -48,7 +46,7 @@ public class NMSBalloons extends EntitySlime {
         this.updatePosition();
 
         super.setLocation(this.currentLoc.getX(), this.currentLoc.getY(), this.currentLoc.getZ(), this.currentLoc.getYaw(), this.currentLoc.getPitch());
-        this.contents.teleport(this.getBukkitEntity().getLocation().clone().subtract(0, 2, 0));
+        this.contents.teleport(this.getBukkitEntity().getLocation().clone().subtract(0, 1, 0));
 
         ((Sheep)this.getBukkitEntity()).setLeashHolder(this.player);
     }
