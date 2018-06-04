@@ -13,12 +13,12 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import de.zwibbltv.dreamland.commands.CMDachievements;
 import de.zwibbltv.dreamland.commands.CMDaudio;
+import de.zwibbltv.dreamland.commands.CMDballoons;
 import de.zwibbltv.dreamland.commands.CMDbuild;
 import de.zwibbltv.dreamland.commands.CMDfirework;
 import de.zwibbltv.dreamland.commands.CMDgamemode;
 import de.zwibbltv.dreamland.commands.CMDlift;
 import de.zwibbltv.dreamland.commands.CMDmenu;
-import de.zwibbltv.dreamland.commands.CMDmoney;
 import de.zwibbltv.dreamland.commands.CMDmute;
 import de.zwibbltv.dreamland.commands.CMDrank;
 import de.zwibbltv.dreamland.commands.CMDremovewarp;
@@ -37,6 +37,7 @@ import de.zwibbltv.dreamland.utils.WarpManager;
 import net.milkbowl.vault.economy.Economy;
 
 public class Main extends JavaPlugin {
+    
 	
 	private static Main plugin;
 		
@@ -48,6 +49,7 @@ public class Main extends JavaPlugin {
 		Main.instance = instance;
 	}
 	private static Main instance;
+	public String version;
 	
 	public static Economy economy = null;
 	
@@ -59,6 +61,9 @@ public class Main extends JavaPlugin {
 	@Override
 	public void onEnable() {
 				
+		instance = this;
+        this.version = Bukkit.getServer().getClass().getPackage().getName().replace(".", ",").split(",")[3];
+		
 		saveDefaultConfig();
 		Main.file = new File("plugins/Dreamland", "config.yml");
 		Main.cfg = YamlConfiguration.loadConfiguration(Main.file);
@@ -99,16 +104,14 @@ public class Main extends JavaPlugin {
 		getCommand("ach").setExecutor(new CMDachievements());
 		getCommand("firework").setExecutor(new CMDfirework());
 		getCommand("villager").setExecutor(new CMDvillager());
-<<<<<<< HEAD
-		getCommand("eco").setExecutor(new CMDmoney());
-=======
 		getCommand("lift").setExecutor(new CMDlift());
->>>>>>> 810987b2e1f44d721229a2213c5b1c1d72ed28ad
 		
 		setInstance(this);
 		this.getCommand("setwarp").setExecutor(new CMDsetwarp());
 		this.getCommand("warp").setExecutor(new CMDwarp());
 		this.getCommand("removewarp").setExecutor(new CMDremovewarp());
+		
+		this.getCommand("balloons").setExecutor(new CMDballoons());
 		
 		PluginManager pm = Bukkit.getPluginManager();
 		pm.registerEvents(new JoinListener(), this);
