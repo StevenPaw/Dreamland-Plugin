@@ -17,15 +17,18 @@ import de.zwibbltv.dreamland.commands.CMDbuild;
 import de.zwibbltv.dreamland.commands.CMDfirework;
 import de.zwibbltv.dreamland.commands.CMDgamemode;
 import de.zwibbltv.dreamland.commands.CMDmenu;
+import de.zwibbltv.dreamland.commands.CMDmoney;
 import de.zwibbltv.dreamland.commands.CMDmute;
 import de.zwibbltv.dreamland.commands.CMDrank;
 import de.zwibbltv.dreamland.commands.CMDremovewarp;
 import de.zwibbltv.dreamland.commands.CMDsetwarp;
 import de.zwibbltv.dreamland.commands.CMDvillager;
 import de.zwibbltv.dreamland.commands.CMDwarp;
+import de.zwibbltv.dreamland.listener.BalloonListener;
 import de.zwibbltv.dreamland.listener.JoinListener;
 import de.zwibbltv.dreamland.listener.MenuListener;
 import de.zwibbltv.dreamland.listener.PlayerListener;
+import de.zwibbltv.dreamland.listener.ShopListener;
 import de.zwibbltv.dreamland.listener.scoreboardListener;
 import de.zwibbltv.dreamland.utils.PlayerConfig;
 import de.zwibbltv.dreamland.utils.PlayerLocationLockedManager;
@@ -95,6 +98,7 @@ public class Main extends JavaPlugin {
 		getCommand("ach").setExecutor(new CMDachievements());
 		getCommand("firework").setExecutor(new CMDfirework());
 		getCommand("villager").setExecutor(new CMDvillager());
+		getCommand("eco").setExecutor(new CMDmoney());
 		
 		setInstance(this);
 		this.getCommand("setwarp").setExecutor(new CMDsetwarp());
@@ -106,7 +110,9 @@ public class Main extends JavaPlugin {
 		pm.registerEvents(new CMDmute(), this);
 		pm.registerEvents(new scoreboardListener(), this);
 		pm.registerEvents(new MenuListener(), this);
+		pm.registerEvents(new ShopListener(), this);
 		pm.registerEvents(new PlayerListener(), this);
+		pm.registerEvents(new BalloonListener(), this);
 		
 				
 		if(setupEconomy()) {

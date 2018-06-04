@@ -49,6 +49,7 @@ public enum Achievements {
 	CALICOSAFE("Calicosafe", "You found a way into the safe in Calico!", 20, false,"???","Calico"),
 	//Chinatown
 	CHINATOWN("Chinatown", "You went to Chinatown",10,true,"Enter Chinatown", "Chinatown"),
+	CHINATOWNFOUNTAIN("Chinatowns Fountain","You activated the fountain in Chinatown!",10,true,"Activate the fountain in Chinatown","Chinatown"),
 	CHINATOWNTRAINSTATION("Chinatown Trainstation","You found the Trainstation in Chinatown!",10,true,"Find the Trainstation in Chinatown","Chinatown"),
 	CHINESELABYRINTH("ChineseLabyrinth", "You went through the labyrinth in Chinatown",10,true,"Go through the labyrinth in Chinatown", "Chinatown"),
 	//Lagoon
@@ -69,6 +70,7 @@ public enum Achievements {
 	GREIFENHEIMDINER("Greifenheim Diner","You visited the Greifenheim Diner",10,true,"Visit the Greifenheim Diner","Greifenheim"),
 	//FANTASA
 	FANTASA("Fantasa", "You entered Fantasa",10,true,"Enter Fantasa","Fantasa"),
+	FANTASAFOUNTAIN("Fantasas Fountain","You activated the fountain in Fantasa!",10,true,"Activate the fountain in Fantasa","Fantasa"),
 	FANTASAVIEW("Fantasa View", "You've gone to a higher place",10,false,"???","Fantasa"),
 	FANTASATOILETS("Toilets in Fantasa","You entered the toilets in Fantasa",10,true,"Find the toilets in Fantasa","Fantasa");
 	

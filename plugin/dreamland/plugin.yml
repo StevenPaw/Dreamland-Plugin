@@ -30,3 +30,5 @@ commands:
       description: shoots a random firework
    villager:
       description: create a villager
+   eco:
+      description: give money

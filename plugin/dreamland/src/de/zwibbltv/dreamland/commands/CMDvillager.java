@@ -6,6 +6,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Villager;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 
 import de.zwibbltv.dreamland.main.Main;
 import net.md_5.bungee.api.ChatColor;
@@ -25,8 +27,12 @@ public class CMDvillager implements CommandExecutor{
 				
 				Location loc = p.getLocation();				
 				Villager v = loc.getWorld().spawn(loc, Villager.class);
-				v.setCustomNameVisible(false);
+				v.setCustomNameVisible(true);
 				v.setCustomName(args[0]);
+				v.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 300000, 300000));
+				v.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 300000, 300000));
+				v.addPotionEffect(new PotionEffect(PotionEffectType.REGENERATION, 300000, 300000));
+				p.sendMessage("§aVillager created!");
 								
 				} 
 		} else 
