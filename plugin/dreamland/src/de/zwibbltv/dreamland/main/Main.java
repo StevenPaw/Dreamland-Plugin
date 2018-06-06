@@ -3,11 +3,15 @@ package de.zwibbltv.dreamland.main;
 import java.io.File;
 import java.io.IOException;
 import java.util.Calendar;
+import java.util.Random;
 
 import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -77,6 +81,103 @@ public class Main extends JavaPlugin {
 		plugin = this;
 		this.setupEconomy();
 		
+		
+		//Goldbrunnen in Calico
+		Bukkit.getScheduler().runTaskTimer(this, new Runnable() {
+
+			@Override
+			public void run() {
+				Location loc = new Location(Bukkit.getWorld(getName()), -852, 20, 770);
+	    		
+	    		ItemStack random = null;
+	    		
+	    		Random r = new Random();
+	    		int zufall = r.nextInt(6);
+	    		switch(zufall) {
+	    		case 0:
+	    			int zufall0 = r.nextInt(3);
+		    		switch(zufall0) {
+		    		case 0:
+		    			random = new ItemStack(Material.GOLD_NUGGET);
+		    			break;
+		    		case 1:
+		    			random = new ItemStack(Material.GOLD_NUGGET, 2);
+		    			break;
+		    		case 2:
+		    			random = new ItemStack(Material.GOLD_NUGGET, 3);
+		    			break;
+		    		}
+		    		break;
+	    		case 1:
+	    			int zufall1 = r.nextInt(3);
+		    		switch(zufall1) {
+		    		case 0:
+		    			random = new ItemStack(Material.GOLD_NUGGET);
+		    			break;
+		    		case 1:
+		    			random = new ItemStack(Material.GOLD_NUGGET, 2);
+		    			break;
+		    		case 2:
+		    			random = new ItemStack(Material.GOLD_NUGGET, 3);
+		    			break;
+		    		}
+		    		break;
+	    		case 2:
+	    			int zufall2 = r.nextInt(3);
+		    		switch(zufall2) {
+		    		case 0:
+		    			random = new ItemStack(Material.GOLD_NUGGET);
+		    			break;
+		    		case 1:
+		    			random = new ItemStack(Material.GOLD_NUGGET, 2);
+		    			break;
+		    		case 2:
+		    			random = new ItemStack(Material.GOLD_NUGGET, 3);
+		    			break;
+		    		}
+		    		break;
+	    		case 3:
+	    			int zufall3 = r.nextInt(3);
+		    		switch(zufall3) {
+		    		case 0:
+		    			random = new ItemStack(Material.GOLD_INGOT);
+		    			break;
+		    		case 1:
+		    			random = new ItemStack(Material.GOLD_INGOT, 2);
+		    			break;
+		    		case 2:
+		    			random = new ItemStack(Material.GOLD_INGOT, 3);
+		    			break;
+		    		}
+		    		break;
+	    		case 4:
+	    			int zufall4 = r.nextInt(3);
+		    		switch(zufall4) {
+		    		case 0:
+		    			random = new ItemStack(Material.GOLD_INGOT);
+		    			break;
+		    		case 1:
+		    			random = new ItemStack(Material.GOLD_INGOT, 2);
+		    			break;
+		    		case 2:
+		    			random = new ItemStack(Material.GOLD_INGOT, 3);
+		    			break;
+		    		}
+		    		break;
+	    		case 5:
+	    			random = new ItemStack(Material.GOLD_BLOCK);		    					    		
+		    		break;
+	    			
+	    		}
+	    		
+	    		
+	    		loc.getWorld().dropItemNaturally(loc, random);
+				
+				
+			}
+		}, 20*5, 20*5);
+		
+		
 		Bukkit.getScheduler().runTaskTimer(this, new Runnable() {
 			
 			
@@ -96,6 +197,7 @@ public class Main extends JavaPlugin {
 		    		if(ScoreboardCoolDown>= 20) {
 			    		de.zwibbltv.dreamland.main.updateScoreboard.update(p);
 			    	}
+		    		
 		        }
 		    	ScoreboardCoolDown++;
 		    }
