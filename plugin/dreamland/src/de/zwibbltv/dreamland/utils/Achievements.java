@@ -14,6 +14,7 @@ public enum Achievements {
 	RUNAKM("Run a KM","You ran a Kilometer in one session!",10, false,"???","Dreamland"),
 	GREATVIEWCASTLE("Great view from the castle","You found the button with great view in the castle!",10, false,"???","Dreamland"),
 	SECRETTUNNEL("Secret tunnel","You found the secret tunnel!",10, false,"???","Dreamland"),
+	DREAMLANDBYNIGHT("Dreamland by night","You played while you normaly have to sleep!",10, false,"???","Dreamland"),
 	//MainStreet
 	MAINSTREETCASTLERESTAURANT("Castle Restaurant","You went to the Castle Restaurant!",10, false,"Go to the Castle Restaurant","MainStreet"),
 	MAINSTREETCASTLETOILET("Castle Toilet","You went to the toilets in the Castle on MainStreet",10,true,"Find the toilets in the Castle","MainStreet"),
@@ -325,6 +326,7 @@ public enum Achievements {
 			d = ploc.distance(new Location(p.getWorld(), -658, 21, 597));
 			if(d <= 1.5) {				
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.FANTASA);
+								
 			}
 	}
 	

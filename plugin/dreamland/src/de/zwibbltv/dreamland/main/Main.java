@@ -2,6 +2,7 @@ package de.zwibbltv.dreamland.main;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Calendar;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -33,6 +34,7 @@ import de.zwibbltv.dreamland.listener.PlayerListener;
 import de.zwibbltv.dreamland.listener.ShopListener;
 import de.zwibbltv.dreamland.listener.scoreboardListener;
 import de.zwibbltv.dreamland.nms.Reflection;
+import de.zwibbltv.dreamland.utils.Achievements;
 import de.zwibbltv.dreamland.utils.PlayerConfig;
 import de.zwibbltv.dreamland.utils.PlayerLocationLockedManager;
 import de.zwibbltv.dreamland.utils.WarpManager;
@@ -76,13 +78,21 @@ public class Main extends JavaPlugin {
 		this.setupEconomy();
 		
 		Bukkit.getScheduler().runTaskTimer(this, new Runnable() {
-
+			
+			
+			@SuppressWarnings("deprecation")
 			@Override
 		    public void run() {
-		    	
+					    	
 		    	for(Player p : Bukkit.getOnlinePlayers()) {
 		    		economy.depositPlayer(p, 0.01);
 		    		
+		    		Calendar c = Calendar.getInstance();
+					
+					if(c.getTime().getHours() <= 4) {
+						PlayerConfig.giveAchievement(p.getPlayer(), Achievements.DREAMLANDBYNIGHT);
+					}
+		    				    		
 		    		if(ScoreboardCoolDown>= 20) {
 			    		de.zwibbltv.dreamland.main.updateScoreboard.update(p);
 			    	}
@@ -146,6 +156,7 @@ public class Main extends JavaPlugin {
 	public static Main getPlugin() {
 		return plugin;
 	}
+	
 		
 	 private boolean setupEconomy()
 	    {

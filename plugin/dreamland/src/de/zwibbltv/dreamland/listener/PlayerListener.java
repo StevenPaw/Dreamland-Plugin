@@ -186,8 +186,11 @@ public class PlayerListener implements Listener {
 		Player p = event.getPlayer();
 		PlayerConfig.giveAchievement(p, Achievements.FIRSTMOVE);
 		de.zwibbltv.dreamland.viponly.places.locations(p);
+		
+		if (PlayerConfig.getBuilder(p) == false) {
 		if(p.getLocation().getBlock().getRelative(BlockFace.DOWN).getType() == Material.BRICK) {
-			p.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 20, 1));		
+			p.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 20, 1));	
+			}
 		}			
 		
 		if(PlayerConfig.getResourcepack(p) != true && PlayerConfig.getRuntime(p) >= 1)
