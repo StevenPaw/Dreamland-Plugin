@@ -47,28 +47,31 @@ public class MenuListener implements Listener {
 
 	@EventHandler
 	public void onJoin(PlayerJoinEvent e) {
-		
+
 		Player p = e.getPlayer();
 		if(PlayerConfig.getBuilder(p) == false){
-			
-		e.getPlayer().getInventory().clear();
-		e.getPlayer().getEquipment().clear();
-		
-		ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
-		ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
-		
-		if(p.hasPermission("dreamland.build.*") || p.hasPermission("dreamland.build.self") || p.hasPermission("dreamland.build.other")) {
-		ItemStack gold_spade = new ItemBuilder(Material.GOLD_SPADE).setDisplayName("§6Builder").build();
-		e.getPlayer().getInventory().setItem(7, gold_spade);
-		}
-
-		e.getPlayer().getInventory().setItem(0, carrot);
-		e.getPlayer().getInventory().setItem(8, golden_carrot);
-
+			resetInventory(e.getPlayer());
 		}
 		if(PlayerConfig.getBuilder(p) == true) {
 			p.setGameMode(GameMode.CREATIVE);
 		}
+	}
+	
+	public void resetInventory(Player p)
+	{
+		p.getInventory().clear();
+		p.getEquipment().clear();
+
+		ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
+		ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
+
+		if(p.hasPermission("dreamland.build.*") || p.hasPermission("dreamland.build.self") || p.hasPermission("dreamland.build.other")) {
+			ItemStack gold_spade = new ItemBuilder(Material.GOLD_SPADE).setDisplayName("§6Builder").build();
+			p.getInventory().setItem(7, gold_spade);
+		}
+
+		p.getInventory().setItem(0, carrot);
+		p.getInventory().setItem(8, golden_carrot);
 	}
 
 	// Menu-Menu
