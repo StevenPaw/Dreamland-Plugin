@@ -24,6 +24,8 @@ import org.bukkit.event.player.PlayerArmorStandManipulateEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
+import org.bukkit.event.player.PlayerPickupItemEvent;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
@@ -216,6 +218,22 @@ public class PlayerListener implements Listener {
 		}		
 	}
 		
+	@EventHandler
+	public void onPickupItem(PlayerPickupItemEvent e) {
+		Player p = e.getPlayer();
+		if(PlayerConfig.getBuilder(p) == false){
+			ItemStack item = e.getItem().getItemStack();
+			Material ItemType = item.getType();
+			if((ItemType == Material.GOLD_INGOT)) {
+				int f = item.getAmount();
+				for(int i = 0; i < f; i++) {
+					p.sendMessage("YEAY");
+					
+				}			
+			}
+		}
+	}
+	
 	@EventHandler
     public void onPlayerChat(AsyncPlayerChatEvent e){
 		PlayerConfig.giveAchievement(e.getPlayer(), Achievements.FIRSTCHAT);
