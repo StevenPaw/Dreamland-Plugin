@@ -15,6 +15,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.util.Vector;
 
 import de.zwibbltv.dreamland.commands.CMDachievements;
 import de.zwibbltv.dreamland.commands.CMDaudio;
@@ -196,8 +197,7 @@ public class Main extends JavaPlugin {
 		    				    		
 		    		if(ScoreboardCoolDown>= 20) {
 			    		de.zwibbltv.dreamland.main.updateScoreboard.update(p);
-			    	}
-		    		
+			    	}		    		
 		        }
 		    	ScoreboardCoolDown++;
 		    }

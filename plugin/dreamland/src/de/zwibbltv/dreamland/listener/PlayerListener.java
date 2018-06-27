@@ -29,6 +29,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
+import de.zwibbltv.dreamland.main.Main;
 import de.zwibbltv.dreamland.utils.Achievements;
 import de.zwibbltv.dreamland.utils.PlayerConfig;
 import net.md_5.bungee.api.ChatColor;
@@ -84,15 +85,7 @@ public class PlayerListener implements Listener {
 			}
 		}
 	}
-	
-//	@EventHandler
-//	public void onVClick(PlayerInteractEntityEvent e){
-//	if(e.getRightClicked() instanceof Villager) {
-//		e.setCancelled(true);
-//		}
-//	}
 		
-	
 	//Entity Schutz
 	@EventHandler
 	public void onEntityDamage(EntityDamageByEntityEvent event) {
@@ -215,23 +208,37 @@ public class PlayerListener implements Listener {
 			PlayerConfig.Runtime(p, a + 1);
 		} catch (IOException error) {
 			error.printStackTrace();
-		}		
+		}			
 	}
 		
+	@SuppressWarnings("deprecation")
 	@EventHandler
 	public void onPickupItem(PlayerPickupItemEvent e) {
 		Player p = e.getPlayer();
-		if(PlayerConfig.getBuilder(p) == false){
 			ItemStack item = e.getItem().getItemStack();
 			Material ItemType = item.getType();
-			if((ItemType == Material.GOLD_INGOT)) {
+			Material ItemType2 = item.getType();
+			Material ItemType3 = item.getType();
+			if((ItemType == Material.GOLD_INGOT) || (ItemType2 == Material.GOLD_NUGGET ) || (ItemType3 == Material.GOLD_BLOCK)) {
 				int f = item.getAmount();
 				for(int i = 0; i < f; i++) {
-					p.sendMessage("YEAY");
 					
-				}			
-			}
-		}
+					if((ItemType == Material.GOLD_NUGGET)) {
+					Main.economy.depositPlayer(p.getName(), 0.1);
+						}
+					
+					if((ItemType == Material.GOLD_INGOT)) {
+						Main.economy.depositPlayer(p.getName(), 0.3);
+						}
+					
+					if((ItemType == Material.GOLD_BLOCK)) {
+						Main.economy.depositPlayer(p.getName(), 0.5);
+						}
+					de.zwibbltv.dreamland.main.updateScoreboard.update(p);
+				}		
+				e.setCancelled(true);
+				e.getItem().remove();
+			}		
 	}
 	
 	@EventHandler
