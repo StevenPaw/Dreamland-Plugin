@@ -15,7 +15,6 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.util.Vector;
 
 import de.zwibbltv.dreamland.commands.CMDachievements;
 import de.zwibbltv.dreamland.commands.CMDaudio;
@@ -41,7 +40,6 @@ import de.zwibbltv.dreamland.listener.scoreboardListener;
 import de.zwibbltv.dreamland.nms.Reflection;
 import de.zwibbltv.dreamland.utils.Achievements;
 import de.zwibbltv.dreamland.utils.PlayerConfig;
-import de.zwibbltv.dreamland.utils.PlayerLocationLockedManager;
 import de.zwibbltv.dreamland.utils.WarpManager;
 import net.milkbowl.vault.economy.Economy;
 
@@ -243,10 +241,6 @@ public class Main extends JavaPlugin {
 	
 	public WarpManager getWarpManager() {
 		return new WarpManager();
-	}
-	
-	public PlayerLocationLockedManager getplocManager() {
-		return new PlayerLocationLockedManager();
 	}
 	
 	@Override

@@ -32,7 +32,8 @@ public enum Achievements {
 	HAUNTEDMANSION("Haunted Mansion","You went to the Haunted Mansion",10,true,"Go in the Haunted Mansion","MainStreet"),
 	HAUNTEDMANSIONFOUNTAIN("Haunted Fountain","You found the haunted fountain!",10,false,"???","MainStreet"),
 	HAUNTEDMANSIONSECRETPAINTING("Haunted Mansion secret painting","You went to the Haunted Mansion secret Painting",10,false,"???","MainStreet"),
-	LIBRARY("Dreamland Library","You went to the Library!",10,true,"find the library on Main Street","MainStreet"),
+	LIBRARY("Dreamland Library","You went to the Library!",10,true,"Find the Library on Main Street","MainStreet"),
+	DISCO("Dreamland Disco","You went to the Disco!",10,true,"Find the Disco on Main Street","MainStreet"),
 	//Castle
 	CASTLEFOUNTAIN("Castlefountain","You activated the fountain of the castle",10,true,"Activate the fountain of the castle","Castle"),
 	CASTLE("The Castle","You went to Castle",10,true,"Go to the castle","Castle"),
@@ -138,15 +139,20 @@ public enum Achievements {
 			if(d <= 1.5) {				
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.CLUB33TRAINSTATION);
 				}
-			//Information-Center
+			//mainstreet castle restaurant
 			d = ploc.distance(new Location(w, -964.5, 23.0, 622.5));
 			if(d <= 1.5) {				
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.MAINSTREETCASTLERESTAURANT);
 				}
-			//Information-Center
+			//mainstreet castle toilet
 			d = ploc.distance(new Location(w, -964.5, 22.0, 607.5));
 			if(d <= 1.5) {				
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.MAINSTREETCASTLETOILET);
+				}
+			//disco
+			d = ploc.distance(new Location(w, -763.5, 21.0, 652.5));
+			if(d <= 2) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.DISCO);
 				}
 			
 			

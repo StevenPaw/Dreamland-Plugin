@@ -4,7 +4,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import org.bukkit.Statistic;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Entity;
@@ -32,7 +34,6 @@ import org.bukkit.potion.PotionEffectType;
 import de.zwibbltv.dreamland.main.Main;
 import de.zwibbltv.dreamland.utils.Achievements;
 import de.zwibbltv.dreamland.utils.PlayerConfig;
-import net.md_5.bungee.api.ChatColor;
 import ru.tehkode.permissions.bukkit.PermissionsEx;
 
 public class PlayerListener implements Listener {
@@ -71,27 +72,36 @@ public class PlayerListener implements Listener {
 			forbidden.add(Material.FURNACE);
 			forbidden.add(Material.IRON_DOOR);
 			forbidden.add(Material.HOPPER);
+			forbidden.add(Material.BED);
+			forbidden.add(Material.BED_BLOCK);
 			
-			for (Material f: forbidden)
-			{
+			for (Material f: forbidden) {
 				if(block.getType() == f) {
-					p.sendMessage(ChatColor.GRAY + "No!");
-					event.setCancelled(true);			
-
-				}				
-						
+					event.setCancelled(true);
+						}				
 					}
 				}
 			}
 		}
-	}
 		
-	//Entity Schutz
-	@EventHandler
-	public void onEntityDamage(EntityDamageByEntityEvent event) {
-		
-		
-	}
+		if (event.getAction() == Action.RIGHT_CLICK_BLOCK || event.getAction() == Action.LEFT_CLICK_BLOCK) {
+			List<Material> forbidden = new ArrayList<Material>();
+			if(PlayerConfig.getBuilder(p) == false) {
+			if(!p.hasPermission("dreamland.useBlocks") || !p.hasPermission("dreamland.*")) {				
+				if (!p.hasPermission("dreamland.VIP")) {
+					forbidden.add(Material.LEVER);
+				}
+				
+				for (Material f: forbidden) {
+					if(block.getType() == f) {
+						p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("VIP")));
+						event.setCancelled(true);
+							}				
+						}
+					}
+				}
+			}
+		}
 	
 	//Armorstand Schutz
 	@EventHandler
@@ -201,7 +211,7 @@ public class PlayerListener implements Listener {
 		
 		int a = PlayerConfig.getRuntime(p);
 		
-		if (PlayerConfig.getRuntime(p) >= 4250)
+		if (p.getStatistic(Statistic.WALK_ONE_CM) >= 100000)
 			PlayerConfig.giveAchievement(p.getPlayer(), Achievements.RUNAKM);
 		
 		try {

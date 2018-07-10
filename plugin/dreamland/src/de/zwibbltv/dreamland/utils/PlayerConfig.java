@@ -101,7 +101,7 @@ public class PlayerConfig {
 		}
 		
 	}
-	
+		
 	public static void takeAchievement(Player p, Achievements achievement) {
 		if(hasAchivement(p, achievement)) {
 			PlayerConfig.set(p.getName() + ".achivements." + achievement.getName(), null);

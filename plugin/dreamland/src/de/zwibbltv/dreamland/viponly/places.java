@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
+import org.bukkit.Statistic;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
 
@@ -64,6 +65,26 @@ public class places {
 						}
 					}
 				}
+				
+	//Time limit for Disco
+				if (!p.hasPermission("dreamland.*") && !p.hasPermission("dreamland.VIP")) {
+					if (PlayerConfig.getBuilder(p) == false) {
+					if(p.getStatistic(Statistic.PLAY_ONE_TICK)<=144000) {
+						Location ploc = p.getLocation();
+						Double d;
+						
+						d = ploc.distance(new Location(w, -763.5, 21.0, 647.5));
+						if(d <= 1.5) {
+							Location location = new Location(w, -763.5, 21.0, 643.5, 0, 0);
+							p.teleport(location);
+							p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("2hours")));
+							int time = (((144000-(p.getStatistic(Statistic.PLAY_ONE_TICK)))/20)/60);
+							p.sendMessage("§a>> §cTime left: §6" + time +" §cminute(s)§a <<");
+						}	
+					}		
+				}
+			}
+				
 		
 	//VIP-Bereiche
 		if (!p.hasPermission("dreamland.*") && !p.hasPermission("dreamland.VIP")) {
@@ -123,6 +144,20 @@ public class places {
 				d = ploc.distance(new Location(w, -886.5, 21.0, 706.5));
 				if(d <= 1.5) {
 					Location location = new Location(w, -886.5, 20.0, 703.5, 0, 0);
+					p.teleport(location);
+					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("VIP")));
+				}
+				//MainStreet Disco oben
+				d = ploc.distance(new Location(w, -756.6, 21.0, 653));
+				if(d <= 1) {
+					Location location = new Location(w, -756.6, 21.0, 651, 0, 0);
+					p.teleport(location);
+					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("VIP")));
+				}	
+				//MainStreet Disco unten
+				d = ploc.distance(new Location(w, -752.3, 6.0, 630.4));
+				if(d <= 1) {
+					Location location = new Location(w, -753.8, 6.0, 630.5, -90, 0);
 					p.teleport(location);
 					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("VIP")));
 				}		
