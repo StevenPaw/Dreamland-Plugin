@@ -57,21 +57,24 @@ public class MenuListener implements Listener {
 		}
 	}
 	
-	public void resetInventory(Player p)
+	static public void resetInventory(Player p)
 	{
 		p.getInventory().clear();
 		p.getEquipment().clear();
 
 		ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
-		ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
-
+		p.getInventory().setItem(0, carrot);
+		
 		if(p.hasPermission("dreamland.build.*") || p.hasPermission("dreamland.build.self") || p.hasPermission("dreamland.build.other")) {
 			ItemStack gold_spade = new ItemBuilder(Material.GOLD_SPADE).setDisplayName("§6Builder").build();
 			p.getInventory().setItem(7, gold_spade);
 		}
-
-		p.getInventory().setItem(0, carrot);
-		p.getInventory().setItem(8, golden_carrot);
+		
+		if(!p.hasPermission("dreamland.VIP") || !p.hasPermission("dreamland.*")) {
+			ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
+			p.getInventory().setItem(8, golden_carrot);
+		}
+		
 	}
 
 	// Menu-Menu

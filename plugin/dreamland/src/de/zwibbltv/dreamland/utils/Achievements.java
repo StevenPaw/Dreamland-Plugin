@@ -15,6 +15,8 @@ public enum Achievements {
 	GREATVIEWCASTLE("Great view from the castle","You found the button with great view in the castle!",10, false,"???","Dreamland"),
 	SECRETTUNNEL("Secret tunnel","You found the secret tunnel!",10, false,"???","Dreamland"),
 	DREAMLANDBYNIGHT("Dreamland by night","You played while you normaly have to sleep!",10, false,"???","Dreamland"),
+	BACKSTAGEPARCOUR("Backstage Parcour","You jumped through the backstage Parcour!",10, false,"???","Dreamland"),
+	BACKSTAGEPARCOURII("Backstage Parcour II","You jumped through the backstage Parcour II!",10, false,"???","Dreamland"),
 	//MainStreet
 	MAINSTREETCASTLERESTAURANT("Castle Restaurant","You went to the Castle Restaurant!",10, false,"Go to the Castle Restaurant","MainStreet"),
 	MAINSTREETCASTLETOILET("Castle Toilet","You went to the toilets in the Castle on MainStreet",10,true,"Find the toilets in the Castle","MainStreet"),
@@ -59,7 +61,7 @@ public enum Achievements {
 	LAGOONSECRETSIGHT("Secret Lagoon sight", "You went to the secret Lagoon sight",10,false,"???", "Lagoon"),
 	GRANDPLAZA("Grand Plaza", "You went to the Grand Plaza",10,true,"Enter the Grand Plaza", "Lagoon"),
 	LAGOONFOUNTAIN("Lagoons Fountain","You activated the fountain in Lagoon!",10,true,"Activate the fountain in Lagoon","Lagoon"),
-	LAGOONTHEATER("Lagoon theater","You visited the theater in Lagoon",10,true,"Visit the theater in Lagoon!","Lagoon"),
+	LAGOONTHEATER("Lagoon Theater","You visited the Theater in Lagoon",10,true,"Visit the theater in Lagoon!","Lagoon"),
 	LAGOONTOI("Tower of Izran", "You rided Tower of Izran",10,true,"Ride Tower of Izran", "Lagoon"),
 	LAGOONCHIAPAS("Chiapas", "You rided Chiapas",10,true,"Ride Chiapas", "Lagoon"),
 	//GREIFENHEIM
@@ -153,6 +155,11 @@ public enum Achievements {
 			d = ploc.distance(new Location(w, -763.5, 21.0, 652.5));
 			if(d <= 2) {				
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.DISCO);
+				}
+			//Backstage parcour II
+			d = ploc.distance(new Location(w, -757.5, 28.0, 655.5));
+			if(d <= 2) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.BACKSTAGEPARCOURII);
 				}
 			
 			
