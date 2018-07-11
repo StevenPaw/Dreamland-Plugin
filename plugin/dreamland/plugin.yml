@@ -35,4 +35,4 @@ commands:
    eco:
       description: give money
    balloons:
-      desscription: spawn a balloon
+      description: spawn a balloon

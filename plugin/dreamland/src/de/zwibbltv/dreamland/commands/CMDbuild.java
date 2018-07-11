@@ -4,14 +4,11 @@ import java.io.IOException;
 
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
-import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
 
-import de.zwibbltv.dreamland.main.ItemBuilder;
 import de.zwibbltv.dreamland.main.Main;
 import de.zwibbltv.dreamland.utils.PlayerConfig;
 import net.md_5.bungee.api.ChatColor;
@@ -35,16 +32,7 @@ public class CMDbuild implements CommandExecutor {
 							}
 							p.setGameMode(GameMode.ADVENTURE);
 							p.sendMessage("§cYou are no builder any longer!");
-							
-							ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
-							ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
-							ItemStack gold_spade = new ItemBuilder(Material.GOLD_SPADE).setDisplayName("§6Builder").build();
-							
-							p.getPlayer().getInventory().clear();
-							p.getPlayer().getEquipment().clear();							
-							p.getPlayer().getInventory().setItem(0, carrot);
-							p.getPlayer().getInventory().setItem(7, gold_spade);
-							p.getPlayer().getInventory().setItem(8, golden_carrot);
+							de.zwibbltv.dreamland.listener.MenuListener.resetInventory(p);
 
 						} 
 						else if(PlayerConfig.getBuilder(p) == false || PlayerConfig.getBuilder(p) == null){
@@ -78,18 +66,7 @@ public class CMDbuild implements CommandExecutor {
 								target.setGameMode(GameMode.ADVENTURE);
 								target.sendMessage("§cYou are no builder any longer! §7(By: §6" + p.getName() + "§7)");
 								p.sendMessage("§6" + target.getName() + "§a is no builder any longer!");
-							
-								ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
-								ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
-								if(target.hasPermission("dreamland.build.*") || target.hasPermission("dreamland.build.self") || target.hasPermission("dreamland.build.other")) {
-									ItemStack gold_spade = new ItemBuilder(Material.GOLD_SPADE).setDisplayName("§6Builder").build();
-									target.getPlayer().getInventory().setItem(7, gold_spade);
-									}
-
-								target.getPlayer().getInventory().clear();
-								target.getPlayer().getEquipment().clear();
-								target.getPlayer().getInventory().setItem(0, carrot);
-								target.getPlayer().getInventory().setItem(8, golden_carrot);
+								de.zwibbltv.dreamland.listener.MenuListener.resetInventory(target);
 								
 							} 
 							else if(PlayerConfig.getBuilder(target) == false  || PlayerConfig.getBuilder(target) == null){
@@ -121,18 +98,7 @@ public class CMDbuild implements CommandExecutor {
 							target.setGameMode(GameMode.ADVENTURE);
 							target.sendMessage("§cYou are no builder any longer! §7(By: §6" + "Admins" + "§7)");
 							sender.sendMessage("§6" + target.getName() + "§a is no builder any longer!");
-							
-							ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
-							ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
-							if(target.hasPermission("dreamland.build.*") || target.hasPermission("dreamland.build.self") || target.hasPermission("dreamland.build.other")) {
-								ItemStack gold_spade = new ItemBuilder(Material.GOLD_SPADE).setDisplayName("§6Builder").build();
-								target.getPlayer().getInventory().setItem(7, gold_spade);
-								}
-
-							target.getPlayer().getInventory().clear();
-							target.getPlayer().getEquipment().clear();
-							target.getPlayer().getInventory().setItem(0, carrot);
-							target.getPlayer().getInventory().setItem(8, golden_carrot);
+							de.zwibbltv.dreamland.listener.MenuListener.resetInventory(target);
 
 						} 
 						else if(PlayerConfig.getBuilder(target) == false || PlayerConfig.getBuilder(target) == null){

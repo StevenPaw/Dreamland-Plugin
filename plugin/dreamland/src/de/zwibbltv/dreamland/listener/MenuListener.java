@@ -63,20 +63,44 @@ public class MenuListener implements Listener {
 		p.getEquipment().clear();
 
 		ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
+		ItemStack chest = new ItemBuilder(Material.CHEST).setDisplayName("§6Inventory").build();
 		p.getInventory().setItem(0, carrot);
+		p.getInventory().setItem(8, chest);
 		
 		if(p.hasPermission("dreamland.build.*") || p.hasPermission("dreamland.build.self") || p.hasPermission("dreamland.build.other")) {
 			ItemStack gold_spade = new ItemBuilder(Material.GOLD_SPADE).setDisplayName("§6Builder").build();
-			p.getInventory().setItem(7, gold_spade);
+			p.getInventory().setItem(1, gold_spade);
 		}
 		
-		if(!p.hasPermission("dreamland.VIP") || !p.hasPermission("dreamland.*")) {
+		if(!p.hasPermission("dreamland.VIP")) {
 			ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
-			p.getInventory().setItem(8, golden_carrot);
+			p.getInventory().setItem(7, golden_carrot);
 		}
 		
 	}
 
+	//open Inv-menu
+	public static void openInvMain(Player p)
+	{
+		Inventory inv = Bukkit.createInventory(null, 9 * 1, "§cInventory");
+
+		ItemStack clothings = new ItemStack(Material.IRON_CHESTPLATE);
+		ItemMeta clothingsmeta = clothings.getItemMeta();
+		clothingsmeta.setDisplayName("§6Clothings");
+		clothings.setItemMeta(clothingsmeta);
+
+		ItemStack hats = new ItemStack(Material.IRON_HELMET);
+		ItemMeta hatsmeta = hats.getItemMeta();
+		hatsmeta.setDisplayName("§6Achievements (" + getAchievementsPercentage(p) + "%)");
+		hats.setItemMeta(hatsmeta);
+		
+
+		inv.setItem(0, clothings);
+		inv.setItem(1, hats);
+		
+		p.openInventory(inv);
+	}
+	
 	// Menu-Menu
 	@EventHandler
 	public void onOpenMainmenu(PlayerInteractEvent e) {
@@ -87,6 +111,9 @@ public class MenuListener implements Listener {
 			try {
 				if (e.getMaterial().equals(Material.CARROT_ITEM)) {
 					openMenuMain(p);
+				}
+				if (e.getMaterial().equals(Material.CHEST)) {
+					openInvMain(p);
 				}
 				else {
 					de.zwibbltv.dreamland.attractions.ToI.test(p);

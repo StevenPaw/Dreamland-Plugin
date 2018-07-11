@@ -3,7 +3,6 @@ package de.zwibbltv.dreamland.listener;
 import java.util.ArrayList;
 
 import org.bukkit.Bukkit;
-import org.bukkit.Material;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Villager;
@@ -14,7 +13,10 @@ import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.inventory.meta.LeatherArmorMeta;
 
+import de.zwibbltv.dreamland.utils.PlayerConfig;
+import de.zwibbltv.dreamland.utils.Shop;
 import net.milkbowl.vault.economy.Economy;
 
 public class ShopListener implements Listener {
@@ -25,21 +27,32 @@ public class ShopListener implements Listener {
 			Villager v = (Villager) e.getRightClicked();
 			e.setCancelled(true);
 			
-			if(v.getCustomName().equalsIgnoreCase("Shop")) {
-				
-				ItemStack i = new ItemStack(Material.STONE);
+			for(Shop shop : Shop.values()) {
+				int b = shop.getSlot();
+			if(v.getCustomName().equalsIgnoreCase(shop.getShopName())) {
+								
+				ItemStack i = new ItemStack(shop.getMaterial());
 				ItemMeta im = i.getItemMeta();
-				im.setDisplayName("Geile Steine!");
+				im.setDisplayName(shop.getName());
+				if(shop.getColor().getBlue() != 20) {
+					LeatherArmorMeta meta1 = (LeatherArmorMeta)im;
+					meta1.setColor(shop.getColor());
+					i.setItemMeta(meta1);
+				}
 				ArrayList<String> lore = new ArrayList<>();
-				lore.add("Price: 10");
+				lore.add("§6Price: " + shop.getMoney());
+				if(PlayerConfig.hasItemInv(e.getPlayer(), shop)) {
+					lore.add(">>§cBOUGHT");
+				}
 				im.setLore(lore);
 				i.setItemMeta(im);
 				
-				Inventory inv = Bukkit.createInventory(null, 18, "Shop");
-				inv.setItem(0, i);
+				Inventory inv = Bukkit.createInventory(null, 18, shop.getShopName());
+				inv.setItem(b, i);
 				e.getPlayer().openInventory(inv);
 			} 
 		}
+	}
 		
 		
 	}
@@ -51,20 +64,26 @@ public class ShopListener implements Listener {
 		
 		Player p = (Player) e.getWhoClicked();
 		
-		if(e.getInventory().getName().equalsIgnoreCase("Shop")) {
+		for(Shop shop : Shop.values()) {
+		if(e.getInventory().getName().equalsIgnoreCase(shop.getShopName())) {
 					
-		if(e.getCurrentItem().getType() == Material.STONE) {
-			if(eco.getBalance(p) >= 10.0) {
-				
-				p.getInventory().addItem(new ItemStack(Material.STONE, 1));
-				eco.withdrawPlayer(p, 10.0);
-				p.closeInventory();
-				p.sendMessage("§aYou bought 1 Stone. WOW!!");
-				de.zwibbltv.dreamland.main.updateScoreboard.update(p);
+		if(e.getCurrentItem().getType() == shop.getMaterial()) {
+			if(eco.getBalance(p) >= shop.getMoney()) {
+				if(!PlayerConfig.hasItemInv(p, shop)) {
+					PlayerConfig.giveItemInv(p.getPlayer(), shop);
+					p.getInventory().addItem(new ItemStack(shop.getMaterial(), 1));
+					eco.withdrawPlayer(p, shop.getMoney());
+					p.closeInventory();
+					p.sendMessage("§aYou bought: §6" + shop.getName());
+					de.zwibbltv.dreamland.main.updateScoreboard.update(p);
+				} else 
+					p.sendMessage("§cYou already own this Item!");	
 				
 			} else
 				p.sendMessage("§cYou do not have enough money!");
 				p.closeInventory();
+				}
+		e.setCancelled(true);
 			}
 		}
 	}

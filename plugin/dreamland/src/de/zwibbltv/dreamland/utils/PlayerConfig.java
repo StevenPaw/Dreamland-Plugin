@@ -113,5 +113,19 @@ public class PlayerConfig {
 			}
 		}
 	}
+
+
+	public static void giveItemInv(Player p, Shop shop) {
+		if(!hasItemInv(p, shop)) {
+			PlayerConfig.set(p.getName() + ".inventory." + shop.getName(), true);
+		}		
+	}
 	
+	public static boolean hasItemInv(Player p, Shop shop) {
+		if (PlayerConfig.get(p.getName() + ".inventory." + shop.getName()) != null )
+			return true;
+		else
+			return false;
+	}
 }
+

@@ -175,7 +175,7 @@ public class Main extends JavaPlugin {
 				
 			}
 		}, 20*5, 20*5);
-		
+				
 		
 		Bukkit.getScheduler().runTaskTimer(this, new Runnable() {
 			
@@ -218,7 +218,6 @@ public class Main extends JavaPlugin {
 		this.getCommand("setwarp").setExecutor(new CMDsetwarp());
 		this.getCommand("warp").setExecutor(new CMDwarp());
 		this.getCommand("removewarp").setExecutor(new CMDremovewarp());
-		
 		this.getCommand("balloons").setExecutor(new CMDballoons());
 		
 		PluginManager pm = Bukkit.getPluginManager();
@@ -238,6 +237,7 @@ public class Main extends JavaPlugin {
 			Bukkit.getConsoleSender().sendMessage(prefix + "§cCan't connect with Vault!");
 		}
 	}
+	
 	
 	public WarpManager getWarpManager() {
 		return new WarpManager();
