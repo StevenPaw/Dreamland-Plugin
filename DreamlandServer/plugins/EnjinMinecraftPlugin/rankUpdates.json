@@ -1,3 +1,21 @@
 {
-  "playerPerms": {}
+  "playerPerms": {
+    "StevenDragon": {
+      "uuid": "d7a09802-50de-46da-a79d-ee07a5fa6960",
+      "worlds": {
+        "dreamland": [
+          "Admin"
+        ],
+        "dreamland_the_end": [
+          "Admin"
+        ],
+        "dreamland_nether": [
+          "Admin"
+        ],
+        "*": [
+          "Admin"
+        ]
+      }
+    }
+  }
 }

@@ -48,6 +48,19 @@ public class PlayerConfig {
 		return PlayerConfig.getBoolean(p.getName()+ ".resourcepack");
 	}
 	
+	//Current Inventory
+	public static void CurrentInventory(Player p, String curInv) throws IOException{
+		PlayerConfig.set(p.getName()+ ".curInv", curInv);
+		save();
+	}	
+	public static String getCurrentInventory(Player p) {
+		return PlayerConfig.getString(p.getName()+ ".curInv");
+	}
+	public static void setCurrentInventory(Player p, String curInv) throws IOException{
+		PlayerConfig.set(p.getName()+ ".curInv", curInv);
+		save();
+	}	
+	
 	//Runtime
 	public static void Runtime(Player p, int time) throws IOException{
 		PlayerConfig.set(p.getName()+ ".runtime", time);

@@ -100,3 +100,8 @@ users:
     - Admin
     options:
       name: ZwibblHelper
+  d7a09802-50de-46da-a79d-ee07a5fa6960:
+    group:
+    - Admin
+    options:
+      name: StevenDragon

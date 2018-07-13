@@ -4,8 +4,8 @@ import org.bukkit.Color;
 import org.bukkit.Material;
 
 public enum Shop {
-	COWBOYJACKETBROWN("Calico-Shop", 0, "Cowboy Jacket Brown", Material.LEATHER_CHESTPLATE, 10, 0, 0, 0),
-	COWBOYJACKETBLACK("Calico-Shop", 1, "Cowboy Jacket Black", Material.LEATHER_CHESTPLATE, 10, 0, 0, 0);
+	COWBOYJACKETBROWN("Calico-Shop", 3, "Cowboy Jacket Brown", Material.LEATHER_CHESTPLATE, 10, 0, 0, 20),
+	COWBOYJACKETBLACK("Calico-Shop", 5, "Cowboy Jacket Black", Material.LEATHER_CHESTPLATE, 10, 0, 0, 0);
 
 	
 	String shopname;

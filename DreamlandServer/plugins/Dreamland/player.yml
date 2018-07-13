@@ -115,7 +115,7 @@ supyTV:
   resourcepack: false
   builder: false
 StevenDragon:
-  runtime: 1628
+  runtime: 221
   achivements:
     FirstMove: true
     FirstChat: true
@@ -123,4 +123,7 @@ StevenDragon:
     Lagoon: true
     Grand Plaza: true
   resourcepack: false
-  builder: false
+  builder: true
+  curInv: Warps
+  inventory:
+    Cowboy Jacket Brown: true

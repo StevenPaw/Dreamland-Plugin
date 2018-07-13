@@ -1,5 +1,6 @@
 package de.zwibbltv.dreamland.listener;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,10 +26,9 @@ import de.zwibbltv.dreamland.utils.PlayerConfig;
 
 public class MenuListener implements Listener {
 
-	
+
 	List<String> catList = new ArrayList<String>();
-	String curInv = "off";
-	
+
 	@EventHandler
 	public void onDrop(PlayerDropItemEvent e) {
 		Player p = e.getPlayer();
@@ -56,7 +56,7 @@ public class MenuListener implements Listener {
 			p.setGameMode(GameMode.CREATIVE);
 		}
 	}
-	
+
 	static public void resetInventory(Player p)
 	{
 		p.getInventory().clear();
@@ -66,17 +66,17 @@ public class MenuListener implements Listener {
 		ItemStack chest = new ItemBuilder(Material.CHEST).setDisplayName("§6Inventory").build();
 		p.getInventory().setItem(0, carrot);
 		p.getInventory().setItem(8, chest);
-		
+
 		if(p.hasPermission("dreamland.build.*") || p.hasPermission("dreamland.build.self") || p.hasPermission("dreamland.build.other")) {
 			ItemStack gold_spade = new ItemBuilder(Material.GOLD_SPADE).setDisplayName("§6Builder").build();
 			p.getInventory().setItem(1, gold_spade);
 		}
-		
+
 		if(!p.hasPermission("dreamland.VIP")) {
 			ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
 			p.getInventory().setItem(7, golden_carrot);
 		}
-		
+
 	}
 
 	//open Inv-menu
@@ -93,14 +93,14 @@ public class MenuListener implements Listener {
 		ItemMeta hatsmeta = hats.getItemMeta();
 		hatsmeta.setDisplayName("§6Achievements (" + getAchievementsPercentage(p) + "%)");
 		hats.setItemMeta(hatsmeta);
-		
+
 
 		inv.setItem(0, clothings);
 		inv.setItem(1, hats);
-		
+
 		p.openInventory(inv);
 	}
-	
+
 	// Menu-Menu
 	@EventHandler
 	public void onOpenMainmenu(PlayerInteractEvent e) {
@@ -124,475 +124,494 @@ public class MenuListener implements Listener {
 		}
 	}
 
-
 	// actions
 	@EventHandler
 	public void onMenuClick(InventoryClickEvent e) {
 		Player p = (Player) e.getWhoClicked();
-			try {
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aAreas")) {
-					openMenuAreas(p);
-				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aAttraktions")) {
-					openMenuAttractions(p);
-				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Warps")) {
-					openMenuWarps(p); 				
-				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Achievements (" + getAchievementsPercentage(p) + "%)")) {
+		try {
+			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aAreas")) {
+				openMenuAreas(p);
+			}
+			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aAttraktions")) {
+				openMenuAttractions(p);
+			}
+			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Warps")) {
+				openMenuWarps(p); 				
+			}
+			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Achievements (" + getAchievementsPercentage(p) + "%)")) {
+				openMenuAchievements(p);
+			}
+			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§cBack")) {
+				if(PlayerConfig.getCurrentInventory(p) == "AchievementsCat")
+				{
 					openMenuAchievements(p);
-				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§cBack")) {
-					if(curInv == "AchievementsCat")
-					{
-						openMenuAchievements(p);
-					} else if(curInv == "WarpsAreas" || curInv == "WarpsAttractions") {
-						openMenuWarps(p);
-					} else
-						openMenuMain(p);
-				}
-				
-				if(curInv == "WarpsAreas" || curInv == "WarpsAttractions") {
-						
-					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aFlying Pegasus")) {
-						p.performCommand("warp flying_pegasus");
-						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-						p.closeInventory();
-					}	
-					
-					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aTower of Izran")) {
-						p.performCommand("warp tower_of_izran");
-						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-						p.closeInventory();
-					}	
-					
-					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aWestern race")) {
-						p.performCommand("warp western_race");
-						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-						p.closeInventory();
-					}	
-					
-					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aExplorers Cave")) {
-						p.performCommand("warp explorers_cave");
-						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-						p.closeInventory();
-					}	
-					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aSpawn")) {
-						p.performCommand("warp spawn");
-						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-						p.closeInventory();
-					}					
-					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aGreifenheim")) {
-						p.performCommand("warp greifenheim");
-						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-						p.closeInventory();
-					}
-					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aCalico")) {
-						p.performCommand("warp calico");
-						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-						p.closeInventory();
-					}
-					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLagoon")) {
-						p.performCommand("warp lagoon");
-						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-						p.closeInventory();
-					}
-					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aHaunted Mansion")) {
-						p.performCommand("warp haunted_mansion");
-						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-						p.closeInventory();
-					}
-					
-					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aChinatown")) {
-						p.performCommand("warp chinatown");
-						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-						p.closeInventory();
-					}
-					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aInformation-Center")) {
-						p.performCommand("warp information-center");
-						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-						p.closeInventory();
-					}
-				}
-				
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Audio")) {
-					p.performCommand("audio");
+				} else if(PlayerConfig.getCurrentInventory(p) == "WarpsAreas" || PlayerConfig.getCurrentInventory(p) == "WarpsAttractions") {
+					openMenuWarps(p);
+				} else
+					openMenuMain(p);
+			}
+
+			if(PlayerConfig.getCurrentInventory(p) == "WarpsAreas" || PlayerConfig.getCurrentInventory(p) == "WarpsAttractions") {
+
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aFlying Pegasus")) {
+					p.performCommand("warp flying_pegasus");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}	
-				
-				
-				if (curInv == "Achievements") {
-					for(int s = 0; s < catList.size(); s++) {
-						if(catList.get(s) == e.getCurrentItem().getItemMeta().getDisplayName()) {
-							openAchCategory(p, e.getCurrentItem().getItemMeta().getDisplayName());
-						}
-					}
+
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aTower of Izran")) {
+					p.performCommand("warp tower_of_izran");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}	
+
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aWestern race")) {
+					p.performCommand("warp western_race");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}	
+
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aExplorers Cave")) {
+					p.performCommand("warp explorers_cave");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}	
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aSpawn")) {
+					p.performCommand("warp spawn");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}					
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aGreifenheim")) {
+					p.performCommand("warp greifenheim");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aCalico")) {
+					p.performCommand("warp calico");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLagoon")) {
+					p.performCommand("warp lagoon");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aHaunted Mansion")) {
+					p.performCommand("warp haunted_mansion");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
 				}
 
-			} catch (Exception ex) {			
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aChinatown")) {
+					p.performCommand("warp chinatown");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aInformation-Center")) {
+					p.performCommand("warp information-center");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}
+			}
+
+			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Audio")) {
+				p.performCommand("audio");
+				p.closeInventory();
+			}	
+
+
+			if (PlayerConfig.getCurrentInventory(p) == "Achievements") {
+				for(int s = 0; s < catList.size(); s++) {
+					if(catList.get(s) == e.getCurrentItem().getItemMeta().getDisplayName()) {
+						openAchCategory(p, e.getCurrentItem().getItemMeta().getDisplayName());
+					}
+				}
+			}
+
+		} catch (Exception ex) {			
 		}
 	}
-	
-	// VIP-Menu
-		@EventHandler
-		public void onPlayerInteract2(PlayerInteractEvent e) {
-			Player p = e.getPlayer();
 
+	// VIP-Menu
+	@EventHandler
+	public void onPlayerInteract2(PlayerInteractEvent e) {
+		Player p = e.getPlayer();
+
+		if (e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK
+				|| e.getAction() == Action.LEFT_CLICK_AIR || e.getAction() == Action.LEFT_CLICK_BLOCK) {
+
+			if (e.getMaterial().equals(Material.GOLDEN_CARROT)) {
+				p.performCommand("buy");
+			} 				
+		}
+	}
+
+	// Build-Menu
+	@EventHandler
+	public void onPlayerInteract3(PlayerInteractEvent e) {
+		Player p = e.getPlayer();
+
+		if(p.hasPermission("dreamland.build.*") || p.hasPermission("dreamland.build.self") || p.hasPermission("dreamland.build.other")) {
 			if (e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK
 					|| e.getAction() == Action.LEFT_CLICK_AIR || e.getAction() == Action.LEFT_CLICK_BLOCK) {
-				
-					if (e.getMaterial().equals(Material.GOLDEN_CARROT)) {
-						p.performCommand("buy");
-					} 				
+
+				if (e.getMaterial().equals(Material.GOLD_SPADE)) {
+					p.performCommand("build");
+					e.setCancelled(true);
+				} 	
 			}
 		}
-		
-		// Build-Menu
-				@EventHandler
-				public void onPlayerInteract3(PlayerInteractEvent e) {
-					Player p = e.getPlayer();
+	}
 
-					if(p.hasPermission("dreamland.build.*") || p.hasPermission("dreamland.build.self") || p.hasPermission("dreamland.build.other")) {
-					if (e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK
-							|| e.getAction() == Action.LEFT_CLICK_AIR || e.getAction() == Action.LEFT_CLICK_BLOCK) {
-						
-							if (e.getMaterial().equals(Material.GOLD_SPADE)) {
-								p.performCommand("build");
-								e.setCancelled(true);
-							} 	
-						}
-					}
+	//Open Menu
+	//Open Main Menu				
+	public static void openMenuMain(Player p)
+	{
+		Inventory inv = Bukkit.createInventory(null, 9 * 1, "§cMenu");
+
+		ItemStack warps = new ItemStack(Material.COMPASS);
+		ItemMeta warpsmeta = warps.getItemMeta();
+		warpsmeta.setDisplayName("§6Warps");
+		warps.setItemMeta(warpsmeta);
+
+		ItemStack aach = new ItemStack(Material.PRISMARINE_CRYSTALS);
+		ItemMeta aachmeta = aach.getItemMeta();
+		aachmeta.setDisplayName("§6Achievements (" + getAchievementsPercentage(p) + "%)");
+		aach.setItemMeta(aachmeta);
+
+		ItemStack audio = new ItemStack(Material.PRISMARINE_SHARD);
+		ItemMeta audiometa = audio.getItemMeta();
+		audiometa.setDisplayName("§6Audio");
+		audio.setItemMeta(audiometa);
+
+		inv.setItem(0, warps);
+		inv.setItem(7, audio);
+		inv.setItem(8, aach);
+
+		p.openInventory(inv);
+	}
+
+	//Open Warps Menu
+	public void openMenuWarps(Player p) {
+
+		Inventory inv = Bukkit.createInventory(null, 9 * 1, "§0Warps");
+
+		ItemStack attraktions = new ItemStack(Material.MINECART);
+		ItemMeta attraktionsmeta = attraktions.getItemMeta();
+		attraktionsmeta.setDisplayName("§aAttraktions");
+		attraktions.setItemMeta(attraktionsmeta);
+
+		ItemStack areas = new ItemStack(Material.COMPASS);
+		ItemMeta areasmeta = areas.getItemMeta();
+		areasmeta.setDisplayName("§aAreas");
+		areas.setItemMeta(areasmeta);
+
+		ItemStack back = new ItemStack(Material.CLAY_BRICK);
+		ItemMeta backmeta = back.getItemMeta();
+		backmeta.setDisplayName("§cBack");
+		back.setItemMeta(backmeta);
+
+		inv.setItem(3, attraktions);
+		inv.setItem(5, areas);
+		inv.setItem(8, back);
+
+		try {
+			PlayerConfig.setCurrentInventory(p, "Warps");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		p.openInventory(inv);
+	}
+
+	//Open Attractions Menu
+	public void openMenuAttractions(Player p) {
+		Inventory inv = Bukkit.createInventory(null, 9 * 2, "§0Attraktion-Warps");
+
+		ItemStack ExplorersCave = new ItemStack(Material.COBBLESTONE);
+		ItemMeta ExplorersCavemeta = ExplorersCave.getItemMeta();
+		ExplorersCavemeta.setDisplayName("§aExplorers Cave");
+		ExplorersCave.setItemMeta(ExplorersCavemeta);
+		ExplorersCave.setDurability((short) 22);
+
+		ItemStack flyingpegasus = new ItemStack(Material.ELYTRA);
+		ItemMeta flyingpegasusmeta = flyingpegasus.getItemMeta();
+		flyingpegasusmeta.setDisplayName("§aFlying Pegasus");
+		flyingpegasus.setItemMeta(flyingpegasusmeta);
+
+		ItemStack Westernrace = new ItemStack(Material.DIAMOND_BARDING);
+		ItemMeta Westernracemeta = Westernrace.getItemMeta();
+		Westernracemeta.setDisplayName("§aWestern race");
+		Westernrace.setItemMeta(Westernracemeta);
+
+		ItemStack ToI = new ItemStack(Material.DIAMOND_SWORD);
+		ItemMeta ToImeta = ToI.getItemMeta();
+		ToImeta.setDisplayName("§aTower of Izran");
+		ToI.setItemMeta(ToImeta);
+		ToI.setDurability((short) 22);
+
+		ItemStack back = new ItemStack(Material.CLAY_BRICK);
+		ItemMeta backmeta = back.getItemMeta();
+		backmeta.setDisplayName("§cBack");
+		back.setItemMeta(backmeta);
+
+		ItemStack haunted_mansion = new ItemStack(Material.SKULL_ITEM);
+		ItemMeta haunted_mansionmeta = haunted_mansion.getItemMeta();
+		haunted_mansionmeta.setDisplayName("§aHaunted Mansion");
+		haunted_mansion.setItemMeta(haunted_mansionmeta);
+
+		inv.setItem(0, ExplorersCave);
+		inv.setItem(2, flyingpegasus);
+		inv.setItem(4, Westernrace);
+		inv.setItem(6, ToI);
+		inv.setItem(8, haunted_mansion);
+		inv.setItem(17, back);
+
+		try {
+			PlayerConfig.setCurrentInventory(p, "WarpsAttractions");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		p.openInventory(inv);
+	}
+
+	//Open Areas Menu
+	public void openMenuAreas(Player p) {
+		Inventory inv = Bukkit.createInventory(null, 9 * 1, "§0Area-Warps");
+
+		ItemStack spawn = new ItemStack(Material.COMPASS);
+		ItemMeta spawnmeta = spawn.getItemMeta();
+		spawnmeta.setDisplayName("§aSpawn");
+		spawn.setItemMeta(spawnmeta);
+
+		ItemStack Greifenheim = new ItemStack(Material.SMOOTH_BRICK);
+		ItemMeta Greifenheimmeta = Greifenheim.getItemMeta();
+		Greifenheimmeta.setDisplayName("§aGreifenheim");
+		Greifenheim.setItemMeta(Greifenheimmeta);
+
+		ItemStack Calico = new ItemStack(Material.WOOD, 1, (short)1);
+		ItemMeta Calicometa = Calico.getItemMeta();
+		Calicometa.setDisplayName("§aCalico");
+		Calico.setItemMeta(Calicometa);
+
+		ItemStack Lagoon = new ItemStack(Material.QUARTZ_BLOCK, 1, (short)2);
+		ItemMeta Lagoonmeta = Lagoon.getItemMeta();
+		Lagoonmeta.setDisplayName("§aLagoon");
+		Lagoon.setItemMeta(Lagoonmeta);
+
+		ItemStack back = new ItemStack(Material.CLAY_BRICK);
+		ItemMeta backmeta = back.getItemMeta();
+		backmeta.setDisplayName("§cBack");
+		back.setItemMeta(backmeta);
+
+		ItemStack chinatown = new ItemStack(Material.BOWL);
+		ItemMeta chinatownmeta = chinatown.getItemMeta();
+		chinatownmeta.setDisplayName("§aChinatown");
+		chinatown.setItemMeta(chinatownmeta);
+
+		ItemStack info = new ItemStack(Material.STICK);
+		ItemMeta infometa = info.getItemMeta();
+		infometa.setDisplayName("§aInformation-Center");
+		info.setItemMeta(infometa);
+
+		inv.setItem(0, spawn);
+		inv.setItem(2, Greifenheim);
+		inv.setItem(3, Calico);
+		inv.setItem(4, Lagoon);
+		inv.setItem(5, chinatown);
+		inv.setItem(6, info);
+		inv.setItem(8, back);
+
+		try {
+			PlayerConfig.setCurrentInventory(p, "WarpsAreas");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		p.openInventory(inv);
+	}
+
+	//Opening Achievementcateg:
+	public void openMenuAchievements(Player p) {
+
+		//CREATING COLORVARIABLE AND CLEARING CATLIST
+		Integer Pos = 0;
+		catList.clear();
+		String inv_ach_percent = getAchievementsPercentage(p).toString();
+		Inventory inv_ach = Bukkit.createInventory(null, 9 * 2, "§0Achievements (" + inv_ach_percent + "%)");
+
+		//CHECKING EACH ACHIEVEMENT FOR NEW CATEGORIES
+		for(Achievements ach : Achievements.values()) {
+
+			boolean isnew = true;
+
+			for(Integer i = 0; i < catList.size(); i++) {
+				if(ach.getCategory() == catList.get(i)) {
+					isnew = false;
 				}
-		
-		//Open Menu
-		//Open Main Menu				
-		public static void openMenuMain(Player p)
-		{
-			Inventory inv = Bukkit.createInventory(null, 9 * 1, "§cMenu");
+			}
 
-			ItemStack warps = new ItemStack(Material.COMPASS);
-			ItemMeta warpsmeta = warps.getItemMeta();
-			warpsmeta.setDisplayName("§6Warps");
-			warps.setItemMeta(warpsmeta);
+			if(isnew == true) {
+				int Color = 0;
 
-			ItemStack aach = new ItemStack(Material.PRISMARINE_CRYSTALS);
-			ItemMeta aachmeta = aach.getItemMeta();
-			aachmeta.setDisplayName("§6Achievements (" + getAchievementsPercentage(p) + "%)");
-			aach.setItemMeta(aachmeta);
-			
-			ItemStack audio = new ItemStack(Material.PRISMARINE_SHARD);
-			ItemMeta audiometa = audio.getItemMeta();
-			audiometa.setDisplayName("§6Audio");
-			audio.setItemMeta(audiometa);
+				if(getCategoryPercentage(p, ach.getCategory()) == 0)
+					Color = 6;
+				else if (getCategoryPercentage(p, ach.getCategory()) == 100)
+					Color = 5;
+				else
+					Color = 4;
 
-			inv.setItem(0, warps);
-			inv.setItem(7, audio);
-			inv.setItem(8, aach);
-			
-			p.openInventory(inv);
-		}
-		
-		//Open Warps Menu
-		public void openMenuWarps(Player p) {
-			
-			Inventory inv = Bukkit.createInventory(null, 9 * 1, "§0Warps");
-			
-			ItemStack attraktions = new ItemStack(Material.MINECART);
-			ItemMeta attraktionsmeta = attraktions.getItemMeta();
-			attraktionsmeta.setDisplayName("§aAttraktions");
-			attraktions.setItemMeta(attraktionsmeta);
-			
-			ItemStack areas = new ItemStack(Material.COMPASS);
-			ItemMeta areasmeta = areas.getItemMeta();
-			areasmeta.setDisplayName("§aAreas");
-			areas.setItemMeta(areasmeta);
-			
-			ItemStack back = new ItemStack(Material.CLAY_BRICK);
-			ItemMeta backmeta = back.getItemMeta();
-			backmeta.setDisplayName("§cBack");
-			back.setItemMeta(backmeta);
-			
-			inv.setItem(3, attraktions);
-			inv.setItem(5, areas);
-			inv.setItem(8, back);
-			
-			curInv = "Warps";
-			p.openInventory(inv);
-		}
-		
-		//Open Attractions Menu
-		public void openMenuAttractions(Player p) {
-			Inventory inv = Bukkit.createInventory(null, 9 * 2, "§0Attraktion-Warps");
 
-			ItemStack ExplorersCave = new ItemStack(Material.COBBLESTONE);
-			ItemMeta ExplorersCavemeta = ExplorersCave.getItemMeta();
-			ExplorersCavemeta.setDisplayName("§aExplorers Cave");
-			ExplorersCave.setItemMeta(ExplorersCavemeta);
-			ExplorersCave.setDurability((short) 22);
-			
-			ItemStack flyingpegasus = new ItemStack(Material.ELYTRA);
-			ItemMeta flyingpegasusmeta = flyingpegasus.getItemMeta();
-			flyingpegasusmeta.setDisplayName("§aFlying Pegasus");
-			flyingpegasus.setItemMeta(flyingpegasusmeta);
-			
-			ItemStack Westernrace = new ItemStack(Material.DIAMOND_BARDING);
-			ItemMeta Westernracemeta = Westernrace.getItemMeta();
-			Westernracemeta.setDisplayName("§aWestern race");
-			Westernrace.setItemMeta(Westernracemeta);
-			
-			ItemStack ToI = new ItemStack(Material.DIAMOND_SWORD);
-			ItemMeta ToImeta = ToI.getItemMeta();
-			ToImeta.setDisplayName("§aTower of Izran");
-			ToI.setItemMeta(ToImeta);
-			ToI.setDurability((short) 22);
-			
-			ItemStack back = new ItemStack(Material.CLAY_BRICK);
-			ItemMeta backmeta = back.getItemMeta();
-			backmeta.setDisplayName("§cBack");
-			back.setItemMeta(backmeta);
-			
-			ItemStack haunted_mansion = new ItemStack(Material.SKULL_ITEM);
-			ItemMeta haunted_mansionmeta = haunted_mansion.getItemMeta();
-			haunted_mansionmeta.setDisplayName("§aHaunted Mansion");
-			haunted_mansion.setItemMeta(haunted_mansionmeta);
+				ItemStack achItem = new ItemStack(Material.STAINED_CLAY, 1, (short) (double)Color);
+				ItemMeta achMeta = achItem.getItemMeta();
 
-			inv.setItem(0, ExplorersCave);
-			inv.setItem(2, flyingpegasus);
-			inv.setItem(4, Westernrace);
-			inv.setItem(6, ToI);
-			inv.setItem(8, haunted_mansion);
-			inv.setItem(17, back);
-
-			curInv = "WarpsAttractions";
-			p.openInventory(inv);
-		}
-
-		//Open Areas Menu
-		public void openMenuAreas(Player p) {
-			Inventory inv = Bukkit.createInventory(null, 9 * 1, "§0Area-Warps");
-
-			ItemStack spawn = new ItemStack(Material.COMPASS);
-			ItemMeta spawnmeta = spawn.getItemMeta();
-			spawnmeta.setDisplayName("§aSpawn");
-			spawn.setItemMeta(spawnmeta);
-			
-			ItemStack Greifenheim = new ItemStack(Material.SMOOTH_BRICK);
-			ItemMeta Greifenheimmeta = Greifenheim.getItemMeta();
-			Greifenheimmeta.setDisplayName("§aGreifenheim");
-			Greifenheim.setItemMeta(Greifenheimmeta);
-			
-			ItemStack Calico = new ItemStack(Material.WOOD, 1, (short)1);
-			ItemMeta Calicometa = Calico.getItemMeta();
-			Calicometa.setDisplayName("§aCalico");
-			Calico.setItemMeta(Calicometa);
-			
-			ItemStack Lagoon = new ItemStack(Material.QUARTZ_BLOCK, 1, (short)2);
-			ItemMeta Lagoonmeta = Lagoon.getItemMeta();
-			Lagoonmeta.setDisplayName("§aLagoon");
-			Lagoon.setItemMeta(Lagoonmeta);
-			
-			ItemStack back = new ItemStack(Material.CLAY_BRICK);
-			ItemMeta backmeta = back.getItemMeta();
-			backmeta.setDisplayName("§cBack");
-			back.setItemMeta(backmeta);
-			
-			ItemStack chinatown = new ItemStack(Material.BOWL);
-			ItemMeta chinatownmeta = chinatown.getItemMeta();
-			chinatownmeta.setDisplayName("§aChinatown");
-			chinatown.setItemMeta(chinatownmeta);
-			
-			ItemStack info = new ItemStack(Material.STICK);
-			ItemMeta infometa = info.getItemMeta();
-			infometa.setDisplayName("§aInformation-Center");
-			info.setItemMeta(infometa);
-
-			inv.setItem(0, spawn);
-			inv.setItem(2, Greifenheim);
-			inv.setItem(3, Calico);
-			inv.setItem(4, Lagoon);
-			inv.setItem(5, chinatown);
-			inv.setItem(6, info);
-			inv.setItem(8, back);
-
-			curInv = "WarpsAreas";
-			p.openInventory(inv);
-		}
-		
-		//Opening Achievementcateg:
-		public void openMenuAchievements(Player p) {
-			
-			//CREATING COLORVARIABLE AND CLEARING CATLIST
-			Integer Pos = 0;
-			catList.clear();
-			String inv_ach_percent = getAchievementsPercentage(p).toString();
-			Inventory inv_ach = Bukkit.createInventory(null, 9 * 2, "§0Achievements (" + inv_ach_percent + "%)");
-			
-			//CHECKING EACH ACHIEVEMENT FOR NEW CATEGORIES
-			for(Achievements ach : Achievements.values()) {
-				
-				boolean isnew = true;
-								
-				for(Integer i = 0; i < catList.size(); i++) {
-					if(ach.getCategory() == catList.get(i)) {
-						isnew = false;
-					}
+				if(getCategoryPercentage(p, ach.getCategory()) == 0) {
+					Color = 6;
+					List<String> lore = new ArrayList<String>();
+					lore.add("§4" + getCategoryPercentage(p,ach.getCategory()) + "% completed");
+					achMeta.setLore(lore);
 				}
-				
-				if(isnew == true) {
-					int Color = 0;
-					
-					if(getCategoryPercentage(p, ach.getCategory()) == 0)
-						Color = 6;
-					else if (getCategoryPercentage(p, ach.getCategory()) == 100)
-						Color = 5;
-					else
-						Color = 4;
-					
-					
-					ItemStack achItem = new ItemStack(Material.STAINED_CLAY, 1, (short) (double)Color);
+				else if (getCategoryPercentage(p, ach.getCategory()) == 100) {
+					Color = 5;
+					List<String> lore = new ArrayList<String>();
+					lore.add("§a" + getCategoryPercentage(p,ach.getCategory()) + "% completed");
+					achMeta.setLore(lore);
+				} else {
+					Color = 4;
+					List<String> lore = new ArrayList<String>();
+					lore.add("§e" + getCategoryPercentage(p,ach.getCategory()) + "% completed");
+					achMeta.setLore(lore);
+				}
+
+				achMeta.setDisplayName(ach.getCategory());
+				achItem.setItemMeta(achMeta);
+				inv_ach.setItem(Pos, achItem);
+				catList.add(ach.getCategory());
+				Pos = Pos + 1;
+			} else {
+			}
+		}
+
+		ItemStack back = new ItemStack(Material.CLAY_BRICK);
+		ItemMeta backmeta = back.getItemMeta();
+		backmeta.setDisplayName("§cBack");
+		back.setItemMeta(backmeta);
+		inv_ach.setItem(9 * 2 - 1, back);
+
+		inv_ach_percent = getAchievementsPercentage(p).toString();
+		p.openInventory(inv_ach);
+		try {
+			PlayerConfig.setCurrentInventory(p, "Achievements");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	//Achievementcategory öffnen:
+	public void openAchCategory(Player p, String cat) {
+
+		//DECIDING THE INVENTORY SIZE
+		//----from here---
+		int invSize = 1;
+		int AchNumber = 0;
+		for(Achievements achn : Achievements.values()) {
+			if(achn.getCategory() == cat) //Counting the Achievements in that Category
+				AchNumber += 1;
+		}
+		boolean passt = false;
+		while(passt == false) {
+			if(9*invSize > AchNumber) {
+				passt = true;
+			} else {
+				invSize += 1;
+			}
+		}
+		//---to here---
+
+		Inventory inv = Bukkit.createInventory(null, 9 * invSize, "§0Achievements: " + cat + " (" + getCategoryPercentage(p, cat) + "%)");
+
+		int i = 0; //to decide place in Inventory
+		for(Achievements ach : Achievements.values()) {
+			if(ach.getCategory() == cat) {
+				if(PlayerConfig.hasAchivement(p, ach))
+				{
+					ItemStack achItem = new ItemStack(Material.STAINED_CLAY, 1, (short) 5);
 					ItemMeta achMeta = achItem.getItemMeta();
-					
-					if(getCategoryPercentage(p, ach.getCategory()) == 0) {
-						Color = 6;
+					achMeta.setDisplayName("§a"+ ach.getName());
+					List<String> lore = new ArrayList<String>();
+					lore.add(ach.getText());
+					achMeta.setLore(lore);
+					achItem.setItemMeta(achMeta);
+					inv.setItem(i, achItem);
+				} else {
+					ItemStack achItem = new ItemStack(Material.STAINED_CLAY, 1, (short) 14);
+					ItemMeta achMeta = achItem.getItemMeta();
+					if(ach.getVisibility()) {
+						achMeta.setDisplayName("§c"+ ach.getName());
 						List<String> lore = new ArrayList<String>();
-						lore.add("§4" + getCategoryPercentage(p,ach.getCategory()) + "% completed");
-						achMeta.setLore(lore);
-					}
-					else if (getCategoryPercentage(p, ach.getCategory()) == 100) {
-						Color = 5;
-						List<String> lore = new ArrayList<String>();
-						lore.add("§a" + getCategoryPercentage(p,ach.getCategory()) + "% completed");
+						lore.add(ach.getTask());
 						achMeta.setLore(lore);
 					} else {
-						Color = 4;
+						achMeta.setDisplayName("§c§k" + ach.getName());
 						List<String> lore = new ArrayList<String>();
-						lore.add("§e" + getCategoryPercentage(p,ach.getCategory()) + "% completed");
+						lore.add(ach.getTask());
 						achMeta.setLore(lore);
 					}
-					
-					achMeta.setDisplayName(ach.getCategory());
 					achItem.setItemMeta(achMeta);
-					inv_ach.setItem(Pos, achItem);
-					catList.add(ach.getCategory());
-					Pos = Pos + 1;
-				} else {
+					inv.setItem(i, achItem);
 				}
+				i = i + 1;
+
+				//Adding the Back-Button in last place
+				ItemStack back = new ItemStack(Material.CLAY_BRICK);
+				ItemMeta backmeta = back.getItemMeta();
+				backmeta.setDisplayName("§cBack");
+				back.setItemMeta(backmeta);
+				inv.setItem(9 * invSize - 1, back);
 			}
-			
-			ItemStack back = new ItemStack(Material.CLAY_BRICK);
-			ItemMeta backmeta = back.getItemMeta();
-			backmeta.setDisplayName("§cBack");
-			back.setItemMeta(backmeta);
-			inv_ach.setItem(9 * 2 - 1, back);
-			
-			inv_ach_percent = getAchievementsPercentage(p).toString();
-			p.openInventory(inv_ach);
-			curInv = "Achievements";
 		}
-		
-		//Achievementcategory öffnen:
-		public void openAchCategory(Player p, String cat) {
-			
-			//DECIDING THE INVENTORY SIZE
-			//----from here---
-			int invSize = 1;
-			int AchNumber = 0;
-			for(Achievements achn : Achievements.values()) {
-				if(achn.getCategory() == cat) //Counting the Achievements in that Category
-					AchNumber += 1;
-			}
-			boolean passt = false;
-			while(passt == false) {
-				if(9*invSize > AchNumber) {
-					passt = true;
-				} else {
-					invSize += 1;
-				}
-			}
-			//---to here---
-			
-			Inventory inv = Bukkit.createInventory(null, 9 * invSize, "§0Achievements: " + cat + " (" + getCategoryPercentage(p, cat) + "%)");
-			
-			int i = 0; //to decide place in Inventory
-			for(Achievements ach : Achievements.values()) {
-				if(ach.getCategory() == cat) {
-					if(PlayerConfig.hasAchivement(p, ach))
-						{
-							ItemStack achItem = new ItemStack(Material.STAINED_CLAY, 1, (short) 5);
-							ItemMeta achMeta = achItem.getItemMeta();
-							achMeta.setDisplayName("§a"+ ach.getName());
-							List<String> lore = new ArrayList<String>();
-							lore.add(ach.getText());
-							achMeta.setLore(lore);
-							achItem.setItemMeta(achMeta);
-							inv.setItem(i, achItem);
-						} else {
-							ItemStack achItem = new ItemStack(Material.STAINED_CLAY, 1, (short) 14);
-							ItemMeta achMeta = achItem.getItemMeta();
-							if(ach.getVisibility()) {
-								achMeta.setDisplayName("§c"+ ach.getName());
-								List<String> lore = new ArrayList<String>();
-								lore.add(ach.getTask());
-								achMeta.setLore(lore);
-							} else {
-								achMeta.setDisplayName("§c§k" + ach.getName());
-								List<String> lore = new ArrayList<String>();
-								lore.add(ach.getTask());
-								achMeta.setLore(lore);
-							}
-							achItem.setItemMeta(achMeta);
-							inv.setItem(i, achItem);
-						}
-						i = i + 1;
-						
-						//Adding the Back-Button in last place
-						ItemStack back = new ItemStack(Material.CLAY_BRICK);
-						ItemMeta backmeta = back.getItemMeta();
-						backmeta.setDisplayName("§cBack");
-						back.setItemMeta(backmeta);
-						inv.setItem(9 * invSize - 1, back);
-				}
-			}
-			p.openInventory(inv);
-			curInv = "AchievementsCat";
+		p.openInventory(inv);
+		try {
+			PlayerConfig.setCurrentInventory(p, "AchievementsCat");
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
-		
-		//Prozentsatz der Achievements errechnen:
-		public static Integer getAchievementsPercentage(Player p) {
-			
-			int NumberOfAch = 0;
-			int NumberCompleted = 0;
-			
-			for(Achievements ach : Achievements.values()) {
+	}
+
+	//Prozentsatz der Achievements errechnen:
+	public static Integer getAchievementsPercentage(Player p) {
+
+		int NumberOfAch = 0;
+		int NumberCompleted = 0;
+
+		for(Achievements ach : Achievements.values()) {
+			NumberOfAch += 1;
+			if(PlayerConfig.hasAchivement(p, ach))
+			{
+				NumberCompleted += 1;
+			}
+		}
+		int percent = (int)((NumberCompleted * 100.0f) / NumberOfAch);
+
+		return percent;
+	}
+
+	//Prozentsatz einer Kategorie errechnen:
+	public static Integer getCategoryPercentage(Player p, String cat) {
+
+		int NumberOfAch = 0;
+		int NumberCompleted = 0;
+
+		for(Achievements ach : Achievements.values()) {
+			if(ach.getCategory() == cat) {
 				NumberOfAch += 1;
 				if(PlayerConfig.hasAchivement(p, ach))
 				{
 					NumberCompleted += 1;
 				}
 			}
-			int percent = (int)((NumberCompleted * 100.0f) / NumberOfAch);
-			
-			return percent;
 		}
-		
-		//Prozentsatz einer Kategorie errechnen:
-		public static Integer getCategoryPercentage(Player p, String cat) {
-			
-			int NumberOfAch = 0;
-			int NumberCompleted = 0;
-			
-			for(Achievements ach : Achievements.values()) {
-				if(ach.getCategory() == cat) {
-					NumberOfAch += 1;
-					if(PlayerConfig.hasAchivement(p, ach))
-					{
-						NumberCompleted += 1;
-					}
-				}
-			}
-			int percent = (int)((NumberCompleted * 100.0f) / NumberOfAch);
-			
-			return percent;
-		}
-		
+		int percent = (int)((NumberCompleted * 100.0f) / NumberOfAch);
+
+		return percent;
+	}
+
 }
