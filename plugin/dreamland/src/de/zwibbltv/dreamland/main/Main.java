@@ -2,16 +2,10 @@ package de.zwibbltv.dreamland.main;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Calendar;
-import java.util.Random;
 
 import org.bukkit.Bukkit;
-import org.bukkit.Location;
-import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -40,16 +34,16 @@ import de.zwibbltv.dreamland.listener.PlayerListener;
 import de.zwibbltv.dreamland.listener.ShopListener;
 import de.zwibbltv.dreamland.listener.scoreboardListener;
 import de.zwibbltv.dreamland.nms.Reflection;
-import de.zwibbltv.dreamland.utils.Achievements;
 import de.zwibbltv.dreamland.utils.PlayerConfig;
 import de.zwibbltv.dreamland.utils.WarpManager;
 import net.milkbowl.vault.economy.Economy;
 
 public class Main extends JavaPlugin {
-    
-	
+
+	//	BukkitTask TaskName = new RunnableClass(this).runTaskTimer(this, 20, 20);
+
 	private static Main plugin;
-		
+
 	public static Main getInstance() {
 		return instance;
 	}	
@@ -62,13 +56,13 @@ public class Main extends JavaPlugin {
 	public static Economy economy = null;
 	public String prefix = "§e[Dreamland] ";
 	int ScoreboardCoolDown = 0;
-	
+
 	@Override
 	public void onEnable() {
-				
+
 		instance = this;
-        this.version = Bukkit.getServer().getClass().getPackage().getName().replace(".", ",").split(",")[3];
-		
+		this.version = Bukkit.getServer().getClass().getPackage().getName().replace(".", ",").split(",")[3];
+
 		saveDefaultConfig();
 		Main.file = new File("plugins/Dreamland", "config.yml");
 		Main.cfg = YamlConfiguration.loadConfiguration(Main.file);
@@ -77,134 +71,24 @@ public class Main extends JavaPlugin {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 		setInstance(this);
 		plugin = this;
 		this.setupEconomy();
-		
-		
+
+
 		//Goldbrunnen in Calico
 		Bukkit.getScheduler().runTaskTimer(this, new Runnable() {
 
 			@Override
 			public void run() {
-				Location loc = new Location(Bukkit.getWorld(getName()), -852, 20, 770);
-	    		
-	    		ItemStack random = null;
-	    		
-	    		Random r = new Random();
-	    		int zufall = r.nextInt(6);
-	    		switch(zufall) {
-	    		case 0:
-	    			int zufall0 = r.nextInt(3);
-		    		switch(zufall0) {
-		    		case 0:
-		    			random = new ItemStack(Material.GOLD_NUGGET);
-		    			break;
-		    		case 1:
-		    			random = new ItemStack(Material.GOLD_NUGGET, 2);
-		    			break;
-		    		case 2:
-		    			random = new ItemStack(Material.GOLD_NUGGET, 3);
-		    			break;
-		    		}
-		    		break;
-	    		case 1:
-	    			int zufall1 = r.nextInt(3);
-		    		switch(zufall1) {
-		    		case 0:
-		    			random = new ItemStack(Material.GOLD_NUGGET);
-		    			break;
-		    		case 1:
-		    			random = new ItemStack(Material.GOLD_NUGGET, 2);
-		    			break;
-		    		case 2:
-		    			random = new ItemStack(Material.GOLD_NUGGET, 3);
-		    			break;
-		    		}
-		    		break;
-	    		case 2:
-	    			int zufall2 = r.nextInt(3);
-		    		switch(zufall2) {
-		    		case 0:
-		    			random = new ItemStack(Material.GOLD_NUGGET);
-		    			break;
-		    		case 1:
-		    			random = new ItemStack(Material.GOLD_NUGGET, 2);
-		    			break;
-		    		case 2:
-		    			random = new ItemStack(Material.GOLD_NUGGET, 3);
-		    			break;
-		    		}
-		    		break;
-	    		case 3:
-	    			int zufall3 = r.nextInt(3);
-		    		switch(zufall3) {
-		    		case 0:
-		    			random = new ItemStack(Material.GOLD_INGOT);
-		    			break;
-		    		case 1:
-		    			random = new ItemStack(Material.GOLD_INGOT, 2);
-		    			break;
-		    		case 2:
-		    			random = new ItemStack(Material.GOLD_INGOT, 3);
-		    			break;
-		    		}
-		    		break;
-	    		case 4:
-	    			int zufall4 = r.nextInt(3);
-		    		switch(zufall4) {
-		    		case 0:
-		    			random = new ItemStack(Material.GOLD_INGOT);
-		    			break;
-		    		case 1:
-		    			random = new ItemStack(Material.GOLD_INGOT, 2);
-		    			break;
-		    		case 2:
-		    			random = new ItemStack(Material.GOLD_INGOT, 3);
-		    			break;
-		    		}
-		    		break;
-	    		case 5:
-	    			random = new ItemStack(Material.GOLD_BLOCK);		    					    		
-		    		break;
-	    			
-	    		}
-	    		
-	    		
-	    		loc.getWorld().dropItemNaturally(loc, random);
-				
-				
+
+				de.zwibbltv.dreamland.utils.RunnableClass.run(Bukkit.getWorld(getName()), economy);				
 			}
-		}, 20*5, 20*5);
-				
-		
-		Bukkit.getScheduler().runTaskTimer(this, new Runnable() {
-			
-			
-			@SuppressWarnings("deprecation")
-			@Override
-		    public void run() {
-					    	
-		    	for(Player p : Bukkit.getOnlinePlayers()) {
-		    		economy.depositPlayer(p, 0.01);
-		    		
-		    		Calendar c = Calendar.getInstance();
-					
-					if(c.getTime().getHours() <= 4) {
-						PlayerConfig.giveAchievement(p.getPlayer(), Achievements.DREAMLANDBYNIGHT);
-					}
-		    				    		
-		    		if(ScoreboardCoolDown>= 20) {
-			    		de.zwibbltv.dreamland.main.updateScoreboard.update(p);
-			    	}		    		
-		        }
-		    	ScoreboardCoolDown++;
-		    }
 		}, 20, 20);
-		
-	Bukkit.getConsoleSender().sendMessage(prefix + "§a§lenabled!");
-	
+
+		Bukkit.getConsoleSender().sendMessage(prefix + "§a§lenabled!");
+
 		getCommand("mute").setExecutor(new CMDmute());
 		getCommand("gm").setExecutor(new CMDgamemode());
 		getCommand("build").setExecutor(new CMDbuild());
@@ -218,13 +102,13 @@ public class Main extends JavaPlugin {
 		getCommand("eco").setExecutor(new CMDmoney());
 		getCommand("inv").setExecutor(new CMDinv());
 		getCommand("inventory").setExecutor(new CMDinv());
-		
+
 		setInstance(this);
 		this.getCommand("setwarp").setExecutor(new CMDsetwarp());
 		this.getCommand("warp").setExecutor(new CMDwarp());
 		this.getCommand("removewarp").setExecutor(new CMDremovewarp());
 		this.getCommand("balloons").setExecutor(new CMDballoons());
-		
+
 		PluginManager pm = Bukkit.getPluginManager();
 		pm.registerEvents(new JoinListener(), this);
 		pm.registerEvents(new CMDmute(), this);
@@ -234,50 +118,50 @@ public class Main extends JavaPlugin {
 		pm.registerEvents(new PlayerListener(), this);
 		pm.registerEvents(new BalloonListener(), this);
 		pm.registerEvents(new BalloonEvents(), this);
-		
-				
+
+
 		if(setupEconomy()) {
 			Bukkit.getConsoleSender().sendMessage(prefix + "§aConnected with Vault!");
 		} else {
 			Bukkit.getConsoleSender().sendMessage(prefix + "§cCan't connect with Vault!");
 		}
 	}
-	
-	
+
+
 	public WarpManager getWarpManager() {
 		return new WarpManager();
 	}
-	
+
 	@Override
 	public void onDisable() {
 		Bukkit.getConsoleSender().sendMessage(prefix + "§c§ldisabled!");
-		
+
 	}
-	
+
 	public static Main getPlugin() {
 		return plugin;
 	}
-	
-		
-	 private boolean setupEconomy()
-	    {
-	        RegisteredServiceProvider<Economy> economyProvider = getServer().getServicesManager().getRegistration(net.milkbowl.vault.economy.Economy.class);
-	        if (economyProvider != null) {
-	            economy = economyProvider.getProvider();
-	        }
 
-	        return (economy != null);
-	    }
-	 
+
+	private boolean setupEconomy()
+	{
+		RegisteredServiceProvider<Economy> economyProvider = getServer().getServicesManager().getRegistration(net.milkbowl.vault.economy.Economy.class);
+		if (economyProvider != null) {
+			economy = economyProvider.getProvider();
+		}
+
+		return (economy != null);
+	}
+
 	public static File file;
 	public static FileConfiguration cfg;
-	
+
 	@SuppressWarnings("unused")
 	private void registerEntities(){
-        try{
-            Reflection.getClass(Reflection.PackageType.BFB, "Registry").newInstance();
-        }catch (IllegalAccessException |InstantiationException e){
-            e.printStackTrace();
-        }
-    }
+		try{
+			Reflection.getClass(Reflection.PackageType.BFB, "Registry").newInstance();
+		}catch (IllegalAccessException |InstantiationException e){
+			e.printStackTrace();
+		}
+	}
 }

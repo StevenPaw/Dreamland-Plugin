@@ -86,7 +86,8 @@ StevenPaw:
     Going to church: true
     Club 33: true
     Club33 Trainstation: true
-  runtime: 2712
+    Play 2 hours: true
+  runtime: 790
   resourcepack: false
 Segel_Basti:
   builder: true
