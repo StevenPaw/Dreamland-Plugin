@@ -27,12 +27,13 @@ public class CMDvillager implements CommandExecutor{
 				
 				Location loc = p.getLocation();				
 				Villager v = loc.getWorld().spawn(loc, Villager.class);
-				v.setCustomNameVisible(true);
 				v.setCustomName(args[0]);
-				v.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 300000, 300000));
-				v.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 300000, 300000));
-				v.addPotionEffect(new PotionEffect(PotionEffectType.REGENERATION, 300000, 300000));
-				p.sendMessage("§aVillager created!");
+				v.setCustomNameVisible(false);
+				v.setSilent(true);
+				v.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 300000, 300000, false, false));
+				v.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 300000, 300000 ,false, false));
+				v.addPotionEffect(new PotionEffect(PotionEffectType.REGENERATION, 300000, 300000, false, false));
+				p.sendMessage("§aVillager created: §6" + args[0]);
 								
 				} 
 		} else 

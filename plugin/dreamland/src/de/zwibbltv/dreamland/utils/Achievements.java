@@ -11,7 +11,9 @@ public enum Achievements {
 	FIRSTJOIN("FirstJoin","You joined our Server!",20, true,"join the server","Dreamland"),
 	FIRSTCHAT("FirstChat","You chatted the first time!",10, true,"chat the first time","Dreamland"),
 	FIRSTMOVE("FirstMove","You moved for the first time!",10, true,"move!","Dreamland"),
+	WATER("Into the water","You jumped into water! Are you fresher now?",10, false,"???","Dreamland"),
 	RUNAKM("Run a KM","You ran a Kilometer in one session!",10, false,"???","Dreamland"),
+	PLAY2HOURS("Play 2 hours","You play 2 hours on Dreamland!",20, false,"???","Dreamland"),
 	GREATVIEWCASTLE("Great view from the castle","You found the button with great view in the castle!",10, false,"???","Dreamland"),
 	SECRETTUNNEL("Secret tunnel","You found the secret tunnel!",10, false,"???","Dreamland"),
 	DREAMLANDBYNIGHT("Dreamland by night","You played while you normaly have to sleep!",10, false,"???","Dreamland"),
@@ -42,7 +44,8 @@ public enum Achievements {
 	BLUEROOM("Blue room","You found the blue room in the castle",10,false,"???","Castle"),
 	LOVEROOM("Loveroom","You found the Loveroom in the castle",10,false,"???","Castle"),
 	CASTLEFALL("Castlefall","You jumped down in the Castle Parcour",10,false,"???","Castle"),
-	CASTLEPARCOUR("Castleparcour","Complete the parcour ",10,false,"???","Castle"),
+	CASTLEPARCOUR("Castleparcour","Complete the parcour",10,false,"???","Castle"),
+	CASTLEMONKEY("Castle Monkey","Be an monkey near the castle",10,false,"???","Castle"),
 	//Calico
 	CALICO("Calico", "You went to Calico!", 10, true,"Enter Calico","Calico"),
 	CALICOFOUNTAIN("Calicos Fountain","You activated the fountain in Calico!",10,true,"Activate the fountain in Calico","Calico"),
@@ -160,6 +163,11 @@ public enum Achievements {
 			d = ploc.distance(new Location(w, -757.5, 28.0, 655.5));
 			if(d <= 2) {				
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.BACKSTAGEPARCOURII);
+				}
+			//castle Monkey
+			d = ploc.distance(new Location(w, -622.5, 26.0, 651.5));
+			if(d <= 1) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.CASTLEMONKEY);
 				}
 			
 			

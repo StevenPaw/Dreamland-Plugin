@@ -34,16 +34,13 @@ public class ShopListener implements Listener {
 			//CHECKEN NACH DEN SHOPS
 
 			for(Shop shop : Shop.values()) {
-
 				boolean isnew = true;
 				for(Integer i = 0; i < shopList.size(); i++) {
-					if(shop.getShopName() == shopList.get(i))
-					{
+					if(shop.getShopName() == shopList.get(i)) {
 						isnew = false;
 					}
 				}
-				if(isnew == true)
-				{
+				if(isnew == true) {
 					shopList.add(shop.getShopName());
 				}
 			}
@@ -51,14 +48,10 @@ public class ShopListener implements Listener {
 			//INVENTARGRÖßE BERECHNEN
 			Integer invCount = 0;
 			Integer invSize = 0;
-			for(Integer i = 0; i < shopList.size(); i++)
-			{
-				if(v.getCustomName().equalsIgnoreCase(shopList.get(i)))
-				{
-					for(Shop shop : Shop.values())
-					{
-						if (shop.getShopName() == shopList.get(i))
-						{
+			for(Integer i = 0; i < shopList.size(); i++) {
+				if(v.getCustomName().equalsIgnoreCase(shopList.get(i)))	{
+					for(Shop shop : Shop.values())	{
+						if (shop.getShopName() == shopList.get(i))	{
 							if(shop.getSlot() >= invCount)
 								invCount = shop.getSlot();
 						}
@@ -76,15 +69,11 @@ public class ShopListener implements Listener {
 
 
 			//SHOPINVENTAR ERSTELLEN
-			for(Integer i = 0; i < shopList.size(); i++)
-			{
-				if(v.getCustomName().equalsIgnoreCase(shopList.get(i)))
-				{
+			for(Integer i = 0; i < shopList.size(); i++)  {
+				if(v.getCustomName().equalsIgnoreCase(shopList.get(i)))	{
 					Inventory inv = Bukkit.createInventory(null, 9 * invSize, shopList.get(i));
-					for(Shop shop : Shop.values())
-					{
-						if (shop.getShopName() == shopList.get(i))
-						{
+					for(Shop shop : Shop.values()) {
+						if (shop.getShopName() == shopList.get(i))	{
 							ItemStack shopIS = new ItemStack(shop.getMaterial());
 							ItemMeta im = shopIS.getItemMeta();
 							im.setDisplayName(shop.getName());
@@ -158,8 +147,7 @@ public class ShopListener implements Listener {
 							ItemStack BoughtItem = new ItemStack(shop.getMaterial(), 1);
 							ItemMeta im = BoughtItem.getItemMeta();
 							im.setDisplayName(shop.getName());
-							if(shop.getColor().getBlue() != 20)
-							{
+							if(shop.getColor().getBlue() != 20)	{
 								LeatherArmorMeta meta1 = (LeatherArmorMeta)im;
 								meta1.setColor(shop.getColor());
 								BoughtItem.setItemMeta(meta1);
@@ -174,7 +162,10 @@ public class ShopListener implements Listener {
 							p.sendMessage("§cYou already own this Item!");	
 
 					} else
-						p.sendMessage("§cYou do not have enough money!");
+						if(!PlayerConfig.hasItemInv(p, shop)) {
+							p.sendMessage("§cYou do not have enough money!");
+						} else
+							p.sendMessage("§cYou already own this Item!");	
 					p.closeInventory();
 				}
 				e.setCancelled(true);

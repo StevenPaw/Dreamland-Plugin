@@ -22,8 +22,10 @@ import de.zwibbltv.dreamland.commands.CMDballoons;
 import de.zwibbltv.dreamland.commands.CMDbuild;
 import de.zwibbltv.dreamland.commands.CMDfirework;
 import de.zwibbltv.dreamland.commands.CMDgamemode;
+import de.zwibbltv.dreamland.commands.CMDinv;
 import de.zwibbltv.dreamland.commands.CMDlift;
 import de.zwibbltv.dreamland.commands.CMDmenu;
+import de.zwibbltv.dreamland.commands.CMDmoney;
 import de.zwibbltv.dreamland.commands.CMDmute;
 import de.zwibbltv.dreamland.commands.CMDrank;
 import de.zwibbltv.dreamland.commands.CMDremovewarp;
@@ -213,6 +215,9 @@ public class Main extends JavaPlugin {
 		getCommand("firework").setExecutor(new CMDfirework());
 		getCommand("villager").setExecutor(new CMDvillager());
 		getCommand("lift").setExecutor(new CMDlift());
+		getCommand("eco").setExecutor(new CMDmoney());
+		getCommand("inv").setExecutor(new CMDinv());
+		getCommand("inventory").setExecutor(new CMDinv());
 		
 		setInstance(this);
 		this.getCommand("setwarp").setExecutor(new CMDsetwarp());

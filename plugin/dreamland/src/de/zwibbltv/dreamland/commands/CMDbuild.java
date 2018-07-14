@@ -33,6 +33,7 @@ public class CMDbuild implements CommandExecutor {
 							p.setGameMode(GameMode.ADVENTURE);
 							p.sendMessage("§cYou are no builder any longer!");
 							de.zwibbltv.dreamland.listener.MenuListener.resetInventory(p);
+							de.zwibbltv.dreamland.main.updateScoreboard.update(p);
 
 						} 
 						else if(PlayerConfig.getBuilder(p) == false || PlayerConfig.getBuilder(p) == null){
@@ -45,6 +46,7 @@ public class CMDbuild implements CommandExecutor {
 							p.sendMessage("§aYou are now a builder!");
 							p.getPlayer().getInventory().clear();
 							p.getPlayer().getEquipment().clear();
+							de.zwibbltv.dreamland.main.updateScoreboard.update(p);
 						}					
 					} else
 						p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("noPerms")));
@@ -67,6 +69,7 @@ public class CMDbuild implements CommandExecutor {
 								target.sendMessage("§cYou are no builder any longer! §7(By: §6" + p.getName() + "§7)");
 								p.sendMessage("§6" + target.getName() + "§a is no builder any longer!");
 								de.zwibbltv.dreamland.listener.MenuListener.resetInventory(target);
+								de.zwibbltv.dreamland.main.updateScoreboard.update(p);
 								
 							} 
 							else if(PlayerConfig.getBuilder(target) == false  || PlayerConfig.getBuilder(target) == null){
@@ -81,6 +84,7 @@ public class CMDbuild implements CommandExecutor {
 
 								target.getPlayer().getInventory().clear();
 								target.getPlayer().getEquipment().clear();
+								de.zwibbltv.dreamland.main.updateScoreboard.update(p);
 							}
 						} else 
 							p.sendMessage("§6" + args[0] + "§c isn't online!");
@@ -99,6 +103,7 @@ public class CMDbuild implements CommandExecutor {
 							target.sendMessage("§cYou are no builder any longer! §7(By: §6" + "Admins" + "§7)");
 							sender.sendMessage("§6" + target.getName() + "§a is no builder any longer!");
 							de.zwibbltv.dreamland.listener.MenuListener.resetInventory(target);
+							de.zwibbltv.dreamland.main.updateScoreboard.update(target);
 
 						} 
 						else if(PlayerConfig.getBuilder(target) == false || PlayerConfig.getBuilder(target) == null){
@@ -113,6 +118,7 @@ public class CMDbuild implements CommandExecutor {
 
 							target.getPlayer().getInventory().clear();
 							target.getPlayer().getEquipment().clear();
+							de.zwibbltv.dreamland.main.updateScoreboard.update(target);
 						}
 					} else 
 						sender.sendMessage("§6" + args[0] + "§c isn't online!");

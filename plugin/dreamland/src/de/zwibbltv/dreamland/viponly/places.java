@@ -10,21 +10,22 @@ import org.bukkit.World;
 import org.bukkit.entity.Player;
 
 import de.zwibbltv.dreamland.main.Main;
+import de.zwibbltv.dreamland.utils.Achievements;
 import de.zwibbltv.dreamland.utils.PlayerConfig;
 import net.md_5.bungee.api.ChatColor;
 
 public class places {
-	
+
 	public static  List<Location> fLoc;
 	public static  List<Location> tLoc;
 	public static World w = Bukkit.getServer().getWorld("dreamland");
 	public static int fpCount; //forbiddenplacesCount
-	
+
 	public static void loadplaces() {
-				
+
 		fLoc = new ArrayList<Location>();
 		tLoc = new ArrayList<Location>();
-		
+
 		//Mainstreet Bühne Links
 		fLoc.add(new Location(w, -867, 16.0, 645.0));
 		tLoc.add(new Location(w, -870, 16.0, 645.50, -90, 0));
@@ -40,58 +41,62 @@ public class places {
 		//Club33
 		fLoc.add(new Location(w, -786.5, 22.0, 619.5));
 		tLoc.add(new Location(w, -783, 22.0, 620, 90, 0));
-		
+
 		int b = fLoc.size();
-		
+
 		System.out.println("[Dreamland] {VIP} Es wurden " + b + " verbotene Orte geladen");
-		
+
 	}
-	
+
 	public static void locations(Player p) {	
-	
+
 		de.zwibbltv.dreamland.utils.Achievements.locations(p);
-		
+
 		//Staff-Bereiche
-				if (!p.hasPermission("dreamland.*") && !p.hasPermission("dreamland.Staff")) {
-					if (PlayerConfig.getBuilder(p) == false) {
-						Location ploc = p.getLocation();
-						Double d;
-						
-						d = ploc.distance(new Location(w, -682, 22.0, 660.0));
-						if(d <= 1.5) {
-							Location location = new Location(w, -682, 21.0, 661.50, -178, -3);
-							p.teleport(location);
-							p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("Staff")));
-						}
-					}
-				}
-				
-	//Time limit for Disco
-				if (!p.hasPermission("dreamland.*") && !p.hasPermission("dreamland.VIP")) {
-					if (PlayerConfig.getBuilder(p) == false) {
-					if(p.getStatistic(Statistic.PLAY_ONE_TICK)<=144000) {
-						Location ploc = p.getLocation();
-						Double d;
-						
-						d = ploc.distance(new Location(w, -763.5, 21.0, 647.5));
-						if(d <= 1.5) {
-							Location location = new Location(w, -763.5, 21.0, 643.5, 0, 0);
-							p.teleport(location);
-							p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("2hours")));
-							int time = (((144000-(p.getStatistic(Statistic.PLAY_ONE_TICK)))/20)/60);
-							p.sendMessage("§a>> §cTime left: §6" + time +" §cminute(s)§a <<");
-						}	
-					}		
+		if (!p.hasPermission("dreamland.*") && !p.hasPermission("dreamland.Staff")) {
+			if (PlayerConfig.getBuilder(p) == false) {
+				Location ploc = p.getLocation();
+				Double d;
+
+				d = ploc.distance(new Location(w, -682, 22.0, 660.0));
+				if(d <= 1.5) {
+					Location location = new Location(w, -682, 21.0, 661.50, -178, -3);
+					p.teleport(location);
+					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("Staff")));
 				}
 			}
-				
-		
-	//VIP-Bereiche
+		}
+
+		//Time limit for Disco
+		if (!p.hasPermission("dreamland.*") && !p.hasPermission("dreamland.VIP")) {
+			if (PlayerConfig.getBuilder(p) == false) {
+				if(p.getStatistic(Statistic.PLAY_ONE_TICK)<=144000) {
+					Location ploc = p.getLocation();
+					Double d;
+
+					d = ploc.distance(new Location(w, -763.5, 21.0, 647.5));
+					if(d <= 1.5) {
+						Location location = new Location(w, -763.5, 21.0, 643.5, 0, 0);
+						p.teleport(location);
+						p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("2hours")));
+						int time = (((144000-(p.getStatistic(Statistic.PLAY_ONE_TICK)))/20)/60);
+						p.sendMessage("§a>> §cTime left: §6" + time +" §cminute(s)§a <<");
+					}	
+				}
+			}
+		}
+
+		if(p.getStatistic(Statistic.PLAY_ONE_TICK)>=144000) {
+			PlayerConfig.giveAchievement(p, Achievements.PLAY2HOURS);
+		}
+
+
+		//VIP-Bereiche
 		if (!p.hasPermission("dreamland.*") && !p.hasPermission("dreamland.VIP")) {
 			if (PlayerConfig.getBuilder(p) == false) {
 				Location ploc = p.getLocation();
 				Double d;
-				
+
 				d = ploc.distance(new Location(w, -867, 16.0, 645.0));
 				if(d <= 1.5) {
 					Location location = new Location(w, -870, 16.0, 645.50, -90, 0);

@@ -21,8 +21,10 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import de.zwibbltv.dreamland.main.ItemBuilder;
+import de.zwibbltv.dreamland.main.Main;
 import de.zwibbltv.dreamland.utils.Achievements;
 import de.zwibbltv.dreamland.utils.PlayerConfig;
+import net.md_5.bungee.api.ChatColor;
 
 public class MenuListener implements Listener {
 
@@ -82,6 +84,7 @@ public class MenuListener implements Listener {
 	//open Inv-menu
 	public static void openInvMain(Player p)
 	{
+
 		Inventory inv = Bukkit.createInventory(null, 9 * 1, "§cInventory");
 
 		ItemStack clothings = new ItemStack(Material.IRON_CHESTPLATE);
@@ -91,14 +94,19 @@ public class MenuListener implements Listener {
 
 		ItemStack hats = new ItemStack(Material.IRON_HELMET);
 		ItemMeta hatsmeta = hats.getItemMeta();
-		hatsmeta.setDisplayName("§6Achievements (" + getAchievementsPercentage(p) + "%)");
+		hatsmeta.setDisplayName("§6Hats");
 		hats.setItemMeta(hatsmeta);
 
 
 		inv.setItem(0, clothings);
 		inv.setItem(1, hats);
-
+		try {
+			PlayerConfig.setCurrentInventory(p, "Inventory");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		p.openInventory(inv);
+
 	}
 
 	// Menu-Menu
@@ -113,7 +121,10 @@ public class MenuListener implements Listener {
 					openMenuMain(p);
 				}
 				if (e.getMaterial().equals(Material.CHEST)) {
-					openInvMain(p);
+					if(e.getItem().getItemMeta().getDisplayName().equals("§6Inventory")) {
+
+						openInvMain(p);
+					}
 				}
 				else {
 					de.zwibbltv.dreamland.attractions.ToI.test(p);
@@ -124,11 +135,56 @@ public class MenuListener implements Listener {
 		}
 	}
 
+	//clothings
+	public void openMenuClothings(Player p) {
+		Inventory inv = Bukkit.createInventory(null, 9 * 1, "§cClothings");
+
+
+		ItemStack attraktions = new ItemStack(Material.LEATHER_CHESTPLATE);
+		ItemMeta attraktionsmeta = attraktions.getItemMeta();
+		attraktionsmeta.setDisplayName("§aCowboy jacket Brown");
+		attraktions.setItemMeta(attraktionsmeta);
+		inv.setItem(3, attraktions);
+
+		ItemStack areas = new ItemStack(Material.COMPASS);
+		ItemMeta areasmeta = areas.getItemMeta();
+		areasmeta.setDisplayName("§aAreas");
+		areas.setItemMeta(areasmeta);
+
+		ItemStack back = new ItemStack(Material.CLAY_BRICK);
+		ItemMeta backmeta = back.getItemMeta();
+		backmeta.setDisplayName("§cBack");
+		back.setItemMeta(backmeta);
+
+		inv.setItem(5, areas);
+		inv.setItem(8, back);
+
+		try {
+			PlayerConfig.setCurrentInventory(p, "Clothings");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		p.openInventory(inv);
+	}
+
 	// actions
 	@EventHandler
 	public void onMenuClick(InventoryClickEvent e) {
 		Player p = (Player) e.getWhoClicked();
 		try {
+			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Clothings")) {
+				if (PlayerConfig.getBuilder(p) == false) {
+					e.setCancelled(true);
+					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("commingsoon")));
+				} else
+					openMenuClothings(p);
+			}
+			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Hats")) {
+				if (PlayerConfig.getBuilder(p) == false) {
+					e.setCancelled(true);
+					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("commingsoon")));
+				}
+			}
 			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aAreas")) {
 				openMenuAreas(p);
 			}
