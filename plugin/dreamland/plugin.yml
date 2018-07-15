@@ -36,7 +36,12 @@ commands:
       description: give money
    balloons:
       description: spawn a balloon
-   inv:
-      description: open the inventory
    inventory:
       description: open the inventory
+      aliases: [inv]
+   broadcastmessage:
+      description: write a broadcastmessage to all players
+      aliases: [bcm]
+   staffchat:
+      description: write a staffmessage to all staffmembers
+      aliases: [sc]

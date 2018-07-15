@@ -148,7 +148,7 @@ public class MenuListener implements Listener {
 
 		ItemStack areas = new ItemStack(Material.COMPASS);
 		ItemMeta areasmeta = areas.getItemMeta();
-		areasmeta.setDisplayName("§aAreas");
+		areasmeta.setDisplayName("§aother stuff");
 		areas.setItemMeta(areasmeta);
 
 		ItemStack back = new ItemStack(Material.CLAY_BRICK);

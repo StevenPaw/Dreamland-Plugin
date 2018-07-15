@@ -13,6 +13,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import de.zwibbltv.dreamland.commands.CMDachievements;
 import de.zwibbltv.dreamland.commands.CMDaudio;
 import de.zwibbltv.dreamland.commands.CMDballoons;
+import de.zwibbltv.dreamland.commands.CMDbroadcastmessage;
 import de.zwibbltv.dreamland.commands.CMDbuild;
 import de.zwibbltv.dreamland.commands.CMDfirework;
 import de.zwibbltv.dreamland.commands.CMDgamemode;
@@ -24,6 +25,7 @@ import de.zwibbltv.dreamland.commands.CMDmute;
 import de.zwibbltv.dreamland.commands.CMDrank;
 import de.zwibbltv.dreamland.commands.CMDremovewarp;
 import de.zwibbltv.dreamland.commands.CMDsetwarp;
+import de.zwibbltv.dreamland.commands.CMDstaffchat;
 import de.zwibbltv.dreamland.commands.CMDvillager;
 import de.zwibbltv.dreamland.commands.CMDwarp;
 import de.zwibbltv.dreamland.listener.BalloonEvents;
@@ -53,7 +55,7 @@ public class Main extends JavaPlugin {
 	private static Main instance;
 	public String version;
 	public static Economy economy = null;
-	public String prefix = "§e[Dreamland] ";
+	public static String prefix = "§e[Dreamland] ";
 	int ScoreboardCoolDown = 0;
 
 	@Override
@@ -99,8 +101,9 @@ public class Main extends JavaPlugin {
 		getCommand("villager").setExecutor(new CMDvillager());
 		getCommand("lift").setExecutor(new CMDlift());
 		getCommand("eco").setExecutor(new CMDmoney());
-		getCommand("inv").setExecutor(new CMDinv());
 		getCommand("inventory").setExecutor(new CMDinv());
+		getCommand("broadcastmessage").setExecutor(new CMDbroadcastmessage());
+		getCommand("Staffchat").setExecutor(new CMDstaffchat());
 
 		setInstance(this);
 		this.getCommand("setwarp").setExecutor(new CMDsetwarp());
