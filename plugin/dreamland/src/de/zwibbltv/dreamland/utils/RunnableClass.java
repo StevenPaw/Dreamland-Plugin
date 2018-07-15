@@ -20,6 +20,7 @@ public class RunnableClass {
 	public static void run(World w, Economy eco) {
 		//wird jede Sekunde ausgeführt
 		de.zwibbltv.dreamland.utils.AFK.CheckLocations();
+		de.zwibbltv.dreamland.utils.XPBar.CalculateXPLevel();
 		updateScoreboard();
 		giveMoney(eco);
 		TimeFinder();

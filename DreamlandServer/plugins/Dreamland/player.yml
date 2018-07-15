@@ -54,7 +54,7 @@ ZwibblTV:
 ZwibblHelper:
   builder: true
 StevenPaw:
-  builder: true
+  builder: false
   muted: false
   achivements:
     FirstMove: true
@@ -87,8 +87,13 @@ StevenPaw:
     Club 33: true
     Club33 Trainstation: true
     Play 2 hours: true
-  runtime: 790
+    Chinatown: true
+    Backstage Parcour: true
+    Backstage Parcour II: true
+    Dreamland Disco: true
+  runtime: 532
   resourcepack: false
+  curInv: AchievementsCat
 Segel_Basti:
   builder: true
   muted: false
