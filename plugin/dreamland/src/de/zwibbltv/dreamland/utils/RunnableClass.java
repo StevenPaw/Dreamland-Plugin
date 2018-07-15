@@ -66,6 +66,7 @@ public class RunnableClass {
 		}
 	}
 
+	//GOLFBRUNNEN IN CALICO	
 	private static void dropGold(World w) {
 		Location loc = new Location(w, -852, 20, 770);
 

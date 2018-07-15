@@ -14,7 +14,7 @@ public class AFK {
 	public static Map<String, Location> locations = new HashMap<String, Location>();
 	public static Map<String, Integer> standTime = new HashMap<String, Integer>();
 	public static Map<String, Boolean> isAFK = new HashMap<String, Boolean>();
-	public static Integer AFKTimer = 120; //SETS THE TIME BEFORE A PLAYER GETS AFK
+	public static Integer AFKTimer = 20; //SETS THE TIME BEFORE A PLAYER GETS AFK
 
 
 	public static void CheckLocations()
@@ -99,6 +99,6 @@ public class AFK {
 	}
 
 	public static void DEAFKTitle(Player player) {
-		de.zwibbltv.dreamland.listener.JoinListener.sendTitle(player, "There you are!", "Welcome back!", 2, 20, 2);
+		de.zwibbltv.dreamland.listener.JoinListener.sendTitle(player, "There you are!", "Welcome back!", 2, 40, 2);
 	}
 }

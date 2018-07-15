@@ -246,24 +246,30 @@ public class PlayerListener implements Listener {
 		Material ItemType2 = item.getType();
 		Material ItemType3 = item.getType();
 		if((ItemType == Material.GOLD_INGOT) || (ItemType2 == Material.GOLD_NUGGET ) || (ItemType3 == Material.GOLD_BLOCK)) {
-			int f = item.getAmount();
-			for(int i = 0; i < f; i++) {
+			if(de.zwibbltv.dreamland.utils.AFK.isAFK.containsKey(p.getName())) {
+				if(de.zwibbltv.dreamland.utils.AFK.isAFK.get(p.getName()).equals(false)) {
+					int f = item.getAmount();
+					for(int i = 0; i < f; i++) {
 
-				if((ItemType == Material.GOLD_NUGGET)) {
-					Main.economy.depositPlayer(p.getName(), 0.1);
-				}
+						if((ItemType == Material.GOLD_NUGGET)) {
+							Main.economy.depositPlayer(p.getName(), 0.1);
+						}
 
-				if((ItemType == Material.GOLD_INGOT)) {
-					Main.economy.depositPlayer(p.getName(), 0.3);
-				}
+						if((ItemType == Material.GOLD_INGOT)) {
+							Main.economy.depositPlayer(p.getName(), 0.3);
+						}
 
-				if((ItemType == Material.GOLD_BLOCK)) {
-					Main.economy.depositPlayer(p.getName(), 0.5);
+						if((ItemType == Material.GOLD_BLOCK)) {
+							Main.economy.depositPlayer(p.getName(), 0.5);
+						}
+						de.zwibbltv.dreamland.main.updateScoreboard.update(p);
+					}		
+					e.getItem().remove();
 				}
-				de.zwibbltv.dreamland.main.updateScoreboard.update(p);
-			}		
+			}else {
+				de.zwibbltv.dreamland.utils.AFK.isAFK.put(p.getName(), false);
+			}
 			e.setCancelled(true);
-			e.getItem().remove();
 		}		
 	}
 

@@ -32,7 +32,6 @@ import de.zwibbltv.dreamland.listener.JoinListener;
 import de.zwibbltv.dreamland.listener.MenuListener;
 import de.zwibbltv.dreamland.listener.PlayerListener;
 import de.zwibbltv.dreamland.listener.ShopListener;
-import de.zwibbltv.dreamland.listener.scoreboardListener;
 import de.zwibbltv.dreamland.nms.Reflection;
 import de.zwibbltv.dreamland.utils.PlayerConfig;
 import de.zwibbltv.dreamland.utils.WarpManager;
@@ -112,7 +111,6 @@ public class Main extends JavaPlugin {
 		PluginManager pm = Bukkit.getPluginManager();
 		pm.registerEvents(new JoinListener(), this);
 		pm.registerEvents(new CMDmute(), this);
-		pm.registerEvents(new scoreboardListener(), this);
 		pm.registerEvents(new MenuListener(), this);
 		pm.registerEvents(new ShopListener(), this);
 		pm.registerEvents(new PlayerListener(), this);
