@@ -19,45 +19,45 @@ public class AFK {
 
 	public static void CheckLocations()
 	{
-		for(Player player : Bukkit.getOnlinePlayers()){
-			if(locations.containsKey(player.getName())){
-				if(locations.get(player.getName()).equals(player.getLocation())) {
+		for(Player p : Bukkit.getOnlinePlayers()){
+			if(locations.containsKey(p.getName())){
+				if(locations.get(p.getName()).equals(p.getLocation())) {
 					//WENN DIE LOCATION GLEICH IST		
-					if (standTime.containsKey(player.getName())) {
-						if(isAFK.containsKey(player.getName())) {
-							if(isAFK.get(player.getName()).equals(false)) {
-								if(standTime.get(player.getName()) == AFKTimer)
+					if (standTime.containsKey(p.getName())) {
+						if(isAFK.containsKey(p.getName())) {
+							if(isAFK.get(p.getName()).equals(false)) {
+								if(standTime.get(p.getName()) == AFKTimer)
 								{
 									//Wird ausgeführt nach AFKTimer sekunden
-									isAFK.put(player.getName(), true);
-									AFKTitle(player);
+									isAFK.put(p.getName(), true);
+									AFKTitle(p);
 								}
 								else
 								{
-									Integer old = standTime.get(player.getName());
-									standTime.put(player.getName(), old + 1);
+									Integer old = standTime.get(p.getName());
+									standTime.put(p.getName(), old + 1);
 								}
 							}
 						}
 						else {
-							isAFK.put(player.getName(), false);
+							isAFK.put(p.getName(), false);
 						}
 					}
 					else {
-						standTime.put(player.getName(), 0);
+						standTime.put(p.getName(), 0);
 					}
 
 				}else{
 					//WENN DIE LOCATION ANDERS IST
-					locations.put(player.getName(), player.getLocation());
-					standTime.put(player.getName(), 0);
-					if(isAFK.get(player.getName()).equals(true)) {
-						DEAFKTitle(player);
+					locations.put(p.getName(), p.getLocation());
+					standTime.put(p.getName(), 0);
+					if(isAFK.get(p.getName()).equals(true)) {
+						DEAFKTitle(p);
 					}
-					isAFK.put(player.getName(), false);
+					isAFK.put(p.getName(), false);
 				}
 			}else{
-				locations.put(player.getName(), player.getLocation());
+				locations.put(p.getName(), p.getLocation());
 			}
 		}
 	}
