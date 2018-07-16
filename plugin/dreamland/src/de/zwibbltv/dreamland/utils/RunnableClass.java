@@ -24,6 +24,7 @@ public class RunnableClass {
 		updateScoreboard();
 		giveMoney(eco);
 		TimeFinder();
+//		spawnBoat(w);
 
 		if(dropGoldTimer == 5) {
 			dropGoldTimer = 0;
@@ -66,6 +67,16 @@ public class RunnableClass {
 		}
 	}
 
+	//	//BOOTSPAWN IN EVERWOODS
+	//	private static void spawnBoat(World w) {
+	//		Location loc = new Location(w, -737, 16, 684);
+	//			loc.getWorld().spawnEntity(loc, EntityType.BOAT);
+	//		}
+	//			
+		
+	
+
+	
 	//GOLFBRUNNEN IN CALICO	
 	private static void dropGold(World w) {
 		Location loc = new Location(w, -852, 20, 770);

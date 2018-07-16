@@ -14,7 +14,7 @@ public class AFK {
 	public static Map<String, Location> locations = new HashMap<String, Location>();
 	public static Map<String, Integer> standTime = new HashMap<String, Integer>();
 	public static Map<String, Boolean> isAFK = new HashMap<String, Boolean>();
-	public static Integer AFKTimer = 120; //SETS THE TIME BEFORE A PLAYER GETS AFK
+	public static Integer AFKTimer = 300; //SETS THE TIME BEFORE A PLAYER GETS AFK
 
 
 	public static void CheckLocations()
@@ -91,6 +91,8 @@ public class AFK {
 		SubTitles.add("Or was the themepark bored?");
 		Titles.add("1,2,3,4");
 		SubTitles.add("You are on a tour");
+		Titles.add("Don't go away!");
+		SubTitles.add("There is a lot more to explore...");
 		
 		TitleID = r.nextInt(Titles.size());
 		
