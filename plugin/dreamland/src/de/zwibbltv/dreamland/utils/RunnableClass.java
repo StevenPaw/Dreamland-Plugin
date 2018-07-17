@@ -67,12 +67,12 @@ public class RunnableClass {
 		}
 	}
 
-	//	//BOOTSPAWN IN EVERWOODS
-	//	private static void spawnBoat(World w) {
-	//		Location loc = new Location(w, -737, 16, 684);
-	//			loc.getWorld().spawnEntity(loc, EntityType.BOAT);
-	//		}
-	//			
+//	//BOOTSPAWN IN EVERWOODS
+//	private static void spawnBoat(World w) {
+//		Location loc = new Location(w, -737, 16, 684);
+//		loc.getWorld().spawnEntity(loc, EntityType.BOAT);
+//	}
+				
 		
 	
 

@@ -61,22 +61,24 @@ public class MenuListener implements Listener {
 
 	static public void resetInventory(Player p)
 	{
-		p.getInventory().clear();
-		p.getEquipment().clear();
+		if(PlayerConfig.getBuilder(p) == false){
+			p.getInventory().clear();
+			p.getEquipment().clear();
 
-		ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
-		ItemStack chest = new ItemBuilder(Material.CHEST).setDisplayName("§6Inventory").build();
-		p.getInventory().setItem(0, carrot);
-		p.getInventory().setItem(8, chest);
+			ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
+			ItemStack chest = new ItemBuilder(Material.CHEST).setDisplayName("§6Inventory").build();
+			p.getInventory().setItem(0, carrot);
+			p.getInventory().setItem(8, chest);
 
-		if(p.hasPermission("dreamland.build.*") || p.hasPermission("dreamland.build.self") || p.hasPermission("dreamland.build.other")) {
-			ItemStack gold_spade = new ItemBuilder(Material.GOLD_SPADE).setDisplayName("§6Builder").build();
-			p.getInventory().setItem(1, gold_spade);
-		}
+			if(p.hasPermission("dreamland.build.*") || p.hasPermission("dreamland.build.self") || p.hasPermission("dreamland.build.other")) {
+				ItemStack gold_spade = new ItemBuilder(Material.GOLD_SPADE).setDisplayName("§6Builder").build();
+				p.getInventory().setItem(1, gold_spade);
+			}
 
-		if(!p.hasPermission("dreamland.VIP")) {
-			ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
-			p.getInventory().setItem(7, golden_carrot);
+			if(!p.hasPermission("dreamland.VIP")) {
+				ItemStack golden_carrot = new ItemBuilder(Material.GOLDEN_CARROT).setDisplayName("§6Buy VIP").build();
+				p.getInventory().setItem(7, golden_carrot);
+			}
 		}
 
 	}
@@ -139,13 +141,13 @@ public class MenuListener implements Listener {
 	public void openMenuClothings(Player p) {
 		Inventory inv = Bukkit.createInventory(null, 9 * 1, "§cClothings");
 
-		
+
 		ItemStack cjb = new ItemStack(Material.LEATHER_CHESTPLATE);
 		ItemMeta cjbmeta = cjb.getItemMeta();
 		cjbmeta.setDisplayName("§aCowboy jacket Brown");
 		cjb.setItemMeta(cjbmeta);
 		inv.setItem(3, cjb);
-		
+
 		ItemStack cjbl = new ItemStack(Material.LEATHER_CHESTPLATE);
 		ItemMeta cjblmeta =cjbl.getItemMeta();
 		cjblmeta.setDisplayName("§aCowboy jacket Black");
