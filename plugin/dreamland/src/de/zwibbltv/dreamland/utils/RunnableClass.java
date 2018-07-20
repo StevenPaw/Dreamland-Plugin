@@ -7,6 +7,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
@@ -17,10 +18,11 @@ public class RunnableClass {
 
 	static int dropGoldTimer = 0;
 
-	public static void run(World w, Economy eco) {
+	public static void run(World w, Economy eco, Entity e) {
 		//wird jede Sekunde ausgeführt
 		de.zwibbltv.dreamland.utils.AFK.CheckLocations();
 		de.zwibbltv.dreamland.utils.XPBar.CalculateXPLevel();
+		de.zwibbltv.dreamland.utils.BoatEverwoods.spawnBoat(e);
 		updateScoreboard();
 		giveMoney(eco);
 		TimeFinder();
@@ -66,16 +68,6 @@ public class RunnableClass {
 			}
 		}
 	}
-
-//	//BOOTSPAWN IN EVERWOODS
-//	private static void spawnBoat(World w) {
-//		Location loc = new Location(w, -737, 16, 684);
-//		loc.getWorld().spawnEntity(loc, EntityType.BOAT);
-//	}
-				
-		
-	
-
 	
 	//GOLFBRUNNEN IN CALICO	
 	private static void dropGold(World w) {

@@ -84,7 +84,7 @@ public class Main extends JavaPlugin {
 			@Override
 			public void run() {
 
-				de.zwibbltv.dreamland.utils.RunnableClass.run(Bukkit.getWorld(getName()), economy);				
+				de.zwibbltv.dreamland.utils.RunnableClass.run(Bukkit.getWorld(getName()));				
 			}
 		}, 20, 20);
 
