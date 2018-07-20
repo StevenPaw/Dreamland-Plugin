@@ -29,7 +29,7 @@ import net.md_5.bungee.api.ChatColor;
 public class MenuListener implements Listener {
 
 
-	List<String> catList = new ArrayList<String>();
+	static List<String> catList = new ArrayList<String>();
 
 	@EventHandler
 	public void onDrop(PlayerDropItemEvent e) {
@@ -494,7 +494,7 @@ public class MenuListener implements Listener {
 	}
 
 	//Opening Achievementcateg:
-	public void openMenuAchievements(Player p) {
+	public static void openMenuAchievements(Player p) {
 
 		//CREATING COLORVARIABLE AND CLEARING CATLIST
 		Integer Pos = 0;
