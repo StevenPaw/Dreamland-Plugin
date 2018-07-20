@@ -9,20 +9,21 @@ import org.bukkit.entity.EntityType;
 
 public class BoatEverwoods {
 	
-	public static void spawnBoat(Entity e) {
+	public static void spawnBoat() {
 
-		World w = Bukkit.getWorld("dreamland");
-		if(e.getVehicle() instanceof Boat){
-			Boat b = (Boat)e.getVehicle();
-
-			Location loc = b.getLocation();
-		Double d;
-		d = loc.distance(new Location(w, -682, 22.0, 660.0));
-		if(d >= 3) {
-		
-		loc.getWorld().spawnEntity(loc, EntityType.BOAT);
-		}
-		}
+//		World w = Bukkit.getWorld("dreamland");
+//		foreach (Entity e : Bukkit.getE)
+//		if(e.getVehicle() instanceof Boat){
+//			Boat b = (Boat)e.getVehicle();
+//
+//			Location loc = b.getLocation();
+//		Double d;
+//		d = loc.distance(new Location(w, -682, 22.0, 660.0));
+//		if(d >= 3) {
+//		
+//		loc.getWorld().spawnEntity(loc, EntityType.BOAT);
+//		}
+//		}
 	}
 
 }

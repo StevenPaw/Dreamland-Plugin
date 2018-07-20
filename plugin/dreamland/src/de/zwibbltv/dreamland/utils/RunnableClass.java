@@ -18,11 +18,11 @@ public class RunnableClass {
 
 	static int dropGoldTimer = 0;
 
-	public static void run(World w, Economy eco, Entity e) {
+	public static void run(World w, Economy eco) {
 		//wird jede Sekunde ausgeführt
 		de.zwibbltv.dreamland.utils.AFK.CheckLocations();
 		de.zwibbltv.dreamland.utils.XPBar.CalculateXPLevel();
-		de.zwibbltv.dreamland.utils.BoatEverwoods.spawnBoat(e);
+//		de.zwibbltv.dreamland.utils.BoatEverwoods.spawnBoat();
 		updateScoreboard();
 		giveMoney(eco);
 		TimeFinder();
