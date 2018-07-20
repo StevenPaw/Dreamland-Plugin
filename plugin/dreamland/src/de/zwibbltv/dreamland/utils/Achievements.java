@@ -14,14 +14,14 @@ public enum Achievements {
 	WATER("Into the water","You jumped into water! Are you fresher now?",10, false,"???","Dreamland"),
 	RUNAKM("Run a KM","You ran a Kilometer in one session!",10, false,"???","Dreamland"),
 	PLAY2HOURS("Play 2 hours","You play 2 hours on Dreamland!",20, false,"???","Dreamland"),
-	GREATVIEWCASTLE("Great view from the castle","You found the button with great view in the castle!",10, false,"???","Dreamland"),
+	ENTRANCERESTAURANT("Entrance Restaurant","You went to the Entrance Restaurant!",10, false,"Go to the Entrance Restaurant","Dreamland"),
+	ENTRANCETOILET("Entrance Toilet","You went to the toilets on the Entrance",10,true,"Find the toilets in the Entrance","Dreamland"),
+	GREATVIEWENTRANCE("Great view from the Entrance","You found the button with a great view above the Entrance!",10, false,"???","Dreamland"),
 	SECRETTUNNEL("Secret tunnel","You found the secret tunnel!",10, false,"???","Dreamland"),
 	DREAMLANDBYNIGHT("Dreamland by night","You played while you normaly have to sleep!",10, false,"???","Dreamland"),
 	BACKSTAGEPARCOUR("Backstage Parcour","You jumped through the backstage Parcour!",10, false,"???","Dreamland"),
 	BACKSTAGEPARCOURII("Backstage Parcour II","You jumped through the backstage Parcour II!",10, false,"???","Dreamland"),
 	//MainStreet
-	MAINSTREETCASTLERESTAURANT("Castle Restaurant","You went to the Castle Restaurant!",10, false,"Go to the Castle Restaurant","MainStreet"),
-	MAINSTREETCASTLETOILET("Castle Toilet","You went to the toilets in the Castle on MainStreet",10,true,"Find the toilets in the Castle","MainStreet"),
 	MAINSTREETPARCOUR("Parcour","You run through the MainStreet Parcour!",10, false,"???","MainStreet"),
 	MAINSTREETWATERPLAY("Main Street Water Show","You discovered the secret Water Show!",15,false,"???","MainStreet"),
 	MAINSTREETCLUB33("Club 33","You discovered Club 33!",10,true,"Find the Club 33","MainStreet"),
@@ -44,8 +44,8 @@ public enum Achievements {
 	BLUEROOM("Blue room","You found the blue room in the castle",10,false,"???","Castle"),
 	LOVEROOM("Loveroom","You found the Loveroom in the castle",10,false,"???","Castle"),
 	CASTLEFALL("Castlefall","You jumped down in the Castle Parcour",10,false,"???","Castle"),
-	CASTLEPARCOUR("Castleparcour","Complete the parcour",10,false,"???","Castle"),
-	CASTLEMONKEY("Castle Monkey","Be an monkey near the castle",10,false,"???","Castle"),
+	CASTLEPARCOUR("Castleparcour","Complete the parcour",20,false,"???","Castle"),
+	CASTLEMONKEY("Castle Monkey","Be an monkey near the castle",20,false,"???","Castle"),
 	//Calico
 	CALICO("Calico", "You went to Calico!", 10, true,"Enter Calico","Calico"),
 	CALICOFOUNTAIN("Calicos Fountain","You activated the fountain in Calico!",10,true,"Activate the fountain in Calico","Calico"),
@@ -147,12 +147,12 @@ public enum Achievements {
 			//mainstreet castle restaurant
 			d = ploc.distance(new Location(w, -964.5, 23.0, 622.5));
 			if(d <= 1.5) {				
-				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.MAINSTREETCASTLERESTAURANT);
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.ENTRANCERESTAURANT);
 				}
 			//mainstreet castle toilet
 			d = ploc.distance(new Location(w, -964.5, 22.0, 607.5));
 			if(d <= 1.5) {				
-				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.MAINSTREETCASTLETOILET);
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.ENTRANCETOILET);
 				}
 			//disco
 			d = ploc.distance(new Location(w, -763.5, 21.0, 652.5));
