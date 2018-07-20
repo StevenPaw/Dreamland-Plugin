@@ -141,6 +141,9 @@ public class MenuListener implements Listener {
 	public void openMenuClothings(Player p) {
 		Inventory inv = Bukkit.createInventory(null, 9 * 1, "§cClothings");
 
+		if(PlayerConfig.hasItemInv(p, COWBOYJACKETBROWN)) {
+			
+		}
 
 		ItemStack cjb = new ItemStack(Material.LEATHER_CHESTPLATE);
 		ItemMeta cjbmeta = cjb.getItemMeta();
