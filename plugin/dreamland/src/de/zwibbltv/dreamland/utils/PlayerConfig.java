@@ -30,6 +30,13 @@ public class PlayerConfig {
 		return PlayerConfig.getBoolean(p.getName()+ ".muted");
 	}
 	
+	public static void setAFK(Player p, Boolean muted) throws IOException{
+		PlayerConfig.set(p.getName()+ ".AFK", muted);
+		save();
+	}
+	public static Boolean getAFK(Player p) {
+		return PlayerConfig.getBoolean(p.getName()+ ".AFK");
+	}	
 	
 	public static void setBuilder(Player p, Boolean builder) throws IOException{
 		PlayerConfig.set(p.getName()+ ".builder", builder);
