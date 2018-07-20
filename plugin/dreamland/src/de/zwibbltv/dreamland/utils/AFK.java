@@ -88,7 +88,7 @@ public class AFK {
 		Titles.add("Someones missing");
 		SubTitles.add("is it you?");
 		Titles.add("Are you bored?");
-		SubTitles.add("Or was the themepark bored?");
+		SubTitles.add("Or was the themepark boring?");
 		Titles.add("1,2,3,4");
 		SubTitles.add("You are on a tour");
 		

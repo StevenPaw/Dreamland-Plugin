@@ -1,135 +1,135 @@
-[12:42:46] [Server thread/INFO]: Loading properties
-[12:42:46] [Server thread/INFO]: Default game type: ADVENTURE
-[12:42:46] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-2086bb0-1988d7f (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
-[12:42:47] [Server thread/INFO]: Debug logging is disabled
-[12:42:47] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[12:42:47] [Server thread/INFO]: Using 4 threads for Netty based IO
-[12:42:47] [Server thread/INFO]: Generating keypair
-[12:42:47] [Server thread/INFO]: Starting Minecraft server on *:25565
-[12:42:47] [Server thread/INFO]: Using default channel type
-[12:42:47] [Server thread/INFO]: Set PluginClassLoader as parallel capable
-[12:42:47] [Server thread/INFO]: [dynmap] Loading dynmap v2.5-Dev201706100405
-[12:42:47] [Server thread/INFO]: [dynmap] version=git-Spigot-2086bb0-1988d7f (MC: 1.12.2)
-[12:42:47] [Server thread/INFO]: [dynmap] Mod Support API available
-[12:42:47] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.8-SNAPSHOT;cd4729f
-[12:42:47] [Server thread/INFO]: [ImageMaps] Loading ImageMaps v0.4.3
-[12:42:47] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.8.6
-[12:42:47] [Server thread/INFO]: [PermissionsEx] Loading PermissionsEx v1.23.4
-[12:42:47] [Server thread/INFO]: [ArmorStandEditor] Loading ArmorStandEditor v1.11.2-19
-[12:42:47] [Server thread/INFO]: [MineWallet] Loading MineWallet v1.2.4
-[12:42:47] [Server thread/INFO]: [Animatronics] Loading Animatronics v1.8.6
-[12:42:47] [Server thread/INFO]: [Hat] Loading Hat v1.0
-[12:42:47] [Server thread/INFO]: [Vault] Loading Vault v1.6.1
-[12:42:47] [Server thread/INFO]: [ChairStairs] Loading ChairStairs v1.1
-[12:42:47] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v6.2.1;84bc322
-[12:42:47] [Server thread/INFO]: [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[12:42:47] [Server thread/INFO]: [Dreamland] Loading Dreamland v1.0
-[12:42:47] [Server thread/INFO]: [MCJukebox] Loading MCJukebox v2.4
-[12:42:47] [Server thread/INFO]: [Vault] Enabling Vault v1.6.1
-[12:42:47] [Server thread/INFO]: [Vault] [Permission] PermissionsEx found: Waiting
-[12:42:47] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
-[12:42:47] [Server thread/INFO]: [Vault] [Chat] PermissionsEx found: Waiting
-[12:42:47] [Server thread/INFO]: [Vault] Plugin enabled (110ms)
-[12:42:47] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
-[12:42:47] [Server thread/INFO]: Preparing level "dreamland"
-[12:42:47] [Server thread/INFO]: -------- World Settings For [dreamland] --------
-[12:42:47] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[12:42:47] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[12:42:47] [Server thread/INFO]: Cane Growth Modifier: 100%
-[12:42:47] [Server thread/INFO]: Melon Growth Modifier: 100%
-[12:42:47] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[12:42:47] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[12:42:47] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[12:42:47] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[12:42:47] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[12:42:47] [Server thread/INFO]: Vine Growth Modifier: 100%
-[12:42:47] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[12:42:47] [Server thread/INFO]: Mob Spawn Range: 4
-[12:42:47] [Server thread/INFO]: Max TNT Explosions: 100
-[12:42:47] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[12:42:47] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[12:42:47] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[12:42:47] [Server thread/INFO]: Structure Info Saving: true
-[12:42:47] [Server thread/INFO]: Random Lighting Updates: false
-[12:42:47] [Server thread/INFO]: Item Despawn Rate: 6000
-[12:42:47] [Server thread/INFO]: Item Merge Radius: 2.5
-[12:42:47] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[12:42:47] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[12:42:47] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[12:42:47] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[12:42:47] [Server thread/INFO]: View Distance: 10
-[12:42:47] [Server thread/INFO]: Experience Merge Radius: 3.0
-[12:42:47] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[12:42:48] [Server thread/INFO]: Loaded 2 custom command functions
-[12:42:48] [Server thread/INFO]: -------- World Settings For [dreamland_nether] --------
-[12:42:48] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[12:42:48] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: Cane Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: Melon Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: Vine Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: Mob Spawn Range: 4
-[12:42:48] [Server thread/INFO]: Max TNT Explosions: 100
-[12:42:48] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[12:42:48] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[12:42:48] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[12:42:48] [Server thread/INFO]: Structure Info Saving: true
-[12:42:48] [Server thread/INFO]: Random Lighting Updates: false
-[12:42:48] [Server thread/INFO]: Item Despawn Rate: 6000
-[12:42:48] [Server thread/INFO]: Item Merge Radius: 2.5
-[12:42:48] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[12:42:48] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[12:42:48] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[12:42:48] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[12:42:48] [Server thread/INFO]: View Distance: 10
-[12:42:48] [Server thread/INFO]: Experience Merge Radius: 3.0
-[12:42:48] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[12:42:48] [Server thread/INFO]: -------- World Settings For [dreamland_the_end] --------
-[12:42:48] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[12:42:48] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: Cane Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: Melon Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: Vine Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[12:42:48] [Server thread/INFO]: Mob Spawn Range: 4
-[12:42:48] [Server thread/INFO]: Max TNT Explosions: 100
-[12:42:48] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[12:42:48] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[12:42:48] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[12:42:48] [Server thread/INFO]: Structure Info Saving: true
-[12:42:48] [Server thread/INFO]: Random Lighting Updates: false
-[12:42:48] [Server thread/INFO]: Item Despawn Rate: 6000
-[12:42:48] [Server thread/INFO]: Item Merge Radius: 2.5
-[12:42:48] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[12:42:48] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[12:42:48] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[12:42:48] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[12:42:48] [Server thread/INFO]: View Distance: 10
-[12:42:48] [Server thread/INFO]: Experience Merge Radius: 3.0
-[12:42:48] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[12:42:48] [Server thread/INFO]: Preparing start region for level 0 (Seed: 3938616966247869992)
-[12:42:49] [Server thread/INFO]: Preparing spawn area: 76%
-[12:42:49] [Server thread/INFO]: Preparing start region for level 1 (Seed: 3938616966247869992)
-[12:42:49] [Server thread/INFO]: Preparing start region for level 2 (Seed: 3938616966247869992)
-[12:42:50] [Server thread/INFO]: [dynmap] Enabling dynmap v2.5-Dev201706100405
-[12:42:50] [Server thread/INFO]: [PermissionsEx] Enabling PermissionsEx v1.23.4
-[12:42:50] [Server thread/INFO]: [PermissionsEx] Initializing file backend
-[12:42:50] [Server thread/INFO]: [PermissionsEx] Permissions file successfully reloaded
-[12:42:50] [Server thread/INFO]: [Vault][Permission] PermissionsEx hooked.
-[12:42:50] [Server thread/INFO]: [Vault][Chat] PermissionsEx_Chat hooked.
-[12:42:50] [Server thread/INFO]: [dynmap] Using PermissionsEx 1.23.4 for access control
-[12:42:50] [Server thread/INFO]: [dynmap] Mod Support processing completed
-[12:42:50] [Server thread/ERROR]: [dynmap] Could not load colors 'default' ('plugins\dynmap\colorschemes\default.txt'): File not found.
+[00:53:11] [Server thread/INFO]: Loading properties
+[00:53:11] [Server thread/INFO]: Default game type: ADVENTURE
+[00:53:11] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-642f6d2-57ab4cf (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[00:53:11] [Server thread/INFO]: Debug logging is disabled
+[00:53:11] [Server thread/INFO]: Using 4 threads for Netty based IO
+[00:53:11] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[00:53:11] [Server thread/INFO]: Generating keypair
+[00:53:11] [Server thread/INFO]: Starting Minecraft server on *:25565
+[00:53:11] [Server thread/INFO]: Using default channel type
+[00:53:12] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[00:53:12] [Server thread/INFO]: [dynmap] Loading dynmap v2.5-Dev201706100405
+[00:53:12] [Server thread/INFO]: [dynmap] version=git-Spigot-642f6d2-57ab4cf (MC: 1.12.2)
+[00:53:12] [Server thread/INFO]: [dynmap] Mod Support API available
+[00:53:12] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.8-SNAPSHOT;cd4729f
+[00:53:12] [Server thread/INFO]: [ImageMaps] Loading ImageMaps v0.4.3
+[00:53:12] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.8.6
+[00:53:12] [Server thread/INFO]: [PermissionsEx] Loading PermissionsEx v1.23.4
+[00:53:12] [Server thread/INFO]: [ArmorStandEditor] Loading ArmorStandEditor v1.11.2-19
+[00:53:12] [Server thread/INFO]: [MineWallet] Loading MineWallet v1.2.4
+[00:53:12] [Server thread/INFO]: [Animatronics] Loading Animatronics v1.8.6
+[00:53:12] [Server thread/INFO]: [Hat] Loading Hat v1.0
+[00:53:12] [Server thread/INFO]: [Vault] Loading Vault v1.6.1
+[00:53:12] [Server thread/INFO]: [ChairStairs] Loading ChairStairs v1.1
+[00:53:12] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v6.2.1;84bc322
+[00:53:12] [Server thread/INFO]: [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
+[00:53:12] [Server thread/INFO]: [Dreamland] Loading Dreamland v1.0
+[00:53:12] [Server thread/INFO]: [MCJukebox] Loading MCJukebox v2.4
+[00:53:12] [Server thread/INFO]: [Vault] Enabling Vault v1.6.1
+[00:53:12] [Server thread/INFO]: [Vault] [Permission] PermissionsEx found: Waiting
+[00:53:12] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[00:53:12] [Server thread/INFO]: [Vault] [Chat] PermissionsEx found: Waiting
+[00:53:12] [Server thread/INFO]: [Vault] Plugin enabled (101ms)
+[00:53:12] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[00:53:12] [Server thread/INFO]: Preparing level "dreamland"
+[00:53:12] [Server thread/INFO]: -------- World Settings For [dreamland] --------
+[00:53:12] [Server thread/INFO]: Item Despawn Rate: 6000
+[00:53:12] [Server thread/INFO]: Item Merge Radius: 2.5
+[00:53:12] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[00:53:12] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[00:53:12] [Server thread/INFO]: Structure Info Saving: true
+[00:53:12] [Server thread/INFO]: Random Lighting Updates: false
+[00:53:12] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[00:53:12] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[00:53:12] [Server thread/INFO]: Mob Spawn Range: 4
+[00:53:12] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[00:53:12] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Cane Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Melon Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Vine Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[00:53:12] [Server thread/INFO]: Max TNT Explosions: 100
+[00:53:12] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[00:53:12] [Server thread/INFO]: Experience Merge Radius: 3.0
+[00:53:12] [Server thread/INFO]: View Distance: 10
+[00:53:12] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[00:53:12] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[00:53:12] [Server thread/INFO]: Loaded 2 custom command functions
+[00:53:12] [Server thread/INFO]: -------- World Settings For [dreamland_nether] --------
+[00:53:12] [Server thread/INFO]: Item Despawn Rate: 6000
+[00:53:12] [Server thread/INFO]: Item Merge Radius: 2.5
+[00:53:12] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[00:53:12] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[00:53:12] [Server thread/INFO]: Structure Info Saving: true
+[00:53:12] [Server thread/INFO]: Random Lighting Updates: false
+[00:53:12] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[00:53:12] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[00:53:12] [Server thread/INFO]: Mob Spawn Range: 4
+[00:53:12] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[00:53:12] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Cane Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Melon Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Vine Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[00:53:12] [Server thread/INFO]: Max TNT Explosions: 100
+[00:53:12] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[00:53:12] [Server thread/INFO]: Experience Merge Radius: 3.0
+[00:53:12] [Server thread/INFO]: View Distance: 10
+[00:53:12] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[00:53:12] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[00:53:12] [Server thread/INFO]: -------- World Settings For [dreamland_the_end] --------
+[00:53:12] [Server thread/INFO]: Item Despawn Rate: 6000
+[00:53:12] [Server thread/INFO]: Item Merge Radius: 2.5
+[00:53:12] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[00:53:12] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[00:53:12] [Server thread/INFO]: Structure Info Saving: true
+[00:53:12] [Server thread/INFO]: Random Lighting Updates: false
+[00:53:12] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[00:53:12] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[00:53:12] [Server thread/INFO]: Mob Spawn Range: 4
+[00:53:12] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[00:53:12] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Cane Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Melon Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Vine Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[00:53:12] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[00:53:12] [Server thread/INFO]: Max TNT Explosions: 100
+[00:53:12] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[00:53:12] [Server thread/INFO]: Experience Merge Radius: 3.0
+[00:53:12] [Server thread/INFO]: View Distance: 10
+[00:53:12] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[00:53:12] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[00:53:12] [Server thread/INFO]: Preparing start region for level 0 (Seed: 3938616966247869992)
+[00:53:13] [Server thread/INFO]: Preparing spawn area: 73%
+[00:53:13] [Server thread/INFO]: Preparing start region for level 1 (Seed: 3938616966247869992)
+[00:53:14] [Server thread/INFO]: Preparing start region for level 2 (Seed: 3938616966247869992)
+[00:53:14] [Server thread/INFO]: [dynmap] Enabling dynmap v2.5-Dev201706100405
+[00:53:14] [Server thread/INFO]: [PermissionsEx] Enabling PermissionsEx v1.23.4
+[00:53:14] [Server thread/INFO]: [PermissionsEx] Initializing file backend
+[00:53:14] [Server thread/INFO]: [PermissionsEx] Permissions file successfully reloaded
+[00:53:14] [Server thread/INFO]: [Vault][Permission] PermissionsEx hooked.
+[00:53:14] [Server thread/INFO]: [Vault][Chat] PermissionsEx_Chat hooked.
+[00:53:14] [Server thread/INFO]: [dynmap] Using PermissionsEx 1.23.4 for access control
+[00:53:14] [Server thread/INFO]: [dynmap] Mod Support processing completed
+[00:53:15] [Server thread/ERROR]: [dynmap] Could not load colors 'default' ('plugins\dynmap\colorschemes\default.txt'): File not found.
 java.io.FileNotFoundException: plugins\dynmap\colorschemes\default.txt (Das System kann den angegebenen Pfad nicht finden)
 	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_161]
 	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_161]
@@ -148,18 +148,18 @@ java.io.FileNotFoundException: plugins\dynmap\colorschemes\default.txt (Das Syst
 	at org.dynmap.DynmapCore.enableCore(DynmapCore.java:528) [dynmap-2.5.jar:?]
 	at org.dynmap.bukkit.DynmapPlugin.doEnable(DynmapPlugin.java:865) [dynmap-2.5.jar:?]
 	at org.dynmap.bukkit.DynmapPlugin.onEnable(DynmapPlugin.java:845) [dynmap-2.5.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:422) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:383) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:338) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:272) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:545) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:422) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:383) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:338) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:272) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:545) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
 	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
-[12:42:50] [Server thread/ERROR]: [dynmap] Could not load colors 'ovocean' ('plugins\dynmap\colorschemes\ovocean.txt'): File not found.
+[00:53:15] [Server thread/ERROR]: [dynmap] Could not load colors 'ovocean' ('plugins\dynmap\colorschemes\ovocean.txt'): File not found.
 java.io.FileNotFoundException: plugins\dynmap\colorschemes\ovocean.txt (Das System kann den angegebenen Pfad nicht finden)
 	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_161]
 	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_161]
@@ -178,18 +178,18 @@ java.io.FileNotFoundException: plugins\dynmap\colorschemes\ovocean.txt (Das Syst
 	at org.dynmap.DynmapCore.enableCore(DynmapCore.java:528) [dynmap-2.5.jar:?]
 	at org.dynmap.bukkit.DynmapPlugin.doEnable(DynmapPlugin.java:865) [dynmap-2.5.jar:?]
 	at org.dynmap.bukkit.DynmapPlugin.onEnable(DynmapPlugin.java:845) [dynmap-2.5.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:422) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:383) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:338) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:272) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:545) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:422) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:383) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:338) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:272) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:545) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
 	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
-[12:42:50] [Server thread/ERROR]: [dynmap] Could not load colors 'flames' ('plugins\dynmap\colorschemes\flames.txt'): File not found.
+[00:53:15] [Server thread/ERROR]: [dynmap] Could not load colors 'flames' ('plugins\dynmap\colorschemes\flames.txt'): File not found.
 java.io.FileNotFoundException: plugins\dynmap\colorschemes\flames.txt (Das System kann den angegebenen Pfad nicht finden)
 	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_161]
 	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_161]
@@ -208,18 +208,18 @@ java.io.FileNotFoundException: plugins\dynmap\colorschemes\flames.txt (Das Syste
 	at org.dynmap.DynmapCore.enableCore(DynmapCore.java:528) [dynmap-2.5.jar:?]
 	at org.dynmap.bukkit.DynmapPlugin.doEnable(DynmapPlugin.java:865) [dynmap-2.5.jar:?]
 	at org.dynmap.bukkit.DynmapPlugin.onEnable(DynmapPlugin.java:845) [dynmap-2.5.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:422) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:383) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:338) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:272) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:545) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:422) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:383) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:338) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:272) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:545) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
 	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
-[12:42:50] [Server thread/ERROR]: [dynmap] Could not load colors 'sk89q' ('plugins\dynmap\colorschemes\sk89q.txt'): File not found.
+[00:53:15] [Server thread/ERROR]: [dynmap] Could not load colors 'sk89q' ('plugins\dynmap\colorschemes\sk89q.txt'): File not found.
 java.io.FileNotFoundException: plugins\dynmap\colorschemes\sk89q.txt (Das System kann den angegebenen Pfad nicht finden)
 	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_161]
 	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_161]
@@ -238,18 +238,18 @@ java.io.FileNotFoundException: plugins\dynmap\colorschemes\sk89q.txt (Das System
 	at org.dynmap.DynmapCore.enableCore(DynmapCore.java:528) [dynmap-2.5.jar:?]
 	at org.dynmap.bukkit.DynmapPlugin.doEnable(DynmapPlugin.java:865) [dynmap-2.5.jar:?]
 	at org.dynmap.bukkit.DynmapPlugin.onEnable(DynmapPlugin.java:845) [dynmap-2.5.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:422) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:383) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:338) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:272) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:545) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:422) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:383) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:338) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:272) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:545) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
 	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
-[12:42:50] [Server thread/ERROR]: [dynmap] Could not load colors 'amidst' ('plugins\dynmap\colorschemes\amidst.txt'): File not found.
+[00:53:15] [Server thread/ERROR]: [dynmap] Could not load colors 'amidst' ('plugins\dynmap\colorschemes\amidst.txt'): File not found.
 java.io.FileNotFoundException: plugins\dynmap\colorschemes\amidst.txt (Das System kann den angegebenen Pfad nicht finden)
 	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_161]
 	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_161]
@@ -268,1025 +268,80 @@ java.io.FileNotFoundException: plugins\dynmap\colorschemes\amidst.txt (Das Syste
 	at org.dynmap.DynmapCore.enableCore(DynmapCore.java:528) [dynmap-2.5.jar:?]
 	at org.dynmap.bukkit.DynmapPlugin.doEnable(DynmapPlugin.java:865) [dynmap-2.5.jar:?]
 	at org.dynmap.bukkit.DynmapPlugin.onEnable(DynmapPlugin.java:845) [dynmap-2.5.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:422) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:383) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:338) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:272) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:545) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:422) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:383) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:338) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:272) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:545) [spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
 	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
-[12:42:50] [Server thread/INFO]: [dynmap] Loaded 23 shaders.
-[12:42:50] [Server thread/INFO]: [dynmap] Loaded 82 perspectives.
-[12:42:50] [Server thread/INFO]: [dynmap] Loaded 14 lightings.
-[12:42:50] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
-[12:42:50] [Server thread/INFO]: [dynmap] version 2.5-Dev201706100405 is enabled - core version 2.5-Dev201706100401
-[12:42:50] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'dreamland'.
-[12:42:50] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'dreamland_nether'.
-[12:42:50] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'dreamland_the_end'.
-[12:42:50] [Server thread/INFO]: [dynmap] Enabled
-[12:42:50] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.8-SNAPSHOT;cd4729f
-[12:42:51] [Server thread/INFO]: WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
-[12:42:51] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_12_R2 as the Bukkit adapter
-[12:42:51] [Server thread/INFO]: [ImageMaps] Enabling ImageMaps v0.4.3
-[12:42:51] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.8.6
-[12:42:51] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
-[12:42:51] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
-[12:42:51] [Server thread/INFO]: [ArmorStandEditor] Enabling ArmorStandEditor v1.11.2-19
-[12:42:51] [Server thread/INFO]: [MineWallet] Enabling MineWallet v1.2.4
-[12:42:51] [Server thread/INFO]: [0;32;1m[MineWallet] MySQL not enabled! Saving playerdatas to a file![m
-[12:42:51] [Server thread/INFO]: [0;33;1m[Vault][Economy] MineWallet hooked.[m
-[12:42:51] [Server thread/INFO]: [0;36;1m[MineWallet] Plugin successfully started![m
-[12:42:52] [Server thread/INFO]: [MineWallet] No new update(s) for the plugin.
-[12:42:52] [Server thread/INFO]: [Animatronics] Enabling Animatronics v1.8.6
-[12:42:52] [Server thread/INFO]: [Animatronics] Config.yml found, loading!
-[12:42:53] [Server thread/INFO]: [Hat] Enabling Hat v1.0
-[12:42:53] [Server thread/INFO]: [ChairStairs] Enabling ChairStairs v1.1
-[12:42:53] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v6.2.1;84bc322
-[12:42:53] [Server thread/INFO]: [WorldGuard] (dreamland) TNT ignition is PERMITTED.
-[12:42:53] [Server thread/INFO]: [WorldGuard] (dreamland) Lighters are PERMITTED.
-[12:42:53] [Server thread/INFO]: [WorldGuard] (dreamland) Lava fire is blocked.
-[12:42:53] [Server thread/INFO]: [WorldGuard] (dreamland) Fire spread is UNRESTRICTED.
-[12:42:53] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'dreamland'
-[12:42:53] [Server thread/INFO]: [WorldGuard] (dreamland_nether) TNT ignition is PERMITTED.
-[12:42:53] [Server thread/INFO]: [WorldGuard] (dreamland_nether) Lighters are PERMITTED.
-[12:42:53] [Server thread/INFO]: [WorldGuard] (dreamland_nether) Lava fire is blocked.
-[12:42:53] [Server thread/INFO]: [WorldGuard] (dreamland_nether) Fire spread is UNRESTRICTED.
-[12:42:53] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'dreamland_nether'
-[12:42:53] [Server thread/INFO]: [WorldGuard] (dreamland_the_end) TNT ignition is PERMITTED.
-[12:42:53] [Server thread/INFO]: [WorldGuard] (dreamland_the_end) Lighters are PERMITTED.
-[12:42:53] [Server thread/INFO]: [WorldGuard] (dreamland_the_end) Lava fire is blocked.
-[12:42:53] [Server thread/INFO]: [WorldGuard] (dreamland_the_end) Fire spread is UNRESTRICTED.
-[12:42:53] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'dreamland_the_end'
-[12:42:53] [Server thread/INFO]: [WorldGuard] Loading region data...
-[12:42:53] [Server thread/INFO]: [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[12:42:53] [Server thread/INFO]: Initializing for the first time.
-[12:42:53] [Server thread/INFO]: Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[12:42:54] [Server thread/INFO]: [Dreamland] Enabling Dreamland v1.0
-[12:42:54] [Server thread/INFO]: [0;33;1m[Dreamland] [0;32;1m[21menabled![m
-[12:42:54] [Server thread/INFO]: [0;33;1m[Dreamland] [0;32;1mConnected with Vault![m
-[12:42:54] [Server thread/INFO]: [MCJukebox] Enabling MCJukebox v2.4
-[12:42:54] [Server thread/INFO]: [MCJukebox] MCJukebox has been loaded!
-[12:42:54] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[12:42:54] [Server thread/INFO]: Done (6,500s)! For help, type "help" or "?"
-[12:42:54] [Server thread/INFO]: Starting GS4 status listener
-[12:42:54] [Server thread/INFO]: Starting remote control listener
-[12:42:54] [Query Listener #1/INFO]: Query running on 0.0.0.0:25565
-[12:42:54] [Server thread/WARN]: No rcon password set in 'E:\Bibliotheken\Dokumente\Spigotprogramming\Dreamland\Dreamland-Plugin\DreamlandServer\server.properties', rcon disabled!
-[12:42:54] [Craft Scheduler Thread - 0/INFO]: [Vault] You are running the latest version
-[12:42:54] [Server thread/INFO]: [PlaceholderAPI] An update for PlaceholderAPI (v2.9.1) is available at:
-[12:42:54] [Server thread/INFO]: [PlaceholderAPI] https://www.spigotmc.org/resources/placeholderapi.6245/
-[12:42:54] [EventThread/INFO]: [MCJukebox] Key accepted and connection to MCJukebox established.
-[12:42:55] [EventThread/INFO]: [MCJukebox] Predicted time offset: 1737ms.
-[12:42:55] [Craft Scheduler Thread - 4/INFO]: [PlaceholderAPI] 120 placeholder expansions are available on the cloud.
-[12:43:32] [User Authenticator #1/INFO]: UUID of player StevenPaw is ff1022ac-91de-4516-bddd-1656aae12fc1
-[12:43:32] [Server thread/INFO]: StevenPaw[/192.168.178.30:49819] logged in with entity id 315 at ([dreamland]-182.35692297055525, 84.0, 255.24771529290086)
-[12:44:33] [Server thread/INFO]: StevenPaw issued server command: /rl
-[12:44:33] [Server thread/INFO]: StevenPaw: [0;31;1mPlease note that this command is not supported and may cause issues when using some plugins.[m
-[12:44:33] [Server thread/INFO]: StevenPaw: [0;31;1mIf you encounter any issues please use the /stop command to restart your server.[m
-[12:44:33] [Server thread/INFO]: Debug logging is disabled
-[12:44:33] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[12:44:33] [Server thread/INFO]: Using 4 threads for Netty based IO
-[12:44:33] [Server thread/INFO]: -------- World Settings For [dreamland] --------
-[12:44:33] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[12:44:33] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Cane Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Melon Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Vine Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Mob Spawn Range: 4
-[12:44:33] [Server thread/INFO]: Max TNT Explosions: 100
-[12:44:33] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[12:44:33] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[12:44:33] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[12:44:33] [Server thread/INFO]: Structure Info Saving: true
-[12:44:33] [Server thread/INFO]: Random Lighting Updates: false
-[12:44:33] [Server thread/INFO]: Item Despawn Rate: 6000
-[12:44:33] [Server thread/INFO]: Item Merge Radius: 2.5
-[12:44:33] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[12:44:33] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[12:44:33] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[12:44:33] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[12:44:33] [Server thread/INFO]: View Distance: 10
-[12:44:33] [Server thread/INFO]: Experience Merge Radius: 3.0
-[12:44:33] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[12:44:33] [Server thread/INFO]: -------- World Settings For [dreamland_nether] --------
-[12:44:33] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[12:44:33] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Cane Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Melon Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Vine Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Mob Spawn Range: 4
-[12:44:33] [Server thread/INFO]: Max TNT Explosions: 100
-[12:44:33] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[12:44:33] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[12:44:33] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[12:44:33] [Server thread/INFO]: Structure Info Saving: true
-[12:44:33] [Server thread/INFO]: Random Lighting Updates: false
-[12:44:33] [Server thread/INFO]: Item Despawn Rate: 6000
-[12:44:33] [Server thread/INFO]: Item Merge Radius: 2.5
-[12:44:33] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[12:44:33] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[12:44:33] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[12:44:33] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[12:44:33] [Server thread/INFO]: View Distance: 10
-[12:44:33] [Server thread/INFO]: Experience Merge Radius: 3.0
-[12:44:33] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[12:44:33] [Server thread/INFO]: -------- World Settings For [dreamland_the_end] --------
-[12:44:33] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[12:44:33] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Cane Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Melon Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Vine Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[12:44:33] [Server thread/INFO]: Mob Spawn Range: 4
-[12:44:33] [Server thread/INFO]: Max TNT Explosions: 100
-[12:44:33] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[12:44:33] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[12:44:33] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[12:44:33] [Server thread/INFO]: Structure Info Saving: true
-[12:44:33] [Server thread/INFO]: Random Lighting Updates: false
-[12:44:33] [Server thread/INFO]: Item Despawn Rate: 6000
-[12:44:33] [Server thread/INFO]: Item Merge Radius: 2.5
-[12:44:33] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[12:44:33] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[12:44:33] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[12:44:33] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[12:44:33] [Server thread/INFO]: View Distance: 10
-[12:44:33] [Server thread/INFO]: Experience Merge Radius: 3.0
-[12:44:33] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[12:44:33] [Server thread/INFO]: [MCJukebox] Disabling MCJukebox v2.4
-[12:44:33] [Server thread/INFO]: [Dreamland] Disabling Dreamland v1.0
-[12:44:33] [Server thread/INFO]: [0;33;1m[Dreamland] [0;31;1m[21mdisabled![m
-[12:44:33] [Server thread/INFO]: [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[12:44:33] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v6.2.1;84bc322
-[12:44:33] [Server thread/INFO]: [WorldGuard] Shutting down executor and waiting for any pending tasks...
-[12:44:33] [Server thread/INFO]: [ChairStairs] Disabling ChairStairs v1.1
-[12:44:33] [Server thread/INFO]: [ChairStairs] has been disabled.
-[12:44:33] [Server thread/INFO]: [Vault] Disabling Vault v1.6.1
-[12:44:33] [Server thread/INFO]: [Hat] Disabling Hat v1.0
-[12:44:33] [Server thread/INFO]: [Animatronics] Disabling Animatronics v1.8.6
-[12:44:33] [Server thread/INFO]: [MineWallet] Disabling MineWallet v1.2.4
-[12:44:33] [Server thread/INFO]: [MineWallet] Plugin stopped!
-[12:44:33] [Server thread/INFO]: [ArmorStandEditor] Disabling ArmorStandEditor v1.11.2-19
-[12:44:33] [Server thread/INFO]: [PermissionsEx] Disabling PermissionsEx v1.23.4
-[12:44:33] [Server thread/INFO]: WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
-[12:44:33] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.8.6
-[12:44:33] [Server thread/INFO]: [ImageMaps] Disabling ImageMaps v0.4.3
-[12:44:33] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1.8-SNAPSHOT;cd4729f
-[12:44:33] [Server thread/INFO]: [dynmap] Disabling dynmap v2.5-Dev201706100405
-[12:44:33] [Server thread/INFO]: [dynmap] Unloaded 11 components.
-[12:44:33] [Server thread/INFO]: [dynmap] Stopping map renderer...
-[12:44:34] [Server thread/INFO]: [dynmap] Disabled
-[12:44:34] [Server thread/INFO]: Loaded 2 custom command functions
-[12:44:35] [Server thread/INFO]: [dynmap] Loading dynmap v2.5-Dev201706100405
-[12:44:35] [Server thread/INFO]: [dynmap] version=git-Spigot-2086bb0-1988d7f (MC: 1.12.2)
-[12:44:35] [Server thread/INFO]: [dynmap] Mod Support API available
-[12:44:35] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.8-SNAPSHOT;cd4729f
-[12:44:35] [Server thread/INFO]: [ImageMaps] Loading ImageMaps v0.4.3
-[12:44:35] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.8.6
-[12:44:35] [Server thread/INFO]: [PermissionsEx] Loading PermissionsEx v1.23.4
-[12:44:35] [Server thread/INFO]: [ArmorStandEditor] Loading ArmorStandEditor v1.11.2-19
-[12:44:35] [Server thread/INFO]: [MineWallet] Loading MineWallet v1.2.4
-[12:44:35] [Server thread/INFO]: [Animatronics] Loading Animatronics v1.8.6
-[12:44:35] [Server thread/INFO]: [Hat] Loading Hat v1.0
-[12:44:35] [Server thread/INFO]: [Vault] Loading Vault v1.6.1
-[12:44:35] [Server thread/INFO]: [ChairStairs] Loading ChairStairs v1.1
-[12:44:35] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v6.2.1;84bc322
-[12:44:35] [Server thread/INFO]: [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[12:44:35] [Server thread/INFO]: [Dreamland] Loading Dreamland v1.0
-[12:44:35] [Server thread/INFO]: [MCJukebox] Loading MCJukebox v2.4
-[12:44:35] [Server thread/INFO]: [Vault] Enabling Vault v1.6.1
-[12:44:35] [Server thread/INFO]: [Vault] [Permission] PermissionsEx found: Waiting
-[12:44:35] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
-[12:44:35] [Server thread/INFO]: [Vault] [Chat] PermissionsEx found: Waiting
-[12:44:35] [Server thread/INFO]: [Vault] Plugin enabled (40ms)
-[12:44:35] [Server thread/INFO]: [dynmap] Enabling dynmap v2.5-Dev201706100405
-[12:44:35] [Server thread/INFO]: [PermissionsEx] Enabling PermissionsEx v1.23.4
-[12:44:35] [Server thread/INFO]: [PermissionsEx] Initializing file backend
-[12:44:35] [Server thread/INFO]: [PermissionsEx] Permissions file successfully reloaded
-[12:44:35] [Server thread/INFO]: [Vault][Permission] PermissionsEx hooked.
-[12:44:35] [Server thread/INFO]: [Vault][Chat] PermissionsEx_Chat hooked.
-[12:44:35] [Server thread/INFO]: [dynmap] Using PermissionsEx 1.23.4 for access control
-[12:44:35] [Server thread/INFO]: [dynmap] Mod Support processing completed
-[12:44:36] [Server thread/ERROR]: [dynmap] Could not load colors 'default' ('plugins\dynmap\colorschemes\default.txt'): File not found.
-java.io.FileNotFoundException: plugins\dynmap\colorschemes\default.txt (Das System kann den angegebenen Pfad nicht finden)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_161]
-	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_161]
-	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_161]
-	at org.dynmap.ColorScheme.loadScheme(ColorScheme.java:81) [dynmap-2.5.jar:?]
-	at org.dynmap.ColorScheme.getScheme(ColorScheme.java:49) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.DefaultHDShader.<init>(DefaultHDShader.java:33) [dynmap-2.5.jar:?]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_161]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) [?:1.8.0_161]
-	at org.dynmap.ConfigurationNode.createInstance(ConfigurationNode.java:327) [dynmap-2.5.jar:?]
-	at org.dynmap.ConfigurationNode.createInstances(ConfigurationNode.java:341) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.HDMapManager.loadHDShaders(HDMapManager.java:39) [dynmap-2.5.jar:?]
-	at org.dynmap.MapManager.<init>(MapManager.java:919) [dynmap-2.5.jar:?]
-	at org.dynmap.DynmapCore.enableCore(DynmapCore.java:528) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.doEnable(DynmapPlugin.java:865) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.onEnable(DynmapPlugin.java:845) [dynmap-2.5.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.reload(CraftServer.java:752) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.Bukkit.reload(Bukkit.java:525) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:27) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:141) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:648) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.handleCommand(PlayerConnection.java:1397) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.a(PlayerConnection.java:1232) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:45) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:1) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnectionUtils$1.run(SourceFile:13) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_161]
-	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_161]
-	at net.minecraft.server.v1_12_R1.SystemUtils.a(SourceFile:46) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:748) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:406) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:679) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:577) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
-[12:44:36] [Server thread/ERROR]: [dynmap] Could not load colors 'ovocean' ('plugins\dynmap\colorschemes\ovocean.txt'): File not found.
-java.io.FileNotFoundException: plugins\dynmap\colorschemes\ovocean.txt (Das System kann den angegebenen Pfad nicht finden)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_161]
-	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_161]
-	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_161]
-	at org.dynmap.ColorScheme.loadScheme(ColorScheme.java:81) [dynmap-2.5.jar:?]
-	at org.dynmap.ColorScheme.getScheme(ColorScheme.java:49) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.DefaultHDShader.<init>(DefaultHDShader.java:33) [dynmap-2.5.jar:?]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_161]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) [?:1.8.0_161]
-	at org.dynmap.ConfigurationNode.createInstance(ConfigurationNode.java:327) [dynmap-2.5.jar:?]
-	at org.dynmap.ConfigurationNode.createInstances(ConfigurationNode.java:341) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.HDMapManager.loadHDShaders(HDMapManager.java:39) [dynmap-2.5.jar:?]
-	at org.dynmap.MapManager.<init>(MapManager.java:919) [dynmap-2.5.jar:?]
-	at org.dynmap.DynmapCore.enableCore(DynmapCore.java:528) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.doEnable(DynmapPlugin.java:865) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.onEnable(DynmapPlugin.java:845) [dynmap-2.5.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.reload(CraftServer.java:752) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.Bukkit.reload(Bukkit.java:525) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:27) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:141) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:648) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.handleCommand(PlayerConnection.java:1397) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.a(PlayerConnection.java:1232) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:45) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:1) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnectionUtils$1.run(SourceFile:13) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_161]
-	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_161]
-	at net.minecraft.server.v1_12_R1.SystemUtils.a(SourceFile:46) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:748) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:406) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:679) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:577) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
-[12:44:36] [Server thread/ERROR]: [dynmap] Could not load colors 'flames' ('plugins\dynmap\colorschemes\flames.txt'): File not found.
-java.io.FileNotFoundException: plugins\dynmap\colorschemes\flames.txt (Das System kann den angegebenen Pfad nicht finden)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_161]
-	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_161]
-	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_161]
-	at org.dynmap.ColorScheme.loadScheme(ColorScheme.java:81) [dynmap-2.5.jar:?]
-	at org.dynmap.ColorScheme.getScheme(ColorScheme.java:49) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.DefaultHDShader.<init>(DefaultHDShader.java:33) [dynmap-2.5.jar:?]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_161]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) [?:1.8.0_161]
-	at org.dynmap.ConfigurationNode.createInstance(ConfigurationNode.java:327) [dynmap-2.5.jar:?]
-	at org.dynmap.ConfigurationNode.createInstances(ConfigurationNode.java:341) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.HDMapManager.loadHDShaders(HDMapManager.java:39) [dynmap-2.5.jar:?]
-	at org.dynmap.MapManager.<init>(MapManager.java:919) [dynmap-2.5.jar:?]
-	at org.dynmap.DynmapCore.enableCore(DynmapCore.java:528) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.doEnable(DynmapPlugin.java:865) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.onEnable(DynmapPlugin.java:845) [dynmap-2.5.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.reload(CraftServer.java:752) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.Bukkit.reload(Bukkit.java:525) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:27) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:141) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:648) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.handleCommand(PlayerConnection.java:1397) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.a(PlayerConnection.java:1232) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:45) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:1) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnectionUtils$1.run(SourceFile:13) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_161]
-	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_161]
-	at net.minecraft.server.v1_12_R1.SystemUtils.a(SourceFile:46) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:748) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:406) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:679) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:577) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
-[12:44:36] [Server thread/ERROR]: [dynmap] Could not load colors 'sk89q' ('plugins\dynmap\colorschemes\sk89q.txt'): File not found.
-java.io.FileNotFoundException: plugins\dynmap\colorschemes\sk89q.txt (Das System kann den angegebenen Pfad nicht finden)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_161]
-	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_161]
-	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_161]
-	at org.dynmap.ColorScheme.loadScheme(ColorScheme.java:81) [dynmap-2.5.jar:?]
-	at org.dynmap.ColorScheme.getScheme(ColorScheme.java:49) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.DefaultHDShader.<init>(DefaultHDShader.java:33) [dynmap-2.5.jar:?]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_161]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) [?:1.8.0_161]
-	at org.dynmap.ConfigurationNode.createInstance(ConfigurationNode.java:327) [dynmap-2.5.jar:?]
-	at org.dynmap.ConfigurationNode.createInstances(ConfigurationNode.java:341) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.HDMapManager.loadHDShaders(HDMapManager.java:39) [dynmap-2.5.jar:?]
-	at org.dynmap.MapManager.<init>(MapManager.java:919) [dynmap-2.5.jar:?]
-	at org.dynmap.DynmapCore.enableCore(DynmapCore.java:528) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.doEnable(DynmapPlugin.java:865) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.onEnable(DynmapPlugin.java:845) [dynmap-2.5.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.reload(CraftServer.java:752) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.Bukkit.reload(Bukkit.java:525) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:27) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:141) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:648) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.handleCommand(PlayerConnection.java:1397) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.a(PlayerConnection.java:1232) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:45) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:1) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnectionUtils$1.run(SourceFile:13) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_161]
-	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_161]
-	at net.minecraft.server.v1_12_R1.SystemUtils.a(SourceFile:46) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:748) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:406) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:679) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:577) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
-[12:44:36] [Server thread/ERROR]: [dynmap] Could not load colors 'amidst' ('plugins\dynmap\colorschemes\amidst.txt'): File not found.
-java.io.FileNotFoundException: plugins\dynmap\colorschemes\amidst.txt (Das System kann den angegebenen Pfad nicht finden)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_161]
-	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_161]
-	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_161]
-	at org.dynmap.ColorScheme.loadScheme(ColorScheme.java:81) [dynmap-2.5.jar:?]
-	at org.dynmap.ColorScheme.getScheme(ColorScheme.java:49) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.DefaultHDShader.<init>(DefaultHDShader.java:33) [dynmap-2.5.jar:?]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_161]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) [?:1.8.0_161]
-	at org.dynmap.ConfigurationNode.createInstance(ConfigurationNode.java:327) [dynmap-2.5.jar:?]
-	at org.dynmap.ConfigurationNode.createInstances(ConfigurationNode.java:341) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.HDMapManager.loadHDShaders(HDMapManager.java:39) [dynmap-2.5.jar:?]
-	at org.dynmap.MapManager.<init>(MapManager.java:919) [dynmap-2.5.jar:?]
-	at org.dynmap.DynmapCore.enableCore(DynmapCore.java:528) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.doEnable(DynmapPlugin.java:865) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.onEnable(DynmapPlugin.java:845) [dynmap-2.5.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.reload(CraftServer.java:752) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.Bukkit.reload(Bukkit.java:525) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:27) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:141) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:648) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.handleCommand(PlayerConnection.java:1397) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.a(PlayerConnection.java:1232) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:45) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:1) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnectionUtils$1.run(SourceFile:13) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_161]
-	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_161]
-	at net.minecraft.server.v1_12_R1.SystemUtils.a(SourceFile:46) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:748) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:406) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:679) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:577) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
-[12:44:36] [Server thread/INFO]: [dynmap] Loaded 23 shaders.
-[12:44:36] [Server thread/INFO]: [dynmap] Loaded 82 perspectives.
-[12:44:36] [Server thread/INFO]: [dynmap] Loaded 14 lightings.
-[12:44:36] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
-[12:44:36] [Server thread/INFO]: [dynmap] version 2.5-Dev201706100405 is enabled - core version 2.5-Dev201706100401
-[12:44:36] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'dreamland'.
-[12:44:36] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'dreamland_nether'.
-[12:44:36] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'dreamland_the_end'.
-[12:44:36] [Server thread/INFO]: [dynmap] Enabled
-[12:44:36] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.8-SNAPSHOT;cd4729f
-[12:44:36] [Server thread/INFO]: WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
-[12:44:36] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_12_R2 as the Bukkit adapter
-[12:44:36] [Server thread/INFO]: [ImageMaps] Enabling ImageMaps v0.4.3
-[12:44:36] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.8.6
-[12:44:36] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
-[12:44:36] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
-[12:44:36] [Server thread/INFO]: [ArmorStandEditor] Enabling ArmorStandEditor v1.11.2-19
-[12:44:36] [Server thread/INFO]: [MineWallet] Enabling MineWallet v1.2.4
-[12:44:36] [Server thread/INFO]: [0;32;1m[MineWallet] MySQL not enabled! Saving playerdatas to a file![m
-[12:44:36] [Server thread/INFO]: [0;33;1m[Vault][Economy] MineWallet hooked.[m
-[12:44:36] [Server thread/INFO]: [0;36;1m[MineWallet] Plugin successfully started![m
-[12:44:37] [Server thread/INFO]: [MineWallet] No new update(s) for the plugin.
-[12:44:37] [Server thread/INFO]: [Animatronics] Enabling Animatronics v1.8.6
-[12:44:37] [Server thread/INFO]: [Animatronics] Config.yml found, loading!
-[12:44:37] [Server thread/INFO]: [Hat] Enabling Hat v1.0
-[12:44:37] [Server thread/INFO]: [ChairStairs] Enabling ChairStairs v1.1
-[12:44:37] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v6.2.1;84bc322
-[12:44:37] [Server thread/INFO]: [WorldGuard] (dreamland) TNT ignition is PERMITTED.
-[12:44:37] [Server thread/INFO]: [WorldGuard] (dreamland) Lighters are PERMITTED.
-[12:44:37] [Server thread/INFO]: [WorldGuard] (dreamland) Lava fire is blocked.
-[12:44:37] [Server thread/INFO]: [WorldGuard] (dreamland) Fire spread is UNRESTRICTED.
-[12:44:37] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'dreamland'
-[12:44:37] [Server thread/INFO]: [WorldGuard] (dreamland_nether) TNT ignition is PERMITTED.
-[12:44:37] [Server thread/INFO]: [WorldGuard] (dreamland_nether) Lighters are PERMITTED.
-[12:44:37] [Server thread/INFO]: [WorldGuard] (dreamland_nether) Lava fire is blocked.
-[12:44:37] [Server thread/INFO]: [WorldGuard] (dreamland_nether) Fire spread is UNRESTRICTED.
-[12:44:37] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'dreamland_nether'
-[12:44:37] [Server thread/INFO]: [WorldGuard] (dreamland_the_end) TNT ignition is PERMITTED.
-[12:44:37] [Server thread/INFO]: [WorldGuard] (dreamland_the_end) Lighters are PERMITTED.
-[12:44:37] [Server thread/INFO]: [WorldGuard] (dreamland_the_end) Lava fire is blocked.
-[12:44:37] [Server thread/INFO]: [WorldGuard] (dreamland_the_end) Fire spread is UNRESTRICTED.
-[12:44:37] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'dreamland_the_end'
-[12:44:37] [Server thread/INFO]: [WorldGuard] Loading region data...
-[12:44:37] [Server thread/INFO]: [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[12:44:37] [Server thread/INFO]: Initializing for the first time.
-[12:44:37] [Server thread/INFO]: Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[12:44:38] [Server thread/INFO]: [Dreamland] Enabling Dreamland v1.0
-[12:44:38] [Server thread/INFO]: [0;33;1m[Dreamland] [0;32;1m[21menabled![m
-[12:44:38] [Server thread/INFO]: [0;33;1m[Dreamland] [0;32;1mConnected with Vault![m
-[12:44:38] [Server thread/INFO]: [MCJukebox] Enabling MCJukebox v2.4
-[12:44:38] [Server thread/INFO]: [MCJukebox] MCJukebox has been loaded!
-[12:44:38] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[12:44:38] [Server thread/INFO]: StevenPaw: [0;32;1mReload complete.[m
-[12:44:39] [Craft Scheduler Thread - 2/INFO]: [Vault] You are running the latest version
-[12:44:39] [EventThread/INFO]: [MCJukebox] Key accepted and connection to MCJukebox established.
-[12:44:39] [Server thread/INFO]: [PlaceholderAPI] An update for PlaceholderAPI (v2.9.1) is available at:
-[12:44:39] [Server thread/INFO]: [PlaceholderAPI] https://www.spigotmc.org/resources/placeholderapi.6245/
-[12:44:39] [EventThread/INFO]: [MCJukebox] Predicted time offset: 1735ms.
-[12:44:40] [Craft Scheduler Thread - 8/INFO]: [PlaceholderAPI] 120 placeholder expansions are available on the cloud.
-[12:46:15] [Server thread/INFO]: StevenPaw issued server command: /ach give StevenPaw ChinaTown
-[12:46:15] [Server thread/ERROR]: null
-org.bukkit.command.CommandException: Unhandled exception executing command 'ach' in plugin Dreamland v1.0
-	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:46) ~[spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:141) ~[spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:648) ~[spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.handleCommand(PlayerConnection.java:1397) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.a(PlayerConnection.java:1232) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:45) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:1) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnectionUtils$1.run(SourceFile:13) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_161]
-	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_161]
-	at net.minecraft.server.v1_12_R1.SystemUtils.a(SourceFile:46) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:748) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:406) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:679) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:577) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
-Caused by: java.lang.IllegalArgumentException: No enum constant de.zwibbltv.dreamland.utils.Achievements.ChinaTown
-	at java.lang.Enum.valueOf(Unknown Source) ~[?:1.8.0_161]
-	at de.zwibbltv.dreamland.utils.Achievements.valueOf(Achievements.java:1) ~[?:?]
-	at de.zwibbltv.dreamland.commands.CMDachievements.onCommand(CMDachievements.java:29) ~[?:?]
-	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:44) ~[spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	... 15 more
-[12:46:19] [Server thread/INFO]: StevenPaw issued server command: /ach give StevenPaw Chinatown
-[12:46:19] [Server thread/ERROR]: null
-org.bukkit.command.CommandException: Unhandled exception executing command 'ach' in plugin Dreamland v1.0
-	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:46) ~[spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:141) ~[spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:648) ~[spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.handleCommand(PlayerConnection.java:1397) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.a(PlayerConnection.java:1232) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:45) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:1) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnectionUtils$1.run(SourceFile:13) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_161]
-	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_161]
-	at net.minecraft.server.v1_12_R1.SystemUtils.a(SourceFile:46) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:748) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:406) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:679) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:577) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
-Caused by: java.lang.IllegalArgumentException: No enum constant de.zwibbltv.dreamland.utils.Achievements.Chinatown
-	at java.lang.Enum.valueOf(Unknown Source) ~[?:1.8.0_161]
-	at de.zwibbltv.dreamland.utils.Achievements.valueOf(Achievements.java:1) ~[?:?]
-	at de.zwibbltv.dreamland.commands.CMDachievements.onCommand(CMDachievements.java:29) ~[?:?]
-	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:44) ~[spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	... 15 more
-[12:46:31] [Server thread/INFO]: StevenPaw issued server command: /ach give StevenPaw CHINATOWN
-[12:46:42] [Server thread/INFO]: StevenPaw issued server command: /ach give StevenPaw CASTLE
-[12:46:56] [Server thread/INFO]: StevenPaw issued server command: /ach give StevenPaw CASTLETOILET
-[12:46:56] [Server thread/ERROR]: null
-org.bukkit.command.CommandException: Unhandled exception executing command 'ach' in plugin Dreamland v1.0
-	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:46) ~[spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:141) ~[spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:648) ~[spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.handleCommand(PlayerConnection.java:1397) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.a(PlayerConnection.java:1232) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:45) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:1) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnectionUtils$1.run(SourceFile:13) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_161]
-	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_161]
-	at net.minecraft.server.v1_12_R1.SystemUtils.a(SourceFile:46) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:748) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:406) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:679) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:577) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
-Caused by: java.lang.IllegalArgumentException: No enum constant de.zwibbltv.dreamland.utils.Achievements.CASTLETOILET
-	at java.lang.Enum.valueOf(Unknown Source) ~[?:1.8.0_161]
-	at de.zwibbltv.dreamland.utils.Achievements.valueOf(Achievements.java:1) ~[?:?]
-	at de.zwibbltv.dreamland.commands.CMDachievements.onCommand(CMDachievements.java:29) ~[?:?]
-	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:44) ~[spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	... 15 more
-[12:47:07] [Dynmap Render Thread/INFO]: [dynmap] Texture pack not found - plugins\dynmap\texturepacks\standard
-[12:47:07] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
-[12:47:12] [Async Chat Thread - #0/INFO]: [0;33;22m[[0;32;22m[21mOwner[0;33;22m][m StevenPaw: s[m
-[12:47:25] [Server thread/INFO]: StevenPaw issued server command: /ach give StevenPaw BACKSTAGEPARCOUR
-[12:55:03] [Server thread/INFO]: StevenPaw issued server command: /rl
-[12:55:03] [Server thread/INFO]: StevenPaw: [0;31;1mPlease note that this command is not supported and may cause issues when using some plugins.[m
-[12:55:03] [Server thread/INFO]: StevenPaw: [0;31;1mIf you encounter any issues please use the /stop command to restart your server.[m
-[12:55:03] [Server thread/INFO]: Debug logging is disabled
-[12:55:03] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[12:55:03] [Server thread/INFO]: Using 4 threads for Netty based IO
-[12:55:03] [Server thread/INFO]: -------- World Settings For [dreamland] --------
-[12:55:03] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[12:55:03] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Cane Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Melon Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Vine Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Mob Spawn Range: 4
-[12:55:03] [Server thread/INFO]: Max TNT Explosions: 100
-[12:55:03] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[12:55:03] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[12:55:03] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[12:55:03] [Server thread/INFO]: Structure Info Saving: true
-[12:55:03] [Server thread/INFO]: Random Lighting Updates: false
-[12:55:03] [Server thread/INFO]: Item Despawn Rate: 6000
-[12:55:03] [Server thread/INFO]: Item Merge Radius: 2.5
-[12:55:03] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[12:55:03] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[12:55:03] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[12:55:03] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[12:55:03] [Server thread/INFO]: View Distance: 10
-[12:55:03] [Server thread/INFO]: Experience Merge Radius: 3.0
-[12:55:03] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[12:55:03] [Server thread/INFO]: -------- World Settings For [dreamland_nether] --------
-[12:55:03] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[12:55:03] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Cane Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Melon Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Vine Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Mob Spawn Range: 4
-[12:55:03] [Server thread/INFO]: Max TNT Explosions: 100
-[12:55:03] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[12:55:03] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[12:55:03] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[12:55:03] [Server thread/INFO]: Structure Info Saving: true
-[12:55:03] [Server thread/INFO]: Random Lighting Updates: false
-[12:55:03] [Server thread/INFO]: Item Despawn Rate: 6000
-[12:55:03] [Server thread/INFO]: Item Merge Radius: 2.5
-[12:55:03] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[12:55:03] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[12:55:03] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[12:55:03] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[12:55:03] [Server thread/INFO]: View Distance: 10
-[12:55:03] [Server thread/INFO]: Experience Merge Radius: 3.0
-[12:55:03] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[12:55:03] [Server thread/INFO]: -------- World Settings For [dreamland_the_end] --------
-[12:55:03] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[12:55:03] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Cane Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Melon Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Vine Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[12:55:03] [Server thread/INFO]: Mob Spawn Range: 4
-[12:55:03] [Server thread/INFO]: Max TNT Explosions: 100
-[12:55:03] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[12:55:03] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[12:55:03] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[12:55:03] [Server thread/INFO]: Structure Info Saving: true
-[12:55:03] [Server thread/INFO]: Random Lighting Updates: false
-[12:55:03] [Server thread/INFO]: Item Despawn Rate: 6000
-[12:55:03] [Server thread/INFO]: Item Merge Radius: 2.5
-[12:55:03] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[12:55:03] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[12:55:03] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[12:55:03] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[12:55:03] [Server thread/INFO]: View Distance: 10
-[12:55:03] [Server thread/INFO]: Experience Merge Radius: 3.0
-[12:55:03] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[12:55:03] [Server thread/INFO]: [MCJukebox] Disabling MCJukebox v2.4
-[12:55:03] [Server thread/INFO]: [Dreamland] Disabling Dreamland v1.0
-[12:55:03] [Server thread/INFO]: [0;33;1m[Dreamland] [0;31;1m[21mdisabled![m
-[12:55:03] [Server thread/INFO]: [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[12:55:03] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v6.2.1;84bc322
-[12:55:03] [Server thread/INFO]: [WorldGuard] Shutting down executor and waiting for any pending tasks...
-[12:55:03] [Server thread/INFO]: [ChairStairs] Disabling ChairStairs v1.1
-[12:55:03] [Server thread/INFO]: [ChairStairs] has been disabled.
-[12:55:03] [Server thread/INFO]: [Vault] Disabling Vault v1.6.1
-[12:55:03] [Server thread/INFO]: [Hat] Disabling Hat v1.0
-[12:55:03] [Server thread/INFO]: [Animatronics] Disabling Animatronics v1.8.6
-[12:55:03] [Server thread/INFO]: [MineWallet] Disabling MineWallet v1.2.4
-[12:55:03] [Server thread/INFO]: [MineWallet] Plugin stopped!
-[12:55:03] [Server thread/INFO]: [ArmorStandEditor] Disabling ArmorStandEditor v1.11.2-19
-[12:55:03] [Server thread/INFO]: [PermissionsEx] Disabling PermissionsEx v1.23.4
-[12:55:03] [Server thread/INFO]: WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
-[12:55:03] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.8.6
-[12:55:03] [Server thread/INFO]: [ImageMaps] Disabling ImageMaps v0.4.3
-[12:55:03] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1.8-SNAPSHOT;cd4729f
-[12:55:03] [Server thread/INFO]: [dynmap] Disabling dynmap v2.5-Dev201706100405
-[12:55:03] [Server thread/INFO]: [dynmap] Unloaded 11 components.
-[12:55:03] [Server thread/INFO]: [dynmap] Stopping map renderer...
-[12:55:04] [Server thread/INFO]: [dynmap] Saved 274 pending tile renders in world 'dreamland'
-[12:55:04] [Server thread/INFO]: [dynmap] Disabled
-[12:55:04] [Server thread/INFO]: Loaded 2 custom command functions
-[12:55:04] [Server thread/INFO]: [dynmap] Loading dynmap v2.5-Dev201706100405
-[12:55:04] [Server thread/INFO]: [dynmap] version=git-Spigot-2086bb0-1988d7f (MC: 1.12.2)
-[12:55:04] [Server thread/INFO]: [dynmap] Mod Support API available
-[12:55:04] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.8-SNAPSHOT;cd4729f
-[12:55:04] [Server thread/INFO]: [ImageMaps] Loading ImageMaps v0.4.3
-[12:55:04] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.8.6
-[12:55:04] [Server thread/INFO]: [PermissionsEx] Loading PermissionsEx v1.23.4
-[12:55:04] [Server thread/INFO]: [ArmorStandEditor] Loading ArmorStandEditor v1.11.2-19
-[12:55:04] [Server thread/INFO]: [MineWallet] Loading MineWallet v1.2.4
-[12:55:04] [Server thread/INFO]: [Animatronics] Loading Animatronics v1.8.6
-[12:55:04] [Server thread/INFO]: [Hat] Loading Hat v1.0
-[12:55:04] [Server thread/INFO]: [Vault] Loading Vault v1.6.1
-[12:55:04] [Server thread/INFO]: [ChairStairs] Loading ChairStairs v1.1
-[12:55:04] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v6.2.1;84bc322
-[12:55:04] [Server thread/INFO]: [EnjinMinecraftPlugin] Loading EnjinMinecraftPlugin v3.4.3
-[12:55:04] [Server thread/INFO]: [Dreamland] Loading Dreamland v1.0
-[12:55:04] [Server thread/INFO]: [MCJukebox] Loading MCJukebox v2.4
-[12:55:04] [Server thread/INFO]: [Vault] Enabling Vault v1.6.1
-[12:55:04] [Server thread/INFO]: [Vault] [Permission] PermissionsEx found: Waiting
-[12:55:04] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
-[12:55:04] [Server thread/INFO]: [Vault] [Chat] PermissionsEx found: Waiting
-[12:55:04] [Server thread/INFO]: [Vault] Plugin enabled (34ms)
-[12:55:04] [Server thread/INFO]: [dynmap] Enabling dynmap v2.5-Dev201706100405
-[12:55:04] [Server thread/INFO]: [PermissionsEx] Enabling PermissionsEx v1.23.4
-[12:55:04] [Server thread/INFO]: [PermissionsEx] Initializing file backend
-[12:55:04] [Server thread/INFO]: [PermissionsEx] Permissions file successfully reloaded
-[12:55:04] [Server thread/INFO]: [Vault][Permission] PermissionsEx hooked.
-[12:55:04] [Server thread/INFO]: [Vault][Chat] PermissionsEx_Chat hooked.
-[12:55:04] [Server thread/INFO]: [dynmap] Using PermissionsEx 1.23.4 for access control
-[12:55:05] [Server thread/INFO]: [dynmap] Mod Support processing completed
-[12:55:05] [Server thread/ERROR]: [dynmap] Could not load colors 'default' ('plugins\dynmap\colorschemes\default.txt'): File not found.
-java.io.FileNotFoundException: plugins\dynmap\colorschemes\default.txt (Das System kann den angegebenen Pfad nicht finden)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_161]
-	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_161]
-	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_161]
-	at org.dynmap.ColorScheme.loadScheme(ColorScheme.java:81) [dynmap-2.5.jar:?]
-	at org.dynmap.ColorScheme.getScheme(ColorScheme.java:49) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.DefaultHDShader.<init>(DefaultHDShader.java:33) [dynmap-2.5.jar:?]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_161]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) [?:1.8.0_161]
-	at org.dynmap.ConfigurationNode.createInstance(ConfigurationNode.java:327) [dynmap-2.5.jar:?]
-	at org.dynmap.ConfigurationNode.createInstances(ConfigurationNode.java:341) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.HDMapManager.loadHDShaders(HDMapManager.java:39) [dynmap-2.5.jar:?]
-	at org.dynmap.MapManager.<init>(MapManager.java:919) [dynmap-2.5.jar:?]
-	at org.dynmap.DynmapCore.enableCore(DynmapCore.java:528) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.doEnable(DynmapPlugin.java:865) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.onEnable(DynmapPlugin.java:845) [dynmap-2.5.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.reload(CraftServer.java:752) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.Bukkit.reload(Bukkit.java:525) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:27) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:141) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:648) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.handleCommand(PlayerConnection.java:1397) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.a(PlayerConnection.java:1232) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:45) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:1) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnectionUtils$1.run(SourceFile:13) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_161]
-	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_161]
-	at net.minecraft.server.v1_12_R1.SystemUtils.a(SourceFile:46) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:748) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:406) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:679) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:577) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
-[12:55:05] [Server thread/ERROR]: [dynmap] Could not load colors 'ovocean' ('plugins\dynmap\colorschemes\ovocean.txt'): File not found.
-java.io.FileNotFoundException: plugins\dynmap\colorschemes\ovocean.txt (Das System kann den angegebenen Pfad nicht finden)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_161]
-	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_161]
-	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_161]
-	at org.dynmap.ColorScheme.loadScheme(ColorScheme.java:81) [dynmap-2.5.jar:?]
-	at org.dynmap.ColorScheme.getScheme(ColorScheme.java:49) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.DefaultHDShader.<init>(DefaultHDShader.java:33) [dynmap-2.5.jar:?]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_161]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) [?:1.8.0_161]
-	at org.dynmap.ConfigurationNode.createInstance(ConfigurationNode.java:327) [dynmap-2.5.jar:?]
-	at org.dynmap.ConfigurationNode.createInstances(ConfigurationNode.java:341) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.HDMapManager.loadHDShaders(HDMapManager.java:39) [dynmap-2.5.jar:?]
-	at org.dynmap.MapManager.<init>(MapManager.java:919) [dynmap-2.5.jar:?]
-	at org.dynmap.DynmapCore.enableCore(DynmapCore.java:528) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.doEnable(DynmapPlugin.java:865) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.onEnable(DynmapPlugin.java:845) [dynmap-2.5.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.reload(CraftServer.java:752) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.Bukkit.reload(Bukkit.java:525) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:27) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:141) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:648) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.handleCommand(PlayerConnection.java:1397) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.a(PlayerConnection.java:1232) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:45) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:1) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnectionUtils$1.run(SourceFile:13) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_161]
-	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_161]
-	at net.minecraft.server.v1_12_R1.SystemUtils.a(SourceFile:46) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:748) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:406) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:679) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:577) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
-[12:55:05] [Server thread/ERROR]: [dynmap] Could not load colors 'flames' ('plugins\dynmap\colorschemes\flames.txt'): File not found.
-java.io.FileNotFoundException: plugins\dynmap\colorschemes\flames.txt (Das System kann den angegebenen Pfad nicht finden)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_161]
-	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_161]
-	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_161]
-	at org.dynmap.ColorScheme.loadScheme(ColorScheme.java:81) [dynmap-2.5.jar:?]
-	at org.dynmap.ColorScheme.getScheme(ColorScheme.java:49) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.DefaultHDShader.<init>(DefaultHDShader.java:33) [dynmap-2.5.jar:?]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_161]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) [?:1.8.0_161]
-	at org.dynmap.ConfigurationNode.createInstance(ConfigurationNode.java:327) [dynmap-2.5.jar:?]
-	at org.dynmap.ConfigurationNode.createInstances(ConfigurationNode.java:341) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.HDMapManager.loadHDShaders(HDMapManager.java:39) [dynmap-2.5.jar:?]
-	at org.dynmap.MapManager.<init>(MapManager.java:919) [dynmap-2.5.jar:?]
-	at org.dynmap.DynmapCore.enableCore(DynmapCore.java:528) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.doEnable(DynmapPlugin.java:865) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.onEnable(DynmapPlugin.java:845) [dynmap-2.5.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.reload(CraftServer.java:752) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.Bukkit.reload(Bukkit.java:525) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:27) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:141) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:648) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.handleCommand(PlayerConnection.java:1397) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.a(PlayerConnection.java:1232) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:45) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:1) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnectionUtils$1.run(SourceFile:13) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_161]
-	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_161]
-	at net.minecraft.server.v1_12_R1.SystemUtils.a(SourceFile:46) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:748) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:406) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:679) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:577) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
-[12:55:05] [Server thread/ERROR]: [dynmap] Could not load colors 'sk89q' ('plugins\dynmap\colorschemes\sk89q.txt'): File not found.
-java.io.FileNotFoundException: plugins\dynmap\colorschemes\sk89q.txt (Das System kann den angegebenen Pfad nicht finden)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_161]
-	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_161]
-	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_161]
-	at org.dynmap.ColorScheme.loadScheme(ColorScheme.java:81) [dynmap-2.5.jar:?]
-	at org.dynmap.ColorScheme.getScheme(ColorScheme.java:49) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.DefaultHDShader.<init>(DefaultHDShader.java:33) [dynmap-2.5.jar:?]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_161]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) [?:1.8.0_161]
-	at org.dynmap.ConfigurationNode.createInstance(ConfigurationNode.java:327) [dynmap-2.5.jar:?]
-	at org.dynmap.ConfigurationNode.createInstances(ConfigurationNode.java:341) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.HDMapManager.loadHDShaders(HDMapManager.java:39) [dynmap-2.5.jar:?]
-	at org.dynmap.MapManager.<init>(MapManager.java:919) [dynmap-2.5.jar:?]
-	at org.dynmap.DynmapCore.enableCore(DynmapCore.java:528) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.doEnable(DynmapPlugin.java:865) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.onEnable(DynmapPlugin.java:845) [dynmap-2.5.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.reload(CraftServer.java:752) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.Bukkit.reload(Bukkit.java:525) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:27) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:141) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:648) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.handleCommand(PlayerConnection.java:1397) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.a(PlayerConnection.java:1232) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:45) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:1) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnectionUtils$1.run(SourceFile:13) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_161]
-	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_161]
-	at net.minecraft.server.v1_12_R1.SystemUtils.a(SourceFile:46) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:748) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:406) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:679) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:577) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
-[12:55:05] [Server thread/ERROR]: [dynmap] Could not load colors 'amidst' ('plugins\dynmap\colorschemes\amidst.txt'): File not found.
-java.io.FileNotFoundException: plugins\dynmap\colorschemes\amidst.txt (Das System kann den angegebenen Pfad nicht finden)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_161]
-	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_161]
-	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_161]
-	at org.dynmap.ColorScheme.loadScheme(ColorScheme.java:81) [dynmap-2.5.jar:?]
-	at org.dynmap.ColorScheme.getScheme(ColorScheme.java:49) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.DefaultHDShader.<init>(DefaultHDShader.java:33) [dynmap-2.5.jar:?]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_161]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) [?:1.8.0_161]
-	at org.dynmap.ConfigurationNode.createInstance(ConfigurationNode.java:327) [dynmap-2.5.jar:?]
-	at org.dynmap.ConfigurationNode.createInstances(ConfigurationNode.java:341) [dynmap-2.5.jar:?]
-	at org.dynmap.hdmap.HDMapManager.loadHDShaders(HDMapManager.java:39) [dynmap-2.5.jar:?]
-	at org.dynmap.MapManager.<init>(MapManager.java:919) [dynmap-2.5.jar:?]
-	at org.dynmap.DynmapCore.enableCore(DynmapCore.java:528) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.doEnable(DynmapPlugin.java:865) [dynmap-2.5.jar:?]
-	at org.dynmap.bukkit.DynmapPlugin.onEnable(DynmapPlugin.java:845) [dynmap-2.5.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.reload(CraftServer.java:752) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.Bukkit.reload(Bukkit.java:525) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:27) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:141) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:648) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.handleCommand(PlayerConnection.java:1397) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnection.a(PlayerConnection.java:1232) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:45) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PacketPlayInChat.a(PacketPlayInChat.java:1) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.PlayerConnectionUtils$1.run(SourceFile:13) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_161]
-	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_161]
-	at net.minecraft.server.v1_12_R1.SystemUtils.a(SourceFile:46) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:748) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:406) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:679) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:577) [spigot-1.12.2.jar:git-Spigot-2086bb0-1988d7f]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
-[12:55:05] [Server thread/INFO]: [dynmap] Loaded 23 shaders.
-[12:55:05] [Server thread/INFO]: [dynmap] Loaded 82 perspectives.
-[12:55:05] [Server thread/INFO]: [dynmap] Loaded 14 lightings.
-[12:55:05] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
-[12:55:05] [Server thread/INFO]: [dynmap] version 2.5-Dev201706100405 is enabled - core version 2.5-Dev201706100401
-[12:55:05] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'dreamland'.
-[12:55:05] [Server thread/INFO]: [dynmap] Loaded 274 pending tile renders for world 'dreamland'
-[12:55:05] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'dreamland_nether'.
-[12:55:05] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'dreamland_the_end'.
-[12:55:05] [Server thread/INFO]: [dynmap] Enabled
-[12:55:05] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.8-SNAPSHOT;cd4729f
-[12:55:05] [Server thread/INFO]: WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
-[12:55:05] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_12_R2 as the Bukkit adapter
-[12:55:05] [Server thread/INFO]: [ImageMaps] Enabling ImageMaps v0.4.3
-[12:55:06] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.8.6
-[12:55:06] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
-[12:55:06] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
-[12:55:06] [Server thread/INFO]: [ArmorStandEditor] Enabling ArmorStandEditor v1.11.2-19
-[12:55:06] [Server thread/INFO]: [MineWallet] Enabling MineWallet v1.2.4
-[12:55:06] [Server thread/INFO]: [0;32;1m[MineWallet] MySQL not enabled! Saving playerdatas to a file![m
-[12:55:06] [Server thread/INFO]: [0;33;1m[Vault][Economy] MineWallet hooked.[m
-[12:55:06] [Server thread/INFO]: [0;36;1m[MineWallet] Plugin successfully started![m
-[12:55:06] [Server thread/INFO]: [MineWallet] No new update(s) for the plugin.
-[12:55:06] [Server thread/INFO]: [Animatronics] Enabling Animatronics v1.8.6
-[12:55:06] [Server thread/INFO]: [Animatronics] Config.yml found, loading!
-[12:55:06] [Server thread/INFO]: [Hat] Enabling Hat v1.0
-[12:55:06] [Server thread/INFO]: [ChairStairs] Enabling ChairStairs v1.1
-[12:55:06] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v6.2.1;84bc322
-[12:55:06] [Server thread/INFO]: [WorldGuard] (dreamland) TNT ignition is PERMITTED.
-[12:55:06] [Server thread/INFO]: [WorldGuard] (dreamland) Lighters are PERMITTED.
-[12:55:06] [Server thread/INFO]: [WorldGuard] (dreamland) Lava fire is blocked.
-[12:55:06] [Server thread/INFO]: [WorldGuard] (dreamland) Fire spread is UNRESTRICTED.
-[12:55:06] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'dreamland'
-[12:55:06] [Server thread/INFO]: [WorldGuard] (dreamland_nether) TNT ignition is PERMITTED.
-[12:55:06] [Server thread/INFO]: [WorldGuard] (dreamland_nether) Lighters are PERMITTED.
-[12:55:06] [Server thread/INFO]: [WorldGuard] (dreamland_nether) Lava fire is blocked.
-[12:55:06] [Server thread/INFO]: [WorldGuard] (dreamland_nether) Fire spread is UNRESTRICTED.
-[12:55:06] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'dreamland_nether'
-[12:55:06] [Server thread/INFO]: [WorldGuard] (dreamland_the_end) TNT ignition is PERMITTED.
-[12:55:06] [Server thread/INFO]: [WorldGuard] (dreamland_the_end) Lighters are PERMITTED.
-[12:55:06] [Server thread/INFO]: [WorldGuard] (dreamland_the_end) Lava fire is blocked.
-[12:55:06] [Server thread/INFO]: [WorldGuard] (dreamland_the_end) Fire spread is UNRESTRICTED.
-[12:55:06] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'dreamland_the_end'
-[12:55:06] [Server thread/INFO]: [WorldGuard] Loading region data...
-[12:55:07] [Server thread/INFO]: [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
-[12:55:07] [Server thread/INFO]: Initializing for the first time.
-[12:55:07] [Server thread/INFO]: Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
-[12:55:07] [Server thread/INFO]: [Dreamland] Enabling Dreamland v1.0
-[12:55:07] [Server thread/INFO]: [0;33;1m[Dreamland] [0;32;1m[21menabled![m
-[12:55:07] [Server thread/INFO]: [0;33;1m[Dreamland] [0;32;1mConnected with Vault![m
-[12:55:07] [Server thread/INFO]: [MCJukebox] Enabling MCJukebox v2.4
-[12:55:07] [Server thread/INFO]: [MCJukebox] MCJukebox has been loaded!
-[12:55:07] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[12:55:07] [Server thread/INFO]: StevenPaw: [0;32;1mReload complete.[m
-[12:55:07] [Dynmap Render Thread/INFO]: [dynmap] Texture pack not found - plugins\dynmap\texturepacks\standard
-[12:55:07] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
-[12:55:07] [Craft Scheduler Thread - 15/INFO]: [Vault] You are running the latest version
-[12:55:07] [Server thread/INFO]: [PlaceholderAPI] An update for PlaceholderAPI (v2.9.1) is available at:
-[12:55:07] [Server thread/INFO]: [PlaceholderAPI] https://www.spigotmc.org/resources/placeholderapi.6245/
-[12:55:08] [EventThread/INFO]: [MCJukebox] Key accepted and connection to MCJukebox established.
-[12:55:08] [EventThread/INFO]: [MCJukebox] Predicted time offset: 1728ms.
-[12:55:08] [Craft Scheduler Thread - 18/INFO]: [PlaceholderAPI] 120 placeholder expansions are available on the cloud.
-[12:55:35] [Server thread/INFO]: StevenPaw issued server command: /ach give StevenPaw BACKSTAGEPARCOURII
-[12:55:49] [Server thread/INFO]: StevenPaw issued server command: /ach give StevenPaw DISCO
-[12:55:53] [Server thread/INFO]: StevenPaw lost connection: Disconnected
-[12:55:53] [Server thread/INFO]: << StevenPaw <<
-[12:56:01] [Server thread/INFO]: Stopping the server
-[12:56:01] [Server thread/INFO]: Stopping server
-[12:56:01] [Server thread/INFO]: [MCJukebox] Disabling MCJukebox v2.4
-[12:56:01] [Server thread/INFO]: [Dreamland] Disabling Dreamland v1.0
-[12:56:01] [Server thread/INFO]: [0;33;1m[Dreamland] [0;31;1m[21mdisabled![m
-[12:56:01] [Server thread/INFO]: [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
-[12:56:01] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v6.2.1;84bc322
-[12:56:01] [Server thread/INFO]: [WorldGuard] Shutting down executor and waiting for any pending tasks...
-[12:56:01] [Server thread/INFO]: [ChairStairs] Disabling ChairStairs v1.1
-[12:56:01] [Server thread/INFO]: [ChairStairs] has been disabled.
-[12:56:01] [Server thread/INFO]: [Vault] Disabling Vault v1.6.1
-[12:56:01] [Server thread/INFO]: [Hat] Disabling Hat v1.0
-[12:56:01] [Server thread/INFO]: [Animatronics] Disabling Animatronics v1.8.6
-[12:56:01] [Server thread/INFO]: [MineWallet] Disabling MineWallet v1.2.4
-[12:56:01] [Server thread/INFO]: [MineWallet] Plugin stopped!
-[12:56:01] [Server thread/INFO]: [ArmorStandEditor] Disabling ArmorStandEditor v1.11.2-19
-[12:56:01] [Server thread/INFO]: [PermissionsEx] Disabling PermissionsEx v1.23.4
-[12:56:01] [Server thread/INFO]: WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
-[12:56:01] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.8.6
-[12:56:01] [Server thread/INFO]: [ImageMaps] Disabling ImageMaps v0.4.3
-[12:56:01] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1.8-SNAPSHOT;cd4729f
-[12:56:01] [Server thread/INFO]: [dynmap] Disabling dynmap v2.5-Dev201706100405
-[12:56:01] [Server thread/INFO]: [dynmap] Unloaded 11 components.
-[12:56:01] [Server thread/INFO]: [dynmap] Stopping map renderer...
-[12:56:01] [Server thread/INFO]: [dynmap] Saved 58 pending tile renders in world 'dreamland'
-[12:56:01] [Server thread/INFO]: [dynmap] Disabled
-[12:56:01] [Server thread/INFO]: Saving players
-[12:56:01] [Server thread/INFO]: Saving worlds
-[12:56:01] [Server thread/INFO]: Saving chunks for level 'dreamland'/overworld
-[12:56:01] [Server thread/INFO]: Saving chunks for level 'dreamland_nether'/the_nether
-[12:56:01] [Server thread/INFO]: Saving chunks for level 'dreamland_the_end'/the_end
+[00:53:15] [Server thread/INFO]: [dynmap] Loaded 23 shaders.
+[00:53:15] [Server thread/INFO]: [dynmap] Loaded 82 perspectives.
+[00:53:15] [Server thread/INFO]: [dynmap] Loaded 14 lightings.
+[00:53:15] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
+[00:53:15] [Server thread/INFO]: [dynmap] version 2.5-Dev201706100405 is enabled - core version 2.5-Dev201706100401
+[00:53:15] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'dreamland'.
+[00:53:15] [Server thread/INFO]: [dynmap] Loaded 58 pending tile renders for world 'dreamland'
+[00:53:15] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'dreamland_nether'.
+[00:53:15] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'dreamland_the_end'.
+[00:53:15] [Server thread/INFO]: [dynmap] Enabled
+[00:53:15] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.8-SNAPSHOT;cd4729f
+[00:53:15] [Server thread/INFO]: WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
+[00:53:15] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_12_R2 as the Bukkit adapter
+[00:53:15] [Server thread/INFO]: [ImageMaps] Enabling ImageMaps v0.4.3
+[00:53:16] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.8.6
+[00:53:16] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[00:53:16] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[00:53:16] [Server thread/INFO]: [ArmorStandEditor] Enabling ArmorStandEditor v1.11.2-19
+[00:53:16] [Server thread/INFO]: [MineWallet] Enabling MineWallet v1.2.4
+[00:53:16] [Server thread/INFO]: [0;32;1m[MineWallet] MySQL not enabled! Saving playerdatas to a file![m
+[00:53:16] [Server thread/INFO]: [0;33;1m[Vault][Economy] MineWallet hooked.[m
+[00:53:16] [Server thread/INFO]: [0;36;1m[MineWallet] Plugin successfully started![m
+[00:53:16] [Server thread/INFO]: [MineWallet] No new update(s) for the plugin.
+[00:53:16] [Server thread/INFO]: [Animatronics] Enabling Animatronics v1.8.6
+[00:53:16] [Server thread/INFO]: [Animatronics] Config.yml found, loading!
+[00:53:17] [Server thread/INFO]: [Hat] Enabling Hat v1.0
+[00:53:17] [Server thread/INFO]: [ChairStairs] Enabling ChairStairs v1.1
+[00:53:17] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v6.2.1;84bc322
+[00:53:17] [Server thread/INFO]: [WorldGuard] (dreamland) TNT ignition is PERMITTED.
+[00:53:17] [Server thread/INFO]: [WorldGuard] (dreamland) Lighters are PERMITTED.
+[00:53:17] [Server thread/INFO]: [WorldGuard] (dreamland) Lava fire is blocked.
+[00:53:17] [Server thread/INFO]: [WorldGuard] (dreamland) Fire spread is UNRESTRICTED.
+[00:53:17] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'dreamland'
+[00:53:17] [Server thread/INFO]: [WorldGuard] (dreamland_nether) TNT ignition is PERMITTED.
+[00:53:17] [Server thread/INFO]: [WorldGuard] (dreamland_nether) Lighters are PERMITTED.
+[00:53:17] [Server thread/INFO]: [WorldGuard] (dreamland_nether) Lava fire is blocked.
+[00:53:17] [Server thread/INFO]: [WorldGuard] (dreamland_nether) Fire spread is UNRESTRICTED.
+[00:53:17] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'dreamland_nether'
+[00:53:17] [Server thread/INFO]: [WorldGuard] (dreamland_the_end) TNT ignition is PERMITTED.
+[00:53:17] [Server thread/INFO]: [WorldGuard] (dreamland_the_end) Lighters are PERMITTED.
+[00:53:17] [Server thread/INFO]: [WorldGuard] (dreamland_the_end) Lava fire is blocked.
+[00:53:17] [Server thread/INFO]: [WorldGuard] (dreamland_the_end) Fire spread is UNRESTRICTED.
+[00:53:17] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'dreamland_the_end'
+[00:53:17] [Server thread/INFO]: [WorldGuard] Loading region data...
+[00:53:17] [Server thread/INFO]: [EnjinMinecraftPlugin] Enabling EnjinMinecraftPlugin v3.4.3
+[00:53:17] [Server thread/INFO]: Initializing for the first time.
+[00:53:17] [Server thread/INFO]: Log4j 2 handler detected: com.enjin.common.compatibility.CurrentLog4j2Handler
+[00:53:18] [Server thread/INFO]: [Dreamland] Enabling Dreamland v1.0
+[00:53:18] [Server thread/INFO]: [0;33;1m[Dreamland] [0;32;1m[21menabled![m
+[00:53:18] [Server thread/INFO]: [0;33;1m[Dreamland] [0;32;1mConnected with Vault![m
+[00:53:18] [Server thread/INFO]: [MCJukebox] Enabling MCJukebox v2.4
+[00:53:18] [Server thread/INFO]: [MCJukebox] MCJukebox has been loaded!
+[00:53:18] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[00:53:18] [Server thread/INFO]: Done (6,529s)! For help, type "help" or "?"
+[00:53:18] [Server thread/INFO]: Starting GS4 status listener
+[00:53:18] [Server thread/INFO]: Starting remote control listener
+[00:53:18] [Server thread/WARN]: No rcon password set in 'E:\Bibliotheken\Dokumente\Spigotprogramming\Dreamland\Dreamland-Plugin\DreamlandServer\server.properties', rcon disabled!
+[00:53:18] [Query Listener #1/INFO]: Query running on 0.0.0.0:25565
+[00:53:19] [Craft Scheduler Thread - 0/INFO]: [Vault] You are running the latest version
+[00:53:19] [Dynmap Render Thread/INFO]: [dynmap] Texture pack not found - plugins\dynmap\texturepacks\standard
+[00:53:19] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
+[00:53:19] [Server thread/INFO]: [PlaceholderAPI] An update for PlaceholderAPI (v2.9.1) is available at:
+[00:53:19] [Server thread/INFO]: [PlaceholderAPI] https://www.spigotmc.org/resources/placeholderapi.6245/
+[00:53:19] [EventThread/INFO]: [MCJukebox] Key accepted and connection to MCJukebox established.
+[00:53:19] [EventThread/INFO]: [MCJukebox] Predicted time offset: 1379ms.
+[00:53:19] [Craft Scheduler Thread - 4/INFO]: [PlaceholderAPI] 121 placeholder expansions are available on the cloud.
