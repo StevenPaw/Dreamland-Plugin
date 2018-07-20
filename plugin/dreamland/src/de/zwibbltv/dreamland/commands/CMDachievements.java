@@ -19,6 +19,7 @@ public class CMDachievements implements CommandExecutor{
 		if (cmd.getName().equalsIgnoreCase("ach")) {
 			if (sender instanceof Player) {
 				Player p = (Player) sender;
+				
 				if (args.length == 3) {
 					if (sender instanceof Player) {	
 						if (p.hasPermission("dreamland.*") || p.hasPermission("dreamland.ach")) {
@@ -50,24 +51,31 @@ public class CMDachievements implements CommandExecutor{
 						} else
 							p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("noPerms")));
 					}
-				} 
-				else if (args.length == 2) {
+				} else if (args.length == 2) {
 					if (sender instanceof Player) {	
 						if (p.hasPermission("dreamland.*") || p.hasPermission("dreamland.ach")) {
 
 							Player target = Bukkit.getPlayer(args[1]);
-							
+
 							if(args[0].equalsIgnoreCase("look")) {
 								if (target != null) {
-									de.zwibbltv.dreamland.listener.MenuListener.openMenuAchievements(target);
+									de.zwibbltv.dreamland.listener.MenuListener.openMenuAchievements(target.getPlayer());
+								} else {
+									p.sendMessage("Something is wrong about your request - 001");
+
 								}
+							} else {
+								p.sendMessage("Something is wrong about your request - 002");
 							}
 						} else
 							p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("noPerms")));
 					}
+					else {
+						p.sendMessage("Something is wrong about your request - 003");
+					}
 				}
 				else {
-					p.sendMessage("§cPlease use: §6§o/ach <give/take> <name> <ach>");
+					p.sendMessage("§cPlease use: §6§o/ach <give/take> <name> <ach> §cor §6§o/ach look <name>");
 				}
 			} else {
 				if(args.length == 3) {
