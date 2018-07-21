@@ -21,6 +21,8 @@ public enum Achievements {
 	DREAMLANDBYNIGHT("Dreamland by night","You played while you normaly have to sleep!",10, false,"???","Dreamland"),
 	BACKSTAGEPARCOUR("Backstage Parcour","You jumped through the backstage Parcour!",10, false,"???","Dreamland"),
 	BACKSTAGEPARCOURII("Backstage Parcour II","You jumped through the backstage Parcour II!",10, false,"???","Dreamland"),
+	SLAPTHECREW("Slap a Crew-Member","You slaped an Crew-Mamber!", 20, false,"???","Dreamland"),
+	SLAPTHEOWNER("Slap an Owner","You slaped an Owner!", 20, false,"???","Dreamland"),
 	//MainStreet
 	MAINSTREETPARCOUR("Parcour","You run through the MainStreet Parcour!",10, false,"???","MainStreet"),
 	MAINSTREETWATERPLAY("Main Street Water Show","You discovered the secret Water Show!",15,false,"???","MainStreet"),

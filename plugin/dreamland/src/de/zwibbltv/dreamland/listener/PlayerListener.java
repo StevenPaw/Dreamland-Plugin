@@ -87,8 +87,7 @@ public class PlayerListener implements Listener {
 					}
 				}
 			}
-		}
-
+		}		
 		if (event.getAction() == Action.RIGHT_CLICK_BLOCK || event.getAction() == Action.LEFT_CLICK_BLOCK) {
 			List<Material> forbidden = new ArrayList<Material>();
 			if(PlayerConfig.getBuilder(p) == false) {
@@ -175,6 +174,21 @@ public class PlayerListener implements Listener {
 						event.setCancelled(true);
 					}
 				}
+			}
+		}
+	}
+
+	//EntityDamage
+	@EventHandler
+	public void onEntityDamage(EntityDamageByEntityEvent e) {
+		World world = Bukkit.getServer().getWorld("dreamland");
+		if(e.getDamager() instanceof Player) {
+			for (Entity ed : world.getEntities()) {
+				if (ed instanceof Villager) {
+					if(ed.getCustomName() != null) {
+						e.setCancelled(true);
+					}
+				}		
 			}
 		}
 	}
@@ -282,7 +296,7 @@ public class PlayerListener implements Listener {
 		String prefix = PermissionsEx.getUser(e.getPlayer()).getPrefix();
 		e.setFormat(prefix + " %s: %s");
 	}
-	
+
 	@EventHandler
 	public void onPlayerExitVehicle(VehicleExitEvent e) {
 		if (e.getExited() instanceof Player) {
@@ -294,7 +308,7 @@ public class PlayerListener implements Listener {
 				int LocationID = 0;
 				double LocationDistanceSmallest = 1000.0;
 				ArrayList<Location> testlocation = de.zwibbltv.dreamland.utils.BoatEverwoods.SpawnLocationsList();
-				
+
 				//TESTEN NACH DEM KLEINSTEN ABSTAND
 				for(int i = 0; i < testlocation.size(); i++) {
 					if (loc.distance(testlocation.get(i)) <= LocationDistanceSmallest) {
@@ -302,7 +316,7 @@ public class PlayerListener implements Listener {
 						LocationDistanceSmallest = loc.distance(testlocation.get(i));
 					}
 				}
-				
+
 				//SOLLTE SPIELER ZUM NÄCHSTEN STEG TELEPORTIEREN:
 				Bukkit.broadcastMessage("-------NEW EXIT-------");
 				Bukkit.broadcastMessage("Distance: " + LocationDistanceSmallest);
@@ -316,5 +330,5 @@ public class PlayerListener implements Listener {
 			}
 		}
 	}
-	
+
 }
