@@ -19,17 +19,20 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.inventory.meta.LeatherArmorMeta;
 
 import de.zwibbltv.dreamland.main.ItemBuilder;
 import de.zwibbltv.dreamland.main.Main;
 import de.zwibbltv.dreamland.utils.Achievements;
 import de.zwibbltv.dreamland.utils.PlayerConfig;
+import de.zwibbltv.dreamland.utils.Shop;
 import net.md_5.bungee.api.ChatColor;
 
 public class MenuListener implements Listener {
 
 
 	static List<String> catList = new ArrayList<String>();
+	static List<String> InvList = new ArrayList<String>();
 
 	@EventHandler
 	public void onDrop(PlayerDropItemEvent e) {
@@ -85,29 +88,69 @@ public class MenuListener implements Listener {
 
 	//open Inv-menu
 	public static void openInvMain(Player p)
-	{
+	{for(Achievements ach : Achievements.values()) {
 
-		Inventory inv = Bukkit.createInventory(null, 9 * 1, "§cInventory");
+		boolean isnew = true;
 
-		ItemStack clothings = new ItemStack(Material.IRON_CHESTPLATE);
-		ItemMeta clothingsmeta = clothings.getItemMeta();
-		clothingsmeta.setDisplayName("§6Clothings");
-		clothings.setItemMeta(clothingsmeta);
-
-		ItemStack hats = new ItemStack(Material.IRON_HELMET);
-		ItemMeta hatsmeta = hats.getItemMeta();
-		hatsmeta.setDisplayName("§6Hats");
-		hats.setItemMeta(hatsmeta);
-
-
-		inv.setItem(0, clothings);
-		inv.setItem(1, hats);
-		try {
-			PlayerConfig.setCurrentInventory(p, "Inventory");
-		} catch (IOException e) {
-			e.printStackTrace();
+		for(Integer i = 0; i < InvList.size(); i++) {
+			if(ach.getCategory() == InvList.get(i)) {
+				isnew = false;
+			}
 		}
-		p.openInventory(inv);
+
+		if(isnew == true) {
+
+			ItemStack achItem = new ItemStack(Material.STAINED_CLAY, 1, (short) (double)Color);
+			ItemMeta achMeta = achItem.getItemMeta();
+
+			if(getCategoryPercentage(p, ach.getCategory()) == 0) {
+				Color = 6;
+				List<String> lore = new ArrayList<String>();
+				lore.add("§4" + getCategoryPercentage(p,ach.getCategory()) + "% completed");
+				achMeta.setLore(lore);
+			}
+			else if (getCategoryPercentage(p, ach.getCategory()) == 100) {
+				Color = 5;
+				List<String> lore = new ArrayList<String>();
+				lore.add("§a" + getCategoryPercentage(p,ach.getCategory()) + "% completed");
+				achMeta.setLore(lore);
+			} else {
+				Color = 4;
+				List<String> lore = new ArrayList<String>();
+				lore.add("§e" + getCategoryPercentage(p,ach.getCategory()) + "% completed");
+				achMeta.setLore(lore);
+			}
+
+			achMeta.setDisplayName(ach.getCategory());
+			achItem.setItemMeta(achMeta);
+			inv_ach.setItem(Pos, achItem);
+			InvList.add(ach.getCategory());
+			Pos = Pos + 1;
+		} else {
+		}
+	}
+
+	//		Inventory inv = Bukkit.createInventory(null, 9 * 1, "§cInventory");
+	//
+	//		ItemStack clothings = new ItemStack(Material.IRON_CHESTPLATE);
+	//		ItemMeta clothingsmeta = clothings.getItemMeta();
+	//		clothingsmeta.setDisplayName("§6Jackets");
+	//		clothings.setItemMeta(clothingsmeta);
+	//
+	//		ItemStack hats = new ItemStack(Material.IRON_HELMET);
+	//		ItemMeta hatsmeta = hats.getItemMeta();
+	//		hatsmeta.setDisplayName("§6Hats");
+	//		hats.setItemMeta(hatsmeta);
+	//
+	//
+	//		inv.setItem(0, clothings);
+	//		inv.setItem(1, hats);
+	//		try {
+	//			PlayerConfig.setCurrentInventory(p, "Inventory");
+	//		} catch (IOException e) {
+	//			e.printStackTrace();
+	//		}
+	//		p.openInventory(inv);
 
 	}
 
@@ -137,41 +180,76 @@ public class MenuListener implements Listener {
 	}
 
 	//clothings
-	public void openMenuClothings(Player p) {
-		Inventory inv = Bukkit.createInventory(null, 9 * 1, "§cClothings");
+	public void openMenuClothings(Player p) {		
+		int invSize = 1;
+		int JacketNumber = 0;
+		for(Shop shop : Shop.values()) {
+			if(shop.getType() == "Jackets") //Counting the Achievements in that Category
+				JacketNumber += 1;
 
+		}
+		boolean passt = false;
+		while(passt == false) {
+			if(9*invSize > JacketNumber) {
 
-		ItemStack cjb = new ItemStack(Material.LEATHER_CHESTPLATE);
-		ItemMeta cjbmeta = cjb.getItemMeta();
-		cjbmeta.setDisplayName("§aCowboy jacket Brown");
-		cjb.setItemMeta(cjbmeta);
-		inv.setItem(3, cjb);
+				passt = true;
+			} else {
+				invSize += 1;
+			}
+		}
+		Inventory inv = Bukkit.createInventory(null, 9 * invSize, "§cJackets");
 
-		ItemStack cjbl = new ItemStack(Material.LEATHER_CHESTPLATE);
-		ItemMeta cjblmeta =cjbl.getItemMeta();
-		cjblmeta.setDisplayName("§aCowboy jacket Black");
-		cjbl.setItemMeta(cjblmeta);
-		inv.setItem(4, cjbl);
+		int pos = 0;
+		for(Shop shop : Shop.values()) {
+			if(PlayerConfig.hasItemInv(p, shop)) {
 
-		ItemStack areas = new ItemStack(Material.COMPASS);
-		ItemMeta areasmeta = areas.getItemMeta();
-		areasmeta.setDisplayName("§aother stuff");
-		areas.setItemMeta(areasmeta);
+				if(shop.getType() == "Jackets") { //Counting the Achievements in that Category
+
+					ItemStack cjb = new ItemStack(shop.getMaterial());
+					ItemMeta cjbmeta = cjb.getItemMeta();
+					cjbmeta.setDisplayName(shop.getName());
+					cjb.setItemMeta(cjbmeta);
+
+					if(shop.getColor().getBlue() != 20) {
+						LeatherArmorMeta meta1 = (LeatherArmorMeta)cjbmeta;
+						meta1.setColor(shop.getColor());
+						cjb.setItemMeta(meta1);
+					}
+
+					inv.setItem(pos, cjb);
+
+					pos += 1;
+				}
+			}
+		}
 
 		ItemStack back = new ItemStack(Material.CLAY_BRICK);
+
 		ItemMeta backmeta = back.getItemMeta();
 		backmeta.setDisplayName("§cBack");
 		back.setItemMeta(backmeta);
+		inv.setItem(invSize*9-1, back);
 
-		inv.setItem(5, areas);
-		inv.setItem(8, back);
 
 		try {
-			PlayerConfig.setCurrentInventory(p, "Clothings");
+			PlayerConfig.setCurrentInventory(p, "Jackets");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		if(pos == 0) {
+			ItemStack back2 = new ItemStack(Material.CLAY_BRICK);
+
+			ItemMeta back2meta = back2.getItemMeta();
+			back2meta.setDisplayName("§cBack");
+			back2.setItemMeta(back2meta);
+			inv.setItem(invSize*9-1, back2);
+		}
 		p.openInventory(inv);
+		try {
+			PlayerConfig.setCurrentInventory(p, "InventoryCat");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	// actions
@@ -179,18 +257,15 @@ public class MenuListener implements Listener {
 	public void onMenuClick(InventoryClickEvent e) {
 		Player p = (Player) e.getWhoClicked();
 		try {
-			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Clothings")) {
-				if (PlayerConfig.getBuilder(p) == false) {
-					e.setCancelled(true);
-					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("commingsoon")));
-				} else
-					openMenuClothings(p);
+			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Jackets")) {
+				openMenuClothings(p);
 			}
 			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Hats")) {
 				if (PlayerConfig.getBuilder(p) == false) {
-					e.setCancelled(true);
 					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("commingsoon")));
 				}
+
+				e.setCancelled(true);
 			}
 			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aAreas")) {
 				openMenuAreas(p);
@@ -210,6 +285,8 @@ public class MenuListener implements Listener {
 					openMenuAchievements(p,p);
 				} else if(PlayerConfig.getCurrentInventory(p) == "WarpsAreas" || PlayerConfig.getCurrentInventory(p) == "WarpsAttractions") {
 					openMenuWarps(p);
+				} else if(PlayerConfig.getCurrentInventory(p) == "InventoryCat") {
+					openInvMain(p);
 				} else
 					openMenuMain(p);
 			}
@@ -282,6 +359,13 @@ public class MenuListener implements Listener {
 				p.closeInventory();
 			}	
 
+			if (PlayerConfig.getCurrentInventory(p) == "Inventory") {
+				for(int s = 0; s < InvList.size(); s++) {
+					if(InvList.get(s) == e.getCurrentItem().getItemMeta().getDisplayName()) {
+						openAchCategory(p, p, e.getCurrentItem().getItemMeta().getDisplayName());
+					}
+				}
+			}
 
 			if (PlayerConfig.getCurrentInventory(p) == "Achievements") {
 				for(int s = 0; s < catList.size(); s++) {
