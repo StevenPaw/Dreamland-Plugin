@@ -1,5 +1,7 @@
 package de.zwibbltv.dreamland.commands;
 
+import java.io.IOException;
+
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -59,7 +61,12 @@ public class CMDachievements implements CommandExecutor{
 
 							if(args[0].equalsIgnoreCase("look")) {
 								if (target != null) {
-									de.zwibbltv.dreamland.listener.MenuListener.openMenuAchievements(target.getPlayer());
+									de.zwibbltv.dreamland.listener.MenuListener.openMenuAchievements(target.getPlayer(),p);
+									try {
+										de.zwibbltv.dreamland.utils.PlayerConfig.CurrentInventory(p, "AchievementsOther " + target.getPlayer().getName());
+									} catch (IOException e) {
+										e.printStackTrace();
+									}
 								} else {
 									p.sendMessage("Something is wrong about your request - 001");
 

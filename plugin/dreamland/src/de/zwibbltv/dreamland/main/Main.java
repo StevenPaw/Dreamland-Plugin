@@ -77,6 +77,7 @@ public class Main extends JavaPlugin {
 		plugin = this;
 		this.setupEconomy();
 
+		de.zwibbltv.dreamland.utils.BoatEverwoods.InstantiateBoat();
 
 		//Goldbrunnen in Calico
 		Bukkit.getScheduler().runTaskTimer(this, new Runnable() {

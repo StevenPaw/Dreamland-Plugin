@@ -124,7 +124,6 @@ public class MenuListener implements Listener {
 				}
 				if (e.getMaterial().equals(Material.CHEST)) {
 					if(e.getItem().getItemMeta().getDisplayName().equals("§6Inventory")) {
-
 						openInvMain(p);
 					}
 				}
@@ -203,12 +202,12 @@ public class MenuListener implements Listener {
 				openMenuWarps(p); 				
 			}
 			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Achievements (" + getAchievementsPercentage(p) + "%)")) {
-				openMenuAchievements(p);
+				openMenuAchievements(p,p);
 			}
 			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§cBack")) {
 				if(PlayerConfig.getCurrentInventory(p) == "AchievementsCat")
 				{
-					openMenuAchievements(p);
+					openMenuAchievements(p,p);
 				} else if(PlayerConfig.getCurrentInventory(p) == "WarpsAreas" || PlayerConfig.getCurrentInventory(p) == "WarpsAttractions") {
 					openMenuWarps(p);
 				} else
@@ -287,7 +286,16 @@ public class MenuListener implements Listener {
 			if (PlayerConfig.getCurrentInventory(p) == "Achievements") {
 				for(int s = 0; s < catList.size(); s++) {
 					if(catList.get(s) == e.getCurrentItem().getItemMeta().getDisplayName()) {
-						openAchCategory(p, e.getCurrentItem().getItemMeta().getDisplayName());
+						openAchCategory(p, p, e.getCurrentItem().getItemMeta().getDisplayName());
+					}
+				}
+			}
+			for(Player player : Bukkit.getOnlinePlayers()) {
+				if (PlayerConfig.getCurrentInventory(p) == "AchievementsOther " + player.getName()) {
+					for(int s = 0; s < catList.size(); s++) {
+						if(catList.get(s) == e.getCurrentItem().getItemMeta().getDisplayName()) {
+							openAchCategory(player, p, e.getCurrentItem().getItemMeta().getDisplayName());
+						}
 					}
 				}
 			}
@@ -494,7 +502,7 @@ public class MenuListener implements Listener {
 	}
 
 	//Opening Achievementcateg:
-	public static void openMenuAchievements(Player p) {
+	public static void openMenuAchievements(Player p, Player receiver) {
 
 		//CREATING COLORVARIABLE AND CLEARING CATLIST
 		Integer Pos = 0;
@@ -554,14 +562,16 @@ public class MenuListener implements Listener {
 			}
 		}
 
-		ItemStack back = new ItemStack(Material.CLAY_BRICK);
-		ItemMeta backmeta = back.getItemMeta();
-		backmeta.setDisplayName("§cBack");
-		back.setItemMeta(backmeta);
-		inv_ach.setItem(9 * 2 - 1, back);
+		if(p == receiver) {
+			ItemStack back = new ItemStack(Material.CLAY_BRICK);
+			ItemMeta backmeta = back.getItemMeta();
+			backmeta.setDisplayName("§cBack");
+			back.setItemMeta(backmeta);
+			inv_ach.setItem(9 * 2 - 1, back);
+		}
 
 		inv_ach_percent = getAchievementsPercentage(p).toString();
-		p.openInventory(inv_ach);
+		receiver.openInventory(inv_ach);
 		try {
 			PlayerConfig.setCurrentInventory(p, "Achievements");
 		} catch (IOException e) {
@@ -570,7 +580,7 @@ public class MenuListener implements Listener {
 	}
 
 	//Achievementcategory öffnen:
-	public void openAchCategory(Player p, String cat) {
+	public void openAchCategory(Player p, Player receiver, String cat) {
 
 		//DECIDING THE INVENTORY SIZE
 		//----from here---
@@ -632,9 +642,9 @@ public class MenuListener implements Listener {
 				inv.setItem(9 * invSize - 1, back);
 			}
 		}
-		p.openInventory(inv);
+		receiver.openInventory(inv);
 		try {
-			PlayerConfig.setCurrentInventory(p, "AchievementsCat");
+			PlayerConfig.setCurrentInventory(receiver, "AchievementsCat");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

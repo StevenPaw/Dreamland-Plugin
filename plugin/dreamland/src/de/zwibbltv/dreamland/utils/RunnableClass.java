@@ -7,7 +7,6 @@ import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
@@ -20,6 +19,7 @@ public class RunnableClass {
 
 	public static void run(World w, Economy eco) {
 		//wird jede Sekunde ausgeführt
+		de.zwibbltv.dreamland.utils.BoatEverwoods.runBoatThings();
 		de.zwibbltv.dreamland.utils.AFK.CheckLocations();
 		de.zwibbltv.dreamland.utils.XPBar.CalculateXPLevel();
 //		de.zwibbltv.dreamland.utils.BoatEverwoods.spawnBoat();

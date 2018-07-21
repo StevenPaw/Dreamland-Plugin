@@ -6,11 +6,13 @@ import java.util.List;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Statistic;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
+import org.bukkit.entity.Boat;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.ItemFrame;
 import org.bukkit.entity.LivingEntity;
@@ -29,6 +31,7 @@ import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerPickupItemEvent;
+import org.bukkit.event.vehicle.VehicleExitEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
@@ -279,4 +282,39 @@ public class PlayerListener implements Listener {
 		String prefix = PermissionsEx.getUser(e.getPlayer()).getPrefix();
 		e.setFormat(prefix + " %s: %s");
 	}
+	
+	@EventHandler
+	public void onPlayerExitVehicle(VehicleExitEvent e) {
+		if (e.getExited() instanceof Player) {
+			if(e.getVehicle() instanceof Boat) {
+				e.setCancelled(true);
+				Player p = (Player)e.getExited();
+				Entity boat = e.getVehicle();
+				Location loc = p.getPlayer().getLocation();
+				int LocationID = 0;
+				double LocationDistanceSmallest = 1000.0;
+				ArrayList<Location> testlocation = de.zwibbltv.dreamland.utils.BoatEverwoods.SpawnLocationsList();
+				
+				//TESTEN NACH DEM KLEINSTEN ABSTAND
+				for(int i = 0; i < testlocation.size(); i++) {
+					if (loc.distance(testlocation.get(i)) <= LocationDistanceSmallest) {
+						LocationID = i;
+						LocationDistanceSmallest = loc.distance(testlocation.get(i));
+					}
+				}
+				
+				//SOLLTE SPIELER ZUM NÄCHSTEN STEG TELEPORTIEREN:
+				Bukkit.broadcastMessage("-------NEW EXIT-------");
+				Bukkit.broadcastMessage("Abstand: " + LocationDistanceSmallest);
+				Bukkit.broadcastMessage("Spieler: " + p.getName());
+				Bukkit.broadcastMessage("Ausgewählter Steg: " + LocationID);
+				Location teleportLocation = testlocation.get(LocationID);
+				Bukkit.broadcastMessage("Ausgewählter Teleport: " + teleportLocation.toVector());
+				p.getPlayer().teleport(teleportLocation);
+				boat.remove();
+				Bukkit.broadcastMessage("----------------------");
+			}
+		}
+	}
+	
 }
