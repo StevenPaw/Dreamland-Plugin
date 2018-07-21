@@ -58,5 +58,4 @@ public class BoatEverwoods {
 	public static ArrayList <Location> SpawnLocationsList() {
 		return spawnloc;
 	}
-
 }
