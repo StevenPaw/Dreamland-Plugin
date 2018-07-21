@@ -1,21 +1,3 @@
 {
-  "playerPerms": {
-    "StevenPaw": {
-      "uuid": "ff1022ac-91de-4516-bddd-1656aae12fc1",
-      "worlds": {
-        "dreamland": [
-          "Owner"
-        ],
-        "dreamland_the_end": [
-          "Owner"
-        ],
-        "dreamland_nether": [
-          "Owner"
-        ],
-        "*": [
-          "Owner"
-        ]
-      }
-    }
-  }
+  "playerPerms": {}
 }

@@ -305,11 +305,11 @@ public class PlayerListener implements Listener {
 				
 				//SOLLTE SPIELER ZUM NÄCHSTEN STEG TELEPORTIEREN:
 				Bukkit.broadcastMessage("-------NEW EXIT-------");
-				Bukkit.broadcastMessage("Abstand: " + LocationDistanceSmallest);
-				Bukkit.broadcastMessage("Spieler: " + p.getName());
-				Bukkit.broadcastMessage("Ausgewählter Steg: " + LocationID);
+				Bukkit.broadcastMessage("Distance: " + LocationDistanceSmallest);
+				Bukkit.broadcastMessage("Player: " + p.getName());
+				Bukkit.broadcastMessage("Choosen Location: " + LocationID);
 				Location teleportLocation = testlocation.get(LocationID);
-				Bukkit.broadcastMessage("Ausgewählter Teleport: " + teleportLocation.toVector());
+				Bukkit.broadcastMessage("Choosen Teleport: " + teleportLocation.toVector());
 				p.getPlayer().teleport(teleportLocation);
 				boat.remove();
 				Bukkit.broadcastMessage("----------------------");

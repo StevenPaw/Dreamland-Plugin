@@ -91,9 +91,13 @@ StevenPaw:
     Backstage Parcour: true
     Backstage Parcour II: true
     Dreamland Disco: true
-  runtime: 532
-  resourcepack: false
-  curInv: AchievementsCat
+  runtime: 196
+  resourcepack: true
+  curInv: InventoryCat
+  inventory:
+    Cowboy Pistol: true
+    Cowboy Jacket Brown: true
+    Cowboy Jacket Black: true
 Segel_Basti:
   builder: true
   muted: false

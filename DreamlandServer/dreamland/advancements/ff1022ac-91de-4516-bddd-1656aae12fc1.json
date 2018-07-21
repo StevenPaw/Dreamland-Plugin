@@ -5,6 +5,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/red_dye_from_beetroot": {
+    "criteria": {
+      "has_beetroot": "2018-07-21 18:03:07 +0200"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/carrot_on_a_stick": {
     "criteria": {
       "has_carrot": "2018-05-03 00:18:51 +0200"
@@ -34,6 +40,12 @@
       "spider": "2018-05-04 13:17:31 +0200"
     },
     "done": false
+  },
+  "minecraft:recipes/food/beetroot_soup": {
+    "criteria": {
+      "has_beetroot": "2018-07-21 18:03:07 +0200"
+    },
+    "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
