@@ -120,32 +120,8 @@ public class MenuListener implements Listener {
 		try {
 			PlayerConfig.setCurrentInventory(p, "Inventory");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
-		//		Inventory inv = Bukkit.createInventory(null, 9 * 1, "§cInventory");
-		//
-		//		ItemStack clothings = new ItemStack(Material.IRON_CHESTPLATE);
-		//		ItemMeta clothingsmeta = clothings.getItemMeta();
-		//		clothingsmeta.setDisplayName("§6Jackets");
-		//		clothings.setItemMeta(clothingsmeta);
-		//
-		//		ItemStack hats = new ItemStack(Material.IRON_HELMET);
-		//		ItemMeta hatsmeta = hats.getItemMeta();
-		//		hatsmeta.setDisplayName("§6Hats");
-		//		hats.setItemMeta(hatsmeta);
-		//
-		//
-		//		inv.setItem(0, clothings);
-		//		inv.setItem(1, hats);
-		//		try {
-		//			PlayerConfig.setCurrentInventory(p, "Inventory");
-		//		} catch (IOException e) {
-		//			e.printStackTrace();
-		//		}
-		//		p.openInventory(inv);
-
 	}
 
 	// Menu-Menu
@@ -190,9 +166,9 @@ public class MenuListener implements Listener {
 				invSize += 1;
 			}
 		}
-		
+
 		Inventory inv = Bukkit.createInventory(null, 9 * invSize, "§c" + cat);
-		
+
 		int pos = 0;
 		for(Shop shop : Shop.values()) {
 			if(PlayerConfig.hasItemInv(p, shop)) {
@@ -223,7 +199,7 @@ public class MenuListener implements Listener {
 		backmeta.setDisplayName("§cBack");
 		back.setItemMeta(backmeta);
 		inv.setItem(invSize*9-1, back);
-		
+
 		p.openInventory(inv);
 
 		try {
@@ -232,77 +208,6 @@ public class MenuListener implements Listener {
 			e.printStackTrace();
 		}
 	}
-
-	//		int invSize = 1;
-	//		int JacketNumber = 0;
-	//		for(Shop shop : Shop.values()) {
-	//			if(shop.getType() == "Jackets") //Counting the Achievements in that Category
-	//				JacketNumber += 1;
-	//
-	//		}
-	//		boolean passt = false;
-	//		while(passt == false) {
-	//			if(9*invSize > JacketNumber) {
-	//
-	//				passt = true;
-	//			} else {
-	//				invSize += 1;
-	//			}
-	//		}
-	//		Inventory inv = Bukkit.createInventory(null, 9 * invSize, "§cJackets");
-	//
-	//		int pos = 0;
-	//		for(Shop shop : Shop.values()) {
-	//			if(PlayerConfig.hasItemInv(p, shop)) {
-	//
-	//				if(shop.getType() == "Jackets") { //Counting the Achievements in that Category
-	//
-	//					ItemStack cjb = new ItemStack(shop.getMaterial());
-	//					ItemMeta cjbmeta = cjb.getItemMeta();
-	//					cjbmeta.setDisplayName(shop.getName());
-	//					cjb.setItemMeta(cjbmeta);
-	//
-	//					if(shop.getColor().getBlue() != 20) {
-	//						LeatherArmorMeta meta1 = (LeatherArmorMeta)cjbmeta;
-	//						meta1.setColor(shop.getColor());
-	//						cjb.setItemMeta(meta1);
-	//					}
-	//
-	//					inv.setItem(pos, cjb);
-	//
-	//					pos += 1;
-	//				}
-	//			}
-	//		}
-	//
-	//		ItemStack back = new ItemStack(Material.CLAY_BRICK);
-	//
-	//		ItemMeta backmeta = back.getItemMeta();
-	//		backmeta.setDisplayName("§cBack");
-	//		back.setItemMeta(backmeta);
-	//		inv.setItem(invSize*9-1, back);
-	//
-	//
-	//		try {
-	//			PlayerConfig.setCurrentInventory(p, "Jackets");
-	//		} catch (IOException e) {
-	//			e.printStackTrace();
-	//		}
-	//		if(pos == 0) {
-	//			ItemStack back2 = new ItemStack(Material.CLAY_BRICK);
-	//
-	//			ItemMeta back2meta = back2.getItemMeta();
-	//			back2meta.setDisplayName("§cBack");
-	//			back2.setItemMeta(back2meta);
-	//			inv.setItem(invSize*9-1, back2);
-	//		}
-	//		p.openInventory(inv);
-	//		try {
-	//			PlayerConfig.setCurrentInventory(p, "InventoryCat");
-	//		} catch (IOException e) {
-	//			e.printStackTrace();
-	//		}
-	//	}
 
 	// actions
 	@EventHandler
@@ -316,18 +221,9 @@ public class MenuListener implements Listener {
 					}
 				}
 			}
-			//			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Jackets")) {
-			//				openMenuClothings(p);
-			//			}
-			//			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Hats")) {
-			//				if (PlayerConfig.getBuilder(p) == false) {
-			//					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("commingsoon")));
-			//				}
-			//
-			//				e.setCancelled(true);
-			//			}
-			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aAreas")) {
-				openMenuAreas(p);
+
+			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLocations")) {
+				openMenuLocations(p);
 			}
 			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aAttraktions")) {
 				openMenuAttractions(p);
@@ -342,7 +238,7 @@ public class MenuListener implements Listener {
 				if(PlayerConfig.getCurrentInventory(p) == "AchievementsCat")
 				{
 					openMenuAchievements(p,p);
-				} else if(PlayerConfig.getCurrentInventory(p) == "WarpsAreas" || PlayerConfig.getCurrentInventory(p) == "WarpsAttractions") {
+				} else if(PlayerConfig.getCurrentInventory(p) == "WarpsLocations" || PlayerConfig.getCurrentInventory(p) == "WarpsAttractions") {
 					openMenuWarps(p);
 				} else if(PlayerConfig.getCurrentInventory(p) == "InventoryCat") {
 					openInvMain(p);
@@ -350,7 +246,7 @@ public class MenuListener implements Listener {
 					openMenuMain(p);
 			}
 
-			if(PlayerConfig.getCurrentInventory(p) == "WarpsAreas" || PlayerConfig.getCurrentInventory(p) == "WarpsAttractions") {
+			if(PlayerConfig.getCurrentInventory(p) == "WarpsLocations" || PlayerConfig.getCurrentInventory(p) == "WarpsAttractions") {
 
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aFlying Pegasus")) {
 					p.performCommand("warp flying_pegasus");
@@ -408,6 +304,46 @@ public class MenuListener implements Listener {
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aInformation-Center")) {
 					p.performCommand("warp information-center");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}
+
+
+
+
+
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aCastle")) {
+					p.performCommand("warp castle");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aFantasa")) {
+					p.performCommand("warp fantasa");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aEverwoods")) {
+					p.performCommand("warp everwoods");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aEPCOT")) {
+					p.performCommand("warp epcot");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aTaruba")) {
+					p.performCommand("warp taruba");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aForbidden Woods")) {
+					p.performCommand("warp forbidden_woods");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLil' Hill")) {
+					p.performCommand("warp lil_hill");
 					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
@@ -516,10 +452,10 @@ public class MenuListener implements Listener {
 		attraktionsmeta.setDisplayName("§aAttraktions");
 		attraktions.setItemMeta(attraktionsmeta);
 
-		ItemStack areas = new ItemStack(Material.COMPASS);
-		ItemMeta areasmeta = areas.getItemMeta();
-		areasmeta.setDisplayName("§aAreas");
-		areas.setItemMeta(areasmeta);
+		ItemStack locations = new ItemStack(Material.COMPASS);
+		ItemMeta locationsmeta = locations.getItemMeta();
+		locationsmeta.setDisplayName("§aLocations");
+		locations.setItemMeta(locationsmeta);
 
 		ItemStack back = new ItemStack(Material.CLAY_BRICK);
 		ItemMeta backmeta = back.getItemMeta();
@@ -527,7 +463,7 @@ public class MenuListener implements Listener {
 		back.setItemMeta(backmeta);
 
 		inv.setItem(3, attraktions);
-		inv.setItem(5, areas);
+		inv.setItem(5, locations);
 		inv.setItem(8, back);
 
 		try {
@@ -558,28 +494,42 @@ public class MenuListener implements Listener {
 		Westernracemeta.setDisplayName("§aWestern race");
 		Westernrace.setItemMeta(Westernracemeta);
 
-		ItemStack ToI = new ItemStack(Material.DIAMOND_SWORD);
+		ItemStack ToI = new ItemStack(Material.DIAMOND_SWORD, 1, (short) 22);
 		ItemMeta ToImeta = ToI.getItemMeta();
 		ToImeta.setDisplayName("§aTower of Izran");
 		ToI.setItemMeta(ToImeta);
-		ToI.setDurability((short) 22);
-
-		ItemStack back = new ItemStack(Material.CLAY_BRICK);
-		ItemMeta backmeta = back.getItemMeta();
-		backmeta.setDisplayName("§cBack");
-		back.setItemMeta(backmeta);
 
 		ItemStack haunted_mansion = new ItemStack(Material.SKULL_ITEM);
 		ItemMeta haunted_mansionmeta = haunted_mansion.getItemMeta();
 		haunted_mansionmeta.setDisplayName("§aHaunted Mansion");
 		haunted_mansion.setItemMeta(haunted_mansionmeta);
 
+		ItemStack back = new ItemStack(Material.CLAY_BRICK);
+		ItemMeta backmeta = back.getItemMeta();
+		backmeta.setDisplayName("§cBack");
+		back.setItemMeta(backmeta);
+
+		ItemStack taruba = new ItemStack(Material.DIAMOND_SWORD, 1, (short) 25);
+		ItemMeta tarubameta = taruba.getItemMeta();
+		tarubameta.setDisplayName("§aTaruba");
+		taruba.setItemMeta(tarubameta);
+
+		ItemStack forbidden_woods = new ItemStack(Material.DIAMOND_SWORD, 1, (short) 2);
+		ItemMeta forbidden_woodsmeta = forbidden_woods.getItemMeta();
+		forbidden_woodsmeta.setDisplayName("§aForbidden Woods");
+		forbidden_woods.setItemMeta(forbidden_woodsmeta);
+		
 		inv.setItem(0, ExplorersCave);
-		inv.setItem(2, flyingpegasus);
-		inv.setItem(4, Westernrace);
-		inv.setItem(6, ToI);
-		inv.setItem(8, haunted_mansion);
-		inv.setItem(17, back);
+		inv.setItem(1, flyingpegasus);
+		inv.setItem(2, Westernrace);
+		inv.setItem(3, ToI);
+		inv.setItem(4, haunted_mansion);
+		inv.setItem(5, forbidden_woods);
+		inv.setItem(8, back);
+
+		if (PlayerConfig.getBuilder(p) == true) {
+			inv.setItem(6, taruba);
+		}
 
 		try {
 			PlayerConfig.setCurrentInventory(p, "WarpsAttractions");
@@ -589,26 +539,26 @@ public class MenuListener implements Listener {
 		p.openInventory(inv);
 	}
 
-	//Open Areas Menu
-	public void openMenuAreas(Player p) {
-		Inventory inv = Bukkit.createInventory(null, 9 * 1, "§0Area-Warps");
+	//Open Location Menu
+	public void openMenuLocations(Player p) {
+		Inventory inv = Bukkit.createInventory(null, 9 * 2, "§0Location-Warps");
 
 		ItemStack spawn = new ItemStack(Material.COMPASS);
 		ItemMeta spawnmeta = spawn.getItemMeta();
 		spawnmeta.setDisplayName("§aSpawn");
 		spawn.setItemMeta(spawnmeta);
 
-		ItemStack Greifenheim = new ItemStack(Material.SMOOTH_BRICK);
+		ItemStack Greifenheim = new ItemStack(Material.COBBLESTONE);
 		ItemMeta Greifenheimmeta = Greifenheim.getItemMeta();
 		Greifenheimmeta.setDisplayName("§aGreifenheim");
 		Greifenheim.setItemMeta(Greifenheimmeta);
 
-		ItemStack Calico = new ItemStack(Material.WOOD, 1, (short)1);
+		ItemStack Calico = new ItemStack(Material.WOOD, 1, (short) 1);
 		ItemMeta Calicometa = Calico.getItemMeta();
 		Calicometa.setDisplayName("§aCalico");
 		Calico.setItemMeta(Calicometa);
 
-		ItemStack Lagoon = new ItemStack(Material.QUARTZ_BLOCK, 1, (short)2);
+		ItemStack Lagoon = new ItemStack(Material.QUARTZ_BLOCK, 1, (short) 2);
 		ItemMeta Lagoonmeta = Lagoon.getItemMeta();
 		Lagoonmeta.setDisplayName("§aLagoon");
 		Lagoon.setItemMeta(Lagoonmeta);
@@ -628,16 +578,49 @@ public class MenuListener implements Listener {
 		infometa.setDisplayName("§aInformation-Center");
 		info.setItemMeta(infometa);
 
+		ItemStack castle = new ItemStack(Material.DIAMOND_HOE, 1, (short) 12);
+		ItemMeta castlemeta = castle.getItemMeta();
+		castlemeta.setDisplayName("§aCastle");
+		castle.setItemMeta(castlemeta);
+
+		ItemStack fantasa = new ItemStack(Material.SMOOTH_BRICK);
+		ItemMeta fantasameta = fantasa.getItemMeta();
+		fantasameta.setDisplayName("§aFantasa");
+		fantasa.setItemMeta(fantasameta);
+
+		ItemStack everwoods = new ItemStack(Material.LOG_2);
+		ItemMeta everwoodsmeta = everwoods.getItemMeta();
+		everwoodsmeta.setDisplayName("§aEverwoods");
+		everwoods.setItemMeta(everwoodsmeta);
+
+		ItemStack epcot = new ItemStack(Material.RED_ROSE);
+		ItemMeta epcotmeta = epcot.getItemMeta();
+		epcotmeta.setDisplayName("§aEPCOT");
+		epcot.setItemMeta(epcotmeta);
+
+		ItemStack lilhill = new ItemStack(Material.STONE);
+		ItemMeta lilhillmeta = lilhill.getItemMeta();
+		lilhillmeta.setDisplayName("§aLil' Hill");
+		lilhill.setItemMeta(lilhillmeta);
+
 		inv.setItem(0, spawn);
 		inv.setItem(2, Greifenheim);
 		inv.setItem(3, Calico);
 		inv.setItem(4, Lagoon);
 		inv.setItem(5, chinatown);
 		inv.setItem(6, info);
-		inv.setItem(8, back);
+		inv.setItem(11, castle);
+		inv.setItem(12, fantasa);
+		inv.setItem(17, back);
+
+		if (PlayerConfig.getBuilder(p) == true) {
+			inv.setItem(13, everwoods);
+			inv.setItem(14, epcot);
+			inv.setItem(15, lilhill);
+		}
 
 		try {
-			PlayerConfig.setCurrentInventory(p, "WarpsAreas");
+			PlayerConfig.setCurrentInventory(p, "WarpsLocations");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

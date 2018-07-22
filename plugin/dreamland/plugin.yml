@@ -32,6 +32,7 @@ commands:
       description: plays a lift simulation
    villager:
       description: create a villager
+      aliases: [v]
    eco:
       description: give money
    balloons:

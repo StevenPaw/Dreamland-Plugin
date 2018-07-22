@@ -15,7 +15,6 @@ import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Boat;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.ItemFrame;
-import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Villager;
 import org.bukkit.event.EventHandler;
@@ -120,18 +119,21 @@ public class PlayerListener implements Listener {
 
 	//Prevent Itemframe Rotation
 	@EventHandler
-	public void onPlayerEntityInteract(PlayerInteractEntityEvent event)
-	{
-		if(
-				!event.isCancelled()
-				&& event.getRightClicked() instanceof ItemFrame
-				&& !((ItemFrame)event.getRightClicked()).getItem().getType().equals(Material.AIR)
-				&& !event.getPlayer().hasPermission("dreamland.Itemframes.rotate")
-				&& !event.getPlayer().hasPermission("dreamland.*")
-				&& !event.getPlayer().hasPermission("dreamland.Itemframes.*")
-				)
-		{
+	public void onPlayerEntityInteract(PlayerInteractEntityEvent event)	{
+		if(!event.isCancelled()	&& event.getRightClicked() instanceof ItemFrame	&& !((ItemFrame)event.getRightClicked()).getItem().getType().equals(Material.AIR)
+				&& !event.getPlayer().hasPermission("dreamland.Itemframes.rotate") && !event.getPlayer().hasPermission("dreamland.*")
+				&& !event.getPlayer().hasPermission("dreamland.Itemframes.*")){
 			event.setCancelled(true);
+		}
+		if(event.getRightClicked() instanceof Player) {
+			Player p = event.getPlayer();
+			Player kp = (Player) event.getRightClicked();
+			if(kp.hasPermission("dreamland.owner")) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.SLAPTHEOWNER);
+			}
+			if(kp.hasPermission("dreamland.crew")) {
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.SLAPTHECREW);	
+			}
 		}
 	}
 
@@ -183,12 +185,15 @@ public class PlayerListener implements Listener {
 	public void onEntityDamage(EntityDamageByEntityEvent e) {
 		World world = Bukkit.getServer().getWorld("dreamland");
 		if(e.getDamager() instanceof Player) {
-			for (Entity ed : world.getEntities()) {
-				if (ed instanceof Villager) {
-					if(ed.getCustomName() != null) {
-						e.setCancelled(true);
-					}
-				}		
+			Player p = (Player) e.getDamager();
+			if(PlayerConfig.getBuilder(p) == false) {
+				for (Entity ed : world.getEntities()) {
+					if (ed instanceof Villager) {
+						if(ed.getCustomName() != null) {
+							e.setCancelled(true);
+						}
+					}		
+				}
 			}
 		}
 	}
@@ -220,21 +225,11 @@ public class PlayerListener implements Listener {
 			PlayerConfig.giveAchievement(p.getPlayer(), Achievements.WATER);			
 		}
 
-		World world = Bukkit.getServer().getWorld("dreamland");
-		for (Entity e : world.getEntities()) {
-			if (e instanceof Villager) {
-				if(e.getCustomName() != null) {
-					((LivingEntity) e).addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 300000, 300000, false, false));
-					((LivingEntity) e).addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 300000, 300000, false, false));
-					((LivingEntity) e).addPotionEffect(new PotionEffect(PotionEffectType.REGENERATION, 300000, 300000, false, false));
-				}
-			}
-		}
 
 		if(PlayerConfig.getResourcepack(p) != true && PlayerConfig.getRuntime(p) >= 1)
 		{
 			p.sendMessage("Sending Resourcepack");
-			p.setResourcePack("https://www.dropbox.com/s/0tqz6q3nthk4sn8/Dreamland20-07-18.zip?dl=1");
+			p.setResourcePack("https://www.dropbox.com/s/p4r9m41xpidecpw/Dreamland22-07-18b.zip?dl=1");
 			try {
 				PlayerConfig.Resourcepackactive(p, true);
 			} catch (IOException error) {
@@ -318,15 +313,16 @@ public class PlayerListener implements Listener {
 				}
 
 				//SOLLTE SPIELER ZUM NÄCHSTEN STEG TELEPORTIEREN:
-				Bukkit.broadcastMessage("-------NEW EXIT-------");
-				Bukkit.broadcastMessage("Distance: " + LocationDistanceSmallest);
-				Bukkit.broadcastMessage("Player: " + p.getName());
-				Bukkit.broadcastMessage("Choosen Location: " + LocationID);
+//				Bukkit.broadcastMessage("-------NEW EXIT-------");
+//				Bukkit.broadcastMessage("Distance: " + LocationDistanceSmallest);
+//				Bukkit.broadcastMessage("Player: " + p.getName());
+//				Bukkit.broadcastMessage("Choosen Location: " + LocationID);
 				Location teleportLocation = testlocation.get(LocationID);
-				Bukkit.broadcastMessage("Choosen Teleport: " + teleportLocation.toVector());
+//				Bukkit.broadcastMessage("Choosen Teleport: " + teleportLocation.toVector());
 				p.getPlayer().teleport(teleportLocation);
 				boat.remove();
-				Bukkit.broadcastMessage("----------------------");
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODSCANOE);
+//				Bukkit.broadcastMessage("----------------------");
 			}
 		}
 	}

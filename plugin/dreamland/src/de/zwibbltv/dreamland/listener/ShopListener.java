@@ -49,18 +49,20 @@ public class ShopListener implements Listener {
 			Integer invCount = 0;
 			Integer invSize = 0;
 			for(Integer i = 0; i < shopList.size(); i++) {
-				if(v.getCustomName().equalsIgnoreCase(shopList.get(i)))	{
-					for(Shop shop : Shop.values())	{
-						if (shop.getShopName() == shopList.get(i))	{
-							if(shop.getSlot() >= invCount)
-								invCount = shop.getSlot();
-						}
-						boolean passt = false;
-						while(passt == false) {
-							if(9*invSize > invCount) {
-								passt = true;
-							} else {
-								invSize += 1;
+				if(v.getCustomName() != null) {
+					if(v.getCustomName().equalsIgnoreCase(shopList.get(i)))	{
+						for(Shop shop : Shop.values())	{
+							if (shop.getShopName() == shopList.get(i))	{
+								if(shop.getSlot() >= invCount)
+									invCount = shop.getSlot();
+							}
+							boolean passt = false;
+							while(passt == false) {
+								if(9*invSize > invCount) {
+									passt = true;
+								} else {
+									invSize += 1;
+								}
 							}
 						}
 					}
@@ -70,64 +72,36 @@ public class ShopListener implements Listener {
 
 			//SHOPINVENTAR ERSTELLEN
 			for(Integer i = 0; i < shopList.size(); i++)  {
-				if(v.getCustomName().equalsIgnoreCase(shopList.get(i)))	{
-					Inventory inv = Bukkit.createInventory(null, 9 * invSize, shopList.get(i));
-					for(Shop shop : Shop.values()) {
-						if (shop.getShopName() == shopList.get(i))	{
-							ItemStack shopIS = new ItemStack(shop.getMaterial());
-							ItemMeta im = shopIS.getItemMeta();
-							im.setDisplayName(shop.getName());
-							if(shop.getColor().getBlue() != 20) {
-								LeatherArmorMeta meta1 = (LeatherArmorMeta)im;
-								meta1.setColor(shop.getColor());
-								shopIS.setItemMeta(meta1);
-							}
-							ArrayList<String> lore = new ArrayList<>();
-							lore.add("§6Price: " + shop.getMoney());
-							if(PlayerConfig.hasItemInv(e.getPlayer(), shop)) {
-								lore.add(">>§cBOUGHT");
-							}
-							im.setLore(lore);
-							shopIS.setItemMeta(im);
+				if(v.getCustomName() != null) {
+					if(v.getCustomName().equalsIgnoreCase(shopList.get(i)))	{
+						Inventory inv = Bukkit.createInventory(null, 9 * invSize, shopList.get(i));
+						for(Shop shop : Shop.values()) {
+							if (shop.getShopName() == shopList.get(i))	{
+								ItemStack shopIS = new ItemStack(shop.getMaterial());
+								ItemMeta im = shopIS.getItemMeta();
+								im.setDisplayName(shop.getName());
+								if(shop.getColor().getBlue() != 20) {
+									LeatherArmorMeta meta1 = (LeatherArmorMeta)im;
+									meta1.setColor(shop.getColor());
+									shopIS.setItemMeta(meta1);
+								}
+								ArrayList<String> lore = new ArrayList<>();
+								lore.add("§6Price: " + shop.getMoney());
+								if(PlayerConfig.hasItemInv(e.getPlayer(), shop)) {
+									lore.add(">>§cBOUGHT");
+								}
+								im.setLore(lore);
+								shopIS.setItemMeta(im);
 
 
-							inv.setItem(shop.getSlot(), shopIS);
+								inv.setItem(shop.getSlot(), shopIS);
+							}
 						}
+						e.getPlayer().openInventory(inv);
 					}
-					e.getPlayer().openInventory(inv);
 				}
 			}
-
 		}
-
-		//			for(Shop shop : Shop.values()) {
-		//				if(v.getCustomName().equalsIgnoreCase(shop.getShopName())) {
-		//
-		//					Bukkit.broadcastMessage("Momentaner Check:" + shop.getName());
-		//					ItemStack i = new ItemStack(shop.getMaterial());
-		//					ItemMeta im = i.getItemMeta();
-		//					im.setDisplayName(shop.getName());
-		//					if(shop.getColor().getBlue() != 20) {
-		//						LeatherArmorMeta meta1 = (LeatherArmorMeta)im;
-		//						meta1.setColor(shop.getColor());
-		//						i.setItemMeta(meta1);
-		//					}
-		//					ArrayList<String> lore = new ArrayList<>();
-		//					lore.add("§6Price: " + shop.getMoney());
-		//					if(PlayerConfig.hasItemInv(e.getPlayer(), shop)) {
-		//						lore.add(">>§cBOUGHT");
-		//					}
-		//					im.setLore(lore);
-		//					i.setItemMeta(im);
-		//
-		//					
-		//					inv.setItem(shop.getSlot(), i);
-		//				} 
-		//			}
-		//			e.getPlayer().openInventory(inv);
-		//		}
-
-
 	}
 
 	@EventHandler
@@ -139,7 +113,6 @@ public class ShopListener implements Listener {
 
 		for(Shop shop : Shop.values()) {
 			if(e.getInventory().getName().equalsIgnoreCase(shop.getShopName())) {
-
 				if(e.getCurrentItem().getItemMeta().getDisplayName() == shop.getName()) {
 					if(eco.getBalance(p) >= shop.getMoney()) {
 						if(!PlayerConfig.hasItemInv(p, shop)) {

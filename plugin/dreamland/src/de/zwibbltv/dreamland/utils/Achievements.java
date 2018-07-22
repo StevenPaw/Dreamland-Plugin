@@ -14,7 +14,7 @@ public enum Achievements {
 	WATER("Into the water","You jumped into water! Are you fresher now?",10, false,"???","Dreamland"),
 	RUNAKM("Run a KM","You ran a Kilometer in one session!",10, false,"???","Dreamland"),
 	PLAY2HOURS("Play 2 hours","You play 2 hours on Dreamland!",20, false,"???","Dreamland"),
-	ENTRANCERESTAURANT("Entrance Restaurant","You went to the Entrance Restaurant!",10, false,"Go to the Entrance Restaurant","Dreamland"),
+	ENTRANCERESTAURANT("Entrance Restaurant","You went to the Entrance Restaurant!",10, true,"Go to the Entrance Restaurant","Dreamland"),
 	ENTRANCETOILET("Entrance Toilet","You went to the toilets on the Entrance",10,true,"Find the toilets in the Entrance","Dreamland"),
 	GREATVIEWENTRANCE("Great view from the Entrance","You found the button with a great view above the Entrance!",10, false,"???","Dreamland"),
 	SECRETTUNNEL("Secret tunnel","You found the secret tunnel!",10, false,"???","Dreamland"),
@@ -81,7 +81,20 @@ public enum Achievements {
 	FANTASA("Fantasa", "You entered Fantasa",10,true,"Enter Fantasa","Fantasa"),
 	FANTASAFOUNTAIN("Fantasas Fountain","You activated the fountain in Fantasa!",10,true,"Activate the fountain in Fantasa","Fantasa"),
 	FANTASAVIEW("Fantasa View", "You've gone to a higher place",10,false,"???","Fantasa"),
-	FANTASATOILETS("Toilets in Fantasa","You entered the toilets in Fantasa",10,true,"Find the toilets in Fantasa","Fantasa");
+	FANTASATOILETS("Toilets in Fantasa","You entered the toilets in Fantasa",10,true,"Find the toilets in Fantasa","Fantasa"),
+	//EVERWOODS
+	EVERWOODS("Everwoods", "You went to Everwoods!",10,true,"Visit Everwoods","Everwoods"),
+	EVERWOODSCANOE("Canoetrip", "You paddeld with a canoe in Everwoods!",10,true,"Paddel with a canoe in Everwoods","Everwoods"),
+	EVERWOODSWATERCAVE("Everwoods water cave", "You found the water cave in Everwoods!",10,false,"???","Everwoods"),
+	EVERWOODSCAFE("Everwoods Cafe", "You went to the cafe in Everwoods!",10,true,"Visit the cafe in Everwoods","Everwoods"),
+	EVERWOODSPIRATE("I am the Pirate", "You went to the Priateship in Everwoods",10,false,"???","Everwoods"),
+	EVERWOODSPIRATECABIN("Pirate Cabin", "You entered the cabin on the pirateship in Everwoods!",10,false,"???","Everwoods"),
+	EVERWOODSPIRATEFOOD("Pirates food", "You nearly took the food from the pirates in Everwoods!",10,false,"???","Everwoods"),
+	EVERWOODSCROWSNEST("Good view from the crow's nest", "You went to the crow's nest in Everwoods!",10,false,"???","Everwoods"),
+	EVERWOODSTREEHOUSEPARCOUR("Treetouse Parcour", "You jumped through the Treehouse Parcour in Everwoods",10, true,"Beat the Treehouse Parcour in Everwoods","Everwoods"),
+	EVERWOODSSECRETTREEHOUSE("Secret Treehouse", "You visited the secret Treehouse",10,false,"???","Everwoods"),
+	EVERWOODSTARUBA("Taruba", "You took a ride on Taruba",10,true,"Ride Taruba","Everwoods"),
+	EVERWOODSFLAME("Everwoods Flame", "You've activated the flame in Everwoods!",10,false,"???","Everwoods");
 	
 	public static void locations(Player p) {	
 		
@@ -350,6 +363,52 @@ public enum Achievements {
 			if(d <= 1.5) {				
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.FANTASA);
 								
+			}
+			
+		//EVERWOODS
+			d = ploc.distance(new Location(p.getWorld(), -727.5, 20, 668.5));
+			if(d <= 4) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODS);
+			}
+			d = ploc.distance(new Location(p.getWorld(), -656.5, 21, 675.5));
+			if(d <= 4) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODS);
+			}			
+			d = ploc.distance(new Location(p.getWorld(), -814.3, 19, 832.3));
+			if(d <= 4) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODS);								
+			}
+			d = ploc.distance(new Location(p.getWorld(), -736, 20, 772.5));
+			if(d <= 2) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODSPIRATE);								
+			}
+			d = ploc.distance(new Location(p.getWorld(), -639.5, 23, 736.5));
+			if(d <= 1) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODSCAFE);								
+			}
+			d = ploc.distance(new Location(p.getWorld(), -736, 26, 662.5));
+			if(d <= 2) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODSSECRETTREEHOUSE);								
+			}
+			d = ploc.distance(new Location(p.getWorld(), -714.5, 29, 685.5));
+			if(d <= 1) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODSTREEHOUSEPARCOUR);								
+			}
+			d = ploc.distance(new Location(p.getWorld(), -785, 15, 759.5));
+			if(d <= 4) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODSWATERCAVE);								
+			}
+			d = ploc.distance(new Location(p.getWorld(), -727.3, 16, 776));
+			if(d <= 2) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODSPIRATEFOOD);								
+			}
+			d = ploc.distance(new Location(p.getWorld(), -743.5, 16, 775));
+			if(d <= 2) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODSPIRATECABIN);								
+			}
+			d = ploc.distance(new Location(p.getWorld(), -739.3, 38, 775.5));
+			if(d <= 1) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODSCROWSNEST);								
 			}
 	}
 	
