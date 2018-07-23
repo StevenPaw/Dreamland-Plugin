@@ -23,9 +23,11 @@ public class CMDrent implements CommandExecutor {
 				if (sender instanceof Player) {
 					Bukkit.broadcastMessage("3");
 					Player p = Bukkit.getPlayer(args[1]);
-					if (p.hasPermission("dreamland.*") || p.hasPermission("dreamland.rent")) {
+					if (sender.hasPermission("dreamland.*") || sender.hasPermission("dreamland.rent")) {
+						Bukkit.broadcastMessage("4");
+						Integer b = Integer.parseInt(args[2]);
 						try {
-							PlayerConfig.setRentedHotel(p, Integer.parseInt(args[2]));
+							PlayerConfig.setRentedHotel(p, b);
 						} catch (IOException e) {
 							e.printStackTrace();
 						}
