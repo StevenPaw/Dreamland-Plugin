@@ -46,3 +46,5 @@ commands:
    staffchat:
       description: write a staffmessage to all staffmembers
       aliases: [sc]
+   rent:
+      description: rent a hotel

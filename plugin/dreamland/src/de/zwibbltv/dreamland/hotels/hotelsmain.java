@@ -1,8 +1,12 @@
 package de.zwibbltv.dreamland.hotels;
 
+import java.io.IOException;
+
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
+
+import de.zwibbltv.dreamland.utils.PlayerConfig;
 
 public class hotelsmain {
 
@@ -38,5 +42,22 @@ public class hotelsmain {
 	public static Integer getRentedRoom (Player p) {
 		Integer rentedRoom = -1;
 		return rentedRoom;
+	}
+	
+	public static void setInRoom(Player p, Integer i) {
+		try {
+			PlayerConfig.setInHotel(p, i);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public static void setRentedRoom(Player p, Integer i) {
+		try {
+			PlayerConfig.setRentedHotel(p, i);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

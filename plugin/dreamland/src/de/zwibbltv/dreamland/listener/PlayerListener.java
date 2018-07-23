@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Statistic;
@@ -107,11 +108,19 @@ public class PlayerListener implements Listener {
 				}
 			}
 		} else if (hotelsmain.isaDoor(p, event.getClickedBlock().getLocation()) != -1) {
-			p.teleport(hotelsmain.getExit(p, hotelsmain.isaDoor(p, event.getClickedBlock().getLocation())));
-			Bukkit.broadcastMessage("Teleporting to Exit: " + p.getName());
-			event.setCancelled(true);
+			if(!PlayerConfig.getBuilder(p)) {
+				hotelsmain.setInRoom(p, -1);
+				p.teleport(hotelsmain.getExit(p, hotelsmain.isaDoor(p, event.getClickedBlock().getLocation())));
+				Bukkit.broadcastMessage("Teleporting to Exit: " + p.getName());
+				event.setCancelled(true);
+				p.setGameMode(GameMode.ADVENTURE);
+			}
 		} else {
+			hotelsmain.setInRoom(p, hotelsmain.isInRoom(p, event.getClickedBlock().getLocation()));
 			Bukkit.broadcastMessage(p.getName() + " is in room: " + de.zwibbltv.dreamland.hotels.hotelsmain.isInRoom(p, event.getClickedBlock().getLocation()));
+			if (PlayerConfig.getInHotel(p) == PlayerConfig.getRentedHotel(p)) {
+				p.setGameMode(GameMode.CREATIVE);
+			}
 		}
 	}
 

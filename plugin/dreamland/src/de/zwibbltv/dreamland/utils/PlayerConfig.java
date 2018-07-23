@@ -46,6 +46,22 @@ public class PlayerConfig {
 		return PlayerConfig.getBoolean(p.getName()+ ".builder");
 	}
 	
+	//Hotels---
+	public static void setInHotel(Player p, Integer builder) throws IOException{
+		PlayerConfig.set(p.getName()+ ".inhotel", builder);
+		save();
+	}	
+	public static Integer getInHotel(Player p) {
+		return PlayerConfig.getInt(p.getName()+ ".inhotel");
+	}
+	public static void setRentedHotel(Player p, Integer builder) throws IOException{
+		PlayerConfig.set(p.getName()+ ".rentedhotel", builder);
+		save();
+	}	
+	public static int getRentedHotel(Player p) {
+		return PlayerConfig.getInt(p.getName()+ ".rentedhotel");
+	}
+	
 	//Resourcepack---
 	public static void Resourcepackactive(Player p, Boolean active) throws IOException{
 		PlayerConfig.set(p.getName()+ ".resourcepack", active);

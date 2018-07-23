@@ -24,6 +24,7 @@ import de.zwibbltv.dreamland.commands.CMDmoney;
 import de.zwibbltv.dreamland.commands.CMDmute;
 import de.zwibbltv.dreamland.commands.CMDrank;
 import de.zwibbltv.dreamland.commands.CMDremovewarp;
+import de.zwibbltv.dreamland.commands.CMDrent;
 import de.zwibbltv.dreamland.commands.CMDsetwarp;
 import de.zwibbltv.dreamland.commands.CMDstaffchat;
 import de.zwibbltv.dreamland.commands.CMDvillager;
@@ -94,6 +95,7 @@ public class Main extends JavaPlugin {
 		getCommand("mute").setExecutor(new CMDmute());
 		getCommand("gm").setExecutor(new CMDgamemode());
 		getCommand("build").setExecutor(new CMDbuild());
+		getCommand("rent").setExecutor(new CMDrent());
 		getCommand("menu").setExecutor(new CMDmenu());
 		getCommand("rank").setExecutor(new CMDrank());
 		getCommand("audio").setExecutor(new CMDaudio());
