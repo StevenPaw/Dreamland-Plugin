@@ -35,6 +35,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
+import de.zwibbltv.dreamland.hotels.hotelsmain;
 import de.zwibbltv.dreamland.main.Main;
 import de.zwibbltv.dreamland.utils.Achievements;
 import de.zwibbltv.dreamland.utils.PlayerConfig;
@@ -46,63 +47,71 @@ public class PlayerListener implements Listener {
 	public void onPlayerInteract(PlayerInteractEvent event) {
 		Player p = event.getPlayer();
 		Block block = event.getClickedBlock();
-		if (event.getAction() == Action.RIGHT_CLICK_BLOCK || event.getAction() == Action.LEFT_CLICK_BLOCK) {
-			List<Material> forbidden = new ArrayList<Material>();
-			if(PlayerConfig.getBuilder(p) == false) {
-				if(!p.hasPermission("dreamland.useBlocks") || !p.hasPermission("dreamland.*")) {
-					forbidden.add(Material.WOODEN_DOOR);
-					forbidden.add(Material.ACACIA_DOOR);
-					forbidden.add(Material.BIRCH_DOOR);
-					forbidden.add(Material.DARK_OAK_DOOR);
-					forbidden.add(Material.JUNGLE_DOOR);
-					forbidden.add(Material.SPRUCE_DOOR);
-					forbidden.add(Material.TRAP_DOOR);
-					forbidden.add(Material.ACACIA_FENCE_GATE);
-					forbidden.add(Material.BIRCH_FENCE_GATE);
-					forbidden.add(Material.FENCE_GATE);
-					forbidden.add(Material.ENCHANTMENT_TABLE);
-					forbidden.add(Material.JUNGLE_FENCE_GATE);
-					forbidden.add(Material.SPRUCE_FENCE_GATE);
-					forbidden.add(Material.NOTE_BLOCK);
-					forbidden.add(Material.ANVIL);
-					forbidden.add(Material.BEACON);
-					forbidden.add(Material.WORKBENCH);
-					forbidden.add(Material.ENDER_CHEST);
-					forbidden.add(Material.TRAPPED_CHEST);
-					forbidden.add(Material.DROPPER);
-					forbidden.add(Material.DISPENSER);
-					forbidden.add(Material.CHEST);
-					forbidden.add(Material.BREWING_STAND);
-					forbidden.add(Material.FURNACE);
-					forbidden.add(Material.IRON_DOOR);
-					forbidden.add(Material.HOPPER);
-					forbidden.add(Material.BED);
-					forbidden.add(Material.BED_BLOCK);
+		if(de.zwibbltv.dreamland.hotels.hotelsmain.isInRoom(p, event.getClickedBlock().getLocation()) == -1 && hotelsmain.isaDoor(p, event.getClickedBlock().getLocation()) == -1) {
+			if (event.getAction() == Action.RIGHT_CLICK_BLOCK || event.getAction() == Action.LEFT_CLICK_BLOCK) {
+				List<Material> forbidden = new ArrayList<Material>();
+				if(PlayerConfig.getBuilder(p) == false) {
+					if(!p.hasPermission("dreamland.useBlocks") || !p.hasPermission("dreamland.*")) {
+						forbidden.add(Material.WOODEN_DOOR);
+						forbidden.add(Material.ACACIA_DOOR);
+						forbidden.add(Material.BIRCH_DOOR);
+						forbidden.add(Material.DARK_OAK_DOOR);
+						forbidden.add(Material.JUNGLE_DOOR);
+						forbidden.add(Material.SPRUCE_DOOR);
+						forbidden.add(Material.TRAP_DOOR);
+						forbidden.add(Material.ACACIA_FENCE_GATE);
+						forbidden.add(Material.BIRCH_FENCE_GATE);
+						forbidden.add(Material.FENCE_GATE);
+						forbidden.add(Material.ENCHANTMENT_TABLE);
+						forbidden.add(Material.JUNGLE_FENCE_GATE);
+						forbidden.add(Material.SPRUCE_FENCE_GATE);
+						forbidden.add(Material.NOTE_BLOCK);
+						forbidden.add(Material.ANVIL);
+						forbidden.add(Material.BEACON);
+						forbidden.add(Material.WORKBENCH);
+						forbidden.add(Material.ENDER_CHEST);
+						forbidden.add(Material.TRAPPED_CHEST);
+						forbidden.add(Material.DROPPER);
+						forbidden.add(Material.DISPENSER);
+						forbidden.add(Material.CHEST);
+						forbidden.add(Material.BREWING_STAND);
+						forbidden.add(Material.FURNACE);
+						forbidden.add(Material.IRON_DOOR);
+						forbidden.add(Material.HOPPER);
+						forbidden.add(Material.BED);
+						forbidden.add(Material.BED_BLOCK);
 
-					for (Material f: forbidden) {
-						if(block.getType() == f) {
-							event.setCancelled(true);
-						}				
+						for (Material f: forbidden) {
+							if(block.getType() == f) {
+								event.setCancelled(true);
+							}				
+						}
+					}
+				}
+			}		
+			if (event.getAction() == Action.RIGHT_CLICK_BLOCK || event.getAction() == Action.LEFT_CLICK_BLOCK) {
+				List<Material> forbidden = new ArrayList<Material>();
+				if(PlayerConfig.getBuilder(p) == false) {
+					if(!p.hasPermission("dreamland.useBlocks") || !p.hasPermission("dreamland.*")) {				
+						if (!p.hasPermission("dreamland.VIP")) {
+							forbidden.add(Material.LEVER);
+						}
+
+						for (Material f: forbidden) {
+							if(block.getType() == f) {
+								p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("VIP")));
+								event.setCancelled(true);
+							}				
+						}
 					}
 				}
 			}
-		}		
-		if (event.getAction() == Action.RIGHT_CLICK_BLOCK || event.getAction() == Action.LEFT_CLICK_BLOCK) {
-			List<Material> forbidden = new ArrayList<Material>();
-			if(PlayerConfig.getBuilder(p) == false) {
-				if(!p.hasPermission("dreamland.useBlocks") || !p.hasPermission("dreamland.*")) {				
-					if (!p.hasPermission("dreamland.VIP")) {
-						forbidden.add(Material.LEVER);
-					}
-
-					for (Material f: forbidden) {
-						if(block.getType() == f) {
-							p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("VIP")));
-							event.setCancelled(true);
-						}				
-					}
-				}
-			}
+		} else if (hotelsmain.isaDoor(p, event.getClickedBlock().getLocation()) != -1) {
+			p.teleport(hotelsmain.getExit(p, hotelsmain.isaDoor(p, event.getClickedBlock().getLocation())));
+			Bukkit.broadcastMessage("Teleporting to Exit: " + p.getName());
+			event.setCancelled(true);
+		} else {
+			Bukkit.broadcastMessage(p.getName() + " is in room: " + de.zwibbltv.dreamland.hotels.hotelsmain.isInRoom(p, event.getClickedBlock().getLocation()));
 		}
 	}
 
@@ -313,16 +322,16 @@ public class PlayerListener implements Listener {
 				}
 
 				//SOLLTE SPIELER ZUM NÄCHSTEN STEG TELEPORTIEREN:
-//				Bukkit.broadcastMessage("-------NEW EXIT-------");
-//				Bukkit.broadcastMessage("Distance: " + LocationDistanceSmallest);
-//				Bukkit.broadcastMessage("Player: " + p.getName());
-//				Bukkit.broadcastMessage("Choosen Location: " + LocationID);
+				//				Bukkit.broadcastMessage("-------NEW EXIT-------");
+				//				Bukkit.broadcastMessage("Distance: " + LocationDistanceSmallest);
+				//				Bukkit.broadcastMessage("Player: " + p.getName());
+				//				Bukkit.broadcastMessage("Choosen Location: " + LocationID);
 				Location teleportLocation = testlocation.get(LocationID);
-//				Bukkit.broadcastMessage("Choosen Teleport: " + teleportLocation.toVector());
+				//				Bukkit.broadcastMessage("Choosen Teleport: " + teleportLocation.toVector());
 				p.getPlayer().teleport(teleportLocation);
 				boat.remove();
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODSCANOE);
-//				Bukkit.broadcastMessage("----------------------");
+				//				Bukkit.broadcastMessage("----------------------");
 			}
 		}
 	}
