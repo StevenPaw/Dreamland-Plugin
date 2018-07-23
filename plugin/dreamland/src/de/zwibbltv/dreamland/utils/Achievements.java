@@ -420,11 +420,11 @@ public enum Achievements {
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODSWATERTREECAVE);								
 			}
 			d = ploc.distance(new Location(p.getWorld(), -760.5, 15, 695.5));
-			if(d <= 4) {				
+			if(d <= 2) {				
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODSWATERTREECAVE);								
 			}
 			d = ploc.distance(new Location(p.getWorld(), -758.9, 15, 706.1));
-			if(d <= 4) {				
+			if(d <= 2) {				
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODSWATERTREECAVE);								
 			}
 			//LILHILL
