@@ -66,13 +66,13 @@ public class MenuListener implements Listener {
 			p.getInventory().clear();
 			p.getEquipment().clear();
 
-			ItemStack carrot = new ItemBuilder(Material.CARROT_ITEM).setDisplayName("§6Menu").build();
+			ItemStack carrot = new ItemBuilder(Material.CARROT).setDisplayName("§6Menu").build();
 			ItemStack chest = new ItemBuilder(Material.CHEST).setDisplayName("§6Inventory").build();
 			p.getInventory().setItem(0, carrot);
 			p.getInventory().setItem(8, chest);
 
 			if(p.hasPermission("dreamland.build.*") || p.hasPermission("dreamland.build.self") || p.hasPermission("dreamland.build.other")) {
-				ItemStack gold_spade = new ItemBuilder(Material.GOLD_SPADE).setDisplayName("§6Builder").build();
+				ItemStack gold_spade = new ItemBuilder(Material.GOLDEN_SHOVEL).setDisplayName("§6Builder").build();
 				p.getInventory().setItem(1, gold_spade);
 			}
 
@@ -132,7 +132,7 @@ public class MenuListener implements Listener {
 		if (e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK
 				|| e.getAction() == Action.LEFT_CLICK_AIR || e.getAction() == Action.LEFT_CLICK_BLOCK) {
 			try {
-				if (e.getMaterial().equals(Material.CARROT_ITEM)) {
+				if (e.getMaterial().equals(Material.CARROT)) {
 					openMenuMain(p);
 				}
 				if (e.getMaterial().equals(Material.CHEST)) {
@@ -193,7 +193,7 @@ public class MenuListener implements Listener {
 			}
 		}
 
-		ItemStack back = new ItemStack(Material.CLAY_BRICK);
+		ItemStack back = new ItemStack(Material.BRICK);
 
 		ItemMeta backmeta = back.getItemMeta();
 		backmeta.setDisplayName("§cBack");
@@ -250,61 +250,61 @@ public class MenuListener implements Listener {
 
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aFlying Pegasus")) {
 					p.performCommand("warp flying_pegasus");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}	
 
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aTower of Izran")) {
 					p.performCommand("warp tower_of_izran");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}	
 
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aWestern race")) {
 					p.performCommand("warp western_race");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}	
 
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aExplorers Cave")) {
 					p.performCommand("warp explorers_cave");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}	
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aSpawn")) {
 					p.performCommand("warp spawn");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}					
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aGreifenheim")) {
 					p.performCommand("warp greifenheim");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aCalico")) {
 					p.performCommand("warp calico");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLagoon")) {
 					p.performCommand("warp lagoon");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aHaunted Mansion")) {
 					p.performCommand("warp haunted_mansion");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
 
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aChinatown")) {
 					p.performCommand("warp chinatown");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aInformation-Center")) {
 					p.performCommand("warp information-center");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
 
@@ -314,42 +314,42 @@ public class MenuListener implements Listener {
 
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aCastle")) {
 					p.performCommand("warp castle");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aFantasa")) {
 					p.performCommand("warp fantasa");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aEverwoods")) {
 					p.performCommand("warp everwoods");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aEPCOT")) {
 					p.performCommand("warp epcot");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aTaruba")) {
 					p.performCommand("warp taruba");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aForbidden Woods")) {
 					p.performCommand("warp forbidden_woods");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLil' Hill")) {
 					p.performCommand("warp lil_hill");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
 				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLil' Coaster")) {
 					p.performCommand("warp lil_coaster");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
 			}
@@ -411,7 +411,7 @@ public class MenuListener implements Listener {
 			if (e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK
 					|| e.getAction() == Action.LEFT_CLICK_AIR || e.getAction() == Action.LEFT_CLICK_BLOCK) {
 
-				if (e.getMaterial().equals(Material.GOLD_SPADE)) {
+				if (e.getMaterial().equals(Material.GOLDEN_SHOVEL)) {
 					p.performCommand("build");
 					e.setCancelled(true);
 				} 	
@@ -462,7 +462,7 @@ public class MenuListener implements Listener {
 		locationsmeta.setDisplayName("§aLocations");
 		locations.setItemMeta(locationsmeta);
 
-		ItemStack back = new ItemStack(Material.CLAY_BRICK);
+		ItemStack back = new ItemStack(Material.BRICK);
 		ItemMeta backmeta = back.getItemMeta();
 		backmeta.setDisplayName("§cBack");
 		back.setItemMeta(backmeta);
@@ -494,7 +494,7 @@ public class MenuListener implements Listener {
 		flyingpegasusmeta.setDisplayName("§aFlying Pegasus");
 		flyingpegasus.setItemMeta(flyingpegasusmeta);
 
-		ItemStack Westernrace = new ItemStack(Material.DIAMOND_BARDING);
+		ItemStack Westernrace = new ItemStack(Material.DIAMOND_HORSE_ARMOR);
 		ItemMeta Westernracemeta = Westernrace.getItemMeta();
 		Westernracemeta.setDisplayName("§aWestern race");
 		Westernrace.setItemMeta(Westernracemeta);
@@ -504,12 +504,12 @@ public class MenuListener implements Listener {
 		ToImeta.setDisplayName("§aTower of Izran");
 		ToI.setItemMeta(ToImeta);
 
-		ItemStack haunted_mansion = new ItemStack(Material.SKULL_ITEM);
+		ItemStack haunted_mansion = new ItemStack(Material.SKELETON_SKULL);
 		ItemMeta haunted_mansionmeta = haunted_mansion.getItemMeta();
 		haunted_mansionmeta.setDisplayName("§aHaunted Mansion");
 		haunted_mansion.setItemMeta(haunted_mansionmeta);
 
-		ItemStack back = new ItemStack(Material.CLAY_BRICK);
+		ItemStack back = new ItemStack(Material.BRICK);
 		ItemMeta backmeta = back.getItemMeta();
 		backmeta.setDisplayName("§cBack");
 		back.setItemMeta(backmeta);
@@ -564,7 +564,7 @@ public class MenuListener implements Listener {
 		Greifenheimmeta.setDisplayName("§aGreifenheim");
 		Greifenheim.setItemMeta(Greifenheimmeta);
 
-		ItemStack Calico = new ItemStack(Material.WOOD, 1, (short) 1);
+		ItemStack Calico = new ItemStack(Material.OAK_PLANKS, 1, (short) 1);
 		ItemMeta Calicometa = Calico.getItemMeta();
 		Calicometa.setDisplayName("§aCalico");
 		Calico.setItemMeta(Calicometa);
@@ -574,7 +574,7 @@ public class MenuListener implements Listener {
 		Lagoonmeta.setDisplayName("§aLagoon");
 		Lagoon.setItemMeta(Lagoonmeta);
 
-		ItemStack back = new ItemStack(Material.CLAY_BRICK);
+		ItemStack back = new ItemStack(Material.BRICK);
 		ItemMeta backmeta = back.getItemMeta();
 		backmeta.setDisplayName("§cBack");
 		back.setItemMeta(backmeta);
@@ -594,17 +594,17 @@ public class MenuListener implements Listener {
 		castlemeta.setDisplayName("§aCastle");
 		castle.setItemMeta(castlemeta);
 
-		ItemStack fantasa = new ItemStack(Material.SMOOTH_BRICK);
+		ItemStack fantasa = new ItemStack(Material.BRICKS);
 		ItemMeta fantasameta = fantasa.getItemMeta();
 		fantasameta.setDisplayName("§aFantasa");
 		fantasa.setItemMeta(fantasameta);
 
-		ItemStack everwoods = new ItemStack(Material.LOG_2);
+		ItemStack everwoods = new ItemStack(Material.BIRCH_LOG);
 		ItemMeta everwoodsmeta = everwoods.getItemMeta();
 		everwoodsmeta.setDisplayName("§aEverwoods");
 		everwoods.setItemMeta(everwoodsmeta);
 
-		ItemStack epcot = new ItemStack(Material.RED_ROSE);
+		ItemStack epcot = new ItemStack(Material.ROSE_RED);
 		ItemMeta epcotmeta = epcot.getItemMeta();
 		epcotmeta.setDisplayName("§aEPCOT");
 		epcot.setItemMeta(epcotmeta);
@@ -669,7 +669,7 @@ public class MenuListener implements Listener {
 					Color = 4;
 
 
-				ItemStack achItem = new ItemStack(Material.STAINED_CLAY, 1, (short) (double)Color);
+				ItemStack achItem = new ItemStack(Material.TERRACOTTA, 1, (short) (double)Color);
 				ItemMeta achMeta = achItem.getItemMeta();
 
 				if(getCategoryPercentage(p, ach.getCategory()) == 0) {
@@ -700,7 +700,7 @@ public class MenuListener implements Listener {
 		}
 
 		if(p == receiver) {
-			ItemStack back = new ItemStack(Material.CLAY_BRICK);
+			ItemStack back = new ItemStack(Material.BRICK);
 			ItemMeta backmeta = back.getItemMeta();
 			backmeta.setDisplayName("§cBack");
 			back.setItemMeta(backmeta);
@@ -744,7 +744,7 @@ public class MenuListener implements Listener {
 			if(ach.getCategory() == cat) {
 				if(PlayerConfig.hasAchivement(p, ach))
 				{
-					ItemStack achItem = new ItemStack(Material.STAINED_CLAY, 1, (short) 5);
+					ItemStack achItem = new ItemStack(Material.TERRACOTTA, 1, (short) 5);
 					ItemMeta achMeta = achItem.getItemMeta();
 					achMeta.setDisplayName("§a"+ ach.getName());
 					List<String> lore = new ArrayList<String>();
@@ -753,7 +753,7 @@ public class MenuListener implements Listener {
 					achItem.setItemMeta(achMeta);
 					inv.setItem(i, achItem);
 				} else {
-					ItemStack achItem = new ItemStack(Material.STAINED_CLAY, 1, (short) 14);
+					ItemStack achItem = new ItemStack(Material.TERRACOTTA, 1, (short) 14);
 					ItemMeta achMeta = achItem.getItemMeta();
 					if(ach.getVisibility()) {
 						achMeta.setDisplayName("§c"+ ach.getName());
@@ -772,7 +772,7 @@ public class MenuListener implements Listener {
 				i = i + 1;
 
 				//Adding the Back-Button in last place
-				ItemStack back = new ItemStack(Material.CLAY_BRICK);
+				ItemStack back = new ItemStack(Material.BRICK);
 				ItemMeta backmeta = back.getItemMeta();
 				backmeta.setDisplayName("§cBack");
 				back.setItemMeta(backmeta);
