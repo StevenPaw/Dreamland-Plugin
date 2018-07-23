@@ -347,6 +347,11 @@ public class MenuListener implements Listener {
 					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
 					p.closeInventory();
 				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLil' Coaster")) {
+					p.performCommand("warp lil_coaster");
+					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+					p.closeInventory();
+				}
 			}
 
 			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Audio")) {
@@ -519,6 +524,11 @@ public class MenuListener implements Listener {
 		forbidden_woodsmeta.setDisplayName("§aForbidden Woods");
 		forbidden_woods.setItemMeta(forbidden_woodsmeta);
 		
+		ItemStack lil_coaster = new ItemStack(Material.BARRIER);
+		ItemMeta lil_coastermeta = lil_coaster.getItemMeta();
+		lil_coastermeta.setDisplayName("§aLil' Coaster");
+		lil_coaster.setItemMeta(lil_coastermeta);
+		
 		inv.setItem(0, ExplorersCave);
 		inv.setItem(1, flyingpegasus);
 		inv.setItem(2, Westernrace);
@@ -529,6 +539,7 @@ public class MenuListener implements Listener {
 
 		if (PlayerConfig.getBuilder(p) == true) {
 			inv.setItem(6, taruba);
+			inv.setItem(7, lil_coaster);
 		}
 
 		try {

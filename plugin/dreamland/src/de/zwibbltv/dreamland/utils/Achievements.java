@@ -86,6 +86,7 @@ public enum Achievements {
 	EVERWOODS("Everwoods", "You went to Everwoods!",10,true,"Visit Everwoods","Everwoods"),
 	EVERWOODSCANOE("Canoetrip", "You paddeld with a canoe in Everwoods!",10,true,"Paddel with a canoe in Everwoods","Everwoods"),
 	EVERWOODSWATERCAVE("Everwoods water cave", "You found the water cave in Everwoods!",10,false,"???","Everwoods"),
+	EVERWOODSWATERTREECAVE("Everwoods water tree cave", "You found the water cave in a tree in Everwoods!",10,false,"???","Everwoods"),
 	EVERWOODSCAFE("Everwoods Cafe", "You went to the cafe in Everwoods!",10,true,"Visit the cafe in Everwoods","Everwoods"),
 	EVERWOODSPIRATE("I am the Pirate", "You went to the Priateship in Everwoods",10,false,"???","Everwoods"),
 	EVERWOODSPIRATECABIN("Pirate Cabin", "You entered the cabin on the pirateship in Everwoods!",10,false,"???","Everwoods"),
@@ -94,7 +95,10 @@ public enum Achievements {
 	EVERWOODSTREEHOUSEPARCOUR("Treetouse Parcour", "You jumped through the Treehouse Parcour in Everwoods",10, true,"Beat the Treehouse Parcour in Everwoods","Everwoods"),
 	EVERWOODSSECRETTREEHOUSE("Secret Treehouse", "You visited the secret Treehouse",10,false,"???","Everwoods"),
 	EVERWOODSTARUBA("Taruba", "You took a ride on Taruba",10,true,"Ride Taruba","Everwoods"),
-	EVERWOODSFLAME("Everwoods Flame", "You've activated the flame in Everwoods!",10,false,"???","Everwoods");
+	EVERWOODSFLAME("Everwoods Flame", "You've activated the flame in Everwoods!",10,false,"???","Everwoods"),
+	//LIL' HILL
+	LILHILL("Lil' Hill", "You went to Lil' Hill",10,true,"Visit Lil' Hill","Lil' Hill"),
+	LILCOASTER("Lil' Coaster", "You took a ride on Lil' Coaster",10,true,"Ride Lil' Coaster","Lil' Hill");
 	
 	public static void locations(Player p) {	
 		
@@ -376,7 +380,8 @@ public enum Achievements {
 			}			
 			d = ploc.distance(new Location(p.getWorld(), -814.3, 19, 832.3));
 			if(d <= 4) {				
-				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODS);								
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODS);
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.LILHILL);								
 			}
 			d = ploc.distance(new Location(p.getWorld(), -736, 20, 772.5));
 			if(d <= 2) {				
@@ -409,6 +414,23 @@ public enum Achievements {
 			d = ploc.distance(new Location(p.getWorld(), -739.3, 38, 775.5));
 			if(d <= 1) {				
 				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODSCROWSNEST);								
+			}
+			d = ploc.distance(new Location(p.getWorld(), -676.5, 15, 705));
+			if(d <= 1) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODSWATERTREECAVE);								
+			}
+			d = ploc.distance(new Location(p.getWorld(), -760.5, 15, 695.5));
+			if(d <= 4) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODSWATERTREECAVE);								
+			}
+			d = ploc.distance(new Location(p.getWorld(), -758.9, 15, 706.1));
+			if(d <= 4) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.EVERWOODSWATERTREECAVE);								
+			}
+			//LILHILL
+			d = ploc.distance(new Location(p.getWorld(), -871, 27, 804.5));
+			if(d <= 4) {				
+				PlayerConfig.giveAchievement(p.getPlayer(), Achievements.LILHILL);								
 			}
 	}
 	
