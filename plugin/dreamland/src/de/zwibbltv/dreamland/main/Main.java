@@ -12,7 +12,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import de.zwibbltv.dreamland.commands.CMDachievements;
 import de.zwibbltv.dreamland.commands.CMDaudio;
-//import de.zwibbltv.dreamland.commands.CMDballoons;
+import de.zwibbltv.dreamland.commands.CMDballoons;
 import de.zwibbltv.dreamland.commands.CMDbroadcastmessage;
 import de.zwibbltv.dreamland.commands.CMDbuild;
 import de.zwibbltv.dreamland.commands.CMDfirework;
@@ -29,7 +29,7 @@ import de.zwibbltv.dreamland.commands.CMDstaffchat;
 import de.zwibbltv.dreamland.commands.CMDvillager;
 import de.zwibbltv.dreamland.commands.CMDwarp;
 import de.zwibbltv.dreamland.listener.BalloonEvents;
-//import de.zwibbltv.dreamland.listener.BalloonListener;
+import de.zwibbltv.dreamland.listener.BalloonListener;
 import de.zwibbltv.dreamland.listener.JoinListener;
 import de.zwibbltv.dreamland.listener.MenuListener;
 import de.zwibbltv.dreamland.listener.PlayerListener;
@@ -110,7 +110,7 @@ public class Main extends JavaPlugin {
 		this.getCommand("setwarp").setExecutor(new CMDsetwarp());
 		this.getCommand("warp").setExecutor(new CMDwarp());
 		this.getCommand("removewarp").setExecutor(new CMDremovewarp());
-//		this.getCommand("balloons").setExecutor(new CMDballoons());
+		this.getCommand("balloons").setExecutor(new CMDballoons());
 
 		PluginManager pm = Bukkit.getPluginManager();
 		pm.registerEvents(new JoinListener(), this);
@@ -118,7 +118,7 @@ public class Main extends JavaPlugin {
 		pm.registerEvents(new MenuListener(), this);
 		pm.registerEvents(new ShopListener(), this);
 		pm.registerEvents(new PlayerListener(), this);
-//		pm.registerEvents(new BalloonListener(), this);
+		pm.registerEvents(new BalloonListener(), this);
 		pm.registerEvents(new BalloonEvents(), this);
 
 

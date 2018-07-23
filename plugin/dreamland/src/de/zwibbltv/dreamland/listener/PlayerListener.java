@@ -6,7 +6,6 @@ import java.util.List;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Statistic;
@@ -48,6 +47,7 @@ public class PlayerListener implements Listener {
 		Player p = event.getPlayer();
 		Block block = event.getClickedBlock();
 		if(de.zwibbltv.dreamland.hotels.hotelsmain.isInRoom(p, event.getClickedBlock().getLocation()) == -1 && hotelsmain.isaDoor(p, event.getClickedBlock().getLocation()) == -1) {
+<<<<<<< HEAD
 		if (event.getAction() == Action.RIGHT_CLICK_BLOCK || event.getAction() == Action.LEFT_CLICK_BLOCK) {
 			List<Material> forbidden = new ArrayList<Material>();
 			if(PlayerConfig.getBuilder(p) == false) {
@@ -80,6 +80,40 @@ public class PlayerListener implements Listener {
 					forbidden.add(Material.HOPPER);
 					forbidden.add(Material.BED);
 					forbidden.add(Material.BED_BLOCK);
+=======
+			if (event.getAction() == Action.RIGHT_CLICK_BLOCK || event.getAction() == Action.LEFT_CLICK_BLOCK) {
+				List<Material> forbidden = new ArrayList<Material>();
+				if(PlayerConfig.getBuilder(p) == false) {
+					if(!p.hasPermission("dreamland.useBlocks") || !p.hasPermission("dreamland.*")) {
+						forbidden.add(Material.WOODEN_DOOR);
+						forbidden.add(Material.ACACIA_DOOR);
+						forbidden.add(Material.BIRCH_DOOR);
+						forbidden.add(Material.DARK_OAK_DOOR);
+						forbidden.add(Material.JUNGLE_DOOR);
+						forbidden.add(Material.SPRUCE_DOOR);
+						forbidden.add(Material.TRAP_DOOR);
+						forbidden.add(Material.ACACIA_FENCE_GATE);
+						forbidden.add(Material.BIRCH_FENCE_GATE);
+						forbidden.add(Material.FENCE_GATE);
+						forbidden.add(Material.ENCHANTMENT_TABLE);
+						forbidden.add(Material.JUNGLE_FENCE_GATE);
+						forbidden.add(Material.SPRUCE_FENCE_GATE);
+						forbidden.add(Material.NOTE_BLOCK);
+						forbidden.add(Material.ANVIL);
+						forbidden.add(Material.BEACON);
+						forbidden.add(Material.WORKBENCH);
+						forbidden.add(Material.ENDER_CHEST);
+						forbidden.add(Material.TRAPPED_CHEST);
+						forbidden.add(Material.DROPPER);
+						forbidden.add(Material.DISPENSER);
+						forbidden.add(Material.CHEST);
+						forbidden.add(Material.BREWING_STAND);
+						forbidden.add(Material.FURNACE);
+						forbidden.add(Material.IRON_DOOR);
+						forbidden.add(Material.HOPPER);
+						forbidden.add(Material.BED);
+						forbidden.add(Material.BED_BLOCK);
+>>>>>>> parent of 9ba77fe1... Updated to 1.13
 
 					for (Material f: forbidden) {
 						if(block.getType() == f) {
@@ -107,13 +141,11 @@ public class PlayerListener implements Listener {
 			}
 <<<<<<< HEAD
 		} else if (hotelsmain.isaDoor(p, event.getClickedBlock().getLocation()) != -1) {
-			if(PlayerConfig.getBuilder(p) == false) {
-				p.setGameMode(GameMode.ADVENTURE);
-				p.teleport(hotelsmain.getExit(p, hotelsmain.isaDoor(p, event.getClickedBlock().getLocation())));
-				Bukkit.broadcastMessage("Teleporting to Exit: " + p.getName());
-				event.setCancelled(true);
-			}
+			p.teleport(hotelsmain.getExit(p, hotelsmain.isaDoor(p, event.getClickedBlock().getLocation())));
+			Bukkit.broadcastMessage("Teleporting to Exit: " + p.getName());
+			event.setCancelled(true);
 		} else {
+<<<<<<< HEAD
 			if(PlayerConfig.getBuilder(p) == false) {
 				try {
 					PlayerConfig.setInHotel(p, hotelsmain.isInRoom(p, event.getClickedBlock().getLocation()));
@@ -137,6 +169,9 @@ public class PlayerListener implements Listener {
 			}
 =======
 >>>>>>> parent of b3402000... Added Hotelrooms
+=======
+			Bukkit.broadcastMessage(p.getName() + " is in room: " + de.zwibbltv.dreamland.hotels.hotelsmain.isInRoom(p, event.getClickedBlock().getLocation()));
+>>>>>>> parent of 9ba77fe1... Updated to 1.13
 		}
 	}
 
@@ -255,7 +290,7 @@ public class PlayerListener implements Listener {
 				p.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 20, 1));	
 			}
 		}			
-		if(p.getLocation().getBlock().getRelative(BlockFace.SELF).getType() == Material.WATER || p.getLocation().getBlock().getRelative(BlockFace.SELF).getType() == Material.WATER) {
+		if(p.getLocation().getBlock().getRelative(BlockFace.SELF).getType() == Material.WATER || p.getLocation().getBlock().getRelative(BlockFace.SELF).getType() == Material.STATIONARY_WATER) {
 			PlayerConfig.giveAchievement(p.getPlayer(), Achievements.WATER);			
 		}
 
@@ -263,7 +298,7 @@ public class PlayerListener implements Listener {
 		if(PlayerConfig.getResourcepack(p) != true && PlayerConfig.getRuntime(p) >= 1)
 		{
 			p.sendMessage("Sending Resourcepack");
-//			p.setResourcePack("https://www.dropbox.com/s/35mjpfslsqy0sp9/Dreamland23-07-18b.zip?dl=1");
+			p.setResourcePack("https://www.dropbox.com/s/p4r9m41xpidecpw/Dreamland22-07-18b.zip?dl=1");
 			try {
 				PlayerConfig.Resourcepackactive(p, true);
 			} catch (IOException error) {

@@ -5,7 +5,6 @@ import java.io.IOException;
 
 import org.bukkit.Effect;
 import org.bukkit.Location;
-import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -45,23 +44,6 @@ public class PlayerConfig {
 	}	
 	public static Boolean getBuilder(Player p) {
 		return PlayerConfig.getBoolean(p.getName()+ ".builder");
-	}
-	
-	//Hotel---
-	public static void setInHotel(Player p, Integer inHotel) throws IOException{
-		PlayerConfig.set(p.getName()+ ".inhotel", inHotel);
-		save();
-	}	
-	public static Integer getInHotel(Player p) {
-		return PlayerConfig.getInt(p.getName()+ ".inhotel");
-	}
-	
-	public static void setRentedHotel(Player p, Integer inHotel) throws IOException{
-		PlayerConfig.set(p.getName()+ ".rentedhotel", inHotel);
-		save();
-	}	
-	public static Integer getRentedHotel(Player p) {
-		return PlayerConfig.getInt(p.getName()+ ".rentedhotel");
 	}
 	
 	//Resourcepack---
@@ -126,7 +108,7 @@ public class PlayerConfig {
 				      double x = Math.cos(a) * radius;
 				      double z = Math.sin(a) * radius;
 				      location.add(x, y +1, z);
-		            location.getWorld().spawnParticle(Particle.VILLAGER_HAPPY, location, 1);
+		            location.getWorld().playEffect(location, Effect.HAPPY_VILLAGER, 1);
 		            location.subtract(x,y +1,z);
 		        }	
 			 }

@@ -70,7 +70,7 @@ public class places {
 		//Time limit for Disco
 		if (!p.hasPermission("dreamland.*") && !p.hasPermission("dreamland.VIP")) {
 			if (PlayerConfig.getBuilder(p) == false) {
-				if(p.getStatistic(Statistic.PLAY_ONE_MINUTE)<=120) {
+				if(p.getStatistic(Statistic.PLAY_ONE_TICK)<=144000) {
 					Location ploc = p.getLocation();
 					Double d;
 
@@ -79,14 +79,14 @@ public class places {
 						Location location = new Location(w, -763.5, 21.0, 643.5, 0, 0);
 						p.teleport(location);
 						p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("2hours")));
-						int time = (((144000-(p.getStatistic(Statistic.PLAY_ONE_MINUTE)))/20)/60);
+						int time = (((144000-(p.getStatistic(Statistic.PLAY_ONE_TICK)))/20)/60);
 						p.sendMessage("§a>> §cTime left: §6" + time +" §cminute(s)§a <<");
 					}	
 				}
 			}
 		}
 
-		if(p.getStatistic(Statistic.PLAY_ONE_MINUTE)>=144000) {
+		if(p.getStatistic(Statistic.PLAY_ONE_TICK)>=144000) {
 			PlayerConfig.giveAchievement(p, Achievements.PLAY2HOURS);
 		}
 

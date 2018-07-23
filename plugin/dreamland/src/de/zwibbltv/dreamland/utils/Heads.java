@@ -6,11 +6,11 @@ import org.bukkit.inventory.ItemStack;
 
 public enum Heads {
 	Slime(       10, "Slime",       "slime", new ItemStack(Material.SLIME_BLOCK)),
-    NetherWarts( 11, "NetherWarts", "netherwarts", new ItemStack(Material.QUARTZ)),
+    NetherWarts( 11, "NetherWarts", "netherwarts", new ItemStack(Material.QUARTZ_ORE)),
     Sponge(      12, "Sponge",      "sponge", new ItemStack(Material.SPONGE)),
     Cactus(      13, "Cactus",      "cactus", new ItemStack(Material.CACTUS)),
     Glass(       14, "Glass",       "glass", new ItemStack(Material.GLASS)),
-    Leaves(      15, "Leaves",      "leaves", new ItemStack(Material.BIRCH_LEAVES)),
+    Leaves(      15, "Leaves",      "leaves", new ItemStack(Material.LEAVES)),
     TNT(         16, "TNT",         "tnt", new ItemStack(Material.TNT)),
     Globe(       19, "Globe",       "globe", ItemsUtils.getCustomSkull("YjFkZDRmZTRhNDI5YWJkNjY1ZGZkYjNlMjEzMjFkNmVmYTZhNmI1ZTdiOTU2ZGI5YzVkNTljOWVmYWIyNSJ9fX0")),
     BlackBalloon(20, "BlackBalloon","blackballoon", ItemsUtils.getCustomSkull("OTk2NzU0ZDMzMDQzNTM0NWFhZTNhOWYwNjNjZmNhNDJhZmIyOGI3YzVjNGJiOWYyOTRlZDI1MjdkOTYxIn19fQ")),

@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
+import org.bukkit.craftbukkit.v1_12_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -13,6 +14,11 @@ import org.bukkit.event.player.PlayerQuitEvent;
 
 import de.zwibbltv.dreamland.utils.Achievements;
 import de.zwibbltv.dreamland.utils.PlayerConfig;
+import net.minecraft.server.v1_12_R1.ChatComponentText;
+import net.minecraft.server.v1_12_R1.IChatBaseComponent;
+import net.minecraft.server.v1_12_R1.PacketPlayOutTitle;
+import net.minecraft.server.v1_12_R1.PacketPlayOutTitle.EnumTitleAction;
+import net.minecraft.server.v1_12_R1.PlayerConnection;
 
 public class JoinListener implements Listener {
 
@@ -39,16 +45,16 @@ public class JoinListener implements Listener {
 	}
 
 	public static void sendTitle(Player player, String title, String subtitle, int fadeIn, int stay, int fadeOut) {
-//		CraftPlayer craftplayer = (CraftPlayer) player;
-//		PlayerConnection connection = craftplayer.getHandle().playerConnection;
-//		IChatBaseComponent titleJSON = new ChatComponentText(ChatColor.GOLD + title);
-//		IChatBaseComponent subtitleJSON = new ChatComponentText(ChatColor.GOLD + subtitle);
-//		PacketPlayOutTitle timer = new PacketPlayOutTitle(fadeIn, stay, fadeOut);
-//		connection.sendPacket(timer);
-//		PacketPlayOutTitle titlePacket = new PacketPlayOutTitle(EnumTitleAction.TITLE, titleJSON);
-//		PacketPlayOutTitle subtitlePacket = new PacketPlayOutTitle(EnumTitleAction.SUBTITLE, subtitleJSON);
-//		connection.sendPacket(titlePacket);
-//		connection.sendPacket(subtitlePacket);
+		CraftPlayer craftplayer = (CraftPlayer) player;
+		PlayerConnection connection = craftplayer.getHandle().playerConnection;
+		IChatBaseComponent titleJSON = new ChatComponentText(ChatColor.GOLD + title);
+		IChatBaseComponent subtitleJSON = new ChatComponentText(ChatColor.GOLD + subtitle);
+		PacketPlayOutTitle timer = new PacketPlayOutTitle(fadeIn, stay, fadeOut);
+		connection.sendPacket(timer);
+		PacketPlayOutTitle titlePacket = new PacketPlayOutTitle(EnumTitleAction.TITLE, titleJSON);
+		PacketPlayOutTitle subtitlePacket = new PacketPlayOutTitle(EnumTitleAction.SUBTITLE, subtitleJSON);
+		connection.sendPacket(titlePacket);
+		connection.sendPacket(subtitlePacket);
 	}
 
 	@EventHandler

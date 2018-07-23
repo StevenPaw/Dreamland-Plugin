@@ -16,7 +16,7 @@ import java.util.UUID;
  */
 public final class ItemsUtils {
     public static ItemStack getCustomSkull(String url) {
-        ItemStack head = new ItemStack(Material.PLAYER_HEAD, 1, (short)3);
+        ItemStack head = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
         if(url.isEmpty())return head;
 
         String url2 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUv" + url;
