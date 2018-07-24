@@ -48,3 +48,10 @@ commands:
       aliases: [sc]
    rent:
       description: rent a hotel
+   dreamlandreload:
+      description: reload the dreamland plugin
+      aliases:
+      - dlrl
+      - dreamlandrl
+      - dlreload    
+      

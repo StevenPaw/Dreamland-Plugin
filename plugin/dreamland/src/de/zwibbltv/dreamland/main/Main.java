@@ -15,6 +15,7 @@ import de.zwibbltv.dreamland.commands.CMDaudio;
 import de.zwibbltv.dreamland.commands.CMDballoons;
 import de.zwibbltv.dreamland.commands.CMDbroadcastmessage;
 import de.zwibbltv.dreamland.commands.CMDbuild;
+import de.zwibbltv.dreamland.commands.CMDdlreload;
 import de.zwibbltv.dreamland.commands.CMDfirework;
 import de.zwibbltv.dreamland.commands.CMDgamemode;
 import de.zwibbltv.dreamland.commands.CMDinv;
@@ -105,6 +106,7 @@ public class Main extends JavaPlugin {
 		getCommand("inventory").setExecutor(new CMDinv());
 		getCommand("broadcastmessage").setExecutor(new CMDbroadcastmessage());
 		getCommand("Staffchat").setExecutor(new CMDstaffchat());
+		getCommand("dreamlandreload").setExecutor(new CMDdlreload());
 
 		setInstance(this);
 		this.getCommand("setwarp").setExecutor(new CMDsetwarp());
@@ -144,6 +146,11 @@ public class Main extends JavaPlugin {
 		return plugin;
 	}
 
+	public static final void reload() {
+        Bukkit.getPluginManager().disablePlugin(plugin);
+        Bukkit.getPluginManager().enablePlugin(plugin);
+	    plugin.reloadConfig();
+    } 
 
 	private boolean setupEconomy()
 	{
