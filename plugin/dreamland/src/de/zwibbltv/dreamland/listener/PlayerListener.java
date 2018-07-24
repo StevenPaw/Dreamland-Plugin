@@ -249,7 +249,7 @@ public class PlayerListener implements Listener {
 		if(PlayerConfig.getResourcepack(p) != true && PlayerConfig.getRuntime(p) >= 1)
 		{
 			p.sendMessage("Sending Resourcepack");
-			p.setResourcePack("https://www.dropbox.com/s/p4r9m41xpidecpw/Dreamland22-07-18b.zip?dl=1");
+			p.setResourcePack("https://www.dropbox.com/s/5kou870hjc22kd1/Dreamland24-07-18.zip?dl=1");
 			try {
 				PlayerConfig.Resourcepackactive(p, true);
 			} catch (IOException error) {
