@@ -48,7 +48,9 @@ public class PlayerListener implements Listener {
 	public void onPlayerInteract(PlayerInteractEvent event) {
 		Player p = event.getPlayer();
 		Block block = event.getClickedBlock();
-		if(de.zwibbltv.dreamland.hotels.hotelsmain.isInRoom(p, event.getClickedBlock().getLocation()) == -1 && hotelsmain.isaDoor(p, event.getClickedBlock().getLocation()) == -1) {
+//		Integer RoomNumber = de.zwibbltv.dreamland.hotels.hotelsmain.isInRoom(p, block.getLocation()) + hotelsmain.isaDoor(p, block.getLocation());
+//		Bukkit.broadcastMessage("Is in Room: " + de.zwibbltv.dreamland.hotels.hotelsmain.isInRoom(p, block.getLocation()));
+//		if(RoomNumber == 0) {
 			if (event.getAction() == Action.RIGHT_CLICK_BLOCK || event.getAction() == Action.LEFT_CLICK_BLOCK) {
 				List<Material> forbidden = new ArrayList<Material>();
 				if(PlayerConfig.getBuilder(p) == false) {
@@ -107,21 +109,21 @@ public class PlayerListener implements Listener {
 					}
 				}
 			}
-		} else if (hotelsmain.isaDoor(p, event.getClickedBlock().getLocation()) != -1) {
-			if(!PlayerConfig.getBuilder(p)) {
-				hotelsmain.setInRoom(p, -1);
-				p.teleport(hotelsmain.getExit(p, hotelsmain.isaDoor(p, event.getClickedBlock().getLocation())));
-				Bukkit.broadcastMessage("Teleporting to Exit: " + p.getName());
-				event.setCancelled(true);
-				p.setGameMode(GameMode.ADVENTURE);
-			}
-		} else {
-			hotelsmain.setInRoom(p, hotelsmain.isInRoom(p, event.getClickedBlock().getLocation()));
-			Bukkit.broadcastMessage(p.getName() + " is in room: " + de.zwibbltv.dreamland.hotels.hotelsmain.isInRoom(p, event.getClickedBlock().getLocation()));
-			if (PlayerConfig.getInHotel(p) == PlayerConfig.getRentedHotel(p)) {
-				p.setGameMode(GameMode.CREATIVE);
-			}
-		}
+//		} else if (hotelsmain.isaDoor(p, event.getClickedBlock().getLocation()) != -1) {
+//			if(!PlayerConfig.getBuilder(p)) {
+//				hotelsmain.setInRoom(p, -1);
+//				p.teleport(hotelsmain.getExit(p, hotelsmain.isaDoor(p, event.getClickedBlock().getLocation())));
+//				Bukkit.broadcastMessage("Teleporting to Exit: " + p.getName());
+//				event.setCancelled(true);
+//				p.setGameMode(GameMode.ADVENTURE);
+//			}
+//		} else {
+//			hotelsmain.setInRoom(p, hotelsmain.isInRoom(p, event.getClickedBlock().getLocation()));
+//			Bukkit.broadcastMessage(p.getName() + " is in room: " + de.zwibbltv.dreamland.hotels.hotelsmain.isInRoom(p, event.getClickedBlock().getLocation()));
+//			if (PlayerConfig.getInHotel(p) == PlayerConfig.getRentedHotel(p)) {
+//				p.setGameMode(GameMode.CREATIVE);
+//			}
+//		}
 	}
 
 	//Armorstand Schutz

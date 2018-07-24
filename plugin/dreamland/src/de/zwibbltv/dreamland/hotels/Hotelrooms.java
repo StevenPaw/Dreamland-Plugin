@@ -46,7 +46,7 @@ public enum Hotelrooms {
 	}
 	
 	public static Boolean isinRoom(Hotelrooms room, Location loc) {
-		Boolean isinRoom = false;
+		Boolean isinRoom = false;	
 		
 		if (loc.getBlockX() >= getLocation(room).getBlockX() && loc.getBlockX() <= getLocation(room).getBlockX() + getSize(room).getBlockX()) {
 			if (loc.getBlockY() >= getLocation(room).getBlockY() && loc.getBlockY() <= getLocation(room).getBlockY() + getSize(room).getBlockY()) {

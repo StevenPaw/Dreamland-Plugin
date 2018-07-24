@@ -12,7 +12,7 @@ public class hotelsmain {
 
 	
 	public static Integer isInRoom (Player p, Location loc) {
-		Integer isin = -1;
+		Integer isin = 0;
 		for(Hotelrooms room : Hotelrooms.values()) {
 			if(Hotelrooms.isinRoom(room, loc)) {
 				isin = Hotelrooms.getNumber(room);
@@ -21,7 +21,7 @@ public class hotelsmain {
 		return isin;
 	}
 	public static Integer isaDoor (Player p, Location loc) {
-		Integer isin = -1;
+		Integer isin = 0;
 		for(Hotelrooms room : Hotelrooms.values()) {
 			if(Hotelrooms.isDoor(room, loc)) {
 				isin = Hotelrooms.getNumber(room);
@@ -40,7 +40,7 @@ public class hotelsmain {
 	}
 	
 	public static Integer getRentedRoom (Player p) {
-		Integer rentedRoom = -1;
+		Integer rentedRoom = 0;
 		return rentedRoom;
 	}
 	
