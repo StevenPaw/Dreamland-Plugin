@@ -33,7 +33,6 @@ public class JoinListener implements Listener {
 		p.performCommand("audio"); //Audiolink generieren
 		if(!p.hasPermission("dreamland.*") && !p.hasPermission("dreamland.join")) {
 			p.performCommand("warp spawn");
-			Bukkit.broadcastMessage(p.getName() + " ist kein Builder");
 		}
 		de.zwibbltv.dreamland.main.updateScoreboard.update(p);
 
