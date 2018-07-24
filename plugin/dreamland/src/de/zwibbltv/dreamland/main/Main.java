@@ -42,8 +42,6 @@ import net.milkbowl.vault.economy.Economy;
 
 public class Main extends JavaPlugin {
 
-	//	BukkitTask TaskName = new RunnableClass(this).runTaskTimer(this, 20, 20);
-
 	private static Main plugin;
 
 	public static Main getInstance() {
@@ -60,7 +58,7 @@ public class Main extends JavaPlugin {
 	int ScoreboardCoolDown = 0;
 
 	@Override
-	public void onEnable() {
+	public void onEnable() {			
 
 		instance = this;
 		this.version = Bukkit.getServer().getClass().getPackage().getName().replace(".", ",").split(",")[3];
@@ -73,7 +71,7 @@ public class Main extends JavaPlugin {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
+		
 		setInstance(this);
 		plugin = this;
 		this.setupEconomy();

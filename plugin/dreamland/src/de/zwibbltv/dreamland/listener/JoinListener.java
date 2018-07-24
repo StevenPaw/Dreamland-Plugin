@@ -31,8 +31,9 @@ public class JoinListener implements Listener {
 		sendTitle(p, "Welcome to Dreamland!", "Have a lot of fun!", 1, 80, 10);		//sendTitle(Spieler, Titel, Untertitel, FadeIn, Stay, FadeOut);
 		p.setGameMode(GameMode.ADVENTURE); //Gamemode setzen
 		p.performCommand("audio"); //Audiolink generieren
-		if(!p.hasPermission("dreamland.*") || !p.hasPermission("dreamland.join")) {
+		if(!p.hasPermission("dreamland.*") && !p.hasPermission("dreamland.join")) {
 			p.performCommand("warp spawn");
+			Bukkit.broadcastMessage(p.getName() + " ist kein Builder");
 		}
 		de.zwibbltv.dreamland.main.updateScoreboard.update(p);
 
