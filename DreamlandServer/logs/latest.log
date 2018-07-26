@@ -3775,3 +3775,33 @@ Caused by: java.lang.ClassNotFoundException: de.zwibbltv.dreamland.utils.Balloon
 	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:302) ~[spigot-1.12.2.jar:git-Spigot-642f6d2-57ab4cf]
 	... 12 more
 [20:40:55] [Server thread/INFO]: << StevenPaw <<
+[20:48:20] [Server thread/INFO]: Stopping the server
+[20:48:20] [Server thread/INFO]: Stopping server
+[20:48:20] [Server thread/INFO]: [MCJukebox] Disabling MCJukebox v2.4
+[20:48:20] [Server thread/INFO]: [Dreamland] Disabling Dreamland v1.0
+[20:48:20] [Server thread/INFO]: [0;33;1m[Dreamland] [0;31;1m[21mdisabled![m
+[20:48:20] [Server thread/INFO]: [EnjinMinecraftPlugin] Disabling EnjinMinecraftPlugin v3.4.3
+[20:48:20] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v6.2.1;84bc322
+[20:48:20] [Server thread/INFO]: [WorldGuard] Shutting down executor and waiting for any pending tasks...
+[20:48:20] [Server thread/INFO]: [ChairStairs] Disabling ChairStairs v1.1
+[20:48:20] [Server thread/INFO]: [ChairStairs] has been disabled.
+[20:48:20] [Server thread/INFO]: [Vault] Disabling Vault v1.6.1
+[20:48:20] [Server thread/INFO]: [Hat] Disabling Hat v1.0
+[20:48:20] [Server thread/INFO]: [Animatronics] Disabling Animatronics v1.8.6
+[20:48:20] [Server thread/INFO]: [MineWallet] Disabling MineWallet v1.2.4
+[20:48:20] [Server thread/INFO]: [MineWallet] Plugin stopped!
+[20:48:20] [Server thread/INFO]: [ArmorStandEditor] Disabling ArmorStandEditor v1.11.2-19
+[20:48:20] [Server thread/INFO]: [PermissionsEx] Disabling PermissionsEx v1.23.4
+[20:48:20] [Server thread/INFO]: WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
+[20:48:20] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.8.6
+[20:48:20] [Server thread/INFO]: [ImageMaps] Disabling ImageMaps v0.4.3
+[20:48:20] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1.8-SNAPSHOT;cd4729f
+[20:48:20] [Server thread/INFO]: [dynmap] Disabling dynmap v2.5-Dev201706100405
+[20:48:20] [Server thread/INFO]: [dynmap] Unloaded 11 components.
+[20:48:20] [Server thread/INFO]: [dynmap] Stopping map renderer...
+[20:48:21] [Server thread/INFO]: [dynmap] Disabled
+[20:48:21] [Server thread/INFO]: Saving players
+[20:48:22] [Server thread/INFO]: Saving worlds
+[20:48:22] [Server thread/INFO]: Saving chunks for level 'dreamland'/overworld
+[20:48:22] [Server thread/INFO]: Saving chunks for level 'dreamland_nether'/the_nether
+[20:48:22] [Server thread/INFO]: Saving chunks for level 'dreamland_the_end'/the_end

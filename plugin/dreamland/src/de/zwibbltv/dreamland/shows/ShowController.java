@@ -12,10 +12,10 @@ public class ShowController {
 		//Time = 13000 - Nachts
 		//Time = 24000 - Sonnenaufgang
 		Integer Time = (int) Bukkit.getWorld("dreamland").getTime();
-		if(Time >= 13000 && Time <= 13020) {
-			Bukkit.broadcastMessage("§4The Late Night Show Starts soon behind Castle!");
+		if(Time > 13000 && Time < 13020) {
+			Bukkit.broadcastMessage("§4The Late Night Show starts soon behind Castle!");
 		}
-		if(Time >= 14000 && Time <= 14020) {
+		if(Time > 14000 && Time < 14020) {
 			LateNightShow.StartShow();
 		}
 	}

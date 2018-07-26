@@ -59,7 +59,7 @@ public class Main extends JavaPlugin {
 	int ScoreboardCoolDown = 0;
 
 	@Override
-	public void onEnable() {			
+	public void onEnable() {		
 
 		instance = this;
 		this.version = Bukkit.getServer().getClass().getPackage().getName().replace(".", ",").split(",")[3];
@@ -148,8 +148,8 @@ public class Main extends JavaPlugin {
 
 	public static final void reload() {
         Bukkit.getPluginManager().disablePlugin(plugin);
-        Bukkit.getPluginManager().enablePlugin(plugin);
 	    plugin.reloadConfig();
+        Bukkit.getPluginManager().enablePlugin(plugin);
     } 
 
 	private boolean setupEconomy()
