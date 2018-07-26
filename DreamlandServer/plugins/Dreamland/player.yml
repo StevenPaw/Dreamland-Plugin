@@ -49,12 +49,15 @@ ZwibblTV:
     Loveroom: true
     Club33 Trainstation: true
     Haunted Mansion secret painting: true
-  runtime: 26852
+    Play 2 hours: true
+    Slap an Owner: true
+    Slap a Crew-Member: true
+  runtime: 5884
   resourcepack: false
 ZwibblHelper:
   builder: true
 StevenPaw:
-  builder: false
+  builder: true
   muted: false
   achivements:
     FirstMove: true
@@ -91,8 +94,10 @@ StevenPaw:
     Backstage Parcour: true
     Backstage Parcour II: true
     Dreamland Disco: true
-  runtime: 196
-  resourcepack: true
+    Slap an Owner: true
+    Slap a Crew-Member: true
+  runtime: 4258
+  resourcepack: false
   curInv: InventoryCat
   inventory:
     Cowboy Pistol: true

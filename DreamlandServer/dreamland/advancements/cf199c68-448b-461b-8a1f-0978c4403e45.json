@@ -71,6 +71,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/furnace_minecart": {
+    "criteria": {
+      "has_minecart": "2018-07-26 20:24:55 +0200"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/gray_stained_glass": {
     "criteria": {
       "has_glass": "2018-04-15 16:11:20 +0200"
@@ -146,6 +152,12 @@
   "minecraft:recipes/decorations/chest": {
     "criteria": {
       "has_lots_of_items": "2018-04-15 16:53:45 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/hopper_minecart": {
+    "criteria": {
+      "has_minecart": "2018-07-26 20:24:55 +0200"
     },
     "done": true
   },
@@ -272,6 +284,18 @@
   "minecraft:recipes/building_blocks/gray_wool": {
     "criteria": {
       "has_white_wool": "2018-04-15 16:11:29 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/detector_rail": {
+    "criteria": {
+      "has_rail": "2018-07-26 20:24:56 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/golden_rail": {
+    "criteria": {
+      "has_rail": "2018-07-26 20:24:56 +0200"
     },
     "done": true
   },
@@ -424,9 +448,16 @@
       "extreme_hills_with_trees": "2018-05-04 13:33:34 +0200",
       "plains": "2018-04-14 20:28:13 +0200",
       "taiga": "2018-05-04 13:30:59 +0200",
-      "taiga_hills": "2018-05-04 13:30:53 +0200"
+      "taiga_hills": "2018-05-04 13:30:53 +0200",
+      "extreme_hills": "2018-07-26 20:28:29 +0200"
     },
     "done": false
+  },
+  "minecraft:recipes/transportation/chest_minecart": {
+    "criteria": {
+      "has_minecart": "2018-07-26 20:24:55 +0200"
+    },
+    "done": true
   },
   "minecraft:recipes/decorations/gray_stained_glass_pane": {
     "criteria": {
@@ -572,6 +603,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/activator_rail": {
+    "criteria": {
+      "has_rail": "2018-07-26 20:24:56 +0200"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/red_stained_glass_pane": {
     "criteria": {
       "has_glass": "2018-04-15 16:11:20 +0200"
@@ -587,6 +624,12 @@
   "minecraft:recipes/building_blocks/stonebrick": {
     "criteria": {
       "has_stone": "2018-04-14 22:11:44 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/tnt_minecart": {
+    "criteria": {
+      "has_minecart": "2018-07-26 20:24:55 +0200"
     },
     "done": true
   },
@@ -623,6 +666,12 @@
   "minecraft:recipes/building_blocks/stone_stairs": {
     "criteria": {
       "has_cobblestone": "2018-04-14 22:11:32 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/rail": {
+    "criteria": {
+      "has_minecart": "2018-07-26 20:24:55 +0200"
     },
     "done": true
   },
