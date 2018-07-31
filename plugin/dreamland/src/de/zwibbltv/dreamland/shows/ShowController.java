@@ -1,5 +1,6 @@
 package de.zwibbltv.dreamland.shows;
 
+
 import org.bukkit.Bukkit;
 
 public class ShowController {
@@ -13,7 +14,7 @@ public class ShowController {
 		//Time = 24000 - Sonnenaufgang
 		Integer Time = (int) Bukkit.getWorld("dreamland").getTime();
 		if(Time > 13000 && Time < 13020) {
-			Bukkit.broadcastMessage("§4The Late Night Show starts soon behind Castle!");
+			Bukkit.broadcastMessage("§4The Late Night Show starts soon behind Castle! Use /jukebox for the full experience");
 		}
 		if(Time > 14000 && Time < 14020) {
 			LateNightShow.StartShow();

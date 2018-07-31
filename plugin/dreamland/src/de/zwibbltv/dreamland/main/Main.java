@@ -10,6 +10,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import de.zwibbltv.dreamland.commands.CMDCar;
 import de.zwibbltv.dreamland.commands.CMDachievements;
 import de.zwibbltv.dreamland.commands.CMDaudio;
 import de.zwibbltv.dreamland.commands.CMDballoons;
@@ -57,6 +58,7 @@ public class Main extends JavaPlugin {
 	public static Economy economy = null;
 	public static String prefix = "§e[Dreamland] ";
 	int ScoreboardCoolDown = 0;
+	
 
 	@Override
 	public void onEnable() {		
@@ -107,6 +109,7 @@ public class Main extends JavaPlugin {
 		getCommand("broadcastmessage").setExecutor(new CMDbroadcastmessage());
 		getCommand("Staffchat").setExecutor(new CMDstaffchat());
 		getCommand("dreamlandreload").setExecutor(new CMDdlreload());
+		getCommand("car").setExecutor(new CMDCar());
 
 		setInstance(this);
 		this.getCommand("setwarp").setExecutor(new CMDsetwarp());

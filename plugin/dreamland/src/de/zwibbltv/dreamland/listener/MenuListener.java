@@ -23,6 +23,7 @@ import org.bukkit.inventory.meta.LeatherArmorMeta;
 
 import de.zwibbltv.dreamland.main.ItemBuilder;
 import de.zwibbltv.dreamland.utils.Achievements;
+import de.zwibbltv.dreamland.utils.CarController;
 import de.zwibbltv.dreamland.utils.PlayerConfig;
 import de.zwibbltv.dreamland.utils.Shop;
 
@@ -32,6 +33,190 @@ public class MenuListener implements Listener {
 	static List<String> catList = new ArrayList<String>();
 	static List<String> InvList = new ArrayList<String>();
 
+	// actions
+		@EventHandler
+		public void onMenuClick(InventoryClickEvent e) {
+			Player p = (Player) e.getWhoClicked();
+			try {
+				if (PlayerConfig.getCurrentInventory(p) == "Inventory") {
+					for(int s = 0; s < InvList.size(); s++) {
+						if(InvList.get(s) == e.getCurrentItem().getItemMeta().getDisplayName()) {
+							openMenuInventoryCat(p, e.getCurrentItem().getItemMeta().getDisplayName());
+						}
+					}
+				}
+				
+				//CarsMenu
+				if(e.getClickedInventory().getTitle().equals("Cars"))
+					CarController.useCar(e);
+
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLocations")) {
+					openMenuLocations(p);
+				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aAttraktions")) {
+					openMenuAttractions(p);
+				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Warps")) {
+					openMenuWarps(p); 				
+				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Achievements (" + getAchievementsPercentage(p) + "%)")) {
+					openMenuAchievements(p,p);
+				}
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§cBack")) {
+					if(PlayerConfig.getCurrentInventory(p) == "AchievementsCat")
+					{
+						openMenuAchievements(p,p);
+					} else if(PlayerConfig.getCurrentInventory(p) == "WarpsLocations" || PlayerConfig.getCurrentInventory(p) == "WarpsAttractions") {
+						openMenuWarps(p);
+					} else if(PlayerConfig.getCurrentInventory(p) == "InventoryCat") {
+						openInvMain(p);
+					} else
+						openMenuMain(p);
+				}
+
+				if(PlayerConfig.getCurrentInventory(p) == "WarpsLocations" || PlayerConfig.getCurrentInventory(p) == "WarpsAttractions") {
+
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aFlying Pegasus")) {
+						p.performCommand("warp flying_pegasus");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}	
+
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aTower of Izran")) {
+						p.performCommand("warp tower_of_izran");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}	
+
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aWestern race")) {
+						p.performCommand("warp western_race");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}	
+
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aExplorers Cave")) {
+						p.performCommand("warp explorers_cave");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}	
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aSpawn")) {
+						p.performCommand("warp spawn");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}					
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aGreifenheim")) {
+						p.performCommand("warp greifenheim");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aCalico")) {
+						p.performCommand("warp calico");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLagoon")) {
+						p.performCommand("warp lagoon");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aHaunted Mansion")) {
+						p.performCommand("warp haunted_mansion");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aChinatown")) {
+						p.performCommand("warp chinatown");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aInformation-Center")) {
+						p.performCommand("warp information-center");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+
+
+
+
+
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aCastle")) {
+						p.performCommand("warp castle");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aFantasa")) {
+						p.performCommand("warp fantasa");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aEverwoods")) {
+						p.performCommand("warp everwoods");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aEPCOT")) {
+						p.performCommand("warp epcot");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aTaruba")) {
+						p.performCommand("warp taruba");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aForbidden Woods")) {
+						p.performCommand("warp forbidden_woods");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLil' Hill")) {
+						p.performCommand("warp lil_hill");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+					if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLil' Coaster")) {
+						p.performCommand("warp lil_coaster");
+						p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
+						p.closeInventory();
+					}
+				}
+
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Audio")) {
+					p.performCommand("audio");
+					p.closeInventory();
+				}	
+
+				if (PlayerConfig.getCurrentInventory(p) == "Inventory") {
+					for(int s = 0; s < InvList.size(); s++) {
+						if(InvList.get(s) == e.getCurrentItem().getItemMeta().getDisplayName()) {
+							openAchCategory(p, p, e.getCurrentItem().getItemMeta().getDisplayName());
+						}
+					}
+				}
+
+				if (PlayerConfig.getCurrentInventory(p) == "Achievements") {
+					for(int s = 0; s < catList.size(); s++) {
+						if(catList.get(s) == e.getCurrentItem().getItemMeta().getDisplayName()) {
+							openAchCategory(p, p, e.getCurrentItem().getItemMeta().getDisplayName());
+						}
+					}
+				}
+				for(Player player : Bukkit.getOnlinePlayers()) {
+					if (PlayerConfig.getCurrentInventory(p) == "AchievementsOther " + player.getName()) {
+						for(int s = 0; s < catList.size(); s++) {
+							if(catList.get(s) == e.getCurrentItem().getItemMeta().getDisplayName()) {
+								openAchCategory(player, p, e.getCurrentItem().getItemMeta().getDisplayName());
+							}
+						}
+					}
+				}
+
+			} catch (Exception ex) {			
+			}
+		}
+
+	
 	@EventHandler
 	public void onDrop(PlayerDropItemEvent e) {
 		Player p = e.getPlayer();
@@ -209,185 +394,7 @@ public class MenuListener implements Listener {
 		}
 	}
 
-	// actions
-	@EventHandler
-	public void onMenuClick(InventoryClickEvent e) {
-		Player p = (Player) e.getWhoClicked();
-		try {
-			if (PlayerConfig.getCurrentInventory(p) == "Inventory") {
-				for(int s = 0; s < InvList.size(); s++) {
-					if(InvList.get(s) == e.getCurrentItem().getItemMeta().getDisplayName()) {
-						openMenuInventoryCat(p, e.getCurrentItem().getItemMeta().getDisplayName());
-					}
-				}
-			}
-
-			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLocations")) {
-				openMenuLocations(p);
-			}
-			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aAttraktions")) {
-				openMenuAttractions(p);
-			}
-			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Warps")) {
-				openMenuWarps(p); 				
-			}
-			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Achievements (" + getAchievementsPercentage(p) + "%)")) {
-				openMenuAchievements(p,p);
-			}
-			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§cBack")) {
-				if(PlayerConfig.getCurrentInventory(p) == "AchievementsCat")
-				{
-					openMenuAchievements(p,p);
-				} else if(PlayerConfig.getCurrentInventory(p) == "WarpsLocations" || PlayerConfig.getCurrentInventory(p) == "WarpsAttractions") {
-					openMenuWarps(p);
-				} else if(PlayerConfig.getCurrentInventory(p) == "InventoryCat") {
-					openInvMain(p);
-				} else
-					openMenuMain(p);
-			}
-
-			if(PlayerConfig.getCurrentInventory(p) == "WarpsLocations" || PlayerConfig.getCurrentInventory(p) == "WarpsAttractions") {
-
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aFlying Pegasus")) {
-					p.performCommand("warp flying_pegasus");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}	
-
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aTower of Izran")) {
-					p.performCommand("warp tower_of_izran");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}	
-
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aWestern race")) {
-					p.performCommand("warp western_race");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}	
-
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aExplorers Cave")) {
-					p.performCommand("warp explorers_cave");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}	
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aSpawn")) {
-					p.performCommand("warp spawn");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}					
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aGreifenheim")) {
-					p.performCommand("warp greifenheim");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aCalico")) {
-					p.performCommand("warp calico");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLagoon")) {
-					p.performCommand("warp lagoon");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aHaunted Mansion")) {
-					p.performCommand("warp haunted_mansion");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
-
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aChinatown")) {
-					p.performCommand("warp chinatown");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aInformation-Center")) {
-					p.performCommand("warp information-center");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
-
-
-
-
-
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aCastle")) {
-					p.performCommand("warp castle");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aFantasa")) {
-					p.performCommand("warp fantasa");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aEverwoods")) {
-					p.performCommand("warp everwoods");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aEPCOT")) {
-					p.performCommand("warp epcot");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aTaruba")) {
-					p.performCommand("warp taruba");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aForbidden Woods")) {
-					p.performCommand("warp forbidden_woods");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLil' Hill")) {
-					p.performCommand("warp lil_hill");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
-				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aLil' Coaster")) {
-					p.performCommand("warp lil_coaster");
-					p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
-					p.closeInventory();
-				}
-			}
-
-			if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Audio")) {
-				p.performCommand("audio");
-				p.closeInventory();
-			}	
-
-			if (PlayerConfig.getCurrentInventory(p) == "Inventory") {
-				for(int s = 0; s < InvList.size(); s++) {
-					if(InvList.get(s) == e.getCurrentItem().getItemMeta().getDisplayName()) {
-						openAchCategory(p, p, e.getCurrentItem().getItemMeta().getDisplayName());
-					}
-				}
-			}
-
-			if (PlayerConfig.getCurrentInventory(p) == "Achievements") {
-				for(int s = 0; s < catList.size(); s++) {
-					if(catList.get(s) == e.getCurrentItem().getItemMeta().getDisplayName()) {
-						openAchCategory(p, p, e.getCurrentItem().getItemMeta().getDisplayName());
-					}
-				}
-			}
-			for(Player player : Bukkit.getOnlinePlayers()) {
-				if (PlayerConfig.getCurrentInventory(p) == "AchievementsOther " + player.getName()) {
-					for(int s = 0; s < catList.size(); s++) {
-						if(catList.get(s) == e.getCurrentItem().getItemMeta().getDisplayName()) {
-							openAchCategory(player, p, e.getCurrentItem().getItemMeta().getDisplayName());
-						}
-					}
-				}
-			}
-
-		} catch (Exception ex) {			
-		}
-	}
-
+	
 	// VIP-Menu
 	@EventHandler
 	public void onPlayerInteract2(PlayerInteractEvent e) {

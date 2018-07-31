@@ -46,9 +46,18 @@ public class PlayerConfig {
 		return PlayerConfig.getBoolean(p.getName()+ ".builder");
 	}
 	
+	//Cars---
+	public static void setCar(Player p, Integer damage) throws IOException{
+		PlayerConfig.set(p.getName()+ ".car", damage);
+		save();
+	}	
+	public static Integer getCar(Player p) {
+		return PlayerConfig.getInt(p.getName()+ ".car");
+	}
+	
 	//Hotels---
-	public static void setInHotel(Player p, Integer builder) throws IOException{
-		PlayerConfig.set(p.getName()+ ".inhotel", builder);
+	public static void setInHotel(Player p, Integer inhotel) throws IOException{
+		PlayerConfig.set(p.getName()+ ".inhotel", inhotel);
 		save();
 	}	
 	public static Integer getInHotel(Player p) {

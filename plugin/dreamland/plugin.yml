@@ -54,4 +54,5 @@ commands:
       - dlrl
       - dreamlandrl
       - dlreload    
-      
+   car:
+      description: use a car
