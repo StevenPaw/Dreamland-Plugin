@@ -22,6 +22,7 @@ public class RunnableClass {
 		de.zwibbltv.dreamland.utils.BoatEverwoods.runBoatThings();
 		de.zwibbltv.dreamland.utils.AFK.CheckLocations();
 		de.zwibbltv.dreamland.utils.XPBar.CalculateXPLevel();
+		if(Bukkit.getServer().getOnlinePlayers().size() > 0)
 		de.zwibbltv.dreamland.shows.ShowController.PlayShow();
 //		de.zwibbltv.dreamland.utils.BoatEverwoods.spawnBoat();
 		updateScoreboard();

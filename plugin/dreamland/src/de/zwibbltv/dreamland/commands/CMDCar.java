@@ -45,7 +45,7 @@ public class CMDCar implements CommandExecutor {
 
 						int i = 0; //to decide place in Inventory
 						for(CarTypes car : CarTypes.values()) {
-							ItemStack carItem = new ItemStack(Material.DIAMOND_HOE);
+							ItemStack carItem = new ItemStack(Material.DIAMOND_SWORD);
 							ItemMeta carMeta = carItem.getItemMeta();
 							carMeta.setDisplayName(car.getName());
 							carItem.setItemMeta(carMeta);
