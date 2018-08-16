@@ -26,6 +26,10 @@ public class JoinListener implements Listener {
 	@EventHandler
 	public void onPlayerJoin(PlayerJoinEvent e) {
 		Player p = e.getPlayer();
+		de.zwibbltv.dreamland.listener.MenuListener.resetInventory(p.getPlayer());
+		if(PlayerConfig.getBuilder(p) == true) {
+			p.setGameMode(GameMode.CREATIVE);
+		}
 		e.setJoinMessage("§6>> §a" + p.getName() + " §6>>");
 		p.sendMessage("§aWelcome to the Dreamland Themepark Server!");
 		sendTitle(p, "Welcome to Dreamland!", "Have a lot of fun!", 1, 80, 10);		//sendTitle(Spieler, Titel, Untertitel, FadeIn, Stay, FadeOut);

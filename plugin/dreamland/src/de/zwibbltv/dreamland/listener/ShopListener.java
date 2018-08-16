@@ -117,16 +117,16 @@ public class ShopListener implements Listener {
 					if(eco.getBalance(p) >= shop.getMoney()) {
 						if(!PlayerConfig.hasItemInv(p, shop)) {
 							PlayerConfig.giveItemInv(p.getPlayer(), shop);
-							ItemStack BoughtItem = new ItemStack(shop.getMaterial(), 1);
-							ItemMeta im = BoughtItem.getItemMeta();
-							im.setDisplayName(shop.getName());
-							if(shop.getColor().getBlue() != 20)	{
-								LeatherArmorMeta meta1 = (LeatherArmorMeta)im;
-								meta1.setColor(shop.getColor());
-								BoughtItem.setItemMeta(meta1);
-							}
-							BoughtItem.setItemMeta(im);
-							p.getInventory().addItem(BoughtItem);
+//							ItemStack BoughtItem = new ItemStack(shop.getMaterial(), 1);
+//							ItemMeta im = BoughtItem.getItemMeta();
+//							im.setDisplayName(shop.getName());
+//							if(shop.getColor().getBlue() != 20)	{
+//								LeatherArmorMeta meta1 = (LeatherArmorMeta)im;
+//								meta1.setColor(shop.getColor());
+//								BoughtItem.setItemMeta(meta1);
+//							}
+//							BoughtItem.setItemMeta(im);
+//							p.getInventory().addItem(BoughtItem);
 							eco.withdrawPlayer(p, shop.getMoney());
 							p.closeInventory();
 							p.sendMessage("§aYou bought: §6" + shop.getName());

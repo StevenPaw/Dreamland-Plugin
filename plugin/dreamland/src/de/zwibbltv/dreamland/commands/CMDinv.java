@@ -17,7 +17,7 @@ public class CMDinv implements CommandExecutor{
 			Player p = (Player) sender;
 			if(p.hasPermission("dreamland.*") || p.hasPermission("dreamland.inv")) {
 				
-				de.zwibbltv.dreamland.listener.MenuListener.openInvMain(p);
+				de.zwibbltv.dreamland.listener.InventoryListener.openInvMain(p);
 				
 			} else {
 				p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.cfg.getString("noPerms")));

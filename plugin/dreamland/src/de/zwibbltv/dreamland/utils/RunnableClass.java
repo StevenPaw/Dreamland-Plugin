@@ -24,11 +24,9 @@ public class RunnableClass {
 		de.zwibbltv.dreamland.utils.XPBar.CalculateXPLevel();
 		if(Bukkit.getServer().getOnlinePlayers().size() > 0)
 		de.zwibbltv.dreamland.shows.ShowController.PlayShow();
-//		de.zwibbltv.dreamland.utils.BoatEverwoods.spawnBoat();
 		updateScoreboard();
 		giveMoney(eco);
 		TimeFinder();
-//		spawnBoat(w);
 
 		if(dropGoldTimer == 5) {
 			dropGoldTimer = 0;
