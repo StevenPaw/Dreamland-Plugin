@@ -31,11 +31,12 @@ public class InventoryListener implements Listener {
 			for(int s = 0; s < InvList.size(); s++) {
 				if(InvList.get(s) == e.getCurrentItem().getItemMeta().getDisplayName()) {
 					openMenuInventoryCat(p, e.getCurrentItem().getItemMeta().getDisplayName());
+
 				}
 			}
 		}
 
-		if (p.getInventory().getName().equalsIgnoreCase("§cJackets")) {
+		if (PlayerConfig.getCurrentInventory(p) == "InventoryCat") {
 			for(Shop shop :Shop.values()) {
 
 				ItemStack cjb = new ItemStack(shop.getMaterial());
@@ -49,10 +50,24 @@ public class InventoryListener implements Listener {
 					cjb.setItemMeta(meta1);
 
 				}		
-				p.getInventory().setItem(38, cjb);												
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(shop.getName())) {
+					if(PlayerConfig.getCurrentInventory(p) == "InventoryCat") {
+						p.getInventory().setItem(38, cjb);	
+						p.closeInventory();
+					}
+
+				}	
+				if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§cClear")) {
+					if(PlayerConfig.getCurrentInventory(p) == "InventoryCat") {
+						Inventory inv = p.getInventory();
+						if(inv.getTitle().equalsIgnoreCase("Jackets")) {
+							p.getInventory().setItem(38, null);
+							p.closeInventory();
+						}
+					}
+				}
 			}
 		}
-
 		if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§cBack")) {
 			if(PlayerConfig.getCurrentInventory(p) == "InventoryCat") {
 				openInvMain(p);
@@ -154,6 +169,13 @@ public class InventoryListener implements Listener {
 		inv.setItem(invSize*9-1, back);
 
 		p.openInventory(inv);
+
+		ItemStack clear = new ItemStack(Material.BARRIER);
+
+		ItemMeta clearmeta = clear.getItemMeta();
+		clearmeta.setDisplayName("§cClear");
+		clear.setItemMeta(clearmeta);
+		inv.setItem(invSize*9-2, clear);
 
 		try {
 			PlayerConfig.setCurrentInventory(p, "InventoryCat");
