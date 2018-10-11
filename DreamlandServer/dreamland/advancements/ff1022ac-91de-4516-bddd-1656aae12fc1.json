@@ -31,7 +31,7 @@
   },
   "minecraft:adventure/kill_a_mob": {
     "criteria": {
-      "spider": "2018-05-04 13:17:31 +0200"
+      "minecraft:spider": "2018-05-04 13:17:31 +0200"
     },
     "done": true
   },
@@ -49,7 +49,7 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
-      "spider": "2018-05-04 13:17:31 +0200"
+      "minecraft:spider": "2018-05-04 13:17:31 +0200"
     },
     "done": false
   },
@@ -83,6 +83,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/stone": {
+    "criteria": {
+      "has_cobblestone": "2018-10-07 23:24:16 +0200"
+    },
+    "done": true
+  },
   "minecraft:adventure/root": {
     "criteria": {
       "killed_something": "2018-05-04 13:17:31 +0200"
@@ -107,20 +113,20 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/stone_stairs": {
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:mountains": "2018-07-26 20:30:23 +0200",
+      "minecraft:taiga": "2018-05-03 00:18:34 +0200",
+      "minecraft:taiga_hills": "2018-07-14 22:12:25 +0200",
+      "minecraft:wooded_mountains": "2018-07-26 20:25:08 +0200",
+      "minecraft:plains": "2018-07-14 22:34:49 +0200"
+    },
+    "done": false
+  },
+  "minecraft:recipes/building_blocks/cobblestone_stairs": {
     "criteria": {
       "has_cobblestone": "2018-07-26 20:25:52 +0200"
     },
     "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "extreme_hills_with_trees": "2018-07-26 20:25:08 +0200",
-      "plains": "2018-07-14 22:34:49 +0200",
-      "taiga": "2018-05-03 00:18:34 +0200",
-      "taiga_hills": "2018-07-14 22:12:25 +0200",
-      "extreme_hills": "2018-07-26 20:30:23 +0200"
-    },
-    "done": false
   }
 }

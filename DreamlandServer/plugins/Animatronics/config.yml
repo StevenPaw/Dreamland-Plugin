@@ -28,8 +28,8 @@ Animatronic:
     clothes:
       head:
         ==: org.bukkit.inventory.ItemStack
-        type: SKULL_ITEM
-        damage: 3
+        v: 1628
+        type: PLAYER_HEAD
         meta:
           ==: ItemMeta
           meta-type: SKULL
@@ -37,6 +37,7 @@ Animatronic:
           skull-owner: DjinnLord69
       body:
         ==: org.bukkit.inventory.ItemStack
+        v: 1628
         type: LEATHER_CHESTPLATE
         meta:
           ==: ItemMeta
@@ -48,6 +49,7 @@ Animatronic:
             GREEN: 29
       pants:
         ==: org.bukkit.inventory.ItemStack
+        v: 1628
         type: LEATHER_LEGGINGS
         meta:
           ==: ItemMeta
@@ -59,6 +61,7 @@ Animatronic:
             GREEN: 29
       boots:
         ==: org.bukkit.inventory.ItemStack
+        v: 1628
         type: LEATHER_BOOTS
         meta:
           ==: ItemMeta
@@ -224,8 +227,8 @@ Animatronic:
     clothes:
       head:
         ==: org.bukkit.inventory.ItemStack
-        type: SKULL_ITEM
-        damage: 3
+        v: 1628
+        type: PLAYER_HEAD
         meta:
           ==: ItemMeta
           meta-type: SKULL
@@ -233,6 +236,7 @@ Animatronic:
           skull-owner: DjinnLord69
       body:
         ==: org.bukkit.inventory.ItemStack
+        v: 1628
         type: LEATHER_CHESTPLATE
         meta:
           ==: ItemMeta
@@ -244,6 +248,7 @@ Animatronic:
             GREEN: 29
       pants:
         ==: org.bukkit.inventory.ItemStack
+        v: 1628
         type: LEATHER_LEGGINGS
         meta:
           ==: ItemMeta
@@ -384,8 +389,8 @@ Animatronic:
     clothes:
       head:
         ==: org.bukkit.inventory.ItemStack
-        type: SKULL_ITEM
-        damage: 3
+        v: 1628
+        type: PLAYER_HEAD
         meta:
           ==: ItemMeta
           meta-type: SKULL
@@ -471,8 +476,8 @@ Animatronic:
     clothes:
       head:
         ==: org.bukkit.inventory.ItemStack
-        type: SKULL_ITEM
-        damage: 3
+        v: 1628
+        type: PLAYER_HEAD
         meta:
           ==: ItemMeta
           meta-type: SKULL
@@ -480,6 +485,7 @@ Animatronic:
           skull-owner: DjinnLord69
       body:
         ==: org.bukkit.inventory.ItemStack
+        v: 1628
         type: LEATHER_CHESTPLATE
         meta:
           ==: ItemMeta
@@ -491,6 +497,7 @@ Animatronic:
             GREEN: 29
       pants:
         ==: org.bukkit.inventory.ItemStack
+        v: 1628
         type: LEATHER_LEGGINGS
         meta:
           ==: ItemMeta
@@ -502,6 +509,7 @@ Animatronic:
             GREEN: 29
       boots:
         ==: org.bukkit.inventory.ItemStack
+        v: 1628
         type: LEATHER_BOOTS
         meta:
           ==: ItemMeta
@@ -618,8 +626,8 @@ Animatronic:
     clothes:
       head:
         ==: org.bukkit.inventory.ItemStack
-        type: SKULL_ITEM
-        damage: 3
+        v: 1628
+        type: PLAYER_HEAD
         meta:
           ==: ItemMeta
           meta-type: SKULL
@@ -627,6 +635,7 @@ Animatronic:
           internal: H4sIAAAAAAAAAE2OzU6DQBzE/5qYIPExvJIsH0vDwYOpxi7pglA+9wZlK2x3a9NCIzyVj+gePUwmv8xMMiaACU+74yTl5+X7MEhuwD3p4Bk3btAh17dsvsKW17Wu1XpeY9me5gYh5ODABFOPzvwyDvz6CMbIf8bpwq8mANwZ8FA0cuLwy+cQsapHXRXK/Ux8zdkOyZiI84qcirldE58onW9e/e0c/OvisSmxrN2wZ6dkalWBtm4q+Sa19yq/xVknqVNjLa8W7wstUxV/pD0TRyfOKK5F7kSLHKjSrpKZii+7dhLEBPUiVfRRSTF7owtdUhktOWLrMDhU6EW/hz/8CpUuGAEAAA==
       body:
         ==: org.bukkit.inventory.ItemStack
+        v: 1628
         type: LEATHER_CHESTPLATE
         meta:
           ==: ItemMeta
@@ -638,6 +647,7 @@ Animatronic:
             GREEN: 29
       pants:
         ==: org.bukkit.inventory.ItemStack
+        v: 1628
         type: LEATHER_LEGGINGS
         meta:
           ==: ItemMeta
@@ -649,6 +659,7 @@ Animatronic:
             GREEN: 46
       boots:
         ==: org.bukkit.inventory.ItemStack
+        v: 1628
         type: LEATHER_BOOTS
         meta:
           ==: ItemMeta
@@ -788,8 +799,8 @@ Animatronic:
     clothes:
       head:
         ==: org.bukkit.inventory.ItemStack
-        type: SKULL_ITEM
-        damage: 3
+        v: 1628
+        type: PLAYER_HEAD
         meta:
           ==: ItemMeta
           meta-type: SKULL
@@ -797,6 +808,7 @@ Animatronic:
           internal: H4sIAAAAAAAAAE2OzU6DQBzE/5qYIPExvJIsH0vDwYOpxi7pglA+9wZlK2x3a9NCIzyVj+gePUwmv8xMMiaACU+74yTl5+X7MEhuwD3p4Bk3btAh17dsvsKW17Wu1XpeY9me5gYh5ODABFOPzvwyDvz6CMbIf8bpwq8mANwZ8FA0cuLwy+cQsapHXRXK/Ux8zdkOyZiI84qcirldE58onW9e/e0c/OvisSmxrN2wZ6dkalWBtm4q+Sa19yq/xVknqVNjLa8W7wstUxV/pD0TRyfOKK5F7kSLHKjSrpKZii+7dhLEBPUiVfRRSTF7owtdUhktOWLrMDhU6EW/hz/8CpUuGAEAAA==
       body:
         ==: org.bukkit.inventory.ItemStack
+        v: 1628
         type: LEATHER_CHESTPLATE
         meta:
           ==: ItemMeta
@@ -808,6 +820,7 @@ Animatronic:
             GREEN: 29
       pants:
         ==: org.bukkit.inventory.ItemStack
+        v: 1628
         type: LEATHER_LEGGINGS
         meta:
           ==: ItemMeta
@@ -819,6 +832,7 @@ Animatronic:
             GREEN: 46
       boots:
         ==: org.bukkit.inventory.ItemStack
+        v: 1628
         type: LEATHER_BOOTS
         meta:
           ==: ItemMeta
@@ -984,8 +998,8 @@ Animatronic:
     clothes:
       head:
         ==: org.bukkit.inventory.ItemStack
-        type: SKULL_ITEM
-        damage: 3
+        v: 1628
+        type: PLAYER_HEAD
         meta:
           ==: ItemMeta
           meta-type: SKULL
@@ -993,6 +1007,7 @@ Animatronic:
           internal: H4sIAAAAAAAAAE2OzU6DQBzE/5qYIPExvJIsH0vDwYOpxi7pglA+9wZlK2x3a9NCIzyVj+gePUwmv8xMMiaACU+74yTl5+X7MEhuwD3p4Bk3btAh17dsvsKW17Wu1XpeY9me5gYh5ODABFOPzvwyDvz6CMbIf8bpwq8mANwZ8FA0cuLwy+cQsapHXRXK/Ux8zdkOyZiI84qcirldE58onW9e/e0c/OvisSmxrN2wZ6dkalWBtm4q+Sa19yq/xVknqVNjLa8W7wstUxV/pD0TRyfOKK5F7kSLHKjSrpKZii+7dhLEBPUiVfRRSTF7owtdUhktOWLrMDhU6EW/hz/8CpUuGAEAAA==
       body:
         ==: org.bukkit.inventory.ItemStack
+        v: 1628
         type: LEATHER_CHESTPLATE
         meta:
           ==: ItemMeta
@@ -1004,6 +1019,7 @@ Animatronic:
             GREEN: 29
       pants:
         ==: org.bukkit.inventory.ItemStack
+        v: 1628
         type: LEATHER_LEGGINGS
         meta:
           ==: ItemMeta
@@ -1015,6 +1031,7 @@ Animatronic:
             GREEN: 46
       boots:
         ==: org.bukkit.inventory.ItemStack
+        v: 1628
         type: LEATHER_BOOTS
         meta:
           ==: ItemMeta
