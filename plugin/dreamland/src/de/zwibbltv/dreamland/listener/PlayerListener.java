@@ -40,6 +40,7 @@ import de.zwibbltv.dreamland.utils.Achievements;
 import de.zwibbltv.dreamland.utils.PlayerConfig;
 import ru.tehkode.permissions.bukkit.PermissionsEx;
 
+@SuppressWarnings("deprecation")
 public class PlayerListener implements Listener {
 
 	@EventHandler
@@ -267,7 +268,6 @@ public class PlayerListener implements Listener {
 		}			
 	}
 
-	@SuppressWarnings("deprecation")
 	@EventHandler
 	public void onPickupItem(PlayerPickupItemEvent e) {
 		Player p = e.getPlayer();

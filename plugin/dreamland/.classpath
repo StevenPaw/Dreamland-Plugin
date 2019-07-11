@@ -2,8 +2,8 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="E:/Bibliotheken/Dokumente/Spigotprogramming/Dreamland/Dreamland-Plugin/plugin/spigot-1.12.jar"/>
-	<classpathentry kind="lib" path="E:/Bibliotheken/Dokumente/Spigotprogramming/Dreamland/Dreamland-Plugin/plugin/Vault_lib.jar"/>
-	<classpathentry kind="lib" path="E:/Bibliotheken/Dokumente/Spigotprogramming/Dreamland/Dreamland-Plugin/plugin/PermissionsEx_lib.jar"/>
+	<classpathentry kind="lib" path="H:/Desktop/Wichtig/Programmierung/workspace/PermissionsEx_lib.jar"/>
+	<classpathentry kind="lib" path="H:/Desktop/Wichtig/Programmierung/workspace/Vault_lib.jar"/>
+	<classpathentry kind="lib" path="H:/Desktop/Wichtig/Programmierung/workspace/spigot-1.12.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

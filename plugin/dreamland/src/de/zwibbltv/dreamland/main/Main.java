@@ -157,8 +157,7 @@ public class Main extends JavaPlugin {
         Bukkit.getPluginManager().enablePlugin(plugin);
     } 
 
-	private boolean setupEconomy()
-	{
+	private boolean setupEconomy(){
 		RegisteredServiceProvider<Economy> economyProvider = getServer().getServicesManager().getRegistration(net.milkbowl.vault.economy.Economy.class);
 		if (economyProvider != null) {
 			economy = economyProvider.getProvider();
